@@ -1,0 +1,98 @@
+{
+  "siteId": 27487,
+  "summary": {
+    "Name": "Holland Patent Cemetery",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "07/11/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/11/2015",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "41.37 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/27487/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/27487/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "41.37 yd",
+            "href": "/Browse/Trees/96565/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 14.418, -075 15.580",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Oneida"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,282 @@
+{
+  "siteId": 40115,
+  "summary": {
+    "Name": "Mt. Hope Cemetery",
+    "RHI5": "99.76",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.72",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "05/03/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "Burial site of Susan B. Anthony, Frederick Douglas, and Nathaniel Rochester."
+  },
+  "visits": [
+    {
+      "visited": "05/03/2015",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Burial site of Susan B. Anthony, Frederick Douglas, and Nathaniel Rochester."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "96.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40115/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40115/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "96.0'",
+            "href": "/Browse/Trees/220930/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "105.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/40115/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/40115/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "105.5'",
+            "href": "/Browse/Trees/220927/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "82.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/Sites/40115/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/Sites/40115/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "82.2'",
+            "href": "/Browse/Trees/220928/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "102.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40115/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40115/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "102.4'",
+            "href": "/Browse/Trees/220926/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "96.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/40115/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/40115/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "96.1'",
+            "href": "/Browse/Trees/220929/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "96.0'",
+          "176''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40115/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40115/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "96.0'",
+            "href": "/Browse/Trees/220924/Details"
+          },
+          {
+            "text": "176''",
+            "href": "/Browse/Trees/220932/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra var. rubra",
+          "Northern Red Oak",
+          "98.8'",
+          "229''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra var. rubra",
+            "href": "/Browse/Sites/40115/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40115/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "98.8'",
+            "href": "/Browse/Trees/220925/Details"
+          },
+          {
+            "text": "229''",
+            "href": "/Browse/Trees/220934/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "89.3'",
+          "178''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/40115/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/40115/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "89.3'",
+            "href": "/Browse/Trees/220931/Details"
+          },
+          {
+            "text": "178''",
+            "href": "/Browse/Trees/220931/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 07.897, -077 36.971",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Monroe"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

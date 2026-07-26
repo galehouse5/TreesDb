@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Abies magnifica",
+  "commonName": "California Red Fir",
+  "global": {
+    "maxHeight": {
+      "text": "220.2'",
+      "href": "/Browse/Trees/318128/Details"
+    },
+    "maxGirth": {
+      "text": "304''",
+      "href": "/Browse/Trees/268388/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "220.2'",
+          "304''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "220.2'",
+            "href": "/Browse/Trees/318128/Details"
+          },
+          {
+            "text": "304''",
+            "href": "/Browse/Trees/268388/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

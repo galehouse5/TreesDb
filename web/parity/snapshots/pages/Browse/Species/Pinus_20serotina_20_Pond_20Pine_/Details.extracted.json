@@ -1,0 +1,106 @@
+{
+  "botanicalName": "Pinus serotina",
+  "commonName": "Pond Pine",
+  "global": {
+    "maxHeight": {
+      "text": "95.7'",
+      "href": "/Browse/Trees/238552/Details"
+    },
+    "maxGirth": {
+      "text": "68''",
+      "href": "/Browse/Trees/238554/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "North Carolina",
+          "69.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "69.7'",
+            "href": "/Browse/Trees/40682/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "76.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "76.3'",
+            "href": "/Browse/Trees/5888/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "95.7'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "95.7'",
+            "href": "/Browse/Trees/238552/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/238554/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

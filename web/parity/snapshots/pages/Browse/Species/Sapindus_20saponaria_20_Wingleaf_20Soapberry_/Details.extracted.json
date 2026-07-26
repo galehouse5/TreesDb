@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Sapindus saponaria",
+  "commonName": "Wingleaf Soapberry",
+  "global": {
+    "maxHeight": {
+      "text": "52.1'",
+      "href": "/Browse/Trees/243217/Details"
+    },
+    "maxGirth": {
+      "text": "32''",
+      "href": "/Browse/Trees/243217/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "52.1'",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "52.1'",
+            "href": "/Browse/Trees/243217/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/243217/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

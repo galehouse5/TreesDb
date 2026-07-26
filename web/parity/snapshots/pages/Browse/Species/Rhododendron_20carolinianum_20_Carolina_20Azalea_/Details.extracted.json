@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Rhododendron carolinianum",
+  "commonName": "Carolina Azalea",
+  "global": {
+    "maxHeight": {
+      "text": "15.7'",
+      "href": "/Browse/Trees/235218/Details"
+    },
+    "maxGirth": {
+      "text": "8''",
+      "href": "/Browse/Trees/235218/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "15.7'",
+          "8''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "15.7'",
+            "href": "/Browse/Trees/235218/Details"
+          },
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/235218/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

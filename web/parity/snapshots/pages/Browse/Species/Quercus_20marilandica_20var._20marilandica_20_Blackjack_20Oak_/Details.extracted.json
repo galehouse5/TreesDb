@@ -1,0 +1,165 @@
+{
+  "botanicalName": "Quercus marilandica var. marilandica",
+  "commonName": "Blackjack Oak",
+  "global": {
+    "maxHeight": {
+      "text": "77.4'",
+      "href": "/Browse/Trees/323264/Details"
+    },
+    "maxGirth": {
+      "text": "85''",
+      "href": "/Browse/Trees/189024/Details"
+    },
+    "maxCrownSpread": {
+      "text": "29.0'",
+      "href": "/Browse/Trees/313087/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "55.1'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "55.1'",
+            "href": "/Browse/Trees/322908/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/322908/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "61.5'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "61.5'",
+            "href": "/Browse/Trees/297433/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/297432/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "49.0'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "49.0'",
+            "href": "/Browse/Trees/189024/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/189024/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "77.4'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "77.4'",
+            "href": "/Browse/Trees/323264/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/323264/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "45.5'",
+          "49''",
+          "29.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "45.5'",
+            "href": "/Browse/Trees/313087/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/313087/Details"
+          },
+          {
+            "text": "29.0'",
+            "href": "/Browse/Trees/313087/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

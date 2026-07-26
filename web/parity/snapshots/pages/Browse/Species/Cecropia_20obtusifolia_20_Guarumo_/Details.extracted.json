@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Cecropia obtusifolia",
+  "commonName": "Guarumo",
+  "global": {
+    "maxHeight": {
+      "text": "82.1'",
+      "href": "/Browse/Trees/221883/Details"
+    },
+    "maxGirth": {
+      "text": "63''",
+      "href": "/Browse/Trees/227249/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Heredia",
+          "72.2'",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Heredia",
+            "href": "/Browse/States/120/Details"
+          },
+          {
+            "text": "72.2'",
+            "href": "/Browse/Trees/227249/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/227249/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Puntarenas",
+          "82.1'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Puntarenas",
+            "href": "/Browse/States/122/Details"
+          },
+          {
+            "text": "82.1'",
+            "href": "/Browse/Trees/221883/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/221882/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

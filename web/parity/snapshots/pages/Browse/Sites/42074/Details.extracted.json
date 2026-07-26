@@ -1,0 +1,154 @@
+{
+  "siteId": 42074,
+  "summary": {
+    "Name": "Mt. Pisgah Arboretum",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "06/18/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/18/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer macrophyllum",
+          "Bigleaf Maple",
+          "79.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer macrophyllum",
+            "href": "/Browse/Sites/42074/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "Bigleaf Maple",
+            "href": "/Browse/Sites/42074/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "79.1'",
+            "href": "/Browse/Trees/296858/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus latifolia",
+          "Oregon Ash",
+          "91.7'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus latifolia",
+            "href": "/Browse/Sites/42074/Species/Fraxinus%20latifolia%20(Oregon%20Ash)/Details"
+          },
+          {
+            "text": "Oregon Ash",
+            "href": "/Browse/Sites/42074/Species/Fraxinus%20latifolia%20(Oregon%20Ash)/Details"
+          },
+          {
+            "text": "91.7'",
+            "href": "/Browse/Trees/296857/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/296857/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus garryana var. garryana",
+          "Oregon White Oak",
+          "65.6'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus garryana var. garryana",
+            "href": "/Browse/Sites/42074/Species/Quercus%20garryana%20var.%20garryana%20(Oregon%20White%20Oak)/Details"
+          },
+          {
+            "text": "Oregon White Oak",
+            "href": "/Browse/Sites/42074/Species/Quercus%20garryana%20var.%20garryana%20(Oregon%20White%20Oak)/Details"
+          },
+          {
+            "text": "65.6'",
+            "href": "/Browse/Trees/296855/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/296855/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 00.691, -122 58.491",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Lane"
+    },
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

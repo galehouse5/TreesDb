@@ -1,0 +1,160 @@
+{
+  "siteId": 41025,
+  "summary": {
+    "Name": "Lee Canyon",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "03/14/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/14/2015",
+      "visitors": "Matt Markworth and Chris Chris",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "114.0'",
+          "117''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/Sites/41025/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/41025/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "114.0'",
+            "href": "/Browse/Trees/243302/Details"
+          },
+          {
+            "text": "117''",
+            "href": "/Browse/Trees/243302/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus longaeva",
+          "Great Basin Bristlecone Pine",
+          "75.3'",
+          "181''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus longaeva",
+            "href": "/Browse/Sites/41025/Species/Pinus%20longaeva%20(Great%20Basin%20Bristlecone%20Pine)/Details"
+          },
+          {
+            "text": "Great Basin Bristlecone Pine",
+            "href": "/Browse/Sites/41025/Species/Pinus%20longaeva%20(Great%20Basin%20Bristlecone%20Pine)/Details"
+          },
+          {
+            "text": "75.3'",
+            "href": "/Browse/Trees/243306/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/243305/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "133.5'",
+          "203''",
+          "51.3'"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/Sites/41025/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/41025/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "133.5'",
+            "href": "/Browse/Trees/243293/Details"
+          },
+          {
+            "text": "203''",
+            "href": "/Browse/Trees/243293/Details"
+          },
+          {
+            "text": "51.3'",
+            "href": "/Browse/Trees/243293/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 18.105, -115 41.048",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Clark"
+    },
+    "state": {
+      "text": "Nevada (US)",
+      "href": "/Browse/States/31/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

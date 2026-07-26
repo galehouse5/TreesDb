@@ -1,0 +1,341 @@
+{
+  "siteId": 38503,
+  "summary": {
+    "Name": "Tonto Natural Bridge State Park",
+    "RHI5": "47.36",
+    "RHI10": "33.96",
+    "RHI20": "(not enough data)",
+    "RGI5": "5.49",
+    "RGI10": "2.92",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "09/23/2016",
+    "Ownership contact": "Highway 87 Pine, AZ.",
+    "General comments": "There is an admission fee."
+  },
+  "visits": [
+    {
+      "visited": "09/23/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "There is an admission fee."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Anacardium occidentale",
+          "Cashew",
+          "25.4'",
+          "27''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Anacardium occidentale",
+            "href": "/Browse/Sites/38503/Species/Anacardium%20occidentale%20(Cashew)/Details"
+          },
+          {
+            "text": "Cashew",
+            "href": "/Browse/Sites/38503/Species/Anacardium%20occidentale%20(Cashew)/Details"
+          },
+          {
+            "text": "25.4'",
+            "href": "/Browse/Trees/142570/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/142570/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. reticulata",
+          "Netleaf Hackberry",
+          "29.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. reticulata",
+            "href": "/Browse/Sites/38503/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "Netleaf Hackberry",
+            "href": "/Browse/Sites/38503/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "29.2'",
+            "href": "/Browse/Trees/142569/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hesperocyparis arizonica",
+          "Arizona Cypress",
+          "63.8'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hesperocyparis arizonica",
+            "href": "/Browse/Sites/38503/Species/Hesperocyparis%20arizonica%20(Arizona%20Cypress)/Details"
+          },
+          {
+            "text": "Arizona Cypress",
+            "href": "/Browse/Sites/38503/Species/Hesperocyparis%20arizonica%20(Arizona%20Cypress)/Details"
+          },
+          {
+            "text": "63.8'",
+            "href": "/Browse/Trees/142562/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/142562/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus arizonica",
+          "Redberry Juniper",
+          "27.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus arizonica",
+            "href": "/Browse/Sites/38503/Species/Juniperus%20arizonica%20(Redberry%20Juniper)/Details"
+          },
+          {
+            "text": "Redberry Juniper",
+            "href": "/Browse/Sites/38503/Species/Juniperus%20arizonica%20(Redberry%20Juniper)/Details"
+          },
+          {
+            "text": "27.7'",
+            "href": "/Browse/Trees/142572/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus deppeana",
+          "Alligator Juniper",
+          "42.9'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus deppeana",
+            "href": "/Browse/Sites/38503/Species/Juniperus%20deppeana%20(Alligator%20Juniper)/Details"
+          },
+          {
+            "text": "Alligator Juniper",
+            "href": "/Browse/Sites/38503/Species/Juniperus%20deppeana%20(Alligator%20Juniper)/Details"
+          },
+          {
+            "text": "42.9'",
+            "href": "/Browse/Trees/142571/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/142571/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus monosperma",
+          "Oneseed Juniper",
+          "19.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus monosperma",
+            "href": "/Browse/Sites/38503/Species/Juniperus%20monosperma%20(Oneseed%20Juniper)/Details"
+          },
+          {
+            "text": "Oneseed Juniper",
+            "href": "/Browse/Sites/38503/Species/Juniperus%20monosperma%20(Oneseed%20Juniper)/Details"
+          },
+          {
+            "text": "19.6'",
+            "href": "/Browse/Trees/142573/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus monophylla",
+          "Singleleaf Pinyon",
+          "45.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus monophylla",
+            "href": "/Browse/Sites/38503/Species/Pinus%20monophylla%20(Singleleaf%20Pinyon)/Details"
+          },
+          {
+            "text": "Singleleaf Pinyon",
+            "href": "/Browse/Sites/38503/Species/Pinus%20monophylla%20(Singleleaf%20Pinyon)/Details"
+          },
+          {
+            "text": "45.9'",
+            "href": "/Browse/Trees/142560/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus arizonica",
+          "Arizona White Oak",
+          "55.0'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus arizonica",
+            "href": "/Browse/Sites/38503/Species/Quercus%20arizonica%20(Arizona%20White%20Oak)/Details"
+          },
+          {
+            "text": "Arizona White Oak",
+            "href": "/Browse/Sites/38503/Species/Quercus%20arizonica%20(Arizona%20White%20Oak)/Details"
+          },
+          {
+            "text": "55.0'",
+            "href": "/Browse/Trees/142565/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/142565/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus turbinella",
+          "Sonoran Scrub Oak",
+          "14.2'",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus turbinella",
+            "href": "/Browse/Sites/38503/Species/Quercus%20turbinella%20(Sonoran%20Scrub%20Oak)/Details"
+          },
+          {
+            "text": "Sonoran Scrub Oak",
+            "href": "/Browse/Sites/38503/Species/Quercus%20turbinella%20(Sonoran%20Scrub%20Oak)/Details"
+          },
+          {
+            "text": "14.2'",
+            "href": "/Browse/Trees/142559/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/142559/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sapindus saponaria var. drummondii",
+          "Western Soapberry",
+          "15.9'",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sapindus saponaria var. drummondii",
+            "href": "/Browse/Sites/38503/Species/Sapindus%20saponaria%20var.%20drummondii%20(Western%20Soapberry)/Details"
+          },
+          {
+            "text": "Western Soapberry",
+            "href": "/Browse/Sites/38503/Species/Sapindus%20saponaria%20var.%20drummondii%20(Western%20Soapberry)/Details"
+          },
+          {
+            "text": "15.9'",
+            "href": "/Browse/Trees/142568/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/142568/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 19.355, -111 27.229",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Gila"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

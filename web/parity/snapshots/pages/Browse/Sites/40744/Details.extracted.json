@@ -1,0 +1,132 @@
+{
+  "siteId": 40744,
+  "summary": {
+    "Name": "Emily Dickinson House And Museum",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "02/22/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/22/2009",
+      "visitors": "Andrew Joslin",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mass/amherst_hadley1.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "123.4'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40744/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40744/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "123.4'",
+            "href": "/Browse/Trees/235850/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/235850/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "6.1'",
+          "160''",
+          "114.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40744/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40744/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "6.1'",
+            "href": "/Browse/Trees/235851/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/235851/Details"
+          },
+          {
+            "text": "114.0'",
+            "href": "/Browse/Trees/235851/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 22.572, -072 30.845",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Hampshire"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

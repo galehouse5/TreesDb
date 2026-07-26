@@ -1,0 +1,531 @@
+{
+  "stateId": 46,
+  "summary": {
+    "Name": "Wisconsin",
+    "Code": "WI",
+    "RHI5": "111.38",
+    "RHI10": "97.50",
+    "RHI20": "76.58",
+    "RGI5": "13.12",
+    "RGI10": "10.65",
+    "RGI20": "7.38",
+    "Trees measured": "83",
+    "Last measurement date": "11/25/2013"
+  },
+  "location": {
+    "Coordinates": "44 53.833, -089 34.130",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "87.9'",
+          "79''",
+          "43.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/States/46/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/States/46/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "87.9'",
+            "href": "/Browse/Trees/233385/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/233385/Details"
+          },
+          {
+            "text": "43.0'",
+            "href": "/Browse/Trees/233385/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "82.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/46/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/46/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "82.5'",
+            "href": "/Browse/Trees/233465/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "72.0'",
+          "84''",
+          "34.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/46/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/46/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/233390/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/233390/Details"
+          },
+          {
+            "text": "34.0'",
+            "href": "/Browse/Trees/233390/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "61.3'",
+          "73''",
+          "25.0'"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/States/46/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/States/46/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "61.3'",
+            "href": "/Browse/Trees/233388/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/233388/Details"
+          },
+          {
+            "text": "25.0'",
+            "href": "/Browse/Trees/233388/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "65.2'",
+          "52''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/States/46/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/States/46/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "65.2'",
+            "href": "/Browse/Trees/233389/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/233389/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/233389/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "57.0'",
+          "143''",
+          "40.7'"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/States/46/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/States/46/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/233414/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/233414/Details"
+          },
+          {
+            "text": "40.7'",
+            "href": "/Browse/Trees/233414/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Corylus cornuta",
+          "Beaked Hazelnut",
+          "-",
+          "3''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Corylus cornuta",
+            "href": "/Browse/States/46/Species/Corylus%20cornuta%20(Beaked%20Hazelnut)/Details"
+          },
+          {
+            "text": "Beaked Hazelnut",
+            "href": "/Browse/States/46/Species/Corylus%20cornuta%20(Beaked%20Hazelnut)/Details"
+          },
+          null,
+          {
+            "text": "3''",
+            "href": "/Browse/Trees/233464/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "68.4'",
+          "50''",
+          "21.0'"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/States/46/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/States/46/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "68.4'",
+            "href": "/Browse/Trees/233356/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/233394/Details"
+          },
+          {
+            "text": "21.0'",
+            "href": "/Browse/Trees/233394/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "78.8'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/States/46/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/States/46/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "78.8'",
+            "href": "/Browse/Trees/233341/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/233355/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea mariana var. mariana",
+          "Black Spruce",
+          "101.0'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana var. mariana",
+            "href": "/Browse/States/46/Species/Picea%20mariana%20var.%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/States/46/Species/Picea%20mariana%20var.%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/143244/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/143244/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 20 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cathedral Of The Pines",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cathedral Of The Pines",
+            "href": "/Browse/Sites/40557/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Douglas County",
+          "74.56",
+          "68.07",
+          "9.10",
+          "7.15"
+        ],
+        "links": [
+          {
+            "text": "Douglas County",
+            "href": "/Browse/Sites/40558/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Highway 8 Pines",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Highway 8 Pines",
+            "href": "/Browse/Sites/40556/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Holmboe Conifer Forest",
+          "83.40",
+          "-",
+          "5.92",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Holmboe Conifer Forest",
+            "href": "/Browse/Sites/40555/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Rhinelander",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhinelander",
+            "href": "/Browse/Sites/40554/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Superior Municipl Forest",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Superior Municipl Forest",
+            "href": "/Browse/Sites/38517/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Timberlane Road",
+          "90.90",
+          "-",
+          "5.11",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Timberlane Road",
+            "href": "/Browse/Sites/40569/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Wisconsin Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wisconsin Single Tree Sites",
+            "href": "/Browse/Sites/40565/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

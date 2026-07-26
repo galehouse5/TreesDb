@@ -1,0 +1,154 @@
+{
+  "siteId": 40646,
+  "summary": {
+    "Name": "Newgate Wildlife Management Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "02/08/2010",
+    "Ownership contact": "Connecticut Department of Energy and Environmental Protection",
+    "General comments": "600 acres including some co-operating entities."
+  },
+  "visits": [
+    {
+      "visited": "02/08/2010",
+      "visitors": "Sam Goodwin",
+      "tripReportUrl": "groups.google.com/group/entstrees/browse_thread/thread/213ecb981dfb6391",
+      "comments": "600 acres including some co-operating entities."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "-",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40646/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40646/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          null,
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/234254/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "65.0'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/40646/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/40646/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/234253/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/234253/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "75.0'",
+          "183''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40646/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40646/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/234251/Details"
+          },
+          {
+            "text": "183''",
+            "href": "/Browse/Trees/234252/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 57.395, -072 44.773",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Hartford"
+    },
+    "state": {
+      "text": "Connecticut (US)",
+      "href": "/Browse/States/6/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

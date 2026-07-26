@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Hesperocyparis arizonica ssp. arizonica",
+  "commonName": "Arizona Cypress",
+  "global": {
+    "maxHeight": {
+      "text": "125.0'",
+      "href": "/Browse/Trees/320805/Details"
+    },
+    "maxGirth": {
+      "text": "147''",
+      "href": "/Browse/Trees/320802/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "125.0'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "125.0'",
+            "href": "/Browse/Trees/320805/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/320802/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

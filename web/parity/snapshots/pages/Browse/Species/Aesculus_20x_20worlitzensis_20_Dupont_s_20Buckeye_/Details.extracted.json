@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Aesculus x worlitzensis",
+  "commonName": "Dupont's Buckeye",
+  "global": {
+    "maxHeight": {
+      "text": "77.0'",
+      "href": "/Browse/Trees/75451/Details"
+    },
+    "maxGirth": {
+      "text": "140''",
+      "href": "/Browse/Trees/75451/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "77.0'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/75451/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/75451/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

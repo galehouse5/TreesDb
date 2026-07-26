@@ -1,0 +1,132 @@
+{
+  "siteId": 38905,
+  "summary": {
+    "Name": "F. A. Seiberling Nature Realm",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "04/30/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/30/2018",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/01/2010",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "155.0'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38905/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38905/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "155.0'",
+            "href": "/Browse/Trees/162531/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/161068/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "140.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/38905/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/38905/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "140.4'",
+            "href": "/Browse/Trees/161070/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 08.418, -081 34.521",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Summit"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

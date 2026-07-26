@@ -1,0 +1,274 @@
+{
+  "botanicalName": "Juniperus virginiana",
+  "commonName": "Eastern Redcedar",
+  "global": {
+    "maxHeight": {
+      "text": "96.3'",
+      "href": "/Browse/Trees/233880/Details"
+    },
+    "maxGirth": {
+      "text": "115''",
+      "href": "/Browse/Trees/39751/Details"
+    },
+    "maxCrownSpread": {
+      "text": "65.3'",
+      "href": "/Browse/Trees/39751/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "96.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "96.3'",
+            "href": "/Browse/Trees/233880/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "54.2'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "54.2'",
+            "href": "/Browse/Trees/137051/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/137050/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Florida",
+          "72.7'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "72.7'",
+            "href": "/Browse/Trees/159252/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/159252/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "84.3'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "84.3'",
+            "href": "/Browse/Trees/243319/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/243319/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "70.8'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "70.8'",
+            "href": "/Browse/Trees/297328/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/297328/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "67.4'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "67.4'",
+            "href": "/Browse/Trees/113266/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/113266/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "76.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "76.7'",
+            "href": "/Browse/Trees/40808/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "77.0'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/162526/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/162526/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "48.0'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "48.0'",
+            "href": "/Browse/Trees/142970/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/142970/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "64.7'",
+          "115''",
+          "65.3'"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "64.7'",
+            "href": "/Browse/Trees/252613/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/39751/Details"
+          },
+          {
+            "text": "65.3'",
+            "href": "/Browse/Trees/39751/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

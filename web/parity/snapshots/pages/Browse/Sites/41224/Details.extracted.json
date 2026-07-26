@@ -1,0 +1,129 @@
+{
+  "siteId": 41224,
+  "summary": {
+    "Name": "Welch Branch",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "32",
+    "Last measurement date": "04/07/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/07/2011",
+      "visitors": "Josh Kelly, Michael Davie, and Will Blozan",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "187.4'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41224/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41224/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "187.4'",
+            "href": "/Browse/Trees/252603/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/252603/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "156.3'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/41224/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41224/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "156.3'",
+            "href": "/Browse/Trees/252574/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/252574/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 28.678, -083 34.293",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Swain"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

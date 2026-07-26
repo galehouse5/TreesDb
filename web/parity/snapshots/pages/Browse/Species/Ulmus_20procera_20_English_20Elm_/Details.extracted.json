@@ -1,0 +1,122 @@
+{
+  "botanicalName": "Ulmus procera",
+  "commonName": "English Elm",
+  "global": {
+    "maxHeight": {
+      "text": "111.7'",
+      "href": "/Browse/Trees/263295/Details"
+    },
+    "maxGirth": {
+      "text": "235''",
+      "href": "/Browse/Trees/255986/Details"
+    },
+    "maxCrownSpread": {
+      "text": "90.0'",
+      "href": "/Browse/Trees/263295/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Community of Madrid",
+          "77.6'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Community of Madrid",
+            "href": "/Browse/States/137/Details"
+          },
+          {
+            "text": "77.6'",
+            "href": "/Browse/Trees/274935/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/274935/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "111.7'",
+          "211''",
+          "90.0'"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "111.7'",
+            "href": "/Browse/Trees/263295/Details"
+          },
+          {
+            "text": "211''",
+            "href": "/Browse/Trees/263295/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/263295/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "88.7'",
+          "235''",
+          "84.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "88.7'",
+            "href": "/Browse/Trees/255979/Details"
+          },
+          {
+            "text": "235''",
+            "href": "/Browse/Trees/255986/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/255979/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

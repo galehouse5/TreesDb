@@ -1,0 +1,241 @@
+{
+  "siteId": 22035,
+  "summary": {
+    "Name": "Liard River Hot Springs Provincial Park",
+    "RHI5": "78.60",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "4.67",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "07/30/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/30/2012",
+      "visitors": "Turner Sharp and John Fichtner",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus incana ssp. tenuifolia",
+          "Thinleaf Alder",
+          "26.1'",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus incana ssp. tenuifolia",
+            "href": "/Browse/Sites/22035/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "Thinleaf Alder",
+            "href": "/Browse/Sites/22035/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "26.1'",
+            "href": "/Browse/Trees/74992/Details"
+          },
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/74992/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "70.2'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/22035/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/22035/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "70.2'",
+            "href": "/Browse/Trees/74995/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/74995/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "87.3'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/22035/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/22035/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "87.3'",
+            "href": "/Browse/Trees/74991/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/74991/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea mariana",
+          "Black Spruce",
+          "53.0'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana",
+            "href": "/Browse/Sites/22035/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/Sites/22035/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "53.0'",
+            "href": "/Browse/Trees/74996/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/74996/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus balsamifera ssp. balsamifera",
+          "Balsam Poplar",
+          "91.1'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. balsamifera",
+            "href": "/Browse/Sites/22035/Species/Populus%20balsamifera%20ssp.%20balsamifera%20(Balsam%20Poplar)/Details"
+          },
+          {
+            "text": "Balsam Poplar",
+            "href": "/Browse/Sites/22035/Species/Populus%20balsamifera%20ssp.%20balsamifera%20(Balsam%20Poplar)/Details"
+          },
+          {
+            "text": "91.1'",
+            "href": "/Browse/Trees/74994/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/74994/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus balsamifera ssp. trichocarpa",
+          "Black Cottonwood",
+          "91.4'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. trichocarpa",
+            "href": "/Browse/Sites/22035/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "Black Cottonwood",
+            "href": "/Browse/Sites/22035/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "91.4'",
+            "href": "/Browse/Trees/74993/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/74993/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "59 25.381, -126 05.838",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Provincial Park",
+      "County": "Northern Rockies"
+    },
+    "state": {
+      "text": "British Columbia (CA)",
+      "href": "/Browse/States/50/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

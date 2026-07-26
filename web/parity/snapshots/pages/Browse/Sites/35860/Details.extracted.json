@@ -1,0 +1,344 @@
+{
+  "siteId": 35860,
+  "summary": {
+    "Name": "Oil Creek State Park",
+    "RHI5": "103.38",
+    "RHI10": "85.22",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.09",
+    "RGI10": "5.76",
+    "RGI20": "(not enough data)",
+    "Trees measured": "20",
+    "Last measurement date": "01/30/2008",
+    "Ownership contact": "Oil Creek State Park, 305 State Park Rd, Oil City, PA 16301,",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/30/2008",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "96.1'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/35860/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/35860/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "96.1'",
+            "href": "/Browse/Trees/119215/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/119217/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "43.0'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/35860/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/35860/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "43.0'",
+            "href": "/Browse/Trees/119208/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/119208/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "108.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/35860/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/35860/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "108.4'",
+            "href": "/Browse/Trees/119224/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "59.1'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/35860/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/35860/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "59.1'",
+            "href": "/Browse/Trees/119211/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/119211/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "91.6'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/35860/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/35860/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "91.6'",
+            "href": "/Browse/Trees/119225/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/119225/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "123.9'",
+          "166''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/35860/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/35860/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "123.9'",
+            "href": "/Browse/Trees/119222/Details"
+          },
+          {
+            "text": "166''",
+            "href": "/Browse/Trees/119220/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "96.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/35860/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/35860/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "96.9'",
+            "href": "/Browse/Trees/119210/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "69.1'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/35860/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/35860/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "69.1'",
+            "href": "/Browse/Trees/119213/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/119213/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana",
+          "American Basswood",
+          "83.0'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana",
+            "href": "/Browse/Sites/35860/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/35860/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "83.0'",
+            "href": "/Browse/Trees/119207/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/119206/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus rubra",
+          "Slippery Elm",
+          "81.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus rubra",
+            "href": "/Browse/Sites/35860/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "Slippery Elm",
+            "href": "/Browse/Sites/35860/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "81.1'",
+            "href": "/Browse/Trees/119214/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 32.518, -079 38.983",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Venango"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,459 @@
+{
+  "stateId": 27,
+  "summary": {
+    "Name": "Nebraska",
+    "Code": "NE",
+    "RHI5": "40.513",
+    "RHI10": "36.763",
+    "RHI20": "33.073",
+    "RGI5": "4.742",
+    "RGI10": "4.072",
+    "RGI20": "3.336",
+    "Trees measured": "72",
+    "Last measurement date": "11/11/2013"
+  },
+  "location": {
+    "Coordinates": "41 30.038, -099 40.846",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "27.00 yd",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/27/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/27/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "27.00 yd",
+            "href": "/Browse/Trees/220648/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/220649/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "31.10 yd",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/27/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/27/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "31.10 yd",
+            "href": "/Browse/Trees/220650/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/220651/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "9.33 yd",
+          "10''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/States/27/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/States/27/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "9.33 yd",
+            "href": "/Browse/Trees/220652/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/220652/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "19.20 yd",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/States/27/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/States/27/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "19.20 yd",
+            "href": "/Browse/Trees/220439/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/220439/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera var. papyrifera",
+          "Paper Birch",
+          "24.77 yd",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera var. papyrifera",
+            "href": "/Browse/States/27/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/States/27/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "24.77 yd",
+            "href": "/Browse/Trees/220438/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/220438/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "30.73 yd",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/States/27/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/States/27/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "30.73 yd",
+            "href": "/Browse/Trees/220653/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/220654/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "30.20 yd",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/States/27/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/States/27/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "30.20 yd",
+            "href": "/Browse/Trees/220655/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/220656/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "33.27 yd",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/States/27/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/States/27/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "33.27 yd",
+            "href": "/Browse/Trees/220657/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/220658/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis var. canadensis",
+          "Eastern Redbud",
+          "12.90 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis var. canadensis",
+            "href": "/Browse/States/27/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/States/27/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "12.90 yd",
+            "href": "/Browse/Trees/220659/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus drummondii",
+          "Roughleaf Dogwood",
+          "8.53 yd",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus drummondii",
+            "href": "/Browse/States/27/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "Roughleaf Dogwood",
+            "href": "/Browse/States/27/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "8.53 yd",
+            "href": "/Browse/Trees/220660/Details"
+          },
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/220661/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 31 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Dodge Memorial Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Dodge Memorial Park",
+            "href": "/Browse/Sites/40100/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fontenelle Forest",
+          "121.54",
+          "110.29",
+          "13.77",
+          "11.83"
+        ],
+        "links": [
+          {
+            "text": "Fontenelle Forest",
+            "href": "/Browse/Sites/40113/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ponca State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ponca State Park",
+            "href": "/Browse/Sites/40104/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Smith Falls State Park",
+          "79.86",
+          "-",
+          "6.25",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Smith Falls State Park",
+            "href": "/Browse/Sites/40103/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington Park",
+            "href": "/Browse/Sites/40101/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

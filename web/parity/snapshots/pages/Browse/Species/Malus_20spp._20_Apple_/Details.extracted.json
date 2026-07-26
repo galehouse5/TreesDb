@@ -1,0 +1,59 @@
+{
+  "botanicalName": "Malus spp.",
+  "commonName": "Apple",
+  "global": {
+    "maxHeight": {
+      "text": "46.8'",
+      "href": "/Browse/Trees/281879/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "46.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "46.8'",
+            "href": "/Browse/Trees/281879/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

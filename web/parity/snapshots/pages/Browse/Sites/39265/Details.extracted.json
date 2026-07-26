@@ -1,0 +1,98 @@
+{
+  "siteId": 39265,
+  "summary": {
+    "Name": "Hampton Hills Metropark",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "04/30/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/30/2018",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "162.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39265/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39265/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "162.0'",
+            "href": "/Browse/Trees/170146/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 10.008, -081 34.019",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Summit"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

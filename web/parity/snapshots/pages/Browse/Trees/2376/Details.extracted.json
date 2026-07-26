@@ -1,0 +1,70 @@
+{
+  "treeId": 2376,
+  "botanicalName": {
+    "text": "Quercus rubra",
+    "href": "/Browse/Sites/442/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+  },
+  "commonName": {
+    "text": "Northern Red Oak",
+    "href": "/Browse/Sites/442/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+  },
+  "details": {
+    "Height": "106.2'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "118''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "102.69",
+    "ENTSPTS": "1044.30",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.07",
+    "Champion points (abbreviated)": "224.20",
+    "Diameter": "38''",
+    "Conical volume": "272.4 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/03/2011",
+      "summary": {
+        "Height": "106.2'",
+        "Girth": "118''"
+      },
+      "details": {
+        "Botanical name": "Quercus rubra",
+        "Common name": "Northern Red Oak",
+        "Height": "106.2'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "118''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "102.69",
+        "ENTSPTS": "1044.30",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.07",
+        "Champion points (abbreviated)": "224.20",
+        "Diameter": "38''",
+        "Conical volume": "272.4 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Steve Galehouse"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 13.076, -081 42.254",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Whipp's Ledges",
+      "href": "/Browse/Sites/442/Details"
+    },
+    "rows": {
+      "Ownership type": "Park",
+      "County": "Medina"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

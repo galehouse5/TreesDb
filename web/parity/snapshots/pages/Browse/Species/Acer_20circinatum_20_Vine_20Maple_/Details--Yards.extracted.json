@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Acer circinatum",
+  "commonName": "Vine Maple",
+  "global": {
+    "maxHeight": {
+      "text": "8.17 yd",
+      "href": "/Browse/Trees/281863/Details"
+    },
+    "maxGirth": {
+      "text": "32''",
+      "href": "/Browse/Trees/296872/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "8.17 yd",
+          "14''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "8.17 yd",
+            "href": "/Browse/Trees/281863/Details"
+          },
+          {
+            "text": "14''",
+            "href": "/Browse/Trees/281863/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "7.17 yd",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "7.17 yd",
+            "href": "/Browse/Trees/296872/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/296872/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

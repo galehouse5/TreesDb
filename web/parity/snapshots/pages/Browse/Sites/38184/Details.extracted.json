@@ -1,0 +1,197 @@
+{
+  "siteId": 38184,
+  "summary": {
+    "Name": "Media",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "04/17/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/17/2006",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/media_oak.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "133.3'",
+          "146''",
+          "70.0'"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38184/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38184/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "133.3'",
+            "href": "/Browse/Trees/132059/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/132059/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/132059/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Oxydendrum arboreum",
+          "Sourwood",
+          "54.5'",
+          "53''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Oxydendrum arboreum",
+            "href": "/Browse/Sites/38184/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "Sourwood",
+            "href": "/Browse/Sites/38184/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "54.5'",
+            "href": "/Browse/Trees/132061/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/132061/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/132061/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "81.0'",
+          "253''",
+          "56.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38184/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38184/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/132058/Details"
+          },
+          {
+            "text": "253''",
+            "href": "/Browse/Trees/132058/Details"
+          },
+          {
+            "text": "56.0'",
+            "href": "/Browse/Trees/132058/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Sequoiadendron giganteum",
+          "Giant Sequoia",
+          "68.4'",
+          "102''",
+          "26.0'"
+        ],
+        "links": [
+          {
+            "text": "Sequoiadendron giganteum",
+            "href": "/Browse/Sites/38184/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+          },
+          {
+            "text": "Giant Sequoia",
+            "href": "/Browse/Sites/38184/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+          },
+          {
+            "text": "68.4'",
+            "href": "/Browse/Trees/132060/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/132060/Details"
+          },
+          {
+            "text": "26.0'",
+            "href": "/Browse/Trees/132060/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 55.007, -075 23.262",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Delaware"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

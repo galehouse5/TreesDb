@@ -1,0 +1,274 @@
+{
+  "botanicalName": "Betula alleghaniensis",
+  "commonName": "Yellow Birch",
+  "global": {
+    "maxHeight": {
+      "text": "111.2'",
+      "href": "/Browse/Trees/221851/Details"
+    },
+    "maxGirth": {
+      "text": "187''",
+      "href": "/Browse/Trees/252323/Details"
+    },
+    "maxCrownSpread": {
+      "text": "57.4'",
+      "href": "/Browse/Trees/256022/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Connecticut",
+          "65.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/242633/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "91.0'",
+          "141''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "91.0'",
+            "href": "/Browse/Trees/234412/Details"
+          },
+          {
+            "text": "141''",
+            "href": "/Browse/Trees/235273/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "86.8'",
+          "153''",
+          "57.4'"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "86.8'",
+            "href": "/Browse/Trees/256022/Details"
+          },
+          {
+            "text": "153''",
+            "href": "/Browse/Trees/256022/Details"
+          },
+          {
+            "text": "57.4'",
+            "href": "/Browse/Trees/256022/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New Hampshire",
+          "-",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Hampshire",
+            "href": "/Browse/States/28/Details"
+          },
+          null,
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/235938/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "111.2'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "111.2'",
+            "href": "/Browse/Trees/221851/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/221352/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "109.3'",
+          "187''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "109.3'",
+            "href": "/Browse/Trees/229351/Details"
+          },
+          {
+            "text": "187''",
+            "href": "/Browse/Trees/252323/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "91.4'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "91.4'",
+            "href": "/Browse/Trees/16075/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/9850/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "79.5'",
+          "153''",
+          "19.0'"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "79.5'",
+            "href": "/Browse/Trees/233102/Details"
+          },
+          {
+            "text": "153''",
+            "href": "/Browse/Trees/233102/Details"
+          },
+          {
+            "text": "19.0'",
+            "href": "/Browse/Trees/4072/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "108.1'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "108.1'",
+            "href": "/Browse/Trees/168092/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/119002/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "86.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "86.1'",
+            "href": "/Browse/Trees/228889/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

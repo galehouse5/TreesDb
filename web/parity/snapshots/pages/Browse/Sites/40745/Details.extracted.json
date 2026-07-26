@@ -1,0 +1,154 @@
+{
+  "siteId": 40745,
+  "summary": {
+    "Name": "Mount Holyoke College",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "02/22/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/22/2009",
+      "visitors": "Andrew Joslin",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mass/amherst_hadley1.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "51.5'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/40745/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/40745/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "51.5'",
+            "href": "/Browse/Trees/235854/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/235854/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "79.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/40745/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/40745/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "79.0'",
+            "href": "/Browse/Trees/235852/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "87.2'",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40745/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40745/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "87.2'",
+            "href": "/Browse/Trees/235853/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/235853/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 15.302, -072 34.389",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Hampshire"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

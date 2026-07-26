@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Cercocarpus ledifolius",
+  "commonName": "Curl-Leaf Mountain Mahogany",
+  "global": {
+    "maxHeight": {
+      "text": "24.1'",
+      "href": "/Browse/Trees/196077/Details"
+    },
+    "maxGirth": {
+      "text": "144''",
+      "href": "/Browse/Trees/268822/Details"
+    },
+    "maxCrownSpread": {
+      "text": "36.0'",
+      "href": "/Browse/Trees/268822/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "22.0'",
+          "144''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "22.0'",
+            "href": "/Browse/Trees/268822/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/268822/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/268822/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "24.1'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "24.1'",
+            "href": "/Browse/Trees/196077/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/78326/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

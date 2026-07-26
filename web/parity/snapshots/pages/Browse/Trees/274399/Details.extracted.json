@@ -1,0 +1,70 @@
+{
+  "treeId": 274399,
+  "botanicalName": {
+    "text": "Pseudotsuga menziesii var. menziesii",
+    "href": "/Browse/Sites/41792/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "commonName": {
+    "text": "Douglas-Fir",
+    "href": "/Browse/Sites/41792/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "details": {
+    "Height": "268.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "196''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "716.42",
+    "ENTSPTS": "4381.80",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.21",
+    "Champion points (abbreviated)": "464.20",
+    "Diameter": "62''",
+    "Conical volume": "1900.4 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 07/05/2022",
+      "summary": {
+        "Height": "268.0'",
+        "Girth": "196''"
+      },
+      "details": {
+        "Botanical name": "Pseudotsuga menziesii var. menziesii",
+        "Common name": "Douglas-Fir",
+        "Height": "268.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "196''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "716.42",
+        "ENTSPTS": "4381.80",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.21",
+        "Champion points (abbreviated)": "464.20",
+        "Diameter": "62''",
+        "Conical volume": "1900.4 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Elijah Whitcomb"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "48 12.941, -121 33.501",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Old Sauk River Trail",
+      "href": "/Browse/Sites/41792/Details"
+    },
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Snohomish"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

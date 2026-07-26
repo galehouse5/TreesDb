@@ -1,0 +1,197 @@
+{
+  "siteId": 40168,
+  "summary": {
+    "Name": "Concord Road",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "02/01/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/01/2006",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/concord_road.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Chamaecyparis obtusa",
+          "Hinoki False Cypress",
+          "58.7'",
+          "100''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis obtusa",
+            "href": "/Browse/Sites/40168/Species/Chamaecyparis%20obtusa%20(Hinoki%20False%20Cypress)/Details"
+          },
+          {
+            "text": "Hinoki False Cypress",
+            "href": "/Browse/Sites/40168/Species/Chamaecyparis%20obtusa%20(Hinoki%20False%20Cypress)/Details"
+          },
+          {
+            "text": "58.7'",
+            "href": "/Browse/Trees/224404/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/224404/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/224404/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "34.0'",
+          "74''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/40168/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/40168/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "34.0'",
+            "href": "/Browse/Trees/224405/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/224405/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/224405/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium ascendens",
+          "Pond Cypress",
+          "63.2'",
+          "80''",
+          "15.0'"
+        ],
+        "links": [
+          {
+            "text": "Taxodium ascendens",
+            "href": "/Browse/Sites/40168/Species/Taxodium%20ascendens%20(Pond%20Cypress)/Details"
+          },
+          {
+            "text": "Pond Cypress",
+            "href": "/Browse/Sites/40168/Species/Taxodium%20ascendens%20(Pond%20Cypress)/Details"
+          },
+          {
+            "text": "63.2'",
+            "href": "/Browse/Trees/224403/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/224403/Details"
+          },
+          {
+            "text": "15.0'",
+            "href": "/Browse/Trees/224403/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tilia petiolaris",
+          "Pendent Silver Linden",
+          "70.0'",
+          "212''",
+          "77.0'"
+        ],
+        "links": [
+          {
+            "text": "Tilia petiolaris",
+            "href": "/Browse/Sites/40168/Species/Tilia%20petiolaris%20(Pendent%20Silver%20Linden)/Details"
+          },
+          {
+            "text": "Pendent Silver Linden",
+            "href": "/Browse/Sites/40168/Species/Tilia%20petiolaris%20(Pendent%20Silver%20Linden)/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/224402/Details"
+          },
+          {
+            "text": "212''",
+            "href": "/Browse/Trees/224402/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/224402/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 52.242, -075 25.949",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Delaware"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

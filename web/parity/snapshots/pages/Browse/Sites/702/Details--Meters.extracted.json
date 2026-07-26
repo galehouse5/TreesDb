@@ -1,0 +1,188 @@
+{
+  "siteId": 702,
+  "summary": {
+    "Name": "Warren OH Bottomland Hardwoods",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "07/16/2003",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/16/2003",
+      "visitors": "Thomas Diggins",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/ohio/warren_oh.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "34.08 m",
+          "-",
+          "21.34 m"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/702/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/702/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "34.08 m",
+            "href": "/Browse/Trees/9656/Details"
+          },
+          null,
+          {
+            "text": "21.34 m",
+            "href": "/Browse/Trees/9656/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "40.66 m",
+          "351 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/702/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/702/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "40.66 m",
+            "href": "/Browse/Trees/9654/Details"
+          },
+          {
+            "text": "351 cm",
+            "href": "/Browse/Trees/9654/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "27.55 m",
+          "475 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/702/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/702/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "27.55 m",
+            "href": "/Browse/Trees/9655/Details"
+          },
+          {
+            "text": "475 cm",
+            "href": "/Browse/Trees/9655/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "37.09 m",
+          "658 cm",
+          "30.48 m"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/702/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/702/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "37.09 m",
+            "href": "/Browse/Trees/9650/Details"
+          },
+          {
+            "text": "658 cm",
+            "href": "/Browse/Trees/9653/Details"
+          },
+          {
+            "text": "30.48 m",
+            "href": "/Browse/Trees/9653/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 18.390, -080 43.287",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Trumbull"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

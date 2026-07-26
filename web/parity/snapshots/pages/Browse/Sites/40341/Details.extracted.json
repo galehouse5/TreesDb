@@ -1,0 +1,213 @@
+{
+  "siteId": 40341,
+  "summary": {
+    "Name": "Elmwood Cemetery",
+    "RHI5": "79.96",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.58",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "05/30/2008",
+    "Ownership contact": "824 South Dudley StreetMemphis, TN",
+    "General comments": "Established 1852"
+  },
+  "visits": [
+    {
+      "visited": "05/30/2008",
+      "visitors": "Beth Koebel and Linley Schmidt",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/tennessee/elmwood_cemetery_memphis.htm",
+      "comments": "Established 1852"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cedrus atlantica",
+          "Atlas Cedar",
+          "47.0'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus atlantica",
+            "href": "/Browse/Sites/40341/Species/Cedrus%20atlantica%20(Atlas%20Cedar)/Details"
+          },
+          {
+            "text": "Atlas Cedar",
+            "href": "/Browse/Sites/40341/Species/Cedrus%20atlantica%20(Atlas%20Cedar)/Details"
+          },
+          {
+            "text": "47.0'",
+            "href": "/Browse/Trees/228506/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/228506/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "68.7'",
+          "175''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/40341/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/40341/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "68.7'",
+            "href": "/Browse/Trees/228507/Details"
+          },
+          {
+            "text": "175''",
+            "href": "/Browse/Trees/228507/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "91.8'",
+          "208''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40341/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40341/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "91.8'",
+            "href": "/Browse/Trees/228508/Details"
+          },
+          {
+            "text": "208''",
+            "href": "/Browse/Trees/228508/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus nigra",
+          "Water Oak",
+          "101.8'",
+          "226''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus nigra",
+            "href": "/Browse/Sites/40341/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+          },
+          {
+            "text": "Water Oak",
+            "href": "/Browse/Sites/40341/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+          },
+          {
+            "text": "101.8'",
+            "href": "/Browse/Trees/228509/Details"
+          },
+          {
+            "text": "226''",
+            "href": "/Browse/Trees/228509/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "90.5'",
+          "191''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40341/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40341/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "90.5'",
+            "href": "/Browse/Trees/228505/Details"
+          },
+          {
+            "text": "191''",
+            "href": "/Browse/Trees/228505/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 07.311, -090 01.816",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Shelby"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

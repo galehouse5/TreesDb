@@ -1,0 +1,59 @@
+{
+  "botanicalName": "Sorbus airia",
+  "commonName": "Winterbeam",
+  "global": {
+    "maxHeight": {
+      "text": "36.0'",
+      "href": "/Browse/Trees/189019/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Massachusetts",
+          "36.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/189019/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "siteId": 41266,
+  "summary": {
+    "Name": "Louisiana Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "90.0'",
+          "146''",
+          "121.5'"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/41266/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/41266/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/253891/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/253891/Details"
+          },
+          {
+            "text": "121.5'",
+            "href": "/Browse/Trees/253891/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium ascendens",
+          "Pond Cypress",
+          "64.5'",
+          "125''",
+          "55.5'"
+        ],
+        "links": [
+          {
+            "text": "Taxodium ascendens",
+            "href": "/Browse/Sites/41266/Species/Taxodium%20ascendens%20(Pond%20Cypress)/Details"
+          },
+          {
+            "text": "Pond Cypress",
+            "href": "/Browse/Sites/41266/Species/Taxodium%20ascendens%20(Pond%20Cypress)/Details"
+          },
+          {
+            "text": "64.5'",
+            "href": "/Browse/Trees/253892/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/253892/Details"
+          },
+          {
+            "text": "55.5'",
+            "href": "/Browse/Trees/253892/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "30 26.796, -091 11.342",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "East Baton Rouge Parish"
+    },
+    "state": {
+      "text": "Louisiana (US)",
+      "href": "/Browse/States/16/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

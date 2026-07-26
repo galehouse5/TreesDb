@@ -1,0 +1,70 @@
+{
+  "treeId": 119570,
+  "botanicalName": {
+    "text": "Pinus strobus",
+    "href": "/Browse/Sites/32605/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Eastern White Pine",
+    "href": "/Browse/Sites/32605/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+  },
+  "details": {
+    "Height": "143.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "116''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "133.63",
+    "ENTSPTS": "1382.33",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.37",
+    "Champion points (abbreviated)": "259.00",
+    "Diameter": "37''",
+    "Conical volume": "354.5 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 11/22/2002",
+      "summary": {
+        "Height": "143.0'",
+        "Girth": "116''"
+      },
+      "details": {
+        "Botanical name": "Pinus strobus",
+        "Common name": "Eastern White Pine",
+        "Height": "143.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "116''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "133.63",
+        "ENTSPTS": "1382.33",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.37",
+        "Champion points (abbreviated)": "259.00",
+        "Diameter": "37''",
+        "Conical volume": "354.5 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Dale Luthringer"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 49.344, -079 16.553",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Anders Run Natural Area",
+      "href": "/Browse/Sites/32605/Details"
+    },
+    "rows": {
+      "Ownership type": "State - public",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,350 @@
+{
+  "siteId": 41911,
+  "summary": {
+    "Name": "Long Hunter State Park-Day Loop Trail",
+    "RHI5": "108.54",
+    "RHI10": "102.27",
+    "RHI20": "90.93",
+    "RGI5": "6.98",
+    "RGI10": "6.58",
+    "RGI20": "4.83",
+    "Trees measured": "31",
+    "Last measurement date": "08/22/2021",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/22/2021",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "96.5'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/41911/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41911/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "96.5'",
+            "href": "/Browse/Trees/282373/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/282357/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya carolinae-septentrionalis",
+          "Southern Shagbark Hickory",
+          "113.2'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya carolinae-septentrionalis",
+            "href": "/Browse/Sites/41911/Species/Carya%20carolinae-septentrionalis%20(Southern%20Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Southern Shagbark Hickory",
+            "href": "/Browse/Sites/41911/Species/Carya%20carolinae-septentrionalis%20(Southern%20Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "113.2'",
+            "href": "/Browse/Trees/282365/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/282363/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "89.7'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/41911/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/41911/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "89.7'",
+            "href": "/Browse/Trees/282359/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/282359/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "110.0'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/41911/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/41911/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/282366/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/282366/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "107.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/41911/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/41911/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "107.5'",
+            "href": "/Browse/Trees/282360/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "91.1'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/41911/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/41911/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "91.1'",
+            "href": "/Browse/Trees/282367/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/282367/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis var. canadensis",
+          "Eastern Redbud",
+          "17.3'",
+          "8''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis var. canadensis",
+            "href": "/Browse/Sites/41911/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/Sites/41911/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "17.3'",
+            "href": "/Browse/Trees/282377/Details"
+          },
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/282377/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "91.1'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/41911/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/41911/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "91.1'",
+            "href": "/Browse/Trees/282372/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/282347/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana var. biltmoreana",
+          "Biltmore Ash",
+          "99.3'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana var. biltmoreana",
+            "href": "/Browse/Sites/41911/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "Biltmore Ash",
+            "href": "/Browse/Sites/41911/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "99.3'",
+            "href": "/Browse/Trees/282362/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/282362/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus quadrangulata",
+          "Blue Ash",
+          "66.7'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus quadrangulata",
+            "href": "/Browse/Sites/41911/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "Blue Ash",
+            "href": "/Browse/Sites/41911/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "66.7'",
+            "href": "/Browse/Trees/282376/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/282376/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 21 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 06.113, -086 33.226",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Davidson"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

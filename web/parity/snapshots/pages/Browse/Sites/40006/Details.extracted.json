@@ -1,0 +1,294 @@
+{
+  "siteId": 40006,
+  "summary": {
+    "Name": "Powley Road",
+    "RHI5": "101.48",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.98",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "08/02/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/02/2020",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea var. balsamea",
+          "Balsam Fir",
+          "100.6'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea var. balsamea",
+            "href": "/Browse/Sites/40006/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/40006/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "100.6'",
+            "href": "/Browse/Trees/213670/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/213670/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "91.7'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/40006/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40006/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "91.7'",
+            "href": "/Browse/Trees/213669/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/213669/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "96.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40006/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40006/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "96.5'",
+            "href": "/Browse/Trees/213671/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis var. alleghaniensis",
+          "Yellow Birch",
+          "81.8'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis var. alleghaniensis",
+            "href": "/Browse/Sites/40006/Species/Betula%20alleghaniensis%20var.%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/40006/Species/Betula%20alleghaniensis%20var.%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "81.8'",
+            "href": "/Browse/Trees/213667/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/213667/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "103.3'",
+          "137''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40006/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40006/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "103.3'",
+            "href": "/Browse/Trees/213672/Details"
+          },
+          {
+            "text": "137''",
+            "href": "/Browse/Trees/213672/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "100.8'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/40006/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/40006/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "100.8'",
+            "href": "/Browse/Trees/213675/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/213675/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "95.0'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/40006/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/40006/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "95.0'",
+            "href": "/Browse/Trees/213668/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/213668/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "106.2'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40006/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40006/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "106.2'",
+            "href": "/Browse/Trees/213673/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/213674/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 20.399, -074 37.511",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Hamilton"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

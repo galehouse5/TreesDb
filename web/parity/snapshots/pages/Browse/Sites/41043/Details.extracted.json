@@ -1,0 +1,182 @@
+{
+  "siteId": 41043,
+  "summary": {
+    "Name": "Sycamore Flats Picnic Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "04/01/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/01/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Crataegus spp.",
+          "Hawthorn",
+          "29.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus spp.",
+            "href": "/Browse/Sites/41043/Species/Crataegus%20%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/41043/Species/Crataegus%20%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "29.6'",
+            "href": "/Browse/Trees/243560/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus spp.",
+          "Hawthorn",
+          "41.7'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus spp.",
+            "href": "/Browse/Sites/41043/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/41043/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "41.7'",
+            "href": "/Browse/Trees/243554/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/243554/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "140.9'",
+          "164''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41043/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41043/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "140.9'",
+            "href": "/Browse/Trees/243551/Details"
+          },
+          {
+            "text": "164''",
+            "href": "/Browse/Trees/243552/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "89.8'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/41043/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/41043/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "89.8'",
+            "href": "/Browse/Trees/243553/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/243553/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 16.522, -082 42.670",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Transylvania"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

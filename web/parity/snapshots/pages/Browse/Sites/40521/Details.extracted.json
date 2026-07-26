@@ -1,0 +1,126 @@
+{
+  "siteId": 40521,
+  "summary": {
+    "Name": "Thickson's Woods",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "06/01/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "Owned by the Tickson's Woods Land Trust, Whitby, Ontario."
+  },
+  "visits": [
+    {
+      "visited": "06/01/2010",
+      "visitors": "Tom Howard and Jack Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Owned by the Tickson's Woods Land Trust, Whitby, Ontario."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "9.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40521/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40521/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "9.3'",
+            "href": "/Browse/Trees/233032/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "6.5'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40521/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40521/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "6.5'",
+            "href": "/Browse/Trees/233022/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/233031/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 51.230, -078 53.889",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private - Land Trust",
+      "County": "Regional Municipality Of Durham"
+    },
+    "state": {
+      "text": "Ontario (CA)",
+      "href": "/Browse/States/57/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

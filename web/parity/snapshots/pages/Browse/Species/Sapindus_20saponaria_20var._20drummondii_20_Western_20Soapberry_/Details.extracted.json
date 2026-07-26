@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Sapindus saponaria var. drummondii",
+  "commonName": "Western Soapberry",
+  "global": {
+    "maxHeight": {
+      "text": "56.9'",
+      "href": "/Browse/Trees/164191/Details"
+    },
+    "maxGirth": {
+      "text": "73''",
+      "href": "/Browse/Trees/164191/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "15.9'",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "15.9'",
+            "href": "/Browse/Trees/142568/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/142568/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "56.9'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "56.9'",
+            "href": "/Browse/Trees/164191/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/164191/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "botanicalName": "Tsuga caroliniana",
+  "commonName": "Carolina Hemlock",
+  "global": {
+    "maxHeight": {
+      "text": "109.5'",
+      "href": "/Browse/Trees/227272/Details"
+    },
+    "maxGirth": {
+      "text": "129''",
+      "href": "/Browse/Trees/227273/Details"
+    },
+    "maxCrownSpread": {
+      "text": "50.0'",
+      "href": "/Browse/Trees/227273/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "84.4'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "84.4'",
+            "href": "/Browse/Trees/226064/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/226025/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "109.5'",
+          "129''",
+          "50.0'"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "109.5'",
+            "href": "/Browse/Trees/227272/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/227273/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/227273/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "67.0'",
+          "50''",
+          "28.5'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "67.0'",
+            "href": "/Browse/Trees/33591/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/33591/Details"
+          },
+          {
+            "text": "28.5'",
+            "href": "/Browse/Trees/33591/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "40.0'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "40.0'",
+            "href": "/Browse/Trees/225111/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/225111/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "71.9'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "71.9'",
+            "href": "/Browse/Trees/281311/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/281310/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

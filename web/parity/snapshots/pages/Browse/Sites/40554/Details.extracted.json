@@ -1,0 +1,157 @@
+{
+  "siteId": 40554,
+  "summary": {
+    "Name": "Rhinelander",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "06/06/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "40 acre tract privately owned"
+  },
+  "visits": [
+    {
+      "visited": "06/06/2005",
+      "visitors": "Don Bragg",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/wisconsin/northern_adv/great_northern_adventure.htm",
+      "comments": "40 acre tract privately owned"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "78.8'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/40554/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/40554/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "78.8'",
+            "href": "/Browse/Trees/233341/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/233341/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "95.2'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/40554/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/40554/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "95.2'",
+            "href": "/Browse/Trees/233337/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/233335/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "99.6'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40554/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40554/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "99.6'",
+            "href": "/Browse/Trees/233328/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/233327/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 39.294, -089 28.461",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Oneida"
+    },
+    "state": {
+      "text": "Wisconsin (US)",
+      "href": "/Browse/States/46/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

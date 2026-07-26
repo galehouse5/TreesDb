@@ -1,0 +1,85 @@
+{
+  "stateId": 51,
+  "summary": {
+    "Name": "Manitoba",
+    "Code": "MB",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "0",
+    "Last measurement date": ""
+  },
+  "location": {
+    "Coordinates": "54 29.947, -095 29.952",
+    "Country": "Canada"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [],
+    "pageInfo": "No entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [],
+    "pageInfo": "No entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

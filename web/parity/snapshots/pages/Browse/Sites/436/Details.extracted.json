@@ -1,0 +1,101 @@
+{
+  "siteId": 436,
+  "summary": {
+    "Name": "Rumbarger Cemetary",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "08/13/2008",
+    "Ownership contact": "(private)",
+    "General comments": "In the 1890s, the DuBois Cemetery Association designed and developed a parcel of land in the Rumbarger settlement (now N. Main Street) for a cemetery to serve the early settlers. It was known as the \"DuBois Cemetery,\" but due to its location, was always referred to as Rumbarger Cemetery."
+  },
+  "visits": [
+    {
+      "visited": "08/13/2008",
+      "visitors": "Edward Frank",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/rumbarger/rumbarger.htm",
+      "comments": "In the 1890s, the DuBois Cemetery Association designed and developed a parcel of land in the Rumbarger settlement (now N. Main Street) for a cemetery to serve the early settlers. It was known as the \"DuBois Cemetery,\" but due to its location, was always referred to as Rumbarger Cemetery."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Thuja occidentalis",
+          "Arborvitae",
+          "47.0'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja occidentalis",
+            "href": "/Browse/Sites/436/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "Arborvitae",
+            "href": "/Browse/Sites/436/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "47.0'",
+            "href": "/Browse/Trees/2304/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/2304/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 06.931, -078 46.422",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private?",
+      "County": "Clearfield"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

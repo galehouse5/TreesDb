@@ -1,0 +1,151 @@
+{
+  "siteId": 42306,
+  "summary": {
+    "Name": "Wawona Rd.",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "07/15/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/15/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus ponderosa",
+          "Ponderosa Pine",
+          "74.67 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa",
+            "href": "/Browse/Sites/42306/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/42306/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "74.67 yd",
+            "href": "/Browse/Trees/318121/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "67.10 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/42306/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/42306/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "67.10 yd",
+            "href": "/Browse/Trees/318122/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus kelloggii",
+          "California Black Oak",
+          "25.57 yd",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus kelloggii",
+            "href": "/Browse/Sites/42306/Species/Quercus%20kelloggii%20(California%20Black%20Oak)/Details"
+          },
+          {
+            "text": "California Black Oak",
+            "href": "/Browse/Sites/42306/Species/Quercus%20kelloggii%20(California%20Black%20Oak)/Details"
+          },
+          {
+            "text": "25.57 yd",
+            "href": "/Browse/Trees/318123/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/318123/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "37 40.629, -119 42.378",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Mariposa"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

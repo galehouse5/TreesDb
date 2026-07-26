@@ -1,0 +1,557 @@
+{
+  "stateId": 35,
+  "summary": {
+    "Name": "Oregon",
+    "Code": "OR",
+    "RHI5": "269.12",
+    "RHI10": "233.67",
+    "RHI20": "(not enough data)",
+    "RGI5": "31.81",
+    "RGI10": "23.71",
+    "RGI20": "(not enough data)",
+    "Trees measured": "73",
+    "Last measurement date": "07/14/2024"
+  },
+  "location": {
+    "Coordinates": "44 08.727, -120 35.010",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies amabilis",
+          "Pacific Silver Fir",
+          "141.8'",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies amabilis",
+            "href": "/Browse/States/35/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "Pacific Silver Fir",
+            "href": "/Browse/States/35/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "141.8'",
+            "href": "/Browse/Trees/318021/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/318021/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies concolor var. lowiana x abies grandis",
+          "Hybrid Fir",
+          "206.9'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. lowiana x abies grandis",
+            "href": "/Browse/States/35/Species/Abies%20concolor%20var.%20lowiana%20x%20abies%20grandis%20(Hybrid%20Fir)/Details"
+          },
+          {
+            "text": "Hybrid Fir",
+            "href": "/Browse/States/35/Species/Abies%20concolor%20var.%20lowiana%20x%20abies%20grandis%20(Hybrid%20Fir)/Details"
+          },
+          {
+            "text": "206.9'",
+            "href": "/Browse/Trees/297902/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/297899/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies procera",
+          "Noble Fir",
+          "218.1'",
+          "206''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies procera",
+            "href": "/Browse/States/35/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "Noble Fir",
+            "href": "/Browse/States/35/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "218.1'",
+            "href": "/Browse/Trees/318020/Details"
+          },
+          {
+            "text": "206''",
+            "href": "/Browse/Trees/318020/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer macrophyllum",
+          "Bigleaf Maple",
+          "79.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer macrophyllum",
+            "href": "/Browse/States/35/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "Bigleaf Maple",
+            "href": "/Browse/States/35/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "79.1'",
+            "href": "/Browse/Trees/296858/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. interius",
+          "Boxelder",
+          "49.7'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. interius",
+            "href": "/Browse/States/35/Species/Acer%20negundo%20var.%20interius%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/35/Species/Acer%20negundo%20var.%20interius%20(Boxelder)/Details"
+          },
+          {
+            "text": "49.7'",
+            "href": "/Browse/Trees/281431/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/281431/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chamaecyparis lawsoniana",
+          "Port Orford Cedar",
+          "186.1'",
+          "252''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis lawsoniana",
+            "href": "/Browse/States/35/Species/Chamaecyparis%20lawsoniana%20(Port%20Orford%20Cedar)/Details"
+          },
+          {
+            "text": "Port Orford Cedar",
+            "href": "/Browse/States/35/Species/Chamaecyparis%20lawsoniana%20(Port%20Orford%20Cedar)/Details"
+          },
+          {
+            "text": "186.1'",
+            "href": "/Browse/Trees/297898/Details"
+          },
+          {
+            "text": "252''",
+            "href": "/Browse/Trees/297897/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus latifolia",
+          "Oregon Ash",
+          "91.7'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus latifolia",
+            "href": "/Browse/States/35/Species/Fraxinus%20latifolia%20(Oregon%20Ash)/Details"
+          },
+          {
+            "text": "Oregon Ash",
+            "href": "/Browse/States/35/Species/Fraxinus%20latifolia%20(Oregon%20Ash)/Details"
+          },
+          {
+            "text": "91.7'",
+            "href": "/Browse/Trees/296857/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/296857/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea sitchensis",
+          "Sitka Spruce",
+          "277.0'",
+          "504''",
+          "88.0'"
+        ],
+        "links": [
+          {
+            "text": "Picea sitchensis",
+            "href": "/Browse/States/35/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "Sitka Spruce",
+            "href": "/Browse/States/35/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "277.0'",
+            "href": "/Browse/Trees/239641/Details"
+          },
+          {
+            "text": "504''",
+            "href": "/Browse/Trees/269584/Details"
+          },
+          {
+            "text": "88.0'",
+            "href": "/Browse/Trees/269584/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "259.0'",
+          "290''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/States/35/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/States/35/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "259.0'",
+            "href": "/Browse/Trees/269595/Details"
+          },
+          {
+            "text": "290''",
+            "href": "/Browse/Trees/269592/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus monticola",
+          "Western White Pine",
+          "202.1'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus monticola",
+            "href": "/Browse/States/35/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "Western White Pine",
+            "href": "/Browse/States/35/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "202.1'",
+            "href": "/Browse/Trees/318015/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/318014/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 17 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Bureau Of Land Management-Coos County",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bureau Of Land Management-Coos County",
+            "href": "/Browse/Sites/41696/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hardesty Mt. Trail",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hardesty Mt. Trail",
+            "href": "/Browse/Sites/42292/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lapine State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lapine State Park",
+            "href": "/Browse/Sites/40881/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lost Lake Resort",
+          "191.72",
+          "-",
+          "15.36",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lost Lake Resort",
+            "href": "/Browse/Sites/42293/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mt. Pisgah Arboretum",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mt. Pisgah Arboretum",
+            "href": "/Browse/Sites/42074/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Munson Creek Falls State Natural Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Munson Creek Falls State Natural Area",
+            "href": "/Browse/Sites/40882/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Odell Lake",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Odell Lake",
+            "href": "/Browse/Sites/42291/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oregon Caves National Monument & Preserve",
+          "210.10",
+          "-",
+          "18.70",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon Caves National Monument & Preserve",
+            "href": "/Browse/Sites/42095/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oregon Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon Single Tree Sites",
+            "href": "/Browse/Sites/41897/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oswald West State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oswald West State Park",
+            "href": "/Browse/Sites/41702/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

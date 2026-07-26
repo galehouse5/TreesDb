@@ -1,0 +1,201 @@
+{
+  "siteId": 42355,
+  "summary": {
+    "Name": "Vicente Flat Trail",
+    "RHI5": "151.92",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "1.32",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "01/19/2025",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/19/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Eucalyptus globulus ssp. globulus",
+          "Tasmanian Bluegum",
+          "151.0'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Eucalyptus globulus ssp. globulus",
+            "href": "/Browse/Sites/42355/Species/Eucalyptus%20globulus%20ssp.%20globulus%20(Tasmanian%20Bluegum)/Details"
+          },
+          {
+            "text": "Tasmanian Bluegum",
+            "href": "/Browse/Sites/42355/Species/Eucalyptus%20globulus%20ssp.%20globulus%20(Tasmanian%20Bluegum)/Details"
+          },
+          {
+            "text": "151.0'",
+            "href": "/Browse/Trees/320743/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/320743/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lithocarpus densiflorus var. densiflorus",
+          "Tanoak",
+          "124.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lithocarpus densiflorus var. densiflorus",
+            "href": "/Browse/Sites/42355/Species/Lithocarpus%20densiflorus%20var.%20densiflorus%20(Tanoak)/Details"
+          },
+          {
+            "text": "Tanoak",
+            "href": "/Browse/Sites/42355/Species/Lithocarpus%20densiflorus%20var.%20densiflorus%20(Tanoak)/Details"
+          },
+          {
+            "text": "124.0'",
+            "href": "/Browse/Trees/320744/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus attenuata",
+          "Knobcone Pine",
+          "108.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus attenuata",
+            "href": "/Browse/Sites/42355/Species/Pinus%20attenuata%20(Knobcone%20Pine)/Details"
+          },
+          {
+            "text": "Knobcone Pine",
+            "href": "/Browse/Sites/42355/Species/Pinus%20attenuata%20(Knobcone%20Pine)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/320750/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "142.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/42355/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/42355/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "142.3'",
+            "href": "/Browse/Trees/320748/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sequoia sempervirens",
+          "Redwood",
+          "234.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sequoia sempervirens",
+            "href": "/Browse/Sites/42355/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+          },
+          {
+            "text": "Redwood",
+            "href": "/Browse/Sites/42355/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+          },
+          {
+            "text": "234.3'",
+            "href": "/Browse/Trees/320747/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 00.884, -121 29.871",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Monterey"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

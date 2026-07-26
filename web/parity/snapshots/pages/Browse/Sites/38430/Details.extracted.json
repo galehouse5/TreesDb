@@ -1,0 +1,101 @@
+{
+  "siteId": 38430,
+  "summary": {
+    "Name": "Talleyrand Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "10/04/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/04/2007",
+      "visitors": "Edward Frank",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Salix alba",
+          "White Willow",
+          "72.0'",
+          "244''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix alba",
+            "href": "/Browse/Sites/38430/Species/Salix%20alba%20(White%20Willow)/Details"
+          },
+          {
+            "text": "White Willow",
+            "href": "/Browse/Sites/38430/Species/Salix%20alba%20(White%20Willow)/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/139469/Details"
+          },
+          {
+            "text": "244''",
+            "href": "/Browse/Trees/139462/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 54.670, -077 46.872",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Centre"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

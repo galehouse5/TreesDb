@@ -1,0 +1,101 @@
+{
+  "siteId": 41646,
+  "summary": {
+    "Name": "Shasta-Trinity National Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "06/19/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "2,209,832 acres located in Trinity, Shasta, Siskiyou, Tehare, Madoc, Humboldt Counties."
+  },
+  "visits": [
+    {
+      "visited": "06/19/2014",
+      "visitors": "Michael Taylor and John Montague",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "2,209,832 acres located in Trinity, Shasta, Siskiyou, Tehare, Madoc, Humboldt Counties."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus ponderosa var. benthamiana",
+          "Ponderosa Pine",
+          "260.5'",
+          "192''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. benthamiana",
+            "href": "/Browse/Sites/41646/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/41646/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "260.5'",
+            "href": "/Browse/Trees/268980/Details"
+          },
+          {
+            "text": "192''",
+            "href": "/Browse/Trees/268980/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 08.236, -122 12.743",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Siskiyou"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

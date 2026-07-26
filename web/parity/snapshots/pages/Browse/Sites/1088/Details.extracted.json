@@ -1,0 +1,176 @@
+{
+  "siteId": 1088,
+  "summary": {
+    "Name": "Erie Canal Towpath Trail",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "02/26/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/26/2012",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "100.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/1088/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/1088/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "100.6'",
+            "href": "/Browse/Trees/20441/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "112.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/1088/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/1088/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "112.1'",
+            "href": "/Browse/Trees/20442/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "111.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/1088/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/1088/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/20444/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "111.1'",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/1088/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/1088/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "111.1'",
+            "href": "/Browse/Trees/20440/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/20440/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "43 03.630, -076 31.184",
+    "coordinatesKind": "calculated",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Cayuga, Onondaga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

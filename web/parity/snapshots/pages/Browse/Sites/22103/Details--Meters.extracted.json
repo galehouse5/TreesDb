@@ -1,0 +1,303 @@
+{
+  "siteId": 22103,
+  "summary": {
+    "Name": "Salmon River Corridor - Corn Creek To Carey Creek",
+    "RHI5": "31.279",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.718",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "38",
+    "Last measurement date": "08/09/2013",
+    "Ownership contact": "Salmon - Challis National Forest, 1206 South Challis Street, Salmon, ID 83467",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/09/2013",
+      "visitors": "Turner Sharp and Nancy Ward",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "08/24/2010",
+      "visitors": "Turner Sharp and John Fichtner",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies grandis",
+          "Grand Fir",
+          "35.33 m",
+          "119 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis",
+            "href": "/Browse/Sites/22103/Species/Abies%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/Sites/22103/Species/Abies%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "35.33 m",
+            "href": "/Browse/Trees/78311/Details"
+          },
+          {
+            "text": "119 cm",
+            "href": "/Browse/Trees/78310/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus rhombifolia",
+          "White Alder",
+          "19.66 m",
+          "201 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus rhombifolia",
+            "href": "/Browse/Sites/22103/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+          },
+          {
+            "text": "White Alder",
+            "href": "/Browse/Sites/22103/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+          },
+          {
+            "text": "19.66 m",
+            "href": "/Browse/Trees/78321/Details"
+          },
+          {
+            "text": "201 cm",
+            "href": "/Browse/Trees/78322/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. reticulata",
+          "Netleaf Hackberry",
+          "10.85 m",
+          "170 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. reticulata",
+            "href": "/Browse/Sites/22103/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "Netleaf Hackberry",
+            "href": "/Browse/Sites/22103/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "10.85 m",
+            "href": "/Browse/Trees/78331/Details"
+          },
+          {
+            "text": "170 cm",
+            "href": "/Browse/Trees/78331/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercocarpus ledifolius",
+          "Curl-Leaf Mountain Mahogany",
+          "6.13 m",
+          "97 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercocarpus ledifolius",
+            "href": "/Browse/Sites/22103/Species/Cercocarpus%20ledifolius%20(Curl-Leaf%20Mountain%20Mahogany)/Details"
+          },
+          {
+            "text": "Curl-Leaf Mountain Mahogany",
+            "href": "/Browse/Sites/22103/Species/Cercocarpus%20ledifolius%20(Curl-Leaf%20Mountain%20Mahogany)/Details"
+          },
+          {
+            "text": "6.13 m",
+            "href": "/Browse/Trees/78326/Details"
+          },
+          {
+            "text": "97 cm",
+            "href": "/Browse/Trees/78326/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans regia",
+          "English Walnut",
+          "-",
+          "191 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans regia",
+            "href": "/Browse/Sites/22103/Species/Juglans%20regia%20(English%20Walnut)/Details"
+          },
+          {
+            "text": "English Walnut",
+            "href": "/Browse/Sites/22103/Species/Juglans%20regia%20(English%20Walnut)/Details"
+          },
+          null,
+          {
+            "text": "191 cm",
+            "href": "/Browse/Trees/76374/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. ponderosa",
+          "Ponderosa Pine",
+          "49.68 m",
+          "384 cm",
+          "14.63 m"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. ponderosa",
+            "href": "/Browse/Sites/22103/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/22103/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "49.68 m",
+            "href": "/Browse/Trees/78314/Details"
+          },
+          {
+            "text": "384 cm",
+            "href": "/Browse/Trees/78329/Details"
+          },
+          {
+            "text": "14.63 m",
+            "href": "/Browse/Trees/78329/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "40.87 m",
+          "414 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/22103/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/22103/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "40.87 m",
+            "href": "/Browse/Trees/78312/Details"
+          },
+          {
+            "text": "414 cm",
+            "href": "/Browse/Trees/78333/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sambucus nigra ssp. cerulea",
+          "Blue Elderberry",
+          "7.56 m",
+          "76 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sambucus nigra ssp. cerulea",
+            "href": "/Browse/Sites/22103/Species/Sambucus%20nigra%20ssp.%20cerulea%20(Blue%20Elderberry)/Details"
+          },
+          {
+            "text": "Blue Elderberry",
+            "href": "/Browse/Sites/22103/Species/Sambucus%20nigra%20ssp.%20cerulea%20(Blue%20Elderberry)/Details"
+          },
+          {
+            "text": "7.56 m",
+            "href": "/Browse/Trees/76272/Details"
+          },
+          {
+            "text": "76 cm",
+            "href": "/Browse/Trees/78323/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 22.198, -114 41.262",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Forest",
+      "County": "Lemhi"
+    },
+    "state": {
+      "text": "Idaho (US)",
+      "href": "/Browse/States/11/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

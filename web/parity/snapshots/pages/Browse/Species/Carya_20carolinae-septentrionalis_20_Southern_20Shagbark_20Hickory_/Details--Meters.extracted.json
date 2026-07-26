@@ -1,0 +1,139 @@
+{
+  "botanicalName": "Carya carolinae-septentrionalis",
+  "commonName": "Southern Shagbark Hickory",
+  "global": {
+    "maxHeight": {
+      "text": "34.87 m",
+      "href": "/Browse/Trees/40816/Details"
+    },
+    "maxGirth": {
+      "text": "280 cm",
+      "href": "/Browse/Trees/255923/Details"
+    },
+    "maxCrownSpread": {
+      "text": "20.12 m",
+      "href": "/Browse/Trees/255923/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "29.05 m",
+          "237 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "29.05 m",
+            "href": "/Browse/Trees/226055/Details"
+          },
+          {
+            "text": "237 cm",
+            "href": "/Browse/Trees/226055/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "34.87 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "34.87 m",
+            "href": "/Browse/Trees/40816/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "29.23 m",
+          "280 cm",
+          "20.12 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "29.23 m",
+            "href": "/Browse/Trees/255923/Details"
+          },
+          {
+            "text": "280 cm",
+            "href": "/Browse/Trees/255923/Details"
+          },
+          {
+            "text": "20.12 m",
+            "href": "/Browse/Trees/255923/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "34.50 m",
+          "212 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "34.50 m",
+            "href": "/Browse/Trees/282365/Details"
+          },
+          {
+            "text": "212 cm",
+            "href": "/Browse/Trees/282363/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

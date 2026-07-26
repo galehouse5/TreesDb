@@ -1,0 +1,32 @@
+<!-- Hand-built from TMD/Views/Browse/GlobalSpeciesGridPartial.cshtml as returned for an AJAX request -->
+<div class='dataTablesGrid'>
+  <form method='get' action='/Browse/Species' class='form'>
+    <table cellspacing='0' cellpadding='0' border='0' class='display'>
+      <thead>
+        <tr>
+          <th class='sortable '><a href='/Browse/Species?sort=BotanicalName'><span>Botanical name</span></a></th>
+          <th class='sortable '><a href='/Browse/Species?sort=CommonName'><span>Common name</span></a></th>
+          <th class='sortable '><a href='/Browse/Species?sort=MaxHeight'><span>Max height</span></a></th>
+        </tr>
+        <tr class='filters'>
+          <th class='field'><input type='text' name='BotanicalNameFilter' value='' title='Search botanical names' placeholder='Search botanical names'/></th>
+          <th class='field'><input type='text' name='CommonNameFilter' value='' title='Search common names' placeholder='Search common names'/></th>
+          <th class='field'></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class='odd'>
+          <td><a href="/Browse/Species/Quercus alba (White Oak)/Details">Quercus alba</a></td>
+          <td><a href="/Browse/Species/Quercus alba (White Oak)/Details">White Oak</a></td>
+          <td><a href="/Browse/Trees/4242/Details">123.5'</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <input type='submit' style='position: absolute; left: -9999px;' />
+  </form>
+  <div class='dataTables_info'>Showing 1 to 1 of 1 entries</div>
+  <div class='dataTables_paginate paging_two_button'>
+    <div class='paginate_disabled_previous' title='Previous'></div>
+    <div class='paginate_disabled_next' title='Next' title='Next'></div>
+  </div>
+</div>

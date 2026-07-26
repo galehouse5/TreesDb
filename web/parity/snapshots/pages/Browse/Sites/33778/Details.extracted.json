@@ -1,0 +1,129 @@
+{
+  "siteId": 33778,
+  "summary": {
+    "Name": "Willard Memorial Chapel, 17 Nelson St. Auburn, NY",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "05/20/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/20/2012",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "63.8'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/33778/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/33778/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "63.8'",
+            "href": "/Browse/Trees/113296/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/113296/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus macrocarpa",
+          "Bur Oak",
+          "74.7'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa",
+            "href": "/Browse/Sites/33778/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/33778/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "74.7'",
+            "href": "/Browse/Trees/113297/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/113297/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "42 56.209, -076 33.832",
+    "coordinatesKind": "calculated",
+    "rows": {
+      "Ownership type": "Community organization/Unknown",
+      "County": "Cayuga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

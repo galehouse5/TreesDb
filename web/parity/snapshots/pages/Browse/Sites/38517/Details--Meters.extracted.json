@@ -1,0 +1,101 @@
+{
+  "siteId": 38517,
+  "summary": {
+    "Name": "Superior Municipl Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "11/25/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/25/2013",
+      "visitors": "Larry Tucei",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea mariana var. mariana",
+          "Black Spruce",
+          "30.78 m",
+          "183 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana var. mariana",
+            "href": "/Browse/Sites/38517/Species/Picea%20mariana%20var.%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/Sites/38517/Species/Picea%20mariana%20var.%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "30.78 m",
+            "href": "/Browse/Trees/143244/Details"
+          },
+          {
+            "text": "183 cm",
+            "href": "/Browse/Trees/143244/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "46 40.074, -092 07.492",
+    "coordinatesKind": "calculated",
+    "rows": {
+      "Ownership type": "County",
+      "County": "UA"
+    },
+    "state": {
+      "text": "Wisconsin (US)",
+      "href": "/Browse/States/46/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

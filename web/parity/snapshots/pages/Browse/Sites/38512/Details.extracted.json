@@ -1,0 +1,353 @@
+{
+  "siteId": 38512,
+  "summary": {
+    "Name": "Pennypack Park",
+    "RHI5": "140.08",
+    "RHI10": "133.07",
+    "RHI20": "122.57",
+    "RGI5": "15.80",
+    "RGI10": "14.08",
+    "RGI20": "11.80",
+    "Trees measured": "53",
+    "Last measurement date": "12/28/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/28/2009",
+      "visitors": "George Fieo",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "76.8'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/Sites/38512/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/38512/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "76.8'",
+            "href": "/Browse/Trees/143068/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/143068/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "113.5'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38512/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38512/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "113.5'",
+            "href": "/Browse/Trees/143085/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/143084/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "111.6'",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/38512/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/38512/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "111.6'",
+            "href": "/Browse/Trees/143090/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/143089/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "90.5'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/38512/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38512/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "90.5'",
+            "href": "/Browse/Trees/143092/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/143091/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "134.1'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/38512/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/38512/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "134.1'",
+            "href": "/Browse/Trees/143057/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/143056/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "134.3'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/38512/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/38512/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "134.3'",
+            "href": "/Browse/Trees/143077/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/143076/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "123.7'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/38512/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/38512/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "123.7'",
+            "href": "/Browse/Trees/143088/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/143088/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "40.1'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/38512/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/38512/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "40.1'",
+            "href": "/Browse/Trees/143073/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/143072/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "74.3'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/38512/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/38512/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "74.3'",
+            "href": "/Browse/Trees/143075/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/143074/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "123.5'",
+          "144''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38512/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38512/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "123.5'",
+            "href": "/Browse/Trees/143055/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/143054/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 24 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "(no data)",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "City",
+      "County": "Philadelphia"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

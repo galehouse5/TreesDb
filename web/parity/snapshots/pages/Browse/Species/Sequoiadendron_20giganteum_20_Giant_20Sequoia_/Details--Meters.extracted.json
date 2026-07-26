@@ -1,0 +1,119 @@
+{
+  "botanicalName": "Sequoiadendron giganteum",
+  "commonName": "Giant Sequoia",
+  "global": {
+    "maxHeight": {
+      "text": "86.81 m",
+      "href": "/Browse/Trees/318133/Details"
+    },
+    "maxGirth": {
+      "text": "2537 cm",
+      "href": "/Browse/Trees/268678/Details"
+    },
+    "maxCrownSpread": {
+      "text": "10.06 m",
+      "href": "/Browse/Trees/255969/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "86.81 m",
+          "2537 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "86.81 m",
+            "href": "/Browse/Trees/318133/Details"
+          },
+          {
+            "text": "2537 cm",
+            "href": "/Browse/Trees/268678/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "31.06 m",
+          "323 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "31.06 m",
+            "href": "/Browse/Trees/189036/Details"
+          },
+          {
+            "text": "323 cm",
+            "href": "/Browse/Trees/189036/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "29.08 m",
+          "405 cm",
+          "10.06 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "29.08 m",
+            "href": "/Browse/Trees/135643/Details"
+          },
+          {
+            "text": "405 cm",
+            "href": "/Browse/Trees/255969/Details"
+          },
+          {
+            "text": "10.06 m",
+            "href": "/Browse/Trees/255969/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

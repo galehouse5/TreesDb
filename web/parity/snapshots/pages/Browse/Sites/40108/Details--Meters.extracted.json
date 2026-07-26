@@ -1,0 +1,347 @@
+{
+  "siteId": 40108,
+  "summary": {
+    "Name": "Oakwood Cemetery",
+    "RHI5": "28.578",
+    "RHI10": "25.743",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.628",
+    "RGI10": "1.616",
+    "RGI20": "(not enough data)",
+    "Trees measured": "14",
+    "Last measurement date": "11/15/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/15/2020",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "31.03 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40108/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40108/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "31.03 m",
+            "href": "/Browse/Trees/220494/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "29.05 m",
+          "178 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/40108/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/40108/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "29.05 m",
+            "href": "/Browse/Trees/220493/Details"
+          },
+          {
+            "text": "178 cm",
+            "href": "/Browse/Trees/220493/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cladrastis kentukea",
+          "Kentucky Yellowwood",
+          "15.12 m",
+          "124 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cladrastis kentukea",
+            "href": "/Browse/Sites/40108/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "Kentucky Yellowwood",
+            "href": "/Browse/Sites/40108/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "15.12 m",
+            "href": "/Browse/Trees/220499/Details"
+          },
+          {
+            "text": "124 cm",
+            "href": "/Browse/Trees/220499/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "26.30 m",
+          "191 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/40108/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/40108/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "26.30 m",
+            "href": "/Browse/Trees/220490/Details"
+          },
+          {
+            "text": "191 cm",
+            "href": "/Browse/Trees/220490/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "27.43 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40108/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40108/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "27.43 m",
+            "href": "/Browse/Trees/220491/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "28.10 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40108/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40108/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "28.10 m",
+            "href": "/Browse/Trees/220489/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus imbricaria",
+          "Shingle Oak",
+          "22.68 m",
+          "292 cm",
+          "20.42 m"
+        ],
+        "links": [
+          {
+            "text": "Quercus imbricaria",
+            "href": "/Browse/Sites/40108/Species/Quercus%20imbricaria%20(Shingle%20Oak)/Details"
+          },
+          {
+            "text": "Shingle Oak",
+            "href": "/Browse/Sites/40108/Species/Quercus%20imbricaria%20(Shingle%20Oak)/Details"
+          },
+          {
+            "text": "22.68 m",
+            "href": "/Browse/Trees/220495/Details"
+          },
+          {
+            "text": "292 cm",
+            "href": "/Browse/Trees/220495/Details"
+          },
+          {
+            "text": "20.42 m",
+            "href": "/Browse/Trees/220495/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus palustris",
+          "Pin Oak",
+          "25.15 m",
+          "351 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus palustris",
+            "href": "/Browse/Sites/40108/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "Pin Oak",
+            "href": "/Browse/Sites/40108/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "25.15 m",
+            "href": "/Browse/Trees/220496/Details"
+          },
+          {
+            "text": "351 cm",
+            "href": "/Browse/Trees/220496/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "27.28 m",
+          "280 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/40108/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/40108/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "27.28 m",
+            "href": "/Browse/Trees/220487/Details"
+          },
+          {
+            "text": "280 cm",
+            "href": "/Browse/Trees/220487/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "25.30 m",
+          "201 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40108/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40108/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "25.30 m",
+            "href": "/Browse/Trees/220500/Details"
+          },
+          {
+            "text": "201 cm",
+            "href": "/Browse/Trees/220500/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 01.802, -076 08.213",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Onondaga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 2372,
+  "botanicalName": {
+    "text": "Acer rubrum",
+    "href": "/Browse/Sites/442/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+  },
+  "commonName": {
+    "text": "Red Maple",
+    "href": "/Browse/Sites/442/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+  },
+  "details": {
+    "Height": "103.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "80''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "45.78",
+    "ENTSPTS": "686.67",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.03",
+    "Champion points (abbreviated)": "183.00",
+    "Diameter": "25''",
+    "Conical volume": "121.4 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/03/2011",
+      "summary": {
+        "Height": "103.0'",
+        "Girth": "80''"
+      },
+      "details": {
+        "Botanical name": "Acer rubrum",
+        "Common name": "Red Maple",
+        "Height": "103.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "80''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "45.78",
+        "ENTSPTS": "686.67",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.03",
+        "Champion points (abbreviated)": "183.00",
+        "Diameter": "25''",
+        "Conical volume": "121.4 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Steve Galehouse"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 13.076, -081 42.254",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Whipp's Ledges",
+      "href": "/Browse/Sites/442/Details"
+    },
+    "rows": {
+      "Ownership type": "Park",
+      "County": "Medina"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

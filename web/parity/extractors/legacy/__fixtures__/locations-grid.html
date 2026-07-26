@@ -1,0 +1,43 @@
+<!-- Hand-built from TMD/Views/Browse/LocationsGridPartial.cshtml as returned for an AJAX request
+     (bare fragment - TMD/Extensions/DataTablesGrid.cs DataTablesGridExtensions.DataTablesGrid),
+     including the filter row emitted when any column CanFilter. -->
+<div class='dataTablesGrid'>
+  <form method='get' action='/Browse/Locations' class='form'>
+    <table cellspacing='0' cellpadding='0' border='0' class='display'>
+      <thead>
+        <tr>
+          <th class='sortable '><a href='/Browse/Locations?sort=Site'><span>Site</span></a></th>
+          <th class='sortable '><a href='/Browse/Locations?sort=County'><span>County</span></a></th>
+          <th class='sortable sorting_asc'><a href='/Browse/Locations?sort=State'><span>State</span></a></th>
+          <th>RHI5</th>
+        </tr>
+        <tr class='filters'>
+          <th class='field'><input type='text' name='SiteFilter' value='' title='Search sites' placeholder='Search sites'/></th>
+          <th class='field'><input type='text' name='CountyFilter' value='' title='Search county' placeholder='Search county'/></th>
+          <th class='field'><input type='text' name='StateFilter' value='' title='Search states' placeholder='Search states'/></th>
+          <th class='field'></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class='odd'>
+          <td><a href="/Browse/Sites/17/Details">Old Growth Preserve</a></td>
+          <td>Hamilton</td>
+          <td><a href="/Browse/States/5/Details">Ohio</a></td>
+          <td>134.82</td>
+        </tr>
+        <tr class='even'>
+          <td><a href="/Browse/Sites/18/Details">Riverside Park</a></td>
+          <td>Butler</td>
+          <td><a href="/Browse/States/5/Details">Ohio</a></td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    <input type='submit' style='position: absolute; left: -9999px;' />
+  </form>
+  <div class='dataTables_info'>Showing 1 to 2 of 213 entries</div>
+  <div class='dataTables_paginate paging_two_button'>
+    <div class='paginate_disabled_previous' title='Previous'></div>
+    <a href='/Browse/Locations?page=1' class='paginate_enabled_next' title='Next'></a>
+  </div>
+</div>

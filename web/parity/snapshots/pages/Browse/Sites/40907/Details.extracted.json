@@ -1,0 +1,157 @@
+{
+  "siteId": 40907,
+  "summary": {
+    "Name": "Minnesota Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "67.0'",
+          "143''",
+          "67.0'"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/40907/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/40907/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "67.0'",
+            "href": "/Browse/Trees/239943/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/239943/Details"
+          },
+          {
+            "text": "67.0'",
+            "href": "/Browse/Trees/239943/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "85.0'",
+          "277''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/40907/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/40907/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/239941/Details"
+          },
+          {
+            "text": "277''",
+            "href": "/Browse/Trees/239941/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus macrocarpa",
+          "Bur Oak",
+          "-",
+          "239''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa",
+            "href": "/Browse/Sites/40907/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/40907/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "239''",
+            "href": "/Browse/Trees/239942/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 57.309, -093 06.134",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public, Private",
+      "County": "Ramsey"
+    },
+    "state": {
+      "text": "Minnesota (US)",
+      "href": "/Browse/States/21/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

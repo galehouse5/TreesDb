@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Pinus elliottii",
+  "commonName": "Slash Pine",
+  "global": {
+    "maxHeight": {
+      "text": "137.2'",
+      "href": "/Browse/Trees/323409/Details"
+    },
+    "maxGirth": {
+      "text": "81''",
+      "href": "/Browse/Trees/323410/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Florida",
+          "137.2'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "137.2'",
+            "href": "/Browse/Trees/323409/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/323410/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

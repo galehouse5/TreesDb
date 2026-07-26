@@ -1,0 +1,106 @@
+{
+  "botanicalName": "Cephalanthus occidentalis",
+  "commonName": "Common Buttonbush",
+  "global": {
+    "maxHeight": {
+      "text": "13.7'",
+      "href": "/Browse/Trees/272729/Details"
+    },
+    "maxGirth": {
+      "text": "24''",
+      "href": "/Browse/Trees/234761/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "-",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          null,
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/234761/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "9.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "9.0'",
+            "href": "/Browse/Trees/220887/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "13.7'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "13.7'",
+            "href": "/Browse/Trees/272729/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/272729/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

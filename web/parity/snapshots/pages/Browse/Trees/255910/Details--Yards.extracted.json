@@ -1,0 +1,71 @@
+{
+  "treeId": 255910,
+  "botanicalName": {
+    "text": "Platanus occidentalis",
+    "href": "/Browse/Sites/41283/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+  },
+  "commonName": {
+    "text": "American Sycamore",
+    "href": "/Browse/Sites/41283/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+  },
+  "details": {
+    "Height": "31.13 yd",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "330''",
+    "Crown spread": "44.83 yd",
+    "ENTSPTS2": "706.34",
+    "ENTSPTS": "2568.50",
+    "TDI3": "2.36",
+    "TDI2": "1.56",
+    "Champion points": "457.03",
+    "Diameter": "105''",
+    "Conical volume": "69.39 yd³",
+    "General comments": "Measured by S. Wade 4/23/2007. Located in Winfield, Union County near intersection of routes 15 and 304"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/01/2000",
+      "summary": {
+        "Height": "31.13 yd",
+        "Girth": "330''",
+        "Crown spread": "44.83 yd"
+      },
+      "details": {
+        "Botanical name": "Platanus occidentalis",
+        "Common name": "American Sycamore",
+        "Height": "31.13 yd",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "330''",
+        "Crown spread": "44.83 yd",
+        "ENTSPTS2": "706.34",
+        "ENTSPTS": "2568.50",
+        "TDI3": "2.36",
+        "TDI2": "1.56",
+        "Champion points": "457.03",
+        "Diameter": "105''",
+        "Conical volume": "69.39 yd³",
+        "General comments": "Measured by S. Wade 4/23/2007. Located in Winfield, Union County near intersection of routes 15 and 304"
+      },
+      "measurers": "Various Various"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 54.632, -076 51.276",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Pennsylvania Single Tree Sites",
+      "href": "/Browse/Sites/41283/Details"
+    },
+    "rows": {
+      "Ownership type": "Public, Private",
+      "County": "Various Counties"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

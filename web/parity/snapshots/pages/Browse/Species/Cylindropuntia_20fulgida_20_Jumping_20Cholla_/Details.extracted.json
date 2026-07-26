@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Cylindropuntia fulgida",
+  "commonName": "Jumping Cholla",
+  "global": {
+    "maxHeight": {
+      "text": "9.1'",
+      "href": "/Browse/Trees/159296/Details"
+    },
+    "maxGirth": {
+      "text": "19''",
+      "href": "/Browse/Trees/159296/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "9.1'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "9.1'",
+            "href": "/Browse/Trees/159296/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/159296/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

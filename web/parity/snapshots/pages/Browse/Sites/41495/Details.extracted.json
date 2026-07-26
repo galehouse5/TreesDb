@@ -1,0 +1,359 @@
+{
+  "siteId": 41495,
+  "summary": {
+    "Name": "Canadaway Creek",
+    "RHI5": "124.56",
+    "RHI10": "118.47",
+    "RHI20": "112.17",
+    "RGI5": "12.42",
+    "RGI10": "11.23",
+    "RGI20": "9.44",
+    "Trees measured": "146",
+    "Last measurement date": "01/17/2019",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/17/2019",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/29/2018",
+      "visitors": "Erik Danieldon",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php?f=105&t=8263&sid=68747d454493bd381f5df9a3e6890126&start=10#p43024",
+      "comments": "Trees measured on the Outlet Floodplain."
+    },
+    {
+      "visited": "02/18/2016",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "57.5'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/Sites/41495/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/41495/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "57.5'",
+            "href": "/Browse/Trees/262238/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/262239/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "84.5'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/Sites/41495/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/Sites/41495/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "84.5'",
+            "href": "/Browse/Trees/262270/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/262271/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "117.6'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41495/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41495/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "117.6'",
+            "href": "/Browse/Trees/263209/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/263209/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "92.5'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/41495/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/41495/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "92.5'",
+            "href": "/Browse/Trees/262229/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/262229/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "111.3'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/41495/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41495/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "111.3'",
+            "href": "/Browse/Trees/263211/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/263211/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "85.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/41495/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/41495/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "85.8'",
+            "href": "/Browse/Trees/263223/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana",
+          "American Hornbeam",
+          "47.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana",
+            "href": "/Browse/Sites/41495/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/41495/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "47.7'",
+            "href": "/Browse/Trees/263252/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "128.4'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/41495/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/41495/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "128.4'",
+            "href": "/Browse/Trees/263224/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/263224/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "107.4'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/41495/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/41495/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "107.4'",
+            "href": "/Browse/Trees/263215/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/263215/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "115.2'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41495/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41495/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "115.2'",
+            "href": "/Browse/Trees/263210/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/263254/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 30 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 24.942, -079 18.339",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Chautauqua"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,383 @@
+{
+  "siteId": 39829,
+  "summary": {
+    "Name": "City Park",
+    "RHI5": "26.676",
+    "RHI10": "25.024",
+    "RHI20": "22.010",
+    "RGI5": "3.594",
+    "RGI10": "3.105",
+    "RGI20": "2.536",
+    "Trees measured": "67",
+    "Last measurement date": "03/30/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/30/2020",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/13/2018",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "01/04/2014",
+      "visitors": "Turner Sharp and Sarah Friend",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/15/2009",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer ×freemanii",
+          "Freeman Maple",
+          "13.93 m",
+          "92 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer ×freemanii",
+            "href": "/Browse/Sites/39829/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "Freeman Maple",
+            "href": "/Browse/Sites/39829/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "13.93 m",
+            "href": "/Browse/Trees/271878/Details"
+          },
+          {
+            "text": "92 cm",
+            "href": "/Browse/Trees/271878/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "11.28 m",
+          "318 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/Sites/39829/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/39829/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "11.28 m",
+            "href": "/Browse/Trees/203674/Details"
+          },
+          {
+            "text": "318 cm",
+            "href": "/Browse/Trees/203674/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "13.38 m",
+          "184 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/Sites/39829/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/Sites/39829/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "13.38 m",
+            "href": "/Browse/Trees/271893/Details"
+          },
+          {
+            "text": "184 cm",
+            "href": "/Browse/Trees/271893/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer palmatum",
+          "Japanese Maple",
+          "8.69 m",
+          "105 cm",
+          "6.71 m"
+        ],
+        "links": [
+          {
+            "text": "Acer palmatum",
+            "href": "/Browse/Sites/39829/Species/Acer%20palmatum%20(Japanese%20Maple)/Details"
+          },
+          {
+            "text": "Japanese Maple",
+            "href": "/Browse/Sites/39829/Species/Acer%20palmatum%20(Japanese%20Maple)/Details"
+          },
+          {
+            "text": "8.69 m",
+            "href": "/Browse/Trees/203686/Details"
+          },
+          {
+            "text": "105 cm",
+            "href": "/Browse/Trees/203686/Details"
+          },
+          {
+            "text": "6.71 m",
+            "href": "/Browse/Trees/203686/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "15.76 m",
+          "196 cm",
+          "18.59 m"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/39829/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/39829/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "15.76 m",
+            "href": "/Browse/Trees/271882/Details"
+          },
+          {
+            "text": "196 cm",
+            "href": "/Browse/Trees/271882/Details"
+          },
+          {
+            "text": "18.59 m",
+            "href": "/Browse/Trees/271882/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "21.46 m",
+          "176 cm",
+          "11.28 m"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/39829/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/39829/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "21.46 m",
+            "href": "/Browse/Trees/271888/Details"
+          },
+          {
+            "text": "176 cm",
+            "href": "/Browse/Trees/271888/Details"
+          },
+          {
+            "text": "11.28 m",
+            "href": "/Browse/Trees/271892/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "17.25 m",
+          "86 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/39829/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/39829/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "17.25 m",
+            "href": "/Browse/Trees/271894/Details"
+          },
+          {
+            "text": "86 cm",
+            "href": "/Browse/Trees/271894/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa bignonioides",
+          "Southern Catalpa",
+          "9.17 m",
+          "162 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catalpa bignonioides",
+            "href": "/Browse/Sites/39829/Species/Catalpa%20bignonioides%20(Southern%20Catalpa)/Details"
+          },
+          {
+            "text": "Southern Catalpa",
+            "href": "/Browse/Sites/39829/Species/Catalpa%20bignonioides%20(Southern%20Catalpa)/Details"
+          },
+          {
+            "text": "9.17 m",
+            "href": "/Browse/Trees/271889/Details"
+          },
+          {
+            "text": "162 cm",
+            "href": "/Browse/Trees/271889/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa speciosa",
+          "Northern Catalpa",
+          "17.07 m",
+          "251 cm",
+          "12.80 m"
+        ],
+        "links": [
+          {
+            "text": "Catalpa speciosa",
+            "href": "/Browse/Sites/39829/Species/Catalpa%20speciosa%20(Northern%20Catalpa)/Details"
+          },
+          {
+            "text": "Northern Catalpa",
+            "href": "/Browse/Sites/39829/Species/Catalpa%20speciosa%20(Northern%20Catalpa)/Details"
+          },
+          {
+            "text": "17.07 m",
+            "href": "/Browse/Trees/204040/Details"
+          },
+          {
+            "text": "251 cm",
+            "href": "/Browse/Trees/204040/Details"
+          },
+          {
+            "text": "12.80 m",
+            "href": "/Browse/Trees/204040/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis var. canadensis",
+          "Eastern Redbud",
+          "6.19 m",
+          "50 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis var. canadensis",
+            "href": "/Browse/Sites/39829/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/Sites/39829/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "6.19 m",
+            "href": "/Browse/Trees/271861/Details"
+          },
+          {
+            "text": "50 cm",
+            "href": "/Browse/Trees/271861/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 40 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 16.172, -081 31.921",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "City",
+      "County": "Wood"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,181 @@
+{
+  "botanicalName": "Pseudotsuga menziesii var. glauca",
+  "commonName": "Rocky Mountain Douglas-Fir",
+  "global": {
+    "maxHeight": {
+      "text": "192.6'",
+      "href": "/Browse/Trees/318065/Details"
+    },
+    "maxGirth": {
+      "text": "204''",
+      "href": "/Browse/Trees/242476/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "145.0'",
+          "203''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "145.0'",
+            "href": "/Browse/Trees/93015/Details"
+          },
+          {
+            "text": "203''",
+            "href": "/Browse/Trees/226326/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Colorado",
+          "169.0'",
+          "204''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "169.0'",
+            "href": "/Browse/Trees/242481/Details"
+          },
+          {
+            "text": "204''",
+            "href": "/Browse/Trees/242476/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "192.6'",
+          "169''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "192.6'",
+            "href": "/Browse/Trees/318065/Details"
+          },
+          {
+            "text": "169''",
+            "href": "/Browse/Trees/196071/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "185.2'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "185.2'",
+            "href": "/Browse/Trees/297910/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/297910/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "136.4'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "136.4'",
+            "href": "/Browse/Trees/320672/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/317992/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "126.8'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "126.8'",
+            "href": "/Browse/Trees/281867/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/214917/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

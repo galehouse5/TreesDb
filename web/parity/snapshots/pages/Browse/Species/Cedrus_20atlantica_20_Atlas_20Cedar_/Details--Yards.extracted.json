@@ -1,0 +1,158 @@
+{
+  "botanicalName": "Cedrus atlantica",
+  "commonName": "Atlas Cedar",
+  "global": {
+    "maxHeight": {
+      "text": "33.80 yd",
+      "href": "/Browse/Trees/291901/Details"
+    },
+    "maxGirth": {
+      "text": "248''",
+      "href": "/Browse/Trees/291901/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "20.63 yd",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "20.63 yd",
+            "href": "/Browse/Trees/75465/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/75465/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fez-Meknes, Morocco",
+          "33.80 yd",
+          "248''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fez-Meknes, Morocco",
+            "href": "/Browse/States/275/Details"
+          },
+          {
+            "text": "33.80 yd",
+            "href": "/Browse/Trees/291901/Details"
+          },
+          {
+            "text": "248''",
+            "href": "/Browse/Trees/291901/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "11.70 yd",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "11.70 yd",
+            "href": "/Browse/Trees/226140/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/226140/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "15.67 yd",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "15.67 yd",
+            "href": "/Browse/Trees/228506/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/228506/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "30.30 yd",
+          "141''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "30.30 yd",
+            "href": "/Browse/Trees/224532/Details"
+          },
+          {
+            "text": "141''",
+            "href": "/Browse/Trees/224532/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

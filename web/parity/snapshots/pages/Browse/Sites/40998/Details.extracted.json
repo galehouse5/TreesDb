@@ -1,0 +1,154 @@
+{
+  "siteId": 40998,
+  "summary": {
+    "Name": "Lucius Pond Ordway/Devil's Den Preserve",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "01/09/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "1,746 Acres"
+  },
+  "visits": [
+    {
+      "visited": "01/09/2012",
+      "visitors": "Sam Goodwin and Ryan Dallas",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "1,746 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "95.0'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40998/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40998/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "95.0'",
+            "href": "/Browse/Trees/242604/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/242604/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "134.5'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40998/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40998/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "134.5'",
+            "href": "/Browse/Trees/242606/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/242602/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "101.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/40998/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/40998/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/242605/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 14.304, -073 23.703",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Nature Conservancy",
+      "County": "Fairfield"
+    },
+    "state": {
+      "text": "Connecticut (US)",
+      "href": "/Browse/States/6/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

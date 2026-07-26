@@ -1,0 +1,291 @@
+{
+  "siteId": 40696,
+  "summary": {
+    "Name": "Davidson Creek",
+    "RHI5": "110.44",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.03",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "05/04/2003",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/04/2003",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/davidson_creek.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carpinus caroliniana",
+          "American Hornbeam",
+          "49.9'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana",
+            "href": "/Browse/Sites/40696/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/40696/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "49.9'",
+            "href": "/Browse/Trees/234922/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/234922/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "134.3'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40696/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40696/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "134.3'",
+            "href": "/Browse/Trees/234921/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/234921/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis",
+          "Eastern Redbud",
+          "52.2'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis",
+            "href": "/Browse/Sites/40696/Species/Cercis%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/Sites/40696/Species/Cercis%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "52.2'",
+            "href": "/Browse/Trees/234929/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/234929/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "61.8'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/Sites/40696/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/40696/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "61.8'",
+            "href": "/Browse/Trees/234924/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/234924/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "116.3'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40696/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40696/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "116.3'",
+            "href": "/Browse/Trees/234926/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/234926/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "-",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40696/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40696/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/234927/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "130.0'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40696/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40696/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "130.0'",
+            "href": "/Browse/Trees/234923/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/234923/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "109.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40696/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40696/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "109.8'",
+            "href": "/Browse/Trees/234920/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 39.340, -083 23.555",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Habersham"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,104 @@
+{
+  "siteId": 42180,
+  "summary": {
+    "Name": "Gateway Knob At Alsek Lake - Camp",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "08/05/2012",
+    "Ownership contact": "1 Park Road Gustavus, AK 99826",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/05/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Salix alaxensis",
+          "Feltleaf Willow",
+          "6.90 yd",
+          "19''",
+          "9.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Salix alaxensis",
+            "href": "/Browse/Sites/42180/Species/Salix%20alaxensis%20(Feltleaf%20Willow)/Details"
+          },
+          {
+            "text": "Feltleaf Willow",
+            "href": "/Browse/Sites/42180/Species/Salix%20alaxensis%20(Feltleaf%20Willow)/Details"
+          },
+          {
+            "text": "6.90 yd",
+            "href": "/Browse/Trees/306147/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/306147/Details"
+          },
+          {
+            "text": "9.00 yd",
+            "href": "/Browse/Trees/306147/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "59 11.093, -138 10.567",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Park",
+      "County": "Yakutat"
+    },
+    "state": {
+      "text": "Alaska (US)",
+      "href": "/Browse/States/62/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

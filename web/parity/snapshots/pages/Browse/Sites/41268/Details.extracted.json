@@ -1,0 +1,132 @@
+{
+  "siteId": 41268,
+  "summary": {
+    "Name": "Florida Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "01/20/2001",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/20/2001",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cunninghamia lanceolata",
+          "Chinese Fir",
+          "-",
+          "144''",
+          "57.0'"
+        ],
+        "links": [
+          {
+            "text": "Cunninghamia lanceolata",
+            "href": "/Browse/Sites/41268/Species/Cunninghamia%20lanceolata%20(Chinese%20Fir)/Details"
+          },
+          {
+            "text": "Chinese Fir",
+            "href": "/Browse/Sites/41268/Species/Cunninghamia%20lanceolata%20(Chinese%20Fir)/Details"
+          },
+          null,
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/253896/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/253896/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "54.0'",
+          "169''",
+          "84.0'"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/41268/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/41268/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "54.0'",
+            "href": "/Browse/Trees/253895/Details"
+          },
+          {
+            "text": "169''",
+            "href": "/Browse/Trees/253895/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/253895/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "30 26.276, -084 16.952",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Leon"
+    },
+    "state": {
+      "text": "Florida (US)",
+      "href": "/Browse/States/8/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

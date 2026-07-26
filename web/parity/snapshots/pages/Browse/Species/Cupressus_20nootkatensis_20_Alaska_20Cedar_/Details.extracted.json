@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Cupressus nootkatensis",
+  "commonName": "Alaska Cedar",
+  "global": {
+    "maxHeight": {
+      "text": "113.3'",
+      "href": "/Browse/Trees/274362/Details"
+    },
+    "maxGirth": {
+      "text": "50''",
+      "href": "/Browse/Trees/281904/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "72.2'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "72.2'",
+            "href": "/Browse/Trees/281904/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/281904/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "113.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "113.3'",
+            "href": "/Browse/Trees/274362/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

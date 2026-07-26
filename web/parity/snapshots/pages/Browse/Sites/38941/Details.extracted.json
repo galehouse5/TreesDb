@@ -1,0 +1,135 @@
+{
+  "siteId": 38941,
+  "summary": {
+    "Name": "Oak Openings Preserve",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "08/11/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "A Toledo MetroPark near Swanton, Ohio"
+  },
+  "visits": [
+    {
+      "visited": "08/11/2013",
+      "visitors": "Matt Markworth and Rand Brown",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "A Toledo MetroPark near Swanton, Ohio"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "65.6'",
+          "152''",
+          "93.5'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/38941/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/38941/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "65.6'",
+            "href": "/Browse/Trees/161501/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/161501/Details"
+          },
+          {
+            "text": "93.5'",
+            "href": "/Browse/Trees/161501/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "82.4'",
+          "164''",
+          "110.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/38941/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/38941/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "82.4'",
+            "href": "/Browse/Trees/161497/Details"
+          },
+          {
+            "text": "164''",
+            "href": "/Browse/Trees/161497/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/161497/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 33.082, -083 51.315",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Lucas"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

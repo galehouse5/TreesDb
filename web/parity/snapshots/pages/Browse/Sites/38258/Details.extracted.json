@@ -1,0 +1,176 @@
+{
+  "siteId": 38258,
+  "summary": {
+    "Name": "Middleton Estate",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "11/22/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "Two trees were measured 12/9/2008. Also see: http://www.nativetreesociety.org/fieldtrips/penna/gladwyne_pa.htm"
+  },
+  "visits": [
+    {
+      "visited": "11/22/2008",
+      "visitors": "Mike Dunn",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/towering_tulips_middleton_estate.htm",
+      "comments": "Two trees were measured 12/9/2008. Also see: http://www.nativetreesociety.org/fieldtrips/penna/gladwyne_pa.htm"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "132.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38258/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38258/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "132.0'",
+            "href": "/Browse/Trees/134326/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "138.1'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38258/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38258/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "138.1'",
+            "href": "/Browse/Trees/134317/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/134327/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "130.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/38258/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/38258/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "130.0'",
+            "href": "/Browse/Trees/134324/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "119.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38258/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38258/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/134322/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 02.747, -075 15.564",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Montgomery"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

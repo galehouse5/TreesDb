@@ -1,0 +1,70 @@
+{
+  "treeId": 269322,
+  "botanicalName": {
+    "text": "Sequoia sempervirens",
+    "href": "/Browse/Sites/41687/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+  },
+  "commonName": {
+    "text": "Redwood",
+    "href": "/Browse/Sites/41687/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+  },
+  "details": {
+    "Height": "354.4'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "690''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "11713.95",
+    "ENTSPTS": "20375.05",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.63",
+    "Champion points (abbreviated)": "1044.30",
+    "Diameter": "220''",
+    "Conical volume": "31072.2 ft³",
+    "General comments": "Known as the Jeroen Koonwinder (JK) tree."
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 07/03/2017",
+      "summary": {
+        "Height": "354.4'",
+        "Girth": "690''"
+      },
+      "details": {
+        "Botanical name": "Sequoia sempervirens",
+        "Common name": "Redwood",
+        "Height": "354.4'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "690''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "11713.95",
+        "ENTSPTS": "20375.05",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.63",
+        "Champion points (abbreviated)": "1044.30",
+        "Diameter": "220''",
+        "Conical volume": "31072.2 ft³",
+        "General comments": "Known as the Jeroen Koonwinder (JK) tree."
+      },
+      "measurers": "Michael Taylor and John Montague"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 10.170, -123 59.744",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Redwood National Park",
+      "href": "/Browse/Sites/41687/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Humboldt"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

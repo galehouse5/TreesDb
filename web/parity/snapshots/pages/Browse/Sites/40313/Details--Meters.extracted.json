@@ -1,0 +1,359 @@
+{
+  "siteId": 40313,
+  "summary": {
+    "Name": "Lake Julian Park",
+    "RHI5": "35.656",
+    "RHI10": "27.868",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.053",
+    "RGI10": "2.200",
+    "RGI20": "(not enough data)",
+    "Trees measured": "47",
+    "Last measurement date": "12/19/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/19/2010",
+      "visitors": "James Parton",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/01/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/julian/lake_julian_park_nc.htm",
+      "comments": "Also see: http://nativetreesociety.org/fieldtrips/north_carolina/lake_julian_pine_forest.htm"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya spp.",
+          "Hickory",
+          "31.00 m",
+          "165 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya spp.",
+            "href": "/Browse/Sites/40313/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "Hickory",
+            "href": "/Browse/Sites/40313/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "31.00 m",
+            "href": "/Browse/Trees/227885/Details"
+          },
+          {
+            "text": "165 cm",
+            "href": "/Browse/Trees/227885/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca",
+          "American Holly",
+          "15.61 m",
+          "91 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca",
+            "href": "/Browse/Sites/40313/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/40313/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "15.61 m",
+            "href": "/Browse/Trees/252154/Details"
+          },
+          {
+            "text": "91 cm",
+            "href": "/Browse/Trees/252153/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix spp.",
+          "Larch",
+          "15.51 m",
+          "168 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix spp.",
+            "href": "/Browse/Sites/40313/Species/Larix%20spp.%20(Larch)/Details"
+          },
+          {
+            "text": "Larch",
+            "href": "/Browse/Sites/40313/Species/Larix%20spp.%20(Larch)/Details"
+          },
+          {
+            "text": "15.51 m",
+            "href": "/Browse/Trees/227878/Details"
+          },
+          {
+            "text": "168 cm",
+            "href": "/Browse/Trees/227878/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "37.49 m",
+          "348 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40313/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40313/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "37.49 m",
+            "href": "/Browse/Trees/227903/Details"
+          },
+          {
+            "text": "348 cm",
+            "href": "/Browse/Trees/227905/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "25.27 m",
+          "183 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40313/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40313/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "25.27 m",
+            "href": "/Browse/Trees/227892/Details"
+          },
+          {
+            "text": "183 cm",
+            "href": "/Browse/Trees/227892/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "30.42 m",
+          "231 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/40313/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/40313/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "30.42 m",
+            "href": "/Browse/Trees/227901/Details"
+          },
+          {
+            "text": "231 cm",
+            "href": "/Browse/Trees/227883/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "42.09 m",
+          "335 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40313/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40313/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "42.09 m",
+            "href": "/Browse/Trees/227894/Details"
+          },
+          {
+            "text": "335 cm",
+            "href": "/Browse/Trees/227876/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "35.23 m",
+          "406 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40313/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40313/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "35.23 m",
+            "href": "/Browse/Trees/227873/Details"
+          },
+          {
+            "text": "406 cm",
+            "href": "/Browse/Trees/227871/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "32.46 m",
+          "206 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40313/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40313/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "32.46 m",
+            "href": "/Browse/Trees/227902/Details"
+          },
+          {
+            "text": "206 cm",
+            "href": "/Browse/Trees/227902/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "13.59 m",
+          "66 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40313/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40313/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "13.59 m",
+            "href": "/Browse/Trees/227891/Details"
+          },
+          {
+            "text": "66 cm",
+            "href": "/Browse/Trees/227891/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 28.789, -082 32.289",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Buncombe"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

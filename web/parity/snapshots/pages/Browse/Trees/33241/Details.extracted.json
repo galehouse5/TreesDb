@@ -1,0 +1,70 @@
+{
+  "treeId": 33241,
+  "botanicalName": {
+    "text": "Pinus ponderosa var. brachyptera",
+    "href": "/Browse/Sites/1461/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Ponderosa Pine",
+    "href": "/Browse/Sites/1461/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+  },
+  "details": {
+    "Height": "87.8'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "122''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "91.05",
+    "ENTSPTS": "894.10",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.34",
+    "Champion points (abbreviated)": "210.00",
+    "Diameter": "39''",
+    "Conical volume": "241.5 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 03/05/2012",
+      "summary": {
+        "Height": "87.8'",
+        "Girth": "122''"
+      },
+      "details": {
+        "Botanical name": "Pinus ponderosa var. brachyptera",
+        "Common name": "Ponderosa Pine",
+        "Height": "87.8'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "122''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "91.05",
+        "ENTSPTS": "894.10",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.34",
+        "Champion points (abbreviated)": "210.00",
+        "Diameter": "39''",
+        "Conical volume": "241.5 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Turner Sharp"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "35 11.936, -111 33.392",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Campbell Mesa",
+      "href": "/Browse/Sites/1461/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - National Forest",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

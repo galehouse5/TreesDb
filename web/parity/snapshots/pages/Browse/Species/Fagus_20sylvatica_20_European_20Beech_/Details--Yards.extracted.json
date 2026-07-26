@@ -1,0 +1,240 @@
+{
+  "botanicalName": "Fagus sylvatica",
+  "commonName": "European Beech",
+  "global": {
+    "maxHeight": {
+      "text": "34.37 yd",
+      "href": "/Browse/Trees/258150/Details"
+    },
+    "maxGirth": {
+      "text": "257''",
+      "href": "/Browse/Trees/214528/Details"
+    },
+    "maxCrownSpread": {
+      "text": "33.67 yd",
+      "href": "/Browse/Trees/283514/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "19.97 yd",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "19.97 yd",
+            "href": "/Browse/Trees/75461/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/75461/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lesser Poland Voivodeship",
+          "27.00 yd",
+          "172''",
+          "33.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Lesser Poland Voivodeship",
+            "href": "/Browse/States/225/Details"
+          },
+          {
+            "text": "27.00 yd",
+            "href": "/Browse/Trees/283514/Details"
+          },
+          {
+            "text": "172''",
+            "href": "/Browse/Trees/283514/Details"
+          },
+          {
+            "text": "33.67 yd",
+            "href": "/Browse/Trees/283514/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "34.37 yd",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "34.37 yd",
+            "href": "/Browse/Trees/258150/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/214927/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "25.80 yd",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "25.80 yd",
+            "href": "/Browse/Trees/5909/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/272967/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "34.17 yd",
+          "257''",
+          "31.70 yd"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "34.17 yd",
+            "href": "/Browse/Trees/214528/Details"
+          },
+          {
+            "text": "257''",
+            "href": "/Browse/Trees/214528/Details"
+          },
+          {
+            "text": "31.70 yd",
+            "href": "/Browse/Trees/255899/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Rhode Island",
+          "22.00 yd",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhode Island",
+            "href": "/Browse/States/37/Details"
+          },
+          {
+            "text": "22.00 yd",
+            "href": "/Browse/Trees/256815/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/256815/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Bohemian Region",
+          "31.17 yd",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Bohemian Region",
+            "href": "/Browse/States/258/Details"
+          },
+          {
+            "text": "31.17 yd",
+            "href": "/Browse/Trees/284681/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/284681/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "34.33 yd",
+          "168''",
+          "29.33 yd"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "34.33 yd",
+            "href": "/Browse/Trees/313233/Details"
+          },
+          {
+            "text": "168''",
+            "href": "/Browse/Trees/313234/Details"
+          },
+          {
+            "text": "29.33 yd",
+            "href": "/Browse/Trees/313197/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

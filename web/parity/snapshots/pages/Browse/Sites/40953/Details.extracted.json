@@ -1,0 +1,353 @@
+{
+  "siteId": 40953,
+  "summary": {
+    "Name": "Moro Creek Bottoms Natural Area",
+    "RHI5": "133.06",
+    "RHI10": "128.62",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.77",
+    "RGI10": "10.99",
+    "RGI20": "(not enough data)",
+    "Trees measured": "32",
+    "Last measurement date": "04/17/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "81 Acres Nature Conservancy manages an adjacent parcel."
+  },
+  "visits": [
+    {
+      "visited": "04/17/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "81 Acres Nature Conservancy manages an adjacent parcel."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "125.6'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40953/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40953/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "125.6'",
+            "href": "/Browse/Trees/241583/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/241583/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "123.8'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40953/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40953/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "123.8'",
+            "href": "/Browse/Trees/241585/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/241585/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus caroliniana",
+          "Carolina Ash",
+          "48.6'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus caroliniana",
+            "href": "/Browse/Sites/40953/Species/Fraxinus%20caroliniana%20(Carolina%20Ash)/Details"
+          },
+          {
+            "text": "Carolina Ash",
+            "href": "/Browse/Sites/40953/Species/Fraxinus%20caroliniana%20(Carolina%20Ash)/Details"
+          },
+          {
+            "text": "48.6'",
+            "href": "/Browse/Trees/241587/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/241587/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca",
+          "American Holly",
+          "73.7'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca",
+            "href": "/Browse/Sites/40953/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/40953/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "73.7'",
+            "href": "/Browse/Trees/241588/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/241588/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "137.6'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/40953/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/40953/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "137.6'",
+            "href": "/Browse/Trees/241589/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/241593/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "120.8'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/40953/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/40953/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "120.8'",
+            "href": "/Browse/Trees/241594/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/241595/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "133.0'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/40953/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/40953/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/241597/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/241597/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "122.7'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40953/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40953/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "122.7'",
+            "href": "/Browse/Trees/241598/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/241602/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lyrata",
+          "Overcup Oak",
+          "128.0'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lyrata",
+            "href": "/Browse/Sites/40953/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "Overcup Oak",
+            "href": "/Browse/Sites/40953/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "128.0'",
+            "href": "/Browse/Trees/241603/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/241603/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus michauxii",
+          "Swamp Chestnut Oak",
+          "132.1'",
+          "173''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus michauxii",
+            "href": "/Browse/Sites/40953/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Swamp Chestnut Oak",
+            "href": "/Browse/Sites/40953/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "132.1'",
+            "href": "/Browse/Trees/241604/Details"
+          },
+          {
+            "text": "173''",
+            "href": "/Browse/Trees/241608/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 46.167, -092 19.841",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Calhoun"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

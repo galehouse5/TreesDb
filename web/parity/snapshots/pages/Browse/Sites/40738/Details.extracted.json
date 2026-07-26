@@ -1,0 +1,241 @@
+{
+  "siteId": 40738,
+  "summary": {
+    "Name": "Deerfield River-Middle Section",
+    "RHI5": "112.34",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.20",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "02/21/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/21/2005",
+      "visitors": "John Eichholz",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mass/deerfield_middle_section.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "102.5'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40738/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40738/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "102.5'",
+            "href": "/Browse/Trees/235791/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/235791/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "109.6'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40738/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40738/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "109.6'",
+            "href": "/Browse/Trees/235796/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/235796/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "112.3'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40738/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40738/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "112.3'",
+            "href": "/Browse/Trees/235799/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/235800/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "99.8'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40738/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40738/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "99.8'",
+            "href": "/Browse/Trees/235795/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/235795/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "129.5'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40738/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40738/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "129.5'",
+            "href": "/Browse/Trees/235793/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/235793/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "107.8'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40738/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40738/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "107.8'",
+            "href": "/Browse/Trees/235792/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/235792/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 33.778, -072 41.726",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

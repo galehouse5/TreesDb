@@ -1,0 +1,204 @@
+{
+  "siteId": 39618,
+  "summary": {
+    "Name": "Robin Hill Nature Preserve",
+    "RHI5": "57.56",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.63",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "06/09/2019",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/09/2019",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Magnolia ×soulangiana",
+          "Chinese Magnolia",
+          "34.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia ×soulangiana",
+            "href": "/Browse/Sites/39618/Species/Magnolia%20%C3%97soulangiana%20(Chinese%20Magnolia)/Details"
+          },
+          {
+            "text": "Chinese Magnolia",
+            "href": "/Browse/Sites/39618/Species/Magnolia%20%C3%97soulangiana%20(Chinese%20Magnolia)/Details"
+          },
+          {
+            "text": "34.4'",
+            "href": "/Browse/Trees/189038/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia macrophylla",
+          "Bigleaf Magnolia",
+          "53.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia macrophylla",
+            "href": "/Browse/Sites/39618/Species/Magnolia%20macrophylla%20(Bigleaf%20Magnolia)/Details"
+          },
+          {
+            "text": "Bigleaf Magnolia",
+            "href": "/Browse/Sites/39618/Species/Magnolia%20macrophylla%20(Bigleaf%20Magnolia)/Details"
+          },
+          {
+            "text": "53.3'",
+            "href": "/Browse/Trees/189037/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sequoiadendron giganteum",
+          "Giant Sequoia",
+          "101.9'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sequoiadendron giganteum",
+            "href": "/Browse/Sites/39618/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+          },
+          {
+            "text": "Giant Sequoia",
+            "href": "/Browse/Sites/39618/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+          },
+          {
+            "text": "101.9'",
+            "href": "/Browse/Trees/189036/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/189036/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sorbus americana",
+          "American Mountain Ash",
+          "27.6'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sorbus americana",
+            "href": "/Browse/Sites/39618/Species/Sorbus%20americana%20(American%20Mountain%20Ash)/Details"
+          },
+          {
+            "text": "American Mountain Ash",
+            "href": "/Browse/Sites/39618/Species/Sorbus%20americana%20(American%20Mountain%20Ash)/Details"
+          },
+          {
+            "text": "27.6'",
+            "href": "/Browse/Trees/189035/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/189035/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sorbus latifolia",
+          "Service Tree Of Fontainebleau",
+          "70.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sorbus latifolia",
+            "href": "/Browse/Sites/39618/Species/Sorbus%20latifolia%20(Service%20Tree%20Of%20Fontainebleau)/Details"
+          },
+          {
+            "text": "Service Tree Of Fontainebleau",
+            "href": "/Browse/Sites/39618/Species/Sorbus%20latifolia%20(Service%20Tree%20Of%20Fontainebleau)/Details"
+          },
+          {
+            "text": "70.6'",
+            "href": "/Browse/Trees/189039/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 19.232, -078 22.579",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Orleans"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

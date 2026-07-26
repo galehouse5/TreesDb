@@ -1,0 +1,287 @@
+{
+  "category": "exports",
+  "generatedAt": "2026-07-18T12:22:10.794Z",
+  "checksRun": 2540,
+  "pass": 2517,
+  "fail": 0,
+  "waived": 23,
+  "diffs": [],
+  "waivedDiffs": [
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Sites/41043",
+        "field": "body",
+        "expected": "\",\"James Parton\",\"2008-04-01\",\"\",\"N\"\r\n\"Hawthorn\",\"Crataegus  spp.\",\"North Carolina\",\"Transylvania\",\"Sycamore Flats Picni",
+        "actual": "\",\"James Parton\",\"2008-04-01\",\"\",\"N\"\r\n\"Hawthorn\",\"Crataegus spp.\",\"North Carolina\",\"Transylvania\",\"Sycamore Flats Picnic",
+        "message": "https://www.treesdb.org/Export/Sites/41043: body differs only in name-cell whitespace runs - identical after collapsing whitespace on the differing cells (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Sites/41929",
+        "field": "body",
+        "expected": ",\"121''\",\"\",\"\",\"Turner Sharp\",\"2017-09-17\",\"\",\"N\"\r\n\"Italian  Cypress\",\"Cupressus sempervirens\",\"Tuscany\",\"Provincia Di S",
+        "actual": ",\"121''\",\"\",\"\",\"Turner Sharp\",\"2017-09-17\",\"\",\"N\"\r\n\"Italian Cypress\",\"Cupressus sempervirens\",\"Tuscany\",\"Provincia Di Si",
+        "message": "https://www.treesdb.org/Export/Sites/41929: body differs only in name-cell whitespace runs - identical after collapsing whitespace on the differing cells (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Sites/41934",
+        "field": "body",
+        "expected": "665c7b00afe9cb7d13275eb83e9b52fd\",\"N\"\r\n\"Judas-Tree\",\"Cercis  siliquastrum\",\"Andalusia\",\"Málaga\",\"Ronda\",\"\",\"\",\"\",\"\",\"283",
+        "actual": "665c7b00afe9cb7d13275eb83e9b52fd\",\"N\"\r\n\"Judas-Tree\",\"Cercis siliquastrum\",\"Andalusia\",\"Málaga\",\"Ronda\",\"\",\"\",\"\",\"\",\"2831",
+        "message": "https://www.treesdb.org/Export/Sites/41934: body differs only in name-cell whitespace runs - identical after collapsing whitespace on the differing cells (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Sites/42234",
+        "field": "body",
+        "expected": "\",\"Turner Sharp\",\"2000-01-01\",\"\",\"N\"\r\n\"Hybrid Oak\",\"Quercus  x mutabilis\",\"Ohio\",\"Washington\",\"Washington County Single ",
+        "actual": "\",\"Turner Sharp\",\"2000-01-01\",\"\",\"N\"\r\n\"Hybrid Oak\",\"Quercus x mutabilis\",\"Ohio\",\"Washington\",\"Washington County Single T",
+        "message": "https://www.treesdb.org/Export/Sites/42234: body differs only in name-cell whitespace runs - identical after collapsing whitespace on the differing cells (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-003",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/States/17",
+        "field": "body",
+        "expected": "hite Pine\",\"Pinus strobus\",\"Massachusetts\",\"Berkshire\",\"MTSF, Trees Of Peace\",\"42 38.572\",\"-072 55.952\",\"\",\"\",\"173734\",\"",
+        "actual": "hite Pine\",\"Pinus strobus\",\"Massachusetts\",\"Berkshire\",\"MTSF-Trout Brook\",\"42 37.685\",\"-072 56.275\",\"\",\"\",\"5938\",\"1\",\"42",
+        "message": "https://www.treesdb.org/Export/States/17: body differs only in row order - identical after re-sorting both sides by (tree id, measurement number) (W-003)",
+        "waiverHint": "W-003"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/States/25",
+        "field": "body",
+        "expected": "\",\"James Parton\",\"2008-04-01\",\"\",\"N\"\r\n\"Hawthorn\",\"Crataegus  spp.\",\"North Carolina\",\"Transylvania\",\"Sycamore Flats Picni",
+        "actual": "\",\"James Parton\",\"2008-04-01\",\"\",\"N\"\r\n\"Hawthorn\",\"Crataegus spp.\",\"North Carolina\",\"Transylvania\",\"Sycamore Flats Picnic",
+        "message": "https://www.treesdb.org/Export/States/25: body differs only in name-cell whitespace runs - identical after collapsing whitespace on the differing cells (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-003",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/States/32",
+        "field": "body",
+        "expected": "acuminata\",\"New York\",\"Cattaraugus\",\"Trackless West\",\"\",\"\",\"A White Pine on Pine Creek was measured on 12/31/2019\",\"\",\"2",
+        "actual": "acuminata\",\"New York\",\"Cattaraugus\",\"Trackless West\",\"\",\"\",\"Trees were measured in coves along Bay State Brook.\",\"\",\"265",
+        "message": "https://www.treesdb.org/Export/States/32: body differs only in row order - identical after re-sorting both sides by (tree id, measurement number) (W-003)",
+        "waiverHint": "W-003"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/States/33",
+        "field": "body",
+        "expected": "\",\"Turner Sharp\",\"2000-01-01\",\"\",\"N\"\r\n\"Hybrid Oak\",\"Quercus  x mutabilis\",\"Ohio\",\"Washington\",\"Washington County Single ",
+        "actual": "\",\"Turner Sharp\",\"2000-01-01\",\"\",\"N\"\r\n\"Hybrid Oak\",\"Quercus x mutabilis\",\"Ohio\",\"Washington\",\"Washington County Single T",
+        "message": "https://www.treesdb.org/Export/States/33: body differs only in name-cell whitespace runs - identical after collapsing whitespace on the differing cells (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-003",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/States/40",
+        "field": "body",
+        "expected": "2.1'\",\"145''\",\"\",\"\",\"Elijah Whitcomb\",\"2022-10-29\",\"\",\"N\"\r\n\"American Basswood\",\"Tilia americana var. heterophylla\",\"Tenn",
+        "actual": "2.1'\",\"145''\",\"\",\"\",\"Elijah Whitcomb\",\"2022-10-29\",\"\",\"N\"\r\n\"Bitternut Hickory\",\"Carya cordiformis\",\"Tennessee\",\"Sevier\",",
+        "message": "https://www.treesdb.org/Export/States/40: body differs only in row order - identical after re-sorting both sides by (tree id, measurement number) (W-003)",
+        "waiverHint": "W-003"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/States/124",
+        "field": "body",
+        "expected": "665c7b00afe9cb7d13275eb83e9b52fd\",\"N\"\r\n\"Judas-Tree\",\"Cercis  siliquastrum\",\"Andalusia\",\"Málaga\",\"Ronda\",\"\",\"\",\"\",\"\",\"283",
+        "actual": "665c7b00afe9cb7d13275eb83e9b52fd\",\"N\"\r\n\"Judas-Tree\",\"Cercis siliquastrum\",\"Andalusia\",\"Málaga\",\"Ronda\",\"\",\"\",\"\",\"\",\"2831",
+        "message": "https://www.treesdb.org/Export/States/124: body differs only in name-cell whitespace runs - identical after collapsing whitespace on the differing cells (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/States/160",
+        "field": "body",
+        "expected": ",\"121''\",\"\",\"\",\"Turner Sharp\",\"2017-09-17\",\"\",\"N\"\r\n\"Italian  Cypress\",\"Cupressus sempervirens\",\"Tuscany\",\"Provincia Di S",
+        "actual": ",\"121''\",\"\",\"\",\"Turner Sharp\",\"2017-09-17\",\"\",\"N\"\r\n\"Italian Cypress\",\"Cupressus sempervirens\",\"Tuscany\",\"Provincia Di Si",
+        "message": "https://www.treesdb.org/Export/States/160: body differs only in name-cell whitespace runs - identical after collapsing whitespace on the differing cells (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-003",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/States/275",
+        "field": "body",
+        "expected": "surer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"\r\n\"Atlas Cedar\",\"Cedrus atlantica\",\"Fez-Meknes, Morocco\",\"Provi",
+        "actual": "surer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"\r\n\"Date Palm\",\"Phoenix dactylifera\",\"Fez-Meknes, Morocco\",\"Prov",
+        "message": "https://www.treesdb.org/Export/States/275: body differs only in row order - identical after re-sorting both sides by (tree id, measurement number) (W-003)",
+        "waiverHint": "W-003"
+      }
+    },
+    {
+      "waiverId": "W-003",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Species/Carya%20cordiformis%20(Bitternut%20Hickory)",
+        "field": "body",
+        "expected": "ut Hickory\",\"Carya cordiformis\",\"Tennessee\",\"Sevier\",\"Porters Bowl\",\"\",\"\",\"\",\"\",\"229871\",\"1\",\"\",\"\",\"\",\"Public - national",
+        "actual": "ut Hickory\",\"Carya cordiformis\",\"Tennessee\",\"Sevier\",\"Porter's Creek Trail\",\"35 40.807\",\"-083 23.841\",\"\",\"\",\"150829\",\"1\"",
+        "message": "https://www.treesdb.org/Export/Species/Carya%20cordiformis%20(Bitternut%20Hickory): body differs only in row order - identical after re-sorting both sides by (tree id, measurement number) (W-003)",
+        "waiverHint": "W-003"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Species/Cercis%20%20siliquastrum%20(Judas-Tree)",
+        "field": "body",
+        "expected": "Measurer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"\r\n\"Judas-Tree\",\"Cercis  siliquastrum\",\"Andalusia\",\"Málaga\",\"",
+        "actual": "Measurer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"",
+        "message": "https://www.treesdb.org/Export/Species/Cercis%20%20siliquastrum%20(Judas-Tree): body differs because this is a D-016-affected species export (removed duplicate-variant is header-only, or clean-twin's legacy rows are a subset of its new rows) (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Species/Cercis%20siliquastrum%20(Judas-Tree)",
+        "field": "body",
+        "expected": "available\"\r\n\"Judas-Tree\",\"Cercis siliquastrum\",\"Andalusia\",\"Sevilla\",\"Royal Alcszar O Selille\",\"\",\"\",\"\",\"\",\"274943\",\"1\",",
+        "actual": "available\"\r\n\"Judas-Tree\",\"Cercis siliquastrum\",\"Andalusia\",\"Málaga\",\"Ronda\",\"\",\"\",\"\",\"\",\"283185\",\"1\",\"\",\"\",\"\",\"Public - ",
+        "message": "https://www.treesdb.org/Export/Species/Cercis%20siliquastrum%20(Judas-Tree): body differs because this is a D-016-affected species export (removed duplicate-variant is header-only, or clean-twin's legacy rows are a subset of its new rows) (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Species/Crataegus%20%20spp.%20(Hawthorn)",
+        "field": "body",
+        "expected": "Measurer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"\r\n\"Hawthorn\",\"Crataegus  spp.\",\"North Carolina\",\"Transylvani",
+        "actual": "Measurer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"",
+        "message": "https://www.treesdb.org/Export/Species/Crataegus%20%20spp.%20(Hawthorn): body differs because this is a D-016-affected species export (removed duplicate-variant is header-only, or clean-twin's legacy rows are a subset of its new rows) (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Species/Crataegus%20spp.%20(Hawthorn)",
+        "field": "body",
+        "expected": "Transylvania\",\"Sycamore Flats Picnic Area\",\"\",\"\",\"\",\"\",\"243557\",\"1\",\"\",\"\",\"\",\"Public - national\",\"35.5'\",\"Clinometer/las",
+        "actual": "Transylvania\",\"Sycamore Flats Picnic Area\",\"\",\"\",\"\",\"\",\"243560\",\"1\",\"\",\"\",\"\",\"Public - national\",\"29.6'\",\"Clinometer/las",
+        "message": "https://www.treesdb.org/Export/Species/Crataegus%20spp.%20(Hawthorn): body differs because this is a D-016-affected species export (removed duplicate-variant is header-only, or clean-twin's legacy rows are a subset of its new rows) (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Species/Cupressus%20sempervirens%20(Italian%20%20Cypress)",
+        "field": "body",
+        "expected": "Measurer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"\r\n\"Italian  Cypress\",\"Cupressus sempervirens\",\"Tuscany\",\"Pro",
+        "actual": "Measurer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"",
+        "message": "https://www.treesdb.org/Export/Species/Cupressus%20sempervirens%20(Italian%20%20Cypress): body differs because this is a D-016-affected species export (removed duplicate-variant is header-only, or clean-twin's legacy rows are a subset of its new rows) (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Species/Cupressus%20sempervirens%20(Italian%20Cypress)",
+        "field": "body",
+        "expected": "-09-17\",\"\",\"N\"\r\n\"Italian Cypress\",\"Cupressus sempervirens\",\"Arizona\",\"Pima\",\"University Of Arizona Arboretum\",\"32 13.830",
+        "actual": "-09-17\",\"\",\"N\"\r\n\"Italian Cypress\",\"Cupressus sempervirens\",\"Tuscany\",\"Provincia Di Siena\",\"Montepulciano\",\"\",\"\",\"\",\"\",\"2",
+        "message": "https://www.treesdb.org/Export/Species/Cupressus%20sempervirens%20(Italian%20Cypress): body differs because this is a D-016-affected species export (removed duplicate-variant is header-only, or clean-twin's legacy rows are a subset of its new rows) (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-003",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Species/Pinus%20strobus%20(Eastern%20White%20Pine)",
+        "field": "body",
+        "expected": "hite Pine\",\"Pinus strobus\",\"Massachusetts\",\"Berkshire\",\"MTSF, Trees Of Peace\",\"42 38.572\",\"-072 55.952\",\"\",\"\",\"173734\",\"",
+        "actual": "hite Pine\",\"Pinus strobus\",\"Massachusetts\",\"Berkshire\",\"MTSF-Trout Brook\",\"42 37.685\",\"-072 56.275\",\"\",\"\",\"5938\",\"1\",\"42",
+        "message": "https://www.treesdb.org/Export/Species/Pinus%20strobus%20(Eastern%20White%20Pine): body differs only in row order - identical after re-sorting both sides by (tree id, measurement number) (W-003)",
+        "waiverHint": "W-003"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/Species/Quercus%20%20x%20mutabilis%20(Hybrid%20Oak)",
+        "field": "body",
+        "expected": "Measurer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"\r\n\"Hybrid Oak\",\"Quercus  x mutabilis\",\"Ohio\",\"Washington\",\"W",
+        "actual": "Measurer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"",
+        "message": "https://www.treesdb.org/Export/Species/Quercus%20%20x%20mutabilis%20(Hybrid%20Oak): body differs because this is a D-016-affected species export (removed duplicate-variant is header-only, or clean-twin's legacy rows are a subset of its new rows) (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/LocationsByFilters?filter=a",
+        "field": "body",
+        "expected": "surer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"\r\n\"Atlas Cedar\",\"Cedrus atlantica\",\"Fez-Meknes, Morocco\",\"Provi",
+        "actual": "surer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"\r\n\"Date Palm\",\"Phoenix dactylifera\",\"Fez-Meknes, Morocco\",\"Prov",
+        "message": "https://www.treesdb.org/Export/LocationsByFilters?filter=a: body differs only in name-cell whitespace runs - identical after collapsing whitespace on the differing cells (W-010)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Export/SpeciesByFilters?filter=a",
+        "field": "body",
+        "expected": "surer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"\r\n\"Atlas Cedar\",\"Cedrus atlantica\",\"Fez-Meknes, Morocco\",\"Provi",
+        "actual": "surer(s)\",\"Measured\",\"Trip report url\",\"Photos available\"\r\n\"Date Palm\",\"Phoenix dactylifera\",\"Fez-Meknes, Morocco\",\"Prov",
+        "message": "https://www.treesdb.org/Export/SpeciesByFilters?filter=a: body differs only in name-cell whitespace runs - identical after collapsing whitespace on the differing cells (W-010)",
+        "waiverHint": "W-010"
+      }
+    }
+  ]
+}

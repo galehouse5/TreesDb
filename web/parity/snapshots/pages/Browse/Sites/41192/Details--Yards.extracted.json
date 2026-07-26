@@ -1,0 +1,347 @@
+{
+  "siteId": 41192,
+  "summary": {
+    "Name": "Green River Game Lands",
+    "RHI5": "44.440",
+    "RHI10": "31.280",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.144",
+    "RGI10": "2.750",
+    "RGI20": "(not enough data)",
+    "Trees measured": "45",
+    "Last measurement date": "01/21/2011",
+    "Ownership contact": "Green River Game Lands 645 Green River Cove Road Saluda, NC",
+    "General comments": "10,000+ acres. Trees were measured per trip reports 9/2/1010.9/27/2010, 1/21/2011."
+  },
+  "visits": [
+    {
+      "visited": "01/21/2011",
+      "visitors": "James Parton",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "10,000+ acres. Trees were measured per trip reports 9/2/1010.9/27/2010, 1/21/2011."
+    },
+    {
+      "visited": "01/12/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/greenrivergl/green_river_game_lands.htm",
+      "comments": "Also includes trees measured 1/5/2008 along Puliam Creek Trail and others.. Managed by the North Carolina Wildlife Resource Commission. 10,000+ acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "23.93 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41192/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41192/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "23.93 yd",
+            "href": "/Browse/Trees/252119/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "-",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/41192/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41192/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/252030/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya spp.",
+          "Hickory",
+          "40.37 yd",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya spp.",
+            "href": "/Browse/Sites/41192/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "Hickory",
+            "href": "/Browse/Sites/41192/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "40.37 yd",
+            "href": "/Browse/Trees/252126/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/252117/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "51.80 yd",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41192/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41192/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "51.80 yd",
+            "href": "/Browse/Trees/252114/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/252024/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "35.77 yd",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/41192/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/41192/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "35.77 yd",
+            "href": "/Browse/Trees/252118/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/252103/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "30.90 yd",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/41192/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/41192/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "30.90 yd",
+            "href": "/Browse/Trees/252116/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/252105/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "-",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41192/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41192/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/252039/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "39.70 yd",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/41192/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/41192/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "39.70 yd",
+            "href": "/Browse/Trees/252110/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/252028/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "43.17 yd",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/41192/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41192/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "43.17 yd",
+            "href": "/Browse/Trees/252125/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/252125/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "-",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/41192/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/41192/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          null,
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/252036/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 17.716, -082 19.489",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Polk"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

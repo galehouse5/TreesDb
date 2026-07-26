@@ -1,0 +1,353 @@
+{
+  "siteId": 40853,
+  "summary": {
+    "Name": "Alexander Creek",
+    "RHI5": "134.32",
+    "RHI10": "125.93",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.90",
+    "RGI10": "8.33",
+    "RGI20": "(not enough data)",
+    "Trees measured": "23",
+    "Last measurement date": "11/18/2003",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/18/2003",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/alexander_creek.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "114.0'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40853/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40853/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "114.0'",
+            "href": "/Browse/Trees/238209/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/238209/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "149.4'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40853/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40853/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "149.4'",
+            "href": "/Browse/Trees/238205/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/238200/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "124.4'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/40853/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/40853/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "124.4'",
+            "href": "/Browse/Trees/238221/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/238221/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "103.0'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/40853/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/40853/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/238222/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/238222/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus virginiana",
+          "Virginia Pine",
+          "101.6'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus virginiana",
+            "href": "/Browse/Sites/40853/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "Virginia Pine",
+            "href": "/Browse/Sites/40853/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "101.6'",
+            "href": "/Browse/Trees/238220/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/238220/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "128.8'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40853/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40853/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "128.8'",
+            "href": "/Browse/Trees/238219/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/238219/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus coccinea",
+          "Scarlet Oak",
+          "119.9'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus coccinea",
+            "href": "/Browse/Sites/40853/Species/Quercus%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "Scarlet Oak",
+            "href": "/Browse/Sites/40853/Species/Quercus%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "119.9'",
+            "href": "/Browse/Trees/238217/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/238217/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lyrata",
+          "Overcup Oak",
+          "107.2'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lyrata",
+            "href": "/Browse/Sites/40853/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "Overcup Oak",
+            "href": "/Browse/Sites/40853/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "107.2'",
+            "href": "/Browse/Trees/238218/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/238218/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "122.2'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/40853/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/40853/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "122.2'",
+            "href": "/Browse/Trees/238212/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/238212/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "134.1'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40853/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40853/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "134.1'",
+            "href": "/Browse/Trees/238214/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/238213/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 50.261, -083 04.635",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Oconee"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

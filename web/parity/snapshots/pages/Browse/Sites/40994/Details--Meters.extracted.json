@@ -1,0 +1,129 @@
+{
+  "siteId": 40994,
+  "summary": {
+    "Name": "Spring Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "10/20/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "44 Acres"
+  },
+  "visits": [
+    {
+      "visited": "10/20/2011",
+      "visitors": "Sam Goodwin",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "44 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "28.96 m",
+          "201 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40994/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40994/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "28.96 m",
+            "href": "/Browse/Trees/242575/Details"
+          },
+          {
+            "text": "201 cm",
+            "href": "/Browse/Trees/242574/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "24.38 m",
+          "290 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40994/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40994/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "24.38 m",
+            "href": "/Browse/Trees/242577/Details"
+          },
+          {
+            "text": "290 cm",
+            "href": "/Browse/Trees/242576/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 55.794, -072 39.438",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Hartford"
+    },
+    "state": {
+      "text": "Connecticut (US)",
+      "href": "/Browse/States/6/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

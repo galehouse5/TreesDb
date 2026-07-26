@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Washingtonia filifera",
+  "commonName": "California Fan Palm",
+  "global": {
+    "maxHeight": {
+      "text": "22.53 yd",
+      "href": "/Browse/Trees/239519/Details"
+    },
+    "maxGirth": {
+      "text": "110''",
+      "href": "/Browse/Trees/239521/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "20.97 yd",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "20.97 yd",
+            "href": "/Browse/Trees/274861/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/274860/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "California",
+          "22.53 yd",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "22.53 yd",
+            "href": "/Browse/Trees/239519/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/239521/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

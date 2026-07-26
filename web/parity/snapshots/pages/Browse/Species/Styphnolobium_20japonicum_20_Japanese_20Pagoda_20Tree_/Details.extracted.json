@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Styphnolobium japonicum",
+  "commonName": "Japanese Pagoda Tree",
+  "global": {
+    "maxHeight": {
+      "text": "93.5'",
+      "href": "/Browse/Trees/260254/Details"
+    },
+    "maxGirth": {
+      "text": "89''",
+      "href": "/Browse/Trees/282341/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "39.7'",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "39.7'",
+            "href": "/Browse/Trees/102903/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/102903/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "93.5'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "93.5'",
+            "href": "/Browse/Trees/260254/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/282341/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "37.1'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "37.1'",
+            "href": "/Browse/Trees/272999/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/272999/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

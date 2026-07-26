@@ -1,0 +1,217 @@
+{
+  "botanicalName": "Taxodium ascendens",
+  "commonName": "Pond Cypress",
+  "global": {
+    "maxHeight": {
+      "text": "99.3'",
+      "href": "/Browse/Trees/2425/Details"
+    },
+    "maxGirth": {
+      "text": "132''",
+      "href": "/Browse/Trees/2424/Details"
+    },
+    "maxCrownSpread": {
+      "text": "55.5'",
+      "href": "/Browse/Trees/253892/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Louisiana",
+          "64.5'",
+          "125''",
+          "55.5'"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "64.5'",
+            "href": "/Browse/Trees/253892/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/253892/Details"
+          },
+          {
+            "text": "55.5'",
+            "href": "/Browse/Trees/253892/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "76.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "76.0'",
+            "href": "/Browse/Trees/40679/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "70.3'",
+          "127''",
+          "46.8'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "70.3'",
+            "href": "/Browse/Trees/302730/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/302730/Details"
+          },
+          {
+            "text": "46.8'",
+            "href": "/Browse/Trees/302730/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Oklahoma",
+          "58.0'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oklahoma",
+            "href": "/Browse/States/34/Details"
+          },
+          {
+            "text": "58.0'",
+            "href": "/Browse/Trees/168957/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/168957/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "63.2'",
+          "80''",
+          "15.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "63.2'",
+            "href": "/Browse/Trees/224403/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/224403/Details"
+          },
+          {
+            "text": "15.0'",
+            "href": "/Browse/Trees/224403/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "99.3'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "99.3'",
+            "href": "/Browse/Trees/2425/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/2424/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "69.7'",
+          "87''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "69.7'",
+            "href": "/Browse/Trees/315043/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/315043/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/315043/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

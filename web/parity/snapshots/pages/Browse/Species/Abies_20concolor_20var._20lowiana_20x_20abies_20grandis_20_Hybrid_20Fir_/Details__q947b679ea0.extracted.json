@@ -1,0 +1,241 @@
+{
+  "botanicalName": "Abies concolor var. lowiana x abies grandis",
+  "commonName": "Hybrid Fir",
+  "global": {
+    "maxHeight": {
+      "text": "206.9'",
+      "href": "/Browse/Trees/297902/Details"
+    },
+    "maxGirth": {
+      "text": "129''",
+      "href": "/Browse/Trees/297899/Details"
+    }
+  },
+  "state": {
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "206.9'",
+        "href": "/Browse/Trees/297902/Details"
+      },
+      "maxGirth": {
+        "text": "129''",
+        "href": "/Browse/Trees/297899/Details"
+      }
+    }
+  },
+  "site": {
+    "site": {
+      "text": "Oregon Caves National Monument & Preserve",
+      "href": "/Browse/Sites/42095/Details"
+    },
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Josephine"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "206.9'",
+        "href": "/Browse/Trees/297902/Details"
+      },
+      "maxGirth": {
+        "text": "129''",
+        "href": "/Browse/Trees/297899/Details"
+      }
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Oregon",
+          "206.9'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon",
+            "href": "/Browse/States/35/Details"
+          },
+          {
+            "text": "206.9'",
+            "href": "/Browse/Trees/297902/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/297899/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedSitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Oregon Caves National Monument & Preserve",
+          "206.9'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon Caves National Monument & Preserve",
+            "href": "/Browse/Sites/42095/Details"
+          },
+          {
+            "text": "206.9'",
+            "href": "/Browse/Trees/297902/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/297899/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedTreesGrid": {
+    "columns": [
+      {
+        "header": "Height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "206.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "206.9'",
+            "href": "/Browse/Trees/297902/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "201.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "201.2'",
+            "href": "/Browse/Trees/297901/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "195.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "195.3'",
+            "href": "/Browse/Trees/297900/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "188.3'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "188.3'",
+            "href": "/Browse/Trees/297899/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/297899/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

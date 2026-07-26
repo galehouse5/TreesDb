@@ -1,0 +1,560 @@
+{
+  "stateId": 5,
+  "summary": {
+    "Name": "Colorado",
+    "Code": "CO",
+    "RHI5": "165.58",
+    "RHI10": "142.84",
+    "RHI20": "102.17",
+    "RGI5": "16.25",
+    "RGI10": "13.25",
+    "RGI20": "9.48",
+    "Trees measured": "158",
+    "Last measurement date": "06/20/2023"
+  },
+  "location": {
+    "Coordinates": "38 59.875, -105 33.054",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "163.5'",
+          "126''",
+          "27.8'"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/States/5/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/5/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "163.5'",
+            "href": "/Browse/Trees/242411/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/242475/Details"
+          },
+          {
+            "text": "27.8'",
+            "href": "/Browse/Trees/242411/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa",
+          "Subalpine Fir",
+          "133.0'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa",
+            "href": "/Browse/States/5/Species/Abies%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/States/5/Species/Abies%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/280641/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/280641/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. bifolia",
+          "Subalpine Fir",
+          "85.0'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. bifolia",
+            "href": "/Browse/States/5/Species/Abies%20lasiocarpa%20var.%20bifolia%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/States/5/Species/Abies%20lasiocarpa%20var.%20bifolia%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/296851/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/296851/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. lasiocarpa",
+          "Subalpine Fir",
+          "97.4'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. lasiocarpa",
+            "href": "/Browse/States/5/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/States/5/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "97.4'",
+            "href": "/Browse/Trees/242522/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/56034/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer glabrum var. glabrum",
+          "Rocky Mountain Maple",
+          "24.0'",
+          "10''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer glabrum var. glabrum",
+            "href": "/Browse/States/5/Species/Acer%20glabrum%20var.%20glabrum%20(Rocky%20Mountain%20Maple)/Details"
+          },
+          {
+            "text": "Rocky Mountain Maple",
+            "href": "/Browse/States/5/Species/Acer%20glabrum%20var.%20glabrum%20(Rocky%20Mountain%20Maple)/Details"
+          },
+          {
+            "text": "24.0'",
+            "href": "/Browse/Trees/126298/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/126298/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "34.5'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/5/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/5/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "34.5'",
+            "href": "/Browse/Trees/126242/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/126242/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus incana ssp. tenuifolia",
+          "Thinleaf Alder",
+          "21.5'",
+          "14''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus incana ssp. tenuifolia",
+            "href": "/Browse/States/5/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "Thinleaf Alder",
+            "href": "/Browse/States/5/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "21.5'",
+            "href": "/Browse/Trees/126302/Details"
+          },
+          {
+            "text": "14''",
+            "href": "/Browse/Trees/126302/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Artemisia tridentata",
+          "Big Sagebrush",
+          "12.3'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Artemisia tridentata",
+            "href": "/Browse/States/5/Species/Artemisia%20tridentata%20(Big%20Sagebrush)/Details"
+          },
+          {
+            "text": "Big Sagebrush",
+            "href": "/Browse/States/5/Species/Artemisia%20tridentata%20(Big%20Sagebrush)/Details"
+          },
+          {
+            "text": "12.3'",
+            "href": "/Browse/Trees/126239/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/126239/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula occidentalis",
+          "Water Birch",
+          "23.3'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula occidentalis",
+            "href": "/Browse/States/5/Species/Betula%20occidentalis%20(Water%20Birch)/Details"
+          },
+          {
+            "text": "Water Birch",
+            "href": "/Browse/States/5/Species/Betula%20occidentalis%20(Water%20Birch)/Details"
+          },
+          {
+            "text": "23.3'",
+            "href": "/Browse/Trees/126303/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/126303/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. reticulata",
+          "Netleaf Hackberry",
+          "25.6'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. reticulata",
+            "href": "/Browse/States/5/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "Netleaf Hackberry",
+            "href": "/Browse/States/5/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "25.6'",
+            "href": "/Browse/Trees/126246/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/126246/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 30 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Colorado Single Tree Sites",
+          "114.38",
+          "-",
+          "12.90",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado Single Tree Sites",
+            "href": "/Browse/Sites/40983/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cub Lake Trail",
+          "60.24",
+          "-",
+          "4.64",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cub Lake Trail",
+            "href": "/Browse/Sites/37982/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Green River Corridor - CO",
+          "45.56",
+          "32.63",
+          "6.20",
+          "3.82"
+        ],
+        "links": [
+          {
+            "text": "Green River Corridor - CO",
+            "href": "/Browse/Sites/37977/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hermosa Creek",
+          "165.58",
+          "135.54",
+          "13.52",
+          "9.52"
+        ],
+        "links": [
+          {
+            "text": "Hermosa Creek",
+            "href": "/Browse/Sites/25455/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mizpah Campground",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mizpah Campground",
+            "href": "/Browse/Sites/8840/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Monarch Pass",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Monarch Pass",
+            "href": "/Browse/Sites/42073/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Piedra River And Tributaries",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Piedra River And Tributaries",
+            "href": "/Browse/Sites/40978/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Storm Pass Trail",
+          "49.02",
+          "-",
+          "3.01",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Storm Pass Trail",
+            "href": "/Browse/Sites/37970/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thirteen Mile Creek",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thirteen Mile Creek",
+            "href": "/Browse/Sites/27506/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Weller Lake Campground",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Weller Lake Campground",
+            "href": "/Browse/Sites/10873/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

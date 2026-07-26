@@ -1,0 +1,135 @@
+{
+  "botanicalName": "Abies lasiocarpa var. lasiocarpa",
+  "commonName": "Subalpine Fir",
+  "global": {
+    "maxHeight": {
+      "text": "97.4'",
+      "href": "/Browse/Trees/242522/Details"
+    },
+    "maxGirth": {
+      "text": "52''",
+      "href": "/Browse/Trees/220367/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Colorado",
+          "97.4'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "97.4'",
+            "href": "/Browse/Trees/242522/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/56034/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "90.4'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "90.4'",
+            "href": "/Browse/Trees/220367/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/220367/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Wyoming",
+          "80.4'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wyoming",
+            "href": "/Browse/States/48/Details"
+          },
+          {
+            "text": "80.4'",
+            "href": "/Browse/Trees/126265/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/126265/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Yukon",
+          "94.3'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yukon",
+            "href": "/Browse/States/61/Details"
+          },
+          {
+            "text": "94.3'",
+            "href": "/Browse/Trees/75004/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/75004/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

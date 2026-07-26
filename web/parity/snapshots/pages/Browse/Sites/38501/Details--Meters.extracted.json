@@ -1,0 +1,185 @@
+{
+  "siteId": 38501,
+  "summary": {
+    "Name": "Riverside Cemetery, Baldwinsville, NY",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "12/25/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/25/2016",
+      "visitors": "Elijah Whitcomb, Tom Howard, and Bob Henry",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "28.42 m",
+          "462 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/38501/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/38501/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "28.42 m",
+            "href": "/Browse/Trees/142520/Details"
+          },
+          {
+            "text": "462 cm",
+            "href": "/Browse/Trees/142520/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "18.77 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/38501/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/38501/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "18.77 m",
+            "href": "/Browse/Trees/142519/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "36.78 m",
+          "366 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/38501/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/38501/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "36.78 m",
+            "href": "/Browse/Trees/142514/Details"
+          },
+          {
+            "text": "366 cm",
+            "href": "/Browse/Trees/142514/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "28.04 m",
+          "434 cm",
+          "24.84 m"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/38501/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/38501/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "28.04 m",
+            "href": "/Browse/Trees/142521/Details"
+          },
+          {
+            "text": "434 cm",
+            "href": "/Browse/Trees/142521/Details"
+          },
+          {
+            "text": "24.84 m",
+            "href": "/Browse/Trees/142521/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 09.374, -076 20.413",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Onondaga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

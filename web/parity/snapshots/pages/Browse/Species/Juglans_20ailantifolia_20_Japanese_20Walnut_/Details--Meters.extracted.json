@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Juglans ailantifolia",
+  "commonName": "Japanese Walnut",
+  "global": {
+    "maxHeight": {
+      "text": "13.41 m",
+      "href": "/Browse/Trees/313236/Details"
+    },
+    "maxGirth": {
+      "text": "249 cm",
+      "href": "/Browse/Trees/313236/Details"
+    },
+    "maxCrownSpread": {
+      "text": "19.20 m",
+      "href": "/Browse/Trees/313236/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "West Virginia",
+          "13.41 m",
+          "249 cm",
+          "19.20 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "13.41 m",
+            "href": "/Browse/Trees/313236/Details"
+          },
+          {
+            "text": "249 cm",
+            "href": "/Browse/Trees/313236/Details"
+          },
+          {
+            "text": "19.20 m",
+            "href": "/Browse/Trees/313236/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

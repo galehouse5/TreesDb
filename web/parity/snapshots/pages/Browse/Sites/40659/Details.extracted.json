@@ -1,0 +1,365 @@
+{
+  "siteId": 40659,
+  "summary": {
+    "Name": "Cohutta Wilderness",
+    "RHI5": "139.74",
+    "RHI10": "131.43",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.72",
+    "RGI10": "8.55",
+    "RGI20": "(not enough data)",
+    "Trees measured": "44",
+    "Last measurement date": "08/12/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/12/2009",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/cohutta_wilderness_area_ga.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "06/09/2005",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/cohutta_wilderness05.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/05/2005",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/sugar_cove.htm",
+      "comments": "37,000 acres. Trees were measured in Sugar Cove."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "121.2'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40659/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40659/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "121.2'",
+            "href": "/Browse/Trees/235281/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/234938/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "120.8'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/40659/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/40659/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "120.8'",
+            "href": "/Browse/Trees/234387/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/234387/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "93.0'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40659/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40659/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "93.0'",
+            "href": "/Browse/Trees/234386/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/234386/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "116.6'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40659/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40659/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "116.6'",
+            "href": "/Browse/Trees/234936/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/234936/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "126.9'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40659/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40659/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "126.9'",
+            "href": "/Browse/Trees/234392/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/234392/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "109.5'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40659/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40659/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "109.5'",
+            "href": "/Browse/Trees/234937/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/234937/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "128.0'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40659/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40659/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "128.0'",
+            "href": "/Browse/Trees/234930/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/234382/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "44.4'",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/40659/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/40659/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "44.4'",
+            "href": "/Browse/Trees/234401/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/234401/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex montana",
+          "Mountain Holly",
+          "38.1'",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex montana",
+            "href": "/Browse/Sites/40659/Species/Ilex%20montana%20(Mountain%20Holly)/Details"
+          },
+          {
+            "text": "Mountain Holly",
+            "href": "/Browse/Sites/40659/Species/Ilex%20montana%20(Mountain%20Holly)/Details"
+          },
+          {
+            "text": "38.1'",
+            "href": "/Browse/Trees/235285/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/235285/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "150.4'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40659/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40659/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "150.4'",
+            "href": "/Browse/Trees/235283/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/234399/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 56.656, -084 41.926",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Murray"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,101 @@
+{
+  "siteId": 38460,
+  "summary": {
+    "Name": "Eaton County Coffeetree",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "09/20/2016",
+    "Ownership contact": "(private)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/20/2016",
+      "visitors": "Greg Schmidt",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Gymnocladus dioicus",
+          "Kentucky Coffeetree",
+          "87.3'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gymnocladus dioicus",
+            "href": "/Browse/Sites/38460/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "Kentucky Coffeetree",
+            "href": "/Browse/Sites/38460/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "87.3'",
+            "href": "/Browse/Trees/141078/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/141078/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 38.012, -084 56.635",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Eaton"
+    },
+    "state": {
+      "text": "Michigan (US)",
+      "href": "/Browse/States/20/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

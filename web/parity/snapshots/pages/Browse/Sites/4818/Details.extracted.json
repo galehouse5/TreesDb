@@ -1,0 +1,104 @@
+{
+  "siteId": 4818,
+  "summary": {
+    "Name": "Carter Hall",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "04/28/2010",
+    "Ownership contact": "Project Hope",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/28/2010",
+      "visitors": "Gaines Mcmartin",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "94.0'",
+          "246''",
+          "147.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/4818/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/4818/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "94.0'",
+            "href": "/Browse/Trees/48747/Details"
+          },
+          {
+            "text": "246''",
+            "href": "/Browse/Trees/48746/Details"
+          },
+          {
+            "text": "147.0'",
+            "href": "/Browse/Trees/48746/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 04.234, -078 01.818",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Clarke"
+    },
+    "state": {
+      "text": "Virginia (US)",
+      "href": "/Browse/States/43/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

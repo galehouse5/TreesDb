@@ -1,0 +1,371 @@
+{
+  "siteId": 22075,
+  "summary": {
+    "Name": "Winterthur",
+    "RHI5": "143.46",
+    "RHI10": "133.30",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.75",
+    "RGI10": "12.33",
+    "RGI20": "(not enough data)",
+    "Trees measured": "39",
+    "Last measurement date": "06/14/2014",
+    "Ownership contact": "9105 Kennett Pike Wilmington, DE",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/14/2014",
+      "visitors": "John Harvey",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "09/10/2010",
+      "visitors": "Will Blozan, George Fieo, and Scott Wade",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "01/25/2009",
+      "visitors": "Mike Dunn",
+      "tripReportUrl": "groups.google.com/group/entstrees/browse_thread/thread/51cc9ca4aa06998f",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "90.0'",
+          "86''",
+          "44.0'"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/22075/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/22075/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/140159/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/140159/Details"
+          },
+          {
+            "text": "44.0'",
+            "href": "/Browse/Trees/140159/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "144.0'",
+          "121''",
+          "65.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/22075/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/22075/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "144.0'",
+            "href": "/Browse/Trees/140144/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/140145/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/140145/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "138.2'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/22075/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/22075/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "138.2'",
+            "href": "/Browse/Trees/140148/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/140149/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "118.2'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/22075/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/22075/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "118.2'",
+            "href": "/Browse/Trees/140155/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/140155/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca var. opaca",
+          "American Holly",
+          "67.6'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca var. opaca",
+            "href": "/Browse/Sites/22075/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/22075/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "67.6'",
+            "href": "/Browse/Trees/140161/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/140161/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "103.7'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/22075/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/22075/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "103.7'",
+            "href": "/Browse/Trees/140158/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/140158/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "122.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/22075/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/22075/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "122.7'",
+            "href": "/Browse/Trees/140152/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "162.3'",
+          "245''",
+          "110.0'"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/22075/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/22075/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "162.3'",
+            "href": "/Browse/Trees/140139/Details"
+          },
+          {
+            "text": "245''",
+            "href": "/Browse/Trees/168613/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/140139/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "105.9'",
+          "199''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/22075/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/22075/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "105.9'",
+            "href": "/Browse/Trees/140156/Details"
+          },
+          {
+            "text": "199''",
+            "href": "/Browse/Trees/140156/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "121.6'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/22075/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/22075/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "121.6'",
+            "href": "/Browse/Trees/140154/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/140154/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 48.292, -075 36.695",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "New Castle"
+    },
+    "state": {
+      "text": "Delaware (US)",
+      "href": "/Browse/States/7/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

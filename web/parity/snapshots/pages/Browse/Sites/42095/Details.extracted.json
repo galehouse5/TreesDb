@@ -1,0 +1,210 @@
+{
+  "siteId": 42095,
+  "summary": {
+    "Name": "Oregon Caves National Monument & Preserve",
+    "RHI5": "210.10",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "18.70",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "06/18/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/18/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. lowiana x abies grandis",
+          "Hybrid Fir",
+          "206.9'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. lowiana x abies grandis",
+            "href": "/Browse/Sites/42095/Species/Abies%20concolor%20var.%20lowiana%20x%20abies%20grandis%20(Hybrid%20Fir)/Details"
+          },
+          {
+            "text": "Hybrid Fir",
+            "href": "/Browse/Sites/42095/Species/Abies%20concolor%20var.%20lowiana%20x%20abies%20grandis%20(Hybrid%20Fir)/Details"
+          },
+          {
+            "text": "206.9'",
+            "href": "/Browse/Trees/297902/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/297899/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chamaecyparis lawsoniana",
+          "Port Orford Cedar",
+          "186.1'",
+          "252''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis lawsoniana",
+            "href": "/Browse/Sites/42095/Species/Chamaecyparis%20lawsoniana%20(Port%20Orford%20Cedar)/Details"
+          },
+          {
+            "text": "Port Orford Cedar",
+            "href": "/Browse/Sites/42095/Species/Chamaecyparis%20lawsoniana%20(Port%20Orford%20Cedar)/Details"
+          },
+          {
+            "text": "186.1'",
+            "href": "/Browse/Trees/297898/Details"
+          },
+          {
+            "text": "252''",
+            "href": "/Browse/Trees/297897/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "220.4'",
+          "224''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/Sites/42095/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/Sites/42095/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "220.4'",
+            "href": "/Browse/Trees/297892/Details"
+          },
+          {
+            "text": "224''",
+            "href": "/Browse/Trees/297892/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. benthamiana",
+          "Ponderosa Pine",
+          "201.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. benthamiana",
+            "href": "/Browse/Sites/42095/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/42095/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "201.3'",
+            "href": "/Browse/Trees/297893/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "235.8'",
+          "516''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/42095/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/42095/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "235.8'",
+            "href": "/Browse/Trees/297895/Details"
+          },
+          {
+            "text": "516''",
+            "href": "/Browse/Trees/297896/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 06.063, -123 23.637",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Josephine"
+    },
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

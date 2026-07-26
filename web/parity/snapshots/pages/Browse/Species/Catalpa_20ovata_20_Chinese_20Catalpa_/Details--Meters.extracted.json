@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Catalpa ovata",
+  "commonName": "Chinese Catalpa",
+  "global": {
+    "maxHeight": {
+      "text": "21.55 m",
+      "href": "/Browse/Trees/226051/Details"
+    },
+    "maxGirth": {
+      "text": "41 cm",
+      "href": "/Browse/Trees/226086/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "21.55 m",
+          "41 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "21.55 m",
+            "href": "/Browse/Trees/226051/Details"
+          },
+          {
+            "text": "41 cm",
+            "href": "/Browse/Trees/226086/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

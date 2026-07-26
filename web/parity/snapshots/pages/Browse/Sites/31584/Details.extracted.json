@@ -1,0 +1,362 @@
+{
+  "siteId": 31584,
+  "summary": {
+    "Name": "Courson Island",
+    "RHI5": "115.50",
+    "RHI10": "99.22",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.43",
+    "RGI10": "9.79",
+    "RGI20": "(not enough data)",
+    "Trees measured": "32",
+    "Last measurement date": "04/20/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/20/2010",
+      "visitors": "Edward Frank and Carl Harting",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "09/04/2007",
+      "visitors": "Dale Luthringer, Edward Frank, and Anthony Kelly",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "123.2'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/31584/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/31584/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "123.2'",
+            "href": "/Browse/Trees/139253/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/140007/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "-",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/31584/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/31584/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          null,
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/139999/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "108.1'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/31584/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/31584/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "108.1'",
+            "href": "/Browse/Trees/140000/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/139250/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "94.5'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/31584/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/31584/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "94.5'",
+            "href": "/Browse/Trees/140005/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/140005/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa spp.",
+          "Catalpa",
+          "61.7'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catalpa spp.",
+            "href": "/Browse/Sites/31584/Species/Catalpa%20spp.%20(Catalpa)/Details"
+          },
+          {
+            "text": "Catalpa",
+            "href": "/Browse/Sites/31584/Species/Catalpa%20spp.%20(Catalpa)/Details"
+          },
+          {
+            "text": "61.7'",
+            "href": "/Browse/Trees/140003/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/140003/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus punctata",
+          "Dotted Hawthorn",
+          "42.5'",
+          "59''",
+          "45.9'"
+        ],
+        "links": [
+          {
+            "text": "Crataegus punctata",
+            "href": "/Browse/Sites/31584/Species/Crataegus%20punctata%20(Dotted%20Hawthorn)/Details"
+          },
+          {
+            "text": "Dotted Hawthorn",
+            "href": "/Browse/Sites/31584/Species/Crataegus%20punctata%20(Dotted%20Hawthorn)/Details"
+          },
+          {
+            "text": "42.5'",
+            "href": "/Browse/Trees/140004/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/140004/Details"
+          },
+          {
+            "text": "45.9'",
+            "href": "/Browse/Trees/140004/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus spp.",
+          "Hawthorn",
+          "29.6'",
+          "59''",
+          "33.0'"
+        ],
+        "links": [
+          {
+            "text": "Crataegus spp.",
+            "href": "/Browse/Sites/31584/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/31584/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "29.6'",
+            "href": "/Browse/Trees/139254/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/139254/Details"
+          },
+          {
+            "text": "33.0'",
+            "href": "/Browse/Trees/139254/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "113.6'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/31584/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/31584/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "113.6'",
+            "href": "/Browse/Trees/139251/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/139251/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "86.0'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/31584/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/31584/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "86.0'",
+            "href": "/Browse/Trees/139255/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/139255/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "136.5'",
+          "182''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/31584/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/31584/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "136.5'",
+            "href": "/Browse/Trees/139258/Details"
+          },
+          {
+            "text": "182''",
+            "href": "/Browse/Trees/140013/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 40.882, -079 22.823",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public- federal",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

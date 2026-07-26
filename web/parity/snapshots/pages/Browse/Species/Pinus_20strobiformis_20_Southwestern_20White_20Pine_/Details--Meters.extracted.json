@@ -1,0 +1,135 @@
+{
+  "botanicalName": "Pinus strobiformis",
+  "commonName": "Southwestern White Pine",
+  "global": {
+    "maxHeight": {
+      "text": "31.76 m",
+      "href": "/Browse/Trees/320685/Details"
+    },
+    "maxGirth": {
+      "text": "309 cm",
+      "href": "/Browse/Trees/226132/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "31.76 m",
+          "308 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "31.76 m",
+            "href": "/Browse/Trees/320685/Details"
+          },
+          {
+            "text": "308 cm",
+            "href": "/Browse/Trees/320684/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "19.23 m",
+          "186 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "19.23 m",
+            "href": "/Browse/Trees/189012/Details"
+          },
+          {
+            "text": "186 cm",
+            "href": "/Browse/Trees/189012/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "30.45 m",
+          "270 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "30.45 m",
+            "href": "/Browse/Trees/317993/Details"
+          },
+          {
+            "text": "270 cm",
+            "href": "/Browse/Trees/317993/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "31.58 m",
+          "309 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "31.58 m",
+            "href": "/Browse/Trees/226132/Details"
+          },
+          {
+            "text": "309 cm",
+            "href": "/Browse/Trees/226132/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

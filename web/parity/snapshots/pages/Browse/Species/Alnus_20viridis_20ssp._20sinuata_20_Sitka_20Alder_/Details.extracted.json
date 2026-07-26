@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Alnus viridis ssp. sinuata",
+  "commonName": "Sitka Alder",
+  "global": {
+    "maxHeight": {
+      "text": "26.4'",
+      "href": "/Browse/Trees/75032/Details"
+    },
+    "maxGirth": {
+      "text": "23''",
+      "href": "/Browse/Trees/75032/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alaska",
+          "26.4'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alaska",
+            "href": "/Browse/States/62/Details"
+          },
+          {
+            "text": "26.4'",
+            "href": "/Browse/Trees/75032/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/75032/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

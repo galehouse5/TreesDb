@@ -1,0 +1,132 @@
+{
+  "siteId": 39955,
+  "summary": {
+    "Name": "St. Joseph's Cemetery, Auburn, NY",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "01/03/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/03/2016",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "86.3'",
+          "181''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/39955/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/39955/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "86.3'",
+            "href": "/Browse/Trees/212327/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/212327/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "70.0'",
+          "239''",
+          "129.2'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/39955/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/39955/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/212325/Details"
+          },
+          {
+            "text": "239''",
+            "href": "/Browse/Trees/212325/Details"
+          },
+          {
+            "text": "129.2'",
+            "href": "/Browse/Trees/212325/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 54.176, -076 33.192",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Cayuga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

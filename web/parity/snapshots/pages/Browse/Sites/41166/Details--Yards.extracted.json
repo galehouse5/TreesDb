@@ -1,0 +1,132 @@
+{
+  "siteId": 41166,
+  "summary": {
+    "Name": "Copicut Woods",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "03/16/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "516 Acres and is part of the Southeastern Massachusetts Bioreserve. (13,600 acres)"
+  },
+  "visits": [
+    {
+      "visited": "03/16/2017",
+      "visitors": "Doug Bidlack and Jared Lockwood",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "516 Acres and is part of the Southeastern Massachusetts Bioreserve. (13,600 acres)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Chamaecyparis thyoides",
+          "Atlantic White Cedar",
+          "22.13 yd",
+          "80''",
+          "5.60 yd"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis thyoides",
+            "href": "/Browse/Sites/41166/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "Atlantic White Cedar",
+            "href": "/Browse/Sites/41166/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "22.13 yd",
+            "href": "/Browse/Trees/250673/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/250669/Details"
+          },
+          {
+            "text": "5.60 yd",
+            "href": "/Browse/Trees/250673/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Kalmia latifolia",
+          "Mountain Laurel",
+          "6.37 yd",
+          "9''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kalmia latifolia",
+            "href": "/Browse/Sites/41166/Species/Kalmia%20latifolia%20(Mountain%20Laurel)/Details"
+          },
+          {
+            "text": "Mountain Laurel",
+            "href": "/Browse/Sites/41166/Species/Kalmia%20latifolia%20(Mountain%20Laurel)/Details"
+          },
+          {
+            "text": "6.37 yd",
+            "href": "/Browse/Trees/250674/Details"
+          },
+          {
+            "text": "9''",
+            "href": "/Browse/Trees/250674/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 42.678, -071 03.775",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Bristol"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

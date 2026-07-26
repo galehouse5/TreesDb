@@ -1,0 +1,204 @@
+{
+  "botanicalName": "Ulmus alata",
+  "commonName": "Winged Elm",
+  "global": {
+    "maxHeight": {
+      "text": "123.3'",
+      "href": "/Browse/Trees/252283/Details"
+    },
+    "maxGirth": {
+      "text": "112''",
+      "href": "/Browse/Trees/238594/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "112.7'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "112.7'",
+            "href": "/Browse/Trees/243128/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/243128/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "109.0'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/234447/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/234447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "34.5'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "34.5'",
+            "href": "/Browse/Trees/297685/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/297685/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "104.2'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "104.2'",
+            "href": "/Browse/Trees/320736/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/320736/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "123.3'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "123.3'",
+            "href": "/Browse/Trees/252283/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/252283/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "122.6'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "122.6'",
+            "href": "/Browse/Trees/252706/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/238594/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "94.3'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "94.3'",
+            "href": "/Browse/Trees/282296/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/282296/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

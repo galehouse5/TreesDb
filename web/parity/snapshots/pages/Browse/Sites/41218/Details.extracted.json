@@ -1,0 +1,132 @@
+{
+  "siteId": 41218,
+  "summary": {
+    "Name": "Fork Ridge Trail",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "04/17/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/17/2014",
+      "visitors": "Patrick Brandt",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "07/21/2010",
+      "visitors": "Josh Kelly and Ian Breckheimer",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "See also: http://www.ents-bbs.org/viewtopic.php?f=74&t=804&sid=5889e46023df58e7bc6da42345d72d3e#p2577"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "191.2'",
+          "253''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41218/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41218/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "191.2'",
+            "href": "/Browse/Trees/252473/Details"
+          },
+          {
+            "text": "253''",
+            "href": "/Browse/Trees/252483/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "-",
+          "197''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/41218/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41218/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "197''",
+            "href": "/Browse/Trees/252482/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 34.846, -083 27.018",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Swain"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

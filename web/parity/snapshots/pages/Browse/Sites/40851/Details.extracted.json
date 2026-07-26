@@ -1,0 +1,185 @@
+{
+  "siteId": 40851,
+  "summary": {
+    "Name": "Bennett Homestead",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "11/28/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/28/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/bennett_homestead_lowndesville.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "103.0'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/40851/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/40851/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/238192/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/238192/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "79.6'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/40851/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/40851/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "79.6'",
+            "href": "/Browse/Trees/238190/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/238190/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "82.9'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40851/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40851/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "82.9'",
+            "href": "/Browse/Trees/238191/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/238191/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus stellata",
+          "Post Oak",
+          "78.0'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus stellata",
+            "href": "/Browse/Sites/40851/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "Post Oak",
+            "href": "/Browse/Sites/40851/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "78.0'",
+            "href": "/Browse/Trees/238193/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/238193/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 12.814, -082 38.940",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Abbeville"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

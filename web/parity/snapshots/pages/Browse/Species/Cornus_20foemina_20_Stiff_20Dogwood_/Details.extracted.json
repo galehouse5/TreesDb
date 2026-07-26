@@ -1,0 +1,119 @@
+{
+  "botanicalName": "Cornus foemina",
+  "commonName": "Stiff Dogwood",
+  "global": {
+    "maxHeight": {
+      "text": "25.8'",
+      "href": "/Browse/Trees/234762/Details"
+    },
+    "maxGirth": {
+      "text": "13''",
+      "href": "/Browse/Trees/228988/Details"
+    },
+    "maxCrownSpread": {
+      "text": "20.5'",
+      "href": "/Browse/Trees/236756/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "25.8'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "25.8'",
+            "href": "/Browse/Trees/234762/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/234763/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "25.1'",
+          "11''",
+          "20.5'"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "25.1'",
+            "href": "/Browse/Trees/236756/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/236756/Details"
+          },
+          {
+            "text": "20.5'",
+            "href": "/Browse/Trees/236756/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "22.6'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "22.6'",
+            "href": "/Browse/Trees/228988/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/228988/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

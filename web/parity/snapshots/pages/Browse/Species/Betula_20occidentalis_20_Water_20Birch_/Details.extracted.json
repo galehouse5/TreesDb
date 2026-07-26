@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Betula occidentalis",
+  "commonName": "Water Birch",
+  "global": {
+    "maxHeight": {
+      "text": "33.1'",
+      "href": "/Browse/Trees/196068/Details"
+    },
+    "maxGirth": {
+      "text": "25''",
+      "href": "/Browse/Trees/196067/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Colorado",
+          "23.3'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "23.3'",
+            "href": "/Browse/Trees/126303/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/126303/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "33.1'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "33.1'",
+            "href": "/Browse/Trees/196068/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/196067/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

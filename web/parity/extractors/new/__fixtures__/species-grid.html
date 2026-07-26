@@ -1,0 +1,34 @@
+<!-- Hand-built fixture mirroring the real DOM shape rendered by
+     components/grids/browse-grid.tsx for app/species/page.tsx (task P1-04).
+     Same sample data (Quercus alba/White Oak/123.5') as
+     parity/extractors/legacy/__fixtures__/species-grid.html. -->
+<div class="dataTablesGrid space-y-3">
+  <form>
+    <div><label for="filter-BotanicalName">Botanical name</label><input id="filter-BotanicalName" type="text" value=""/></div>
+  </form>
+  <div class="overflow-x-auto rounded-md border border-border">
+    <table data-slot="table" class="w-full display">
+      <thead data-slot="table-header">
+        <tr data-slot="table-row">
+          <th data-slot="table-head" class="sortable"><a href="/species?sort=BotanicalName&sortAsc=true"><span>Botanical name</span></a></th>
+          <th data-slot="table-head" class="sortable"><a href="/species?sort=CommonName&sortAsc=true"><span>Common name</span></a></th>
+          <th data-slot="table-head" class="sortable"><a href="/species?sort=MaxHeight&sortAsc=false"><span>Max height</span></a></th>
+        </tr>
+      </thead>
+      <tbody data-slot="table-body">
+        <tr data-slot="table-row">
+          <td data-slot="table-cell"><a href="/species/quercus-alba--white-oak">Quercus alba</a></td>
+          <td data-slot="table-cell"><a href="/species/quercus-alba--white-oak">White Oak</a></td>
+          <td data-slot="table-cell"><a href="/trees/4242">123.5'</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="flex items-center justify-between gap-3 text-sm text-muted-foreground">
+    <div class="dataTables_info">Showing 1 to 1 of 1 entries</div>
+    <div class="dataTables_paginate flex items-center gap-2">
+      <span class="paginate_disabled_previous opacity-50">Previous</span>
+      <span class="paginate_disabled_next opacity-50">Next</span>
+    </div>
+  </div>
+</div>

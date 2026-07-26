@@ -1,0 +1,70 @@
+{
+  "treeId": 228979,
+  "botanicalName": {
+    "text": "Populus deltoides",
+    "href": "/Browse/Sites/40359/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+  },
+  "commonName": {
+    "text": "Eastern Cottonwood",
+    "href": "/Browse/Sites/40359/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+  },
+  "details": {
+    "Height": "44.84 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "417 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "274.75",
+    "ENTSPTS": "2010.37",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.43",
+    "Champion points (abbreviated)": "311.10",
+    "Diameter": "133 cm",
+    "Conical volume": "20.64 m³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 06/02/2006",
+      "summary": {
+        "Height": "44.84 m",
+        "Girth": "417 cm"
+      },
+      "details": {
+        "Botanical name": "Populus deltoides",
+        "Common name": "Eastern Cottonwood",
+        "Height": "44.84 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "417 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "274.75",
+        "ENTSPTS": "2010.37",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.43",
+        "Champion points (abbreviated)": "311.10",
+        "Diameter": "133 cm",
+        "Conical volume": "20.64 m³",
+        "General comments": "(none)"
+      },
+      "measurers": "Jess Riddle"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "35 20.294, -090 03.475",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Meerman-Shelby Forest State Park",
+      "href": "/Browse/Sites/40359/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Shelby"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

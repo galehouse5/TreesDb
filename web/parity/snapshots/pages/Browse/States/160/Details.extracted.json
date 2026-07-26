@@ -1,0 +1,218 @@
+{
+  "stateId": 160,
+  "summary": {
+    "Name": "Tuscany",
+    "Code": "52",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "09/17/2017"
+  },
+  "location": {
+    "Coordinates": "43 21.305, 011 01.744",
+    "Country": "Italy"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cedrus deodara",
+          "Deodar Cedar",
+          "65.0'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus deodara",
+            "href": "/Browse/States/160/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "Deodar Cedar",
+            "href": "/Browse/States/160/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/283116/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/283116/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cupressus sempervirens",
+          "Italian Cypress",
+          "74.0'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cupressus sempervirens",
+            "href": "/Browse/States/160/Species/Cupressus%20sempervirens%20(Italian%20%20Cypress)/Details"
+          },
+          {
+            "text": "Italian Cypress",
+            "href": "/Browse/States/160/Species/Cupressus%20sempervirens%20(Italian%20%20Cypress)/Details"
+          },
+          {
+            "text": "74.0'",
+            "href": "/Browse/Trees/283118/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/283118/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cupressus sempervirens",
+          "Italian Cypress",
+          "69.8'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cupressus sempervirens",
+            "href": "/Browse/States/160/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "Italian Cypress",
+            "href": "/Browse/States/160/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "69.8'",
+            "href": "/Browse/Trees/283117/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/283117/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus pinea",
+          "Italian Stone Pine",
+          "70.1'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus pinea",
+            "href": "/Browse/States/160/Species/Pinus%20pinea%20(Italian%20Stone%20Pine)/Details"
+          },
+          {
+            "text": "Italian Stone Pine",
+            "href": "/Browse/States/160/Species/Pinus%20pinea%20(Italian%20Stone%20Pine)/Details"
+          },
+          {
+            "text": "70.1'",
+            "href": "/Browse/Trees/283115/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/283115/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Montepulciano",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montepulciano",
+            "href": "/Browse/Sites/41929/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

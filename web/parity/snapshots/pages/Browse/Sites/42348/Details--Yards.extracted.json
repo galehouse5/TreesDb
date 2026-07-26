@@ -1,0 +1,229 @@
+{
+  "siteId": 42348,
+  "summary": {
+    "Name": "Valles Caldera National Preserve",
+    "RHI5": "39.020",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "0.787",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "01/22/2025",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/22/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. concolor",
+          "White Fir",
+          "34.33 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. concolor",
+            "href": "/Browse/Sites/42348/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/42348/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "34.33 yd",
+            "href": "/Browse/Trees/320671/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii var. engelmannii",
+          "Engelmann Spruce",
+          "38.00 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii var. engelmannii",
+            "href": "/Browse/Sites/42348/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/42348/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "38.00 yd",
+            "href": "/Browse/Trees/320675/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "31.87 yd",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/Sites/42348/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/Sites/42348/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "31.87 yd",
+            "href": "/Browse/Trees/320674/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/320674/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus edulis",
+          "Twoneedle Pinyon",
+          "16.67 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus edulis",
+            "href": "/Browse/Sites/42348/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "Twoneedle Pinyon",
+            "href": "/Browse/Sites/42348/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "16.67 yd",
+            "href": "/Browse/Trees/320668/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "45.43 yd",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/Sites/42348/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/42348/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "45.43 yd",
+            "href": "/Browse/Trees/320670/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/320670/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "45.47 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/42348/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/42348/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "45.47 yd",
+            "href": "/Browse/Trees/320672/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 49.676, -106 38.484",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Sandoval"
+    },
+    "state": {
+      "text": "New Mexico (US)",
+      "href": "/Browse/States/30/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,578 @@
+{
+  "stateId": 47,
+  "summary": {
+    "Name": "West Virginia",
+    "Code": "WV",
+    "RHI5": "161.34",
+    "RHI10": "152.48",
+    "RHI20": "143.81",
+    "RGI5": "25.38",
+    "RGI10": "24.43",
+    "RGI20": "21.95",
+    "Trees measured": "2020",
+    "Last measurement date": "12/27/2025"
+  },
+  "location": {
+    "Coordinates": "38 55.209, -080 10.913",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies amabilis",
+          "Pacific Silver Fir",
+          "75.8'",
+          "89''",
+          "26.5'"
+        ],
+        "links": [
+          {
+            "text": "Abies amabilis",
+            "href": "/Browse/States/47/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "Pacific Silver Fir",
+            "href": "/Browse/States/47/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "75.8'",
+            "href": "/Browse/Trees/315015/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/315015/Details"
+          },
+          {
+            "text": "26.5'",
+            "href": "/Browse/Trees/315015/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "85.0'",
+          "72''",
+          "33.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/States/47/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/States/47/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/313161/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/312114/Details"
+          },
+          {
+            "text": "33.0'",
+            "href": "/Browse/Trees/313161/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "45.0'",
+          "33''",
+          "18.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/States/47/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/47/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/314999/Details"
+          },
+          {
+            "text": "33''",
+            "href": "/Browse/Trees/314998/Details"
+          },
+          {
+            "text": "18.0'",
+            "href": "/Browse/Trees/314998/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies fraseri",
+          "Fraser Fir",
+          "39.2'",
+          "36''",
+          "27.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies fraseri",
+            "href": "/Browse/States/47/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "Fraser Fir",
+            "href": "/Browse/States/47/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "39.2'",
+            "href": "/Browse/Trees/313267/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/313217/Details"
+          },
+          {
+            "text": "27.0'",
+            "href": "/Browse/Trees/313217/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies procera",
+          "Noble Fir",
+          "72.0'",
+          "84''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies procera",
+            "href": "/Browse/States/47/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "Noble Fir",
+            "href": "/Browse/States/47/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/313205/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/313205/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/313205/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer ×freemanii",
+          "Freeman Maple",
+          "45.7'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer ×freemanii",
+            "href": "/Browse/States/47/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "Freeman Maple",
+            "href": "/Browse/States/47/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "45.7'",
+            "href": "/Browse/Trees/271878/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/271878/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer buergenlarium",
+          "Trident Maple",
+          "38.8'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer buergenlarium",
+            "href": "/Browse/States/47/Species/Acer%20buergenlarium%20(Trident%20Maple)/Details"
+          },
+          {
+            "text": "Trident Maple",
+            "href": "/Browse/States/47/Species/Acer%20buergenlarium%20(Trident%20Maple)/Details"
+          },
+          {
+            "text": "38.8'",
+            "href": "/Browse/Trees/222940/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/222940/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer campestre",
+          "Hedge Maple",
+          "40.1'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer campestre",
+            "href": "/Browse/States/47/Species/Acer%20campestre%20(Hedge%20Maple)/Details"
+          },
+          {
+            "text": "Hedge Maple",
+            "href": "/Browse/States/47/Species/Acer%20campestre%20(Hedge%20Maple)/Details"
+          },
+          {
+            "text": "40.1'",
+            "href": "/Browse/Trees/222951/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/222951/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer floridanum",
+          "Southern Sugar Maple",
+          "58.2'",
+          "102''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer floridanum",
+            "href": "/Browse/States/47/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/States/47/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "58.2'",
+            "href": "/Browse/Trees/315037/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/315037/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/315037/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer griseum",
+          "Paperbark Maple",
+          "32.0'",
+          "46''",
+          "30.6'"
+        ],
+        "links": [
+          {
+            "text": "Acer griseum",
+            "href": "/Browse/States/47/Species/Acer%20griseum%20(Paperbark%20Maple)/Details"
+          },
+          {
+            "text": "Paperbark Maple",
+            "href": "/Browse/States/47/Species/Acer%20griseum%20(Paperbark%20Maple)/Details"
+          },
+          {
+            "text": "32.0'",
+            "href": "/Browse/Trees/315044/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/313227/Details"
+          },
+          {
+            "text": "30.6'",
+            "href": "/Browse/Trees/315044/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 208 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alum Bridge",
+          "130.14",
+          "119.89",
+          "13.16",
+          "10.96"
+        ],
+        "links": [
+          {
+            "text": "Alum Bridge",
+            "href": "/Browse/Sites/38358/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ansted Rail Trail",
+          "118.42",
+          "107.34",
+          "0.00",
+          "0.00"
+        ],
+        "links": [
+          {
+            "text": "Ansted Rail Trail",
+            "href": "/Browse/Sites/38469/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Babcock State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Babcock State Park",
+            "href": "/Browse/Sites/40176/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bavarian Inn",
+          "89.58",
+          "-",
+          "10.52",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bavarian Inn",
+            "href": "/Browse/Sites/38832/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Blair House",
+          "73.88",
+          "-",
+          "7.64",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Blair House",
+            "href": "/Browse/Sites/41774/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Blennerhassett Island State Historical Park",
+          "116.18",
+          "98.53",
+          "13.88",
+          "10.72"
+        ],
+        "links": [
+          {
+            "text": "Blennerhassett Island State Historical Park",
+            "href": "/Browse/Sites/40068/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bottomland Along North Fork Of Hughes River",
+          "123.28",
+          "102.72",
+          "9.48",
+          "7.37"
+        ],
+        "links": [
+          {
+            "text": "Bottomland Along North Fork Of Hughes River",
+            "href": "/Browse/Sites/41806/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cacapon State Park State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cacapon State Park State Park",
+            "href": "/Browse/Sites/40175/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Canaan Valley Resort State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Canaan Valley Resort State Park",
+            "href": "/Browse/Sites/41964/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cathedral State Park",
+          "110.34",
+          "-",
+          "11.28",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cathedral State Park",
+            "href": "/Browse/Sites/38359/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 71 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

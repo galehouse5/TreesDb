@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Quercus xjackiana",
+  "commonName": "Hybrid Oak",
+  "global": {
+    "maxHeight": {
+      "text": "92.5'",
+      "href": "/Browse/Trees/281020/Details"
+    },
+    "maxGirth": {
+      "text": "90''",
+      "href": "/Browse/Trees/281020/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "92.5'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "92.5'",
+            "href": "/Browse/Trees/281020/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/281020/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

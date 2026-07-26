@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Pinus densiflora",
+  "commonName": "Japanese Globe Red Pine",
+  "global": {
+    "maxHeight": {
+      "text": "48.5'",
+      "href": "/Browse/Trees/226034/Details"
+    },
+    "maxGirth": {
+      "text": "54''",
+      "href": "/Browse/Trees/226034/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "48.5'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "48.5'",
+            "href": "/Browse/Trees/226034/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/226034/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

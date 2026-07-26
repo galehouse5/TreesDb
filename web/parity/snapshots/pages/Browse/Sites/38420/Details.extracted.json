@@ -1,0 +1,350 @@
+{
+  "siteId": 38420,
+  "summary": {
+    "Name": "Scott Community Park",
+    "RHI5": "116.18",
+    "RHI10": "107.93",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.53",
+    "RGI10": "9.33",
+    "RGI20": "(not enough data)",
+    "Trees measured": "55",
+    "Last measurement date": "04/12/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "Post of 4/12/2004 for trips on 3/19/2004, 4/9/2004"
+  },
+  "visits": [
+    {
+      "visited": "04/12/2004",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/scott_community_park.htm",
+      "comments": "Post of 4/12/2004 for trips on 3/19/2004, 4/9/2004"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "116.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/38420/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38420/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "116.5'",
+            "href": "/Browse/Trees/139053/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "81.5'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/38420/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/38420/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "81.5'",
+            "href": "/Browse/Trees/139064/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/139064/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "102.7'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38420/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38420/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "102.7'",
+            "href": "/Browse/Trees/139014/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/139014/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "105.1'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38420/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38420/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "105.1'",
+            "href": "/Browse/Trees/139062/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/139062/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "122.0'",
+          "137''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38420/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38420/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "122.0'",
+            "href": "/Browse/Trees/139060/Details"
+          },
+          {
+            "text": "137''",
+            "href": "/Browse/Trees/139057/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "112.9'",
+          "179''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/38420/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/38420/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "112.9'",
+            "href": "/Browse/Trees/139035/Details"
+          },
+          {
+            "text": "179''",
+            "href": "/Browse/Trees/139035/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "112.8'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/38420/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/38420/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "112.8'",
+            "href": "/Browse/Trees/139021/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/139021/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "111.7'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/38420/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/38420/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "111.7'",
+            "href": "/Browse/Trees/139019/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/139016/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "116.7'",
+          "176''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38420/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38420/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "116.7'",
+            "href": "/Browse/Trees/139051/Details"
+          },
+          {
+            "text": "176''",
+            "href": "/Browse/Trees/139048/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "97.4'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/38420/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/38420/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "97.4'",
+            "href": "/Browse/Trees/139037/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/139036/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 06.673, -080 08.829",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Erie"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

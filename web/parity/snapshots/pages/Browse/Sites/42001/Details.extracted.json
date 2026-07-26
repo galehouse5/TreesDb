@@ -1,0 +1,129 @@
+{
+  "siteId": 42001,
+  "summary": {
+    "Name": "Italian Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "01/01/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2010",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "86.8'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/42001/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/42001/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "86.8'",
+            "href": "/Browse/Trees/286424/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/286424/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sciadopitys verticillata",
+          "Japanese Umbrella Pine",
+          "42.1'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sciadopitys verticillata",
+            "href": "/Browse/Sites/42001/Species/Sciadopitys%20verticillata%20(Japanese%20Umbrella%20Pine)/Details"
+          },
+          {
+            "text": "Japanese Umbrella Pine",
+            "href": "/Browse/Sites/42001/Species/Sciadopitys%20verticillata%20(Japanese%20Umbrella%20Pine)/Details"
+          },
+          {
+            "text": "42.1'",
+            "href": "/Browse/Trees/286423/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/286423/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 53.934, 012 27.315",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Città Metropolitana Di Roma"
+    },
+    "state": {
+      "text": "Lazio (IT)",
+      "href": "/Browse/States/151/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

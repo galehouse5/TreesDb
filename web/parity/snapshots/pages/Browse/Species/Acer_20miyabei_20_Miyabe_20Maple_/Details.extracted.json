@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Acer miyabei",
+  "commonName": "Miyabe Maple",
+  "global": {
+    "maxHeight": {
+      "text": "55.3'",
+      "href": "/Browse/Trees/226052/Details"
+    },
+    "maxGirth": {
+      "text": "47''",
+      "href": "/Browse/Trees/226052/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "55.3'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "55.3'",
+            "href": "/Browse/Trees/226052/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/226052/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

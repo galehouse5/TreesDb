@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Pseudotsuga menziesii var. menziesii",
+  "commonName": "Douglas-Fir",
+  "global": {
+    "maxHeight": {
+      "text": "322.8'",
+      "href": "/Browse/Trees/269534/Details"
+    },
+    "maxGirth": {
+      "text": "516''",
+      "href": "/Browse/Trees/297896/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "273.0'",
+          "324''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "273.0'",
+            "href": "/Browse/Trees/268982/Details"
+          },
+          {
+            "text": "324''",
+            "href": "/Browse/Trees/268689/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oregon",
+          "322.8'",
+          "516''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon",
+            "href": "/Browse/States/35/Details"
+          },
+          {
+            "text": "322.8'",
+            "href": "/Browse/Trees/269534/Details"
+          },
+          {
+            "text": "516''",
+            "href": "/Browse/Trees/297896/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "298.6'",
+          "502''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "298.6'",
+            "href": "/Browse/Trees/216273/Details"
+          },
+          {
+            "text": "502''",
+            "href": "/Browse/Trees/239725/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

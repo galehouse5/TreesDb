@@ -1,0 +1,104 @@
+{
+  "siteId": 39208,
+  "summary": {
+    "Name": "Fayette County",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "14",
+    "Last measurement date": "05/01/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured on 4/18/2016 and 5/2/2016"
+  },
+  "visits": [
+    {
+      "visited": "05/01/2016",
+      "visitors": "Matt Markwork",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured on 4/18/2016 and 5/2/2016"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "26.67 m",
+          "614 cm",
+          "27.58 m"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/39208/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39208/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "26.67 m",
+            "href": "/Browse/Trees/169321/Details"
+          },
+          {
+            "text": "614 cm",
+            "href": "/Browse/Trees/169326/Details"
+          },
+          {
+            "text": "27.58 m",
+            "href": "/Browse/Trees/169329/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 36.443, -083 25.523",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Fayette"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

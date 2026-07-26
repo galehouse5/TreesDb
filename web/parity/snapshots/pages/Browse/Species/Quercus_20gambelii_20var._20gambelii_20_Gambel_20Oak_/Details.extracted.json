@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Quercus gambelii var. gambelii",
+  "commonName": "Gambel Oak",
+  "global": {
+    "maxHeight": {
+      "text": "92.3'",
+      "href": "/Browse/Trees/96819/Details"
+    },
+    "maxGirth": {
+      "text": "133''",
+      "href": "/Browse/Trees/130982/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "92.3'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "92.3'",
+            "href": "/Browse/Trees/96819/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/130982/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "47.6'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "47.6'",
+            "href": "/Browse/Trees/70486/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/70473/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Wyoming",
+          "40.8'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wyoming",
+            "href": "/Browse/States/48/Details"
+          },
+          {
+            "text": "40.8'",
+            "href": "/Browse/Trees/126312/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/126312/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

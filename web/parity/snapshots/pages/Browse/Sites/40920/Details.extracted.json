@@ -1,0 +1,129 @@
+{
+  "siteId": 40920,
+  "summary": {
+    "Name": "Quebec Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "01/01/2002",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2002",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ulmus americana",
+          "American Elm",
+          "88.0'",
+          "184''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus americana",
+            "href": "/Browse/Sites/40920/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "American Elm",
+            "href": "/Browse/Sites/40920/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "88.0'",
+            "href": "/Browse/Trees/240282/Details"
+          },
+          {
+            "text": "184''",
+            "href": "/Browse/Trees/240282/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus rubra",
+          "Slippery Elm",
+          "65.0'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus rubra",
+            "href": "/Browse/Sites/40920/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "Slippery Elm",
+            "href": "/Browse/Sites/40920/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/240281/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/240281/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "46 48.835, -071 12.494",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Communauté-Urbaine-De-Québec"
+    },
+    "state": {
+      "text": "Quebec (CA)",
+      "href": "/Browse/States/59/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

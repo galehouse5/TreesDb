@@ -1,0 +1,70 @@
+{
+  "treeId": 158457,
+  "botanicalName": {
+    "text": "Fagus grandifolia",
+    "href": "/Browse/Sites/38809/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "commonName": {
+    "text": "American Beech",
+    "href": "/Browse/Sites/38809/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "details": {
+    "Height": "122.6'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "98''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "82.44",
+    "ENTSPTS": "1005.32",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.21",
+    "Champion points (abbreviated)": "221.00",
+    "Diameter": "31''",
+    "Conical volume": "218.7 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/14/2017",
+      "summary": {
+        "Height": "122.6'",
+        "Girth": "98''"
+      },
+      "details": {
+        "Botanical name": "Fagus grandifolia",
+        "Common name": "American Beech",
+        "Height": "122.6'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "98''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "82.44",
+        "ENTSPTS": "1005.32",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.21",
+        "Champion points (abbreviated)": "221.00",
+        "Diameter": "31''",
+        "Conical volume": "218.7 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Darian Copiz"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "38 45.663, -076 43.286",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Swan Point Creek",
+      "href": "/Browse/Sites/38809/Details"
+    },
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Prince George's"
+    },
+    "state": {
+      "text": "Maryland (US)",
+      "href": "/Browse/States/18/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

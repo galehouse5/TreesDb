@@ -1,0 +1,241 @@
+{
+  "siteId": 40962,
+  "summary": {
+    "Name": "Site 1 Southeastern Arkansas",
+    "RHI5": "42.760",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.911",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "09/18/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "Location of tract not disclosed. Map shows a random sourheastern location."
+  },
+  "visits": [
+    {
+      "visited": "09/18/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Location of tract not disclosed. Map shows a random sourheastern location."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "40.57 yd",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40962/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40962/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "40.57 yd",
+            "href": "/Browse/Trees/241645/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/241645/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "42.73 yd",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40962/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40962/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "42.73 yd",
+            "href": "/Browse/Trees/241647/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/241647/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "44.00 yd",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40962/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40962/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "44.00 yd",
+            "href": "/Browse/Trees/241648/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/241650/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "45.90 yd",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/40962/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/40962/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "45.90 yd",
+            "href": "/Browse/Trees/241652/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/241652/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus falcata",
+          "Southern Red Oak",
+          "40.60 yd",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus falcata",
+            "href": "/Browse/Sites/40962/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Southern Red Oak",
+            "href": "/Browse/Sites/40962/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "40.60 yd",
+            "href": "/Browse/Trees/241655/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/241659/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus stellata",
+          "Post Oak",
+          "36.03 yd",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus stellata",
+            "href": "/Browse/Sites/40962/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "Post Oak",
+            "href": "/Browse/Sites/40962/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "36.03 yd",
+            "href": "/Browse/Trees/241660/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/241660/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 54.911, -091 26.784",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Desha"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,194 @@
+{
+  "botanicalName": "Chamaecyparis thyoides",
+  "commonName": "Atlantic White Cedar",
+  "global": {
+    "maxHeight": {
+      "text": "99.9'",
+      "href": "/Browse/Trees/2389/Details"
+    },
+    "maxGirth": {
+      "text": "126''",
+      "href": "/Browse/Trees/171570/Details"
+    },
+    "maxCrownSpread": {
+      "text": "30.0'",
+      "href": "/Browse/Trees/133207/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Florida",
+          "62.4'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "62.4'",
+            "href": "/Browse/Trees/242636/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/242635/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "77.0'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/45357/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/45357/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "74.9'",
+          "80''",
+          "16.8'"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "74.9'",
+            "href": "/Browse/Trees/256026/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/250669/Details"
+          },
+          {
+            "text": "16.8'",
+            "href": "/Browse/Trees/250673/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "86.4'",
+          "126''",
+          "25.0'"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          {
+            "text": "86.4'",
+            "href": "/Browse/Trees/170959/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/171570/Details"
+          },
+          {
+            "text": "25.0'",
+            "href": "/Browse/Trees/171570/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "70.8'",
+          "84''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "70.8'",
+            "href": "/Browse/Trees/133207/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/133207/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/133207/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "99.9'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "99.9'",
+            "href": "/Browse/Trees/2389/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/2389/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

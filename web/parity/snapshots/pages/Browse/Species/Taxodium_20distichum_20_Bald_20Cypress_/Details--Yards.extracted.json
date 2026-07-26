@@ -1,0 +1,271 @@
+{
+  "botanicalName": "Taxodium distichum",
+  "commonName": "Bald Cypress",
+  "global": {
+    "maxHeight": {
+      "text": "49.07 yd",
+      "href": "/Browse/Trees/252696/Details"
+    },
+    "maxGirth": {
+      "text": "556''",
+      "href": "/Browse/Trees/235970/Details"
+    },
+    "maxCrownSpread": {
+      "text": "27.00 yd",
+      "href": "/Browse/Trees/313142/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "41.23 yd",
+          "325''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "41.23 yd",
+            "href": "/Browse/Trees/243127/Details"
+          },
+          {
+            "text": "325''",
+            "href": "/Browse/Trees/241846/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "31.70 yd",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "31.70 yd",
+            "href": "/Browse/Trees/128228/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/76090/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Florida",
+          "41.47 yd",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "41.47 yd",
+            "href": "/Browse/Trees/323411/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/159249/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "34.93 yd",
+          "304''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "34.93 yd",
+            "href": "/Browse/Trees/234782/Details"
+          },
+          {
+            "text": "304''",
+            "href": "/Browse/Trees/234784/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "37.00 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          {
+            "text": "37.00 yd",
+            "href": "/Browse/Trees/170985/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "27.20 yd",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "27.20 yd",
+            "href": "/Browse/Trees/320742/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/320742/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "38.70 yd",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "38.70 yd",
+            "href": "/Browse/Trees/231004/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/231003/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "40.17 yd",
+          "556''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "40.17 yd",
+            "href": "/Browse/Trees/251096/Details"
+          },
+          {
+            "text": "556''",
+            "href": "/Browse/Trees/235970/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "41.73 yd",
+          "308''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "41.73 yd",
+            "href": "/Browse/Trees/283681/Details"
+          },
+          {
+            "text": "308''",
+            "href": "/Browse/Trees/171801/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "-",
+          "245''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          null,
+          {
+            "text": "245''",
+            "href": "/Browse/Trees/171569/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

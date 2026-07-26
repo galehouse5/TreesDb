@@ -1,0 +1,157 @@
+{
+  "siteId": 40586,
+  "summary": {
+    "Name": "Black Elk Wilderness Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "12/09/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "Contins Black Elk Peak formerly know as Mount Harney."
+  },
+  "visits": [
+    {
+      "visited": "12/09/2013",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Contins Black Elk Peak formerly know as Mount Harney."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus flexilis",
+          "Limber Pine",
+          "48.0'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus flexilis",
+            "href": "/Browse/Sites/40586/Species/Pinus%20flexilis%20(Limber%20Pine)/Details"
+          },
+          {
+            "text": "Limber Pine",
+            "href": "/Browse/Sites/40586/Species/Pinus%20flexilis%20(Limber%20Pine)/Details"
+          },
+          {
+            "text": "48.0'",
+            "href": "/Browse/Trees/233579/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/233580/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "118.5'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/Sites/40586/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/40586/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "118.5'",
+            "href": "/Browse/Trees/233582/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/233582/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "72.4'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/40586/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/40586/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "72.4'",
+            "href": "/Browse/Trees/233581/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/233581/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 51.958, -103 31.852",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Pennington"
+    },
+    "state": {
+      "text": "South Dakota (US)",
+      "href": "/Browse/States/39/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

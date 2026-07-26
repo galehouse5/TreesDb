@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Pinus ponderosa var. ponderosa",
+  "commonName": "Ponderosa Pine",
+  "global": {
+    "maxHeight": {
+      "text": "229.0'",
+      "href": "/Browse/Trees/296896/Details"
+    },
+    "maxGirth": {
+      "text": "347''",
+      "href": "/Browse/Trees/239640/Details"
+    },
+    "maxCrownSpread": {
+      "text": "48.0'",
+      "href": "/Browse/Trees/78329/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Idaho",
+          "180.1'",
+          "200''",
+          "48.0'"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "180.1'",
+            "href": "/Browse/Trees/318066/Details"
+          },
+          {
+            "text": "200''",
+            "href": "/Browse/Trees/318068/Details"
+          },
+          {
+            "text": "48.0'",
+            "href": "/Browse/Trees/78329/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "183.2'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "183.2'",
+            "href": "/Browse/Trees/318055/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/296892/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oregon",
+          "162.0'",
+          "347''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon",
+            "href": "/Browse/States/35/Details"
+          },
+          {
+            "text": "162.0'",
+            "href": "/Browse/Trees/239640/Details"
+          },
+          {
+            "text": "347''",
+            "href": "/Browse/Trees/239640/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "229.0'",
+          "219''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "229.0'",
+            "href": "/Browse/Trees/296896/Details"
+          },
+          {
+            "text": "219''",
+            "href": "/Browse/Trees/296896/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

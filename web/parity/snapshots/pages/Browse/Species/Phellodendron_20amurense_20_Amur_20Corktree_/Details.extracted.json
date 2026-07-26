@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Phellodendron amurense",
+  "commonName": "Amur Corktree",
+  "global": {
+    "maxHeight": {
+      "text": "83.0'",
+      "href": "/Browse/Trees/281853/Details"
+    },
+    "maxGirth": {
+      "text": "57''",
+      "href": "/Browse/Trees/281853/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "83.0'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "83.0'",
+            "href": "/Browse/Trees/281853/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/281853/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "82.9'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "82.9'",
+            "href": "/Browse/Trees/143008/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/143008/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

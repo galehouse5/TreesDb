@@ -1,0 +1,312 @@
+{
+  "siteId": 447,
+  "summary": {
+    "Name": "Clearfork Gorge",
+    "RHI5": "149.82",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.55",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "33",
+    "Last measurement date": "05/02/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/02/2018",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/30/2017",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Mohican State Forest"
+    },
+    {
+      "visited": "01/29/2015",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Mohican State Park"
+    },
+    {
+      "visited": "03/18/2011",
+      "visitors": "Steve Galehouse and Rand Brown",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/17/2011",
+      "visitors": "Rand Brown and Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "113.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/447/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/447/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "113.4'",
+            "href": "/Browse/Trees/165816/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "132.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/447/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/447/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "132.5'",
+            "href": "/Browse/Trees/165813/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "123.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/447/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/447/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "123.6'",
+            "href": "/Browse/Trees/165823/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "163.2'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/447/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/447/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "163.2'",
+            "href": "/Browse/Trees/2399/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/2400/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "159.4'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/447/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/447/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "159.4'",
+            "href": "/Browse/Trees/173486/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/165793/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "154.0'",
+          "60''",
+          "14.0'"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/447/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/447/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "154.0'",
+            "href": "/Browse/Trees/165788/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/165788/Details"
+          },
+          {
+            "text": "14.0'",
+            "href": "/Browse/Trees/165788/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "108.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/447/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/447/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "108.8'",
+            "href": "/Browse/Trees/165814/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "140.0'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/447/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/447/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "140.0'",
+            "href": "/Browse/Trees/2398/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/2398/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 36.705, -082 18.557",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Ashland"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

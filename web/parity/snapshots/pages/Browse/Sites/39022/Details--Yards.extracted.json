@@ -1,0 +1,126 @@
+{
+  "siteId": 39022,
+  "summary": {
+    "Name": "Ohio (Addendum)",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "02/27/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "I've taken the liberty to post the results of trees that improves the quality of the Rucker Index for the state of Ohio. - Stefan R."
+  },
+  "visits": [
+    {
+      "visited": "02/27/2014",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "(none)",
+      "comments": "I've taken the liberty to post the results of trees that improves the quality of the Rucker Index for the state of Ohio. - Stefan R."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "50.63 yd",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/39022/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/39022/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "50.63 yd",
+            "href": "/Browse/Trees/162568/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/162568/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "51.80 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/39022/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/39022/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "51.80 yd",
+            "href": "/Browse/Trees/162569/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 05.867, -084 30.914",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Hamilton"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

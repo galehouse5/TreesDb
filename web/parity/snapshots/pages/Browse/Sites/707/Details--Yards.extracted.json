@@ -1,0 +1,104 @@
+{
+  "siteId": 707,
+  "summary": {
+    "Name": "Ohio's Record Pin Oak",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "03/18/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/18/2006",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus palustris",
+          "Pin Oak",
+          "37.67 yd",
+          "188''",
+          "30.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Quercus palustris",
+            "href": "/Browse/Sites/707/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "Pin Oak",
+            "href": "/Browse/Sites/707/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "37.67 yd",
+            "href": "/Browse/Trees/9749/Details"
+          },
+          {
+            "text": "188''",
+            "href": "/Browse/Trees/9749/Details"
+          },
+          {
+            "text": "30.67 yd",
+            "href": "/Browse/Trees/9749/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 42.289, -081 46.722",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Cuyahoga"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

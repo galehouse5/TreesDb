@@ -1,0 +1,70 @@
+{
+  "treeId": 269154,
+  "botanicalName": {
+    "text": "Sequoia sempervirens",
+    "href": "/Browse/Sites/41621/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+  },
+  "commonName": {
+    "text": "Redwood",
+    "href": "/Browse/Sites/41621/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+  },
+  "details": {
+    "Height": "351.8'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "309''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "2334.16",
+    "ENTSPTS": "9061.78",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.27",
+    "Champion points (abbreviated)": "660.90",
+    "Diameter": "98''",
+    "Conical volume": "6191.6 ft³",
+    "General comments": "Tree known as \"Waldo\""
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 10/13/2018",
+      "summary": {
+        "Height": "351.8'",
+        "Girth": "309''"
+      },
+      "details": {
+        "Botanical name": "Sequoia sempervirens",
+        "Common name": "Redwood",
+        "Height": "351.8'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "309''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "2334.16",
+        "ENTSPTS": "9061.78",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.27",
+        "Champion points (abbreviated)": "660.90",
+        "Diameter": "98''",
+        "Conical volume": "6191.6 ft³",
+        "General comments": "Tree known as \"Waldo\""
+      },
+      "measurers": "Michael Taylor and John Montague"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "40 19.182, -123 58.911",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Humboldt Redwoods State Park",
+      "href": "/Browse/Sites/41621/Details"
+    },
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Humboldt"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

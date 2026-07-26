@@ -1,0 +1,297 @@
+{
+  "siteId": 1008,
+  "summary": {
+    "Name": "Johnson's Woods",
+    "RHI5": "35.393",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.145",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "10/19/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "This is a small patch of old-growth forest on flat, poorly drained soil. This area was known as the Graber Woodlot in the past, and some old articles refer to it as such."
+  },
+  "visits": [
+    {
+      "visited": "10/19/2010",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "This is a small patch of old-growth forest on flat, poorly drained soil. This area was known as the Graber Woodlot in the past, and some old articles refer to it as such."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "35.36 m",
+          "277 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/1008/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/1008/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "35.36 m",
+            "href": "/Browse/Trees/18339/Details"
+          },
+          {
+            "text": "277 cm",
+            "href": "/Browse/Trees/18339/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "32.61 m",
+          "196 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/1008/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/1008/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "32.61 m",
+            "href": "/Browse/Trees/18337/Details"
+          },
+          {
+            "text": "196 cm",
+            "href": "/Browse/Trees/18337/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "37.58 m",
+          "272 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/1008/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/1008/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "37.58 m",
+            "href": "/Browse/Trees/18340/Details"
+          },
+          {
+            "text": "272 cm",
+            "href": "/Browse/Trees/18340/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "32.00 m",
+          "203 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/1008/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/1008/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "32.00 m",
+            "href": "/Browse/Trees/18335/Details"
+          },
+          {
+            "text": "203 cm",
+            "href": "/Browse/Trees/18335/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "33.83 m",
+          "295 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/1008/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/1008/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "33.83 m",
+            "href": "/Browse/Trees/18341/Details"
+          },
+          {
+            "text": "295 cm",
+            "href": "/Browse/Trees/18341/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "35.23 m",
+          "384 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/1008/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/1008/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "35.23 m",
+            "href": "/Browse/Trees/18343/Details"
+          },
+          {
+            "text": "384 cm",
+            "href": "/Browse/Trees/18342/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus palustris",
+          "Pin Oak",
+          "32.16 m",
+          "206 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus palustris",
+            "href": "/Browse/Sites/1008/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "Pin Oak",
+            "href": "/Browse/Sites/1008/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "32.16 m",
+            "href": "/Browse/Trees/18338/Details"
+          },
+          {
+            "text": "206 cm",
+            "href": "/Browse/Trees/18338/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "34.96 m",
+          "345 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/1008/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/1008/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "34.96 m",
+            "href": "/Browse/Trees/18336/Details"
+          },
+          {
+            "text": "345 cm",
+            "href": "/Browse/Trees/18336/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 52.997, -081 44.843",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "State",
+      "County": "Wayne"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

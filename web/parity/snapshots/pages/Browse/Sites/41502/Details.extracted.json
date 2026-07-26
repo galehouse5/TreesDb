@@ -1,0 +1,182 @@
+{
+  "siteId": 41502,
+  "summary": {
+    "Name": "FDR National Historic Site - Hyde Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "05/14/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/14/2017",
+      "visitors": "Erik Danielson, Dan Mckenna, and Amy Pavella",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "103.0'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/Sites/41502/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/Sites/41502/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/262648/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/262648/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus hippocastanum",
+          "Horse Chestnut",
+          "54.1'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus hippocastanum",
+            "href": "/Browse/Sites/41502/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "Horse Chestnut",
+            "href": "/Browse/Sites/41502/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "54.1'",
+            "href": "/Browse/Trees/262649/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/262649/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "128.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41502/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41502/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "128.0'",
+            "href": "/Browse/Trees/262647/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "112.0'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/41502/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/41502/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "112.0'",
+            "href": "/Browse/Trees/262652/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/262650/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 46.163, -073 56.265",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Dutchess"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

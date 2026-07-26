@@ -1,0 +1,104 @@
+{
+  "siteId": 39326,
+  "summary": {
+    "Name": "Fish Lake Regional Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "05/11/2016",
+    "Ownership contact": "(private)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/11/2016",
+      "visitors": "Riley Smith",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "57.0'",
+          "151''",
+          "30.5'"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/39326/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/39326/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/172288/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/172288/Details"
+          },
+          {
+            "text": "30.5'",
+            "href": "/Browse/Trees/172288/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 04.814, -093 27.878",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Hennepin"
+    },
+    "state": {
+      "text": "Minnesota (US)",
+      "href": "/Browse/States/21/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

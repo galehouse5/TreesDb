@@ -1,0 +1,238 @@
+{
+  "siteId": 42097,
+  "summary": {
+    "Name": "Ross Creek Scenic Area Giant Cedars",
+    "RHI5": "170.86",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "13.70",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "06/12/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/12/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies grandis var. idahoensis",
+          "Grand Fir",
+          "130.8'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis var. idahoensis",
+            "href": "/Browse/Sites/42097/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/Sites/42097/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "130.8'",
+            "href": "/Browse/Trees/297924/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/297924/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii var. engelmannii",
+          "Engelmann Spruce",
+          "165.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii var. engelmannii",
+            "href": "/Browse/Sites/42097/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/42097/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "165.3'",
+            "href": "/Browse/Trees/297909/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus balsamifera ssp. trichocarpa",
+          "Black Cottonwood",
+          "151.2'",
+          "180''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. trichocarpa",
+            "href": "/Browse/Sites/42097/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "Black Cottonwood",
+            "href": "/Browse/Sites/42097/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "151.2'",
+            "href": "/Browse/Trees/297914/Details"
+          },
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/297914/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "185.2'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/42097/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/42097/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "185.2'",
+            "href": "/Browse/Trees/297910/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/297910/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja plicata",
+          "Western Redcedar",
+          "194.3'",
+          "319''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja plicata",
+            "href": "/Browse/Sites/42097/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "Western Redcedar",
+            "href": "/Browse/Sites/42097/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "194.3'",
+            "href": "/Browse/Trees/297923/Details"
+          },
+          {
+            "text": "319''",
+            "href": "/Browse/Trees/297915/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga heterophylla",
+          "Western Hemlock",
+          "158.3'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga heterophylla",
+            "href": "/Browse/Sites/42097/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "Western Hemlock",
+            "href": "/Browse/Sites/42097/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "158.3'",
+            "href": "/Browse/Trees/297913/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/297913/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "48 12.477, -115 54.675",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Lincoln"
+    },
+    "state": {
+      "text": "Montana (US)",
+      "href": "/Browse/States/24/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

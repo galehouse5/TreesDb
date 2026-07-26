@@ -1,0 +1,353 @@
+{
+  "siteId": 1015,
+  "summary": {
+    "Name": "Friendship Hill",
+    "RHI5": "134.10",
+    "RHI10": "128.10",
+    "RHI20": "120.35",
+    "RGI5": "13.60",
+    "RGI10": "11.65",
+    "RGI20": "9.42",
+    "Trees measured": "51",
+    "Last measurement date": "03/26/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/26/2011",
+      "visitors": "Steve Halow",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "120.0'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/1015/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/1015/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "120.0'",
+            "href": "/Browse/Trees/18550/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/18550/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "102.5'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/1015/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/1015/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "102.5'",
+            "href": "/Browse/Trees/18569/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/18569/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "108.0'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/1015/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/1015/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/18555/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/18552/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "96.0'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/1015/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/1015/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "96.0'",
+            "href": "/Browse/Trees/18523/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/18524/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "105.0'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/1015/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/1015/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/18561/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/18561/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "118.5'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/1015/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/1015/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "118.5'",
+            "href": "/Browse/Trees/18525/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/18525/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "117.0'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/1015/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/1015/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "117.0'",
+            "href": "/Browse/Trees/18567/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/18567/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "97.0'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/1015/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/1015/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "97.0'",
+            "href": "/Browse/Trees/18526/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/18526/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa speciosa",
+          "Northern Catalpa",
+          "80.0'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catalpa speciosa",
+            "href": "/Browse/Sites/1015/Species/Catalpa%20speciosa%20(Northern%20Catalpa)/Details"
+          },
+          {
+            "text": "Northern Catalpa",
+            "href": "/Browse/Sites/1015/Species/Catalpa%20speciosa%20(Northern%20Catalpa)/Details"
+          },
+          {
+            "text": "80.0'",
+            "href": "/Browse/Trees/18559/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/18559/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "105.0'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/1015/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/1015/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/18571/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/18571/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 32 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "39 46.391, -079 55.506",
+    "coordinatesKind": "calculated",
+    "rows": {
+      "Ownership type": "National Park",
+      "County": "Fayette"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,101 @@
+{
+  "siteId": 39216,
+  "summary": {
+    "Name": "Champaign County",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "06/05/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured on an esker."
+  },
+  "visits": [
+    {
+      "visited": "06/05/2016",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured on an esker."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "54.5'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/39216/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39216/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "54.5'",
+            "href": "/Browse/Trees/169382/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/169381/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 07.054, -083 32.442",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Champaign"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

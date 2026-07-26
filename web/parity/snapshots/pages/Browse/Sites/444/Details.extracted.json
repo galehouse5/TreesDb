@@ -1,0 +1,265 @@
+{
+  "siteId": 444,
+  "summary": {
+    "Name": "Lower Broad Brook",
+    "RHI5": "120.08",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.78",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "01/20/2012",
+    "Ownership contact": "Robert Leverett",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/20/2012",
+      "visitors": "Robert Leverett",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/19/2011",
+      "visitors": "Robert Leverett",
+      "tripReportUrl": "(none)",
+      "comments": "Our property"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "100.5'",
+          "66''",
+          "45.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/444/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/444/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "100.5'",
+            "href": "/Browse/Trees/19219/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/19219/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/19219/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "106.0'",
+          "70''",
+          "40.0'"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/444/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/444/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "106.0'",
+            "href": "/Browse/Trees/19220/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/19220/Details"
+          },
+          {
+            "text": "40.0'",
+            "href": "/Browse/Trees/19220/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "130.3'",
+          "82''",
+          "50.0'"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/444/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/444/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "130.3'",
+            "href": "/Browse/Trees/2387/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/2387/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/2387/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "135.0'",
+          "82''",
+          "35.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/444/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/444/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "135.0'",
+            "href": "/Browse/Trees/19217/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/19217/Details"
+          },
+          {
+            "text": "35.0'",
+            "href": "/Browse/Trees/19217/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra var. rubra",
+          "Northern Red Oak",
+          "115.1'",
+          "78''",
+          "55.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra var. rubra",
+            "href": "/Browse/Sites/444/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/444/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "115.1'",
+            "href": "/Browse/Trees/19216/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/19216/Details"
+          },
+          {
+            "text": "55.0'",
+            "href": "/Browse/Trees/19216/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "114.0'",
+          "96''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/444/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/444/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "114.0'",
+            "href": "/Browse/Trees/19221/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/19221/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/19221/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 21.063, -072 40.641",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Hampshire"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

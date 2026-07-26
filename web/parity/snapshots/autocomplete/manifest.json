@@ -1,0 +1,90 @@
+[
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarCommonName?term=S",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "capturedAt": "2026-07-17T20:39:37.940Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarCommonName__qb043bd5970"
+  },
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarCommonName?term=zzznosuchspecieszzz",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "c61c2036b8ec644ac5a12518f85e26c727e57bd0c8da0d9ffac52fc2f3b0ff2e",
+    "capturedAt": "2026-07-17T20:39:38.289Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarCommonName__q92536d61a2"
+  },
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarCommonName?term=Paci",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "64281215ed0571cdd377bdaabac7750d93d0310b8e5b9649e9d5d7bc2c3f1834",
+    "capturedAt": "2026-07-17T20:39:38.648Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarCommonName__q82b79f1a9a"
+  },
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarCommonName?term=Bals",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "21d9731b07d67b19d5887c1aaf72bf6393c9a1c59053ca1a3c210cb492926c57",
+    "capturedAt": "2026-07-17T20:39:39.030Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarCommonName__q72bb8e6c24"
+  },
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarCommonName?term=Gree",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "6ab4f2728735292a71fda9d5c5c7fd5c48e997327ead6c8ec8c74ff2eb100a9f",
+    "capturedAt": "2026-07-17T20:39:39.401Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarCommonName__qeacb456db6"
+  },
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarCommonName?term=Shen",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "80113850680103bd7171e7f1a52da53860fd669c2746a5c6d792bbf2f028b8fc",
+    "capturedAt": "2026-07-17T20:39:39.913Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarCommonName__q1e2c3abb67"
+  },
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarCommonName?term=Cili",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "d37f3dc46715082406bc42c6fe3a4988abfac634037fc8fa7f560fcb764378a5",
+    "capturedAt": "2026-07-17T20:39:40.261Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarCommonName__qa4fb58a623"
+  },
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarCommonName?term=Whit",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "de6987f51fa52d2b80ec81fd0cea2852572752b5ef5c89274b8ee47f37ef683d",
+    "capturedAt": "2026-07-17T20:39:40.628Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarCommonName__qd15030307b"
+  },
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarScientificName?term=A",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "capturedAt": "2026-07-17T20:39:40.999Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarScientificName__qa4d8704a5d"
+  },
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarScientificName?term=zzznosuchspecieszzz",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "b0364fefc64f7be79d2abfc25e90900748e67cdc493805e74a800465a46ccbc4",
+    "capturedAt": "2026-07-17T20:39:41.374Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarScientificName__q92536d61a2"
+  },
+  {
+    "url": "https://www.treesdb.org/Trees/FindKnownSpeciesWithSimilarScientificName?term=Abie",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "sha256": "a3a29630ef5f08e1d89a5618dfee04933f6141125eede4e1ecb57b8ddcecf6d4",
+    "capturedAt": "2026-07-17T20:39:41.742Z",
+    "savePathBase": "Trees/FindKnownSpeciesWithSimilarScientificName__q3a909141cd"
+  }
+]

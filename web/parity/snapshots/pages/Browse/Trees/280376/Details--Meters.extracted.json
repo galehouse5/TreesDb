@@ -1,0 +1,69 @@
+{
+  "treeId": 280376,
+  "botanicalName": {
+    "text": "Pseudotsuga menziesii var. menziesii",
+    "href": "/Browse/Sites/41667/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "commonName": {
+    "text": "Douglas-Fir",
+    "href": "/Browse/Sites/41667/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "details": {
+    "Height": "78.00 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "(no data)",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "(not enough data)",
+    "ENTSPTS": "(not enough data)",
+    "TDI3": "(not enough data)",
+    "TDI2": "(not enough data)",
+    "Champion points": "(not enough data)",
+    "Diameter": "(no data)",
+    "Conical volume": "(no data)",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/28/2019",
+      "summary": {
+        "Height": "78.00 m"
+      },
+      "details": {
+        "Botanical name": "Pseudotsuga menziesii var. menziesii",
+        "Common name": "Douglas-Fir",
+        "Height": "78.00 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "(no data)",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "(not enough data)",
+        "ENTSPTS": "(not enough data)",
+        "TDI3": "(not enough data)",
+        "TDI2": "(not enough data)",
+        "Champion points": "(not enough data)",
+        "Diameter": "(no data)",
+        "Conical volume": "(no data)",
+        "General comments": "(none)"
+      },
+      "measurers": "Michael Taylor, Zane Moore, and Duncan Kennedy"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "39 23.674, -120 32.436",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Tahoe National Forest",
+      "href": "/Browse/Sites/41667/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Nevada"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

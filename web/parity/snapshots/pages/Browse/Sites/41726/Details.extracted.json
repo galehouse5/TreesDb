@@ -1,0 +1,356 @@
+{
+  "siteId": 41726,
+  "summary": {
+    "Name": "Mt. Olivet Cemetery Woodland",
+    "RHI5": "117.90",
+    "RHI10": "113.97",
+    "RHI20": "104.04",
+    "RGI5": "11.16",
+    "RGI10": "9.99",
+    "RGI20": "8.09",
+    "Trees measured": "55",
+    "Last measurement date": "11/30/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "The cemetery is open to the public but permission must be obtained to access the woodland area."
+  },
+  "visits": [
+    {
+      "visited": "11/30/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "The cemetery is open to the public but permission must be obtained to access the woodland area."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "110.3'",
+          "144''",
+          "71.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/41726/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41726/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "110.3'",
+            "href": "/Browse/Trees/271762/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/271734/Details"
+          },
+          {
+            "text": "71.0'",
+            "href": "/Browse/Trees/271734/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "76.1'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/41726/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41726/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "76.1'",
+            "href": "/Browse/Trees/271743/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/271743/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "91.7'",
+          "93''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/41726/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/41726/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "91.7'",
+            "href": "/Browse/Trees/271749/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/271749/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/271749/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "102.1'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/41726/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/41726/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "102.1'",
+            "href": "/Browse/Trees/271775/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/271775/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "41.4'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/41726/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/41726/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "41.4'",
+            "href": "/Browse/Trees/271767/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/271767/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "111.7'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/41726/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/41726/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "111.7'",
+            "href": "/Browse/Trees/271780/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/271780/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "117.2'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41726/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41726/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "117.2'",
+            "href": "/Browse/Trees/271776/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/271776/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "92.1'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/41726/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/41726/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "92.1'",
+            "href": "/Browse/Trees/271747/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/271747/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "67.4'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/41726/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/41726/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "67.4'",
+            "href": "/Browse/Trees/271781/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/271781/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "-",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/41726/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/41726/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          null,
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/271753/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 25 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 16.818, -081 31.603",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Wood - City Of Parkersburg"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

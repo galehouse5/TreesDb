@@ -1,0 +1,129 @@
+{
+  "siteId": 42249,
+  "summary": {
+    "Name": "Parker's Crossroads Battlefield",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "12/02/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/02/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "97.2'",
+          "176''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/42249/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/42249/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "97.2'",
+            "href": "/Browse/Trees/313574/Details"
+          },
+          {
+            "text": "176''",
+            "href": "/Browse/Trees/313574/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus stellata",
+          "Post Oak",
+          "81.8'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus stellata",
+            "href": "/Browse/Sites/42249/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "Post Oak",
+            "href": "/Browse/Sites/42249/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "81.8'",
+            "href": "/Browse/Trees/313573/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/313573/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 47.241, -088 23.289",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Henderson"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

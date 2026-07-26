@@ -1,0 +1,106 @@
+<!-- Hand-built from TMD/Views/Browse/SiteDetails.cshtml + SiteSpeciesGridPartial2.cshtml + BrowsePhotoSummaryList.cshtml -->
+<div class="x6 xColumn">
+  <div class="portlet x12">
+    <div class="portlet-header">
+      <h4>Site</h4>
+      <ul class="portlet-tab-nav">
+        <li class="portlet-tab-nav-ignore"><a href="/Export/Sites/17">Export tree data</a></li>
+        <li class="portlet-tab-nav-active"><a href="#SiteSummary">Summary</a></li>
+        <li><a href="#TripHistory">Trip history</a></li>
+      </ul>
+    </div>
+    <div class="portlet-content">
+      <div id="SiteSummary" class="portlet-tab-content portlet-tab-content-active">
+        <table class="reports_table">
+          <tr><td class="description">Name</td><td class="value"><span>Old Growth Preserve</span></td></tr>
+          <tr><td class="description">RHI5</td><td class="value"><span>134.82</span></td></tr>
+          <tr><td class="description">RHI10</td><td class="value"><span>128.40</span></td></tr>
+          <tr><td class="description">RHI20</td><td class="value">(not enough data)</td></tr>
+          <tr><td class="description">RGI5</td><td class="value"><span>19.30</span></td></tr>
+          <tr><td class="description">RGI10</td><td class="value"><span>17.90</span></td></tr>
+          <tr><td class="description">RGI20</td><td class="value">(not enough data)</td></tr>
+          <tr><td class="description">Trees measured</td><td class="value"><span>42</span></td></tr>
+          <tr><td class="description">Last measurement date</td><td class="value"><span>05/12/2018</span></td></tr>
+          <tr><td class="description">Ownership contact</td><td class="value">(private)</td></tr>
+          <tr><td class="description">General comments</td><td class="value Comment">Old-growth remnant, restricted access.</td></tr>
+        </table>
+      </div>
+      <div id="TripHistory" class="portlet-tab-content ShowIfJavascriptEnabled">
+        <table class="support_table">
+          <tr>
+            <td><span class="ticket open">05/12/2018</span></td>
+            <td>
+              <table class="reports_table">
+                <tr><td class="description">Visitors</td><td class="value">Jane Doe and John Smith</td></tr>
+                <tr><td class="description">Trip report url</td><td class="value"><a href="http://example.com/trip" target="_blank" rel="nofollow">example.com/trip</a></td></tr>
+                <tr><td class="description">General comments</td><td class="value Comment">Good weather, full crew.</td></tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Species</h4></div>
+    <div class="portlet-content">
+      <div class='dataTablesGrid'>
+        <table cellspacing='0' cellpadding='0' border='0' class='display'>
+          <thead>
+            <tr>
+              <th class='sortable '><a href='?sort=BotanicalName'><span>Botanical name</span></a></th>
+              <th class='sortable sorting_asc'><a href='?sort=CommonName'><span>Common name</span></a></th>
+              <th class='sortable sorting_desc'><a href='?sort=MaxHeight'><span>Max height</span></a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class='odd'>
+              <td><a href="/Browse/Species/Quercus alba (White Oak)/Details?siteId=17">Quercus alba</a></td>
+              <td><a href="/Browse/Species/Quercus alba (White Oak)/Details?siteId=17">White Oak</a></td>
+              <td><a href="/Browse/Trees/4242/Details">123.5'</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class='dataTables_info'>Showing 1 to 1 of 1 entries</div>
+        <div class='dataTables_paginate paging_two_button'>
+          <div class='paginate_disabled_previous' title='Previous'></div>
+          <div class='paginate_disabled_next' title='Next' title='Next'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="x6 xColumn">
+  <div class="portlet x12">
+    <div class="portlet-header">
+      <h4>Location</h4>
+      <ul class="portlet-tab-nav">
+        <li class="portlet-tab-nav-active"><a href="#LocationSummary">Summary</a></li>
+        <li><a href="#LocationMap">Map</a></li>
+      </ul>
+    </div>
+    <div class="portlet-content">
+      <div id="LocationSummary" class="portlet-tab-content portlet-tab-content-active">
+        <table class="reports_table">
+          <tr><td class="description">Coordinates</td><td class="value"><span>39.12345 -84.45678</span></td></tr>
+          <tr><td class="description">Ownership type</td><td class="value"><span>Public</span></td></tr>
+          <tr><td class="description">County</td><td class="value"><span>Hamilton</span></td></tr>
+          <tr>
+            <td class="description">State</td>
+            <td class="value"><a href="/Browse/States/5/Details">Ohio (US)</a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="LocationMap" class="portlet-tab-content ShowIfJavascriptEnabled">
+        <div class="Map" data-center-latitude="39.12345" data-center-longitude="-84.45678" data-zoom="10" data-markerloaderurl="/Map/ViewMarkersForImport/1/Site/17"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Photos</h4></div>
+    <div class="portlet-content">(no photos)</div>
+  </div>
+</div>

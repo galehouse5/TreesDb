@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Escalonia myrilloides var. putens",
+  "commonName": "Escalonia",
+  "global": {
+    "maxHeight": {
+      "text": "39.7'",
+      "href": "/Browse/Trees/214114/Details"
+    },
+    "maxGirth": {
+      "text": "43''",
+      "href": "/Browse/Trees/214113/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alajuela",
+          "39.7'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alajuela",
+            "href": "/Browse/States/117/Details"
+          },
+          {
+            "text": "39.7'",
+            "href": "/Browse/Trees/214114/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/214113/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

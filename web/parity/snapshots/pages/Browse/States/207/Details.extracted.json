@@ -1,0 +1,368 @@
+{
+  "stateId": 207,
+  "summary": {
+    "Name": "Budapest",
+    "Code": "BU",
+    "RHI5": "87.80",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.84",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "03/30/2016"
+  },
+  "location": {
+    "Coordinates": "47 28.885, 019 07.801",
+    "Country": "Hungary"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus hippocastanum",
+          "Horse Chestnut",
+          "71.9'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus hippocastanum",
+            "href": "/Browse/States/207/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "Horse Chestnut",
+            "href": "/Browse/States/207/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "71.9'",
+            "href": "/Browse/Trees/283216/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/283216/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "81.0'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/States/207/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/States/207/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/283222/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/283222/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis australis",
+          "European Hackberry",
+          "54.9'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis australis",
+            "href": "/Browse/States/207/Species/Celtis%20australis%20(European%20Hackberry)/Details"
+          },
+          {
+            "text": "European Hackberry",
+            "href": "/Browse/States/207/Species/Celtis%20australis%20(European%20Hackberry)/Details"
+          },
+          {
+            "text": "54.9'",
+            "href": "/Browse/Trees/283220/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/283208/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Koelreuteria elegans",
+          "Flamegold",
+          "44.7'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Koelreuteria elegans",
+            "href": "/Browse/States/207/Species/Koelreuteria%20elegans%20(Flamegold)/Details"
+          },
+          {
+            "text": "Flamegold",
+            "href": "/Browse/States/207/Species/Koelreuteria%20elegans%20(Flamegold)/Details"
+          },
+          {
+            "text": "44.7'",
+            "href": "/Browse/Trees/283221/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/283221/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus x hispanica",
+          "London Planetree",
+          "90.0'",
+          "149''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus x hispanica",
+            "href": "/Browse/States/207/Species/Platanus%20x%20hispanica%20(London%20Planetree)/Details"
+          },
+          {
+            "text": "London Planetree",
+            "href": "/Browse/States/207/Species/Platanus%20x%20hispanica%20(London%20Planetree)/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/283219/Details"
+          },
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/283206/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus nigra",
+          "Lombardy Poplar",
+          "110.5'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus nigra",
+            "href": "/Browse/States/207/Species/Populus%20nigra%20(Lombardy%20Poplar)/Details"
+          },
+          {
+            "text": "Lombardy Poplar",
+            "href": "/Browse/States/207/Species/Populus%20nigra%20(Lombardy%20Poplar)/Details"
+          },
+          {
+            "text": "110.5'",
+            "href": "/Browse/Trees/283207/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/283207/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxus baccata",
+          "English Yew",
+          "29.8'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxus baccata",
+            "href": "/Browse/States/207/Species/Taxus%20baccata%20(English%20Yew)/Details"
+          },
+          {
+            "text": "English Yew",
+            "href": "/Browse/States/207/Species/Taxus%20baccata%20(English%20Yew)/Details"
+          },
+          {
+            "text": "29.8'",
+            "href": "/Browse/Trees/283218/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/283218/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus spp.",
+          "Elm",
+          "85.6'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus spp.",
+            "href": "/Browse/States/207/Species/Ulmus%20spp.%20(Elm)/Details"
+          },
+          {
+            "text": "Elm",
+            "href": "/Browse/States/207/Species/Ulmus%20spp.%20(Elm)/Details"
+          },
+          {
+            "text": "85.6'",
+            "href": "/Browse/Trees/283217/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/283217/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "City Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "City Park",
+            "href": "/Browse/Sites/41942/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Grounds Of Museum Of Hungarian History And Culture",
+          "76.68",
+          "-",
+          "8.51",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Grounds Of Museum Of Hungarian History And Culture",
+            "href": "/Browse/Sites/41945/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lanchid Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lanchid Park",
+            "href": "/Browse/Sites/41943/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

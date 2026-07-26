@@ -1,0 +1,101 @@
+{
+  "siteId": 40101,
+  "summary": {
+    "Name": "Washington Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "11/03/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/03/2013",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Tilia americana var. americana",
+          "American Basswood",
+          "86.5'",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana var. americana",
+            "href": "/Browse/Sites/40101/Species/Tilia%20americana%20var.%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/40101/Species/Tilia%20americana%20var.%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "86.5'",
+            "href": "/Browse/Trees/220432/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/220432/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 08.429, -095 53.562",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Sarpy"
+    },
+    "state": {
+      "text": "Nebraska (US)",
+      "href": "/Browse/States/27/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

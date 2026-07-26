@@ -1,0 +1,185 @@
+{
+  "siteId": 38263,
+  "summary": {
+    "Name": "Martin Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "12/09/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/09/2008",
+      "visitors": "Mike Dunn",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/thornbury_gladwyne_pa.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "107.8'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38263/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38263/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "107.8'",
+            "href": "/Browse/Trees/134450/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/134450/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "115.3'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38263/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38263/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "115.3'",
+            "href": "/Browse/Trees/134449/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/134449/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "124.6'",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38263/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38263/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "124.6'",
+            "href": "/Browse/Trees/134445/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/134444/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "105.3'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38263/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38263/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "105.3'",
+            "href": "/Browse/Trees/134447/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/134447/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 54.441, -075 29.107",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - township",
+      "County": "Delaware"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

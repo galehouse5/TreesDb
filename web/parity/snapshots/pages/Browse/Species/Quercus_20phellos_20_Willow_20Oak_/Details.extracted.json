@@ -1,0 +1,289 @@
+{
+  "botanicalName": "Quercus phellos",
+  "commonName": "Willow Oak",
+  "global": {
+    "maxHeight": {
+      "text": "161.1'",
+      "href": "/Browse/Trees/252611/Details"
+    },
+    "maxGirth": {
+      "text": "260''",
+      "href": "/Browse/Trees/76107/Details"
+    },
+    "maxCrownSpread": {
+      "text": "128.5'",
+      "href": "/Browse/Trees/242645/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "130.8'",
+          "212''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "130.8'",
+            "href": "/Browse/Trees/241611/Details"
+          },
+          {
+            "text": "212''",
+            "href": "/Browse/Trees/233929/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "105.2'",
+          "260''",
+          "109.0'"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "105.2'",
+            "href": "/Browse/Trees/76108/Details"
+          },
+          {
+            "text": "260''",
+            "href": "/Browse/Trees/76107/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/76107/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "144.9'",
+          "189''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "144.9'",
+            "href": "/Browse/Trees/234728/Details"
+          },
+          {
+            "text": "189''",
+            "href": "/Browse/Trees/234728/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "88.0'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "88.0'",
+            "href": "/Browse/Trees/297830/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/297830/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "119.0'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/320727/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/320727/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "115.0'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "115.0'",
+            "href": "/Browse/Trees/128083/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/128083/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "138.0'",
+          "194''",
+          "90.0'"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "138.0'",
+            "href": "/Browse/Trees/251105/Details"
+          },
+          {
+            "text": "194''",
+            "href": "/Browse/Trees/251104/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/251104/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "125.0'",
+          "197''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          {
+            "text": "125.0'",
+            "href": "/Browse/Trees/170607/Details"
+          },
+          {
+            "text": "197''",
+            "href": "/Browse/Trees/171592/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "91.9'",
+          "233''",
+          "101.6'"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "91.9'",
+            "href": "/Browse/Trees/280517/Details"
+          },
+          {
+            "text": "233''",
+            "href": "/Browse/Trees/280517/Details"
+          },
+          {
+            "text": "101.6'",
+            "href": "/Browse/Trees/280517/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "107.5'",
+          "224''",
+          "88.0'"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "107.5'",
+            "href": "/Browse/Trees/40626/Details"
+          },
+          {
+            "text": "224''",
+            "href": "/Browse/Trees/252346/Details"
+          },
+          {
+            "text": "88.0'",
+            "href": "/Browse/Trees/252346/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

@@ -1,0 +1,554 @@
+{
+  "stateId": 2,
+  "summary": {
+    "Name": "Arkansas",
+    "Code": "AR",
+    "RHI5": "139.38",
+    "RHI10": "135.48",
+    "RHI20": "130.95",
+    "RGI5": "23.20",
+    "RGI10": "18.90",
+    "RGI20": "15.50",
+    "Trees measured": "296",
+    "Last measurement date": "09/05/2016"
+  },
+  "location": {
+    "Coordinates": "34 45.111, -092 07.803",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer floridanum",
+          "Southern Sugar Maple",
+          "91.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer floridanum",
+            "href": "/Browse/States/2/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/States/2/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "91.5'",
+            "href": "/Browse/Trees/243097/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea",
+          "Common Serviceberry",
+          "37.1'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea",
+            "href": "/Browse/States/2/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/States/2/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "37.1'",
+            "href": "/Browse/Trees/241619/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/241619/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "46.3'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/States/2/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/States/2/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "46.3'",
+            "href": "/Browse/Trees/243096/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/243096/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana",
+          "American Hornbeam",
+          "57.9'",
+          "26''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana",
+            "href": "/Browse/States/2/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/States/2/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "57.9'",
+            "href": "/Browse/Trees/241447/Details"
+          },
+          {
+            "text": "26''",
+            "href": "/Browse/Trees/241447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "126.7'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/States/2/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/States/2/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "126.7'",
+            "href": "/Browse/Trees/241679/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/241679/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "125.6'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/States/2/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/States/2/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "125.6'",
+            "href": "/Browse/Trees/241583/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/243099/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "77.4'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/States/2/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/States/2/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "77.4'",
+            "href": "/Browse/Trees/233951/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/233951/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya myristiciformis",
+          "Nutmeg Hickory",
+          "99.7'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya myristiciformis",
+            "href": "/Browse/States/2/Species/Carya%20myristiciformis%20(Nutmeg%20Hickory)/Details"
+          },
+          {
+            "text": "Nutmeg Hickory",
+            "href": "/Browse/States/2/Species/Carya%20myristiciformis%20(Nutmeg%20Hickory)/Details"
+          },
+          {
+            "text": "99.7'",
+            "href": "/Browse/Trees/241638/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/241638/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "123.8'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/States/2/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/States/2/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "123.8'",
+            "href": "/Browse/Trees/241585/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/241451/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "121.2'",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/States/2/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/States/2/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "121.2'",
+            "href": "/Browse/Trees/241680/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/241681/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 75 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas Single Tree Sites",
+            "href": "/Browse/Sites/40615/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Beech Creek In Overflow National Wildlife Refuge",
+          "130.96",
+          "127.12",
+          "11.65",
+          "10.41"
+        ],
+        "links": [
+          {
+            "text": "Beech Creek In Overflow National Wildlife Refuge",
+            "href": "/Browse/Sites/41012/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bois D'arc Creek Wildlife Management Area",
+          "52.78",
+          "-",
+          "6.67",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bois D'arc Creek Wildlife Management Area",
+            "href": "/Browse/Sites/40959/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bradley County Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bradley County Park",
+            "href": "/Browse/Sites/40955/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cane Creek State Park",
+          "126.28",
+          "123.57",
+          "10.32",
+          "9.01"
+        ],
+        "links": [
+          {
+            "text": "Cane Creek State Park",
+            "href": "/Browse/Sites/40944/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Choctaw Island Wildlife Management Area",
+          "104.56",
+          "-",
+          "9.95",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Choctaw Island Wildlife Management Area",
+            "href": "/Browse/Sites/40971/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Des Arc",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Des Arc",
+            "href": "/Browse/Sites/40620/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Felsenthal Nationalwildlife Refuge",
+          "43.98",
+          "-",
+          "3.67",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Felsenthal Nationalwildlife Refuge",
+            "href": "/Browse/Sites/40947/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hot Springs National Park",
+          "51.64",
+          "-",
+          "5.10",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hot Springs National Park",
+            "href": "/Browse/Sites/38344/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Levi Wilcoxan Demostration Forest",
+          "121.58",
+          "-",
+          "10.87",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Levi Wilcoxan Demostration Forest",
+            "href": "/Browse/Sites/40622/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 17 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

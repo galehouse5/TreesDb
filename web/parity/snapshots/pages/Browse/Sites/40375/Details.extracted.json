@@ -1,0 +1,347 @@
+{
+  "siteId": 40375,
+  "summary": {
+    "Name": "Glenwood Cemetery",
+    "RHI5": "116.08",
+    "RHI10": "107.42",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.97",
+    "RGI10": "7.16",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "12/27/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/27/2020",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies nordmanniana",
+          "Nordmann Fir",
+          "102.3'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies nordmanniana",
+            "href": "/Browse/Sites/40375/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "Nordmann Fir",
+            "href": "/Browse/Sites/40375/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "102.3'",
+            "href": "/Browse/Trees/229186/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/229186/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "111.0'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/40375/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/40375/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/229188/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/229188/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "113.5'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40375/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40375/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "113.5'",
+            "href": "/Browse/Trees/229189/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/229189/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "31.4'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/40375/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/40375/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "31.4'",
+            "href": "/Browse/Trees/229191/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/229191/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "88.8'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/40375/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/40375/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "88.8'",
+            "href": "/Browse/Trees/229185/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/229185/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "130.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/40375/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/40375/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "130.6'",
+            "href": "/Browse/Trees/229179/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus edulis",
+          "Twoneedle Pinyon",
+          "30.0'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus edulis",
+            "href": "/Browse/Sites/40375/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "Twoneedle Pinyon",
+            "href": "/Browse/Sites/40375/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/229184/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/229184/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus nigra",
+          "Austrian Pine",
+          "90.5'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus nigra",
+            "href": "/Browse/Sites/40375/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "Austrian Pine",
+            "href": "/Browse/Sites/40375/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "90.5'",
+            "href": "/Browse/Trees/229182/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/229182/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "91.3'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/Sites/40375/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/40375/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "91.3'",
+            "href": "/Browse/Trees/229181/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/229181/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "105.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40375/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40375/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "105.8'",
+            "href": "/Browse/Trees/229180/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 50.802, -076 58.914",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Ontario"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

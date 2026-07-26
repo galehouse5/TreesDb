@@ -1,0 +1,148 @@
+{
+  "siteId": 39018,
+  "summary": {
+    "Name": "Shaker Lakes",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "04/17/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/17/2017",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "63.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/39018/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/39018/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "63.0'",
+            "href": "/Browse/Trees/162556/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula populifolia",
+          "Gray Birch",
+          "67.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula populifolia",
+            "href": "/Browse/Sites/39018/Species/Betula%20populifolia%20(Gray%20Birch)/Details"
+          },
+          {
+            "text": "Gray Birch",
+            "href": "/Browse/Sites/39018/Species/Betula%20populifolia%20(Gray%20Birch)/Details"
+          },
+          {
+            "text": "67.0'",
+            "href": "/Browse/Trees/162554/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "76.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/39018/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/39018/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "76.0'",
+            "href": "/Browse/Trees/162555/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 29.643, -081 35.453",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Cuyahoga"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

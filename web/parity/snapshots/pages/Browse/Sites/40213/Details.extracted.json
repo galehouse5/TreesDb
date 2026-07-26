@@ -1,0 +1,185 @@
+{
+  "siteId": 40213,
+  "summary": {
+    "Name": "FS 230",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "06/19/2014",
+    "Ownership contact": "North Kaibab Ranger District 430 South Main Street Fredonia, AZ 86022",
+    "General comments": "Trees near Forest Service road (FS 230) near the intersection of FS 462"
+  },
+  "visits": [
+    {
+      "visited": "06/19/2014",
+      "visitors": "Turner Sharp and Mike Higgs",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees near Forest Service road (FS 230) near the intersection of FS 462"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "68.1'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/Sites/40213/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/40213/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "68.1'",
+            "href": "/Browse/Trees/226267/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/226267/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii",
+          "Engelmann Spruce",
+          "126.0'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii",
+            "href": "/Browse/Sites/40213/Species/Picea%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/40213/Species/Picea%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "126.0'",
+            "href": "/Browse/Trees/226268/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/226268/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. brachyptera",
+          "Ponderosa Pine",
+          "106.9'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. brachyptera",
+            "href": "/Browse/Sites/40213/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/40213/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "106.9'",
+            "href": "/Browse/Trees/226271/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/226271/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "86.4'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/40213/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/40213/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "86.4'",
+            "href": "/Browse/Trees/226265/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/226265/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 27.225, -112 08.924",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Forest",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

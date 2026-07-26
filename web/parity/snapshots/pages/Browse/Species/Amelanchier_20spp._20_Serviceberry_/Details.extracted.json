@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Amelanchier spp.",
+  "commonName": "Serviceberry",
+  "global": {
+    "maxHeight": {
+      "text": "82.4'",
+      "href": "/Browse/Trees/243470/Details"
+    },
+    "maxGirth": {
+      "text": "42''",
+      "href": "/Browse/Trees/243470/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "72.7'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "72.7'",
+            "href": "/Browse/Trees/275205/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/275206/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "82.4'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "82.4'",
+            "href": "/Browse/Trees/243470/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/243470/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "67.5'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "67.5'",
+            "href": "/Browse/Trees/138115/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/139528/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "siteId": 40361,
+  "summary": {
+    "Name": "Coweeta Hydrologic Laboratory",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "08/14/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/14/2004",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/gsmnp/southern_appalachian_wanderings.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "95.8'",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40361/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40361/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "95.8'",
+            "href": "/Browse/Trees/229029/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/229029/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "119.5'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40361/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40361/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "119.5'",
+            "href": "/Browse/Trees/229030/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/229030/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus pensylvanica",
+          "Pin Cherry",
+          "81.4'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus pensylvanica",
+            "href": "/Browse/Sites/40361/Species/Prunus%20pensylvanica%20(Pin%20Cherry)/Details"
+          },
+          {
+            "text": "Pin Cherry",
+            "href": "/Browse/Sites/40361/Species/Prunus%20pensylvanica%20(Pin%20Cherry)/Details"
+          },
+          {
+            "text": "81.4'",
+            "href": "/Browse/Trees/229032/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/229031/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus coccinea",
+          "Scarlet Oak",
+          "119.1'",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus coccinea",
+            "href": "/Browse/Sites/40361/Species/Quercus%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "Scarlet Oak",
+            "href": "/Browse/Sites/40361/Species/Quercus%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "119.1'",
+            "href": "/Browse/Trees/229028/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/229027/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 03.737, -083 25.807",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Macon"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

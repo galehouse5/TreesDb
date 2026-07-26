@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://www.treesdb.org/",
+    "status": 302,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "bc7d340ad74fd9205c6d40021b3e2ac05d8ff444c5113353557e2c0874957b39",
+    "capturedAt": "2026-07-17T21:04:38.659Z",
+    "savePathBase": "root"
+  },
+  {
+    "url": "https://www.treesdb.org/Main",
+    "status": 302,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "17f47c1575be249698910d2a3ffbb86f53ab248d4eef1dee2a2911060f9e8814",
+    "capturedAt": "2026-07-17T21:04:39.006Z",
+    "savePathBase": "Main"
+  },
+  {
+    "url": "https://www.treesdb.org/Browse/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "a81666e190e5bc9dca5d00de4fb66d69eea2da605eedb5ad4795f82db88d122b",
+    "capturedAt": "2026-07-17T21:04:39.775Z",
+    "savePathBase": "Browse/Species/Abies_20balsamea_20var._20balsamea_20_Balsam_20Fir_/Details"
+  },
+  {
+    "url": "https://www.treesdb.org/Browse/Species/Abies balsamea var. balsamea (Balsam Fir)/Details",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "7dcd91c0c9d6090a0ecd6aab768a4d2f57475fa319ded0c3824fb65414a50d18",
+    "capturedAt": "2026-07-17T21:17:39.311Z",
+    "savePathBase": "Browse/Species/Abies_balsamea_var._balsamea_Balsam_Fir_/Details"
+  }
+]

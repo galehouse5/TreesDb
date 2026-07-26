@@ -1,0 +1,365 @@
+{
+  "siteId": 38527,
+  "summary": {
+    "Name": "CFSP-Upper Toms Run",
+    "RHI5": "133.50",
+    "RHI10": "125.97",
+    "RHI20": "(not enough data)",
+    "RGI5": "13.71",
+    "RGI10": "11.65",
+    "RGI20": "(not enough data)",
+    "Trees measured": "128",
+    "Last measurement date": "04/21/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Measured in Maple Drive Old Growth Area."
+  },
+  "visits": [
+    {
+      "visited": "04/21/2007",
+      "visitors": "Will Blozan and Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/events/cook2007/cook_forest_bte07.htm",
+      "comments": "Measured in Maple Drive Old Growth Area."
+    },
+    {
+      "visited": "02/14/2005",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna_cook_forest/cookforest_mapledrive.htm",
+      "comments": "Measurements made between 11/23/2004 - 1/23/2005. Also see:http://www.nativetreesociety.org/fieldtrips/penna_cook_forest/cook_forest_april05.htm for measurements 5/5/2005."
+    },
+    {
+      "visited": "02/18/2002",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "Also includes Little Heffern Run, Corduroy Trail, Deer Meadow, Breezemont Drive. Maple Drive Trees measured 10/1/2001 - 44/27/2003"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "41.4'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/Sites/38527/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/Sites/38527/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "41.4'",
+            "href": "/Browse/Trees/146287/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/146287/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "116.5'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38527/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38527/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "116.5'",
+            "href": "/Browse/Trees/146255/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/146254/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "114.8'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/38527/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38527/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "114.8'",
+            "href": "/Browse/Trees/146257/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/146257/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "73.9'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/38527/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/38527/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "73.9'",
+            "href": "/Browse/Trees/146256/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/146256/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "122.8'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38527/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38527/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "122.8'",
+            "href": "/Browse/Trees/146209/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/146200/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "118.3'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38527/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38527/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "118.3'",
+            "href": "/Browse/Trees/146626/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/146626/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "121.9'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/38527/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/38527/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "121.9'",
+            "href": "/Browse/Trees/146285/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/146218/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "66.1'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/38527/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/38527/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "66.1'",
+            "href": "/Browse/Trees/147966/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/147966/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "115.6'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/38527/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/38527/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "115.6'",
+            "href": "/Browse/Trees/146281/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/146281/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "116.8'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/Sites/38527/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/Sites/38527/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "116.8'",
+            "href": "/Browse/Trees/147964/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/146272/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 20.802, -079 13.175",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Clarion"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

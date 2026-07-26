@@ -1,0 +1,148 @@
+{
+  "siteId": 41244,
+  "summary": {
+    "Name": "Lords Hill Natural Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "06/23/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "25 Acres"
+  },
+  "visits": [
+    {
+      "visited": "06/23/2011",
+      "visitors": "Adam Rosen",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "25 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer spp.",
+          "Maple",
+          "-",
+          "384 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spp.",
+            "href": "/Browse/Sites/41244/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "Maple",
+            "href": "/Browse/Sites/41244/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          null,
+          {
+            "text": "384 cm",
+            "href": "/Browse/Trees/253224/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana",
+          "American Basswood",
+          "-",
+          "241 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana",
+            "href": "/Browse/Sites/41244/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/41244/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          null,
+          {
+            "text": "241 cm",
+            "href": "/Browse/Trees/253228/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "-",
+          "277 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/41244/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/41244/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          null,
+          {
+            "text": "277 cm",
+            "href": "/Browse/Trees/253227/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 18.920, -072 21.573",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Washington"
+    },
+    "state": {
+      "text": "Vermont (US)",
+      "href": "/Browse/States/44/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

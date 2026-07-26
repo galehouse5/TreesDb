@@ -1,0 +1,247 @@
+{
+  "siteId": 40505,
+  "summary": {
+    "Name": "Red River Gorge",
+    "RHI5": "147.10",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.15",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "42",
+    "Last measurement date": "12/17/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "Tree was measured in the Clifty Wilderness."
+  },
+  "visits": [
+    {
+      "visited": "12/17/2017",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Tree was measured in the Clifty Wilderness."
+    },
+    {
+      "visited": "01/09/2016",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees entered were measured in a series of visits between 11/9/2015 through 1/18/2016. Areas visited included Clifty Wilderness Area and Natural Bridge State Park."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "129.0'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40505/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40505/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "129.0'",
+            "href": "/Browse/Trees/232325/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/232325/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "92.5'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40505/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40505/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "92.5'",
+            "href": "/Browse/Trees/232326/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/232326/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "157.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40505/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40505/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "157.3'",
+            "href": "/Browse/Trees/232318/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "179.7'",
+          "156''",
+          "47.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40505/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40505/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "179.7'",
+            "href": "/Browse/Trees/232297/Details"
+          },
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/232317/Details"
+          },
+          {
+            "text": "47.0'",
+            "href": "/Browse/Trees/232337/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "132.5'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40505/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40505/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "132.5'",
+            "href": "/Browse/Trees/232324/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/232324/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "137.0'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40505/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40505/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "137.0'",
+            "href": "/Browse/Trees/232319/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/232319/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "37 50.027, -083 36.468",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Menifee"
+    },
+    "state": {
+      "text": "Kentucky (US)",
+      "href": "/Browse/States/15/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

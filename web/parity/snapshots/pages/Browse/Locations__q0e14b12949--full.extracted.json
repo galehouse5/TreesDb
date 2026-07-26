@@ -1,0 +1,1169 @@
+{
+  "columns": [
+    {
+      "header": "Site",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "County",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "State",
+      "sortable": true,
+      "sortState": "asc"
+    },
+    {
+      "header": "RHI5",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RHI10",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RGI5",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RGI10",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Last measurement",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Sispey River Picnic Area",
+        "Lawrence",
+        "Alabama",
+        "0.00",
+        "-",
+        "7.17",
+        "-",
+        "06/06/2007"
+      ],
+      "links": [
+        {
+          "text": "Sispey River Picnic Area",
+          "href": "/Browse/Sites/40597/Details"
+        },
+        null,
+        {
+          "text": "Alabama",
+          "href": "/Browse/States/1/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Mountain Longleaf Pine National Wildlife Refuge",
+        "Calhoun",
+        "Alabama",
+        "62.00",
+        "-",
+        "8.02",
+        "-",
+        "08/10/2005"
+      ],
+      "links": [
+        {
+          "text": "Mountain Longleaf Pine National Wildlife Refuge",
+          "href": "/Browse/Sites/40598/Details"
+        },
+        null,
+        {
+          "text": "Alabama",
+          "href": "/Browse/States/1/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Indian Tomb Hollow",
+        "Lawrence",
+        "Alabama",
+        "120.56",
+        "-",
+        "7.60",
+        "-",
+        "01/06/2006"
+      ],
+      "links": [
+        {
+          "text": "Indian Tomb Hollow",
+          "href": "/Browse/Sites/40600/Details"
+        },
+        null,
+        {
+          "text": "Alabama",
+          "href": "/Browse/States/1/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "West Flint Creek",
+        "Lawrence",
+        "Alabama",
+        "139.50",
+        "136.60",
+        "11.87",
+        "10.17",
+        "01/06/2006"
+      ],
+      "links": [
+        {
+          "text": "West Flint Creek",
+          "href": "/Browse/Sites/40605/Details"
+        },
+        null,
+        {
+          "text": "Alabama",
+          "href": "/Browse/States/1/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Dismals Canyon",
+        "Franklin",
+        "Alabama",
+        "-",
+        "-",
+        "-",
+        "-",
+        "04/25/2010"
+      ],
+      "links": [
+        {
+          "text": "Dismals Canyon",
+          "href": "/Browse/Sites/41220/Details"
+        },
+        null,
+        {
+          "text": "Alabama",
+          "href": "/Browse/States/1/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Alabama Single Tree Sites",
+        "Montgomery",
+        "Alabama",
+        "91.26",
+        "-",
+        "15.03",
+        "-",
+        "01/01/2001"
+      ],
+      "links": [
+        {
+          "text": "Alabama Single Tree Sites",
+          "href": "/Browse/Sites/41265/Details"
+        },
+        null,
+        {
+          "text": "Alabama",
+          "href": "/Browse/States/1/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Walls Of Jericho",
+        "Jackson",
+        "Alabama",
+        "134.92",
+        "129.57",
+        "8.28",
+        "7.57",
+        "04/20/2024"
+      ],
+      "links": [
+        {
+          "text": "Walls Of Jericho",
+          "href": "/Browse/Sites/42286/Details"
+        },
+        null,
+        {
+          "text": "Alabama",
+          "href": "/Browse/States/1/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Arenal Volcano National Park",
+        "San Carlos",
+        "Alajuela",
+        "-",
+        "-",
+        "-",
+        "-",
+        "02/14/2014"
+      ],
+      "links": [
+        {
+          "text": "Arenal Volcano National Park",
+          "href": "/Browse/Sites/40015/Details"
+        },
+        null,
+        {
+          "text": "Alajuela",
+          "href": "/Browse/States/117/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Poas Volcano National Park",
+        "Poás",
+        "Alajuela",
+        "-",
+        "-",
+        "-",
+        "-",
+        "02/11/2014"
+      ],
+      "links": [
+        {
+          "text": "Poas Volcano National Park",
+          "href": "/Browse/Sites/40016/Details"
+        },
+        null,
+        {
+          "text": "Alajuela",
+          "href": "/Browse/States/117/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Juan Castro Blanco Water Park",
+        "San Carlos",
+        "Alajuela",
+        "-",
+        "-",
+        "-",
+        "-",
+        "04/27/2017"
+      ],
+      "links": [
+        {
+          "text": "Juan Castro Blanco Water Park",
+          "href": "/Browse/Sites/41255/Details"
+        },
+        null,
+        {
+          "text": "Alajuela",
+          "href": "/Browse/States/117/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Alajuela Single Tree Sites",
+        "Alajuela",
+        "Alajuela",
+        "-",
+        "-",
+        "-",
+        "-",
+        "01/01/2010"
+      ],
+      "links": [
+        {
+          "text": "Alajuela Single Tree Sites",
+          "href": "/Browse/Sites/41256/Details"
+        },
+        null,
+        {
+          "text": "Alajuela",
+          "href": "/Browse/States/117/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Tongass National Forest-Douglas Island-Rain Forest Trail",
+        "Juneau",
+        "Alaska",
+        "-",
+        "-",
+        "-",
+        "-",
+        "08/05/2012"
+      ],
+      "links": [
+        {
+          "text": "Tongass National Forest-Douglas Island-Rain Forest Trail",
+          "href": "/Browse/Sites/22040/Details"
+        },
+        null,
+        {
+          "text": "Alaska",
+          "href": "/Browse/States/62/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Portage Cove State Recreational Site",
+        "Haines",
+        "Alaska",
+        "-",
+        "-",
+        "-",
+        "-",
+        "08/05/2012"
+      ],
+      "links": [
+        {
+          "text": "Portage Cove State Recreational Site",
+          "href": "/Browse/Sites/22041/Details"
+        },
+        null,
+        {
+          "text": "Alaska",
+          "href": "/Browse/States/62/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Alaska Single Tree Sites",
+        "Juneau",
+        "Alaska",
+        "-",
+        "-",
+        "-",
+        "-",
+        "08/05/2012"
+      ],
+      "links": [
+        {
+          "text": "Alaska Single Tree Sites",
+          "href": "/Browse/Sites/38397/Details"
+        },
+        null,
+        {
+          "text": "Alaska",
+          "href": "/Browse/States/62/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Gateway Knob At Alsek Lake - Camp",
+        "Yakutat",
+        "Alaska",
+        "-",
+        "-",
+        "-",
+        "-",
+        "08/05/2012"
+      ],
+      "links": [
+        {
+          "text": "Gateway Knob At Alsek Lake - Camp",
+          "href": "/Browse/Sites/42180/Details"
+        },
+        null,
+        {
+          "text": "Alaska",
+          "href": "/Browse/States/62/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Banff National Park - Two Jack",
+        "Division No. 15",
+        "Alberta",
+        "-",
+        "-",
+        "-",
+        "-",
+        "07/30/2012"
+      ],
+      "links": [
+        {
+          "text": "Banff National Park - Two Jack",
+          "href": "/Browse/Sites/22032/Details"
+        },
+        null,
+        {
+          "text": "Alberta",
+          "href": "/Browse/States/49/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Demmitt Roadside Park",
+        "Division No. 19",
+        "Alberta",
+        "-",
+        "-",
+        "-",
+        "-",
+        "07/30/2012"
+      ],
+      "links": [
+        {
+          "text": "Demmitt Roadside Park",
+          "href": "/Browse/Sites/22033/Details"
+        },
+        null,
+        {
+          "text": "Alberta",
+          "href": "/Browse/States/49/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Royal Alcszar O Selille",
+        "Sevilla",
+        "Andalusia",
+        "78.30",
+        "-",
+        "8.81",
+        "-",
+        "10/31/2014"
+      ],
+      "links": [
+        {
+          "text": "Royal Alcszar O Selille",
+          "href": "/Browse/Sites/41833/Details"
+        },
+        null,
+        {
+          "text": "Andalusia",
+          "href": "/Browse/States/124/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Andalusia Single Tree Sites",
+        "Sevilla",
+        "Andalusia",
+        "-",
+        "-",
+        "-",
+        "-",
+        "01/01/2010"
+      ],
+      "links": [
+        {
+          "text": "Andalusia Single Tree Sites",
+          "href": "/Browse/Sites/41834/Details"
+        },
+        null,
+        {
+          "text": "Andalusia",
+          "href": "/Browse/States/124/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Ronda",
+        "Málaga",
+        "Andalusia",
+        "56.00",
+        "-",
+        "8.39",
+        "-",
+        "11/03/2014"
+      ],
+      "links": [
+        {
+          "text": "Ronda",
+          "href": "/Browse/Sites/41934/Details"
+        },
+        null,
+        {
+          "text": "Andalusia",
+          "href": "/Browse/States/124/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Woody Mountain Road",
+        "Coconino",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "02/17/2012"
+      ],
+      "links": [
+        {
+          "text": "Woody Mountain Road",
+          "href": "/Browse/Sites/1286/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Mingus Mountain",
+        "Yavapai",
+        "Arizona",
+        "43.08",
+        "-",
+        "5.41",
+        "-",
+        "03/08/2012"
+      ],
+      "links": [
+        {
+          "text": "Mingus Mountain",
+          "href": "/Browse/Sites/1305/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Montezuma's Well",
+        "Yavapai",
+        "Arizona",
+        "59.54",
+        "-",
+        "8.15",
+        "-",
+        "02/28/2012"
+      ],
+      "links": [
+        {
+          "text": "Montezuma's Well",
+          "href": "/Browse/Sites/1309/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Dragoon Mountains",
+        "Cochise",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "02/23/2012"
+      ],
+      "links": [
+        {
+          "text": "Dragoon Mountains",
+          "href": "/Browse/Sites/1316/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Saguaro NP - West",
+        "Pima",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "02/20/2012"
+      ],
+      "links": [
+        {
+          "text": "Saguaro NP - West",
+          "href": "/Browse/Sites/1332/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Red Rock State Park",
+        "Yavapai",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "03/06/2012"
+      ],
+      "links": [
+        {
+          "text": "Red Rock State Park",
+          "href": "/Browse/Sites/1440/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Campbell Mesa",
+        "Coconino",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "03/05/2012"
+      ],
+      "links": [
+        {
+          "text": "Campbell Mesa",
+          "href": "/Browse/Sites/1461/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Grand Canyon - Colorado River Corridor",
+        "Coconino, Mohave",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "03/01/2013"
+      ],
+      "links": [
+        {
+          "text": "Grand Canyon - Colorado River Corridor",
+          "href": "/Browse/Sites/1670/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Grand Canyon - South Rim",
+        "Coconino",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "02/15/2012"
+      ],
+      "links": [
+        {
+          "text": "Grand Canyon - South Rim",
+          "href": "/Browse/Sites/3729/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Walnut Canyon National Monument",
+        "Coconino",
+        "Arizona",
+        "44.42",
+        "-",
+        "5.82",
+        "-",
+        "02/16/2012"
+      ],
+      "links": [
+        {
+          "text": "Walnut Canyon National Monument",
+          "href": "/Browse/Sites/3730/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Anita Road",
+        "Coconino",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "02/15/2012"
+      ],
+      "links": [
+        {
+          "text": "Anita Road",
+          "href": "/Browse/Sites/22051/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Oak Creek Canyon",
+        "Coconino",
+        "Arizona",
+        "125.28",
+        "103.17",
+        "11.06",
+        "9.20",
+        "06/02/2015"
+      ],
+      "links": [
+        {
+          "text": "Oak Creek Canyon",
+          "href": "/Browse/Sites/22052/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pinaleno Mountains",
+        "Graham",
+        "Arizona",
+        "88.18",
+        "-",
+        "8.21",
+        "-",
+        "02/24/2012"
+      ],
+      "links": [
+        {
+          "text": "Pinaleno Mountains",
+          "href": "/Browse/Sites/25430/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Aspen Corner Trails",
+        "Coconino",
+        "Arizona",
+        "99.64",
+        "-",
+        "9.38",
+        "-",
+        "06/08/2015"
+      ],
+      "links": [
+        {
+          "text": "Aspen Corner Trails",
+          "href": "/Browse/Sites/27483/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Dead Horse Ranch State Park",
+        "Yavapai",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "03/07/2012"
+      ],
+      "links": [
+        {
+          "text": "Dead Horse Ranch State Park",
+          "href": "/Browse/Sites/27485/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Grand Canyon - North Rim",
+        "Coconino",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "06/02/2015"
+      ],
+      "links": [
+        {
+          "text": "Grand Canyon - North Rim",
+          "href": "/Browse/Sites/27486/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Page Springs Fish Hatchery",
+        "Yavapai",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "06/10/2015"
+      ],
+      "links": [
+        {
+          "text": "Page Springs Fish Hatchery",
+          "href": "/Browse/Sites/28495/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Bonito Park Area",
+        "Coconino",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "09/10/2016"
+      ],
+      "links": [
+        {
+          "text": "Bonito Park Area",
+          "href": "/Browse/Sites/38142/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Crescent Moon Picnic Area",
+        "Yavapai",
+        "Arizona",
+        "62.18",
+        "-",
+        "10.19",
+        "-",
+        "06/26/2014"
+      ],
+      "links": [
+        {
+          "text": "Crescent Moon Picnic Area",
+          "href": "/Browse/Sites/38143/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Lawrence Crossing",
+        "Yavapai",
+        "Arizona",
+        "60.64",
+        "-",
+        "6.54",
+        "-",
+        "06/21/2014"
+      ],
+      "links": [
+        {
+          "text": "Lawrence Crossing",
+          "href": "/Browse/Sites/38144/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "pageInfo": "Showing 1 to 40 of 1370 entries",
+  "hasPreviousPage": false,
+  "hasNextPage": true
+}

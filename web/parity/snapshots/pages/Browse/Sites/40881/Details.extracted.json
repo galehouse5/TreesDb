@@ -1,0 +1,101 @@
+{
+  "siteId": 40881,
+  "summary": {
+    "Name": "Lapine State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "02/05/2003",
+    "Ownership contact": "15800 State Recreation Road LaPine. Oregon.",
+    "General comments": "2300 Acres"
+  },
+  "visits": [
+    {
+      "visited": "02/05/2003",
+      "visitors": "Rory Nichols",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/us_west/oregon/admiring_a_great_pine_in_oregon.htm",
+      "comments": "2300 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus ponderosa var. ponderosa",
+          "Ponderosa Pine",
+          "162.0'",
+          "347''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. ponderosa",
+            "href": "/Browse/Sites/40881/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/40881/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "162.0'",
+            "href": "/Browse/Trees/239640/Details"
+          },
+          {
+            "text": "347''",
+            "href": "/Browse/Trees/239640/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 46.213, -121 32.077",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Deschutes"
+    },
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

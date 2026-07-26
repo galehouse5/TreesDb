@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Sorbus americana",
+  "commonName": "American Mountain Ash",
+  "global": {
+    "maxHeight": {
+      "text": "56.1'",
+      "href": "/Browse/Trees/229784/Details"
+    },
+    "maxGirth": {
+      "text": "54''",
+      "href": "/Browse/Trees/227261/Details"
+    },
+    "maxCrownSpread": {
+      "text": "12.0'",
+      "href": "/Browse/Trees/313218/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "34.6'",
+          "35''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "34.6'",
+            "href": "/Browse/Trees/221375/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/221375/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "56.1'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "56.1'",
+            "href": "/Browse/Trees/229784/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/227261/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "55.3'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "55.3'",
+            "href": "/Browse/Trees/222059/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/222059/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "41.8'",
+          "20''",
+          "12.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "41.8'",
+            "href": "/Browse/Trees/313218/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/313218/Details"
+          },
+          {
+            "text": "12.0'",
+            "href": "/Browse/Trees/313218/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "botanicalName": "Juniperus ashei",
+  "commonName": "Ashe's Juniper",
+  "global": {
+    "maxHeight": {
+      "text": "11.92 m",
+      "href": "/Browse/Trees/320680/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Texas",
+          "11.92 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Texas",
+            "href": "/Browse/States/41/Details"
+          },
+          {
+            "text": "11.92 m",
+            "href": "/Browse/Trees/320680/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "siteId": 926,
+  "summary": {
+    "Name": "O 'Neill Woods",
+    "RHI5": "133.28",
+    "RHI10": "121.65",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.82",
+    "RGI10": "3.91",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "10/28/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/28/2011",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "02/28/2011",
+      "visitors": "Steve Galehouse and Rob Curtis",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "128.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/926/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/926/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "128.8'",
+            "href": "/Browse/Trees/16754/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "103.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/926/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/926/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/16753/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "135.7'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/926/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/926/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "135.7'",
+            "href": "/Browse/Trees/16745/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/16745/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "113.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/926/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/926/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "113.6'",
+            "href": "/Browse/Trees/16752/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "158.3'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/926/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/926/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "158.3'",
+            "href": "/Browse/Trees/16746/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/161280/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "111.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/926/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/926/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "111.4'",
+            "href": "/Browse/Trees/16755/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "105.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/926/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/926/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "105.4'",
+            "href": "/Browse/Trees/16750/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "126.9'",
+          "180''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/926/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/926/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "126.9'",
+            "href": "/Browse/Trees/16747/Details"
+          },
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/16749/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "116.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/926/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/926/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "116.7'",
+            "href": "/Browse/Trees/16748/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus rubra",
+          "Slippery Elm",
+          "116.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus rubra",
+            "href": "/Browse/Sites/926/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "Slippery Elm",
+            "href": "/Browse/Sites/926/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "116.7'",
+            "href": "/Browse/Trees/16751/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 09.909, -081 35.672",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Metropark",
+      "County": "Summit"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

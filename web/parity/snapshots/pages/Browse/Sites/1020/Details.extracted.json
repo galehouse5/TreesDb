@@ -1,0 +1,353 @@
+{
+  "siteId": 1020,
+  "summary": {
+    "Name": "Bradley Woods Metropark",
+    "RHI5": "118.50",
+    "RHI10": "113.50",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.97",
+    "RGI10": "9.55",
+    "RGI20": "(not enough data)",
+    "Trees measured": "20",
+    "Last measurement date": "12/16/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/16/2009",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/20/2009",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/ohio/bradley/bradley.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "110.5'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/1020/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/1020/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "110.5'",
+            "href": "/Browse/Trees/166924/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/18690/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "101.0'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/1020/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/1020/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/18685/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/18685/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "114.5'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/1020/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/1020/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "114.5'",
+            "href": "/Browse/Trees/18687/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/18687/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "101.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/1020/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/1020/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/166923/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "108.0'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/1020/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/1020/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/18686/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/18686/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "113.0'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/1020/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/1020/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "113.0'",
+            "href": "/Browse/Trees/18694/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/18694/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "133.0'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/1020/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/1020/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/166921/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/18693/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "93.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/1020/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/1020/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "93.0'",
+            "href": "/Browse/Trees/166929/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "110.0'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/1020/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/1020/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/18692/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/18692/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "117.5'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/1020/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/1020/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "117.5'",
+            "href": "/Browse/Trees/18688/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/18688/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 25.088, -081 56.795",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Park",
+      "County": "Cuyahoga"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

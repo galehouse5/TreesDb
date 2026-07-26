@@ -1,0 +1,59 @@
+{
+  "botanicalName": "Euonymus alatus",
+  "commonName": "Burning Bush",
+  "global": {
+    "maxCrownSpread": {
+      "text": "26.0'",
+      "href": "/Browse/Trees/302697/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ohio",
+          "-",
+          "-",
+          "26.0'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          null,
+          null,
+          {
+            "text": "26.0'",
+            "href": "/Browse/Trees/302697/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

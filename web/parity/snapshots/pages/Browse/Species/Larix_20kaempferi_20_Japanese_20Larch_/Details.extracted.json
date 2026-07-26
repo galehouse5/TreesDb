@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Larix kaempferi",
+  "commonName": "Japanese Larch",
+  "global": {
+    "maxHeight": {
+      "text": "90.3'",
+      "href": "/Browse/Trees/256802/Details"
+    },
+    "maxGirth": {
+      "text": "71''",
+      "href": "/Browse/Trees/256802/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Connecticut",
+          "90.3'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "90.3'",
+            "href": "/Browse/Trees/256802/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/256802/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "40.2'",
+          "17''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "40.2'",
+            "href": "/Browse/Trees/222954/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/222954/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

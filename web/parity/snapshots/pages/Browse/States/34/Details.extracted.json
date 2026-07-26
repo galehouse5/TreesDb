@@ -1,0 +1,237 @@
+{
+  "stateId": 34,
+  "summary": {
+    "Name": "Oklahoma",
+    "Code": "OK",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "09/29/2016"
+  },
+  "location": {
+    "Coordinates": "35 18.645, -098 43.011",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "35.7'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/States/34/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/States/34/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "35.7'",
+            "href": "/Browse/Trees/169028/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/169028/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus marilandica",
+          "Blackjack Oak",
+          "33.5'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus marilandica",
+            "href": "/Browse/States/34/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "Blackjack Oak",
+            "href": "/Browse/States/34/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "33.5'",
+            "href": "/Browse/Trees/169027/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/169026/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus stellata",
+          "Post Oak",
+          "44.3'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus stellata",
+            "href": "/Browse/States/34/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "Post Oak",
+            "href": "/Browse/States/34/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "44.3'",
+            "href": "/Browse/Trees/169025/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/169025/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium ascendens",
+          "Pond Cypress",
+          "58.0'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium ascendens",
+            "href": "/Browse/States/34/Species/Taxodium%20ascendens%20(Pond%20Cypress)/Details"
+          },
+          {
+            "text": "Pond Cypress",
+            "href": "/Browse/States/34/Species/Taxodium%20ascendens%20(Pond%20Cypress)/Details"
+          },
+          {
+            "text": "58.0'",
+            "href": "/Browse/Trees/168957/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/168957/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Oklahoma Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oklahoma Single Tree Sites",
+            "href": "/Browse/Sites/39184/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Witchita Mountain National Wildlife Refuge",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Witchita Mountain National Wildlife Refuge",
+            "href": "/Browse/Sites/39187/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

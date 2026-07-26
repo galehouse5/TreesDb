@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Hesperocyparis arizonica",
+  "commonName": "Arizona Cypress",
+  "global": {
+    "maxHeight": {
+      "text": "81.6'",
+      "href": "/Browse/Trees/274859/Details"
+    },
+    "maxGirth": {
+      "text": "125''",
+      "href": "/Browse/Trees/142562/Details"
+    },
+    "maxCrownSpread": {
+      "text": "10.0'",
+      "href": "/Browse/Trees/142269/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "81.6'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "81.6'",
+            "href": "/Browse/Trees/274859/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/142562/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "66.4'",
+          "60''",
+          "10.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "66.4'",
+            "href": "/Browse/Trees/142269/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/142269/Details"
+          },
+          {
+            "text": "10.0'",
+            "href": "/Browse/Trees/142269/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

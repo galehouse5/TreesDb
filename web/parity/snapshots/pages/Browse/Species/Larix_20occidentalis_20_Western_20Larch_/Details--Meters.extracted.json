@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Larix occidentalis",
+  "commonName": "Western Larch",
+  "global": {
+    "maxHeight": {
+      "text": "64.92 m",
+      "href": "/Browse/Trees/296925/Details"
+    },
+    "maxGirth": {
+      "text": "711 cm",
+      "href": "/Browse/Trees/164460/Details"
+    },
+    "maxCrownSpread": {
+      "text": "11.58 m",
+      "href": "/Browse/Trees/164460/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Idaho",
+          "54.28 m",
+          "357 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "54.28 m",
+            "href": "/Browse/Trees/318064/Details"
+          },
+          {
+            "text": "357 cm",
+            "href": "/Browse/Trees/226251/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "23.20 m",
+          "169 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "23.20 m",
+            "href": "/Browse/Trees/189015/Details"
+          },
+          {
+            "text": "169 cm",
+            "href": "/Browse/Trees/189015/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "52.97 m",
+          "711 cm",
+          "11.58 m"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "52.97 m",
+            "href": "/Browse/Trees/318053/Details"
+          },
+          {
+            "text": "711 cm",
+            "href": "/Browse/Trees/164460/Details"
+          },
+          {
+            "text": "11.58 m",
+            "href": "/Browse/Trees/164460/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "64.92 m",
+          "419 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "64.92 m",
+            "href": "/Browse/Trees/296925/Details"
+          },
+          {
+            "text": "419 cm",
+            "href": "/Browse/Trees/296925/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

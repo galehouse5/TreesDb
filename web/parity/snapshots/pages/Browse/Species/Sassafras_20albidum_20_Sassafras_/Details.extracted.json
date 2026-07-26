@@ -1,0 +1,274 @@
+{
+  "botanicalName": "Sassafras albidum",
+  "commonName": "Sassafras",
+  "global": {
+    "maxHeight": {
+      "text": "130.7'",
+      "href": "/Browse/Trees/230396/Details"
+    },
+    "maxGirth": {
+      "text": "196''",
+      "href": "/Browse/Trees/252314/Details"
+    },
+    "maxCrownSpread": {
+      "text": "57.1'",
+      "href": "/Browse/Trees/16020/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "87.5'",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "87.5'",
+            "href": "/Browse/Trees/233722/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/233722/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "92.4'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "92.4'",
+            "href": "/Browse/Trees/241482/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/241482/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "100.5'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "100.5'",
+            "href": "/Browse/Trees/232126/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/232126/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "75.2'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "75.2'",
+            "href": "/Browse/Trees/175062/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/175062/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "112.0'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "112.0'",
+            "href": "/Browse/Trees/234809/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/249122/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "110.1'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "110.1'",
+            "href": "/Browse/Trees/297374/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/76449/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "120.0'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "120.0'",
+            "href": "/Browse/Trees/232016/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/45347/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "77.6'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "77.6'",
+            "href": "/Browse/Trees/250522/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/235722/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "-",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          null,
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/171542/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "127.0'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "127.0'",
+            "href": "/Browse/Trees/323099/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/258897/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

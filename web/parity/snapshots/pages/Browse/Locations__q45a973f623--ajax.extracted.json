@@ -1,0 +1,1169 @@
+{
+  "columns": [
+    {
+      "header": "Site",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "County",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "State",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RHI5",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RHI10",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RGI5",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RGI10",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Last measurement",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Big Hill Pond State Park",
+        "Hardeman",
+        "Tennessee",
+        "119.80",
+        "114.54",
+        "7.56",
+        "6.79",
+        "12/02/2023"
+      ],
+      "links": [
+        {
+          "text": "Big Hill Pond State Park",
+          "href": "/Browse/Sites/42250/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Fort Donelson National Battlefield",
+        "Stewart",
+        "Tennessee",
+        "147.38",
+        "141.45",
+        "12.51",
+        "10.79",
+        "11/25/2023"
+      ],
+      "links": [
+        {
+          "text": "Fort Donelson National Battlefield",
+          "href": "/Browse/Sites/42243/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "David Crockett State Park",
+        "Lawrence",
+        "Tennessee",
+        "137.16",
+        "132.70",
+        "9.78",
+        "8.95",
+        "11/18/2023"
+      ],
+      "links": [
+        {
+          "text": "David Crockett State Park",
+          "href": "/Browse/Sites/42237/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Chickasaw Trace Park",
+        "Maury",
+        "Tennessee",
+        "112.96",
+        "-",
+        "3.66",
+        "-",
+        "09/02/2023"
+      ],
+      "links": [
+        {
+          "text": "Chickasaw Trace Park",
+          "href": "/Browse/Sites/42126/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Big Cypress Tree State Park",
+        "Weakley",
+        "Tennessee",
+        "131.04",
+        "-",
+        "0.00",
+        "-",
+        "08/19/2023"
+      ],
+      "links": [
+        {
+          "text": "Big Cypress Tree State Park",
+          "href": "/Browse/Sites/42121/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Nursery Bottom",
+        "Tucker",
+        "West Virginia",
+        "83.96",
+        "-",
+        "10.38",
+        "-",
+        "07/24/2023"
+      ],
+      "links": [
+        {
+          "text": "Nursery Bottom",
+          "href": "/Browse/Sites/40166/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Fort Donelson National Cemetery",
+        "Stewart",
+        "Tennessee",
+        "136.30",
+        "128.93",
+        "11.38",
+        "10.40",
+        "07/22/2023"
+      ],
+      "links": [
+        {
+          "text": "Fort Donelson National Cemetery",
+          "href": "/Browse/Sites/42108/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Shiloh National Military Park/Cemetery",
+        "Hardin",
+        "Tennessee",
+        "133.24",
+        "125.12",
+        "12.59",
+        "11.82",
+        "07/08/2023"
+      ],
+      "links": [
+        {
+          "text": "Shiloh National Military Park/Cemetery",
+          "href": "/Browse/Sites/42099/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quincy Hill Park",
+        "Wood",
+        "West Virginia",
+        "94.28",
+        "86.74",
+        "10.97",
+        "8.92",
+        "07/01/2023"
+      ],
+      "links": [
+        {
+          "text": "Quincy Hill Park",
+          "href": "/Browse/Sites/39723/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Mammoth Cave National Park",
+        "Edmonson",
+        "Kentucky",
+        "152.30",
+        "148.26",
+        "14.31",
+        "12.55",
+        "06/23/2023"
+      ],
+      "links": [
+        {
+          "text": "Mammoth Cave National Park",
+          "href": "/Browse/Sites/22106/Details"
+        },
+        null,
+        {
+          "text": "Kentucky",
+          "href": "/Browse/States/15/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Monarch Pass",
+        "Chaffee",
+        "Colorado",
+        "-",
+        "-",
+        "-",
+        "-",
+        "06/20/2023"
+      ],
+      "links": [
+        {
+          "text": "Monarch Pass",
+          "href": "/Browse/Sites/42073/Details"
+        },
+        null,
+        {
+          "text": "Colorado",
+          "href": "/Browse/States/5/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Mt. Pisgah Arboretum",
+        "Lane",
+        "Oregon",
+        "-",
+        "-",
+        "-",
+        "-",
+        "06/18/2023"
+      ],
+      "links": [
+        {
+          "text": "Mt. Pisgah Arboretum",
+          "href": "/Browse/Sites/42074/Details"
+        },
+        null,
+        {
+          "text": "Oregon",
+          "href": "/Browse/States/35/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Oregon Caves National Monument & Preserve",
+        "Josephine",
+        "Oregon",
+        "210.10",
+        "-",
+        "18.70",
+        "-",
+        "06/18/2023"
+      ],
+      "links": [
+        {
+          "text": "Oregon Caves National Monument & Preserve",
+          "href": "/Browse/Sites/42095/Details"
+        },
+        null,
+        {
+          "text": "Oregon",
+          "href": "/Browse/States/35/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Marymere Falls Trail",
+        "Clallam",
+        "Washington",
+        "195.86",
+        "-",
+        "5.80",
+        "-",
+        "06/16/2023"
+      ],
+      "links": [
+        {
+          "text": "Marymere Falls Trail",
+          "href": "/Browse/Sites/42075/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Bogachiel Rainforest River Trail",
+        "Clallam",
+        "Washington",
+        "204.10",
+        "-",
+        "7.43",
+        "-",
+        "06/16/2023"
+      ],
+      "links": [
+        {
+          "text": "Bogachiel Rainforest River Trail",
+          "href": "/Browse/Sites/42076/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Goat Marsh RNA",
+        "Cowlitz",
+        "Washington",
+        "229.56",
+        "-",
+        "15.29",
+        "-",
+        "06/15/2023"
+      ],
+      "links": [
+        {
+          "text": "Goat Marsh RNA",
+          "href": "/Browse/Sites/42071/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "White Pine Creek Trail",
+        "Chelan",
+        "Washington",
+        "172.84",
+        "-",
+        "14.05",
+        "-",
+        "06/13/2023"
+      ],
+      "links": [
+        {
+          "text": "White Pine Creek Trail",
+          "href": "/Browse/Sites/42085/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Noxon Rapids Reservoir",
+        "Sanders",
+        "Montana",
+        "145.14",
+        "-",
+        "7.29",
+        "-",
+        "06/13/2023"
+      ],
+      "links": [
+        {
+          "text": "Noxon Rapids Reservoir",
+          "href": "/Browse/Sites/42086/Details"
+        },
+        null,
+        {
+          "text": "Montana",
+          "href": "/Browse/States/24/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Ross Creek Scenic Area Giant Cedars",
+        "Lincoln",
+        "Montana",
+        "170.86",
+        "-",
+        "13.70",
+        "-",
+        "06/12/2023"
+      ],
+      "links": [
+        {
+          "text": "Ross Creek Scenic Area Giant Cedars",
+          "href": "/Browse/Sites/42097/Details"
+        },
+        null,
+        {
+          "text": "Montana",
+          "href": "/Browse/States/24/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pierson Hollow",
+        "Nicholas",
+        "West Virginia",
+        "121.98",
+        "114.06",
+        "9.30",
+        "7.53",
+        "06/02/2023"
+      ],
+      "links": [
+        {
+          "text": "Pierson Hollow",
+          "href": "/Browse/Sites/39156/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Stones River National Battlefield",
+        "Rutherford",
+        "Tennessee",
+        "96.52",
+        "90.91",
+        "7.54",
+        "6.35",
+        "05/21/2023"
+      ],
+      "links": [
+        {
+          "text": "Stones River National Battlefield",
+          "href": "/Browse/Sites/42052/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Coal Run",
+        "Fayette",
+        "West Virginia",
+        "115.90",
+        "109.83",
+        "8.95",
+        "6.72",
+        "05/16/2023"
+      ],
+      "links": [
+        {
+          "text": "Coal Run",
+          "href": "/Browse/Sites/42068/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Willowbrook Ravine",
+        "Wood",
+        "West Virginia",
+        "111.28",
+        "104.74",
+        "11.43",
+        "9.59",
+        "03/21/2023"
+      ],
+      "links": [
+        {
+          "text": "Willowbrook Ravine",
+          "href": "/Browse/Sites/42051/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Brecksville Reservation",
+        "Cuyahoga",
+        "Ohio",
+        "-",
+        "-",
+        "-",
+        "-",
+        "03/19/2023"
+      ],
+      "links": [
+        {
+          "text": "Brecksville Reservation",
+          "href": "/Browse/Sites/42007/Details"
+        },
+        null,
+        {
+          "text": "Ohio",
+          "href": "/Browse/States/33/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Hela Bravo Hollis Botanical Garden",
+        "Tehcan",
+        "Puebla",
+        "21.72",
+        "-",
+        "1.90",
+        "-",
+        "01/11/2023"
+      ],
+      "links": [
+        {
+          "text": "Hela Bravo Hollis Botanical Garden",
+          "href": "/Browse/Sites/42006/Details"
+        },
+        null,
+        {
+          "text": "Puebla",
+          "href": "/Browse/States/91/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Big Oak Tree State Park",
+        "Mississippi",
+        "Missouri",
+        "141.62",
+        "136.81",
+        "19.75",
+        "17.43",
+        "11/26/2022"
+      ],
+      "links": [
+        {
+          "text": "Big Oak Tree State Park",
+          "href": "/Browse/Sites/39311/Details"
+        },
+        null,
+        {
+          "text": "Missouri",
+          "href": "/Browse/States/22/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Oakwood",
+        "Wood",
+        "West Virginia",
+        "104.96",
+        "94.18",
+        "11.93",
+        "9.95",
+        "11/23/2022"
+      ],
+      "links": [
+        {
+          "text": "Oakwood",
+          "href": "/Browse/Sites/39820/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Canaan Valley Resort State Park",
+        "Tucker",
+        "West Virginia",
+        "-",
+        "-",
+        "-",
+        "-",
+        "11/18/2022"
+      ],
+      "links": [
+        {
+          "text": "Canaan Valley Resort State Park",
+          "href": "/Browse/Sites/41964/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Newfound Gap Road",
+        "Sevier",
+        "Tennessee",
+        "-",
+        "-",
+        "-",
+        "-",
+        "10/29/2022"
+      ],
+      "links": [
+        {
+          "text": "Newfound Gap Road",
+          "href": "/Browse/Sites/42319/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Waterford Farm",
+        "Howard",
+        "Maryland",
+        "-",
+        "-",
+        "-",
+        "-",
+        "09/08/2022"
+      ],
+      "links": [
+        {
+          "text": "Waterford Farm",
+          "href": "/Browse/Sites/38732/Details"
+        },
+        null,
+        {
+          "text": "Maryland",
+          "href": "/Browse/States/18/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Sequoia National Park",
+        "Tulare",
+        "California",
+        "216.48",
+        "-",
+        "8.53",
+        "-",
+        "07/11/2022"
+      ],
+      "links": [
+        {
+          "text": "Sequoia National Park",
+          "href": "/Browse/Sites/40649/Details"
+        },
+        null,
+        {
+          "text": "California",
+          "href": "/Browse/States/4/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Oak Creek Wildlife Area",
+        "Yakima",
+        "Washington",
+        "-",
+        "-",
+        "-",
+        "-",
+        "07/07/2022"
+      ],
+      "links": [
+        {
+          "text": "Oak Creek Wildlife Area",
+          "href": "/Browse/Sites/41795/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "White Pass, Washington Cascades",
+        "Lewis",
+        "Washington",
+        "-",
+        "-",
+        "-",
+        "-",
+        "07/07/2022"
+      ],
+      "links": [
+        {
+          "text": "White Pass, Washington Cascades",
+          "href": "/Browse/Sites/41785/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Cedar Flats Research Natural Area",
+        "Skamania",
+        "Washington",
+        "-",
+        "-",
+        "-",
+        "-",
+        "07/07/2022"
+      ],
+      "links": [
+        {
+          "text": "Cedar Flats Research Natural Area",
+          "href": "/Browse/Sites/39087/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Easy Pass, North Cascades Scenic Highway",
+        "Skagit",
+        "Washington",
+        "-",
+        "-",
+        "-",
+        "-",
+        "07/06/2022"
+      ],
+      "links": [
+        {
+          "text": "Easy Pass, North Cascades Scenic Highway",
+          "href": "/Browse/Sites/41786/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "U.S. Highway 2 Wayside",
+        "Chelan",
+        "Washington",
+        "-",
+        "-",
+        "-",
+        "-",
+        "07/06/2022"
+      ],
+      "links": [
+        {
+          "text": "U.S. Highway 2 Wayside",
+          "href": "/Browse/Sites/42079/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Icicle Creek Trail",
+        "Chelan",
+        "Washington",
+        "168.62",
+        "-",
+        "13.53",
+        "-",
+        "07/06/2022"
+      ],
+      "links": [
+        {
+          "text": "Icicle Creek Trail",
+          "href": "/Browse/Sites/42080/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Old Sauk River Trail",
+        "Snohomish",
+        "Washington",
+        "201.86",
+        "-",
+        "14.16",
+        "-",
+        "07/05/2022"
+      ],
+      "links": [
+        {
+          "text": "Old Sauk River Trail",
+          "href": "/Browse/Sites/41792/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Mountain Loop Highway",
+        "Snohomish",
+        "Washington",
+        "-",
+        "-",
+        "-",
+        "-",
+        "07/05/2022"
+      ],
+      "links": [
+        {
+          "text": "Mountain Loop Highway",
+          "href": "/Browse/Sites/41793/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "North Cascades Scenic Highway",
+        "Okanogan",
+        "Washington",
+        "-",
+        "-",
+        "-",
+        "-",
+        "07/05/2022"
+      ],
+      "links": [
+        {
+          "text": "North Cascades Scenic Highway",
+          "href": "/Browse/Sites/42078/Details"
+        },
+        null,
+        {
+          "text": "Washington",
+          "href": "/Browse/States/45/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "pageInfo": "Showing 81 to 120 of 1370 entries",
+  "hasPreviousPage": true,
+  "hasNextPage": true
+}

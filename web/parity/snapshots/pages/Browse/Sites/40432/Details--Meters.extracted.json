@@ -1,0 +1,347 @@
+{
+  "siteId": 40432,
+  "summary": {
+    "Name": "Palmer Woods",
+    "RHI5": "37.838",
+    "RHI10": "36.335",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.196",
+    "RGI10": "2.618",
+    "RGI20": "(not enough data)",
+    "Trees measured": "24",
+    "Last measurement date": "01/10/2021",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/10/2021",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "33.59 m",
+          "197 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/40432/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40432/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "33.59 m",
+            "href": "/Browse/Trees/230093/Details"
+          },
+          {
+            "text": "197 cm",
+            "href": "/Browse/Trees/230093/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "31.03 m",
+          "137 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40432/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40432/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "31.03 m",
+            "href": "/Browse/Trees/230089/Details"
+          },
+          {
+            "text": "137 cm",
+            "href": "/Browse/Trees/230089/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "36.88 m",
+          "269 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40432/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40432/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "36.88 m",
+            "href": "/Browse/Trees/230072/Details"
+          },
+          {
+            "text": "269 cm",
+            "href": "/Browse/Trees/230072/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "38.47 m",
+          "198 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40432/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40432/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "38.47 m",
+            "href": "/Browse/Trees/230094/Details"
+          },
+          {
+            "text": "198 cm",
+            "href": "/Browse/Trees/230094/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "10.70 m",
+          "66 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/40432/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/40432/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "10.70 m",
+            "href": "/Browse/Trees/230073/Details"
+          },
+          {
+            "text": "66 cm",
+            "href": "/Browse/Trees/230073/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "34.50 m",
+          "146 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40432/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40432/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "34.50 m",
+            "href": "/Browse/Trees/230092/Details"
+          },
+          {
+            "text": "146 cm",
+            "href": "/Browse/Trees/230092/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "37.67 m",
+          "277 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40432/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40432/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "37.67 m",
+            "href": "/Browse/Trees/230084/Details"
+          },
+          {
+            "text": "277 cm",
+            "href": "/Browse/Trees/230084/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "37.67 m",
+          "210 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40432/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40432/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "37.67 m",
+            "href": "/Browse/Trees/230086/Details"
+          },
+          {
+            "text": "210 cm",
+            "href": "/Browse/Trees/230085/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus grandidentata",
+          "Bigtooth Aspen",
+          "28.19 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus grandidentata",
+            "href": "/Browse/Sites/40432/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "Bigtooth Aspen",
+            "href": "/Browse/Sites/40432/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "28.19 m",
+            "href": "/Browse/Trees/230075/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "35.05 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/40432/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/40432/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "35.05 m",
+            "href": "/Browse/Trees/230095/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 27.457, -076 28.850",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Tompkins"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

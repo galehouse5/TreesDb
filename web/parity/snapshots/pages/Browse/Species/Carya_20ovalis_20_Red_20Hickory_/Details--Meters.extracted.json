@@ -1,0 +1,289 @@
+{
+  "botanicalName": "Carya ovalis",
+  "commonName": "Red Hickory",
+  "global": {
+    "maxHeight": {
+      "text": "48.62 m",
+      "href": "/Browse/Trees/323740/Details"
+    },
+    "maxGirth": {
+      "text": "344 cm",
+      "href": "/Browse/Trees/323739/Details"
+    },
+    "maxCrownSpread": {
+      "text": "19.20 m",
+      "href": "/Browse/Trees/166983/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "41.33 m",
+          "220 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "41.33 m",
+            "href": "/Browse/Trees/315732/Details"
+          },
+          {
+            "text": "220 cm",
+            "href": "/Browse/Trees/315731/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "44.29 m",
+          "308 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "44.29 m",
+            "href": "/Browse/Trees/297452/Details"
+          },
+          {
+            "text": "308 cm",
+            "href": "/Browse/Trees/297601/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "43.83 m",
+          "318 cm",
+          "1.40 m"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "43.83 m",
+            "href": "/Browse/Trees/212982/Details"
+          },
+          {
+            "text": "318 cm",
+            "href": "/Browse/Trees/263313/Details"
+          },
+          {
+            "text": "1.40 m",
+            "href": "/Browse/Trees/263313/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "44.74 m",
+          "254 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "44.74 m",
+            "href": "/Browse/Trees/252445/Details"
+          },
+          {
+            "text": "254 cm",
+            "href": "/Browse/Trees/252445/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "39.78 m",
+          "246 cm",
+          "17.83 m"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "39.78 m",
+            "href": "/Browse/Trees/169513/Details"
+          },
+          {
+            "text": "246 cm",
+            "href": "/Browse/Trees/312359/Details"
+          },
+          {
+            "text": "17.83 m",
+            "href": "/Browse/Trees/312359/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "40.08 m",
+          "315 cm",
+          "19.20 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "40.08 m",
+            "href": "/Browse/Trees/280983/Details"
+          },
+          {
+            "text": "315 cm",
+            "href": "/Browse/Trees/166983/Details"
+          },
+          {
+            "text": "19.20 m",
+            "href": "/Browse/Trees/166983/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "46.79 m",
+          "274 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "46.79 m",
+            "href": "/Browse/Trees/253014/Details"
+          },
+          {
+            "text": "274 cm",
+            "href": "/Browse/Trees/253014/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "48.62 m",
+          "344 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "48.62 m",
+            "href": "/Browse/Trees/323740/Details"
+          },
+          {
+            "text": "344 cm",
+            "href": "/Browse/Trees/323739/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "46.36 m",
+          "290 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "46.36 m",
+            "href": "/Browse/Trees/168509/Details"
+          },
+          {
+            "text": "290 cm",
+            "href": "/Browse/Trees/168510/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "24.48 m",
+          "164 cm",
+          "13.72 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "24.48 m",
+            "href": "/Browse/Trees/186181/Details"
+          },
+          {
+            "text": "164 cm",
+            "href": "/Browse/Trees/186181/Details"
+          },
+          {
+            "text": "13.72 m",
+            "href": "/Browse/Trees/272665/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

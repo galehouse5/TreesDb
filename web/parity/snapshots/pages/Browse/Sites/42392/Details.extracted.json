@@ -1,0 +1,238 @@
+{
+  "siteId": 42392,
+  "summary": {
+    "Name": "Torreya State Park",
+    "RHI5": "120.98",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.09",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "02/19/2026",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/19/2026",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "104.3'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/42392/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/42392/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "104.3'",
+            "href": "/Browse/Trees/323414/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/323414/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "119.2'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/42392/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/42392/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "119.2'",
+            "href": "/Browse/Trees/323412/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/323412/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "119.8'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/42392/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/42392/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "119.8'",
+            "href": "/Browse/Trees/323413/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/323413/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "101.4'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/42392/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/42392/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "101.4'",
+            "href": "/Browse/Trees/323415/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/323415/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus elliottii",
+          "Slash Pine",
+          "137.2'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus elliottii",
+            "href": "/Browse/Sites/42392/Species/Pinus%20elliottii%20(Slash%20Pine)/Details"
+          },
+          {
+            "text": "Slash Pine",
+            "href": "/Browse/Sites/42392/Species/Pinus%20elliottii%20(Slash%20Pine)/Details"
+          },
+          {
+            "text": "137.2'",
+            "href": "/Browse/Trees/323409/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/323410/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "124.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/42392/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/42392/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "124.4'",
+            "href": "/Browse/Trees/323411/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "30 33.736, -084 57.047",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Calhoun"
+    },
+    "state": {
+      "text": "Florida (US)",
+      "href": "/Browse/States/8/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

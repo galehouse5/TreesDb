@@ -1,0 +1,217 @@
+{
+  "botanicalName": "Chamaecyparis pisifera",
+  "commonName": "Sawara False Cypress",
+  "global": {
+    "maxHeight": {
+      "text": "106.5'",
+      "href": "/Browse/Trees/281843/Details"
+    },
+    "maxGirth": {
+      "text": "130''",
+      "href": "/Browse/Trees/255966/Details"
+    },
+    "maxCrownSpread": {
+      "text": "50.0'",
+      "href": "/Browse/Trees/224345/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Massachusetts",
+          "70.0'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/250223/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/250223/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "106.5'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "106.5'",
+            "href": "/Browse/Trees/281843/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/281843/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "91.1'",
+          "100''",
+          "34.0'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "91.1'",
+            "href": "/Browse/Trees/272602/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/272602/Details"
+          },
+          {
+            "text": "34.0'",
+            "href": "/Browse/Trees/272603/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "87.7'",
+          "130''",
+          "33.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "87.7'",
+            "href": "/Browse/Trees/108840/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/255966/Details"
+          },
+          {
+            "text": "33.0'",
+            "href": "/Browse/Trees/133820/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Rhode Island",
+          "57.5'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhode Island",
+            "href": "/Browse/States/37/Details"
+          },
+          {
+            "text": "57.5'",
+            "href": "/Browse/Trees/256816/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/256816/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "91.2'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "91.2'",
+            "href": "/Browse/Trees/224550/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/224550/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "90.7'",
+          "95''",
+          "50.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "90.7'",
+            "href": "/Browse/Trees/224345/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/224346/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/224345/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

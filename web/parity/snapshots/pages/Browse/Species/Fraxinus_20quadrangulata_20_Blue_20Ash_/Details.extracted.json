@@ -1,0 +1,185 @@
+{
+  "botanicalName": "Fraxinus quadrangulata",
+  "commonName": "Blue Ash",
+  "global": {
+    "maxHeight": {
+      "text": "135.3'",
+      "href": "/Browse/Trees/297493/Details"
+    },
+    "maxGirth": {
+      "text": "184''",
+      "href": "/Browse/Trees/174112/Details"
+    },
+    "maxCrownSpread": {
+      "text": "57.0'",
+      "href": "/Browse/Trees/174135/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "108.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "108.8'",
+            "href": "/Browse/Trees/315724/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "64.2'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "64.2'",
+            "href": "/Browse/Trees/234473/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/234473/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "135.3'",
+          "184''",
+          "57.0'"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "135.3'",
+            "href": "/Browse/Trees/297493/Details"
+          },
+          {
+            "text": "184''",
+            "href": "/Browse/Trees/174112/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/174135/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "56.5'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "56.5'",
+            "href": "/Browse/Trees/226058/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/226058/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "113.9'",
+          "179''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "113.9'",
+            "href": "/Browse/Trees/9975/Details"
+          },
+          {
+            "text": "179''",
+            "href": "/Browse/Trees/302689/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "130.7'",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "130.7'",
+            "href": "/Browse/Trees/321009/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/315860/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

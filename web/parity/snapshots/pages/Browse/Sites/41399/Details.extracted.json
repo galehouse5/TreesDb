@@ -1,0 +1,335 @@
+{
+  "siteId": 41399,
+  "summary": {
+    "Name": "Corson's Brook Woods",
+    "RHI5": "112.70",
+    "RHI10": "107.96",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.50",
+    "RGI10": "3.75",
+    "RGI20": "(not enough data)",
+    "Trees measured": "54",
+    "Last measurement date": "08/08/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "21 Acres"
+  },
+  "visits": [
+    {
+      "visited": "08/08/2016",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "21 Acres"
+    },
+    {
+      "visited": "04/01/2016",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "21 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "93.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41399/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41399/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "93.1'",
+            "href": "/Browse/Trees/258250/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "95.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/41399/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41399/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "95.8'",
+            "href": "/Browse/Trees/258252/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "104.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41399/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41399/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "104.0'",
+            "href": "/Browse/Trees/258272/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "101.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/41399/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/41399/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "101.7'",
+            "href": "/Browse/Trees/258274/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "95.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/41399/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/41399/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "95.0'",
+            "href": "/Browse/Trees/258255/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "106.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41399/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41399/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "106.5'",
+            "href": "/Browse/Trees/258296/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "107.4'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/41399/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/41399/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "107.4'",
+            "href": "/Browse/Trees/258265/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/258265/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "133.1'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41399/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41399/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "133.1'",
+            "href": "/Browse/Trees/258245/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/258242/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "32.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/41399/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/41399/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "32.9'",
+            "href": "/Browse/Trees/258254/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Paulownia tomentosa",
+          "Princesstree",
+          "99.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Paulownia tomentosa",
+            "href": "/Browse/Sites/41399/Species/Paulownia%20tomentosa%20(Princesstree)/Details"
+          },
+          {
+            "text": "Princesstree",
+            "href": "/Browse/Sites/41399/Species/Paulownia%20tomentosa%20(Princesstree)/Details"
+          },
+          {
+            "text": "99.3'",
+            "href": "/Browse/Trees/258279/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 35.694, -074 08.693",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Richmond"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

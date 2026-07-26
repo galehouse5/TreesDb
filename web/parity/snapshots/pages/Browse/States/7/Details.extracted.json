@@ -1,0 +1,563 @@
+{
+  "stateId": 7,
+  "summary": {
+    "Name": "Delaware",
+    "Code": "DE",
+    "RHI5": "151.66",
+    "RHI10": "146.00",
+    "RHI20": "136.77",
+    "RGI5": "17.87",
+    "RGI10": "15.57",
+    "RGI20": "13.40",
+    "Trees measured": "277",
+    "Last measurement date": "11/21/2014"
+  },
+  "location": {
+    "Coordinates": "39 08.717, -075 23.219",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "126.4'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/7/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/7/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "126.4'",
+            "href": "/Browse/Trees/232125/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/142910/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "99.3'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/7/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/7/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "99.3'",
+            "href": "/Browse/Trees/142913/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/142913/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "97.6'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/7/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/7/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "97.6'",
+            "href": "/Browse/Trees/142915/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/142915/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "87.2'",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/States/7/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/7/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "87.2'",
+            "href": "/Browse/Trees/75450/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/75450/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "88.0'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/States/7/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/States/7/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "88.0'",
+            "href": "/Browse/Trees/75454/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/75454/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus hippocastanum",
+          "Horse Chestnut",
+          "62.6'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus hippocastanum",
+            "href": "/Browse/States/7/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "Horse Chestnut",
+            "href": "/Browse/States/7/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "62.6'",
+            "href": "/Browse/Trees/75581/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/75581/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus x worlitzensis",
+          "Dupont's Buckeye",
+          "77.0'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus x worlitzensis",
+            "href": "/Browse/States/7/Species/Aesculus%20x%20worlitzensis%20(Dupont's%20Buckeye)/Details"
+          },
+          {
+            "text": "Dupont's Buckeye",
+            "href": "/Browse/States/7/Species/Aesculus%20x%20worlitzensis%20(Dupont's%20Buckeye)/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/75451/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/75451/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "90.0'",
+          "86''",
+          "44.0'"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/States/7/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/States/7/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/140159/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/140159/Details"
+          },
+          {
+            "text": "44.0'",
+            "href": "/Browse/Trees/140159/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "147.4'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/States/7/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/States/7/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "147.4'",
+            "href": "/Browse/Trees/142887/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/232095/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "144.0'",
+          "121''",
+          "65.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/States/7/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/States/7/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "144.0'",
+            "href": "/Browse/Trees/140144/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/140145/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/140145/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 50 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Bellevue State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bellevue State Park",
+            "href": "/Browse/Sites/22073/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Brandywine Creek State Park",
+          "148.70",
+          "140.62",
+          "16.60",
+          "13.82"
+        ],
+        "links": [
+          {
+            "text": "Brandywine Creek State Park",
+            "href": "/Browse/Sites/38509/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chesapeake Bay Girl Scout Council Property",
+          "140.06",
+          "-",
+          "10.32",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chesapeake Bay Girl Scout Council Property",
+            "href": "/Browse/Sites/40504/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware Single Tree Sites",
+            "href": "/Browse/Sites/40010/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "First State National Historical Park",
+          "146.42",
+          "139.17",
+          "13.90",
+          "11.89"
+        ],
+        "links": [
+          {
+            "text": "First State National Historical Park",
+            "href": "/Browse/Sites/40500/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Flint Woods {Reserve",
+          "140.58",
+          "-",
+          "12.08",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Flint Woods {Reserve",
+            "href": "/Browse/Sites/40503/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hagley Museum",
+          "94.68",
+          "-",
+          "11.78",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hagley Museum",
+            "href": "/Browse/Sites/22070/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Rockwood Park",
+          "90.48",
+          "73.61",
+          "12.03",
+          "8.86"
+        ],
+        "links": [
+          {
+            "text": "Rockwood Park",
+            "href": "/Browse/Sites/22071/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Valley Garden Park",
+          "123.82",
+          "-",
+          "13.43",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Valley Garden Park",
+            "href": "/Browse/Sites/40479/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Winterthur",
+          "143.46",
+          "133.30",
+          "15.75",
+          "12.33"
+        ],
+        "links": [
+          {
+            "text": "Winterthur",
+            "href": "/Browse/Sites/22075/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

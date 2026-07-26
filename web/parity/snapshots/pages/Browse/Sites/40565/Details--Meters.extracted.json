@@ -1,0 +1,163 @@
+{
+  "siteId": 40565,
+  "summary": {
+    "Name": "Wisconsin Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "17.37 m",
+          "363 cm",
+          "12.41 m"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/40565/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/40565/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "17.37 m",
+            "href": "/Browse/Trees/233414/Details"
+          },
+          {
+            "text": "363 cm",
+            "href": "/Browse/Trees/233414/Details"
+          },
+          {
+            "text": "12.41 m",
+            "href": "/Browse/Trees/233414/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "28.93 m",
+          "505 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/40565/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/40565/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "28.93 m",
+            "href": "/Browse/Trees/233413/Details"
+          },
+          {
+            "text": "505 cm",
+            "href": "/Browse/Trees/233413/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus glabra",
+          "Wych Elm",
+          "10.36 m",
+          "282 cm",
+          "11.73 m"
+        ],
+        "links": [
+          {
+            "text": "Ulmus glabra",
+            "href": "/Browse/Sites/40565/Species/Ulmus%20glabra%20(Wych%20Elm)/Details"
+          },
+          {
+            "text": "Wych Elm",
+            "href": "/Browse/Sites/40565/Species/Ulmus%20glabra%20(Wych%20Elm)/Details"
+          },
+          {
+            "text": "10.36 m",
+            "href": "/Browse/Trees/233415/Details"
+          },
+          {
+            "text": "282 cm",
+            "href": "/Browse/Trees/233415/Details"
+          },
+          {
+            "text": "11.73 m",
+            "href": "/Browse/Trees/233415/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 04.474, -089 23.051",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Private",
+      "County": "Dane"
+    },
+    "state": {
+      "text": "Wisconsin (US)",
+      "href": "/Browse/States/46/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

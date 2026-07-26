@@ -1,0 +1,122 @@
+{
+  "botanicalName": "Ulmus procera",
+  "commonName": "English Elm",
+  "global": {
+    "maxHeight": {
+      "text": "37.22 yd",
+      "href": "/Browse/Trees/263295/Details"
+    },
+    "maxGirth": {
+      "text": "235''",
+      "href": "/Browse/Trees/255986/Details"
+    },
+    "maxCrownSpread": {
+      "text": "30.00 yd",
+      "href": "/Browse/Trees/263295/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Community of Madrid",
+          "25.87 yd",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Community of Madrid",
+            "href": "/Browse/States/137/Details"
+          },
+          {
+            "text": "25.87 yd",
+            "href": "/Browse/Trees/274935/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/274935/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "37.22 yd",
+          "211''",
+          "30.00 yd"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "37.22 yd",
+            "href": "/Browse/Trees/263295/Details"
+          },
+          {
+            "text": "211''",
+            "href": "/Browse/Trees/263295/Details"
+          },
+          {
+            "text": "30.00 yd",
+            "href": "/Browse/Trees/263295/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "29.57 yd",
+          "235''",
+          "28.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "29.57 yd",
+            "href": "/Browse/Trees/255979/Details"
+          },
+          {
+            "text": "235''",
+            "href": "/Browse/Trees/255986/Details"
+          },
+          {
+            "text": "28.00 yd",
+            "href": "/Browse/Trees/255979/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

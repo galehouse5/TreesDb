@@ -1,0 +1,182 @@
+{
+  "siteId": 41031,
+  "summary": {
+    "Name": "Peter Norbeck Scenic Byway",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "14",
+    "Last measurement date": "12/13/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees not measured along the Needles section of the highway will be indicated under comments."
+  },
+  "visits": [
+    {
+      "visited": "12/13/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees not measured along the Needles section of the highway will be indicated under comments."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "66.5'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/Sites/41031/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/Sites/41031/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "66.5'",
+            "href": "/Browse/Trees/243373/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/243374/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea x albertiana",
+          "Western White Spruce",
+          "114.1'",
+          "117''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea x albertiana",
+            "href": "/Browse/Sites/41031/Species/Picea%20x%20albertiana%20(Western%20White%20Spruce)/Details"
+          },
+          {
+            "text": "Western White Spruce",
+            "href": "/Browse/Sites/41031/Species/Picea%20x%20albertiana%20(Western%20White%20Spruce)/Details"
+          },
+          {
+            "text": "114.1'",
+            "href": "/Browse/Trees/243376/Details"
+          },
+          {
+            "text": "117''",
+            "href": "/Browse/Trees/243381/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus angustifolia",
+          "Narrowleaf Cottonwood",
+          "114.5'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus angustifolia",
+            "href": "/Browse/Sites/41031/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "Narrowleaf Cottonwood",
+            "href": "/Browse/Sites/41031/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "114.5'",
+            "href": "/Browse/Trees/243383/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/243384/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "75.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/41031/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/41031/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "75.2'",
+            "href": "/Browse/Trees/243385/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 50.507, -103 32.485",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal and state",
+      "County": "Custer"
+    },
+    "state": {
+      "text": "South Dakota (US)",
+      "href": "/Browse/States/39/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

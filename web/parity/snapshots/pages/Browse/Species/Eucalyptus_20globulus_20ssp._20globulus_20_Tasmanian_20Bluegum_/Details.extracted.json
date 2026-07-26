@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Eucalyptus globulus ssp. globulus",
+  "commonName": "Tasmanian Bluegum",
+  "global": {
+    "maxHeight": {
+      "text": "151.0'",
+      "href": "/Browse/Trees/320743/Details"
+    },
+    "maxGirth": {
+      "text": "79''",
+      "href": "/Browse/Trees/320743/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "151.0'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "151.0'",
+            "href": "/Browse/Trees/320743/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/320743/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

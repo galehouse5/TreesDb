@@ -1,0 +1,107 @@
+{
+  "siteId": 39088,
+  "summary": {
+    "Name": "Quinault River Valley",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "10/11/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/11/2017",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "05/08/2015",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "73.46 m",
+          "1275 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/39088/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/39088/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "73.46 m",
+            "href": "/Browse/Trees/164408/Details"
+          },
+          {
+            "text": "1275 cm",
+            "href": "/Browse/Trees/239725/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "47 34.573, -123 38.890",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Jefferson"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,129 @@
+{
+  "siteId": 40100,
+  "summary": {
+    "Name": "Dodge Memorial Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "11/03/2013",
+    "Ownership contact": "11005 J. J. Pershing Drive Omaha, Nebraska 68112",
+    "General comments": "45 Acres"
+  },
+  "visits": [
+    {
+      "visited": "11/03/2013",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "(none)",
+      "comments": "45 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "120.6'",
+          "190''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/40100/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/40100/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "120.6'",
+            "href": "/Browse/Trees/220431/Details"
+          },
+          {
+            "text": "190''",
+            "href": "/Browse/Trees/220431/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix amygdaloides",
+          "Peachleaf Willow",
+          "88.8'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix amygdaloides",
+            "href": "/Browse/Sites/40100/Species/Salix%20amygdaloides%20(Peachleaf%20Willow)/Details"
+          },
+          {
+            "text": "Peachleaf Willow",
+            "href": "/Browse/Sites/40100/Species/Salix%20amygdaloides%20(Peachleaf%20Willow)/Details"
+          },
+          {
+            "text": "88.8'",
+            "href": "/Browse/Trees/220430/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/220430/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 21.672, -095 57.587",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Douglas"
+    },
+    "state": {
+      "text": "Nebraska (US)",
+      "href": "/Browse/States/27/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

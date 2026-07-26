@@ -1,0 +1,163 @@
+{
+  "siteId": 41125,
+  "summary": {
+    "Name": "Ordway White Pine Grove",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "21",
+    "Last measurement date": "08/21/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "10 aces open to public. The tract location is north of where the Google pin indicates and is just off of Pleasant Street."
+  },
+  "visits": [
+    {
+      "visited": "08/21/2012",
+      "visitors": "Tom Howard and Jack Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "10 aces open to public. The tract location is north of where the Google pin indicates and is just off of Pleasant Street."
+    },
+    {
+      "visited": "11/27/2006",
+      "visitors": "R Leverett",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/maine/nh_maine_report.htm",
+      "comments": "10 acres owned by Twin Town Nature Club since 1931. Open to public."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "151.8'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41125/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41125/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "151.8'",
+            "href": "/Browse/Trees/249826/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/256135/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "72.9'",
+          "138''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/41125/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41125/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "72.9'",
+            "href": "/Browse/Trees/249832/Details"
+          },
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/249832/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "95.7'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/41125/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/41125/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "95.7'",
+            "href": "/Browse/Trees/249831/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/249831/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 12.837, -070 32.689",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Oxford"
+    },
+    "state": {
+      "text": "Maine (US)",
+      "href": "/Browse/States/19/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

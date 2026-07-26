@@ -1,0 +1,109 @@
+{
+  "botanicalName": "Salix interior",
+  "commonName": "Sandbar Willow",
+  "global": {
+    "maxHeight": {
+      "text": "17.63 yd",
+      "href": "/Browse/Trees/241833/Details"
+    },
+    "maxGirth": {
+      "text": "40''",
+      "href": "/Browse/Trees/241835/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "17.63 yd",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "17.63 yd",
+            "href": "/Browse/Trees/241833/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/241835/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Iowa",
+          "15.77 yd",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Iowa",
+            "href": "/Browse/States/10/Details"
+          },
+          {
+            "text": "15.77 yd",
+            "href": "/Browse/Trees/233681/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/233685/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "6.00 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "6.00 yd",
+            "href": "/Browse/Trees/221862/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

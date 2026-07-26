@@ -1,0 +1,334 @@
+{
+  "stateId": 37,
+  "summary": {
+    "Name": "Rhode Island",
+    "Code": "RI",
+    "RHI5": "70.70",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.51",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "10/15/2021"
+  },
+  "location": {
+    "Coordinates": "41 33.445, -071 30.221",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus hippocastanum",
+          "Horse Chestnut",
+          "47.0'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus hippocastanum",
+            "href": "/Browse/States/37/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "Horse Chestnut",
+            "href": "/Browse/States/37/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "47.0'",
+            "href": "/Browse/Trees/256811/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/256811/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chamaecyparis pisifera",
+          "Sawara False Cypress",
+          "57.5'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis pisifera",
+            "href": "/Browse/States/37/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "Sawara False Cypress",
+            "href": "/Browse/States/37/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "57.5'",
+            "href": "/Browse/Trees/256816/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/256816/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cryptomeria japonica",
+          "Japanese Cedar",
+          "64.8'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cryptomeria japonica",
+            "href": "/Browse/States/37/Species/Cryptomeria%20japonica%20(Japanese%20Cedar)/Details"
+          },
+          {
+            "text": "Japanese Cedar",
+            "href": "/Browse/States/37/Species/Cryptomeria%20japonica%20(Japanese%20Cedar)/Details"
+          },
+          {
+            "text": "64.8'",
+            "href": "/Browse/Trees/256817/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/256817/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus sylvatica",
+          "European Beech",
+          "66.0'",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus sylvatica",
+            "href": "/Browse/States/37/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "European Beech",
+            "href": "/Browse/States/37/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/256815/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/256815/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "72.7'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/States/37/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/States/37/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "72.7'",
+            "href": "/Browse/Trees/256810/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/256810/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "92.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/States/37/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/States/37/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "92.5'",
+            "href": "/Browse/Trees/256118/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "47.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/States/37/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/States/37/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "47.5'",
+            "href": "/Browse/Trees/256119/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Newport",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Newport",
+            "href": "/Browse/Sites/41288/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "The Breakers",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "The Breakers",
+            "href": "/Browse/Sites/41315/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Touro Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Touro Park",
+            "href": "/Browse/Sites/41313/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

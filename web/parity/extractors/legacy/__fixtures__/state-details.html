@@ -1,0 +1,91 @@
+<!-- Hand-built from TMD/Views/Browse/StateDetails.cshtml + StateSpeciesGridPartial.cshtml + SitesGridPartial.cshtml -->
+<div class="x6 xColumn">
+  <div class="portlet x12">
+    <div class="portlet-header">
+      <h4>State</h4>
+      <ul class="portlet-tab-nav">
+        <li class="portlet-tab-nav-ignore"><a href="/Export/States/5">Export tree data</a></li>
+      </ul>
+    </div>
+    <div class="portlet-content">
+      <table class="reports_table">
+        <tr><td class="description">Name</td><td class="value"><span>Ohio</span></td></tr>
+        <tr><td class="description">Code</td><td class="value"><span>OH</span></td></tr>
+        <tr><td class="description">RHI5</td><td class="value"><span>134.82</span></td></tr>
+        <tr><td class="description">RHI10</td><td class="value"><span>128.40</span></td></tr>
+        <tr><td class="description">RHI20</td><td class="value"><span>119.05</span></td></tr>
+        <tr><td class="description">RGI5</td><td class="value"><span>19.30</span></td></tr>
+        <tr><td class="description">RGI10</td><td class="value"><span>17.90</span></td></tr>
+        <tr><td class="description">RGI20</td><td class="value"><span>16.10</span></td></tr>
+        <tr><td class="description">Trees measured</td><td class="value"><span>842</span></td></tr>
+        <tr><td class="description">Last measurement date</td><td class="value"><span>05/12/2018</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Species</h4></div>
+    <div class="portlet-content">
+      <div class='dataTablesGrid'>
+        <table cellspacing='0' cellpadding='0' border='0' class='display'>
+          <thead>
+            <tr>
+              <th class='sortable '><a href='?stateSpeciesSort=BotanicalName'><span>Botanical name</span></a></th>
+              <th class='sortable '><a href='?stateSpeciesSort=CommonName'><span>Common name</span></a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class='odd'>
+              <td><a href="/Browse/Species/Quercus alba (White Oak)/Details?stateId=5">Quercus alba</a></td>
+              <td><a href="/Browse/Species/Quercus alba (White Oak)/Details?stateId=5">White Oak</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class='dataTables_info'>Showing 1 to 1 of 1 entries</div>
+        <div class='dataTables_paginate paging_two_button'>
+          <div class='paginate_disabled_previous' title='Previous'></div>
+          <div class='paginate_disabled_next' title='Next' title='Next'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="x6 xColumn">
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Location</h4></div>
+    <div class="portlet-content">
+      <table class="reports_table">
+        <tr><td class="description">Coordinates</td><td class="value"><span>40.00000 -83.00000</span></td></tr>
+        <tr><td class="description">Country</td><td class="value"><span>United States</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Sites</h4></div>
+    <div class="portlet-content">
+      <div class='dataTablesGrid'>
+        <table cellspacing='0' cellpadding='0' border='0' class='display'>
+          <thead>
+            <tr>
+              <th class='sortable '><a href='?sitesSort=Site'><span>Site</span></a></th>
+              <th class='sortable '><a href='?sitesSort=RHI5'><span>RHI5</span></a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class='odd'>
+              <td><a href="/Browse/Sites/17/Details">Old Growth Preserve</a></td>
+              <td>134.82</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class='dataTables_info'>Showing 1 to 1 of 1 entries</div>
+        <div class='dataTables_paginate paging_two_button'>
+          <div class='paginate_disabled_previous' title='Previous'></div>
+          <div class='paginate_disabled_next' title='Next' title='Next'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

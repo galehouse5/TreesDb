@@ -1,0 +1,371 @@
+{
+  "siteId": 890,
+  "summary": {
+    "Name": "North Chagrin Reservation (Forest Only)",
+    "RHI5": "141.96",
+    "RHI10": "134.70",
+    "RHI20": "128.08",
+    "RGI5": "14.88",
+    "RGI10": "13.48",
+    "RGI20": "11.78",
+    "Trees measured": "128",
+    "Last measurement date": "02/20/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/20/2018",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/04/2017",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "2000 acres"
+    },
+    {
+      "visited": "09/05/2011",
+      "visitors": "Daniel Reed, Steve Galehouse, and Will Blozan",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "120.3'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/890/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/890/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "120.3'",
+            "href": "/Browse/Trees/15987/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/16055/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "127.7'",
+          "151''",
+          "74.6'"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/890/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/890/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "127.7'",
+            "href": "/Browse/Trees/15988/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/15979/Details"
+          },
+          {
+            "text": "74.6'",
+            "href": "/Browse/Trees/15979/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "91.4'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/890/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/890/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "91.4'",
+            "href": "/Browse/Trees/16075/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/16075/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "133.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/890/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/890/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/16008/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "121.0'",
+          "134''",
+          "90.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/890/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/890/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "121.0'",
+            "href": "/Browse/Trees/166955/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/166955/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/166955/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "110.5'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/890/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/890/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "110.5'",
+            "href": "/Browse/Trees/15986/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/15986/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "103.8'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/890/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/890/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "103.8'",
+            "href": "/Browse/Trees/16010/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/16010/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "-",
+          "176''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/890/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/890/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          null,
+          {
+            "text": "176''",
+            "href": "/Browse/Trees/16040/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "127.7'",
+          "157''",
+          "61.6'"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/890/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/890/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "127.7'",
+            "href": "/Browse/Trees/16006/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/15980/Details"
+          },
+          {
+            "text": "61.6'",
+            "href": "/Browse/Trees/15980/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "139.3'",
+          "128''",
+          "42.7'"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/890/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/890/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "139.3'",
+            "href": "/Browse/Trees/15989/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/15983/Details"
+          },
+          {
+            "text": "42.7'",
+            "href": "/Browse/Trees/15983/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 32 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 33.779, -081 26.094",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Lake"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

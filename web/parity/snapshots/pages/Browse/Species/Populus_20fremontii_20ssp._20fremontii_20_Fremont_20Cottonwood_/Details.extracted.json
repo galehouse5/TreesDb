@@ -1,0 +1,139 @@
+{
+  "botanicalName": "Populus fremontii ssp. fremontii",
+  "commonName": "Fremont Cottonwood",
+  "global": {
+    "maxHeight": {
+      "text": "101.3'",
+      "href": "/Browse/Trees/96830/Details"
+    },
+    "maxGirth": {
+      "text": "298''",
+      "href": "/Browse/Trees/130902/Details"
+    },
+    "maxCrownSpread": {
+      "text": "111.8'",
+      "href": "/Browse/Trees/96521/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "101.3'",
+          "298''",
+          "111.8'"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "101.3'",
+            "href": "/Browse/Trees/96830/Details"
+          },
+          {
+            "text": "298''",
+            "href": "/Browse/Trees/130902/Details"
+          },
+          {
+            "text": "111.8'",
+            "href": "/Browse/Trees/96521/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Colorado",
+          "70.1'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "70.1'",
+            "href": "/Browse/Trees/126236/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/126236/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "-",
+          "276''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          null,
+          {
+            "text": "276''",
+            "href": "/Browse/Trees/235887/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Utah",
+          "63.1'",
+          "167''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Utah",
+            "href": "/Browse/States/42/Details"
+          },
+          {
+            "text": "63.1'",
+            "href": "/Browse/Trees/126227/Details"
+          },
+          {
+            "text": "167''",
+            "href": "/Browse/Trees/239653/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

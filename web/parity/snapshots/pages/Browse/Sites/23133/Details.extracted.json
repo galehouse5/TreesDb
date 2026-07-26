@@ -1,0 +1,213 @@
+{
+  "siteId": 23133,
+  "summary": {
+    "Name": "Wolf Creek Narrows Natural Area",
+    "RHI5": "113.06",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.70",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "08/16/2004",
+    "Ownership contact": "Western Pennsylvania Conservancy 800 Waterfront Drive Pittsburgh, Pa 15222",
+    "General comments": "115 Acres open to the public"
+  },
+  "visits": [
+    {
+      "visited": "08/16/2004",
+      "visitors": "Carl Harting",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/wolf_creek_narrows.htm",
+      "comments": "115 Acres open to the public"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "105.7'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/23133/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/23133/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "105.7'",
+            "href": "/Browse/Trees/78116/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/78116/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "109.3'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/23133/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/23133/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "109.3'",
+            "href": "/Browse/Trees/78120/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/78120/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "124.0'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/23133/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/23133/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "124.0'",
+            "href": "/Browse/Trees/78113/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/78115/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "118.3'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/23133/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/23133/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "118.3'",
+            "href": "/Browse/Trees/78117/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/78117/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "108.0'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/23133/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/23133/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/78119/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/78119/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 03.887, -080 05.205",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Butler"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Tilia americana var. caroliniana",
+  "commonName": "Carolina Basswood",
+  "global": {
+    "maxHeight": {
+      "text": "107.1'",
+      "href": "/Browse/Trees/241483/Details"
+    },
+    "maxGirth": {
+      "text": "101''",
+      "href": "/Browse/Trees/241708/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "107.1'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "107.1'",
+            "href": "/Browse/Trees/241483/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/241708/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

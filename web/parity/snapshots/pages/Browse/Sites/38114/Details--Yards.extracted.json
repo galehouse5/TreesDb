@@ -1,0 +1,359 @@
+{
+  "siteId": 38114,
+  "summary": {
+    "Name": "Alan Seeger Natural Area",
+    "RHI5": "41.947",
+    "RHI10": "37.427",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.273",
+    "RGI10": "2.680",
+    "RGI20": "(not enough data)",
+    "Trees measured": "21",
+    "Last measurement date": "07/09/2005",
+    "Ownership contact": "Rothrock State Forest 181 Rothrock Lane Huntingdon, Pa.",
+    "General comments": "390 Acres in the Natural Area"
+  },
+  "visits": [
+    {
+      "visited": "07/09/2005",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/alan_seeger_natural_area.htm",
+      "comments": "390 Acres in the Natural Area"
+    },
+    {
+      "visited": "11/18/2002",
+      "visitors": "Dale Luthringer and Robert Leverett",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/alan_seeger_natural_area.htm",
+      "comments": "Natural Area contains 390 acres."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "35.03 yd",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38114/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38114/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "35.03 yd",
+            "href": "/Browse/Trees/139748/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/139748/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "37.03 yd",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38114/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38114/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "37.03 yd",
+            "href": "/Browse/Trees/139742/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/139742/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "45.90 yd",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38114/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38114/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "45.90 yd",
+            "href": "/Browse/Trees/138095/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/139736/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "34.07 yd",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/38114/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/38114/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "34.07 yd",
+            "href": "/Browse/Trees/139745/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/139745/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "27.37 yd",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/38114/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/38114/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "27.37 yd",
+            "href": "/Browse/Trees/139747/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/139747/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "45.87 yd",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/38114/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/38114/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "45.87 yd",
+            "href": "/Browse/Trees/138096/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/139740/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "36.03 yd",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/38114/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/38114/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "36.03 yd",
+            "href": "/Browse/Trees/139744/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/138097/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "32.03 yd",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/38114/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/38114/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "32.03 yd",
+            "href": "/Browse/Trees/139746/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/139746/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "36.03 yd",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38114/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38114/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "36.03 yd",
+            "href": "/Browse/Trees/139743/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/139743/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "44.90 yd",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/38114/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/38114/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "44.90 yd",
+            "href": "/Browse/Trees/139741/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/138098/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 41.636, -077 45.342",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - State Forest",
+      "County": "Huntingdon"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

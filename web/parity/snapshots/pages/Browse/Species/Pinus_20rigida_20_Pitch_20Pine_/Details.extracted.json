@@ -1,0 +1,277 @@
+{
+  "botanicalName": "Pinus rigida",
+  "commonName": "Pitch Pine",
+  "global": {
+    "maxHeight": {
+      "text": "146.4'",
+      "href": "/Browse/Trees/249655/Details"
+    },
+    "maxGirth": {
+      "text": "126''",
+      "href": "/Browse/Trees/313101/Details"
+    },
+    "maxCrownSpread": {
+      "text": "51.5'",
+      "href": "/Browse/Trees/313102/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Connecticut",
+          "80.0'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "80.0'",
+            "href": "/Browse/Trees/243311/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/234253/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "106.0'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "106.0'",
+            "href": "/Browse/Trees/126753/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/126753/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "146.4'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "146.4'",
+            "href": "/Browse/Trees/249655/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/249642/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "87.1'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "87.1'",
+            "href": "/Browse/Trees/76452/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/76452/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "96.9'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "96.9'",
+            "href": "/Browse/Trees/168137/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/128094/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "105.0'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/250539/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/250085/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Hampshire",
+          "69.6'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Hampshire",
+            "href": "/Browse/States/28/Details"
+          },
+          {
+            "text": "69.6'",
+            "href": "/Browse/Trees/256181/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/256181/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "50.6'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          {
+            "text": "50.6'",
+            "href": "/Browse/Trees/169991/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/170130/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "115.1'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "115.1'",
+            "href": "/Browse/Trees/209453/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/214326/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "126.2'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "126.2'",
+            "href": "/Browse/Trees/40606/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/252344/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

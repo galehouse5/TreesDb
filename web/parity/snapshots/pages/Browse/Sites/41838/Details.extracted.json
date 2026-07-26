@@ -1,0 +1,350 @@
+{
+  "siteId": 41838,
+  "summary": {
+    "Name": "Bidwell Park",
+    "RHI5": "122.40",
+    "RHI10": "109.95",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.85",
+    "RGI10": "9.99",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "01/06/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "3,670 acres in Upper and Lower Bidwell Park"
+  },
+  "visits": [
+    {
+      "visited": "01/06/2005",
+      "visitors": "John Eichholz",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/us_west/california/chico.htm",
+      "comments": "3,670 acres in Upper and Lower Bidwell Park"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arbutus menziesii",
+          "Pacific Madrone",
+          "62.5'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arbutus menziesii",
+            "href": "/Browse/Sites/41838/Species/Arbutus%20menziesii%20(Pacific%20Madrone)/Details"
+          },
+          {
+            "text": "Pacific Madrone",
+            "href": "/Browse/Sites/41838/Species/Arbutus%20menziesii%20(Pacific%20Madrone)/Details"
+          },
+          {
+            "text": "62.5'",
+            "href": "/Browse/Trees/274985/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/274985/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cupressus sempervirens",
+          "Italian Cypress",
+          "111.4'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cupressus sempervirens",
+            "href": "/Browse/Sites/41838/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "Italian Cypress",
+            "href": "/Browse/Sites/41838/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "111.4'",
+            "href": "/Browse/Trees/274979/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/274979/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hesperocyparis luistanica",
+          "Mexican Cypress",
+          "115.9'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hesperocyparis luistanica",
+            "href": "/Browse/Sites/41838/Species/Hesperocyparis%20luistanica%20(Mexican%20Cypress)/Details"
+          },
+          {
+            "text": "Mexican Cypress",
+            "href": "/Browse/Sites/41838/Species/Hesperocyparis%20luistanica%20(Mexican%20Cypress)/Details"
+          },
+          {
+            "text": "115.9'",
+            "href": "/Browse/Trees/274981/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/274980/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans hindsii",
+          "Northern California Walnut",
+          "-",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans hindsii",
+            "href": "/Browse/Sites/41838/Species/Juglans%20hindsii%20(Northern%20California%20Walnut)/Details"
+          },
+          {
+            "text": "Northern California Walnut",
+            "href": "/Browse/Sites/41838/Species/Juglans%20hindsii%20(Northern%20California%20Walnut)/Details"
+          },
+          null,
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/274986/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus coulteri",
+          "Coulter Pine",
+          "108.7'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus coulteri",
+            "href": "/Browse/Sites/41838/Species/Pinus%20coulteri%20(Coulter%20Pine)/Details"
+          },
+          {
+            "text": "Coulter Pine",
+            "href": "/Browse/Sites/41838/Species/Pinus%20coulteri%20(Coulter%20Pine)/Details"
+          },
+          {
+            "text": "108.7'",
+            "href": "/Browse/Trees/274983/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/274983/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus nigra",
+          "Austrian Pine",
+          "123.4'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus nigra",
+            "href": "/Browse/Sites/41838/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "Austrian Pine",
+            "href": "/Browse/Sites/41838/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "123.4'",
+            "href": "/Browse/Trees/274982/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/274982/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus racemosa",
+          "California Sycamore",
+          "134.6'",
+          "197''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus racemosa",
+            "href": "/Browse/Sites/41838/Species/Platanus%20racemosa%20(California%20Sycamore)/Details"
+          },
+          {
+            "text": "California Sycamore",
+            "href": "/Browse/Sites/41838/Species/Platanus%20racemosa%20(California%20Sycamore)/Details"
+          },
+          {
+            "text": "134.6'",
+            "href": "/Browse/Trees/274976/Details"
+          },
+          {
+            "text": "197''",
+            "href": "/Browse/Trees/274973/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus spp.",
+          "Poplar",
+          "100.5'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus spp.",
+            "href": "/Browse/Sites/41838/Species/Populus%20spp.%20(Poplar)/Details"
+          },
+          {
+            "text": "Poplar",
+            "href": "/Browse/Sites/41838/Species/Populus%20spp.%20(Poplar)/Details"
+          },
+          {
+            "text": "100.5'",
+            "href": "/Browse/Trees/274977/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/274977/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lobata",
+          "Valley Oak",
+          "111.8'",
+          "198''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lobata",
+            "href": "/Browse/Sites/41838/Species/Quercus%20lobata%20(Valley%20Oak)/Details"
+          },
+          {
+            "text": "Valley Oak",
+            "href": "/Browse/Sites/41838/Species/Quercus%20lobata%20(Valley%20Oak)/Details"
+          },
+          {
+            "text": "111.8'",
+            "href": "/Browse/Trees/274970/Details"
+          },
+          {
+            "text": "198''",
+            "href": "/Browse/Trees/274971/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus suber",
+          "Cork Oak",
+          "72.5'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus suber",
+            "href": "/Browse/Sites/41838/Species/Quercus%20suber%20(Cork%20Oak)/Details"
+          },
+          {
+            "text": "Cork Oak",
+            "href": "/Browse/Sites/41838/Species/Quercus%20suber%20(Cork%20Oak)/Details"
+          },
+          {
+            "text": "72.5'",
+            "href": "/Browse/Trees/274972/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/274972/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 44.838, -121 48.432",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Butte"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

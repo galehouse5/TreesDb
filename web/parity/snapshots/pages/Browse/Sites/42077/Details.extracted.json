@@ -1,0 +1,241 @@
+{
+  "siteId": 42077,
+  "summary": {
+    "Name": "Pleasant Valley Campground, Kootenai National Forest",
+    "RHI5": "137.08",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.86",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "07/04/2022",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/04/2022",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies grandis var. idahoensis",
+          "Grand Fir",
+          "103.1'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis var. idahoensis",
+            "href": "/Browse/Sites/42077/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/Sites/42077/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "103.1'",
+            "href": "/Browse/Trees/296888/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/296888/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. latifolia",
+          "Subalpine Fir",
+          "80.4'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. latifolia",
+            "href": "/Browse/Sites/42077/Species/Abies%20lasiocarpa%20var.%20latifolia%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/Sites/42077/Species/Abies%20lasiocarpa%20var.%20latifolia%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "80.4'",
+            "href": "/Browse/Trees/296889/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/296889/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix occidentalis",
+          "Western Larch",
+          "171.3'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix occidentalis",
+            "href": "/Browse/Sites/42077/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "Western Larch",
+            "href": "/Browse/Sites/42077/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "171.3'",
+            "href": "/Browse/Trees/296885/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/296885/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii var. engelmannii",
+          "Engelmann Spruce",
+          "106.0'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii var. engelmannii",
+            "href": "/Browse/Sites/42077/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/42077/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "106.0'",
+            "href": "/Browse/Trees/296893/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/296893/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. ponderosa",
+          "Ponderosa Pine",
+          "163.0'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. ponderosa",
+            "href": "/Browse/Sites/42077/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/42077/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "163.0'",
+            "href": "/Browse/Trees/296892/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/296892/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "142.0'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/42077/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/42077/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "142.0'",
+            "href": "/Browse/Trees/296887/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/296886/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "48 02.505, -115 17.501",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Lincoln"
+    },
+    "state": {
+      "text": "Montana (US)",
+      "href": "/Browse/States/24/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

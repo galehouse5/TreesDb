@@ -1,0 +1,350 @@
+{
+  "siteId": 38450,
+  "summary": {
+    "Name": "Seneca Division-Erie National Wildlife Refuge",
+    "RHI5": "97.06",
+    "RHI10": "87.08",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.81",
+    "RGI10": "6.44",
+    "RGI20": "(not enough data)",
+    "Trees measured": "21",
+    "Last measurement date": "09/25/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/25/2007",
+      "visitors": "Dale Luthringer and Brian Perry",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/erie_wildlife_refuge.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "103.1'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/38450/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38450/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "103.1'",
+            "href": "/Browse/Trees/140081/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/140080/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "38.1'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/38450/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/38450/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "38.1'",
+            "href": "/Browse/Trees/140065/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/140066/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "90.1'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/38450/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/38450/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "90.1'",
+            "href": "/Browse/Trees/140067/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/140067/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "89.1'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/38450/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/38450/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "89.1'",
+            "href": "/Browse/Trees/140077/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/140077/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "101.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/38450/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/38450/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "101.3'",
+            "href": "/Browse/Trees/140074/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus bicolor",
+          "Swamp White Oak",
+          "87.1'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus bicolor",
+            "href": "/Browse/Sites/38450/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "Swamp White Oak",
+            "href": "/Browse/Sites/38450/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "87.1'",
+            "href": "/Browse/Trees/140083/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/140083/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "90.1'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38450/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38450/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "90.1'",
+            "href": "/Browse/Trees/140075/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/140075/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana",
+          "American Basswood",
+          "81.1'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana",
+            "href": "/Browse/Sites/38450/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/38450/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "81.1'",
+            "href": "/Browse/Trees/140064/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/140064/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "95.4'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/38450/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/38450/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "95.4'",
+            "href": "/Browse/Trees/140073/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/140073/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus rubra",
+          "Slippery Elm",
+          "95.4'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus rubra",
+            "href": "/Browse/Sites/38450/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "Slippery Elm",
+            "href": "/Browse/Sites/38450/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "95.4'",
+            "href": "/Browse/Trees/140078/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/140078/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 47.142, -079 58.777",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Crawford"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

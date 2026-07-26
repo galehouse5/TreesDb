@@ -1,0 +1,207 @@
+{
+  "siteId": 40438,
+  "summary": {
+    "Name": "Mckee Branch",
+    "RHI5": "123.60",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.55",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "02/25/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "McKee Branch into Caldwell Fork into Cataloochee Creek,"
+  },
+  "visits": [
+    {
+      "visited": "02/25/2005",
+      "visitors": "Michael Davie",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/gsmnp/mckee_branch.htm",
+      "comments": "McKee Branch into Caldwell Fork into Cataloochee Creek,"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "100.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40438/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40438/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "100.6'",
+            "href": "/Browse/Trees/230154/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "124.8'",
+          "211''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40438/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40438/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "124.8'",
+            "href": "/Browse/Trees/230151/Details"
+          },
+          {
+            "text": "211''",
+            "href": "/Browse/Trees/230148/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "135.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/40438/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/40438/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "135.4'",
+            "href": "/Browse/Trees/230153/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "114.9'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/40438/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/40438/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "114.9'",
+            "href": "/Browse/Trees/230156/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/230156/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "142.3'",
+          "150''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40438/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40438/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "142.3'",
+            "href": "/Browse/Trees/230155/Details"
+          },
+          {
+            "text": "150''",
+            "href": "/Browse/Trees/230152/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 35.565, -083 05.832",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Haywood"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

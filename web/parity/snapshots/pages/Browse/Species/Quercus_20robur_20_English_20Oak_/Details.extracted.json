@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Quercus robur",
+  "commonName": "English Oak",
+  "global": {
+    "maxHeight": {
+      "text": "143.0'",
+      "href": "/Browse/Trees/283472/Details"
+    },
+    "maxGirth": {
+      "text": "288''",
+      "href": "/Browse/Trees/283473/Details"
+    },
+    "maxCrownSpread": {
+      "text": "84.0'",
+      "href": "/Browse/Trees/313203/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "85.5'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "85.5'",
+            "href": "/Browse/Trees/214335/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/214335/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "52.1'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "52.1'",
+            "href": "/Browse/Trees/272976/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/168454/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Podlaskie Voivodeship",
+          "143.0'",
+          "288''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Podlaskie Voivodeship",
+            "href": "/Browse/States/232/Details"
+          },
+          {
+            "text": "143.0'",
+            "href": "/Browse/Trees/283472/Details"
+          },
+          {
+            "text": "288''",
+            "href": "/Browse/Trees/283473/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Bohemian Region",
+          "104.8'",
+          "141''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Bohemian Region",
+            "href": "/Browse/States/258/Details"
+          },
+          {
+            "text": "104.8'",
+            "href": "/Browse/Trees/284687/Details"
+          },
+          {
+            "text": "141''",
+            "href": "/Browse/Trees/284687/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "66.6'",
+          "192''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "66.6'",
+            "href": "/Browse/Trees/224542/Details"
+          },
+          {
+            "text": "192''",
+            "href": "/Browse/Trees/224541/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "69.0'",
+          "122''",
+          "84.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "69.0'",
+            "href": "/Browse/Trees/313203/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/313240/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/313203/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

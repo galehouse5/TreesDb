@@ -1,0 +1,109 @@
+{
+  "botanicalName": "Abies lasiocarpa var. bifolia",
+  "commonName": "Subalpine Fir",
+  "global": {
+    "maxHeight": {
+      "text": "142.2'",
+      "href": "/Browse/Trees/318060/Details"
+    },
+    "maxGirth": {
+      "text": "83''",
+      "href": "/Browse/Trees/318058/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Colorado",
+          "85.0'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/296851/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/296851/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "142.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "142.2'",
+            "href": "/Browse/Trees/318060/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "137.6'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "137.6'",
+            "href": "/Browse/Trees/318058/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/318058/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

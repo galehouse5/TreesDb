@@ -1,0 +1,70 @@
+{
+  "treeId": 252103,
+  "botanicalName": {
+    "text": "Pinus echinata",
+    "href": "/Browse/Sites/41192/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Shortleaf Pine",
+    "href": "/Browse/Sites/41192/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+  },
+  "details": {
+    "Height": "24.41 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "206 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "36.50",
+    "ENTSPTS": "540.68",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.22",
+    "Champion points (abbreviated)": "161.10",
+    "Diameter": "65 cm",
+    "Conical volume": "2.74 m³",
+    "General comments": "Bear Branch Trail"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/21/2011",
+      "summary": {
+        "Height": "24.41 m",
+        "Girth": "206 cm"
+      },
+      "details": {
+        "Botanical name": "Pinus echinata",
+        "Common name": "Shortleaf Pine",
+        "Height": "24.41 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "206 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "36.50",
+        "ENTSPTS": "540.68",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.22",
+        "Champion points (abbreviated)": "161.10",
+        "Diameter": "65 cm",
+        "Conical volume": "2.74 m³",
+        "General comments": "Bear Branch Trail"
+      },
+      "measurers": "James Parton"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "35 17.716, -082 19.489",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Green River Game Lands",
+      "href": "/Browse/Sites/41192/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Polk"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

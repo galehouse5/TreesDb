@@ -1,0 +1,554 @@
+{
+  "stateId": 9,
+  "summary": {
+    "Name": "Georgia",
+    "Code": "GA",
+    "RHI5": "165.38",
+    "RHI10": "156.14",
+    "RHI20": "148.58",
+    "RGI5": "21.48",
+    "RGI10": "18.96",
+    "RGI20": "16.53",
+    "Trees measured": "711",
+    "Last measurement date": "11/27/2025"
+  },
+  "location": {
+    "Coordinates": "32 40.698, -083 10.696",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer floridanum",
+          "Southern Sugar Maple",
+          "94.4'",
+          "144''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer floridanum",
+            "href": "/Browse/States/9/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/States/9/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "94.4'",
+            "href": "/Browse/Trees/243322/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/243215/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer leucoderme",
+          "Chalk Maple",
+          "41.8'",
+          "58''",
+          "50.8'"
+        ],
+        "links": [
+          {
+            "text": "Acer leucoderme",
+            "href": "/Browse/States/9/Species/Acer%20leucoderme%20(Chalk%20Maple)/Details"
+          },
+          {
+            "text": "Chalk Maple",
+            "href": "/Browse/States/9/Species/Acer%20leucoderme%20(Chalk%20Maple)/Details"
+          },
+          {
+            "text": "41.8'",
+            "href": "/Browse/Trees/243219/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/243213/Details"
+          },
+          {
+            "text": "50.8'",
+            "href": "/Browse/Trees/243213/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "81.9'",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/9/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/9/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "81.9'",
+            "href": "/Browse/Trees/234442/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/234442/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "116.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/9/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/9/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "116.6'",
+            "href": "/Browse/Trees/249281/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "111.0'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/9/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/9/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/19246/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/19246/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "122.8'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/9/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/9/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "122.8'",
+            "href": "/Browse/Trees/234460/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/234938/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "144.0'",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/States/9/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/States/9/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "144.0'",
+            "href": "/Browse/Trees/234465/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/234403/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus pavia",
+          "Red Buckeye",
+          "31.3'",
+          "17''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus pavia",
+            "href": "/Browse/States/9/Species/Aesculus%20pavia%20(Red%20Buckeye)/Details"
+          },
+          {
+            "text": "Red Buckeye",
+            "href": "/Browse/States/9/Species/Aesculus%20pavia%20(Red%20Buckeye)/Details"
+          },
+          {
+            "text": "31.3'",
+            "href": "/Browse/Trees/234760/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/234760/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea var. austromontana",
+          "Downy Serviceberry",
+          "45.6'",
+          "27''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea var. austromontana",
+            "href": "/Browse/States/9/Species/Amelanchier%20arborea%20var.%20austromontana%20(Downy%20Serviceberry)/Details"
+          },
+          {
+            "text": "Downy Serviceberry",
+            "href": "/Browse/States/9/Species/Amelanchier%20arborea%20var.%20austromontana%20(Downy%20Serviceberry)/Details"
+          },
+          {
+            "text": "45.6'",
+            "href": "/Browse/Trees/243320/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/243320/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "39.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/States/9/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/States/9/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/235195/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 122 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Brasstown Bald",
+          "86.34",
+          "-",
+          "8.75",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Brasstown Bald",
+            "href": "/Browse/Sites/40699/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Callaway Gardens",
+          "122.28",
+          "-",
+          "8.12",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Callaway Gardens",
+            "href": "/Browse/Sites/41022/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Camp Creek",
+          "148.76",
+          "137.46",
+          "9.78",
+          "7.41"
+        ],
+        "links": [
+          {
+            "text": "Camp Creek",
+            "href": "/Browse/Sites/40697/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cliff Creek",
+          "152.38",
+          "140.78",
+          "8.12",
+          "6.87"
+        ],
+        "links": [
+          {
+            "text": "Cliff Creek",
+            "href": "/Browse/Sites/40691/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cohutta Wilderness",
+          "139.74",
+          "131.43",
+          "9.72",
+          "8.55"
+        ],
+        "links": [
+          {
+            "text": "Cohutta Wilderness",
+            "href": "/Browse/Sites/40659/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cooper Creek",
+          "133.18",
+          "-",
+          "7.97",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cooper Creek",
+            "href": "/Browse/Sites/41115/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Davidson Creek",
+          "110.44",
+          "-",
+          "8.03",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Davidson Creek",
+            "href": "/Browse/Sites/40696/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Flat Top Mountain",
+          "143.26",
+          "114.86",
+          "9.57",
+          "7.64"
+        ],
+        "links": [
+          {
+            "text": "Flat Top Mountain",
+            "href": "/Browse/Sites/40686/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Grassy Mountain",
+          "0.00",
+          "-",
+          "12.13",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Grassy Mountain",
+            "href": "/Browse/Sites/40684/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hampton- Beecher Hills Park",
+          "122.50",
+          "-",
+          "8.28",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hampton- Beecher Hills Park",
+            "href": "/Browse/Sites/41086/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 40 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

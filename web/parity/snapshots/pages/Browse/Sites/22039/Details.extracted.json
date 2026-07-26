@@ -1,0 +1,157 @@
+{
+  "siteId": 22039,
+  "summary": {
+    "Name": "Sediments Creek Confluence",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "08/05/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "This camp was mile 34 downstream of the put-in at Dalton Post, Yukon Territory"
+  },
+  "visits": [
+    {
+      "visited": "08/05/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "This camp was mile 34 downstream of the put-in at Dalton Post, Yukon Territory"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "68.0'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/22039/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/22039/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/75018/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/75018/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus balsamifera ssp. trichocarpa",
+          "Black Cottonwood",
+          "54.5'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. trichocarpa",
+            "href": "/Browse/Sites/22039/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "Black Cottonwood",
+            "href": "/Browse/Sites/22039/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "54.5'",
+            "href": "/Browse/Trees/75015/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/75015/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix scouleriana",
+          "Scouler's Willow",
+          "31.6'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix scouleriana",
+            "href": "/Browse/Sites/22039/Species/Salix%20scouleriana%20(Scouler's%20Willow)/Details"
+          },
+          {
+            "text": "Scouler's Willow",
+            "href": "/Browse/Sites/22039/Species/Salix%20scouleriana%20(Scouler's%20Willow)/Details"
+          },
+          {
+            "text": "31.6'",
+            "href": "/Browse/Trees/75019/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/75020/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "59 54.096, -137 17.769",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Stikine Regional District"
+    },
+    "state": {
+      "text": "British Columbia (CA)",
+      "href": "/Browse/States/50/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

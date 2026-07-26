@@ -1,0 +1,341 @@
+{
+  "siteId": 39617,
+  "summary": {
+    "Name": "Arnold Arboretum",
+    "RHI5": "82.82",
+    "RHI10": "74.49",
+    "RHI20": "60.28",
+    "RGI5": "7.64",
+    "RGI10": "6.76",
+    "RGI20": "4.75",
+    "Trees measured": "26",
+    "Last measurement date": "06/30/2019",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/30/2019",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "07/26/2009",
+      "visitors": "Doug Bidlack",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mass/20090727-chinquapin/dwarf_chinquapin_oak.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies veitchii",
+          "Shikoku Fir",
+          "54.4'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies veitchii",
+            "href": "/Browse/Sites/39617/Species/Abies%20veitchii%20(Shikoku%20Fir)/Details"
+          },
+          {
+            "text": "Shikoku Fir",
+            "href": "/Browse/Sites/39617/Species/Abies%20veitchii%20(Shikoku%20Fir)/Details"
+          },
+          {
+            "text": "54.4'",
+            "href": "/Browse/Trees/189017/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/189017/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer maximowiczianum",
+          "Nikko Maple",
+          "37.0'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer maximowiczianum",
+            "href": "/Browse/Sites/39617/Species/Acer%20maximowiczianum%20(Nikko%20Maple)/Details"
+          },
+          {
+            "text": "Nikko Maple",
+            "href": "/Browse/Sites/39617/Species/Acer%20maximowiczianum%20(Nikko%20Maple)/Details"
+          },
+          {
+            "text": "37.0'",
+            "href": "/Browse/Trees/189029/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/189029/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer sieboldianum",
+          "Siebold's Maple",
+          "24.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer sieboldianum",
+            "href": "/Browse/Sites/39617/Species/Acer%20sieboldianum%20(Siebold's%20Maple)/Details"
+          },
+          {
+            "text": "Siebold's Maple",
+            "href": "/Browse/Sites/39617/Species/Acer%20sieboldianum%20(Siebold's%20Maple)/Details"
+          },
+          {
+            "text": "24.3'",
+            "href": "/Browse/Trees/189030/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "22.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/Sites/39617/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/Sites/39617/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "22.0'",
+            "href": "/Browse/Trees/189028/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus drummondii",
+          "Roughleaf Dogwood",
+          "17.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus drummondii",
+            "href": "/Browse/Sites/39617/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "Roughleaf Dogwood",
+            "href": "/Browse/Sites/39617/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "17.7'",
+            "href": "/Browse/Trees/189027/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cryptomeria japonica",
+          "Japanese Cedar",
+          "88.3'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cryptomeria japonica",
+            "href": "/Browse/Sites/39617/Species/Cryptomeria%20japonica%20(Japanese%20Cedar)/Details"
+          },
+          {
+            "text": "Japanese Cedar",
+            "href": "/Browse/Sites/39617/Species/Cryptomeria%20japonica%20(Japanese%20Cedar)/Details"
+          },
+          {
+            "text": "88.3'",
+            "href": "/Browse/Trees/189014/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/189014/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cupressus bakeri",
+          "Baker Cypress",
+          "54.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cupressus bakeri",
+            "href": "/Browse/Sites/39617/Species/Cupressus%20bakeri%20(Baker%20Cypress)/Details"
+          },
+          {
+            "text": "Baker Cypress",
+            "href": "/Browse/Sites/39617/Species/Cupressus%20bakeri%20(Baker%20Cypress)/Details"
+          },
+          {
+            "text": "54.3'",
+            "href": "/Browse/Trees/189018/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix gmelinii",
+          "Dahurian Larch",
+          "47.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix gmelinii",
+            "href": "/Browse/Sites/39617/Species/Larix%20gmelinii%20(Dahurian%20Larch)/Details"
+          },
+          {
+            "text": "Dahurian Larch",
+            "href": "/Browse/Sites/39617/Species/Larix%20gmelinii%20(Dahurian%20Larch)/Details"
+          },
+          {
+            "text": "47.3'",
+            "href": "/Browse/Trees/189016/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix occidentalis",
+          "Western Larch",
+          "76.1'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix occidentalis",
+            "href": "/Browse/Sites/39617/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "Western Larch",
+            "href": "/Browse/Sites/39617/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "76.1'",
+            "href": "/Browse/Trees/189015/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/189015/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia denudata",
+          "Yulan Magnolia",
+          "28.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia denudata",
+            "href": "/Browse/Sites/39617/Species/Magnolia%20denudata%20(Yulan%20Magnolia)/Details"
+          },
+          {
+            "text": "Yulan Magnolia",
+            "href": "/Browse/Sites/39617/Species/Magnolia%20denudata%20(Yulan%20Magnolia)/Details"
+          },
+          {
+            "text": "28.3'",
+            "href": "/Browse/Trees/189033/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 26 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 18.237, -071 07.306",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Suffolk"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

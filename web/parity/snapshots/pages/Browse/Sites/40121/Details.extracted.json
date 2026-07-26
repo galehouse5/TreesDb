@@ -1,0 +1,338 @@
+{
+  "siteId": 40121,
+  "summary": {
+    "Name": "Cayuga Lake State Park",
+    "RHI5": "118.02",
+    "RHI10": "113.31",
+    "RHI20": "96.91",
+    "RGI5": "9.93",
+    "RGI10": "6.95",
+    "RGI20": "3.47",
+    "Trees measured": "25",
+    "Last measurement date": "11/16/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/16/2020",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "91.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/40121/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40121/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "91.0'",
+            "href": "/Browse/Trees/221059/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "75.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40121/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40121/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/221064/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "89.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40121/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40121/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "89.0'",
+            "href": "/Browse/Trees/221063/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "125.8'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40121/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40121/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "125.8'",
+            "href": "/Browse/Trees/221052/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/221052/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "108.1'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/40121/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/40121/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "108.1'",
+            "href": "/Browse/Trees/221072/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/221072/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "97.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40121/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40121/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "97.7'",
+            "href": "/Browse/Trees/221076/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "52.0'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/40121/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/40121/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "52.0'",
+            "href": "/Browse/Trees/221067/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/221067/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "109.3'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40121/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40121/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "109.3'",
+            "href": "/Browse/Trees/221071/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/221071/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "27.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/40121/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/40121/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "27.6'",
+            "href": "/Browse/Trees/221069/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "130.0'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40121/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40121/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "130.0'",
+            "href": "/Browse/Trees/221074/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/221062/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 21 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 53.494, -076 45.215",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Seneca"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

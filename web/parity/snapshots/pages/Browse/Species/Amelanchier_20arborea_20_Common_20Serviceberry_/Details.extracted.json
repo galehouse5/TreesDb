@@ -1,0 +1,165 @@
+{
+  "botanicalName": "Amelanchier arborea",
+  "commonName": "Common Serviceberry",
+  "global": {
+    "maxHeight": {
+      "text": "101.0'",
+      "href": "/Browse/Trees/313064/Details"
+    },
+    "maxGirth": {
+      "text": "105''",
+      "href": "/Browse/Trees/313065/Details"
+    },
+    "maxCrownSpread": {
+      "text": "56.0'",
+      "href": "/Browse/Trees/313065/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "37.1'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "37.1'",
+            "href": "/Browse/Trees/241619/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/241619/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "73.4'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "73.4'",
+            "href": "/Browse/Trees/280019/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/213023/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "19.4'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "19.4'",
+            "href": "/Browse/Trees/236545/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/236545/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "71.5'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "71.5'",
+            "href": "/Browse/Trees/320571/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/320571/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "101.0'",
+          "105''",
+          "56.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/313064/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/313065/Details"
+          },
+          {
+            "text": "56.0'",
+            "href": "/Browse/Trees/313065/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

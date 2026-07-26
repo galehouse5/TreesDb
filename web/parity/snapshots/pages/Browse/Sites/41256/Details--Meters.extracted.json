@@ -1,0 +1,101 @@
+{
+  "siteId": 41256,
+  "summary": {
+    "Name": "Alajuela Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "01/01/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2010",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ulmus mexicana",
+          "Mexican Elm",
+          "58.49 m",
+          "513 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus mexicana",
+            "href": "/Browse/Sites/41256/Species/Ulmus%20mexicana%20(Mexican%20Elm)/Details"
+          },
+          {
+            "text": "Mexican Elm",
+            "href": "/Browse/Sites/41256/Species/Ulmus%20mexicana%20(Mexican%20Elm)/Details"
+          },
+          {
+            "text": "58.49 m",
+            "href": "/Browse/Trees/253281/Details"
+          },
+          {
+            "text": "513 cm",
+            "href": "/Browse/Trees/253281/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "10 00.956, -084 12.850",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Alajuela"
+    },
+    "state": {
+      "text": "Alajuela (CR)",
+      "href": "/Browse/States/117/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,350 @@
+{
+  "siteId": 39957,
+  "summary": {
+    "Name": "Brookside Cemetery",
+    "RHI5": "98.94",
+    "RHI10": "85.05",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.33",
+    "RGI10": "9.81",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "07/19/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/19/2020",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "82.0'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/39957/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/39957/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "82.0'",
+            "href": "/Browse/Trees/212365/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/212366/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "66.1'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/39957/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/39957/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "66.1'",
+            "href": "/Browse/Trees/212361/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/212361/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "100.8'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/39957/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/39957/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "100.8'",
+            "href": "/Browse/Trees/212352/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/212353/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "77.2'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/39957/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/39957/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "77.2'",
+            "href": "/Browse/Trees/212355/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/212355/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "89.8'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/Sites/39957/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/Sites/39957/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "89.8'",
+            "href": "/Browse/Trees/212354/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/212354/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "58.2'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/39957/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/39957/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "58.2'",
+            "href": "/Browse/Trees/212351/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/212351/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "115.1'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/39957/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/39957/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "115.1'",
+            "href": "/Browse/Trees/212357/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/212357/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides ssp. deltoides",
+          "Eastern Cottonwood",
+          "107.0'",
+          "197''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides ssp. deltoides",
+            "href": "/Browse/Sites/39957/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/39957/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/212362/Details"
+          },
+          {
+            "text": "197''",
+            "href": "/Browse/Trees/212364/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "65.7'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/39957/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/39957/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "65.7'",
+            "href": "/Browse/Trees/212360/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/212360/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "71.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/39957/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/39957/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "71.3'",
+            "href": "/Browse/Trees/212359/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 56.207, -075 54.736",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Jefferson"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

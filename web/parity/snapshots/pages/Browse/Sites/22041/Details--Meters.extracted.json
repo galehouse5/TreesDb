@@ -1,0 +1,185 @@
+{
+  "siteId": 22041,
+  "summary": {
+    "Name": "Portage Cove State Recreational Site",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "08/05/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/05/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus viridis ssp. sinuata",
+          "Sitka Alder",
+          "8.05 m",
+          "59 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus viridis ssp. sinuata",
+            "href": "/Browse/Sites/22041/Species/Alnus%20viridis%20ssp.%20sinuata%20(Sitka%20Alder)/Details"
+          },
+          {
+            "text": "Sitka Alder",
+            "href": "/Browse/Sites/22041/Species/Alnus%20viridis%20ssp.%20sinuata%20(Sitka%20Alder)/Details"
+          },
+          {
+            "text": "8.05 m",
+            "href": "/Browse/Trees/75032/Details"
+          },
+          {
+            "text": "59 cm",
+            "href": "/Browse/Trees/75032/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea sitchensis",
+          "Sitka Spruce",
+          "32.46 m",
+          "297 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea sitchensis",
+            "href": "/Browse/Sites/22041/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "Sitka Spruce",
+            "href": "/Browse/Sites/22041/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "32.46 m",
+            "href": "/Browse/Trees/75028/Details"
+          },
+          {
+            "text": "297 cm",
+            "href": "/Browse/Trees/75028/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus balsamifera ssp. trichocarpa",
+          "Black Cottonwood",
+          "28.29 m",
+          "187 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. trichocarpa",
+            "href": "/Browse/Sites/22041/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "Black Cottonwood",
+            "href": "/Browse/Sites/22041/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "28.29 m",
+            "href": "/Browse/Trees/75030/Details"
+          },
+          {
+            "text": "187 cm",
+            "href": "/Browse/Trees/75030/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga heterophylla",
+          "Western Hemlock",
+          "24.81 m",
+          "108 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga heterophylla",
+            "href": "/Browse/Sites/22041/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "Western Hemlock",
+            "href": "/Browse/Sites/22041/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "24.81 m",
+            "href": "/Browse/Trees/75031/Details"
+          },
+          {
+            "text": "108 cm",
+            "href": "/Browse/Trees/75031/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "59 13.547, -135 25.525",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state park",
+      "County": "Haines"
+    },
+    "state": {
+      "text": "Alaska (US)",
+      "href": "/Browse/States/62/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

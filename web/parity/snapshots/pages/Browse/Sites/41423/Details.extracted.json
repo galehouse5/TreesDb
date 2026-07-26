@@ -1,0 +1,151 @@
+{
+  "siteId": 41423,
+  "summary": {
+    "Name": "Cerry Patch Pond",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "12/31/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/31/2016",
+      "visitors": "Tom Howard, Elijah Whitcomb, and Bob Leverett",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "101.4'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/41423/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/41423/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "101.4'",
+            "href": "/Browse/Trees/258873/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/258872/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "132.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41423/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41423/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "132.8'",
+            "href": "/Browse/Trees/258875/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja occidentalis",
+          "Arborvitae",
+          "74.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja occidentalis",
+            "href": "/Browse/Sites/41423/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "Arborvitae",
+            "href": "/Browse/Sites/41423/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "74.0'",
+            "href": "/Browse/Trees/258874/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 17.677, -073 56.748",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Essex"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

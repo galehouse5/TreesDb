@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Xylosma chlorantha",
+  "commonName": "Cachos De Venado",
+  "global": {
+    "maxHeight": {
+      "text": "34.5'",
+      "href": "/Browse/Trees/234124/Details"
+    },
+    "maxGirth": {
+      "text": "21''",
+      "href": "/Browse/Trees/234124/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Puntarenas",
+          "34.5'",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Puntarenas",
+            "href": "/Browse/States/122/Details"
+          },
+          {
+            "text": "34.5'",
+            "href": "/Browse/Trees/234124/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/234124/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

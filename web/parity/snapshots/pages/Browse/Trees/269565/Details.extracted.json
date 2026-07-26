@@ -1,0 +1,70 @@
+{
+  "treeId": 269565,
+  "botanicalName": {
+    "text": "Pinus ponderosa var. benthamiana",
+    "href": "/Browse/Sites/41698/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Ponderosa Pine",
+    "href": "/Browse/Sites/41698/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+  },
+  "details": {
+    "Height": "259.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "181''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "590.38",
+    "ENTSPTS": "3914.13",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.52",
+    "Champion points (abbreviated)": "440.50",
+    "Diameter": "58''",
+    "Conical volume": "1566.0 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/15/2011",
+      "summary": {
+        "Height": "259.5'",
+        "Girth": "181''"
+      },
+      "details": {
+        "Botanical name": "Pinus ponderosa var. benthamiana",
+        "Common name": "Ponderosa Pine",
+        "Height": "259.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "181''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "590.38",
+        "ENTSPTS": "3914.13",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.52",
+        "Champion points (abbreviated)": "440.50",
+        "Diameter": "58''",
+        "Conical volume": "1566.0 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Michael Taylor, Mario Vaden, and Mike Hanusckik"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "42 34.214, -124 02.460",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Rogue River-Siskiyou National Forest",
+      "href": "/Browse/Sites/41698/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Jasephine"
+    },
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

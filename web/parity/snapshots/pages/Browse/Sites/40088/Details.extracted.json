@@ -1,0 +1,356 @@
+{
+  "siteId": 40088,
+  "summary": {
+    "Name": "Cornell Plantations/Beebe Lake Woods",
+    "RHI5": "129.70",
+    "RHI10": "126.41",
+    "RHI20": "120.13",
+    "RGI5": "11.82",
+    "RGI10": "10.06",
+    "RGI20": "7.95",
+    "Trees measured": "84",
+    "Last measurement date": "11/08/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/08/2020",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/16/2018",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Measurements made on 4/9/2018 and 4/16/2018"
+    },
+    {
+      "visited": "04/02/2016",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees measured 4/2/2016"
+    },
+    {
+      "visited": "06/21/2015",
+      "visitors": "Tom Howard and Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees measured during visits on 6/7/2015, 1/17/2016"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies firma",
+          "Momi Fir",
+          "35.6'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies firma",
+            "href": "/Browse/Sites/40088/Species/Abies%20firma%20(Momi%20Fir)/Details"
+          },
+          {
+            "text": "Momi Fir",
+            "href": "/Browse/Sites/40088/Species/Abies%20firma%20(Momi%20Fir)/Details"
+          },
+          {
+            "text": "35.6'",
+            "href": "/Browse/Trees/282346/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/282346/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies fraseri",
+          "Fraser Fir",
+          "26.5'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies fraseri",
+            "href": "/Browse/Sites/40088/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "Fraser Fir",
+            "href": "/Browse/Sites/40088/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "26.5'",
+            "href": "/Browse/Trees/282345/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/282345/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies grandis",
+          "Grand Fir",
+          "60.1'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis",
+            "href": "/Browse/Sites/40088/Species/Abies%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/Sites/40088/Species/Abies%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "60.1'",
+            "href": "/Browse/Trees/282344/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/282344/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "125.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40088/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40088/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "125.1'",
+            "href": "/Browse/Trees/261867/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "118.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40088/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40088/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "118.3'",
+            "href": "/Browse/Trees/261805/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "93.1'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40088/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40088/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "93.1'",
+            "href": "/Browse/Trees/261812/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/280497/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "59.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/40088/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/40088/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "59.5'",
+            "href": "/Browse/Trees/280508/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "122.8'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40088/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40088/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "122.8'",
+            "href": "/Browse/Trees/261868/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/261868/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "112.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40088/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40088/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "112.0'",
+            "href": "/Browse/Trees/261811/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "131.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/40088/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/40088/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "131.8'",
+            "href": "/Browse/Trees/261799/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 42 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 27.066, -076 27.747",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private: Cornell University",
+      "County": "Tompkins"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

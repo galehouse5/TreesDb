@@ -1,0 +1,347 @@
+{
+  "siteId": 42377,
+  "summary": {
+    "Name": "Hatchie National Wildlife Refuge",
+    "RHI5": "135.78",
+    "RHI10": "132.06",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.96",
+    "RGI10": "9.79",
+    "RGI20": "(not enough data)",
+    "Trees measured": "32",
+    "Last measurement date": "09/27/2025",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/27/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "124.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/42377/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/42377/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "124.8'",
+            "href": "/Browse/Trees/322732/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "126.8'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/42377/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/42377/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "126.8'",
+            "href": "/Browse/Trees/322719/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/322719/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya laciniosa",
+          "Shellbark Hickory",
+          "120.0'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya laciniosa",
+            "href": "/Browse/Sites/42377/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shellbark Hickory",
+            "href": "/Browse/Sites/42377/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "120.0'",
+            "href": "/Browse/Trees/322722/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/322722/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "127.5'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42377/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42377/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "127.5'",
+            "href": "/Browse/Trees/322721/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/322720/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "130.2'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/42377/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/42377/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "130.2'",
+            "href": "/Browse/Trees/322728/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/322728/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "138.0'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/42377/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/42377/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "138.0'",
+            "href": "/Browse/Trees/322730/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/322730/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa aquatica",
+          "Water Tupelo",
+          "101.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa aquatica",
+            "href": "/Browse/Sites/42377/Species/Nyssa%20aquatica%20(Water%20Tupelo)/Details"
+          },
+          {
+            "text": "Water Tupelo",
+            "href": "/Browse/Sites/42377/Species/Nyssa%20aquatica%20(Water%20Tupelo)/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/322727/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "109.5'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/42377/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/42377/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "109.5'",
+            "href": "/Browse/Trees/322724/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/322724/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "119.0'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/42377/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/42377/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/322731/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/322731/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "126.0'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/42377/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/42377/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "126.0'",
+            "href": "/Browse/Trees/322704/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/322704/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 29.907, -089 10.385",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Haywood"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

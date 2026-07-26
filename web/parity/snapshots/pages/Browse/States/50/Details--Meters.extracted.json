@@ -1,0 +1,387 @@
+{
+  "stateId": 50,
+  "summary": {
+    "Name": "British Columbia",
+    "Code": "BC",
+    "RHI5": "26.182",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "1.518",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "20",
+    "Last measurement date": "08/05/2012"
+  },
+  "location": {
+    "Coordinates": "54 06.806, -126 33.225",
+    "Country": "Canada"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus incana ssp. tenuifolia",
+          "Thinleaf Alder",
+          "7.96 m",
+          "41 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus incana ssp. tenuifolia",
+            "href": "/Browse/States/50/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "Thinleaf Alder",
+            "href": "/Browse/States/50/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "7.96 m",
+            "href": "/Browse/Trees/74992/Details"
+          },
+          {
+            "text": "41 cm",
+            "href": "/Browse/Trees/75013/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "21.40 m",
+          "92 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/States/50/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/States/50/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "21.40 m",
+            "href": "/Browse/Trees/74995/Details"
+          },
+          {
+            "text": "92 cm",
+            "href": "/Browse/Trees/74995/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "26.61 m",
+          "186 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/States/50/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/States/50/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "26.61 m",
+            "href": "/Browse/Trees/74991/Details"
+          },
+          {
+            "text": "186 cm",
+            "href": "/Browse/Trees/74991/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea mariana",
+          "Black Spruce",
+          "16.15 m",
+          "73 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana",
+            "href": "/Browse/States/50/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/States/50/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "16.15 m",
+            "href": "/Browse/Trees/74996/Details"
+          },
+          {
+            "text": "73 cm",
+            "href": "/Browse/Trees/74996/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus balsamifera ssp. balsamifera",
+          "Balsam Poplar",
+          "27.77 m",
+          "181 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. balsamifera",
+            "href": "/Browse/States/50/Species/Populus%20balsamifera%20ssp.%20balsamifera%20(Balsam%20Poplar)/Details"
+          },
+          {
+            "text": "Balsam Poplar",
+            "href": "/Browse/States/50/Species/Populus%20balsamifera%20ssp.%20balsamifera%20(Balsam%20Poplar)/Details"
+          },
+          {
+            "text": "27.77 m",
+            "href": "/Browse/Trees/74994/Details"
+          },
+          {
+            "text": "181 cm",
+            "href": "/Browse/Trees/75010/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus balsamifera ssp. trichocarpa",
+          "Black Cottonwood",
+          "27.86 m",
+          "208 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. trichocarpa",
+            "href": "/Browse/States/50/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "Black Cottonwood",
+            "href": "/Browse/States/50/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "27.86 m",
+            "href": "/Browse/Trees/74993/Details"
+          },
+          {
+            "text": "208 cm",
+            "href": "/Browse/Trees/74993/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "27.28 m",
+          "91 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/States/50/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/States/50/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "27.28 m",
+            "href": "/Browse/Trees/75007/Details"
+          },
+          {
+            "text": "91 cm",
+            "href": "/Browse/Trees/75007/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix scouleriana",
+          "Scouler's Willow",
+          "10.73 m",
+          "62 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix scouleriana",
+            "href": "/Browse/States/50/Species/Salix%20scouleriana%20(Scouler's%20Willow)/Details"
+          },
+          {
+            "text": "Scouler's Willow",
+            "href": "/Browse/States/50/Species/Salix%20scouleriana%20(Scouler's%20Willow)/Details"
+          },
+          {
+            "text": "10.73 m",
+            "href": "/Browse/Trees/75014/Details"
+          },
+          {
+            "text": "62 cm",
+            "href": "/Browse/Trees/75014/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alkie Creek Confluence",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alkie Creek Confluence",
+            "href": "/Browse/Sites/22038/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fort Nelson",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fort Nelson",
+            "href": "/Browse/Sites/22037/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liard River Hot Springs Provincial Park",
+          "78.60",
+          "-",
+          "4.67",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liard River Hot Springs Provincial Park",
+            "href": "/Browse/Sites/22035/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sediments Creek Confluence",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sediments Creek Confluence",
+            "href": "/Browse/Sites/22039/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

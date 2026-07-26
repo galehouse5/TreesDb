@@ -1,0 +1,98 @@
+{
+  "siteId": 27461,
+  "summary": {
+    "Name": "Routes 3 & 30 Split",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "06/14/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/14/2015",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "79.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/27461/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/27461/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "79.5'",
+            "href": "/Browse/Trees/96234/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 14.653, -074 21.431",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Unknown",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

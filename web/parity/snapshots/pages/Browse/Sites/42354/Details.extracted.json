@@ -1,0 +1,347 @@
+{
+  "siteId": 42354,
+  "summary": {
+    "Name": "Lake Bistineau State Park",
+    "RHI5": "119.74",
+    "RHI10": "108.83",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.55",
+    "RGI10": "6.73",
+    "RGI20": "(not enough data)",
+    "Trees measured": "25",
+    "Last measurement date": "01/08/2025",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/08/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "104.3'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/42354/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/42354/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "104.3'",
+            "href": "/Browse/Trees/320732/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/320732/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia aquatica",
+          "Water Locust",
+          "66.0'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia aquatica",
+            "href": "/Browse/Sites/42354/Species/Gleditsia%20aquatica%20(Water%20Locust)/Details"
+          },
+          {
+            "text": "Water Locust",
+            "href": "/Browse/Sites/42354/Species/Gleditsia%20aquatica%20(Water%20Locust)/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/320733/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/320733/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "93.2'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/42354/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/42354/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "93.2'",
+            "href": "/Browse/Trees/320734/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/320734/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "113.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/42354/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/42354/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "113.0'",
+            "href": "/Browse/Trees/320739/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "130.0'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/42354/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/42354/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "130.0'",
+            "href": "/Browse/Trees/320738/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/320737/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "119.4'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/42354/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/42354/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "119.4'",
+            "href": "/Browse/Trees/320726/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/320726/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus falcata",
+          "Southern Red Oak",
+          "117.3'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus falcata",
+            "href": "/Browse/Sites/42354/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Southern Red Oak",
+            "href": "/Browse/Sites/42354/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "117.3'",
+            "href": "/Browse/Trees/320730/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/320730/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lyrata",
+          "Overcup Oak",
+          "60.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lyrata",
+            "href": "/Browse/Sites/42354/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "Overcup Oak",
+            "href": "/Browse/Sites/42354/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "60.5'",
+            "href": "/Browse/Trees/320724/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus phellos",
+          "Willow Oak",
+          "119.0'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus phellos",
+            "href": "/Browse/Sites/42354/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "Willow Oak",
+            "href": "/Browse/Sites/42354/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/320727/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/320727/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus similis",
+          "Bottomland Post Oak",
+          "72.0'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus similis",
+            "href": "/Browse/Sites/42354/Species/Quercus%20similis%20(Bottomland%20Post%20Oak)/Details"
+          },
+          {
+            "text": "Bottomland Post Oak",
+            "href": "/Browse/Sites/42354/Species/Quercus%20similis%20(Bottomland%20Post%20Oak)/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/320723/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/320723/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 26.829, -093 22.692",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Webster Parish"
+    },
+    "state": {
+      "text": "Louisiana (US)",
+      "href": "/Browse/States/16/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

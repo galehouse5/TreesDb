@@ -1,0 +1,356 @@
+{
+  "siteId": 38276,
+  "summary": {
+    "Name": "Mont Clare Cliffs And Schuykill River Corridor",
+    "RHI5": "120.56",
+    "RHI10": "112.84",
+    "RHI20": "104.35",
+    "RGI5": "13.22",
+    "RGI10": "11.20",
+    "RGI20": "8.65",
+    "Trees measured": "44",
+    "Last measurement date": "05/25/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/25/2009",
+      "visitors": "George Fieo",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/20090525-montclare/20090525-montclare.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/09/2008",
+      "visitors": "George Fieo",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/schuylkill/schuylkill_river.htm",
+      "comments": "Also see: http://www.nativetreesociety.org/fieldtrips/penna/devils_walking1.htm"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "-",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/Sites/38276/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/38276/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          null,
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/139760/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer platanoides",
+          "Norway Maple",
+          "-",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer platanoides",
+            "href": "/Browse/Sites/38276/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "Norway Maple",
+            "href": "/Browse/Sites/38276/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/139759/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "105.4'",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38276/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38276/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "105.4'",
+            "href": "/Browse/Trees/166554/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/139758/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "102.4'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/38276/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38276/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "102.4'",
+            "href": "/Browse/Trees/166561/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/166561/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus glutinosa",
+          "European Alder",
+          "67.4'",
+          "32''",
+          "15.0'"
+        ],
+        "links": [
+          {
+            "text": "Alnus glutinosa",
+            "href": "/Browse/Sites/38276/Species/Alnus%20glutinosa%20(European%20Alder)/Details"
+          },
+          {
+            "text": "European Alder",
+            "href": "/Browse/Sites/38276/Species/Alnus%20glutinosa%20(European%20Alder)/Details"
+          },
+          {
+            "text": "67.4'",
+            "href": "/Browse/Trees/166547/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/166547/Details"
+          },
+          {
+            "text": "15.0'",
+            "href": "/Browse/Trees/139756/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea var. arborea",
+          "Common Serviceberry",
+          "37.2'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea var. arborea",
+            "href": "/Browse/Sites/38276/Species/Amelanchier%20arborea%20var.%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/38276/Species/Amelanchier%20arborea%20var.%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "37.2'",
+            "href": "/Browse/Trees/166542/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/166542/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aralia spinosa",
+          "Devil's Walkingstick",
+          "32.3'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aralia spinosa",
+            "href": "/Browse/Sites/38276/Species/Aralia%20spinosa%20(Devil's%20Walkingstick)/Details"
+          },
+          {
+            "text": "Devil's Walkingstick",
+            "href": "/Browse/Sites/38276/Species/Aralia%20spinosa%20(Devil's%20Walkingstick)/Details"
+          },
+          {
+            "text": "32.3'",
+            "href": "/Browse/Trees/139761/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/139761/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "59.8'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/38276/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/38276/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "59.8'",
+            "href": "/Browse/Trees/166555/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/166555/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "38.5'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/38276/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/38276/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "38.5'",
+            "href": "/Browse/Trees/166535/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/166535/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "116.6'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/38276/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/38276/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "116.6'",
+            "href": "/Browse/Trees/166553/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/166553/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 35 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 09.072, -075 30.081",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Montgomery"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,365 @@
+{
+  "siteId": 39223,
+  "summary": {
+    "Name": "Donaldson Woods Nature Preserve",
+    "RHI5": "42.495",
+    "RHI10": "38.987",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.737",
+    "RGI10": "2.905",
+    "RGI20": "(not enough data)",
+    "Trees measured": "38",
+    "Last measurement date": "03/25/2014",
+    "Ownership contact": "33t33 IN-60, Mitchell, IN.",
+    "General comments": "145 acres"
+  },
+  "visits": [
+    {
+      "visited": "03/25/2014",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "145 acres"
+    },
+    {
+      "visited": "04/23/2008",
+      "visitors": "Randy Brown",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/indiana/spring_mill_state_park.htm",
+      "comments": "Trail 3 traverses Donaldson Woods - 145 acres"
+    },
+    {
+      "visited": "07/05/2006",
+      "visitors": "Don Bragg",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/indiana/spring_mill_state_park.htm",
+      "comments": "Trail 3 traverses Donaldson Woods- 145 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "30.30 m",
+          "163 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/39223/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/39223/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "30.30 m",
+            "href": "/Browse/Trees/169932/Details"
+          },
+          {
+            "text": "163 cm",
+            "href": "/Browse/Trees/169932/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "34.41 m",
+          "147 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/39223/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/39223/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "34.41 m",
+            "href": "/Browse/Trees/169935/Details"
+          },
+          {
+            "text": "147 cm",
+            "href": "/Browse/Trees/169935/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "41.91 m",
+          "235 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/39223/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/39223/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "41.91 m",
+            "href": "/Browse/Trees/169960/Details"
+          },
+          {
+            "text": "235 cm",
+            "href": "/Browse/Trees/169960/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya spp.",
+          "Hickory",
+          "42.12 m",
+          "203 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya spp.",
+            "href": "/Browse/Sites/39223/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "Hickory",
+            "href": "/Browse/Sites/39223/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "42.12 m",
+            "href": "/Browse/Trees/169959/Details"
+          },
+          {
+            "text": "203 cm",
+            "href": "/Browse/Trees/169959/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "38.56 m",
+          "263 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39223/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39223/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "38.56 m",
+            "href": "/Browse/Trees/169936/Details"
+          },
+          {
+            "text": "263 cm",
+            "href": "/Browse/Trees/169936/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus spp.",
+          "Ash",
+          "32.92 m",
+          "173 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus spp.",
+            "href": "/Browse/Sites/39223/Species/Fraxinus%20spp.%20(Ash)/Details"
+          },
+          {
+            "text": "Ash",
+            "href": "/Browse/Sites/39223/Species/Fraxinus%20spp.%20(Ash)/Details"
+          },
+          {
+            "text": "32.92 m",
+            "href": "/Browse/Trees/169934/Details"
+          },
+          {
+            "text": "173 cm",
+            "href": "/Browse/Trees/169934/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "47.52 m",
+          "461 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39223/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39223/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "47.52 m",
+            "href": "/Browse/Trees/169957/Details"
+          },
+          {
+            "text": "461 cm",
+            "href": "/Browse/Trees/169916/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "35.54 m",
+          "348 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/39223/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/39223/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "35.54 m",
+            "href": "/Browse/Trees/169917/Details"
+          },
+          {
+            "text": "348 cm",
+            "href": "/Browse/Trees/169917/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "40.08 m",
+          "384 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/39223/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/39223/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "40.08 m",
+            "href": "/Browse/Trees/169964/Details"
+          },
+          {
+            "text": "384 cm",
+            "href": "/Browse/Trees/169965/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "40.84 m",
+          "406 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/39223/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/39223/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "40.84 m",
+            "href": "/Browse/Trees/169926/Details"
+          },
+          {
+            "text": "406 cm",
+            "href": "/Browse/Trees/169963/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 44.044, -086 24.797",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Lawrence"
+    },
+    "state": {
+      "text": "Indiana (US)",
+      "href": "/Browse/States/13/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

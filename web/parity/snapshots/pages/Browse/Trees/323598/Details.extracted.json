@@ -1,0 +1,70 @@
+{
+  "treeId": 323598,
+  "botanicalName": {
+    "text": "Pinus strobus",
+    "href": "/Browse/Sites/42394/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Eastern White Pine",
+    "href": "/Browse/Sites/42394/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+  },
+  "details": {
+    "Height": "153.1'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "122''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "159.29",
+    "ENTSPTS": "1561.62",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.46",
+    "Champion points (abbreviated)": "275.50",
+    "Diameter": "39''",
+    "Conical volume": "422.5 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 03/28/2026",
+      "summary": {
+        "Height": "153.1'",
+        "Girth": "122''"
+      },
+      "details": {
+        "Botanical name": "Pinus strobus",
+        "Common name": "Eastern White Pine",
+        "Height": "153.1'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "122''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "159.29",
+        "ENTSPTS": "1561.62",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.46",
+        "Champion points (abbreviated)": "275.50",
+        "Diameter": "39''",
+        "Conical volume": "422.5 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Elijah Whitcomb"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 34.958, -084 41.065",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Big South Fork",
+      "href": "/Browse/Sites/42394/Details"
+    },
+    "rows": {
+      "Ownership type": "NPS",
+      "County": "Scott"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

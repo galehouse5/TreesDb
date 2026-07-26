@@ -1,0 +1,359 @@
+{
+  "siteId": 32676,
+  "summary": {
+    "Name": "Reynoldsville",
+    "RHI5": "107.68",
+    "RHI10": "101.43",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.86",
+    "RGI10": "7.54",
+    "RGI20": "(not enough data)",
+    "Trees measured": "37",
+    "Last measurement date": "05/06/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/06/2011",
+      "visitors": "Edward Frank",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "05/30/2005",
+      "visitors": "Edward Frank",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "102.0'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/32676/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/32676/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "102.0'",
+            "href": "/Browse/Trees/169458/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/169458/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "83.4'",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/32676/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/32676/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "83.4'",
+            "href": "/Browse/Trees/169464/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/169464/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "86.5'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/32676/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/32676/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "86.5'",
+            "href": "/Browse/Trees/169465/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/169466/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "30.5'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/32676/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/32676/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "30.5'",
+            "href": "/Browse/Trees/169443/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/169443/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "102.6'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/32676/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/32676/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "102.6'",
+            "href": "/Browse/Trees/169449/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/169449/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "15.0'",
+          "5''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/32676/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/32676/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "15.0'",
+            "href": "/Browse/Trees/169446/Details"
+          },
+          {
+            "text": "5''",
+            "href": "/Browse/Trees/169446/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kalmia latifolia",
+          "Mountain Laurel",
+          "14.8'",
+          "8''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kalmia latifolia",
+            "href": "/Browse/Sites/32676/Species/Kalmia%20latifolia%20(Mountain%20Laurel)/Details"
+          },
+          {
+            "text": "Mountain Laurel",
+            "href": "/Browse/Sites/32676/Species/Kalmia%20latifolia%20(Mountain%20Laurel)/Details"
+          },
+          {
+            "text": "14.8'",
+            "href": "/Browse/Trees/169445/Details"
+          },
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/169445/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "115.6'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/32676/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/32676/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "115.6'",
+            "href": "/Browse/Trees/169461/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/169461/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "93.5'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/32676/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/32676/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "93.5'",
+            "href": "/Browse/Trees/110287/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/110287/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "75.4'",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/32676/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/32676/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "75.4'",
+            "href": "/Browse/Trees/169451/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/169451/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 06.382, -078 54.045",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Jefferson"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

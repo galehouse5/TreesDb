@@ -1,0 +1,166 @@
+{
+  "siteId": 41157,
+  "summary": {
+    "Name": "Oxbow National Wildlife Refuge",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "06/15/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "1667 acres"
+  },
+  "visits": [
+    {
+      "visited": "06/15/2016",
+      "visitors": "Jared Lockwood",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "1667 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "83.4'",
+          "93''",
+          "52.6'"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/41157/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/41157/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "83.4'",
+            "href": "/Browse/Trees/250532/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/250532/Details"
+          },
+          {
+            "text": "52.6'",
+            "href": "/Browse/Trees/250532/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Populus grandidentata",
+          "Bigtooth Aspen",
+          "88.4'",
+          "77''",
+          "49.5'"
+        ],
+        "links": [
+          {
+            "text": "Populus grandidentata",
+            "href": "/Browse/Sites/41157/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "Bigtooth Aspen",
+            "href": "/Browse/Sites/41157/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "88.4'",
+            "href": "/Browse/Trees/250533/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/250533/Details"
+          },
+          {
+            "text": "49.5'",
+            "href": "/Browse/Trees/250533/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus bicolor",
+          "Swamp White Oak",
+          "68.5'",
+          "155''",
+          "77.9'"
+        ],
+        "links": [
+          {
+            "text": "Quercus bicolor",
+            "href": "/Browse/Sites/41157/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "Swamp White Oak",
+            "href": "/Browse/Sites/41157/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "68.5'",
+            "href": "/Browse/Trees/250531/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/250531/Details"
+          },
+          {
+            "text": "77.9'",
+            "href": "/Browse/Trees/250531/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 29.766, -071 37.558",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Worcester"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

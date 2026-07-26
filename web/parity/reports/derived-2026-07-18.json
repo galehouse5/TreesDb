@@ -1,0 +1,559 @@
+{
+  "category": "derived",
+  "generatedAt": "2026-07-18T22:07:15.034Z",
+  "checksRun": 27315,
+  "pass": 27251,
+  "fail": 0,
+  "waived": 64,
+  "diffs": [],
+  "waivedDiffs": [
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "maxCrownSpreadTreeId",
+        "expected": 299714,
+        "actual": 224404,
+        "message": "measured_species.maxCrownSpreadTreeId: expected 299714, got 224404",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species",
+        "message": "measured_species: no new-impl row for (Quercus  x mutabilis, Hybrid Oak)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "maxGirth",
+        "expected": 7.25,
+        "actual": 7.8333335,
+        "message": "measured_species.maxGirth: expected 7.25, got 7.8333335",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "number",
+        "expected": 5,
+        "actual": 6,
+        "message": "measured_species.number: expected 5, got 6",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "maxGirthTreeId",
+        "expected": 283117,
+        "actual": 283118,
+        "message": "measured_species.maxGirthTreeId: expected 283117, got 283118",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species",
+        "message": "measured_species: no new-impl row for (Crataegus  spp., Hawthorn)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species",
+        "message": "measured_species: no new-impl row for (Cercis  siliquastrum, Judas-Tree)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "number",
+        "expected": 38,
+        "actual": 39,
+        "message": "measured_species.number: expected 38, got 39",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species",
+        "message": "measured_species: no new-impl row for (Cupressus sempervirens, Italian  Cypress)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "maxCrownSpreadTreeId",
+        "expected": 274320,
+        "actual": 255929,
+        "message": "measured_species.maxCrownSpreadTreeId: expected 274320, got 255929",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "maxGirth",
+        "expected": 1.8333333730697632,
+        "actual": 4,
+        "message": "measured_species.maxGirth: expected 1.8333333730697632, got 4",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "number",
+        "expected": 1,
+        "actual": 2,
+        "message": "measured_species.number: expected 1, got 2",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "maxGirthTreeId",
+        "expected": 274943,
+        "actual": 283185,
+        "message": "measured_species.maxGirthTreeId: expected 274943, got 283185",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-extra",
+        "table": "measured_species",
+        "message": "measured_species: new-impl row has no dump counterpart for (Quercus x mutabilis, Hybrid Oak)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_site",
+        "field": "number",
+        "expected": 5,
+        "actual": 6,
+        "message": "measured_species_by_site.number: expected 5, got 6",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species_by_site",
+        "message": "measured_species_by_site: no new-impl row for (Cercis  siliquastrum, Judas-Tree, 41934)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_site",
+        "field": "maxHeight",
+        "expected": 69.80000305175781,
+        "actual": 74,
+        "message": "measured_species_by_site.maxHeight: expected 69.80000305175781, got 74",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_site",
+        "field": "maxGirth",
+        "expected": 7.25,
+        "actual": 7.8333335,
+        "message": "measured_species_by_site.maxGirth: expected 7.25, got 7.8333335",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_site",
+        "field": "number",
+        "expected": 1,
+        "actual": 2,
+        "message": "measured_species_by_site.number: expected 1, got 2",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_site",
+        "field": "maxHeightTreeId",
+        "expected": 283117,
+        "actual": 283118,
+        "message": "measured_species_by_site.maxHeightTreeId: expected 283117, got 283118",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_site",
+        "field": "maxGirthTreeId",
+        "expected": 283117,
+        "actual": 283118,
+        "message": "measured_species_by_site.maxGirthTreeId: expected 283117, got 283118",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species_by_site",
+        "message": "measured_species_by_site: no new-impl row for (Quercus  x mutabilis, Hybrid Oak, 42234)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species_by_site",
+        "message": "measured_species_by_site: no new-impl row for (Crataegus  spp., Hawthorn, 41043)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species_by_site",
+        "message": "measured_species_by_site: no new-impl row for (Cupressus sempervirens, Italian  Cypress, 41929)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-extra",
+        "table": "measured_species_by_site",
+        "message": "measured_species_by_site: new-impl row has no dump counterpart for (Cercis siliquastrum, Judas-Tree)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-extra",
+        "table": "measured_species_by_site",
+        "message": "measured_species_by_site: new-impl row has no dump counterpart for (Quercus x mutabilis, Hybrid Oak)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxGirth",
+        "expected": 1.8333333730697632,
+        "actual": 4,
+        "message": "measured_species_by_state.maxGirth: expected 1.8333333730697632, got 4",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "number",
+        "expected": 1,
+        "actual": 2,
+        "message": "measured_species_by_state.number: expected 1, got 2",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxGirthTreeId",
+        "expected": 274943,
+        "actual": 283185,
+        "message": "measured_species_by_state.maxGirthTreeId: expected 274943, got 283185",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 173661,
+        "actual": 142810,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 173661, got 142810",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 253241,
+        "actual": 177007,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 253241, got 177007",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species_by_state",
+        "message": "measured_species_by_state: no new-impl row for (Cupressus sempervirens, Italian  Cypress, 160)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxGirthTreeId",
+        "expected": 258897,
+        "actual": 226010,
+        "message": "measured_species_by_state.maxGirthTreeId: expected 258897, got 226010",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 166114,
+        "actual": 166108,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 166114, got 166108",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeight",
+        "expected": 69.80000305175781,
+        "actual": 74,
+        "message": "measured_species_by_state.maxHeight: expected 69.80000305175781, got 74",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxGirth",
+        "expected": 7.25,
+        "actual": 7.8333335,
+        "message": "measured_species_by_state.maxGirth: expected 7.25, got 7.8333335",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "number",
+        "expected": 1,
+        "actual": 2,
+        "message": "measured_species_by_state.number: expected 1, got 2",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 283117,
+        "actual": 283118,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 283117, got 283118",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxGirthTreeId",
+        "expected": 283117,
+        "actual": 283118,
+        "message": "measured_species_by_state.maxGirthTreeId: expected 283117, got 283118",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species_by_state",
+        "message": "measured_species_by_state: no new-impl row for (Cercis  siliquastrum, Judas-Tree, 124)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "number",
+        "expected": 10,
+        "actual": 11,
+        "message": "measured_species_by_state.number: expected 10, got 11",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 234935,
+        "actual": 234716,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 234935, got 234716",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species_by_state",
+        "message": "measured_species_by_state: no new-impl row for (Crataegus  spp., Hawthorn, 25)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 249112,
+        "actual": 234710,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 249112, got 234710",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxGirthTreeId",
+        "expected": 235515,
+        "actual": 227965,
+        "message": "measured_species_by_state.maxGirthTreeId: expected 235515, got 227965",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 280431,
+        "actual": 265915,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 280431, got 265915",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "measured_species_by_state",
+        "message": "measured_species_by_state: no new-impl row for (Quercus  x mutabilis, Hybrid Oak, 33)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-extra",
+        "table": "measured_species_by_state",
+        "message": "measured_species_by_state: new-impl row has no dump counterpart for (Quercus x mutabilis, Hybrid Oak)",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "search_measured_species/AL",
+        "id": 1967269043,
+        "message": "search_measured_species/AL: no new-impl search result for id 1967269043",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "pk-missing",
+        "table": "search_measured_species/e",
+        "id": 1665182480,
+        "message": "search_measured_species/e: no new-impl search result for id 1665182480",
+        "waiverHint": "W-010"
+      }
+    }
+  ]
+}

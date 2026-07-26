@@ -1,0 +1,104 @@
+{
+  "siteId": 40933,
+  "summary": {
+    "Name": "Benbrook Lake",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "01/01/2012",
+    "Ownership contact": "This is a Army Corps Engineers Project with some developed campgrounds managed by other entities.",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2012",
+      "visitors": "Doug Bidlack and Ellen Bidlack",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus macrocarpa",
+          "Bur Oak",
+          "73.5'",
+          "224''",
+          "87.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa",
+            "href": "/Browse/Sites/40933/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/40933/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "73.5'",
+            "href": "/Browse/Trees/241214/Details"
+          },
+          {
+            "text": "224''",
+            "href": "/Browse/Trees/241214/Details"
+          },
+          {
+            "text": "87.0'",
+            "href": "/Browse/Trees/241214/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 36.378, -097 27.306",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Tarrant"
+    },
+    "state": {
+      "text": "Texas (US)",
+      "href": "/Browse/States/41/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

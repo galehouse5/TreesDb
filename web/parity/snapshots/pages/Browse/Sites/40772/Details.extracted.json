@@ -1,0 +1,210 @@
+{
+  "siteId": 40772,
+  "summary": {
+    "Name": "Lakeview Cemetery",
+    "RHI5": "81.14",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.54",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "03/07/2021",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/07/2021",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies nordmanniana",
+          "Nordmann Fir",
+          "71.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies nordmanniana",
+            "href": "/Browse/Sites/40772/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "Nordmann Fir",
+            "href": "/Browse/Sites/40772/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "71.5'",
+            "href": "/Browse/Trees/236104/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus glutinosa",
+          "European Alder",
+          "102.3'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus glutinosa",
+            "href": "/Browse/Sites/40772/Species/Alnus%20glutinosa%20(European%20Alder)/Details"
+          },
+          {
+            "text": "European Alder",
+            "href": "/Browse/Sites/40772/Species/Alnus%20glutinosa%20(European%20Alder)/Details"
+          },
+          {
+            "text": "102.3'",
+            "href": "/Browse/Trees/236103/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/236102/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gymnocladus dioicus",
+          "Kentucky Coffeetree",
+          "61.2'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gymnocladus dioicus",
+            "href": "/Browse/Sites/40772/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "Kentucky Coffeetree",
+            "href": "/Browse/Sites/40772/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "61.2'",
+            "href": "/Browse/Trees/236106/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/236106/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "99.2'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/40772/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/40772/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "99.2'",
+            "href": "/Browse/Trees/236107/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/236107/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "71.5'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/40772/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/40772/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "71.5'",
+            "href": "/Browse/Trees/236105/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/236105/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 11.573, -077 56.448",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Monroe"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,214 @@
+{
+  "botanicalName": "Abies balsamea",
+  "commonName": "Balsam Fir",
+  "global": {
+    "maxHeight": {
+      "text": "103.9'",
+      "href": "/Browse/Trees/263831/Details"
+    },
+    "maxGirth": {
+      "text": "96''",
+      "href": "/Browse/Trees/212109/Details"
+    },
+    "maxCrownSpread": {
+      "text": "43.0'",
+      "href": "/Browse/Trees/233385/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maine",
+          "68.3'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maine",
+            "href": "/Browse/States/19/Details"
+          },
+          {
+            "text": "68.3'",
+            "href": "/Browse/Trees/235316/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/235315/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Minnesota",
+          "80.7'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Minnesota",
+            "href": "/Browse/States/21/Details"
+          },
+          {
+            "text": "80.7'",
+            "href": "/Browse/Trees/233308/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/233308/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "103.9'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "103.9'",
+            "href": "/Browse/Trees/263831/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/264497/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "77.8'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "77.8'",
+            "href": "/Browse/Trees/233108/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/233054/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "102.7'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "102.7'",
+            "href": "/Browse/Trees/212109/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/212109/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "85.0'",
+          "72''",
+          "33.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/313161/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/312114/Details"
+          },
+          {
+            "text": "33.0'",
+            "href": "/Browse/Trees/313161/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Wisconsin",
+          "87.9'",
+          "79''",
+          "43.0'"
+        ],
+        "links": [
+          {
+            "text": "Wisconsin",
+            "href": "/Browse/States/46/Details"
+          },
+          {
+            "text": "87.9'",
+            "href": "/Browse/Trees/233385/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/233385/Details"
+          },
+          {
+            "text": "43.0'",
+            "href": "/Browse/Trees/233385/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

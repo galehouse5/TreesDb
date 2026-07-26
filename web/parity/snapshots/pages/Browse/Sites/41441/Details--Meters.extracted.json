@@ -1,0 +1,353 @@
+{
+  "siteId": 41441,
+  "summary": {
+    "Name": "Inwood Hill Park",
+    "RHI5": "41.118",
+    "RHI10": "38.865",
+    "RHI20": "35.645",
+    "RGI5": "4.750",
+    "RGI10": "4.176",
+    "RGI20": "3.548",
+    "Trees measured": "132",
+    "Last measurement date": "04/08/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured during a series of visits between 12/20/2015 and 4/08/2016"
+  },
+  "visits": [
+    {
+      "visited": "04/08/2016",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured during a series of visits between 12/20/2015 and 4/08/2016"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "24.87 m",
+          "197 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41441/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41441/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "24.87 m",
+            "href": "/Browse/Trees/260002/Details"
+          },
+          {
+            "text": "197 cm",
+            "href": "/Browse/Trees/260002/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "34.90 m",
+          "218 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/41441/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41441/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "34.90 m",
+            "href": "/Browse/Trees/260013/Details"
+          },
+          {
+            "text": "218 cm",
+            "href": "/Browse/Trees/260003/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "32.00 m",
+          "201 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/41441/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/41441/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "32.00 m",
+            "href": "/Browse/Trees/260042/Details"
+          },
+          {
+            "text": "201 cm",
+            "href": "/Browse/Trees/260042/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "32.22 m",
+          "163 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41441/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41441/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "32.22 m",
+            "href": "/Browse/Trees/259979/Details"
+          },
+          {
+            "text": "163 cm",
+            "href": "/Browse/Trees/259979/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "39.96 m",
+          "254 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/41441/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/41441/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "39.96 m",
+            "href": "/Browse/Trees/260047/Details"
+          },
+          {
+            "text": "254 cm",
+            "href": "/Browse/Trees/260019/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "39.04 m",
+          "292 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41441/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41441/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "39.04 m",
+            "href": "/Browse/Trees/260020/Details"
+          },
+          {
+            "text": "292 cm",
+            "href": "/Browse/Trees/260021/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya spp.",
+          "Hickory",
+          "36.27 m",
+          "254 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya spp.",
+            "href": "/Browse/Sites/41441/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "Hickory",
+            "href": "/Browse/Sites/41441/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "36.27 m",
+            "href": "/Browse/Trees/259938/Details"
+          },
+          {
+            "text": "254 cm",
+            "href": "/Browse/Trees/259939/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "27.46 m",
+          "132 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/41441/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/41441/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "27.46 m",
+            "href": "/Browse/Trees/260023/Details"
+          },
+          {
+            "text": "132 cm",
+            "href": "/Browse/Trees/260023/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "28.62 m",
+          "378 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/41441/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/41441/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "28.62 m",
+            "href": "/Browse/Trees/260044/Details"
+          },
+          {
+            "text": "378 cm",
+            "href": "/Browse/Trees/260044/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "27.98 m",
+          "356 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/41441/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/41441/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "27.98 m",
+            "href": "/Browse/Trees/259941/Details"
+          },
+          {
+            "text": "356 cm",
+            "href": "/Browse/Trees/259941/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 31 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 52.350, -073 55.433",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Manhattan"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

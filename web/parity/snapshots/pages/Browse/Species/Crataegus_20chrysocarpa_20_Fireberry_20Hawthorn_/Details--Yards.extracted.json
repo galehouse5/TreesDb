@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Crataegus chrysocarpa",
+  "commonName": "Fireberry Hawthorn",
+  "global": {
+    "maxGirth": {
+      "text": "21''",
+      "href": "/Browse/Trees/233575/Details"
+    },
+    "maxCrownSpread": {
+      "text": "5.67 yd",
+      "href": "/Browse/Trees/233575/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "South Dakota",
+          "-",
+          "21''",
+          "5.67 yd"
+        ],
+        "links": [
+          {
+            "text": "South Dakota",
+            "href": "/Browse/States/39/Details"
+          },
+          null,
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/233575/Details"
+          },
+          {
+            "text": "5.67 yd",
+            "href": "/Browse/Trees/233575/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

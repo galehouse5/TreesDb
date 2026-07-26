@@ -1,0 +1,377 @@
+{
+  "siteId": 440,
+  "summary": {
+    "Name": "Sand Run",
+    "RHI5": "147.47",
+    "RHI10": "138.22",
+    "RHI20": "128.32",
+    "RGI5": "12.73",
+    "RGI10": "10.51",
+    "RGI20": "7.75",
+    "Trees measured": "44",
+    "Last measurement date": "11/17/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/17/2013",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/17/2013",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/06/2011",
+      "visitors": "Rand Brown and Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/09/2010",
+      "visitors": "Steve Galehouse and Rand Brown",
+      "tripReportUrl": "(none)",
+      "comments": "Sand Run MetroPark, in north Akron, contains the tallest recorded tree in Ohio, a tuliptree at 170' in height. This area was once part of the estate of F.A. Seiberling, the founder of Goodyear Tire and Rubber Company."
+    },
+    {
+      "visited": "10/19/2010",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/16/2010",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "118.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/Sites/440/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/Sites/440/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "118.4'",
+            "href": "/Browse/Trees/18740/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "108.0'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/440/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/440/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/18743/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/18743/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "122.2'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/440/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/440/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "122.2'",
+            "href": "/Browse/Trees/18736/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/18736/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "141.8'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/440/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/440/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "141.8'",
+            "href": "/Browse/Trees/18729/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/166869/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "135.2'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/440/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/440/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "135.2'",
+            "href": "/Browse/Trees/18718/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/18718/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "131.8'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/440/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/440/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "131.8'",
+            "href": "/Browse/Trees/18732/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/18732/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "95.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/440/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/440/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "95.0'",
+            "href": "/Browse/Trees/18746/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "125.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/440/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/440/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "125.0'",
+            "href": "/Browse/Trees/18735/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "171.0'",
+          "190''",
+          "91.0'"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/440/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/440/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "171.0'",
+            "href": "/Browse/Trees/58963/Details"
+          },
+          {
+            "text": "190''",
+            "href": "/Browse/Trees/2331/Details"
+          },
+          {
+            "text": "91.0'",
+            "href": "/Browse/Trees/18716/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "132.0'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/440/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/440/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "132.0'",
+            "href": "/Browse/Trees/58964/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/58964/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 22 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 08.121, -081 33.949",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Metropark",
+      "County": "Summit"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

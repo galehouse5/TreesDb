@@ -1,0 +1,129 @@
+{
+  "siteId": 41524,
+  "summary": {
+    "Name": "Mckenzie Mountain Wilderness Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "09/16/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "37,616 acres"
+  },
+  "visits": [
+    {
+      "visited": "09/16/2020",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "37,616 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "116.0'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/41524/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/41524/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "116.0'",
+            "href": "/Browse/Trees/263787/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/263787/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "154.3'",
+          "193''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41524/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41524/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "154.3'",
+            "href": "/Browse/Trees/263773/Details"
+          },
+          {
+            "text": "193''",
+            "href": "/Browse/Trees/263778/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 18.888, -074 01.750",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Essex"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,135 @@
+{
+  "botanicalName": "Salix amygdaloides",
+  "commonName": "Peachleaf Willow",
+  "global": {
+    "maxHeight": {
+      "text": "88.8'",
+      "href": "/Browse/Trees/220430/Details"
+    },
+    "maxGirth": {
+      "text": "103''",
+      "href": "/Browse/Trees/98289/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "61.7'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "61.7'",
+            "href": "/Browse/Trees/130907/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/98289/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Iowa",
+          "82.3'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Iowa",
+            "href": "/Browse/States/10/Details"
+          },
+          {
+            "text": "82.3'",
+            "href": "/Browse/Trees/233680/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/233680/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nebraska",
+          "88.8'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nebraska",
+            "href": "/Browse/States/27/Details"
+          },
+          {
+            "text": "88.8'",
+            "href": "/Browse/Trees/220430/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/220688/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Dakota",
+          "80.5'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Dakota",
+            "href": "/Browse/States/39/Details"
+          },
+          {
+            "text": "80.5'",
+            "href": "/Browse/Trees/233490/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/233489/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

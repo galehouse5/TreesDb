@@ -1,0 +1,70 @@
+{
+  "treeId": 260046,
+  "botanicalName": {
+    "text": "Liriodendron tulipifera",
+    "href": "/Browse/Sites/41441/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+  },
+  "commonName": {
+    "text": "Tuliptree",
+    "href": "/Browse/Sites/41441/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+  },
+  "details": {
+    "Height": "46.09 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "500 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "407.49",
+    "ENTSPTS": "2482.20",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.40",
+    "Champion points (abbreviated)": "348.20",
+    "Diameter": "159 cm",
+    "Conical volume": "30.61 m³",
+    "General comments": "Previous measurement was 150' x 192\""
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 04/08/2016",
+      "summary": {
+        "Height": "46.09 m",
+        "Girth": "500 cm"
+      },
+      "details": {
+        "Botanical name": "Liriodendron tulipifera",
+        "Common name": "Tuliptree",
+        "Height": "46.09 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "500 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "407.49",
+        "ENTSPTS": "2482.20",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.40",
+        "Champion points (abbreviated)": "348.20",
+        "Diameter": "159 cm",
+        "Conical volume": "30.61 m³",
+        "General comments": "Previous measurement was 150' x 192\""
+      },
+      "measurers": "Erik Danielson"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "40 52.350, -073 55.433",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Inwood Hill Park",
+      "href": "/Browse/Sites/41441/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Manhattan"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

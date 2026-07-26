@@ -1,0 +1,204 @@
+{
+  "siteId": 38436,
+  "summary": {
+    "Name": "Gravel Lick Bridge To Mill Creek River Access",
+    "RHI5": "81.00",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "0.92",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "10/16/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "Nine miles via canoe"
+  },
+  "visits": [
+    {
+      "visited": "10/16/2008",
+      "visitors": "Edward Frank and Carl Harting",
+      "tripReportUrl": "(none)",
+      "comments": "Nine miles via canoe"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "25.0'",
+          "5''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/38436/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/38436/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "25.0'",
+            "href": "/Browse/Trees/139563/Details"
+          },
+          {
+            "text": "5''",
+            "href": "/Browse/Trees/139563/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "66.0'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/38436/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/38436/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/139562/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/139562/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "104.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/38436/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/38436/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "104.0'",
+            "href": "/Browse/Trees/139561/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "94.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/38436/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/38436/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "94.0'",
+            "href": "/Browse/Trees/139560/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "116.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/38436/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/38436/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "116.0'",
+            "href": "/Browse/Trees/139559/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 18.994, -079 14.495",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public, private",
+      "County": "Clarion"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

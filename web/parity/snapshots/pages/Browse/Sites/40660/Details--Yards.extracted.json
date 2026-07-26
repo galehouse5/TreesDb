@@ -1,0 +1,157 @@
+{
+  "siteId": 40660,
+  "summary": {
+    "Name": "Sosebee Cove Scenic Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "07/13/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/13/2005",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/sosbee_cove.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "43.13 yd",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/40660/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/40660/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "43.13 yd",
+            "href": "/Browse/Trees/234403/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/234403/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "51.23 yd",
+          "214''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40660/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40660/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "51.23 yd",
+            "href": "/Browse/Trees/234405/Details"
+          },
+          {
+            "text": "214''",
+            "href": "/Browse/Trees/234404/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "41.33 yd",
+          "174''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40660/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40660/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "41.33 yd",
+            "href": "/Browse/Trees/234402/Details"
+          },
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/234402/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 45.791, -083 56.901",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Union"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

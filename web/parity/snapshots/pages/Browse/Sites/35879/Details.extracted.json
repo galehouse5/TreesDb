@@ -1,0 +1,353 @@
+{
+  "siteId": 35879,
+  "summary": {
+    "Name": "North Park Latadami Nature Center",
+    "RHI5": "116.72",
+    "RHI10": "109.85",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.38",
+    "RGI10": "9.00",
+    "RGI20": "(not enough data)",
+    "Trees measured": "33",
+    "Last measurement date": "12/17/2005",
+    "Ownership contact": "575 Brown Road Wexford, PA 15090",
+    "General comments": "250 acres Nature Center and is part of 3,750 acre North Park"
+  },
+  "visits": [
+    {
+      "visited": "12/17/2005",
+      "visitors": "Carl Harting",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/latodami/latodami_nature_center.htm",
+      "comments": "250 acres Nature Center and is part of 3,750 acre North Park"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "68.5'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/35879/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/35879/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "68.5'",
+            "href": "/Browse/Trees/120542/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/120542/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "89.7'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/35879/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/35879/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "89.7'",
+            "href": "/Browse/Trees/120544/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/120544/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "111.7'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/35879/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/35879/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "111.7'",
+            "href": "/Browse/Trees/120548/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/120548/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "117.8'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/35879/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/35879/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "117.8'",
+            "href": "/Browse/Trees/120559/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/120559/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "128.2'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/35879/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/35879/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "128.2'",
+            "href": "/Browse/Trees/120571/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/120571/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "111.2'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/35879/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/35879/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "111.2'",
+            "href": "/Browse/Trees/120554/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/120553/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "107.5'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/35879/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/35879/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "107.5'",
+            "href": "/Browse/Trees/120551/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/120549/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "100.3'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/35879/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/35879/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "100.3'",
+            "href": "/Browse/Trees/120546/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/120546/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "93.3'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/35879/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/35879/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "93.3'",
+            "href": "/Browse/Trees/120541/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/120541/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "105.0'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/35879/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/35879/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/120557/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/120555/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 37.240, -080 01.780",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Allegheny"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

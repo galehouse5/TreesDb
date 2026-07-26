@@ -1,0 +1,157 @@
+{
+  "siteId": 38399,
+  "summary": {
+    "Name": "Pine Mountain Resort Park - Hemlock Garden Trail",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "06/14/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/14/2007",
+      "visitors": "Robert Leverett",
+      "tripReportUrl": "www.nativetreesociety.org/events/kentucky2007/going_south.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "131.1'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38399/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38399/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "131.1'",
+            "href": "/Browse/Trees/138345/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/138345/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "101.2'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/38399/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/38399/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "101.2'",
+            "href": "/Browse/Trees/138347/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/138347/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "124.7'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/38399/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/38399/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "124.7'",
+            "href": "/Browse/Trees/138346/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/138346/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 44.668, -083 42.559",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - State",
+      "County": "Bell"
+    },
+    "state": {
+      "text": "Kentucky (US)",
+      "href": "/Browse/States/15/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

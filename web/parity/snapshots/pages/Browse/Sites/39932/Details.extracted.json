@@ -1,0 +1,380 @@
+{
+  "siteId": 39932,
+  "summary": {
+    "Name": "Washington Grove City Park",
+    "RHI5": "128.18",
+    "RHI10": "125.00",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.67",
+    "RGI10": "9.49",
+    "RGI20": "(not enough data)",
+    "Trees measured": "123",
+    "Last measurement date": "06/24/2019",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/24/2019",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php?f=105&t=3263&sid=3803bc1bcaa14bd290e6457a0afd92d0&start=40#p43745",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/12/2015",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/24/2015",
+      "visitors": "Tom Howard and Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php?f=105&t=3263&sid=aa969849f6aeba7b56d7bee852c610c7&start=40#p33068",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/25/2014",
+      "visitors": "Patrick Brandt",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php?f=105&t=3263&sid=3803bc1bcaa14bd290e6457a0afd92d0&start=30#p28116",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/24/2012",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php?f=105&t=3263&sid=b1d9c227dc971ecfa2972aa531ee4a79&start=20#p20153",
+      "comments": "(none)"
+    },
+    {
+      "visited": "05/21/2012",
+      "visitors": "Tom Howard, Larry Champoux, and Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php?f=105&t=3263&sid=b1d9c227dc971ecfa2972aa531ee4a79&start=10#p17464",
+      "comments": "27 Acres. Trees were measured on visits 4/15/2012, 5/9/2012. 5/21/2012"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer platanoides",
+          "Norway Maple",
+          "106.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer platanoides",
+            "href": "/Browse/Sites/39932/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "Norway Maple",
+            "href": "/Browse/Sites/39932/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "106.3'",
+            "href": "/Browse/Trees/211702/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "124.9'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/39932/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39932/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "124.9'",
+            "href": "/Browse/Trees/264086/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/264086/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "127.4'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/39932/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39932/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "127.4'",
+            "href": "/Browse/Trees/211695/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/211695/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "112.1'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/39932/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/39932/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "112.1'",
+            "href": "/Browse/Trees/263634/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/263634/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "114.9'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/39932/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/39932/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "114.9'",
+            "href": "/Browse/Trees/211692/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/211692/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "88.4'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/39932/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/39932/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "88.4'",
+            "href": "/Browse/Trees/211704/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/211704/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "114.8'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/39932/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/39932/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "114.8'",
+            "href": "/Browse/Trees/211712/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/263747/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "132.8'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39932/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39932/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "132.8'",
+            "href": "/Browse/Trees/211691/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/263726/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "56.7'",
+          "39''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/39932/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/39932/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "56.7'",
+            "href": "/Browse/Trees/211680/Details"
+          },
+          {
+            "text": "39''",
+            "href": "/Browse/Trees/211680/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus sylvestris",
+          "Scots Pine",
+          "66.0'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus sylvestris",
+            "href": "/Browse/Sites/39932/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "Scots Pine",
+            "href": "/Browse/Sites/39932/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/211679/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/211679/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 08.514, -077 33.489",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Monroe"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,323 @@
+{
+  "siteId": 38040,
+  "summary": {
+    "Name": "Eco Trail Of Downs Memorial Park",
+    "RHI5": "0.00",
+    "RHI10": "0.00",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.80",
+    "RGI10": "5.37",
+    "RGI20": "(not enough data)",
+    "Trees measured": "20",
+    "Last measurement date": "07/01/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/01/2007",
+      "visitors": "Matthew Hannum",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "-",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/38040/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/38040/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          null,
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/128130/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca var. opaca",
+          "American Holly",
+          "-",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca var. opaca",
+            "href": "/Browse/Sites/38040/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/38040/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          null,
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/128124/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "-",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/38040/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/38040/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          null,
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/128126/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "-",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38040/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38040/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          null,
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/128127/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "-",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/38040/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/38040/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          null,
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/128129/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "-",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/38040/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/38040/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/128123/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "-",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/38040/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/38040/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/128115/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus falcata",
+          "Southern Red Oak",
+          "-",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus falcata",
+            "href": "/Browse/Sites/38040/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Southern Red Oak",
+            "href": "/Browse/Sites/38040/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/128117/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "-",
+          "174''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/38040/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/38040/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/128121/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus phellos",
+          "Willow Oak",
+          "-",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus phellos",
+            "href": "/Browse/Sites/38040/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "Willow Oak",
+            "href": "/Browse/Sites/38040/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/128111/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 06.522, -076 26.223",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public County",
+      "County": "Anne Arundel"
+    },
+    "state": {
+      "text": "Maryland (US)",
+      "href": "/Browse/States/18/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

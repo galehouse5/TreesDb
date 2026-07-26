@@ -1,0 +1,126 @@
+{
+  "siteId": 40376,
+  "summary": {
+    "Name": "Sammons Branch And Hideaway Brook",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "10/21/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured on two small tributaries of Enloe Creek of Raven Fork. These two are named Simmons Branch and Hideaway Brook."
+  },
+  "visits": [
+    {
+      "visited": "10/21/2007",
+      "visitors": "Jess Riddle and Josh Kelley",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/gsmnp/hideaway/simmons_branch_and_hideaway.htm",
+      "comments": "Trees were measured on two small tributaries of Enloe Creek of Raven Fork. These two are named Simmons Branch and Hideaway Brook."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "-",
+          "174''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/40376/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/40376/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          null,
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/229198/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "155.3'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/40376/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/40376/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "155.3'",
+            "href": "/Browse/Trees/229197/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/229195/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 37.566, -083 17.125",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Swain"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

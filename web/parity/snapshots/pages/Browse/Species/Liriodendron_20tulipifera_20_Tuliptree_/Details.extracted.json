@@ -1,0 +1,283 @@
+{
+  "botanicalName": "Liriodendron tulipifera",
+  "commonName": "Tuliptree",
+  "global": {
+    "maxHeight": {
+      "text": "191.2'",
+      "href": "/Browse/Trees/252473/Details"
+    },
+    "maxGirth": {
+      "text": "324''",
+      "href": "/Browse/Trees/252309/Details"
+    },
+    "maxCrownSpread": {
+      "text": "143.5'",
+      "href": "/Browse/Trees/252353/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "143.0'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "143.0'",
+            "href": "/Browse/Trees/315738/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/233691/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "122.4'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "122.4'",
+            "href": "/Browse/Trees/243103/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/243104/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Connecticut",
+          "135.2'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "135.2'",
+            "href": "/Browse/Trees/256801/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/242615/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "167.0'",
+          "245''",
+          "110.0'"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "167.0'",
+            "href": "/Browse/Trees/232252/Details"
+          },
+          {
+            "text": "245''",
+            "href": "/Browse/Trees/168613/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/140139/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "162.5'",
+          "230''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "162.5'",
+            "href": "/Browse/Trees/76095/Details"
+          },
+          {
+            "text": "230''",
+            "href": "/Browse/Trees/76109/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Florida",
+          "119.8'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "119.8'",
+            "href": "/Browse/Trees/323413/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/323413/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "169.1'",
+          "231''",
+          "105.0'"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "169.1'",
+            "href": "/Browse/Trees/249576/Details"
+          },
+          {
+            "text": "231''",
+            "href": "/Browse/Trees/249649/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/249649/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "141.5'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          {
+            "text": "141.5'",
+            "href": "/Browse/Trees/281058/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/281058/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana",
+          "155.9'",
+          "182''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana",
+            "href": "/Browse/States/13/Details"
+          },
+          {
+            "text": "155.9'",
+            "href": "/Browse/Trees/169957/Details"
+          },
+          {
+            "text": "182''",
+            "href": "/Browse/Trees/169916/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "172.0'",
+          "223''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "172.0'",
+            "href": "/Browse/Trees/174559/Details"
+          },
+          {
+            "text": "223''",
+            "href": "/Browse/Trees/174559/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 25 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

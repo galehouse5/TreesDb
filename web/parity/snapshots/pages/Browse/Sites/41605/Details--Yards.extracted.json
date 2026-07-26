@@ -1,0 +1,101 @@
+{
+  "siteId": 41605,
+  "summary": {
+    "Name": "Mokelumne Wilderness",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "08/02/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "105,165 acres located in three national forests - Stanislous, Eldorado, Toiyobe.and three counties - Alpine, Amador, Caleveras."
+  },
+  "visits": [
+    {
+      "visited": "08/02/2014",
+      "visitors": "Michael Taylor and John Montague",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "105,165 acres located in three national forests - Stanislous, Eldorado, Toiyobe.and three counties - Alpine, Amador, Caleveras."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus ponderosa var. benthamiana",
+          "Ponderosa Pine",
+          "58.67 yd",
+          "328''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. benthamiana",
+            "href": "/Browse/Sites/41605/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/41605/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "58.67 yd",
+            "href": "/Browse/Trees/268390/Details"
+          },
+          {
+            "text": "328''",
+            "href": "/Browse/Trees/268390/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 34.995, -119 58.778",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Alpine"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

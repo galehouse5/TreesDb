@@ -1,0 +1,213 @@
+{
+  "siteId": 41919,
+  "summary": {
+    "Name": "Schoepfle Garden",
+    "RHI5": "48.92",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.00",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "12/11/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/11/2010",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer griseum",
+          "Paperbark Maple",
+          "29.4'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer griseum",
+            "href": "/Browse/Sites/41919/Species/Acer%20griseum%20(Paperbark%20Maple)/Details"
+          },
+          {
+            "text": "Paperbark Maple",
+            "href": "/Browse/Sites/41919/Species/Acer%20griseum%20(Paperbark%20Maple)/Details"
+          },
+          {
+            "text": "29.4'",
+            "href": "/Browse/Trees/282389/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/282389/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedrus libani",
+          "Cedar Of Lebanon",
+          "67.0'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus libani",
+            "href": "/Browse/Sites/41919/Species/Cedrus%20libani%20(Cedar%20Of%20Lebanon)/Details"
+          },
+          {
+            "text": "Cedar Of Lebanon",
+            "href": "/Browse/Sites/41919/Species/Cedrus%20libani%20(Cedar%20Of%20Lebanon)/Details"
+          },
+          {
+            "text": "67.0'",
+            "href": "/Browse/Trees/282392/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/282392/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "77.0'",
+          "166''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/41919/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/41919/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/282390/Details"
+          },
+          {
+            "text": "166''",
+            "href": "/Browse/Trees/282390/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus cembra",
+          "Swiss Stone Pine",
+          "40.8'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus cembra",
+            "href": "/Browse/Sites/41919/Species/Pinus%20cembra%20(Swiss%20Stone%20Pine)/Details"
+          },
+          {
+            "text": "Swiss Stone Pine",
+            "href": "/Browse/Sites/41919/Species/Pinus%20cembra%20(Swiss%20Stone%20Pine)/Details"
+          },
+          {
+            "text": "40.8'",
+            "href": "/Browse/Trees/282391/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/282391/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sciadopitys verticillata",
+          "Japanese Umbrella Pine",
+          "30.4'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sciadopitys verticillata",
+            "href": "/Browse/Sites/41919/Species/Sciadopitys%20verticillata%20(Japanese%20Umbrella%20Pine)/Details"
+          },
+          {
+            "text": "Japanese Umbrella Pine",
+            "href": "/Browse/Sites/41919/Species/Sciadopitys%20verticillata%20(Japanese%20Umbrella%20Pine)/Details"
+          },
+          {
+            "text": "30.4'",
+            "href": "/Browse/Trees/282393/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/282393/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 19.807, -082 20.993",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Huron"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

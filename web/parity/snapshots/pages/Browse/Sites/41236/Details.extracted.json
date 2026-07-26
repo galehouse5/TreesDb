@@ -1,0 +1,356 @@
+{
+  "siteId": 41236,
+  "summary": {
+    "Name": "Shakerag Hollow",
+    "RHI5": "147.58",
+    "RHI10": "142.49",
+    "RHI20": "130.96",
+    "RGI5": "12.22",
+    "RGI10": "11.16",
+    "RGI20": "8.87",
+    "Trees measured": "55",
+    "Last measurement date": "02/28/2026",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/28/2026",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "01/03/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Features a 19 mile perimeter trail around the hollow and is part of the 13000 acres campus the Sewanee Seminary of the Episcopal Church."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "127.3'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/41236/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41236/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "127.3'",
+            "href": "/Browse/Trees/323450/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/323450/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "131.1'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/41236/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/41236/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "131.1'",
+            "href": "/Browse/Trees/323468/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/323464/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "98.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/41236/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/41236/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "98.3'",
+            "href": "/Browse/Trees/253182/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "135.2'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/41236/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/41236/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "135.2'",
+            "href": "/Browse/Trees/323444/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/323444/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "148.3'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/41236/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/41236/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "148.3'",
+            "href": "/Browse/Trees/323441/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/323441/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "144.0'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/41236/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/41236/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "144.0'",
+            "href": "/Browse/Trees/323446/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/323446/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cladrastis kentukea",
+          "Kentucky Yellowwood",
+          "89.5'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cladrastis kentukea",
+            "href": "/Browse/Sites/41236/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "Kentucky Yellowwood",
+            "href": "/Browse/Sites/41236/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/323457/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/323457/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "116.0'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/41236/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/41236/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "116.0'",
+            "href": "/Browse/Trees/253184/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/323451/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana var. biltmoreana",
+          "Biltmore Ash",
+          "137.1'",
+          "161''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana var. biltmoreana",
+            "href": "/Browse/Sites/41236/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "Biltmore Ash",
+            "href": "/Browse/Sites/41236/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "137.1'",
+            "href": "/Browse/Trees/323455/Details"
+          },
+          {
+            "text": "161''",
+            "href": "/Browse/Trees/323452/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "98.6'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/41236/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/41236/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "98.6'",
+            "href": "/Browse/Trees/323470/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/323470/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 21 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 12.800, -085 54.434",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

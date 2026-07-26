@@ -1,0 +1,104 @@
+{
+  "siteId": 542,
+  "summary": {
+    "Name": "555 Riverbank Drive",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "06/15/2011",
+    "Ownership contact": "(private)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/15/2011",
+      "visitors": "William Van Hemessen and Maria Legault",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "55.0'",
+          "144''",
+          "40.0'"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/542/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/542/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "55.0'",
+            "href": "/Browse/Trees/4071/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/4071/Details"
+          },
+          {
+            "text": "40.0'",
+            "href": "/Browse/Trees/4071/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 25.651, -080 24.025",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Waterloo Regional Municipality"
+    },
+    "state": {
+      "text": "Ontario (CA)",
+      "href": "/Browse/States/57/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

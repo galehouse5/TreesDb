@@ -1,0 +1,285 @@
+{
+  "siteId": 39183,
+  "summary": {
+    "Name": "Highland Nature Sanctuary",
+    "RHI5": "125.92",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.67",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "20",
+    "Last measurement date": "06/27/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "From trip reports posted on the NTS BBS page dated: 8/28/2012, 11/2/14."
+  },
+  "visits": [
+    {
+      "visited": "06/27/2014",
+      "visitors": "Robert Leverett, Matt Markworth, and Rand Brown",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "From trip reports posted on the NTS BBS page dated: 8/28/2012, 11/2/14."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "129.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/39183/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/39183/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "129.0'",
+            "href": "/Browse/Trees/168956/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "120.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39183/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39183/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "120.1'",
+            "href": "/Browse/Trees/168937/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus quadrangulata",
+          "Blue Ash",
+          "112.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus quadrangulata",
+            "href": "/Browse/Sites/39183/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "Blue Ash",
+            "href": "/Browse/Sites/39183/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "112.0'",
+            "href": "/Browse/Trees/168945/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "68.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/39183/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/39183/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/168944/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "137.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39183/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39183/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "137.0'",
+            "href": "/Browse/Trees/168942/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "121.5'",
+          "290''",
+          "107.0'"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/39183/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/39183/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "121.5'",
+            "href": "/Browse/Trees/168946/Details"
+          },
+          {
+            "text": "290''",
+            "href": "/Browse/Trees/168943/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/168943/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "101.5'",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/39183/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/39183/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "101.5'",
+            "href": "/Browse/Trees/168939/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/168939/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "122.0'",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/39183/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/39183/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "122.0'",
+            "href": "/Browse/Trees/168941/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/168940/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 13.383, -083 21.494",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Highland"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

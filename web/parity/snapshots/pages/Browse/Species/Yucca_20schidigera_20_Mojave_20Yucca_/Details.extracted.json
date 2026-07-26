@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Yucca schidigera",
+  "commonName": "Mojave Yucca",
+  "global": {
+    "maxHeight": {
+      "text": "13.8'",
+      "href": "/Browse/Trees/239523/Details"
+    },
+    "maxGirth": {
+      "text": "30''",
+      "href": "/Browse/Trees/239523/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "11.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "11.1'",
+            "href": "/Browse/Trees/130979/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "California",
+          "13.8'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "13.8'",
+            "href": "/Browse/Trees/239523/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/239523/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "botanicalName": "Acer rubrum var. rubrum",
+  "commonName": "Red Maple",
+  "global": {
+    "maxHeight": {
+      "text": "154.2'",
+      "href": "/Browse/Trees/322130/Details"
+    },
+    "maxGirth": {
+      "text": "181''",
+      "href": "/Browse/Trees/312046/Details"
+    },
+    "maxCrownSpread": {
+      "text": "71.0'",
+      "href": "/Browse/Trees/271734/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Kentucky",
+          "123.8'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "123.8'",
+            "href": "/Browse/Trees/297730/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/322698/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "125.2'",
+          "101''",
+          "55.0'"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "125.2'",
+            "href": "/Browse/Trees/19226/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/19227/Details"
+          },
+          {
+            "text": "55.0'",
+            "href": "/Browse/Trees/19227/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "135.3'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "135.3'",
+            "href": "/Browse/Trees/323145/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/240842/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "78.5'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "78.5'",
+            "href": "/Browse/Trees/272606/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/272607/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "154.2'",
+          "165''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "154.2'",
+            "href": "/Browse/Trees/322130/Details"
+          },
+          {
+            "text": "165''",
+            "href": "/Browse/Trees/322098/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "110.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "110.4'",
+            "href": "/Browse/Trees/314371/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "130.0'",
+          "181''",
+          "71.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "130.0'",
+            "href": "/Browse/Trees/323165/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/312046/Details"
+          },
+          {
+            "text": "71.0'",
+            "href": "/Browse/Trees/271734/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

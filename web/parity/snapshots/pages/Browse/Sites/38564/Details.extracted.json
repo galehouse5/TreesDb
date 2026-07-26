@@ -1,0 +1,359 @@
+{
+  "siteId": 38564,
+  "summary": {
+    "Name": "CFSP-Foundation Ridge And Flats",
+    "RHI5": "132.64",
+    "RHI10": "122.01",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.41",
+    "RGI10": "7.58",
+    "RGI20": "(not enough data)",
+    "Trees measured": "41",
+    "Last measurement date": "09/26/2006",
+    "Ownership contact": "American Chestnuts were measured on 8/9 /2005. See: http://www.nativetreesociety.org/fieldtrips/penna_cook_forest/two_trips_to_cook_forest.htm",
+    "General comments": "American Chestnuts were measured on 8/9 /2005. See: http://www.nativetreesociety.org/fieldtrips/penna_cook_forest/two_trips_to_cook_forest.htm Also see Luthringer measurements at:: http://www.nativetreesociety.org/fieldtrips/penna_cook_forest/foundation_ridge_flat_update.htm"
+  },
+  "visits": [
+    {
+      "visited": "09/26/2006",
+      "visitors": "Carl Harting, Dale Luthringer, and Ed Frank",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna_cook_forest/foundation_ridge_flat.htm",
+      "comments": "American Chestnuts were measured on 8/9 /2005. See: http://www.nativetreesociety.org/fieldtrips/penna_cook_forest/two_trips_to_cook_forest.htm Also see Luthringer measurements at:: http://www.nativetreesociety.org/fieldtrips/penna_cook_forest/foundation_ridge_flat_update.htm"
+    },
+    {
+      "visited": "08/10/2006",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna_cook_forest/chestnut06/cook_chestnut.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "126.7'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/38564/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/38564/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "126.7'",
+            "href": "/Browse/Trees/147074/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/147074/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "82.1'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/38564/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/38564/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "82.1'",
+            "href": "/Browse/Trees/168362/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/168362/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "110.8'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38564/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38564/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "110.8'",
+            "href": "/Browse/Trees/147073/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/147073/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "122.6'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38564/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38564/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "122.6'",
+            "href": "/Browse/Trees/168374/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/168374/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "19.3'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/38564/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/38564/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "19.3'",
+            "href": "/Browse/Trees/147076/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/147076/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "141.4'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38564/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38564/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "141.4'",
+            "href": "/Browse/Trees/147075/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/168387/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "126.7'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/38564/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/38564/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "126.7'",
+            "href": "/Browse/Trees/168380/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/168379/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "145.8'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/38564/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/38564/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "145.8'",
+            "href": "/Browse/Trees/168376/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/168376/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus grandidentata",
+          "Bigtooth Aspen",
+          "110.8'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus grandidentata",
+            "href": "/Browse/Sites/38564/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "Bigtooth Aspen",
+            "href": "/Browse/Sites/38564/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "110.8'",
+            "href": "/Browse/Trees/168368/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/168368/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "93.1'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/38564/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/38564/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "93.1'",
+            "href": "/Browse/Trees/147071/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/147072/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 20.024, -079 10.324",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Forest"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

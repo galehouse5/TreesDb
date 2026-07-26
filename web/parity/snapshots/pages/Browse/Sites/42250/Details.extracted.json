@@ -1,0 +1,344 @@
+{
+  "siteId": 42250,
+  "summary": {
+    "Name": "Big Hill Pond State Park",
+    "RHI5": "119.80",
+    "RHI10": "114.54",
+    "RHI20": "107.82",
+    "RGI5": "7.56",
+    "RGI10": "6.79",
+    "RGI20": "4.55",
+    "Trees measured": "24",
+    "Last measurement date": "12/02/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/02/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "120.3'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/42250/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/42250/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "120.3'",
+            "href": "/Browse/Trees/313592/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/313591/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "91.6'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/42250/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/42250/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "91.6'",
+            "href": "/Browse/Trees/313593/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/313593/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus profunda",
+          "Pumpkin Ash",
+          "106.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus profunda",
+            "href": "/Browse/Sites/42250/Species/Fraxinus%20profunda%20(Pumpkin%20Ash)/Details"
+          },
+          {
+            "text": "Pumpkin Ash",
+            "href": "/Browse/Sites/42250/Species/Fraxinus%20profunda%20(Pumpkin%20Ash)/Details"
+          },
+          {
+            "text": "106.7'",
+            "href": "/Browse/Trees/313577/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "106.1'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/42250/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/42250/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "106.1'",
+            "href": "/Browse/Trees/313597/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/313597/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "124.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/42250/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/42250/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "124.3'",
+            "href": "/Browse/Trees/313598/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa aquatica",
+          "Water Tupelo",
+          "92.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa aquatica",
+            "href": "/Browse/Sites/42250/Species/Nyssa%20aquatica%20(Water%20Tupelo)/Details"
+          },
+          {
+            "text": "Water Tupelo",
+            "href": "/Browse/Sites/42250/Species/Nyssa%20aquatica%20(Water%20Tupelo)/Details"
+          },
+          {
+            "text": "92.6'",
+            "href": "/Browse/Trees/313596/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "102.4'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/42250/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/42250/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "102.4'",
+            "href": "/Browse/Trees/313595/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/313594/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "108.5'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/42250/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/42250/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "108.5'",
+            "href": "/Browse/Trees/313576/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/313576/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "109.8'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/42250/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/42250/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "109.8'",
+            "href": "/Browse/Trees/313581/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/313581/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus coccinea var. coccinea",
+          "Scarlet Oak",
+          "104.4'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus coccinea var. coccinea",
+            "href": "/Browse/Sites/42250/Species/Quercus%20coccinea%20var.%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "Scarlet Oak",
+            "href": "/Browse/Sites/42250/Species/Quercus%20coccinea%20var.%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "104.4'",
+            "href": "/Browse/Trees/313588/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/313588/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 21 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 02.657, -088 44.187",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Hardeman"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

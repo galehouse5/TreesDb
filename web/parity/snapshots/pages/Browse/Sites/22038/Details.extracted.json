@@ -1,0 +1,157 @@
+{
+  "siteId": 22038,
+  "summary": {
+    "Name": "Alkie Creek Confluence",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "08/05/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "This camp was at mile 34 downstream of the put-in at Dalton Post, Yukon Territory"
+  },
+  "visits": [
+    {
+      "visited": "08/05/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "This camp was at mile 34 downstream of the put-in at Dalton Post, Yukon Territory"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus incana ssp. tenuifolia",
+          "Thinleaf Alder",
+          "22.8'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus incana ssp. tenuifolia",
+            "href": "/Browse/Sites/22038/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "Thinleaf Alder",
+            "href": "/Browse/Sites/22038/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "22.8'",
+            "href": "/Browse/Trees/75011/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/75013/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "47.9'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/22038/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/22038/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "47.9'",
+            "href": "/Browse/Trees/75012/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/75012/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix scouleriana",
+          "Scouler's Willow",
+          "35.2'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix scouleriana",
+            "href": "/Browse/Sites/22038/Species/Salix%20scouleriana%20(Scouler's%20Willow)/Details"
+          },
+          {
+            "text": "Scouler's Willow",
+            "href": "/Browse/Sites/22038/Species/Salix%20scouleriana%20(Scouler's%20Willow)/Details"
+          },
+          {
+            "text": "35.2'",
+            "href": "/Browse/Trees/75014/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/75014/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "59 41.843, -137 13.082",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Stikine Regional District"
+    },
+    "state": {
+      "text": "British Columbia (CA)",
+      "href": "/Browse/States/50/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

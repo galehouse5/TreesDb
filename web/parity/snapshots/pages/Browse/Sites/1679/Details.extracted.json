@@ -1,0 +1,332 @@
+{
+  "siteId": 1679,
+  "summary": {
+    "Name": "Guilford Courthouse",
+    "RHI5": "121.48",
+    "RHI10": "117.90",
+    "RHI20": "(not enough data)",
+    "RGI5": "4.24",
+    "RGI10": "2.12",
+    "RGI20": "(not enough data)",
+    "Trees measured": "41",
+    "Last measurement date": "11/24/2012",
+    "Ownership contact": "National Park System Historical Military Park",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/24/2012",
+      "visitors": "Brian Beduhn",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya carolinae-septentrionalis",
+          "Southern Shagbark Hickory",
+          "108.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya carolinae-septentrionalis",
+            "href": "/Browse/Sites/1679/Species/Carya%20carolinae-septentrionalis%20(Southern%20Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Southern Shagbark Hickory",
+            "href": "/Browse/Sites/1679/Species/Carya%20carolinae-septentrionalis%20(Southern%20Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/40720/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "119.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/1679/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/1679/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "119.2'",
+            "href": "/Browse/Trees/40722/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "96.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/1679/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/1679/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "96.0'",
+            "href": "/Browse/Trees/40743/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "114.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/1679/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/1679/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "114.0'",
+            "href": "/Browse/Trees/40719/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "66.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/Sites/1679/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/1679/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "66.2'",
+            "href": "/Browse/Trees/40746/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "115.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/1679/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/1679/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "115.7'",
+            "href": "/Browse/Trees/40718/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "133.5'",
+          "156''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/1679/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/1679/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "133.5'",
+            "href": "/Browse/Trees/40723/Details"
+          },
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/40736/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "63.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/1679/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/1679/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "63.7'",
+            "href": "/Browse/Trees/40748/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "122.3'",
+          "98''",
+          "40.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/1679/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/1679/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "122.3'",
+            "href": "/Browse/Trees/40735/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/40735/Details"
+          },
+          {
+            "text": "40.0'",
+            "href": "/Browse/Trees/40735/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus palustris",
+          "Longleaf Pine",
+          "59.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus palustris",
+            "href": "/Browse/Sites/1679/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "Longleaf Pine",
+            "href": "/Browse/Sites/1679/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "59.5'",
+            "href": "/Browse/Trees/40747/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 07.983, -079 50.614",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Guilford"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

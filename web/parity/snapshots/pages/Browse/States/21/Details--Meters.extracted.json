@@ -1,0 +1,557 @@
+{
+  "stateId": 21,
+  "summary": {
+    "Name": "Minnesota",
+    "Code": "MN",
+    "RHI5": "34.369",
+    "RHI10": "31.282",
+    "RHI20": "22.372",
+    "RGI5": "5.527",
+    "RGI10": "4.679",
+    "RGI20": "3.439",
+    "Trees measured": "123",
+    "Last measurement date": "05/11/2016"
+  },
+  "location": {
+    "Coordinates": "46 26.518, -093 21.680",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "24.60 m",
+          "94 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/States/21/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/States/21/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "24.60 m",
+            "href": "/Browse/Trees/233308/Details"
+          },
+          {
+            "text": "94 cm",
+            "href": "/Browse/Trees/233308/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "24.69 m",
+          "124 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/21/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/21/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "24.69 m",
+            "href": "/Browse/Trees/239922/Details"
+          },
+          {
+            "text": "124 cm",
+            "href": "/Browse/Trees/239922/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "-",
+          "538 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/21/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/21/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "538 cm",
+            "href": "/Browse/Trees/239871/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "31.09 m",
+          "424 cm",
+          "25.60 m"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/21/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/21/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "31.09 m",
+            "href": "/Browse/Trees/112163/Details"
+          },
+          {
+            "text": "424 cm",
+            "href": "/Browse/Trees/112158/Details"
+          },
+          {
+            "text": "25.60 m",
+            "href": "/Browse/Trees/172286/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "27.43 m",
+          "249 cm",
+          "16.15 m"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/States/21/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/States/21/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "27.43 m",
+            "href": "/Browse/Trees/239918/Details"
+          },
+          {
+            "text": "249 cm",
+            "href": "/Browse/Trees/239918/Details"
+          },
+          {
+            "text": "16.15 m",
+            "href": "/Browse/Trees/239917/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "-",
+          "269 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/States/21/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/States/21/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          null,
+          {
+            "text": "269 cm",
+            "href": "/Browse/Trees/239739/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "32.31 m",
+          "345 cm",
+          "21.64 m"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/States/21/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/States/21/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "32.31 m",
+            "href": "/Browse/Trees/172274/Details"
+          },
+          {
+            "text": "345 cm",
+            "href": "/Browse/Trees/112160/Details"
+          },
+          {
+            "text": "21.64 m",
+            "href": "/Browse/Trees/172282/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus spp.",
+          "Ash",
+          "-",
+          "353 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus spp.",
+            "href": "/Browse/States/21/Species/Fraxinus%20spp.%20(Ash)/Details"
+          },
+          {
+            "text": "Ash",
+            "href": "/Browse/States/21/Species/Fraxinus%20spp.%20(Ash)/Details"
+          },
+          null,
+          {
+            "text": "353 cm",
+            "href": "/Browse/Trees/239870/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "-",
+          "292 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/States/21/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/States/21/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          null,
+          {
+            "text": "292 cm",
+            "href": "/Browse/Trees/112161/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "20.42 m",
+          "363 cm",
+          "20.42 m"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/States/21/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/States/21/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "20.42 m",
+            "href": "/Browse/Trees/239943/Details"
+          },
+          {
+            "text": "363 cm",
+            "href": "/Browse/Trees/239943/Details"
+          },
+          {
+            "text": "20.42 m",
+            "href": "/Browse/Trees/239943/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 21 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "\"Lost 40\" Of Chippewa National Forest",
+          "103.86",
+          "-",
+          "7.33",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "\"Lost 40\" Of Chippewa National Forest",
+            "href": "/Browse/Sites/40552/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Baker Park Reserve",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Baker Park Reserve",
+            "href": "/Browse/Sites/39323/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Biolife",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Biolife",
+            "href": "/Browse/Sites/39320/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Boot Lake Scientific And Natural Area(SNA)",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Boot Lake Scientific And Natural Area(SNA)",
+            "href": "/Browse/Sites/40908/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Clifton E. French Regional Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Clifton E. French Regional Park",
+            "href": "/Browse/Sites/40904/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Elm Creek Ash Marsh",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Elm Creek Ash Marsh",
+            "href": "/Browse/Sites/39324/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Elm Creek Park Reserve",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Elm Creek Park Reserve",
+            "href": "/Browse/Sites/32766/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Falls Creek Scientific And Natural Area(SNA)",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Falls Creek Scientific And Natural Area(SNA)",
+            "href": "/Browse/Sites/40906/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fish Lake Regional Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fish Lake Regional Park",
+            "href": "/Browse/Sites/39326/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Jay Cooke State Forest",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Jay Cooke State Forest",
+            "href": "/Browse/Sites/40900/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 23 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

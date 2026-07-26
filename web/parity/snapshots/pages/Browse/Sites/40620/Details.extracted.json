@@ -1,0 +1,188 @@
+{
+  "siteId": 40620,
+  "summary": {
+    "Name": "Des Arc",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "07/06/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "2500 acre private tract"
+  },
+  "visits": [
+    {
+      "visited": "07/06/2007",
+      "visitors": "Don Bragg",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/arkansas/des_arc/some_new_ar_champions.htm",
+      "comments": "2500 acre private tract"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Gleditsia aquatica",
+          "Water Locust",
+          "-",
+          "238''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia aquatica",
+            "href": "/Browse/Sites/40620/Species/Gleditsia%20aquatica%20(Water%20Locust)/Details"
+          },
+          {
+            "text": "Water Locust",
+            "href": "/Browse/Sites/40620/Species/Gleditsia%20aquatica%20(Water%20Locust)/Details"
+          },
+          null,
+          {
+            "text": "238''",
+            "href": "/Browse/Trees/233994/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "97.0'",
+          "158''",
+          "64.0'"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/40620/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/40620/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "97.0'",
+            "href": "/Browse/Trees/233995/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/233995/Details"
+          },
+          {
+            "text": "64.0'",
+            "href": "/Browse/Trees/233995/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus michauxii",
+          "Swamp Chestnut Oak",
+          "112.0'",
+          "220''",
+          "106.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus michauxii",
+            "href": "/Browse/Sites/40620/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Swamp Chestnut Oak",
+            "href": "/Browse/Sites/40620/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "112.0'",
+            "href": "/Browse/Trees/233991/Details"
+          },
+          {
+            "text": "220''",
+            "href": "/Browse/Trees/233991/Details"
+          },
+          {
+            "text": "106.0'",
+            "href": "/Browse/Trees/233991/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "105.0'",
+          "258''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/40620/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/40620/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/233992/Details"
+          },
+          {
+            "text": "258''",
+            "href": "/Browse/Trees/233992/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 58.413, -091 29.175",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Prairie"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

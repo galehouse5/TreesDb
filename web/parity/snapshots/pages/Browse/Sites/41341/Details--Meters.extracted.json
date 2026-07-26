@@ -1,0 +1,182 @@
+{
+  "siteId": 41341,
+  "summary": {
+    "Name": "Cicero Swamp Wildlife Management Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "07/05/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "5,000 acres"
+  },
+  "visits": [
+    {
+      "visited": "07/05/2008",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/cicero/cicero_swamp_wildlife_management.htm",
+      "comments": "5,000 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus incana ssp. rugosa",
+          "Speckled Alder",
+          "8.81 m",
+          "28 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus incana ssp. rugosa",
+            "href": "/Browse/Sites/41341/Species/Alnus%20incana%20ssp.%20rugosa%20(Speckled%20Alder)/Details"
+          },
+          {
+            "text": "Speckled Alder",
+            "href": "/Browse/Sites/41341/Species/Alnus%20incana%20ssp.%20rugosa%20(Speckled%20Alder)/Details"
+          },
+          {
+            "text": "8.81 m",
+            "href": "/Browse/Trees/257323/Details"
+          },
+          {
+            "text": "28 cm",
+            "href": "/Browse/Trees/257323/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea var. arborea",
+          "Common Serviceberry",
+          "-",
+          "104 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea var. arborea",
+            "href": "/Browse/Sites/41341/Species/Amelanchier%20arborea%20var.%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/41341/Species/Amelanchier%20arborea%20var.%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          null,
+          {
+            "text": "104 cm",
+            "href": "/Browse/Trees/257328/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus nigra",
+          "Black Ash",
+          "27.77 m",
+          "122 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus nigra",
+            "href": "/Browse/Sites/41341/Species/Fraxinus%20nigra%20(Black%20Ash)/Details"
+          },
+          {
+            "text": "Black Ash",
+            "href": "/Browse/Sites/41341/Species/Fraxinus%20nigra%20(Black%20Ash)/Details"
+          },
+          {
+            "text": "27.77 m",
+            "href": "/Browse/Trees/257325/Details"
+          },
+          {
+            "text": "122 cm",
+            "href": "/Browse/Trees/257325/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "26.06 m",
+          "145 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/41341/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/41341/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "26.06 m",
+            "href": "/Browse/Trees/257327/Details"
+          },
+          {
+            "text": "145 cm",
+            "href": "/Browse/Trees/257327/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 08.957, -076 01.400",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Madison"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

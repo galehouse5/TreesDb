@@ -1,0 +1,166 @@
+{
+  "siteId": 40978,
+  "summary": {
+    "Name": "Piedra River And Tributaries",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "13",
+    "Last measurement date": "11/24/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/24/2016",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "08/13/2014",
+      "visitors": "Matt Markworth, Larry Tucei, and Chris Smith",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "154.5'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/Sites/40978/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/Sites/40978/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "154.5'",
+            "href": "/Browse/Trees/242319/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/242318/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "149.6'",
+          "148''",
+          "35.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/Sites/40978/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/40978/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "149.6'",
+            "href": "/Browse/Trees/242359/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/242357/Details"
+          },
+          {
+            "text": "35.0'",
+            "href": "/Browse/Trees/242357/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "151.0'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/40978/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/40978/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "151.0'",
+            "href": "/Browse/Trees/242322/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/242323/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "37 21.310, -107 19.430",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Archuleta"
+    },
+    "state": {
+      "text": "Colorado (US)",
+      "href": "/Browse/States/5/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

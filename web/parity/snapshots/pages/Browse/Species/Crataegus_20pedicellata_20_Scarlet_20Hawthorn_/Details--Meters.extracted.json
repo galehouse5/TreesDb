@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Crataegus pedicellata",
+  "commonName": "Scarlet Hawthorn",
+  "global": {
+    "maxHeight": {
+      "text": "6.10 m",
+      "href": "/Browse/Trees/39528/Details"
+    },
+    "maxGirth": {
+      "text": "183 cm",
+      "href": "/Browse/Trees/39528/Details"
+    },
+    "maxCrownSpread": {
+      "text": "8.23 m",
+      "href": "/Browse/Trees/39528/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "North Carolina",
+          "6.10 m",
+          "183 cm",
+          "8.23 m"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "6.10 m",
+            "href": "/Browse/Trees/39528/Details"
+          },
+          {
+            "text": "183 cm",
+            "href": "/Browse/Trees/39528/Details"
+          },
+          {
+            "text": "8.23 m",
+            "href": "/Browse/Trees/39528/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

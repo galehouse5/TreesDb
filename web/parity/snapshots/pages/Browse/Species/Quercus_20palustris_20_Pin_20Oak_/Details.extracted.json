@@ -1,0 +1,283 @@
+{
+  "botanicalName": "Quercus palustris",
+  "commonName": "Pin Oak",
+  "global": {
+    "maxHeight": {
+      "text": "137.7'",
+      "href": "/Browse/Trees/322699/Details"
+    },
+    "maxGirth": {
+      "text": "239''",
+      "href": "/Browse/Trees/273887/Details"
+    },
+    "maxCrownSpread": {
+      "text": "105.0'",
+      "href": "/Browse/Trees/229802/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "District of Columbia",
+          "82.8'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "82.8'",
+            "href": "/Browse/Trees/175057/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/175057/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "92.3'",
+          "169''",
+          "104.0'"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "92.3'",
+            "href": "/Browse/Trees/235303/Details"
+          },
+          {
+            "text": "169''",
+            "href": "/Browse/Trees/235303/Details"
+          },
+          {
+            "text": "104.0'",
+            "href": "/Browse/Trees/235303/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "130.3'",
+          "239''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          {
+            "text": "130.3'",
+            "href": "/Browse/Trees/273887/Details"
+          },
+          {
+            "text": "239''",
+            "href": "/Browse/Trees/273887/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana",
+          "119.0'",
+          "154''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana",
+            "href": "/Browse/States/13/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/174071/Details"
+          },
+          {
+            "text": "154''",
+            "href": "/Browse/Trees/174071/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "137.7'",
+          "189''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "137.7'",
+            "href": "/Browse/Trees/322699/Details"
+          },
+          {
+            "text": "189''",
+            "href": "/Browse/Trees/322700/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "125.1'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "125.1'",
+            "href": "/Browse/Trees/168128/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/45430/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "126.0'",
+          "172''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "126.0'",
+            "href": "/Browse/Trees/283675/Details"
+          },
+          {
+            "text": "172''",
+            "href": "/Browse/Trees/283675/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "124.3'",
+          "150''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "124.3'",
+            "href": "/Browse/Trees/261813/Details"
+          },
+          {
+            "text": "150''",
+            "href": "/Browse/Trees/226130/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "123.4'",
+          "188''",
+          "92.0'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "123.4'",
+            "href": "/Browse/Trees/15942/Details"
+          },
+          {
+            "text": "188''",
+            "href": "/Browse/Trees/9749/Details"
+          },
+          {
+            "text": "92.0'",
+            "href": "/Browse/Trees/9749/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "122.0'",
+          "178''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "122.0'",
+            "href": "/Browse/Trees/18543/Details"
+          },
+          {
+            "text": "178''",
+            "href": "/Browse/Trees/166247/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

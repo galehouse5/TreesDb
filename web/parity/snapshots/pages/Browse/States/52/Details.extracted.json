@@ -1,0 +1,262 @@
+{
+  "stateId": 52,
+  "summary": {
+    "Name": "New Brunswick",
+    "Code": "NB",
+    "RHI5": "78.80",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.91",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "11/09/2015"
+  },
+  "location": {
+    "Coordinates": "46 19.364, -066 20.045",
+    "Country": "Canada"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "83.0'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/52/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/52/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "83.0'",
+            "href": "/Browse/Trees/240022/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/240022/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "102.0'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/States/52/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/States/52/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "102.0'",
+            "href": "/Browse/Trees/240020/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/240020/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea mariana",
+          "Black Spruce",
+          "100.0'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana",
+            "href": "/Browse/States/52/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/States/52/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "100.0'",
+            "href": "/Browse/Trees/240017/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/240017/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "109.0'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/States/52/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/States/52/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/240021/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/240299/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "-",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/States/52/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/States/52/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/241344/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ayers Lake",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ayers Lake",
+            "href": "/Browse/Sites/40916/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Grand Lake Provincial Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Grand Lake Provincial Park",
+            "href": "/Browse/Sites/40935/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

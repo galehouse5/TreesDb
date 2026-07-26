@@ -1,0 +1,338 @@
+{
+  "siteId": 39983,
+  "summary": {
+    "Name": "Beaver Lake Nature Center",
+    "RHI5": "41.733",
+    "RHI10": "39.663",
+    "RHI20": "33.685",
+    "RGI5": "2.602",
+    "RGI10": "1.607",
+    "RGI20": "0.804",
+    "Trees measured": "27",
+    "Last measurement date": "11/01/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/01/2015",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies fraseri",
+          "Fraser Fir",
+          "3.83 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies fraseri",
+            "href": "/Browse/Sites/39983/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "Fraser Fir",
+            "href": "/Browse/Sites/39983/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "3.83 yd",
+            "href": "/Browse/Trees/213036/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "38.60 yd",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/39983/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39983/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "38.60 yd",
+            "href": "/Browse/Trees/213041/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/213041/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "38.50 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/39983/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/39983/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "38.50 yd",
+            "href": "/Browse/Trees/213039/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea",
+          "Common Serviceberry",
+          "20.80 yd",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea",
+            "href": "/Browse/Sites/39983/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/39983/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "20.80 yd",
+            "href": "/Browse/Trees/213023/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/213023/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "26.33 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/39983/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/39983/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "26.33 yd",
+            "href": "/Browse/Trees/213027/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "39.43 yd",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/39983/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/39983/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "39.43 yd",
+            "href": "/Browse/Trees/213031/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/213031/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "43.10 yd",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/39983/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/39983/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "43.10 yd",
+            "href": "/Browse/Trees/213026/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/213026/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "44.93 yd",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39983/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39983/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "44.93 yd",
+            "href": "/Browse/Trees/213015/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/213015/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "34.77 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/39983/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/39983/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "34.77 yd",
+            "href": "/Browse/Trees/213038/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Morus nigra",
+          "Black Mulberry",
+          "6.17 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Morus nigra",
+            "href": "/Browse/Sites/39983/Species/Morus%20nigra%20(Black%20Mulberry)/Details"
+          },
+          {
+            "text": "Black Mulberry",
+            "href": "/Browse/Sites/39983/Species/Morus%20nigra%20(Black%20Mulberry)/Details"
+          },
+          {
+            "text": "6.17 yd",
+            "href": "/Browse/Trees/213033/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 22 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 10.852, -076 24.100",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Onondaga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

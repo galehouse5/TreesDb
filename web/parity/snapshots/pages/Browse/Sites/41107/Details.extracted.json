@@ -1,0 +1,325 @@
+{
+  "siteId": 41107,
+  "summary": {
+    "Name": "Upper Tallulah River",
+    "RHI5": "142.76",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.12",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "09/03/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/03/2014",
+      "visitors": "Jess Riddle and Doug Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "108.9'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41107/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41107/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "108.9'",
+            "href": "/Browse/Trees/249614/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/249614/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "133.8'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41107/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41107/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "133.8'",
+            "href": "/Browse/Trees/249618/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/249618/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya laciniosa",
+          "Shellbark Hickory",
+          "137.8'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya laciniosa",
+            "href": "/Browse/Sites/41107/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shellbark Hickory",
+            "href": "/Browse/Sites/41107/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "137.8'",
+            "href": "/Browse/Trees/249616/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/249616/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "128.0'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/41107/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/41107/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "128.0'",
+            "href": "/Browse/Trees/249615/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/249615/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "134.6'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41107/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41107/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "134.6'",
+            "href": "/Browse/Trees/249619/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/249619/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "172.7'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41107/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41107/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "172.7'",
+            "href": "/Browse/Trees/249628/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/249624/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "134.9'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/41107/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/41107/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "134.9'",
+            "href": "/Browse/Trees/249620/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/249620/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "128.9'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/41107/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41107/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "128.9'",
+            "href": "/Browse/Trees/249621/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/249621/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Stewartia ovata",
+          "Mountain Camellia",
+          "24.3'",
+          "10''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Stewartia ovata",
+            "href": "/Browse/Sites/41107/Species/Stewartia%20ovata%20(Mountain%20Camellia)/Details"
+          },
+          {
+            "text": "Mountain Camellia",
+            "href": "/Browse/Sites/41107/Species/Stewartia%20ovata%20(Mountain%20Camellia)/Details"
+          },
+          {
+            "text": "24.3'",
+            "href": "/Browse/Trees/249622/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/249622/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 55.759, -083 32.571",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Rabun"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

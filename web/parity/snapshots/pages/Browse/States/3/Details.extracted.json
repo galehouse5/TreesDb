@@ -1,0 +1,548 @@
+{
+  "stateId": 3,
+  "summary": {
+    "Name": "Arizona",
+    "Code": "AZ",
+    "RHI5": "134.70",
+    "RHI10": "124.98",
+    "RHI20": "110.82",
+    "RGI5": "16.23",
+    "RGI10": "14.22",
+    "RGI20": "12.01",
+    "Trees measured": "540",
+    "Last measurement date": "01/21/2025"
+  },
+  "location": {
+    "Coordinates": "34 10.094, -111 55.908",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "98.7'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/States/3/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/3/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "98.7'",
+            "href": "/Browse/Trees/226341/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/226341/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. arizonica",
+          "Corkbark Fir",
+          "123.0'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. arizonica",
+            "href": "/Browse/States/3/Species/Abies%20lasiocarpa%20var.%20arizonica%20(Corkbark%20Fir)/Details"
+          },
+          {
+            "text": "Corkbark Fir",
+            "href": "/Browse/States/3/Species/Abies%20lasiocarpa%20var.%20arizonica%20(Corkbark%20Fir)/Details"
+          },
+          {
+            "text": "123.0'",
+            "href": "/Browse/Trees/137146/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/137146/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acacia greggii",
+          "Catclaw Acacia",
+          "23.3'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acacia greggii",
+            "href": "/Browse/States/3/Species/Acacia%20greggii%20(Catclaw%20Acacia)/Details"
+          },
+          {
+            "text": "Catclaw Acacia",
+            "href": "/Browse/States/3/Species/Acacia%20greggii%20(Catclaw%20Acacia)/Details"
+          },
+          {
+            "text": "23.3'",
+            "href": "/Browse/Trees/159287/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/159287/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer glabrum var. glabrum",
+          "Rocky Mountain Maple",
+          "37.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer glabrum var. glabrum",
+            "href": "/Browse/States/3/Species/Acer%20glabrum%20var.%20glabrum%20(Rocky%20Mountain%20Maple)/Details"
+          },
+          {
+            "text": "Rocky Mountain Maple",
+            "href": "/Browse/States/3/Species/Acer%20glabrum%20var.%20glabrum%20(Rocky%20Mountain%20Maple)/Details"
+          },
+          {
+            "text": "37.4'",
+            "href": "/Browse/Trees/130978/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer grandidentatum var. grandidentatum",
+          "Bigtooth Maple",
+          "58.5'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer grandidentatum var. grandidentatum",
+            "href": "/Browse/States/3/Species/Acer%20grandidentatum%20var.%20grandidentatum%20(Bigtooth%20Maple)/Details"
+          },
+          {
+            "text": "Bigtooth Maple",
+            "href": "/Browse/States/3/Species/Acer%20grandidentatum%20var.%20grandidentatum%20(Bigtooth%20Maple)/Details"
+          },
+          {
+            "text": "58.5'",
+            "href": "/Browse/Trees/320818/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/96823/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. arizonicum",
+          "Arizona Boxelder",
+          "44.2'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. arizonicum",
+            "href": "/Browse/States/3/Species/Acer%20negundo%20var.%20arizonicum%20(Arizona%20Boxelder)/Details"
+          },
+          {
+            "text": "Arizona Boxelder",
+            "href": "/Browse/States/3/Species/Acer%20negundo%20var.%20arizonicum%20(Arizona%20Boxelder)/Details"
+          },
+          {
+            "text": "44.2'",
+            "href": "/Browse/Trees/130892/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/130892/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Agave chrysantha",
+          "Golden Flower Century Plant",
+          "13.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Agave chrysantha",
+            "href": "/Browse/States/3/Species/Agave%20chrysantha%20(Golden%20Flower%20Century%20Plant)/Details"
+          },
+          {
+            "text": "Golden Flower Century Plant",
+            "href": "/Browse/States/3/Species/Agave%20chrysantha%20(Golden%20Flower%20Century%20Plant)/Details"
+          },
+          {
+            "text": "13.8'",
+            "href": "/Browse/Trees/24033/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus oblongifolia",
+          "Arizona Alder",
+          "105.9'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus oblongifolia",
+            "href": "/Browse/States/3/Species/Alnus%20oblongifolia%20(Arizona%20Alder)/Details"
+          },
+          {
+            "text": "Arizona Alder",
+            "href": "/Browse/States/3/Species/Alnus%20oblongifolia%20(Arizona%20Alder)/Details"
+          },
+          {
+            "text": "105.9'",
+            "href": "/Browse/Trees/93013/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/93013/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Anacardium occidentale",
+          "Cashew",
+          "25.4'",
+          "27''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Anacardium occidentale",
+            "href": "/Browse/States/3/Species/Anacardium%20occidentale%20(Cashew)/Details"
+          },
+          {
+            "text": "Cashew",
+            "href": "/Browse/States/3/Species/Anacardium%20occidentale%20(Cashew)/Details"
+          },
+          {
+            "text": "25.4'",
+            "href": "/Browse/Trees/142570/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/142570/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arbutus arizonica",
+          "Arizona Madrone",
+          "65.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arbutus arizonica",
+            "href": "/Browse/States/3/Species/Arbutus%20arizonica%20(Arizona%20Madrone)/Details"
+          },
+          {
+            "text": "Arizona Madrone",
+            "href": "/Browse/States/3/Species/Arbutus%20arizonica%20(Arizona%20Madrone)/Details"
+          },
+          {
+            "text": "65.1'",
+            "href": "/Browse/Trees/320816/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 78 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Anita Road",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Anita Road",
+            "href": "/Browse/Sites/22051/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arizona Single Tree Sites",
+          "66.24",
+          "-",
+          "11.45",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona Single Tree Sites",
+            "href": "/Browse/Sites/38152/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arizona-Sonora Desert Museum",
+          "24.64",
+          "-",
+          "2.69",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona-Sonora Desert Museum",
+            "href": "/Browse/Sites/38829/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aspen Corner Trails",
+          "99.64",
+          "-",
+          "9.38",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aspen Corner Trails",
+            "href": "/Browse/Sites/27483/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Barbershop Spring",
+          "119.08",
+          "-",
+          "9.73",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Barbershop Spring",
+            "href": "/Browse/Sites/38355/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bonito Park Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bonito Park Area",
+            "href": "/Browse/Sites/38142/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Campbell Mesa",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Campbell Mesa",
+            "href": "/Browse/Sites/1461/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catalina State Park",
+          "27.50",
+          "-",
+          "5.01",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catalina State Park",
+            "href": "/Browse/Sites/38831/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cave Creek Canyon",
+          "117.84",
+          "91.99",
+          "10.36",
+          "7.39"
+        ],
+        "links": [
+          {
+            "text": "Cave Creek Canyon",
+            "href": "/Browse/Sites/42357/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crescent Moon Picnic Area",
+          "62.18",
+          "-",
+          "10.19",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crescent Moon Picnic Area",
+            "href": "/Browse/Sites/38143/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 45 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

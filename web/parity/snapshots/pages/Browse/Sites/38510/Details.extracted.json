@@ -1,0 +1,356 @@
+{
+  "siteId": 38510,
+  "summary": {
+    "Name": "Cedar Hollow Preserve",
+    "RHI5": "119.94",
+    "RHI10": "110.87",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.70",
+    "RGI10": "9.99",
+    "RGI20": "(not enough data)",
+    "Trees measured": "27",
+    "Last measurement date": "03/14/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/14/2009",
+      "visitors": "George Fieo",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer platanoides",
+          "Norway Maple",
+          "94.9'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer platanoides",
+            "href": "/Browse/Sites/38510/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "Norway Maple",
+            "href": "/Browse/Sites/38510/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "94.9'",
+            "href": "/Browse/Trees/142977/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/142977/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "96.3'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/38510/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38510/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "96.3'",
+            "href": "/Browse/Trees/142979/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/142978/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "114.4'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/38510/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/38510/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "114.4'",
+            "href": "/Browse/Trees/142964/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/142963/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "119.0'",
+          "152''",
+          "71.0'"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/38510/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/38510/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/142969/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/142969/Details"
+          },
+          {
+            "text": "71.0'",
+            "href": "/Browse/Trees/142969/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "80.7'",
+          "35''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38510/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38510/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "80.7'",
+            "href": "/Browse/Trees/142962/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/142962/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "109.9'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/38510/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/38510/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "109.9'",
+            "href": "/Browse/Trees/142972/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/142971/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "90.5'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/38510/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/38510/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "90.5'",
+            "href": "/Browse/Trees/142974/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/142973/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "106.4'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/38510/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/38510/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "106.4'",
+            "href": "/Browse/Trees/142967/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/142967/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "48.0'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/Sites/38510/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/38510/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "48.0'",
+            "href": "/Browse/Trees/142970/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/142970/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "134.0'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38510/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38510/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "134.0'",
+            "href": "/Browse/Trees/142987/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/142986/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "40 04.201, -075 31.087",
+    "coordinatesKind": "calculated",
+    "rows": {
+      "Ownership type": "Conservancy",
+      "County": "Chester"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

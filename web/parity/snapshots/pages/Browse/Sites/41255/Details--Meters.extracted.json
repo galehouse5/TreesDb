@@ -1,0 +1,101 @@
+{
+  "siteId": 41255,
+  "summary": {
+    "Name": "Juan Castro Blanco Water Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "04/27/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/27/2017",
+      "visitors": "Jeremy Quinos, Rodmy Lobo, and Bart Bouricius",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ulmus mexicana",
+          "Mexican Elm",
+          "51.60 m",
+          "401 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus mexicana",
+            "href": "/Browse/Sites/41255/Species/Ulmus%20mexicana%20(Mexican%20Elm)/Details"
+          },
+          {
+            "text": "Mexican Elm",
+            "href": "/Browse/Sites/41255/Species/Ulmus%20mexicana%20(Mexican%20Elm)/Details"
+          },
+          {
+            "text": "51.60 m",
+            "href": "/Browse/Trees/253278/Details"
+          },
+          {
+            "text": "401 cm",
+            "href": "/Browse/Trees/253279/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "10 16.693, -084 19.998",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "San Carlos"
+    },
+    "state": {
+      "text": "Alajuela (CR)",
+      "href": "/Browse/States/117/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

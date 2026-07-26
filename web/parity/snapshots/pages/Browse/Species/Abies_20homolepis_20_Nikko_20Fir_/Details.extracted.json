@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Abies homolepis",
+  "commonName": "Nikko Fir",
+  "global": {
+    "maxHeight": {
+      "text": "108.5'",
+      "href": "/Browse/Trees/281865/Details"
+    },
+    "maxGirth": {
+      "text": "132''",
+      "href": "/Browse/Trees/281865/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "51.5'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "51.5'",
+            "href": "/Browse/Trees/102904/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/102904/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "108.5'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "108.5'",
+            "href": "/Browse/Trees/281865/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/281865/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

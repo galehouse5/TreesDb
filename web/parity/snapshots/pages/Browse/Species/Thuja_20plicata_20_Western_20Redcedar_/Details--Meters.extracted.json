@@ -1,0 +1,158 @@
+{
+  "botanicalName": "Thuja plicata",
+  "commonName": "Western Redcedar",
+  "global": {
+    "maxHeight": {
+      "text": "70.77 m",
+      "href": "/Browse/Trees/274361/Details"
+    },
+    "maxGirth": {
+      "text": "1245 cm",
+      "href": "/Browse/Trees/239723/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Idaho",
+          "59.74 m",
+          "566 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "59.74 m",
+            "href": "/Browse/Trees/318050/Details"
+          },
+          {
+            "text": "566 cm",
+            "href": "/Browse/Trees/164258/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "59.22 m",
+          "809 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "59.22 m",
+            "href": "/Browse/Trees/297923/Details"
+          },
+          {
+            "text": "809 cm",
+            "href": "/Browse/Trees/297915/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "31.55 m",
+          "328 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "31.55 m",
+            "href": "/Browse/Trees/281819/Details"
+          },
+          {
+            "text": "328 cm",
+            "href": "/Browse/Trees/281818/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oregon",
+          "62.79 m",
+          "529 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon",
+            "href": "/Browse/States/35/Details"
+          },
+          {
+            "text": "62.79 m",
+            "href": "/Browse/Trees/239643/Details"
+          },
+          {
+            "text": "529 cm",
+            "href": "/Browse/Trees/318024/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "70.77 m",
+          "1245 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "70.77 m",
+            "href": "/Browse/Trees/274361/Details"
+          },
+          {
+            "text": "1245 cm",
+            "href": "/Browse/Trees/239723/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 268994,
+  "botanicalName": {
+    "text": "Pinus lambertiana",
+    "href": "/Browse/Sites/41649/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Sugar Pine",
+    "href": "/Browse/Sites/41649/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+  },
+  "details": {
+    "Height": "71.02 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "909 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "2073.77",
+    "ENTSPTS": "6951.17",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.70",
+    "Champion points (abbreviated)": "591.00",
+    "Diameter": "289 cm",
+    "Conical volume": "155.77 m³",
+    "General comments": "Known as the \"Roadside Warrior\""
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 10/17/2016",
+      "summary": {
+        "Height": "71.02 m",
+        "Girth": "909 cm"
+      },
+      "details": {
+        "Botanical name": "Pinus lambertiana",
+        "Common name": "Sugar Pine",
+        "Height": "71.02 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "909 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "2073.77",
+        "ENTSPTS": "6951.17",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.70",
+        "Champion points (abbreviated)": "591.00",
+        "Diameter": "289 cm",
+        "Conical volume": "155.77 m³",
+        "General comments": "Known as the \"Roadside Warrior\""
+      },
+      "measurers": "Michael Taylor, Maria Michera, and Brian Fetzer"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "38 09.500, -119 55.668",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Stanislaus National Forest",
+      "href": "/Browse/Sites/41649/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Tuolumne"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,119 @@
+{
+  "botanicalName": "Acer pseudoplatanus",
+  "commonName": "Sycamore Maple",
+  "global": {
+    "maxHeight": {
+      "text": "28.19 m",
+      "href": "/Browse/Trees/280526/Details"
+    },
+    "maxGirth": {
+      "text": "277 cm",
+      "href": "/Browse/Trees/302721/Details"
+    },
+    "maxCrownSpread": {
+      "text": "13.41 m",
+      "href": "/Browse/Trees/313228/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "28.19 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "28.19 m",
+            "href": "/Browse/Trees/280526/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "17.37 m",
+          "277 cm",
+          "10.52 m"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "17.37 m",
+            "href": "/Browse/Trees/302721/Details"
+          },
+          {
+            "text": "277 cm",
+            "href": "/Browse/Trees/302721/Details"
+          },
+          {
+            "text": "10.52 m",
+            "href": "/Browse/Trees/302721/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "26.21 m",
+          "170 cm",
+          "13.41 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "26.21 m",
+            "href": "/Browse/Trees/313228/Details"
+          },
+          {
+            "text": "170 cm",
+            "href": "/Browse/Trees/313228/Details"
+          },
+          {
+            "text": "13.41 m",
+            "href": "/Browse/Trees/313228/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "botanicalName": "Picea abies",
+  "commonName": "Norway Spruce",
+  "global": {
+    "maxHeight": {
+      "text": "164.7'",
+      "href": "/Browse/Trees/283478/Details"
+    },
+    "maxGirth": {
+      "text": "174''",
+      "href": "/Browse/Trees/283479/Details"
+    },
+    "maxCrownSpread": {
+      "text": "67.5'",
+      "href": "/Browse/Trees/313138/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Lazio",
+          "86.8'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lazio",
+            "href": "/Browse/States/151/Details"
+          },
+          {
+            "text": "86.8'",
+            "href": "/Browse/Trees/286424/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/286424/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "150.3'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "150.3'",
+            "href": "/Browse/Trees/250177/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/235558/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "-",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          null,
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/170424/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "145.0'",
+          "161''",
+          "10.6'"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "145.0'",
+            "href": "/Browse/Trees/264822/Details"
+          },
+          {
+            "text": "161''",
+            "href": "/Browse/Trees/266414/Details"
+          },
+          {
+            "text": "10.6'",
+            "href": "/Browse/Trees/266413/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "117.8'",
+          "139''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "117.8'",
+            "href": "/Browse/Trees/227831/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/227792/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/252308/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "122.0'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "122.0'",
+            "href": "/Browse/Trees/162518/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/96888/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "140.9'",
+          "124''",
+          "37.6'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "140.9'",
+            "href": "/Browse/Trees/135980/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/119545/Details"
+          },
+          {
+            "text": "37.6'",
+            "href": "/Browse/Trees/119545/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Podlaskie Voivodeship",
+          "164.7'",
+          "174''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Podlaskie Voivodeship",
+            "href": "/Browse/States/232/Details"
+          },
+          {
+            "text": "164.7'",
+            "href": "/Browse/Trees/283478/Details"
+          },
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/283479/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "80.9'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "80.9'",
+            "href": "/Browse/Trees/315459/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/315494/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "90.5'",
+          "155''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "90.5'",
+            "href": "/Browse/Trees/224544/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/224544/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

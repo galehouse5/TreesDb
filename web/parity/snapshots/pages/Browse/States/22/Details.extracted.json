@@ -1,0 +1,462 @@
+{
+  "stateId": 22,
+  "summary": {
+    "Name": "Missouri",
+    "Code": "MO",
+    "RHI5": "141.62",
+    "RHI10": "136.81",
+    "RHI20": "130.20",
+    "RGI5": "20.57",
+    "RGI10": "18.32",
+    "RGI20": "15.53",
+    "Trees measured": "153",
+    "Last measurement date": "11/26/2022"
+  },
+  "location": {
+    "Coordinates": "38 18.280, -092 26.190",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "57.3'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/States/22/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/22/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "57.3'",
+            "href": "/Browse/Trees/283691/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/283691/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "118.5'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/22/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/22/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "118.5'",
+            "href": "/Browse/Trees/283655/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/283654/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea var. arborea",
+          "Common Serviceberry",
+          "41.5'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea var. arborea",
+            "href": "/Browse/States/22/Species/Amelanchier%20arborea%20var.%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/States/22/Species/Amelanchier%20arborea%20var.%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "41.5'",
+            "href": "/Browse/Trees/171890/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/171890/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "39.0'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/States/22/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/States/22/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/171788/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/171788/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "96.9'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/States/22/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/States/22/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "96.9'",
+            "href": "/Browse/Trees/164195/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/164195/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "131.3'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/States/22/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/States/22/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "131.3'",
+            "href": "/Browse/Trees/283637/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/283685/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya laciniosa",
+          "Shellbark Hickory",
+          "123.1'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya laciniosa",
+            "href": "/Browse/States/22/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shellbark Hickory",
+            "href": "/Browse/States/22/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "123.1'",
+            "href": "/Browse/Trees/283635/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/283635/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "112.3'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/States/22/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/States/22/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "112.3'",
+            "href": "/Browse/Trees/171804/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/171804/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata",
+          "Sugarberry",
+          "93.4'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata",
+            "href": "/Browse/States/22/Species/Celtis%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "Sugarberry",
+            "href": "/Browse/States/22/Species/Celtis%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "93.4'",
+            "href": "/Browse/Trees/171784/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/171784/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. laevigata",
+          "Sugarberry",
+          "113.0'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. laevigata",
+            "href": "/Browse/States/22/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "Sugarberry",
+            "href": "/Browse/States/22/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "113.0'",
+            "href": "/Browse/Trees/283687/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/283642/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 45 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Bellefontaine Cemetery",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bellefontaine Cemetery",
+            "href": "/Browse/Sites/39312/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big Oak Tree State Park",
+          "141.62",
+          "136.81",
+          "19.75",
+          "17.43"
+        ],
+        "links": [
+          {
+            "text": "Big Oak Tree State Park",
+            "href": "/Browse/Sites/39311/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Dr. Edmund A. Babler Memorial State Park",
+          "88.60",
+          "72.03",
+          "11.70",
+          "8.58"
+        ],
+        "links": [
+          {
+            "text": "Dr. Edmund A. Babler Memorial State Park",
+            "href": "/Browse/Sites/39316/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri Botanical Garden",
+          "76.06",
+          "55.76",
+          "9.96",
+          "6.98"
+        ],
+        "links": [
+          {
+            "text": "Missouri Botanical Garden",
+            "href": "/Browse/Sites/39066/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Shaw Nature Preserve",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Shaw Nature Preserve",
+            "href": "/Browse/Sites/39067/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

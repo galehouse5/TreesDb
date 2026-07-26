@@ -1,0 +1,129 @@
+{
+  "siteId": 40220,
+  "summary": {
+    "Name": "Jocassee River Gorges State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "12/01/2003",
+    "Ownership contact": "976 Grassy Ridge Road Sapphire, North Carolina",
+    "General comments": "Gorges State Park has 7,700 aces with additional public acreage in adjoining Pisgah National Forest."
+  },
+  "visits": [
+    {
+      "visited": "12/01/2003",
+      "visitors": "Jesse Riddle",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/whitewater_river_in_jocassee_gor.htm",
+      "comments": "Gorges State Park has 7,700 aces with additional public acreage in adjoining Pisgah National Forest."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "144.0'",
+          "188''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40220/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40220/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "144.0'",
+            "href": "/Browse/Trees/226370/Details"
+          },
+          {
+            "text": "188''",
+            "href": "/Browse/Trees/226371/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "136.6'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40220/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40220/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "136.6'",
+            "href": "/Browse/Trees/226372/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/226372/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 05.483, -082 57.868",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Transylvania"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

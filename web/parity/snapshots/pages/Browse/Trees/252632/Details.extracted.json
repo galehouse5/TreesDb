@@ -1,0 +1,70 @@
+{
+  "treeId": 252632,
+  "botanicalName": {
+    "text": "Pinus virginiana",
+    "href": "/Browse/Sites/40264/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Virginia Pine",
+    "href": "/Browse/Sites/40264/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+  },
+  "details": {
+    "Height": "68.9'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "86''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "35.39",
+    "ENTSPTS": "493.78",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.34",
+    "Champion points (abbreviated)": "154.90",
+    "Diameter": "27''",
+    "Conical volume": "93.9 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 06/17/2010",
+      "summary": {
+        "Height": "68.9'",
+        "Girth": "86''"
+      },
+      "details": {
+        "Botanical name": "Pinus virginiana",
+        "Common name": "Virginia Pine",
+        "Height": "68.9'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "86''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "35.39",
+        "ENTSPTS": "493.78",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.34",
+        "Champion points (abbreviated)": "154.90",
+        "Diameter": "27''",
+        "Conical volume": "93.9 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "James Parton"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 56.947, -082 23.114",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Paris Mountain State Park",
+      "href": "/Browse/Sites/40264/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Greenville"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

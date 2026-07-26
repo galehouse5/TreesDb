@@ -1,0 +1,188 @@
+{
+  "siteId": 40075,
+  "summary": {
+    "Name": "Seneca Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "11/01/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/01/2020",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/31/2016",
+      "visitors": "Tom Howard and Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "297 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "22.40 m",
+          "185 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/40075/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/40075/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "22.40 m",
+            "href": "/Browse/Trees/258896/Details"
+          },
+          {
+            "text": "185 cm",
+            "href": "/Browse/Trees/258896/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus texensis",
+          "Texas Ash",
+          "13.99 m",
+          "262 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus texensis",
+            "href": "/Browse/Sites/40075/Species/Fraxinus%20texensis%20(Texas%20Ash)/Details"
+          },
+          {
+            "text": "Texas Ash",
+            "href": "/Browse/Sites/40075/Species/Fraxinus%20texensis%20(Texas%20Ash)/Details"
+          },
+          {
+            "text": "13.99 m",
+            "href": "/Browse/Trees/218290/Details"
+          },
+          {
+            "text": "262 cm",
+            "href": "/Browse/Trees/218290/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus pungens",
+          "Table Mountain Pine",
+          "9.24 m",
+          "109 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus pungens",
+            "href": "/Browse/Sites/40075/Species/Pinus%20pungens%20(Table%20Mountain%20Pine)/Details"
+          },
+          {
+            "text": "Table Mountain Pine",
+            "href": "/Browse/Sites/40075/Species/Pinus%20pungens%20(Table%20Mountain%20Pine)/Details"
+          },
+          {
+            "text": "9.24 m",
+            "href": "/Browse/Trees/218289/Details"
+          },
+          {
+            "text": "109 cm",
+            "href": "/Browse/Trees/218289/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sassafras albidum",
+          "Sassafras",
+          "-",
+          "284 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sassafras albidum",
+            "href": "/Browse/Sites/40075/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "Sassafras",
+            "href": "/Browse/Sites/40075/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          null,
+          {
+            "text": "284 cm",
+            "href": "/Browse/Trees/258897/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 12.344, -077 37.403",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Monroe"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

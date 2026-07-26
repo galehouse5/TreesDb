@@ -1,0 +1,291 @@
+{
+  "siteId": 41758,
+  "summary": {
+    "Name": "Westwood Tract",
+    "RHI5": "89.36",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.79",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "01/06/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "Tract located river terraces overlooking the Ohio river near Blennerhasset Island."
+  },
+  "visits": [
+    {
+      "visited": "01/06/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Tract located river terraces overlooking the Ohio river near Blennerhasset Island."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "92.7'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/41758/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/41758/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "92.7'",
+            "href": "/Browse/Trees/272714/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/272715/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "77.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/41758/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/41758/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "77.4'",
+            "href": "/Browse/Trees/272719/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "79.5'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/41758/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/41758/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "79.5'",
+            "href": "/Browse/Trees/272716/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/272716/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "75.3'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/41758/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/41758/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "75.3'",
+            "href": "/Browse/Trees/272713/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/272713/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra var. rubra",
+          "Northern Red Oak",
+          "106.9'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra var. rubra",
+            "href": "/Browse/Sites/41758/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41758/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "106.9'",
+            "href": "/Browse/Trees/272710/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/272711/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana var. americana",
+          "American Basswood",
+          "78.6'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana var. americana",
+            "href": "/Browse/Sites/41758/Species/Tilia%20americana%20var.%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/41758/Species/Tilia%20americana%20var.%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "78.6'",
+            "href": "/Browse/Trees/272717/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/272718/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus americana",
+          "American Elm",
+          "89.1'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus americana",
+            "href": "/Browse/Sites/41758/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "American Elm",
+            "href": "/Browse/Sites/41758/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "89.1'",
+            "href": "/Browse/Trees/272712/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/272712/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vitis spp.",
+          "Grape",
+          "-",
+          "8''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vitis spp.",
+            "href": "/Browse/Sites/41758/Species/Vitis%20spp.%20(Grape)/Details"
+          },
+          {
+            "text": "Grape",
+            "href": "/Browse/Sites/41758/Species/Vitis%20spp.%20(Grape)/Details"
+          },
+          null,
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/272720/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 15.903, -081 35.583",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Wood"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

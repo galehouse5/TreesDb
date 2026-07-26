@@ -1,0 +1,185 @@
+{
+  "siteId": 40851,
+  "summary": {
+    "Name": "Bennett Homestead",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "11/28/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/28/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/bennett_homestead_lowndesville.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "31.39 m",
+          "335 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/40851/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/40851/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "31.39 m",
+            "href": "/Browse/Trees/238192/Details"
+          },
+          {
+            "text": "335 cm",
+            "href": "/Browse/Trees/238192/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "24.26 m",
+          "239 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/40851/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/40851/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "24.26 m",
+            "href": "/Browse/Trees/238190/Details"
+          },
+          {
+            "text": "239 cm",
+            "href": "/Browse/Trees/238190/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "25.27 m",
+          "401 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40851/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40851/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "25.27 m",
+            "href": "/Browse/Trees/238191/Details"
+          },
+          {
+            "text": "401 cm",
+            "href": "/Browse/Trees/238191/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus stellata",
+          "Post Oak",
+          "23.77 m",
+          "284 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus stellata",
+            "href": "/Browse/Sites/40851/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "Post Oak",
+            "href": "/Browse/Sites/40851/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "23.77 m",
+            "href": "/Browse/Trees/238193/Details"
+          },
+          {
+            "text": "284 cm",
+            "href": "/Browse/Trees/238193/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 12.814, -082 38.940",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Abbeville"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

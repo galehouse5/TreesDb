@@ -1,0 +1,148 @@
+{
+  "siteId": 40731,
+  "summary": {
+    "Name": "Franklin Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "08/04/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "527 Acres Trees were measured in the \"Wilderness\" section."
+  },
+  "visits": [
+    {
+      "visited": "08/04/2006",
+      "visitors": "Andrew Joslin",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mass/franklin_park.htm",
+      "comments": "527 Acres Trees were measured in the \"Wilderness\" section."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "-",
+          "187''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40731/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40731/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "187''",
+            "href": "/Browse/Trees/235724/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "-",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40731/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40731/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          null,
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/235723/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sassafras albidum",
+          "Sassafras",
+          "-",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sassafras albidum",
+            "href": "/Browse/Sites/40731/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "Sassafras",
+            "href": "/Browse/Sites/40731/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          null,
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/235722/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 18.169, -071 05.262",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Suffolk"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

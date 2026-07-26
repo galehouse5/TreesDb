@@ -1,0 +1,179 @@
+{
+  "siteId": 41879,
+  "summary": {
+    "Name": "Calpine Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "10/07/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/07/2015",
+      "visitors": "Duncan Kennedy",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Calocedrus decurrens",
+          "Incense Cedar",
+          "-",
+          "563 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Calocedrus decurrens",
+            "href": "/Browse/Sites/41879/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "Incense Cedar",
+            "href": "/Browse/Sites/41879/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          null,
+          {
+            "text": "563 cm",
+            "href": "/Browse/Trees/280611/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "45.11 m",
+          "762 cm",
+          "7.90 m"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/Sites/41879/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/Sites/41879/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "45.11 m",
+            "href": "/Browse/Trees/280616/Details"
+          },
+          {
+            "text": "762 cm",
+            "href": "/Browse/Trees/280616/Details"
+          },
+          {
+            "text": "7.90 m",
+            "href": "/Browse/Trees/280617/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. benthamiana",
+          "Ponderosa Pine",
+          "-",
+          "574 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. benthamiana",
+            "href": "/Browse/Sites/41879/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/41879/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "574 cm",
+            "href": "/Browse/Trees/280618/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "-",
+          "670 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/41879/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/41879/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          null,
+          {
+            "text": "670 cm",
+            "href": "/Browse/Trees/280615/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 40.078, -120 26.297",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Sierra"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

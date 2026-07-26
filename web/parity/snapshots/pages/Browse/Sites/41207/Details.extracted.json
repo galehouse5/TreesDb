@@ -1,0 +1,341 @@
+{
+  "siteId": 41207,
+  "summary": {
+    "Name": "North Carolina Single Tree Sites",
+    "RHI5": "148.74",
+    "RHI10": "128.74",
+    "RHI20": "94.34",
+    "RGI5": "20.80",
+    "RGI10": "17.78",
+    "RGI20": "12.74",
+    "Trees measured": "47",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies fraseri",
+          "Fraser Fir",
+          "62.2'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies fraseri",
+            "href": "/Browse/Sites/41207/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "Fraser Fir",
+            "href": "/Browse/Sites/41207/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "62.2'",
+            "href": "/Browse/Trees/252334/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/252334/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "70.7'",
+          "190''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/41207/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/41207/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "70.7'",
+            "href": "/Browse/Trees/252343/Details"
+          },
+          {
+            "text": "190''",
+            "href": "/Browse/Trees/252316/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "49.3'",
+          "153''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/41207/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/41207/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "49.3'",
+            "href": "/Browse/Trees/252321/Details"
+          },
+          {
+            "text": "153''",
+            "href": "/Browse/Trees/252321/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "-",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/Sites/41207/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/Sites/41207/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          null,
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/252329/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "-",
+          "187''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/41207/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/41207/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          null,
+          {
+            "text": "187''",
+            "href": "/Browse/Trees/252323/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "109.6'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41207/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41207/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "109.6'",
+            "href": "/Browse/Trees/252338/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/252338/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "167.0'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41207/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41207/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "167.0'",
+            "href": "/Browse/Trees/252341/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/252311/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "-",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/41207/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/41207/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          null,
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/252339/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crateagus spp.",
+          "Hawthorn",
+          "19.0'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crateagus spp.",
+            "href": "/Browse/Sites/41207/Species/Crateagus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/41207/Species/Crateagus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "19.0'",
+            "href": "/Browse/Trees/252327/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/252328/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "104.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/41207/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/41207/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "104.9'",
+            "href": "/Browse/Trees/252347/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 29 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 46.823, -078 38.346",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public and Private",
+      "County": "Wake"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

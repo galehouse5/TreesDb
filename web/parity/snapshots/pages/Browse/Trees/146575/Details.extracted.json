@@ -1,0 +1,70 @@
+{
+  "treeId": 146575,
+  "botanicalName": {
+    "text": "Tsuga canadensis",
+    "href": "/Browse/Sites/38535/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+  },
+  "commonName": {
+    "text": "Eastern Hemlock",
+    "href": "/Browse/Sites/38535/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+  },
+  "details": {
+    "Height": "126.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "120''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "126.50",
+    "ENTSPTS": "1265.00",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.30",
+    "Champion points (abbreviated)": "246.50",
+    "Diameter": "38''",
+    "Conical volume": "335.6 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 09/22/2006",
+      "summary": {
+        "Height": "126.5'",
+        "Girth": "120''"
+      },
+      "details": {
+        "Botanical name": "Tsuga canadensis",
+        "Common name": "Eastern Hemlock",
+        "Height": "126.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "120''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "126.50",
+        "ENTSPTS": "1265.00",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.30",
+        "Champion points (abbreviated)": "246.50",
+        "Diameter": "38''",
+        "Conical volume": "335.6 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Dale Luthringer"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 19.889, -079 12.874",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "CFSP-Seneca Forest Special Management Area",
+      "href": "/Browse/Sites/38535/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Clarion"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

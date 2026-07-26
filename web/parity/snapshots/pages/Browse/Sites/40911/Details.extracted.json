@@ -1,0 +1,185 @@
+{
+  "siteId": 40911,
+  "summary": {
+    "Name": "Clark Lake",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "14",
+    "Last measurement date": "09/13/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/13/2005",
+      "visitors": "Don Bragg",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/michigan/katherine/katherine_lake.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "77.0'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40911/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40911/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/239977/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/239977/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus nigra",
+          "Black Ash",
+          "89.5'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus nigra",
+            "href": "/Browse/Sites/40911/Species/Fraxinus%20nigra%20(Black%20Ash)/Details"
+          },
+          {
+            "text": "Black Ash",
+            "href": "/Browse/Sites/40911/Species/Fraxinus%20nigra%20(Black%20Ash)/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/239982/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/239982/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "133.0'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40911/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40911/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/239986/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/239983/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "90.4'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40911/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40911/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "90.4'",
+            "href": "/Browse/Trees/239978/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/239978/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "46 14.314, -089 19.700",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Gogebic"
+    },
+    "state": {
+      "text": "Michigan (US)",
+      "href": "/Browse/States/20/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

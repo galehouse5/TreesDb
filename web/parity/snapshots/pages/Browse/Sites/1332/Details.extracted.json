@@ -1,0 +1,182 @@
+{
+  "siteId": 1332,
+  "summary": {
+    "Name": "Saguaro NP - West",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "02/20/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/20/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carnegiea gigantea",
+          "Saguaro",
+          "42.3'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carnegiea gigantea",
+            "href": "/Browse/Sites/1332/Species/Carnegiea%20gigantea%20(Saguaro)/Details"
+          },
+          {
+            "text": "Saguaro",
+            "href": "/Browse/Sites/1332/Species/Carnegiea%20gigantea%20(Saguaro)/Details"
+          },
+          {
+            "text": "42.3'",
+            "href": "/Browse/Trees/24662/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/24662/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fouquieria splendens",
+          "Ocotillo",
+          "19.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fouquieria splendens",
+            "href": "/Browse/Sites/1332/Species/Fouquieria%20splendens%20(Ocotillo)/Details"
+          },
+          {
+            "text": "Ocotillo",
+            "href": "/Browse/Sites/1332/Species/Fouquieria%20splendens%20(Ocotillo)/Details"
+          },
+          {
+            "text": "19.9'",
+            "href": "/Browse/Trees/24660/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Olneya tesota",
+          "Desert Ironwood",
+          "20.9'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Olneya tesota",
+            "href": "/Browse/Sites/1332/Species/Olneya%20tesota%20(Desert%20Ironwood)/Details"
+          },
+          {
+            "text": "Desert Ironwood",
+            "href": "/Browse/Sites/1332/Species/Olneya%20tesota%20(Desert%20Ironwood)/Details"
+          },
+          {
+            "text": "20.9'",
+            "href": "/Browse/Trees/24665/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/24665/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Parkinsonia microphylla",
+          "Yellow Paloverde",
+          "20.1'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Parkinsonia microphylla",
+            "href": "/Browse/Sites/1332/Species/Parkinsonia%20microphylla%20(Yellow%20Paloverde)/Details"
+          },
+          {
+            "text": "Yellow Paloverde",
+            "href": "/Browse/Sites/1332/Species/Parkinsonia%20microphylla%20(Yellow%20Paloverde)/Details"
+          },
+          {
+            "text": "20.1'",
+            "href": "/Browse/Trees/24667/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/24666/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 15.256, -111 11.833",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Park",
+      "County": "Pima"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

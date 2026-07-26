@@ -1,0 +1,182 @@
+{
+  "siteId": 41630,
+  "summary": {
+    "Name": "El Dorado National Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "09/14/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "956,724 acres in El Dorado, Amador, Alpine, Placer and Douglas: NV counties. Some measurements were made 11/8/2011"
+  },
+  "visits": [
+    {
+      "visited": "09/14/2011",
+      "visitors": "Michael Taylor and Mike Hanuschik",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "956,724 acres in El Dorado, Amador, Alpine, Placer and Douglas: NV counties. Some measurements were made 11/8/2011"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus jeffreyi",
+          "Jeffrey Pine",
+          "-",
+          "264''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus jeffreyi",
+            "href": "/Browse/Sites/41630/Species/Pinus%20jeffreyi%20(Jeffrey%20Pine)/Details"
+          },
+          {
+            "text": "Jeffrey Pine",
+            "href": "/Browse/Sites/41630/Species/Pinus%20jeffreyi%20(Jeffrey%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "264''",
+            "href": "/Browse/Trees/268758/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "215.0'",
+          "320''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/Sites/41630/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/Sites/41630/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "215.0'",
+            "href": "/Browse/Trees/268755/Details"
+          },
+          {
+            "text": "320''",
+            "href": "/Browse/Trees/268755/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus monticola",
+          "Western White Pine",
+          "-",
+          "311''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus monticola",
+            "href": "/Browse/Sites/41630/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "Western White Pine",
+            "href": "/Browse/Sites/41630/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "311''",
+            "href": "/Browse/Trees/268757/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. benthamiana",
+          "Ponderosa Pine",
+          "235.0'",
+          "324''",
+          "70.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. benthamiana",
+            "href": "/Browse/Sites/41630/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/41630/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "235.0'",
+            "href": "/Browse/Trees/268760/Details"
+          },
+          {
+            "text": "324''",
+            "href": "/Browse/Trees/268760/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/268762/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 47.088, -120 38.431",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "El Dorado"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

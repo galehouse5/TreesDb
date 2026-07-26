@@ -1,0 +1,191 @@
+{
+  "botanicalName": "Crataegus spp.",
+  "commonName": "Hawthorn",
+  "global": {
+    "maxHeight": {
+      "text": "44.4'",
+      "href": "/Browse/Trees/139135/Details"
+    },
+    "maxGirth": {
+      "text": "78''",
+      "href": "/Browse/Trees/139333/Details"
+    },
+    "maxCrownSpread": {
+      "text": "48.5'",
+      "href": "/Browse/Trees/140034/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "26.6'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "26.6'",
+            "href": "/Browse/Trees/242680/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/242680/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "41.7'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "41.7'",
+            "href": "/Browse/Trees/243554/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/243394/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "30.6'",
+          "64''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "30.6'",
+            "href": "/Browse/Trees/302709/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/302709/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/302709/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "44.4'",
+          "78''",
+          "48.5'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "44.4'",
+            "href": "/Browse/Trees/139135/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/139333/Details"
+          },
+          {
+            "text": "48.5'",
+            "href": "/Browse/Trees/140034/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Texas",
+          "42.3'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Texas",
+            "href": "/Browse/States/41/Details"
+          },
+          {
+            "text": "42.3'",
+            "href": "/Browse/Trees/320681/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/320681/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "31.4'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "31.4'",
+            "href": "/Browse/Trees/203681/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/203681/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

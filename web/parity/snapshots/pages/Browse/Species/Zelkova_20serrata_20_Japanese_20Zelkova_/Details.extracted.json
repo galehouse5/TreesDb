@@ -1,0 +1,165 @@
+{
+  "botanicalName": "Zelkova serrata",
+  "commonName": "Japanese Zelkova",
+  "global": {
+    "maxHeight": {
+      "text": "94.4'",
+      "href": "/Browse/Trees/274984/Details"
+    },
+    "maxGirth": {
+      "text": "266''",
+      "href": "/Browse/Trees/131648/Details"
+    },
+    "maxCrownSpread": {
+      "text": "75.0'",
+      "href": "/Browse/Trees/315247/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "94.4'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "94.4'",
+            "href": "/Browse/Trees/274984/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/274984/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "67.3'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "67.3'",
+            "href": "/Browse/Trees/282325/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/282325/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "36.8'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "36.8'",
+            "href": "/Browse/Trees/272977/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/272978/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "92.0'",
+          "266''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "92.0'",
+            "href": "/Browse/Trees/131648/Details"
+          },
+          {
+            "text": "266''",
+            "href": "/Browse/Trees/131648/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "66.1'",
+          "152''",
+          "75.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "66.1'",
+            "href": "/Browse/Trees/315246/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/315247/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/315247/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

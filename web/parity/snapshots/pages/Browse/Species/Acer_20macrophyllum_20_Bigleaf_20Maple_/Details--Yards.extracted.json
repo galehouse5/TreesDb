@@ -1,0 +1,109 @@
+{
+  "botanicalName": "Acer macrophyllum",
+  "commonName": "Bigleaf Maple",
+  "global": {
+    "maxHeight": {
+      "text": "53.47 yd",
+      "href": "/Browse/Trees/269083/Details"
+    },
+    "maxGirth": {
+      "text": "145''",
+      "href": "/Browse/Trees/296871/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "53.47 yd",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "53.47 yd",
+            "href": "/Browse/Trees/269083/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/269083/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oregon",
+          "26.37 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon",
+            "href": "/Browse/States/35/Details"
+          },
+          {
+            "text": "26.37 yd",
+            "href": "/Browse/Trees/296858/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "47.40 yd",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "47.40 yd",
+            "href": "/Browse/Trees/296869/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/296871/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

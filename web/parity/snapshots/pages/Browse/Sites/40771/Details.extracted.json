@@ -1,0 +1,207 @@
+{
+  "siteId": 40771,
+  "summary": {
+    "Name": "Clark Ridge",
+    "RHI5": "124.36",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.80",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "03/19/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/19/2004",
+      "visitors": "John Eichholz",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mass_mtsf/mtsf_clark_ridge.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "129.7'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40771/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40771/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "129.7'",
+            "href": "/Browse/Trees/236057/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/236058/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "121.4'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40771/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40771/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "121.4'",
+            "href": "/Browse/Trees/236051/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/236051/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "135.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40771/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40771/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "135.0'",
+            "href": "/Browse/Trees/236054/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "120.7'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/40771/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/40771/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "120.7'",
+            "href": "/Browse/Trees/236052/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/236052/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus americana",
+          "American Elm",
+          "115.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus americana",
+            "href": "/Browse/Sites/40771/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "American Elm",
+            "href": "/Browse/Sites/40771/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "115.0'",
+            "href": "/Browse/Trees/236055/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 38.303, -072 57.159",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

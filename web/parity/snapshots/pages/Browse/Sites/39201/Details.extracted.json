@@ -1,0 +1,210 @@
+{
+  "siteId": 39201,
+  "summary": {
+    "Name": "Seymour Woods State Nature Preserve",
+    "RHI5": "101.40",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "4.89",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "02/22/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "714 Winter Road, Delaware, Ohio 115 Acres"
+  },
+  "visits": [
+    {
+      "visited": "02/22/2016",
+      "visitors": "Rand Brown",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "714 Winter Road, Delaware, Ohio 115 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "102.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/39201/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/39201/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "102.0'",
+            "href": "/Browse/Trees/169297/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "87.5'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/39201/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/39201/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "87.5'",
+            "href": "/Browse/Trees/169295/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/169293/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "120.5'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/39201/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/39201/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "120.5'",
+            "href": "/Browse/Trees/169296/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/169296/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus sylvestris",
+          "Scots Pine",
+          "90.0'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus sylvestris",
+            "href": "/Browse/Sites/39201/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "Scots Pine",
+            "href": "/Browse/Sites/39201/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/169291/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/169290/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "107.0'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/39201/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/39201/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/169298/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/169298/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 13.791, -083 03.304",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public -state",
+      "County": "Delaware"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

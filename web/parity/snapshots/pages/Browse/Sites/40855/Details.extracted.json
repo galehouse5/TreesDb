@@ -1,0 +1,129 @@
+{
+  "siteId": 40855,
+  "summary": {
+    "Name": "Philips Property",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "04/03/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/03/2009",
+      "visitors": "Tyler Philips",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/cheraw_pondpine.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus palustris",
+          "Longleaf Pine",
+          "92.3'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus palustris",
+            "href": "/Browse/Sites/40855/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "Longleaf Pine",
+            "href": "/Browse/Sites/40855/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "92.3'",
+            "href": "/Browse/Trees/238556/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/238557/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus serotina",
+          "Pond Pine",
+          "95.7'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus serotina",
+            "href": "/Browse/Sites/40855/Species/Pinus%20serotina%20(Pond%20Pine)/Details"
+          },
+          {
+            "text": "Pond Pine",
+            "href": "/Browse/Sites/40855/Species/Pinus%20serotina%20(Pond%20Pine)/Details"
+          },
+          {
+            "text": "95.7'",
+            "href": "/Browse/Trees/238552/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/238554/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 41.989, -079 53.350",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Chesterfield"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

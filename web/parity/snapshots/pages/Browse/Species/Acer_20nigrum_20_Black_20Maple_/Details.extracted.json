@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Acer nigrum",
+  "commonName": "Black Maple",
+  "global": {
+    "maxHeight": {
+      "text": "126.2'",
+      "href": "/Browse/Trees/221847/Details"
+    },
+    "maxGirth": {
+      "text": "163''",
+      "href": "/Browse/Trees/313062/Details"
+    },
+    "maxCrownSpread": {
+      "text": "84.0'",
+      "href": "/Browse/Trees/313062/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Kentucky",
+          "71.5'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "71.5'",
+            "href": "/Browse/Trees/297769/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/297769/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "126.2'",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "126.2'",
+            "href": "/Browse/Trees/221847/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/186281/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "118.4'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "118.4'",
+            "href": "/Browse/Trees/63696/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/17336/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "82.9'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "82.9'",
+            "href": "/Browse/Trees/299289/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/299289/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "110.7'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "110.7'",
+            "href": "/Browse/Trees/168545/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/168546/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "99.8'",
+          "163''",
+          "84.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "99.8'",
+            "href": "/Browse/Trees/292500/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/313062/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/313062/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

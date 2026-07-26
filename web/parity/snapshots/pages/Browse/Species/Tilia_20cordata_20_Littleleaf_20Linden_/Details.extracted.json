@@ -1,0 +1,211 @@
+{
+  "botanicalName": "Tilia cordata",
+  "commonName": "Littleleaf Linden",
+  "global": {
+    "maxHeight": {
+      "text": "105.0'",
+      "href": "/Browse/Trees/283467/Details"
+    },
+    "maxGirth": {
+      "text": "230''",
+      "href": "/Browse/Trees/283467/Details"
+    },
+    "maxCrownSpread": {
+      "text": "54.0'",
+      "href": "/Browse/Trees/313256/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "66.7'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "66.7'",
+            "href": "/Browse/Trees/235302/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/235302/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lesser Poland Voivodeship",
+          "71.4'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lesser Poland Voivodeship",
+            "href": "/Browse/States/225/Details"
+          },
+          {
+            "text": "71.4'",
+            "href": "/Browse/Trees/283509/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/283509/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "89.5'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/158828/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/158828/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "95.5'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "95.5'",
+            "href": "/Browse/Trees/260006/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/260006/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Podlaskie Voivodeship",
+          "105.0'",
+          "230''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Podlaskie Voivodeship",
+            "href": "/Browse/States/232/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/283467/Details"
+          },
+          {
+            "text": "230''",
+            "href": "/Browse/Trees/283467/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Bohemian Region",
+          "39.4'",
+          "161''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Bohemian Region",
+            "href": "/Browse/States/258/Details"
+          },
+          {
+            "text": "39.4'",
+            "href": "/Browse/Trees/284686/Details"
+          },
+          {
+            "text": "161''",
+            "href": "/Browse/Trees/284686/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "75.0'",
+          "160''",
+          "54.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/313256/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/315248/Details"
+          },
+          {
+            "text": "54.0'",
+            "href": "/Browse/Trees/313256/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

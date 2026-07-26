@@ -1,0 +1,173 @@
+{
+  "siteId": 42022,
+  "summary": {
+    "Name": "Jardine Majorelle-Yves Saint Laurent Mansion",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "11/07/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/07/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Bismarckia nobilis",
+          "Bismarck Palm",
+          "17.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bismarckia nobilis",
+            "href": "/Browse/Sites/42022/Species/Bismarckia%20nobilis%20(Bismarck%20Palm)/Details"
+          },
+          {
+            "text": "Bismarck Palm",
+            "href": "/Browse/Sites/42022/Species/Bismarckia%20nobilis%20(Bismarck%20Palm)/Details"
+          },
+          {
+            "text": "17.5'",
+            "href": "/Browse/Trees/291325/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hedyscepe canterburyana",
+          "Big Mountain Palm",
+          "22.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hedyscepe canterburyana",
+            "href": "/Browse/Sites/42022/Species/Hedyscepe%20canterburyana%20(Big%20Mountain%20Palm)/Details"
+          },
+          {
+            "text": "Big Mountain Palm",
+            "href": "/Browse/Sites/42022/Species/Hedyscepe%20canterburyana%20(Big%20Mountain%20Palm)/Details"
+          },
+          {
+            "text": "22.5'",
+            "href": "/Browse/Trees/291326/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Phoenix dactylifera",
+          "Date Palm",
+          "58.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Phoenix dactylifera",
+            "href": "/Browse/Sites/42022/Species/Phoenix%20dactylifera%20(Date%20Palm)/Details"
+          },
+          {
+            "text": "Date Palm",
+            "href": "/Browse/Sites/42022/Species/Phoenix%20dactylifera%20(Date%20Palm)/Details"
+          },
+          {
+            "text": "58.6'",
+            "href": "/Browse/Trees/291322/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washingtonia robusta",
+          "Washington Fan Palm",
+          "79.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washingtonia robusta",
+            "href": "/Browse/Sites/42022/Species/Washingtonia%20robusta%20(Washington%20Fan%20Palm)/Details"
+          },
+          {
+            "text": "Washington Fan Palm",
+            "href": "/Browse/Sites/42022/Species/Washingtonia%20robusta%20(Washington%20Fan%20Palm)/Details"
+          },
+          {
+            "text": "79.8'",
+            "href": "/Browse/Trees/291324/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "31 38.472, -008 00.194",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Marrakesh"
+    },
+    "state": {
+      "text": "Marrakech-Safi, Morocco (MA)",
+      "href": "/Browse/States/279/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

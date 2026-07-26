@@ -1,0 +1,83 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+defaults:
+  run:
+    working-directory: web
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: treesdb
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready -U postgres"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    env:
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/treesdb
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # web/package.json has no "packageManager" field (checked at the time
+      # this workflow was written), so pnpm is provisioned via
+      # pnpm/action-setup rather than corepack. If a packageManager field is
+      # added later, prefer switching this to `corepack enable`.
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      # Schema + migrations land from a parallel task (P0-02). Guard on
+      # whether any migration SQL has been committed yet so this workflow
+      # doesn't fail the build in the meantime; once migrations exist these
+      # steps run for real and vitest's db/**/*.test.ts suites get a live,
+      # seeded database to run against.
+      - name: Run migrations
+        if: hashFiles('web/db/migrations/**/*.sql') != ''
+        run: pnpm db:migrate
+
+      - name: Install postgresql-client
+        if: hashFiles('web/db/migrations/**/*.sql') != ''
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Seed database
+        if: hashFiles('web/db/migrations/**/*.sql') != ''
+        run: psql "$DATABASE_URL" -f db/seed/seed.sql
+
+      - name: Test
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build

@@ -1,0 +1,187 @@
+{
+  "botanicalName": "Abies concolor var. concolor",
+  "commonName": "White Fir",
+  "global": {
+    "maxHeight": {
+      "text": "104.0'",
+      "href": "/Browse/Trees/317991/Details"
+    },
+    "maxGirth": {
+      "text": "67''",
+      "href": "/Browse/Trees/243132/Details"
+    }
+  },
+  "state": {
+    "state": {
+      "text": "New Mexico (US)",
+      "href": "/Browse/States/30/Details"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "104.0'",
+        "href": "/Browse/Trees/317991/Details"
+      }
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New Mexico",
+          "104.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "104.0'",
+            "href": "/Browse/Trees/317991/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "76.3'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "76.3'",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedSitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Hyde Memorial Park",
+          "98.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hyde Memorial Park",
+            "href": "/Browse/Sites/42289/Details"
+          },
+          {
+            "text": "98.3'",
+            "href": "/Browse/Trees/318002/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kit Carson National Forest",
+          "104.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kit Carson National Forest",
+            "href": "/Browse/Sites/42288/Details"
+          },
+          {
+            "text": "104.0'",
+            "href": "/Browse/Trees/317991/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Valles Caldera National Preserve",
+          "103.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Valles Caldera National Preserve",
+            "href": "/Browse/Sites/42348/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/320671/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

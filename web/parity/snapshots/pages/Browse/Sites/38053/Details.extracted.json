@@ -1,0 +1,362 @@
+{
+  "siteId": 38053,
+  "summary": {
+    "Name": "Glens Natural Area",
+    "RHI5": "139.42",
+    "RHI10": "125.99",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.65",
+    "RGI10": "10.06",
+    "RGI20": "(not enough data)",
+    "Trees measured": "68",
+    "Last measurement date": "12/06/2013",
+    "Ownership contact": "Ricketts State Park 696 SR487 Benton, Pa.",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/06/2013",
+      "visitors": "T. C. Mazar",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "09/15/2004",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/rickett.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/06/2003",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/rickett.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "107.6'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38053/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38053/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "107.6'",
+            "href": "/Browse/Trees/128990/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/128990/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "115.8'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/38053/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38053/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "115.8'",
+            "href": "/Browse/Trees/168168/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/128993/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "101.7'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/38053/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/38053/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "101.7'",
+            "href": "/Browse/Trees/129005/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/129005/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "81.1'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/38053/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/38053/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "81.1'",
+            "href": "/Browse/Trees/128967/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/128967/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "87.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/38053/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/38053/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "87.0'",
+            "href": "/Browse/Trees/168185/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "105.9'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/38053/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/38053/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "105.9'",
+            "href": "/Browse/Trees/128992/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/128992/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "116.8'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38053/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38053/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "116.8'",
+            "href": "/Browse/Trees/168158/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/168158/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "139.7'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38053/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38053/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "139.7'",
+            "href": "/Browse/Trees/168177/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/168174/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "152.9'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38053/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38053/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "152.9'",
+            "href": "/Browse/Trees/168172/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/168183/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "115.8'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/38053/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/38053/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "115.8'",
+            "href": "/Browse/Trees/128972/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/128971/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 17.967, -076 16.462",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - State Park",
+      "County": "Luzerne"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Clusia rosea",
+  "commonName": "Scotch Attorney",
+  "global": {
+    "maxHeight": {
+      "text": "30.1'",
+      "href": "/Browse/Trees/213136/Details"
+    },
+    "maxGirth": {
+      "text": "46''",
+      "href": "/Browse/Trees/213136/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Guanacaste",
+          "30.1'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Guanacaste",
+            "href": "/Browse/States/119/Details"
+          },
+          {
+            "text": "30.1'",
+            "href": "/Browse/Trees/213136/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/213136/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

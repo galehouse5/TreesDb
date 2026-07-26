@@ -1,0 +1,162 @@
+{
+  "stateId": 120,
+  "summary": {
+    "Name": "Heredia",
+    "Code": "HE",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "02/12/2014"
+  },
+  "location": {
+    "Coordinates": "10 22.500, -083 57.000",
+    "Country": "Costa Rica"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cecropia obtusifolia",
+          "Guarumo",
+          "24.07 yd",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cecropia obtusifolia",
+            "href": "/Browse/States/120/Species/Cecropia%20obtusifolia%20(Guarumo)/Details"
+          },
+          {
+            "text": "Guarumo",
+            "href": "/Browse/States/120/Species/Cecropia%20obtusifolia%20(Guarumo)/Details"
+          },
+          {
+            "text": "24.07 yd",
+            "href": "/Browse/Trees/227249/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/227249/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Luehea speciosa",
+          "Luehea",
+          "25.57 yd",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Luehea speciosa",
+            "href": "/Browse/States/120/Species/Luehea%20speciosa%20(Luehea)/Details"
+          },
+          {
+            "text": "Luehea",
+            "href": "/Browse/States/120/Species/Luehea%20speciosa%20(Luehea)/Details"
+          },
+          {
+            "text": "25.57 yd",
+            "href": "/Browse/Trees/227250/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/227250/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Heridia Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Heridia Single Tree Sites",
+            "href": "/Browse/Sites/40274/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

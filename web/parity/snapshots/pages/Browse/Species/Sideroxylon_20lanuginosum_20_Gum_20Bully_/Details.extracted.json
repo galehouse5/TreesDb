@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Sideroxylon lanuginosum",
+  "commonName": "Gum Bully",
+  "global": {
+    "maxHeight": {
+      "text": "44.1'",
+      "href": "/Browse/Trees/241844/Details"
+    },
+    "maxGirth": {
+      "text": "25''",
+      "href": "/Browse/Trees/241844/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "44.1'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "44.1'",
+            "href": "/Browse/Trees/241844/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/241844/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "30.2'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "30.2'",
+            "href": "/Browse/Trees/234706/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/234706/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "35.3'",
+          "9''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "35.3'",
+            "href": "/Browse/Trees/252707/Details"
+          },
+          {
+            "text": "9''",
+            "href": "/Browse/Trees/252707/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "siteId": 40700,
+  "summary": {
+    "Name": "Piedmont Park",
+    "RHI5": "40.887",
+    "RHI10": "37.420",
+    "RHI20": "(not enough data)",
+    "RGI5": "4.522",
+    "RGI10": "3.667",
+    "RGI20": "(not enough data)",
+    "Trees measured": "23",
+    "Last measurement date": "04/17/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "185 Acre Park"
+  },
+  "visits": [
+    {
+      "visited": "04/17/2005",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/atlanta_trees.htm",
+      "comments": "185 Acre Park"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "34.50 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40700/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40700/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "34.50 yd",
+            "href": "/Browse/Trees/235290/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedrus deodara",
+          "Deodar Cedar",
+          "29.30 yd",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus deodara",
+            "href": "/Browse/Sites/40700/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "Deodar Cedar",
+            "href": "/Browse/Sites/40700/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "29.30 yd",
+            "href": "/Browse/Trees/235286/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/235286/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "12.17 yd",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/40700/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/40700/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "12.17 yd",
+            "href": "/Browse/Trees/235288/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/235288/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "34.87 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40700/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40700/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "34.87 yd",
+            "href": "/Browse/Trees/235289/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "29.10 yd",
+          "167''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/40700/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/40700/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "29.10 yd",
+            "href": "/Browse/Trees/235287/Details"
+          },
+          {
+            "text": "167''",
+            "href": "/Browse/Trees/235287/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "41.57 yd",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/40700/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/40700/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "41.57 yd",
+            "href": "/Browse/Trees/235298/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/235308/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "45.53 yd",
+          "180''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40700/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40700/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "45.53 yd",
+            "href": "/Browse/Trees/235301/Details"
+          },
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/235299/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Paulownia tomentosa",
+          "Princesstree",
+          "-",
+          "156''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Paulownia tomentosa",
+            "href": "/Browse/Sites/40700/Species/Paulownia%20tomentosa%20(Princesstree)/Details"
+          },
+          {
+            "text": "Princesstree",
+            "href": "/Browse/Sites/40700/Species/Paulownia%20tomentosa%20(Princesstree)/Details"
+          },
+          null,
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/235306/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "39.53 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/40700/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/40700/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "39.53 yd",
+            "href": "/Browse/Trees/235297/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "29.83 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/40700/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/40700/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "29.83 yd",
+            "href": "/Browse/Trees/235307/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 17 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 47.312, -084 22.371",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Fulton"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

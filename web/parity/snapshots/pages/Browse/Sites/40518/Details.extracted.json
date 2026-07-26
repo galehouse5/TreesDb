@@ -1,0 +1,371 @@
+{
+  "siteId": 40518,
+  "summary": {
+    "Name": "Niagra Glen Nature Reserve",
+    "RHI5": "98.26",
+    "RHI10": "84.90",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.00",
+    "RGI10": "8.05",
+    "RGI20": "(not enough data)",
+    "Trees measured": "29",
+    "Last measurement date": "05/02/2006",
+    "Ownership contact": "3050 Niagra Parkway Niagra Falls, Ontario, Canada",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/02/2006",
+      "visitors": "Dale Luthringer, Bruce Kershner, and Gerry Horowitz",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/western_ny/western_ny.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/14/2004",
+      "visitors": "Bruce Kershner",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/canada/ontario/niagra_escarpment.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "07/02/2003",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/canada/ontario/niagara_gorge.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/15/2002",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/canada/ontario/niagara_gorge.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "84.6'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40518/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40518/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "84.6'",
+            "href": "/Browse/Trees/232992/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/232992/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "84.1'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40518/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40518/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "84.1'",
+            "href": "/Browse/Trees/232988/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/232989/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "47.1'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/40518/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/40518/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "47.1'",
+            "href": "/Browse/Trees/232966/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/232966/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "68.8'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/40518/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/40518/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "68.8'",
+            "href": "/Browse/Trees/233004/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/232995/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "87.1'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/40518/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/40518/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "87.1'",
+            "href": "/Browse/Trees/233005/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/233005/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "134.5'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40518/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40518/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "134.5'",
+            "href": "/Browse/Trees/240283/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/233006/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "56.5'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/40518/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/40518/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "56.5'",
+            "href": "/Browse/Trees/232965/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/232965/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "71.3'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/40518/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/40518/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "71.3'",
+            "href": "/Browse/Trees/232984/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/232984/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "65.3'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40518/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40518/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "65.3'",
+            "href": "/Browse/Trees/232982/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/232982/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus muehlenbergii",
+          "Chinkapin Oak",
+          "101.0'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus muehlenbergii",
+            "href": "/Browse/Sites/40518/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "Chinkapin Oak",
+            "href": "/Browse/Sites/40518/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/240285/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/240285/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 07.987, -079 03.252",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Regional Municipality Of Niagara"
+    },
+    "state": {
+      "text": "Ontario (CA)",
+      "href": "/Browse/States/57/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

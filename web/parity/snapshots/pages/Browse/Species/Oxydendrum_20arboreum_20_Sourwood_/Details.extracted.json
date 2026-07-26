@@ -1,0 +1,254 @@
+{
+  "botanicalName": "Oxydendrum arboreum",
+  "commonName": "Sourwood",
+  "global": {
+    "maxHeight": {
+      "text": "111.7'",
+      "href": "/Browse/Trees/229778/Details"
+    },
+    "maxGirth": {
+      "text": "90''",
+      "href": "/Browse/Trees/229553/Details"
+    },
+    "maxCrownSpread": {
+      "text": "55.5'",
+      "href": "/Browse/Trees/313083/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "-",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          null,
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/233695/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "103.9'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "103.9'",
+            "href": "/Browse/Trees/235211/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/235277/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "91.6'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "91.6'",
+            "href": "/Browse/Trees/297519/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/297502/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "54.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "54.8'",
+            "href": "/Browse/Trees/281826/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "111.7'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "111.7'",
+            "href": "/Browse/Trees/229778/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/229779/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "92.0'",
+          "63''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "92.0'",
+            "href": "/Browse/Trees/18521/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/18521/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/132061/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "102.8'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "102.8'",
+            "href": "/Browse/Trees/173742/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/237739/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "99.8'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "99.8'",
+            "href": "/Browse/Trees/229553/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/229553/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "97.7'",
+          "85''",
+          "55.5'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "97.7'",
+            "href": "/Browse/Trees/313083/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/313083/Details"
+          },
+          {
+            "text": "55.5'",
+            "href": "/Browse/Trees/313083/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "siteId": 40125,
+  "summary": {
+    "Name": "Smith Woods",
+    "RHI5": "131.64",
+    "RHI10": "124.59",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.06",
+    "RGI10": "10.38",
+    "RGI20": "(not enough data)",
+    "Trees measured": "49",
+    "Last measurement date": "10/04/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/04/2020",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "53.8'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/Sites/40125/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/Sites/40125/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "53.8'",
+            "href": "/Browse/Trees/221293/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/221293/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "111.2'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/40125/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40125/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "111.2'",
+            "href": "/Browse/Trees/221332/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/221332/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "124.7'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40125/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40125/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "124.7'",
+            "href": "/Browse/Trees/221297/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/221297/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "104.9'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40125/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40125/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "104.9'",
+            "href": "/Browse/Trees/221305/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/221319/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "121.2'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40125/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40125/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "121.2'",
+            "href": "/Browse/Trees/221302/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/221302/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "119.0'",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40125/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40125/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/221296/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/221304/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "109.0'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40125/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40125/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/221294/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/221294/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "143.6'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40125/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40125/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "143.6'",
+            "href": "/Browse/Trees/221329/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/221334/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "110.4'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/40125/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/40125/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "110.4'",
+            "href": "/Browse/Trees/221286/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/221286/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "140.3'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40125/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40125/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "140.3'",
+            "href": "/Browse/Trees/221289/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/221303/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "42 32.241, -076 38.730",
+    "coordinatesKind": "calculated",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Tompkins"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

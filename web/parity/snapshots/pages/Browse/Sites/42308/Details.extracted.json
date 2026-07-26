@@ -1,0 +1,151 @@
+{
+  "siteId": 42308,
+  "summary": {
+    "Name": "Tuolumne Grove Trail",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "07/15/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/15/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. lowiana",
+          "White Fir",
+          "218.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. lowiana",
+            "href": "/Browse/Sites/42308/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/42308/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+          },
+          {
+            "text": "218.8'",
+            "href": "/Browse/Trees/318129/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "221.6'",
+          "173''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/Sites/42308/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/Sites/42308/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "221.6'",
+            "href": "/Browse/Trees/318132/Details"
+          },
+          {
+            "text": "173''",
+            "href": "/Browse/Trees/318132/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sequoiadendron giganteum",
+          "Giant Sequoia",
+          "284.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sequoiadendron giganteum",
+            "href": "/Browse/Sites/42308/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+          },
+          {
+            "text": "Giant Sequoia",
+            "href": "/Browse/Sites/42308/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+          },
+          {
+            "text": "284.8'",
+            "href": "/Browse/Trees/318133/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "37 45.868, -119 48.225",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Mariposa"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

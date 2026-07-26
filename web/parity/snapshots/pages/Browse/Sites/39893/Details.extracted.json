@@ -1,0 +1,347 @@
+{
+  "siteId": 39893,
+  "summary": {
+    "Name": "Pine Orchard",
+    "RHI5": "109.18",
+    "RHI10": "96.01",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.55",
+    "RGI10": "5.06",
+    "RGI20": "(not enough data)",
+    "Trees measured": "35",
+    "Last measurement date": "06/11/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/11/2016",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "02/07/2007",
+      "visitors": "Harold Stoner",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/pine_orchard.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea var. balsamea",
+          "Balsam Fir",
+          "90.3'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea var. balsamea",
+            "href": "/Browse/Sites/39893/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/39893/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "90.3'",
+            "href": "/Browse/Trees/207812/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/207812/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "99.4'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/39893/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39893/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "99.4'",
+            "href": "/Browse/Trees/207823/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/207823/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "83.0'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/Sites/39893/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/Sites/39893/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "83.0'",
+            "href": "/Browse/Trees/207811/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/207811/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "108.3'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/39893/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/39893/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "108.3'",
+            "href": "/Browse/Trees/207831/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/207833/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "89.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/39893/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/39893/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "89.0'",
+            "href": "/Browse/Trees/207826/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "82.3'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/39893/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/39893/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "82.3'",
+            "href": "/Browse/Trees/207824/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/207824/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "155.3'",
+          "180''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/39893/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/39893/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "155.3'",
+            "href": "/Browse/Trees/207820/Details"
+          },
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/207836/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus grandidentata",
+          "Bigtooth Aspen",
+          "78.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus grandidentata",
+            "href": "/Browse/Sites/39893/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "Bigtooth Aspen",
+            "href": "/Browse/Sites/39893/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "78.9'",
+            "href": "/Browse/Trees/207830/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "81.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/39893/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/39893/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/207827/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra var. rubra",
+          "Northern Red Oak",
+          "78.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra var. rubra",
+            "href": "/Browse/Sites/39893/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/39893/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "78.0'",
+            "href": "/Browse/Trees/207829/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 24.666, -074 14.247",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Hamilton"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

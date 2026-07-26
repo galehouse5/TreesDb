@@ -1,0 +1,70 @@
+{
+  "treeId": 227025,
+  "botanicalName": {
+    "text": "Quercus rubra",
+    "href": "/Browse/Sites/40255/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+  },
+  "commonName": {
+    "text": "Northern Red Oak",
+    "href": "/Browse/Sites/40255/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+  },
+  "details": {
+    "Height": "132.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "163''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "244.47",
+    "ENTSPTS": "1799.79",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.39",
+    "Champion points (abbreviated)": "295.50",
+    "Diameter": "52''",
+    "Conical volume": "648.5 ft³",
+    "General comments": "Indian Creek"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 09/08/2009",
+      "summary": {
+        "Height": "132.5'",
+        "Girth": "163''"
+      },
+      "details": {
+        "Botanical name": "Quercus rubra",
+        "Common name": "Northern Red Oak",
+        "Height": "132.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "163''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "244.47",
+        "ENTSPTS": "1799.79",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.39",
+        "Champion points (abbreviated)": "295.50",
+        "Diameter": "52''",
+        "Conical volume": "648.5 ft³",
+        "General comments": "Indian Creek"
+      },
+      "measurers": "Jess Riddle"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "35 20.696, -083 57.961",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Santeetlah Creek",
+      "href": "/Browse/Sites/40255/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Graham"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

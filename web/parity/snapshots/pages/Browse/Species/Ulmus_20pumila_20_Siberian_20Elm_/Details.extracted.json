@@ -1,0 +1,191 @@
+{
+  "botanicalName": "Ulmus pumila",
+  "commonName": "Siberian Elm",
+  "global": {
+    "maxHeight": {
+      "text": "98.2'",
+      "href": "/Browse/Trees/281805/Details"
+    },
+    "maxGirth": {
+      "text": "193''",
+      "href": "/Browse/Trees/10098/Details"
+    },
+    "maxCrownSpread": {
+      "text": "112.0'",
+      "href": "/Browse/Trees/10098/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Idaho",
+          "71.9'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "71.9'",
+            "href": "/Browse/Trees/164216/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/164216/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "56.6'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "56.6'",
+            "href": "/Browse/Trees/163892/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/163892/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "98.2'",
+          "144''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "98.2'",
+            "href": "/Browse/Trees/281805/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/281805/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "70.2'",
+          "193''",
+          "112.0'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "70.2'",
+            "href": "/Browse/Trees/10098/Details"
+          },
+          {
+            "text": "193''",
+            "href": "/Browse/Trees/10098/Details"
+          },
+          {
+            "text": "112.0'",
+            "href": "/Browse/Trees/10098/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Utah",
+          "63.2'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Utah",
+            "href": "/Browse/States/42/Details"
+          },
+          {
+            "text": "63.2'",
+            "href": "/Browse/Trees/239655/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/239654/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "72.0'",
+          "189''",
+          "70.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/313143/Details"
+          },
+          {
+            "text": "189''",
+            "href": "/Browse/Trees/313143/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/313143/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

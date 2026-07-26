@@ -1,0 +1,154 @@
+{
+  "siteId": 41034,
+  "summary": {
+    "Name": "Green Hills Cemetery",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "06/30/2008",
+    "Ownership contact": "25 New Leicester Highway Ashville, North Carolina",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/30/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/green_hills_cemetery_trees_ashvi.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Catalpa spp.",
+          "Catalpa",
+          "75.1'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catalpa spp.",
+            "href": "/Browse/Sites/41034/Species/Catalpa%20spp.%20(Catalpa)/Details"
+          },
+          {
+            "text": "Catalpa",
+            "href": "/Browse/Sites/41034/Species/Catalpa%20spp.%20(Catalpa)/Details"
+          },
+          {
+            "text": "75.1'",
+            "href": "/Browse/Trees/243398/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/243398/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "54.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/41034/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/41034/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "54.8'",
+            "href": "/Browse/Trees/243400/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Malus pumila",
+          "Paradise Apple",
+          "49.3'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Malus pumila",
+            "href": "/Browse/Sites/41034/Species/Malus%20pumila%20(Paradise%20Apple)/Details"
+          },
+          {
+            "text": "Paradise Apple",
+            "href": "/Browse/Sites/41034/Species/Malus%20pumila%20(Paradise%20Apple)/Details"
+          },
+          {
+            "text": "49.3'",
+            "href": "/Browse/Trees/243397/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/243397/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 35.452, -082 35.850",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Buncombe"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

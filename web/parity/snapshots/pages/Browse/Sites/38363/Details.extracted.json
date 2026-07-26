@@ -1,0 +1,247 @@
+{
+  "siteId": 38363,
+  "summary": {
+    "Name": "Perkiomen Creek Park",
+    "RHI5": "100.48",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "13.40",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "03/15/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/15/2010",
+      "visitors": "George Fieo",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "87.2'",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/38363/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/38363/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "87.2'",
+            "href": "/Browse/Trees/137374/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/137374/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "115.8'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/38363/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/38363/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "115.8'",
+            "href": "/Browse/Trees/137373/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/137373/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "110.8'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/38363/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/38363/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "110.8'",
+            "href": "/Browse/Trees/137371/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/137371/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "85.4'",
+          "196''",
+          "126.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/38363/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/38363/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "85.4'",
+            "href": "/Browse/Trees/137369/Details"
+          },
+          {
+            "text": "196''",
+            "href": "/Browse/Trees/137369/Details"
+          },
+          {
+            "text": "126.0'",
+            "href": "/Browse/Trees/137369/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus palustris",
+          "Pin Oak",
+          "97.5'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus palustris",
+            "href": "/Browse/Sites/38363/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "Pin Oak",
+            "href": "/Browse/Sites/38363/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "97.5'",
+            "href": "/Browse/Trees/137372/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/137372/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus americana",
+          "American Elm",
+          "91.1'",
+          "174''",
+          "98.0'"
+        ],
+        "links": [
+          {
+            "text": "Ulmus americana",
+            "href": "/Browse/Sites/38363/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "American Elm",
+            "href": "/Browse/Sites/38363/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "91.1'",
+            "href": "/Browse/Trees/137370/Details"
+          },
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/137370/Details"
+          },
+          {
+            "text": "98.0'",
+            "href": "/Browse/Trees/137370/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 12.594, -075 27.029",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Puglic - Counties",
+      "County": "Montgomery"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

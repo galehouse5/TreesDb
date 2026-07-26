@@ -1,0 +1,148 @@
+{
+  "siteId": 41033,
+  "summary": {
+    "Name": "Mission Hospital Hawthorns",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "02/06/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/06/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/hospital/hospital_hawthorns.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer spp.",
+          "Maple",
+          "-",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spp.",
+            "href": "/Browse/Sites/41033/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "Maple",
+            "href": "/Browse/Sites/41033/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          null,
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/243395/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus spp.",
+          "Hawthorn",
+          "-",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus spp.",
+            "href": "/Browse/Sites/41033/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/41033/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          null,
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/243394/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "-",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/41033/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/41033/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          null,
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/243396/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 34.796, -082 33.014",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Buncombe"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

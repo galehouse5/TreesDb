@@ -1,0 +1,188 @@
+{
+  "siteId": 41146,
+  "summary": {
+    "Name": "Cobb Memorial Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "04/17/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "47 Acres"
+  },
+  "visits": [
+    {
+      "visited": "04/17/2016",
+      "visitors": "Jared Lockwood",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "47 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "95.0'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41146/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41146/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "95.0'",
+            "href": "/Browse/Trees/250344/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/250344/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya spp.",
+          "Hickory",
+          "105.0'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya spp.",
+            "href": "/Browse/Sites/41146/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "Hickory",
+            "href": "/Browse/Sites/41146/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/250345/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/250345/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "130.5'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41146/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41146/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "130.5'",
+            "href": "/Browse/Trees/250339/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/250340/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "100.0'",
+          "79''",
+          "50.0'"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/41146/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/41146/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "100.0'",
+            "href": "/Browse/Trees/250343/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/250343/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/250343/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 31.447, -071 26.660",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Middlesex"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

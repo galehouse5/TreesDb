@@ -1,0 +1,353 @@
+{
+  "siteId": 38037,
+  "summary": {
+    "Name": "Caledon State Park",
+    "RHI5": "147.96",
+    "RHI10": "140.04",
+    "RHI20": "(not enough data)",
+    "RGI5": "14.52",
+    "RGI10": "12.81",
+    "RGI20": "(not enough data)",
+    "Trees measured": "31",
+    "Last measurement date": "11/11/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "This is only the largest of measurements made between 12/19/2014 and 3/15/2015."
+  },
+  "visits": [
+    {
+      "visited": "11/11/2015",
+      "visitors": "Darian Copiz",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "This is only the largest of measurements made between 12/19/2014 and 3/15/2015."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "142.3'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/38037/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/38037/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "142.3'",
+            "href": "/Browse/Trees/127927/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/127947/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya pallida",
+          "Sand Hickory",
+          "113.8'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya pallida",
+            "href": "/Browse/Sites/38037/Species/Carya%20pallida%20(Sand%20Hickory)/Details"
+          },
+          {
+            "text": "Sand Hickory",
+            "href": "/Browse/Sites/38037/Species/Carya%20pallida%20(Sand%20Hickory)/Details"
+          },
+          {
+            "text": "113.8'",
+            "href": "/Browse/Trees/127937/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/127937/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "141.4'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/38037/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/38037/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "141.4'",
+            "href": "/Browse/Trees/127928/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/127928/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "102.0'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/38037/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/38037/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "102.0'",
+            "href": "/Browse/Trees/127938/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/127948/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "129.1'",
+          "137''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38037/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38037/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "129.1'",
+            "href": "/Browse/Trees/127934/Details"
+          },
+          {
+            "text": "137''",
+            "href": "/Browse/Trees/127944/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca var. opaca",
+          "American Holly",
+          "73.8'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca var. opaca",
+            "href": "/Browse/Sites/38037/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/38037/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "73.8'",
+            "href": "/Browse/Trees/127939/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/127949/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "132.0'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/38037/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/38037/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "132.0'",
+            "href": "/Browse/Trees/127930/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/127945/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "165.8'",
+          "225''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38037/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38037/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "165.8'",
+            "href": "/Browse/Trees/127924/Details"
+          },
+          {
+            "text": "225''",
+            "href": "/Browse/Trees/127940/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "121.6'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/38037/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/38037/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "121.6'",
+            "href": "/Browse/Trees/127936/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/127946/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "129.2'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/38037/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/38037/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "129.2'",
+            "href": "/Browse/Trees/127933/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/127933/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 20.022, -077 08.574",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - State Park",
+      "County": "King George"
+    },
+    "state": {
+      "text": "Virginia (US)",
+      "href": "/Browse/States/43/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

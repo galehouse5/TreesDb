@@ -1,0 +1,123 @@
+{
+  "siteId": 41394,
+  "summary": {
+    "Name": "Riverdale Park And The Raoul Wallenberg Forest Preserve",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "04/19/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "112 acres"
+  },
+  "visits": [
+    {
+      "visited": "04/19/2016",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "112 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "121.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/41394/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/41394/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "121.2'",
+            "href": "/Browse/Trees/258137/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Robinia pseudoacacia",
+          "Black Locust",
+          "108.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Robinia pseudoacacia",
+            "href": "/Browse/Sites/41394/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "Black Locust",
+            "href": "/Browse/Sites/41394/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "108.1'",
+            "href": "/Browse/Trees/258142/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 53.698, -073 54.999",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Bronx"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

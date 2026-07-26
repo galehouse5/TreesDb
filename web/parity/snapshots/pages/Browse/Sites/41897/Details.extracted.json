@@ -1,0 +1,126 @@
+{
+  "siteId": 41897,
+  "summary": {
+    "Name": "Oregon Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo var. interius",
+          "Boxelder",
+          "49.7'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. interius",
+            "href": "/Browse/Sites/41897/Species/Acer%20negundo%20var.%20interius%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/41897/Species/Acer%20negundo%20var.%20interius%20(Boxelder)/Details"
+          },
+          {
+            "text": "49.7'",
+            "href": "/Browse/Trees/281431/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/281431/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sciadopitys verticillata",
+          "Japanese Umbrella - Pine",
+          "41.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sciadopitys verticillata",
+            "href": "/Browse/Sites/41897/Species/Sciadopitys%20verticillata%20(Japanese%20Umbrella%20-%20Pine)/Details"
+          },
+          {
+            "text": "Japanese Umbrella - Pine",
+            "href": "/Browse/Sites/41897/Species/Sciadopitys%20verticillata%20(Japanese%20Umbrella%20-%20Pine)/Details"
+          },
+          {
+            "text": "41.0'",
+            "href": "/Browse/Trees/281432/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 56.310, -123 01.829",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Publie - Private",
+      "County": "Marion"
+    },
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

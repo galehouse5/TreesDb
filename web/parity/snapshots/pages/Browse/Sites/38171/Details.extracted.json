@@ -1,0 +1,129 @@
+{
+  "siteId": 38171,
+  "summary": {
+    "Name": "Delaware County Community Cpllege",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "04/30/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/30/2005",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/valley_forge/valley_forge_park.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "86.1'",
+          "187''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/38171/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/38171/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "86.1'",
+            "href": "/Browse/Trees/131647/Details"
+          },
+          {
+            "text": "187''",
+            "href": "/Browse/Trees/131647/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Zelkova serrata",
+          "Japanese Zelkova",
+          "92.0'",
+          "266''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Zelkova serrata",
+            "href": "/Browse/Sites/38171/Species/Zelkova%20serrata%20(Japanese%20Zelkova)/Details"
+          },
+          {
+            "text": "Japanese Zelkova",
+            "href": "/Browse/Sites/38171/Species/Zelkova%20serrata%20(Japanese%20Zelkova)/Details"
+          },
+          {
+            "text": "92.0'",
+            "href": "/Browse/Trees/131648/Details"
+          },
+          {
+            "text": "266''",
+            "href": "/Browse/Trees/131648/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 58.048, -075 23.572",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public- county",
+      "County": "Delaware"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

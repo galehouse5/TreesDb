@@ -1,0 +1,269 @@
+{
+  "siteId": 38416,
+  "summary": {
+    "Name": "Presque Isle State Park",
+    "RHI5": "80.80",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.27",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "08/24/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/24/2009",
+      "visitors": "Edward Frank",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/20090826-presqueisle/presque_isle_state_park.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "81.0'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38416/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38416/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/138853/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/138853/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "60.0'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/38416/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/38416/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "60.0'",
+            "href": "/Browse/Trees/138856/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/138856/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "57.0'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/38416/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/38416/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/138859/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/138859/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "102.0'",
+          "167''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/38416/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/38416/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "102.0'",
+            "href": "/Browse/Trees/138850/Details"
+          },
+          {
+            "text": "167''",
+            "href": "/Browse/Trees/138850/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "60.0'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/38416/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/38416/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "60.0'",
+            "href": "/Browse/Trees/138860/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/138860/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "101.0'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38416/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38416/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/138852/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/138858/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sassafras albidum",
+          "Sassafras",
+          "54.0'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sassafras albidum",
+            "href": "/Browse/Sites/38416/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "Sassafras",
+            "href": "/Browse/Sites/38416/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "54.0'",
+            "href": "/Browse/Trees/138857/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/138857/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 09.575, -080 07.359",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Erie"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

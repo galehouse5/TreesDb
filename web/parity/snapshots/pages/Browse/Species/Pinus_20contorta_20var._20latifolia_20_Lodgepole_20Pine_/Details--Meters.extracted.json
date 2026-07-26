@@ -1,0 +1,231 @@
+{
+  "botanicalName": "Pinus contorta var. latifolia",
+  "commonName": "Lodgepole Pine",
+  "global": {
+    "maxHeight": {
+      "text": "38.98 m",
+      "href": "/Browse/Trees/296921/Details"
+    },
+    "maxGirth": {
+      "text": "206 cm",
+      "href": "/Browse/Trees/126273/Details"
+    },
+    "maxCrownSpread": {
+      "text": "8.23 m",
+      "href": "/Browse/Trees/233588/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alberta",
+          "22.74 m",
+          "97 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alberta",
+            "href": "/Browse/States/49/Details"
+          },
+          {
+            "text": "22.74 m",
+            "href": "/Browse/Trees/74975/Details"
+          },
+          {
+            "text": "97 cm",
+            "href": "/Browse/Trees/74979/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Colorado",
+          "18.26 m",
+          "188 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "18.26 m",
+            "href": "/Browse/Trees/126180/Details"
+          },
+          {
+            "text": "188 cm",
+            "href": "/Browse/Trees/56032/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "33.86 m",
+          "171 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "33.86 m",
+            "href": "/Browse/Trees/164213/Details"
+          },
+          {
+            "text": "171 cm",
+            "href": "/Browse/Trees/196058/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "37.92 m",
+          "151 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "37.92 m",
+            "href": "/Browse/Trees/296957/Details"
+          },
+          {
+            "text": "151 cm",
+            "href": "/Browse/Trees/296956/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Dakota",
+          "-",
+          "178 cm",
+          "8.23 m"
+        ],
+        "links": [
+          {
+            "text": "South Dakota",
+            "href": "/Browse/States/39/Details"
+          },
+          null,
+          {
+            "text": "178 cm",
+            "href": "/Browse/Trees/233588/Details"
+          },
+          {
+            "text": "8.23 m",
+            "href": "/Browse/Trees/233588/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "38.98 m",
+          "155 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "38.98 m",
+            "href": "/Browse/Trees/296921/Details"
+          },
+          {
+            "text": "155 cm",
+            "href": "/Browse/Trees/296921/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Wyoming",
+          "27.61 m",
+          "206 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wyoming",
+            "href": "/Browse/States/48/Details"
+          },
+          {
+            "text": "27.61 m",
+            "href": "/Browse/Trees/58829/Details"
+          },
+          {
+            "text": "206 cm",
+            "href": "/Browse/Trees/126273/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Yukon",
+          "23.62 m",
+          "141 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yukon",
+            "href": "/Browse/States/61/Details"
+          },
+          {
+            "text": "23.62 m",
+            "href": "/Browse/Trees/75001/Details"
+          },
+          {
+            "text": "141 cm",
+            "href": "/Browse/Trees/75001/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "siteId": 38844,
+  "summary": {
+    "Name": "Cranesville - Plantations",
+    "RHI5": "88.40",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "4.93",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "08/15/2019",
+    "Ownership contact": "Nature Conservancy",
+    "General comments": "Trees measured above the Yellow Trail at margin between Red Pine and Eastern White Pine Plantations"
+  },
+  "visits": [
+    {
+      "visited": "08/15/2019",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Trees measured above the Yellow Trail at margin between Red Pine and Eastern White Pine Plantations"
+    },
+    {
+      "visited": "12/07/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "These conifers are all in plantations surrounding Cranesville Swamp.. This 1600 acre tract is managed by the Nature Conservancy. Some of the acreage is in Garrett County Maryland, however all trees measured were on the Preston County, West Virginia portion."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "93.6'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/38844/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/38844/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "93.6'",
+            "href": "/Browse/Trees/160101/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/160102/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "89.5'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/38844/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/38844/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/196051/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/196051/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "88.3'",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/38844/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/38844/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "88.3'",
+            "href": "/Browse/Trees/160106/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/160106/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus sylvestris",
+          "Scots Pine",
+          "80.6'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus sylvestris",
+            "href": "/Browse/Sites/38844/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "Scots Pine",
+            "href": "/Browse/Sites/38844/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "80.6'",
+            "href": "/Browse/Trees/160105/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/160105/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "90.0'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/38844/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/38844/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/160107/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/160107/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 31.908, -079 29.134",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Preston"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

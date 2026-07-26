@@ -1,0 +1,368 @@
+{
+  "siteId": 40119,
+  "summary": {
+    "Name": "Liverpool School Maple Grove",
+    "RHI5": "130.36",
+    "RHI10": "123.65",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.25",
+    "RGI10": "10.26",
+    "RGI20": "(not enough data)",
+    "Trees measured": "73",
+    "Last measurement date": "03/27/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/27/2018",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/05/2016",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/28/2015",
+      "visitors": "Tom Howard and Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/19/2009",
+      "visitors": "Tom Howard and Jack Howard",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/onondaga/onondago_og.htm",
+      "comments": "11 Acres Location pin should probably be at Wetzel Woods"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "127.8'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40119/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40119/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "127.8'",
+            "href": "/Browse/Trees/262910/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/257932/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "127.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/40119/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40119/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "127.8'",
+            "href": "/Browse/Trees/221018/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "133.6'",
+          "174''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40119/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40119/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "133.6'",
+            "href": "/Browse/Trees/262908/Details"
+          },
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/262911/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "133.6'",
+          "171''",
+          "63.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40119/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40119/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "133.6'",
+            "href": "/Browse/Trees/221002/Details"
+          },
+          {
+            "text": "171''",
+            "href": "/Browse/Trees/221005/Details"
+          },
+          {
+            "text": "63.0'",
+            "href": "/Browse/Trees/221002/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "74.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/40119/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/40119/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "74.4'",
+            "href": "/Browse/Trees/221014/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "129.0'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40119/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40119/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "129.0'",
+            "href": "/Browse/Trees/221007/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/262907/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "120.2'",
+          "135''",
+          "57.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40119/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40119/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "120.2'",
+            "href": "/Browse/Trees/221010/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/221016/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/221016/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya spp.",
+          "Hickory",
+          "-",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya spp.",
+            "href": "/Browse/Sites/40119/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "Hickory",
+            "href": "/Browse/Sites/40119/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          null,
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/257931/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "121.0'",
+          "128''",
+          "90.0'"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40119/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40119/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "121.0'",
+            "href": "/Browse/Trees/262906/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/262923/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/221021/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "111.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40119/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40119/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/221020/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 08.948, -076 12.869",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Onondaga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

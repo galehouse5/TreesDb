@@ -1,0 +1,350 @@
+{
+  "siteId": 708,
+  "summary": {
+    "Name": "Poland Woods OH",
+    "RHI5": "116.62",
+    "RHI10": "112.36",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.08",
+    "RGI10": "9.69",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "03/25/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/25/2004",
+      "visitors": "Thomas Diggins",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "107.6'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/708/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/708/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "107.6'",
+            "href": "/Browse/Trees/9763/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/9763/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "106.2'",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/708/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/708/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "106.2'",
+            "href": "/Browse/Trees/9764/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/9764/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "107.9'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/708/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/708/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "107.9'",
+            "href": "/Browse/Trees/9762/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/9762/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "109.8'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/708/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/708/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "109.8'",
+            "href": "/Browse/Trees/9760/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/9760/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "111.7'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/708/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/708/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "111.7'",
+            "href": "/Browse/Trees/9757/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/9757/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "109.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/708/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/708/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/9761/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gymnocladus dioicus",
+          "Kentucky Coffeetree",
+          "110.8'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gymnocladus dioicus",
+            "href": "/Browse/Sites/708/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "Kentucky Coffeetree",
+            "href": "/Browse/Sites/708/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "110.8'",
+            "href": "/Browse/Trees/9758/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/9758/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "128.5'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/708/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/708/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "128.5'",
+            "href": "/Browse/Trees/9750/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/9751/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "103.9'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/708/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/708/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "103.9'",
+            "href": "/Browse/Trees/9765/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/9765/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "121.6'",
+          "222''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/708/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/708/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "121.6'",
+            "href": "/Browse/Trees/9754/Details"
+          },
+          {
+            "text": "222''",
+            "href": "/Browse/Trees/9754/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 59.231, -080 43.287",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Mahoning"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

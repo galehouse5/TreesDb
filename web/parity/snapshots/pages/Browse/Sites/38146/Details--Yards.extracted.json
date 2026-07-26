@@ -1,0 +1,129 @@
+{
+  "siteId": 38146,
+  "summary": {
+    "Name": "Little Elden Springs",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "06/22/2014",
+    "Ownership contact": "Peaks Ranger District 5075 North Highway 89 Flagstaff, AZ 86044",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/22/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus ponderosa var. brachyptera",
+          "Ponderosa Pine",
+          "32.87 yd",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. brachyptera",
+            "href": "/Browse/Sites/38146/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/38146/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "32.87 yd",
+            "href": "/Browse/Trees/130922/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/130922/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus gambelii var. gambelii",
+          "Gambel Oak",
+          "18.87 yd",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus gambelii var. gambelii",
+            "href": "/Browse/Sites/38146/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "Gambel Oak",
+            "href": "/Browse/Sites/38146/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "18.87 yd",
+            "href": "/Browse/Trees/130926/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/130926/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 16.634, -111 34.803",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public National Forest",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

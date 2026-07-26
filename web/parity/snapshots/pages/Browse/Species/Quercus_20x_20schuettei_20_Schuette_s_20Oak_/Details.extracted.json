@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Quercus x schuettei",
+  "commonName": "Schuette's Oak",
+  "global": {
+    "maxHeight": {
+      "text": "82.2'",
+      "href": "/Browse/Trees/226101/Details"
+    },
+    "maxGirth": {
+      "text": "124''",
+      "href": "/Browse/Trees/226101/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "82.2'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "82.2'",
+            "href": "/Browse/Trees/226101/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/226101/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

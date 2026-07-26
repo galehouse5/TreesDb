@@ -1,0 +1,1468 @@
+{
+  "category": "pages",
+  "generatedAt": "2026-07-20T05:07:55.515Z",
+  "checksRun": 380109,
+  "pass": 379986,
+  "fail": 28,
+  "waived": 95,
+  "diffs": [
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/States/44/Details",
+      "field": "speciesGrid.rows[5].links[2].href",
+      "expected": "/Browse/Trees/253241/Details",
+      "actual": "/trees/177007",
+      "message": "https://www.treesdb.org/Browse/States/44/Details: speciesGrid.rows[5].links[2].href: URLs not route-equivalent (legacy \"/Browse/Trees/253241/Details\" vs new \"/trees/177007\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/States/44/Details",
+      "field": "speciesGrid.rows[5].links[2].href",
+      "expected": "/Browse/Trees/253241/Details",
+      "actual": "/trees/177007",
+      "message": "https://www.treesdb.org/Browse/States/44/Details: speciesGrid.rows[5].links[2].href: URLs not route-equivalent (legacy \"/Browse/Trees/253241/Details\" vs new \"/trees/177007\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/States/124/Details",
+      "field": "speciesGrid.rows",
+      "actual": {
+        "cells": [
+          "Phoenix dactylifera",
+          "Date Palm",
+          "-",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Phoenix dactylifera",
+            "href": "/species/phoenix-dactylifera--date-palm?state=124"
+          },
+          {
+            "text": "Date Palm",
+            "href": "/species/phoenix-dactylifera--date-palm?state=124"
+          },
+          null,
+          {
+            "text": "101''",
+            "href": "/trees/274949"
+          },
+          null
+        ]
+      },
+      "message": "https://www.treesdb.org/Browse/States/124/Details: speciesGrid grid row [\"Phoenix dactylifera\",\"Date Palm\",\"-\",\"101''\",\"-\"] present in new but not in legacy"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/States/124/Details",
+      "field": "speciesGrid.pageInfo",
+      "expected": "Showing 1 to 10 of 15 entries",
+      "actual": "Showing 1 to 10 of 14 entries",
+      "message": "https://www.treesdb.org/Browse/States/124/Details: speciesGrid.pageInfo: expected \"Showing 1 to 10 of 15 entries\", got \"Showing 1 to 10 of 14 entries\""
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details",
+      "field": "recordedStatesGrid.rows[2].links[1].href",
+      "expected": "/Browse/Trees/166114/Details",
+      "actual": "/trees/166108",
+      "message": "https://www.treesdb.org/Browse/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details: recordedStatesGrid.rows[2].links[1].href: URLs not route-equivalent (legacy \"/Browse/Trees/166114/Details\" vs new \"/trees/166108\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details",
+      "field": "recordedStatesGrid.rows[2].links[1].href",
+      "expected": "/Browse/Trees/166114/Details",
+      "actual": "/trees/166108",
+      "message": "https://www.treesdb.org/Browse/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details: recordedStatesGrid.rows[2].links[1].href: URLs not route-equivalent (legacy \"/Browse/Trees/166114/Details\" vs new \"/trees/166108\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details",
+      "field": "recordedStatesGrid.rows[4].links[1].href",
+      "expected": "/Browse/Trees/249112/Details",
+      "actual": "/trees/234710",
+      "message": "https://www.treesdb.org/Browse/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details: recordedStatesGrid.rows[4].links[1].href: URLs not route-equivalent (legacy \"/Browse/Trees/249112/Details\" vs new \"/trees/234710\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species/Chamaecyparis%20obtusa%20(Hinoki%20False%20Cypress)/Details",
+      "field": "global.maxCrownSpread.href",
+      "expected": "/Browse/Trees/299714/Details",
+      "actual": "/trees/224404",
+      "message": "https://www.treesdb.org/Browse/Species/Chamaecyparis%20obtusa%20(Hinoki%20False%20Cypress)/Details: global.maxCrownSpread.href: URLs not route-equivalent (legacy \"/Browse/Trees/299714/Details\" vs new \"/trees/224404\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details",
+      "field": "recordedStatesGrid.rows[7].links[2].href",
+      "expected": "/Browse/Trees/235515/Details",
+      "actual": "/trees/227965",
+      "message": "https://www.treesdb.org/Browse/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details: recordedStatesGrid.rows[7].links[2].href: URLs not route-equivalent (legacy \"/Browse/Trees/235515/Details\" vs new \"/trees/227965\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details",
+      "field": "recordedStatesGrid.rows[7].links[2].href",
+      "expected": "/Browse/Trees/235515/Details",
+      "actual": "/trees/227965",
+      "message": "https://www.treesdb.org/Browse/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details: recordedStatesGrid.rows[7].links[2].href: URLs not route-equivalent (legacy \"/Browse/Trees/235515/Details\" vs new \"/trees/227965\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species/Lindera%20benzoin%20(Northern%20Spicebush)/Details",
+      "field": "recordedStatesGrid.rows[3].links[1].href",
+      "expected": "/Browse/Trees/280431/Details",
+      "actual": "/trees/265915",
+      "message": "https://www.treesdb.org/Browse/Species/Lindera%20benzoin%20(Northern%20Spicebush)/Details: recordedStatesGrid.rows[3].links[1].href: URLs not route-equivalent (legacy \"/Browse/Trees/280431/Details\" vs new \"/trees/265915\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species/Prunus%20serotina%20(Black%20Cherry)/Details",
+      "field": "recordedStatesGrid.rows[3].links[1].href",
+      "expected": "/Browse/Trees/234935/Details",
+      "actual": "/trees/234716",
+      "message": "https://www.treesdb.org/Browse/Species/Prunus%20serotina%20(Black%20Cherry)/Details: recordedStatesGrid.rows[3].links[1].href: URLs not route-equivalent (legacy \"/Browse/Trees/234935/Details\" vs new \"/trees/234716\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details",
+      "field": "global.maxCrownSpread.href",
+      "expected": "/Browse/Trees/274320/Details",
+      "actual": "/trees/255929",
+      "message": "https://www.treesdb.org/Browse/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details: global.maxCrownSpread.href: URLs not route-equivalent (legacy \"/Browse/Trees/274320/Details\" vs new \"/trees/255929\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species/Sassafras%20albidum%20(Sassafras)/Details",
+      "field": "recordedStatesGrid.rows[9].links[2].href",
+      "expected": "/Browse/Trees/258897/Details",
+      "actual": "/trees/226010",
+      "message": "https://www.treesdb.org/Browse/Species/Sassafras%20albidum%20(Sassafras)/Details: recordedStatesGrid.rows[9].links[2].href: URLs not route-equivalent (legacy \"/Browse/Trees/258897/Details\" vs new \"/trees/226010\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=ScientificName&sortAsc=false",
+      "field": "rows[16].links[0].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=ScientificName&sortAsc=false: rows[16].links[0].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=ScientificName&sortAsc=false",
+      "field": "rows[16].links[1].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=ScientificName&sortAsc=false: rows[16].links[1].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=Number&sortAsc=false",
+      "field": "rows[16].links[0].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=Number&sortAsc=false: rows[16].links[0].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=Number&sortAsc=false",
+      "field": "rows[16].links[1].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=Number&sortAsc=false: rows[16].links[1].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=MaxHeight&sortAsc=true",
+      "field": "rows[17].links[0].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=MaxHeight&sortAsc=true: rows[17].links[0].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=MaxHeight&sortAsc=true",
+      "field": "rows[17].links[1].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=MaxHeight&sortAsc=true: rows[17].links[1].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=MaxGirth&sortAsc=true",
+      "field": "pageInfo",
+      "expected": "Showing 1 to 40 of 764 entries",
+      "actual": "Showing 1 to 40 of 761 entries",
+      "message": "https://www.treesdb.org/Browse/Species?sort=MaxGirth&sortAsc=true: pageInfo: expected \"Showing 1 to 40 of 764 entries\", got \"Showing 1 to 40 of 761 entries\""
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=ScientificName&sortAsc=false",
+      "field": "rows[16].links[0].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=ScientificName&sortAsc=false: rows[16].links[0].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=ScientificName&sortAsc=false",
+      "field": "rows[16].links[1].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=ScientificName&sortAsc=false: rows[16].links[1].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=Number&sortAsc=false",
+      "field": "rows[16].links[0].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=Number&sortAsc=false: rows[16].links[0].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=Number&sortAsc=false",
+      "field": "rows[16].links[1].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=Number&sortAsc=false: rows[16].links[1].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=MaxHeight&sortAsc=true",
+      "field": "rows[17].links[0].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=MaxHeight&sortAsc=true: rows[17].links[0].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=MaxHeight&sortAsc=true",
+      "field": "rows[17].links[1].href",
+      "expected": "/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details",
+      "actual": "/species/vitis-labrusca--northern-fox-grape-vine",
+      "message": "https://www.treesdb.org/Browse/Species?sort=MaxHeight&sortAsc=true: rows[17].links[1].href: URLs not route-equivalent (legacy \"/Browse/Species/Vitis%20labrusca%20(Northern%20Fox%20Grape%20(Vine))/Details\" vs new \"/species/vitis-labrusca--northern-fox-grape-vine\")"
+    },
+    {
+      "kind": "field",
+      "table": "https://www.treesdb.org/Browse/Species?sort=MaxGirth&sortAsc=true",
+      "field": "pageInfo",
+      "expected": "Showing 1 to 40 of 764 entries",
+      "actual": "Showing 1 to 40 of 761 entries",
+      "message": "https://www.treesdb.org/Browse/Species?sort=MaxGirth&sortAsc=true: pageInfo: expected \"Showing 1 to 40 of 764 entries\", got \"Showing 1 to 40 of 761 entries\""
+    }
+  ],
+  "waivedDiffs": [
+    {
+      "waiverId": "W-005",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/38515/Details",
+        "field": "summary.Ownership contact",
+        "expected": "Phone 215-493-6652 Email:[email protected]",
+        "actual": "Phone 215-493-6652 Email:fivemilewoods@yahoo.com",
+        "message": "https://www.treesdb.org/Browse/Sites/38515/Details: summary.Ownership contact: expected \"Phone 215-493-6652 Email:[email protected]\", got \"Phone 215-493-6652 Email:fivemilewoods@yahoo.com\"",
+        "waiverHint": "W-005"
+      }
+    },
+    {
+      "waiverId": "W-005",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/38515/Details",
+        "field": "summary.Ownership contact",
+        "expected": "Phone 215-493-6652 Email:[email protected]",
+        "actual": "Phone 215-493-6652 Email:fivemilewoods@yahoo.com",
+        "message": "https://www.treesdb.org/Browse/Sites/38515/Details: summary.Ownership contact: expected \"Phone 215-493-6652 Email:[email protected]\", got \"Phone 215-493-6652 Email:fivemilewoods@yahoo.com\"",
+        "waiverHint": "W-005"
+      }
+    },
+    {
+      "waiverId": "W-005",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/39772/Details",
+        "field": "summary.Ownership contact",
+        "expected": "Elijah Whitcomb [email protected]",
+        "actual": "Elijah Whitcomb lucager14@yahoo.com",
+        "message": "https://www.treesdb.org/Browse/Sites/39772/Details: summary.Ownership contact: expected \"Elijah Whitcomb [email protected]\", got \"Elijah Whitcomb lucager14@yahoo.com\"",
+        "waiverHint": "W-005"
+      }
+    },
+    {
+      "waiverId": "W-005",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/40412/Details",
+        "field": "summary.Ownership contact",
+        "expected": "CNY Land Trust [email protected]",
+        "actual": "CNY Land Trust director@cnylandtrust.org",
+        "message": "https://www.treesdb.org/Browse/Sites/40412/Details: summary.Ownership contact: expected \"CNY Land Trust [email protected]\", got \"CNY Land Trust director@cnylandtrust.org\"",
+        "waiverHint": "W-005"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/41043/Details",
+        "field": "speciesGrid.rows",
+        "expected": {
+          "cells": [
+            "Crataegus spp.",
+            "Hawthorn",
+            "29.6'",
+            "-",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Crataegus spp.",
+              "href": "/Browse/Sites/41043/Species/Crataegus%20%20spp.%20(Hawthorn)/Details"
+            },
+            {
+              "text": "Hawthorn",
+              "href": "/Browse/Sites/41043/Species/Crataegus%20%20spp.%20(Hawthorn)/Details"
+            },
+            {
+              "text": "29.6'",
+              "href": "/Browse/Trees/243560/Details"
+            },
+            null,
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Sites/41043/Details: speciesGrid grid row [\"Crataegus spp.\",\"Hawthorn\",\"29.6'\",\"-\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/41043/Details",
+        "field": "speciesGrid.pageInfo",
+        "expected": "Showing 1 to 4 of 4 entries",
+        "actual": "Showing 1 to 3 of 3 entries",
+        "message": "https://www.treesdb.org/Browse/Sites/41043/Details: speciesGrid.pageInfo: expected \"Showing 1 to 4 of 4 entries\", got \"Showing 1 to 3 of 3 entries\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/41929/Details",
+        "field": "speciesGrid.rows",
+        "expected": {
+          "cells": [
+            "Cupressus sempervirens",
+            "Italian Cypress",
+            "69.8'",
+            "87''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Cupressus sempervirens",
+              "href": "/Browse/Sites/41929/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+            },
+            {
+              "text": "Italian Cypress",
+              "href": "/Browse/Sites/41929/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+            },
+            {
+              "text": "69.8'",
+              "href": "/Browse/Trees/283117/Details"
+            },
+            {
+              "text": "87''",
+              "href": "/Browse/Trees/283117/Details"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Sites/41929/Details: speciesGrid grid row [\"Cupressus sempervirens\",\"Italian Cypress\",\"69.8'\",\"87''\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/41929/Details",
+        "field": "speciesGrid.pageInfo",
+        "expected": "Showing 1 to 4 of 4 entries",
+        "actual": "Showing 1 to 3 of 3 entries",
+        "message": "https://www.treesdb.org/Browse/Sites/41929/Details: speciesGrid.pageInfo: expected \"Showing 1 to 4 of 4 entries\", got \"Showing 1 to 3 of 3 entries\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/41929/Details",
+        "field": "speciesGrid.rows",
+        "expected": {
+          "cells": [
+            "Cupressus sempervirens",
+            "Italian Cypress",
+            "21.28 m",
+            "221 cm",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Cupressus sempervirens",
+              "href": "/Browse/Sites/41929/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+            },
+            {
+              "text": "Italian Cypress",
+              "href": "/Browse/Sites/41929/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+            },
+            {
+              "text": "21.28 m",
+              "href": "/Browse/Trees/283117/Details"
+            },
+            {
+              "text": "221 cm",
+              "href": "/Browse/Trees/283117/Details"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Sites/41929/Details: speciesGrid grid row [\"Cupressus sempervirens\",\"Italian Cypress\",\"21.28 m\",\"221 cm\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/41929/Details",
+        "field": "speciesGrid.pageInfo",
+        "expected": "Showing 1 to 4 of 4 entries",
+        "actual": "Showing 1 to 3 of 3 entries",
+        "message": "https://www.treesdb.org/Browse/Sites/41929/Details: speciesGrid.pageInfo: expected \"Showing 1 to 4 of 4 entries\", got \"Showing 1 to 3 of 3 entries\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-005",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Sites/41942/Details",
+        "field": "summary.Ownership contact",
+        "expected": "[email protected]",
+        "actual": "tsharp13@suddenlink.net",
+        "message": "https://www.treesdb.org/Browse/Sites/41942/Details: summary.Ownership contact: expected \"[email protected]\", got \"tsharp13@suddenlink.net\"",
+        "waiverHint": "W-005"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/States/25/Details",
+        "field": "speciesGrid.pageInfo",
+        "expected": "Showing 1 to 10 of 126 entries",
+        "actual": "Showing 1 to 10 of 125 entries",
+        "message": "https://www.treesdb.org/Browse/States/25/Details: speciesGrid.pageInfo: expected \"Showing 1 to 10 of 126 entries\", got \"Showing 1 to 10 of 125 entries\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/States/124/Details",
+        "field": "speciesGrid.rows",
+        "expected": {
+          "cells": [
+            "Cercis siliquastrum",
+            "Judas-Tree",
+            "41.5'",
+            "48''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Cercis siliquastrum",
+              "href": "/Browse/States/124/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details"
+            },
+            {
+              "text": "Judas-Tree",
+              "href": "/Browse/States/124/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details"
+            },
+            {
+              "text": "41.5'",
+              "href": "/Browse/Trees/283185/Details"
+            },
+            {
+              "text": "48''",
+              "href": "/Browse/Trees/283185/Details"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/States/124/Details: speciesGrid grid row [\"Cercis siliquastrum\",\"Judas-Tree\",\"41.5'\",\"48''\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/States/124/Details",
+        "field": "speciesGrid.rows",
+        "expected": {
+          "cells": [
+            "Cercis siliquastrum",
+            "Judas-Tree",
+            "45.8'",
+            "22''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Cercis siliquastrum",
+              "href": "/Browse/States/124/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details"
+            },
+            {
+              "text": "Judas-Tree",
+              "href": "/Browse/States/124/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details"
+            },
+            {
+              "text": "45.8'",
+              "href": "/Browse/Trees/274943/Details"
+            },
+            {
+              "text": "22''",
+              "href": "/Browse/Trees/274943/Details"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/States/124/Details: speciesGrid grid row [\"Cercis siliquastrum\",\"Judas-Tree\",\"45.8'\",\"22''\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/States/124/Details",
+        "field": "speciesGrid.rows",
+        "actual": {
+          "cells": [
+            "Cercis siliquastrum",
+            "Judas-Tree",
+            "45.8'",
+            "48''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Cercis siliquastrum",
+              "href": "/species/cercis-siliquastrum--judas-tree?state=124"
+            },
+            {
+              "text": "Judas-Tree",
+              "href": "/species/cercis-siliquastrum--judas-tree?state=124"
+            },
+            {
+              "text": "45.8'",
+              "href": "/trees/274943"
+            },
+            {
+              "text": "48''",
+              "href": "/trees/283185"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/States/124/Details: speciesGrid grid row [\"Cercis siliquastrum\",\"Judas-Tree\",\"45.8'\",\"48''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/States/160/Details",
+        "field": "speciesGrid.rows",
+        "expected": {
+          "cells": [
+            "Cupressus sempervirens",
+            "Italian Cypress",
+            "69.8'",
+            "87''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Cupressus sempervirens",
+              "href": "/Browse/States/160/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+            },
+            {
+              "text": "Italian Cypress",
+              "href": "/Browse/States/160/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+            },
+            {
+              "text": "69.8'",
+              "href": "/Browse/Trees/283117/Details"
+            },
+            {
+              "text": "87''",
+              "href": "/Browse/Trees/283117/Details"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/States/160/Details: speciesGrid grid row [\"Cupressus sempervirens\",\"Italian Cypress\",\"69.8'\",\"87''\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/States/160/Details",
+        "field": "speciesGrid.pageInfo",
+        "expected": "Showing 1 to 4 of 4 entries",
+        "actual": "Showing 1 to 3 of 3 entries",
+        "message": "https://www.treesdb.org/Browse/States/160/Details: speciesGrid.pageInfo: expected \"Showing 1 to 4 of 4 entries\", got \"Showing 1 to 3 of 3 entries\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "recordedStatesGrid.rows",
+        "expected": {
+          "cells": [
+            "Andalusia",
+            "41.5'",
+            "48''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Andalusia",
+              "href": "/Browse/States/124/Details"
+            },
+            {
+              "text": "41.5'",
+              "href": "/Browse/Trees/283185/Details"
+            },
+            {
+              "text": "48''",
+              "href": "/Browse/Trees/283185/Details"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details: recordedStatesGrid grid row [\"Andalusia\",\"41.5'\",\"48''\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "Andalusia",
+            "45.8'",
+            "48''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Andalusia",
+              "href": "/states/124"
+            },
+            {
+              "text": "45.8'",
+              "href": "/trees/274943"
+            },
+            {
+              "text": "48''",
+              "href": "/trees/283185"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details: recordedStatesGrid grid row [\"Andalusia\",\"45.8'\",\"48''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "global.maxHeight.text",
+        "expected": "41.5'",
+        "actual": "45.8'",
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details: global.maxHeight.text: expected \"41.5'\", got \"45.8'\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "global.maxHeight.href",
+        "expected": "/Browse/Trees/283185/Details",
+        "actual": "/trees/274943",
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details: global.maxHeight.href: URLs not route-equivalent (legacy \"/Browse/Trees/283185/Details\" vs new \"/trees/274943\")",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "recordedStatesGrid.rows",
+        "expected": {
+          "cells": [
+            "Andalusia",
+            "45.8'",
+            "22''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Andalusia",
+              "href": "/Browse/States/124/Details"
+            },
+            {
+              "text": "45.8'",
+              "href": "/Browse/Trees/274943/Details"
+            },
+            {
+              "text": "22''",
+              "href": "/Browse/Trees/274943/Details"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details: recordedStatesGrid grid row [\"Andalusia\",\"45.8'\",\"22''\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "Andalusia",
+            "45.8'",
+            "48''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Andalusia",
+              "href": "/states/124"
+            },
+            {
+              "text": "45.8'",
+              "href": "/trees/274943"
+            },
+            {
+              "text": "48''",
+              "href": "/trees/283185"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details: recordedStatesGrid grid row [\"Andalusia\",\"45.8'\",\"48''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "global.maxGirth.text",
+        "expected": "22''",
+        "actual": "48''",
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details: global.maxGirth.text: expected \"22''\", got \"48''\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "global.maxGirth.href",
+        "expected": "/Browse/Trees/274943/Details",
+        "actual": "/trees/283185",
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details: global.maxGirth.href: URLs not route-equivalent (legacy \"/Browse/Trees/274943/Details\" vs new \"/trees/283185\")",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "recordedStatesGrid.rows",
+        "expected": {
+          "cells": [
+            "Andalusia",
+            "13.96 m",
+            "56 cm",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Andalusia",
+              "href": "/Browse/States/124/Details"
+            },
+            {
+              "text": "13.96 m",
+              "href": "/Browse/Trees/274943/Details"
+            },
+            {
+              "text": "56 cm",
+              "href": "/Browse/Trees/274943/Details"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details: recordedStatesGrid grid row [\"Andalusia\",\"13.96 m\",\"56 cm\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "Andalusia",
+            "13.96 m",
+            "122 cm",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Andalusia",
+              "href": "/states/124"
+            },
+            {
+              "text": "13.96 m",
+              "href": "/trees/274943"
+            },
+            {
+              "text": "122 cm",
+              "href": "/trees/283185"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details: recordedStatesGrid grid row [\"Andalusia\",\"13.96 m\",\"122 cm\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "global.maxGirth.text",
+        "expected": "56 cm",
+        "actual": "122 cm",
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details: global.maxGirth.text: expected \"56 cm\", got \"122 cm\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details",
+        "field": "global.maxGirth.href",
+        "expected": "/Browse/Trees/274943/Details",
+        "actual": "/trees/283185",
+        "message": "https://www.treesdb.org/Browse/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details: global.maxGirth.href: URLs not route-equivalent (legacy \"/Browse/Trees/274943/Details\" vs new \"/trees/283185\")",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "expected": {
+          "cells": [
+            "North Carolina",
+            "29.6'",
+            "-",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "North Carolina",
+              "href": "/Browse/States/25/Details"
+            },
+            {
+              "text": "29.6'",
+              "href": "/Browse/Trees/243560/Details"
+            },
+            null,
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"North Carolina\",\"29.6'\",\"-\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "New York",
+            "26.6'",
+            "20''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "New York",
+              "href": "/states/32"
+            },
+            {
+              "text": "26.6'",
+              "href": "/trees/242680"
+            },
+            {
+              "text": "20''",
+              "href": "/trees/242680"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"New York\",\"26.6'\",\"20''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "North Carolina",
+            "41.7'",
+            "54''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "North Carolina",
+              "href": "/states/25"
+            },
+            {
+              "text": "41.7'",
+              "href": "/trees/243554"
+            },
+            {
+              "text": "54''",
+              "href": "/trees/243394"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"North Carolina\",\"41.7'\",\"54''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "Ohio",
+            "30.6'",
+            "64''",
+            "42.0'"
+          ],
+          "links": [
+            {
+              "text": "Ohio",
+              "href": "/states/33"
+            },
+            {
+              "text": "30.6'",
+              "href": "/trees/302709"
+            },
+            {
+              "text": "64''",
+              "href": "/trees/302709"
+            },
+            {
+              "text": "42.0'",
+              "href": "/trees/302709"
+            }
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"Ohio\",\"30.6'\",\"64''\",\"42.0'\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "Pennsylvania",
+            "44.4'",
+            "78''",
+            "48.5'"
+          ],
+          "links": [
+            {
+              "text": "Pennsylvania",
+              "href": "/states/36"
+            },
+            {
+              "text": "44.4'",
+              "href": "/trees/139135"
+            },
+            {
+              "text": "78''",
+              "href": "/trees/139333"
+            },
+            {
+              "text": "48.5'",
+              "href": "/trees/140034"
+            }
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"Pennsylvania\",\"44.4'\",\"78''\",\"48.5'\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "Texas",
+            "42.3'",
+            "29''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Texas",
+              "href": "/states/41"
+            },
+            {
+              "text": "42.3'",
+              "href": "/trees/320681"
+            },
+            {
+              "text": "29''",
+              "href": "/trees/320681"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"Texas\",\"42.3'\",\"29''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "West Virginia",
+            "31.4'",
+            "40''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "West Virginia",
+              "href": "/states/47"
+            },
+            {
+              "text": "31.4'",
+              "href": "/trees/203681"
+            },
+            {
+              "text": "40''",
+              "href": "/trees/203681"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"West Virginia\",\"31.4'\",\"40''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "global.maxHeight.text",
+        "expected": "29.6'",
+        "actual": "44.4'",
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: global.maxHeight.text: expected \"29.6'\", got \"44.4'\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "global.maxHeight.href",
+        "expected": "/Browse/Trees/243560/Details",
+        "actual": "/trees/139135",
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: global.maxHeight.href: URLs not route-equivalent (legacy \"/Browse/Trees/243560/Details\" vs new \"/trees/139135\")",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "global.maxGirth",
+        "actual": {
+          "text": "78''",
+          "href": "/trees/139333"
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: global.maxGirth: one side is missing (expected undefined, got {\"text\":\"78''\",\"href\":\"/trees/139333\"})",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "global.maxCrownSpread",
+        "actual": {
+          "text": "48.5'",
+          "href": "/trees/140034"
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: global.maxCrownSpread: one side is missing (expected undefined, got {\"text\":\"48.5'\",\"href\":\"/trees/140034\"})",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.pageInfo",
+        "expected": "Showing 1 to 1 of 1 entries",
+        "actual": "Showing 1 to 6 of 6 entries",
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid.pageInfo: expected \"Showing 1 to 1 of 1 entries\", got \"Showing 1 to 6 of 6 entries\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "expected": {
+          "cells": [
+            "North Carolina",
+            "9.87 yd",
+            "-",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "North Carolina",
+              "href": "/Browse/States/25/Details"
+            },
+            {
+              "text": "9.87 yd",
+              "href": "/Browse/Trees/243560/Details"
+            },
+            null,
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"North Carolina\",\"9.87 yd\",\"-\",\"-\"] present in legacy but missing from new",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "New York",
+            "8.87 yd",
+            "20''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "New York",
+              "href": "/states/32"
+            },
+            {
+              "text": "8.87 yd",
+              "href": "/trees/242680"
+            },
+            {
+              "text": "20''",
+              "href": "/trees/242680"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"New York\",\"8.87 yd\",\"20''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "North Carolina",
+            "13.90 yd",
+            "54''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "North Carolina",
+              "href": "/states/25"
+            },
+            {
+              "text": "13.90 yd",
+              "href": "/trees/243554"
+            },
+            {
+              "text": "54''",
+              "href": "/trees/243394"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"North Carolina\",\"13.90 yd\",\"54''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "Ohio",
+            "10.20 yd",
+            "64''",
+            "14.00 yd"
+          ],
+          "links": [
+            {
+              "text": "Ohio",
+              "href": "/states/33"
+            },
+            {
+              "text": "10.20 yd",
+              "href": "/trees/302709"
+            },
+            {
+              "text": "64''",
+              "href": "/trees/302709"
+            },
+            {
+              "text": "14.00 yd",
+              "href": "/trees/302709"
+            }
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"Ohio\",\"10.20 yd\",\"64''\",\"14.00 yd\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "Pennsylvania",
+            "14.80 yd",
+            "78''",
+            "16.17 yd"
+          ],
+          "links": [
+            {
+              "text": "Pennsylvania",
+              "href": "/states/36"
+            },
+            {
+              "text": "14.80 yd",
+              "href": "/trees/139135"
+            },
+            {
+              "text": "78''",
+              "href": "/trees/139333"
+            },
+            {
+              "text": "16.17 yd",
+              "href": "/trees/140034"
+            }
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"Pennsylvania\",\"14.80 yd\",\"78''\",\"16.17 yd\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "Texas",
+            "14.10 yd",
+            "29''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "Texas",
+              "href": "/states/41"
+            },
+            {
+              "text": "14.10 yd",
+              "href": "/trees/320681"
+            },
+            {
+              "text": "29''",
+              "href": "/trees/320681"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"Texas\",\"14.10 yd\",\"29''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "recordedStatesGrid.rows",
+        "actual": {
+          "cells": [
+            "West Virginia",
+            "10.47 yd",
+            "40''",
+            "-"
+          ],
+          "links": [
+            {
+              "text": "West Virginia",
+              "href": "/states/47"
+            },
+            {
+              "text": "10.47 yd",
+              "href": "/trees/203681"
+            },
+            {
+              "text": "40''",
+              "href": "/trees/203681"
+            },
+            null
+          ]
+        },
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: recordedStatesGrid grid row [\"West Virginia\",\"10.47 yd\",\"40''\",\"-\"] present in new but not in legacy",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "global.maxHeight.text",
+        "expected": "9.87 yd",
+        "actual": "14.80 yd",
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: global.maxHeight.text: expected \"9.87 yd\", got \"14.80 yd\"",
+        "waiverHint": "W-010"
+      }
+    },
+    {
+      "waiverId": "W-010",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details",
+        "field": "global.maxHeight.href",
+        "expected": "/Browse/Trees/243560/Details",
+        "actual": "/trees/139135",
+        "message": "https://www.treesdb.org/Browse/Species/Crataegus%20%20spp.%20(Hawthorn)/Details: global.maxHeight.href: URLs not route-equivalent (legacy \"/Browse/Trees/243560/Details\" vs new \"/trees/139135\")",
+        "waiverHint": "W-010"
+      }
+    }
+  ]
+}

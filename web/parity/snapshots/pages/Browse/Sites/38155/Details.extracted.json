@@ -1,0 +1,129 @@
+{
+  "siteId": 38155,
+  "summary": {
+    "Name": "Guard Station Road",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "09/20/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "Also known as Ranger Road"
+  },
+  "visits": [
+    {
+      "visited": "09/20/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Also known as Ranger Road"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus ponderosa var. brachyptera",
+          "Ponderosa Pine",
+          "99.1'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. brachyptera",
+            "href": "/Browse/Sites/38155/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/38155/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "99.1'",
+            "href": "/Browse/Trees/131002/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/131003/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus gambelii var. gambelii",
+          "Gambel Oak",
+          "44.6'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus gambelii var. gambelii",
+            "href": "/Browse/Sites/38155/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "Gambel Oak",
+            "href": "/Browse/Sites/38155/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "44.6'",
+            "href": "/Browse/Trees/131007/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/131006/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 54.300, -111 26.202",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

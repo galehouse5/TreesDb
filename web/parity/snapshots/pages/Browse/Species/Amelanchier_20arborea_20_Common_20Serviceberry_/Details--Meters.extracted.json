@@ -1,0 +1,165 @@
+{
+  "botanicalName": "Amelanchier arborea",
+  "commonName": "Common Serviceberry",
+  "global": {
+    "maxHeight": {
+      "text": "30.78 m",
+      "href": "/Browse/Trees/313064/Details"
+    },
+    "maxGirth": {
+      "text": "267 cm",
+      "href": "/Browse/Trees/313065/Details"
+    },
+    "maxCrownSpread": {
+      "text": "17.07 m",
+      "href": "/Browse/Trees/313065/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "11.31 m",
+          "40 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "11.31 m",
+            "href": "/Browse/Trees/241619/Details"
+          },
+          {
+            "text": "40 cm",
+            "href": "/Browse/Trees/241619/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "22.37 m",
+          "102 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "22.37 m",
+            "href": "/Browse/Trees/280019/Details"
+          },
+          {
+            "text": "102 cm",
+            "href": "/Browse/Trees/213023/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "5.91 m",
+          "28 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "5.91 m",
+            "href": "/Browse/Trees/236545/Details"
+          },
+          {
+            "text": "28 cm",
+            "href": "/Browse/Trees/236545/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "21.79 m",
+          "76 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "21.79 m",
+            "href": "/Browse/Trees/320571/Details"
+          },
+          {
+            "text": "76 cm",
+            "href": "/Browse/Trees/320571/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "30.78 m",
+          "267 cm",
+          "17.07 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "30.78 m",
+            "href": "/Browse/Trees/313064/Details"
+          },
+          {
+            "text": "267 cm",
+            "href": "/Browse/Trees/313065/Details"
+          },
+          {
+            "text": "17.07 m",
+            "href": "/Browse/Trees/313065/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "siteId": 39233,
+  "summary": {
+    "Name": "Hemlock Bluff Nature Preserve",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "03/04/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "44 Acres"
+  },
+  "visits": [
+    {
+      "visited": "03/04/2013",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "44 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "111.5'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/39233/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/39233/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "111.5'",
+            "href": "/Browse/Trees/169786/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/169787/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 50.790, -086 15.776",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Jackson"
+    },
+    "state": {
+      "text": "Indiana (US)",
+      "href": "/Browse/States/13/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,104 @@
+{
+  "siteId": 41702,
+  "summary": {
+    "Name": "Oswald West State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "05/22/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "2474 acres"
+  },
+  "visits": [
+    {
+      "visited": "05/22/2011",
+      "visitors": "Mario Vaden",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "2474 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea sitchensis",
+          "Sitka Spruce",
+          "224.0'",
+          "504''",
+          "88.0'"
+        ],
+        "links": [
+          {
+            "text": "Picea sitchensis",
+            "href": "/Browse/Sites/41702/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "Sitka Spruce",
+            "href": "/Browse/Sites/41702/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "224.0'",
+            "href": "/Browse/Trees/269584/Details"
+          },
+          {
+            "text": "504''",
+            "href": "/Browse/Trees/269584/Details"
+          },
+          {
+            "text": "88.0'",
+            "href": "/Browse/Trees/269584/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 45.915, -123 57.901",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Tillamook"
+    },
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

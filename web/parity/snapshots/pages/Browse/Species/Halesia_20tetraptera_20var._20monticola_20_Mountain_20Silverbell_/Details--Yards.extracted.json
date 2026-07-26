@@ -1,0 +1,135 @@
+{
+  "botanicalName": "Halesia tetraptera var. monticola",
+  "commonName": "Mountain Silverbell",
+  "global": {
+    "maxHeight": {
+      "text": "42.00 yd",
+      "href": "/Browse/Trees/204866/Details"
+    },
+    "maxGirth": {
+      "text": "123''",
+      "href": "/Browse/Trees/227264/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "35.13 yd",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "35.13 yd",
+            "href": "/Browse/Trees/249342/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/249342/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "42.00 yd",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "42.00 yd",
+            "href": "/Browse/Trees/204866/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/227264/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "27.33 yd",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "27.33 yd",
+            "href": "/Browse/Trees/236544/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/281324/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "41.93 yd",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "41.93 yd",
+            "href": "/Browse/Trees/229552/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/229550/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

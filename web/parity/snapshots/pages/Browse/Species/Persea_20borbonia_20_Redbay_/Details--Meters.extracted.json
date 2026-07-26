@@ -1,0 +1,93 @@
+{
+  "botanicalName": "Persea borbonia",
+  "commonName": "Redbay",
+  "global": {
+    "maxHeight": {
+      "text": "22.49 m",
+      "href": "/Browse/Trees/242651/Details"
+    },
+    "maxGirth": {
+      "text": "218 cm",
+      "href": "/Browse/Trees/2403/Details"
+    },
+    "maxCrownSpread": {
+      "text": "15.24 m",
+      "href": "/Browse/Trees/2403/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "North Carolina",
+          "9.45 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "9.45 m",
+            "href": "/Browse/Trees/40680/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "22.49 m",
+          "218 cm",
+          "15.24 m"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "22.49 m",
+            "href": "/Browse/Trees/242651/Details"
+          },
+          {
+            "text": "218 cm",
+            "href": "/Browse/Trees/2403/Details"
+          },
+          {
+            "text": "15.24 m",
+            "href": "/Browse/Trees/2403/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

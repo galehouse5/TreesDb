@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Amelanchier alnifolia",
+  "commonName": "Saskatoon Serviceberry",
+  "global": {
+    "maxHeight": {
+      "text": "25.8'",
+      "href": "/Browse/Trees/220375/Details"
+    },
+    "maxGirth": {
+      "text": "7''",
+      "href": "/Browse/Trees/98160/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Idaho",
+          "25.8'",
+          "7''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "25.8'",
+            "href": "/Browse/Trees/220375/Details"
+          },
+          {
+            "text": "7''",
+            "href": "/Browse/Trees/98160/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

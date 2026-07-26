@@ -1,0 +1,101 @@
+{
+  "siteId": 40995,
+  "summary": {
+    "Name": "Matthies Grove",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "14",
+    "Last measurement date": "04/28/2010",
+    "Ownership contact": "106 River Road Barkhamsted, Connedticut",
+    "General comments": "Matthies Grove 200 acres Peoples State Forest 3,059 acres"
+  },
+  "visits": [
+    {
+      "visited": "04/28/2010",
+      "visitors": "Tom Howard and Jack Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Matthies Grove 200 acres Peoples State Forest 3,059 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "129.0'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40995/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40995/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "129.0'",
+            "href": "/Browse/Trees/242585/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/242590/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 55.496, -073 00.251",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Litchfield"
+    },
+    "state": {
+      "text": "Connecticut (US)",
+      "href": "/Browse/States/6/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

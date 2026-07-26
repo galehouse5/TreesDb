@@ -1,0 +1,353 @@
+{
+  "siteId": 38515,
+  "summary": {
+    "Name": "Five Mile Woods Preserve",
+    "RHI5": "116.80",
+    "RHI10": "112.39",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.98",
+    "RGI10": "9.19",
+    "RGI20": "(not enough data)",
+    "Trees measured": "31",
+    "Last measurement date": "10/10/2010",
+    "Ownership contact": "Phone 215-493-6652 Email:[email protected]",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/10/2010",
+      "visitors": "George Fieo",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "107.3'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38515/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38515/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "107.3'",
+            "href": "/Browse/Trees/143175/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/143174/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "103.1'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/38515/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/38515/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "103.1'",
+            "href": "/Browse/Trees/143161/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/143160/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "116.7'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/38515/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/38515/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "116.7'",
+            "href": "/Browse/Trees/143171/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/143170/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "109.9'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/38515/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/38515/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "109.9'",
+            "href": "/Browse/Trees/143177/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/143177/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "103.8'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/38515/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/38515/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "103.8'",
+            "href": "/Browse/Trees/143167/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/143167/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "105.9'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38515/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38515/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "105.9'",
+            "href": "/Browse/Trees/143157/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/143156/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "112.8'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/38515/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/38515/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "112.8'",
+            "href": "/Browse/Trees/143182/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/143181/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "126.1'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38515/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38515/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "126.1'",
+            "href": "/Browse/Trees/143185/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/143183/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "95.3'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/38515/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/38515/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "95.3'",
+            "href": "/Browse/Trees/143164/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/143163/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "83.9'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/38515/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/38515/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "83.9'",
+            "href": "/Browse/Trees/143166/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/143166/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "(no data)",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Township",
+      "County": "Bucks"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

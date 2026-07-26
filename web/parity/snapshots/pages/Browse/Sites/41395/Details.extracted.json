@@ -1,0 +1,273 @@
+{
+  "siteId": 41395,
+  "summary": {
+    "Name": "Bailey Arboretum",
+    "RHI5": "110.04",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "0.00",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "14",
+    "Last measurement date": "04/22/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "42 Acres"
+  },
+  "visits": [
+    {
+      "visited": "04/22/2016",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "42 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Chamaecyparis pisifera",
+          "Sawara False Cypress",
+          "99.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis pisifera",
+            "href": "/Browse/Sites/41395/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "Sawara False Cypress",
+            "href": "/Browse/Sites/41395/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "99.0'",
+            "href": "/Browse/Trees/258149/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus sylvatica",
+          "European Beech",
+          "103.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus sylvatica",
+            "href": "/Browse/Sites/41395/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "European Beech",
+            "href": "/Browse/Sites/41395/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "103.1'",
+            "href": "/Browse/Trees/258150/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "127.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/41395/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/41395/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "127.7'",
+            "href": "/Browse/Trees/258144/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "110.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/41395/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/41395/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "110.7'",
+            "href": "/Browse/Trees/258152/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "109.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41395/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41395/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "109.7'",
+            "href": "/Browse/Trees/258153/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii",
+          "Douglas-Fir",
+          "91.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii",
+            "href": "/Browse/Sites/41395/Species/Pseudotsuga%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/41395/Species/Pseudotsuga%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "91.5'",
+            "href": "/Browse/Trees/258156/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Torreya taxifolia",
+          "Florida Nutmeg",
+          "53.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Torreya taxifolia",
+            "href": "/Browse/Sites/41395/Species/Torreya%20taxifolia%20(Florida%20Nutmeg)/Details"
+          },
+          {
+            "text": "Florida Nutmeg",
+            "href": "/Browse/Sites/41395/Species/Torreya%20taxifolia%20(Florida%20Nutmeg)/Details"
+          },
+          {
+            "text": "53.6'",
+            "href": "/Browse/Trees/258151/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "87.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/41395/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/41395/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "87.3'",
+            "href": "/Browse/Trees/258157/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 53.253, -073 35.078",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Nassau"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

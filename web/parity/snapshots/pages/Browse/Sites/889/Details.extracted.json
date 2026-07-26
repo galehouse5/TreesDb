@@ -1,0 +1,179 @@
+{
+  "siteId": 889,
+  "summary": {
+    "Name": "Hatch Otis Sanctuary",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "09/05/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "111 acres claimed as \"virgin\" woodland. The site has some nice trees but the site was rather disappointing. It is an obvious stand of \"mature\" second growth from a field. Just one small ravine appeared to harbor the native climax composition with some mature hemlock, beech, maple, and a cucumber."
+  },
+  "visits": [
+    {
+      "visited": "09/05/2011",
+      "visitors": "Daniel Reed, Steve Galehouse, and Will Blozan",
+      "tripReportUrl": "(none)",
+      "comments": "111 acres claimed as \"virgin\" woodland. The site has some nice trees but the site was rather disappointing. It is an obvious stand of \"mature\" second growth from a field. Just one small ravine appeared to harbor the native climax composition with some mature hemlock, beech, maple, and a cucumber."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "-",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/889/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/889/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          null,
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/15967/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "-",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/889/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/889/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          null,
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/15965/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sassafras albidum",
+          "Sassafras",
+          "-",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sassafras albidum",
+            "href": "/Browse/Sites/889/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "Sassafras",
+            "href": "/Browse/Sites/889/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          null,
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/15968/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "134.4'",
+          "121''",
+          "44.1'"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/889/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/889/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "134.4'",
+            "href": "/Browse/Trees/15966/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/15966/Details"
+          },
+          {
+            "text": "44.1'",
+            "href": "/Browse/Trees/15966/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 35.488, -081 24.648",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Lake"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

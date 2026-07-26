@@ -1,0 +1,359 @@
+{
+  "siteId": 39045,
+  "summary": {
+    "Name": "Maryland Single Tree Sites",
+    "RHI5": "113.26",
+    "RHI10": "94.61",
+    "RHI20": "(not enough data)",
+    "RGI5": "18.72",
+    "RGI10": "14.81",
+    "RGI20": "(not enough data)",
+    "Trees measured": "17",
+    "Last measurement date": "01/01/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2010",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer davidii",
+          "Father David's Maple",
+          "47.0'",
+          "28''",
+          "29.5'"
+        ],
+        "links": [
+          {
+            "text": "Acer davidii",
+            "href": "/Browse/Sites/39045/Species/Acer%20davidii%20(Father%20David's%20Maple)/Details"
+          },
+          {
+            "text": "Father David's Maple",
+            "href": "/Browse/Sites/39045/Species/Acer%20davidii%20(Father%20David's%20Maple)/Details"
+          },
+          {
+            "text": "47.0'",
+            "href": "/Browse/Trees/163348/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/163348/Details"
+          },
+          {
+            "text": "29.5'",
+            "href": "/Browse/Trees/163348/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "-",
+          "144''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/39045/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39045/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/163349/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "63.3'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/39045/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/39045/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "63.3'",
+            "href": "/Browse/Trees/163338/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/163338/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "100.2'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/39045/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/39045/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "100.2'",
+            "href": "/Browse/Trees/163344/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/163344/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "-",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/39045/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/39045/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          null,
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/163350/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "129.4'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39045/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39045/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "129.4'",
+            "href": "/Browse/Trees/163337/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/163337/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus profunda",
+          "Pumpkin Ash",
+          "58.0'",
+          "43''",
+          "28.0'"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus profunda",
+            "href": "/Browse/Sites/39045/Species/Fraxinus%20profunda%20(Pumpkin%20Ash)/Details"
+          },
+          {
+            "text": "Pumpkin Ash",
+            "href": "/Browse/Sites/39045/Species/Fraxinus%20profunda%20(Pumpkin%20Ash)/Details"
+          },
+          {
+            "text": "58.0'",
+            "href": "/Browse/Trees/163345/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/163345/Details"
+          },
+          {
+            "text": "28.0'",
+            "href": "/Browse/Trees/163345/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "116.1'",
+          "272''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39045/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39045/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "116.1'",
+            "href": "/Browse/Trees/163343/Details"
+          },
+          {
+            "text": "272''",
+            "href": "/Browse/Trees/163343/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Morella cerifera",
+          "Wax Myrtle",
+          "29.0'",
+          "6''",
+          "13.0'"
+        ],
+        "links": [
+          {
+            "text": "Morella cerifera",
+            "href": "/Browse/Sites/39045/Species/Morella%20cerifera%20(Wax%20Myrtle)/Details"
+          },
+          {
+            "text": "Wax Myrtle",
+            "href": "/Browse/Sites/39045/Species/Morella%20cerifera%20(Wax%20Myrtle)/Details"
+          },
+          {
+            "text": "29.0'",
+            "href": "/Browse/Trees/163346/Details"
+          },
+          {
+            "text": "6''",
+            "href": "/Browse/Trees/163346/Details"
+          },
+          {
+            "text": "13.0'",
+            "href": "/Browse/Trees/163346/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "68.0'",
+          "186''",
+          "77.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/39045/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/39045/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/163347/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/163347/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/163347/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 58.707, -076 29.531",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private. Public",
+      "County": "Various Counties"
+    },
+    "state": {
+      "text": "Maryland (US)",
+      "href": "/Browse/States/18/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

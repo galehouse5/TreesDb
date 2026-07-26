@@ -1,0 +1,353 @@
+{
+  "siteId": 41319,
+  "summary": {
+    "Name": "Gouveneur",
+    "RHI5": "69.10",
+    "RHI10": "65.35",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.86",
+    "RGI10": "6.29",
+    "RGI20": "(not enough data)",
+    "Trees measured": "23",
+    "Last measurement date": "12/10/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/10/2004",
+      "visitors": "Harold Stoner and Bradley Burns",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/new_york/st_lawrence_county.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "72.0'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41319/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41319/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/256852/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/256853/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "70.5'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/41319/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41319/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "70.5'",
+            "href": "/Browse/Trees/256850/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/256849/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "50.0'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/41319/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/41319/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/256866/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/256866/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "60.0'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/41319/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/41319/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "60.0'",
+            "href": "/Browse/Trees/256855/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/256855/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "62.5'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/41319/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/41319/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "62.5'",
+            "href": "/Browse/Trees/256858/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/256858/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "60.0'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/41319/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/41319/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "60.0'",
+            "href": "/Browse/Trees/256862/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/256862/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "36.5'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/41319/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/41319/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "36.5'",
+            "href": "/Browse/Trees/256865/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/256865/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "63.5'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41319/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41319/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "63.5'",
+            "href": "/Browse/Trees/256864/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/256864/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus macrocarpa",
+          "Bur Oak",
+          "62.0'",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa",
+            "href": "/Browse/Sites/41319/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/41319/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "62.0'",
+            "href": "/Browse/Trees/256867/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/256867/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "68.0'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/41319/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41319/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/256846/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/256847/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 21.605, -075 28.922",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "St. Lawrence"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,185 @@
+{
+  "siteId": 40320,
+  "summary": {
+    "Name": "Kellogg Center",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "02/14/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/14/2009",
+      "visitors": "James Parton",
+      "tripReportUrl": "nativetreesociety.org/special/kellog_center_nc.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "85.5'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/40320/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/40320/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "85.5'",
+            "href": "/Browse/Trees/227965/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/227965/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca",
+          "American Holly",
+          "40.3'",
+          "26''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca",
+            "href": "/Browse/Sites/40320/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/40320/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "40.3'",
+            "href": "/Browse/Trees/227970/Details"
+          },
+          {
+            "text": "26''",
+            "href": "/Browse/Trees/227970/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "111.4'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/40320/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/40320/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "111.4'",
+            "href": "/Browse/Trees/227967/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/227968/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "125.0'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40320/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40320/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "125.0'",
+            "href": "/Browse/Trees/227969/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/227969/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 21.047, -082 32.197",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Henderson"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

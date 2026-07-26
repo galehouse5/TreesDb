@@ -1,0 +1,70 @@
+{
+  "treeId": 216275,
+  "botanicalName": {
+    "text": "Picea sitchensis",
+    "href": "/Browse/Sites/40052/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+  },
+  "commonName": {
+    "text": "Sitka Spruce",
+    "href": "/Browse/Sites/40052/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+  },
+  "details": {
+    "Height": "264.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "313''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "1801.80",
+    "ENTSPTS": "6903.45",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.58",
+    "Champion points (abbreviated)": "577.70",
+    "Diameter": "100''",
+    "Conical volume": "4779.4 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 09/17/2020",
+      "summary": {
+        "Height": "264.5'",
+        "Girth": "313''"
+      },
+      "details": {
+        "Botanical name": "Picea sitchensis",
+        "Common name": "Sitka Spruce",
+        "Height": "264.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "313''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "1801.80",
+        "ENTSPTS": "6903.45",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.58",
+        "Champion points (abbreviated)": "577.70",
+        "Diameter": "100''",
+        "Conical volume": "4779.4 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Elijah Whitcomb"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "47 27.907, -123 50.494",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Quinault Rainforest Loop",
+      "href": "/Browse/Sites/40052/Details"
+    },
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Grays Harbor"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

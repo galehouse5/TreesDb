@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Tilia platyphyllos",
+  "commonName": "Largeleaf Linden",
+  "global": {
+    "maxHeight": {
+      "text": "21.73 m",
+      "href": "/Browse/Trees/281874/Details"
+    },
+    "maxGirth": {
+      "text": "168 cm",
+      "href": "/Browse/Trees/286431/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liguria",
+          "15.61 m",
+          "168 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liguria",
+            "href": "/Browse/States/152/Details"
+          },
+          {
+            "text": "15.61 m",
+            "href": "/Browse/Trees/286431/Details"
+          },
+          {
+            "text": "168 cm",
+            "href": "/Browse/Trees/286431/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "21.73 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "21.73 m",
+            "href": "/Browse/Trees/281874/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

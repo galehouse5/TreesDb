@@ -1,0 +1,101 @@
+{
+  "siteId": 39821,
+  "summary": {
+    "Name": "Tall Tree Trail",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "03/02/2019",
+    "Ownership contact": "(no data)",
+    "General comments": "There is also some nice Virginia Pine on site but not measured."
+  },
+  "visits": [
+    {
+      "visited": "03/02/2019",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "There is also some nice Virginia Pine on site but not measured."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "148.0'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/39821/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/39821/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "148.0'",
+            "href": "/Browse/Trees/203637/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/203636/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 13.360, -081 06.779",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Ritchie"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

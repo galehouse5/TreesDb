@@ -1,0 +1,350 @@
+{
+  "siteId": 42364,
+  "summary": {
+    "Name": "Meeman-Shelby Forest State Park",
+    "RHI5": "158.06",
+    "RHI10": "154.56",
+    "RHI20": "147.92",
+    "RGI5": "19.42",
+    "RGI10": "17.40",
+    "RGI20": "15.49",
+    "Trees measured": "252",
+    "Last measurement date": "02/13/2025",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/13/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer barbatum",
+          "Southern Sugar Maple",
+          "109.0'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer barbatum",
+            "href": "/Browse/Sites/42364/Species/Acer%20barbatum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/Sites/42364/Species/Acer%20barbatum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/321868/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/321817/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "89.5'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/Sites/42364/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/42364/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/321953/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/321953/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "119.2'",
+          "138''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/42364/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/42364/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "119.2'",
+            "href": "/Browse/Trees/321812/Details"
+          },
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/321998/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "105.0'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/42364/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/42364/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/321969/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/321969/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. caroliniana",
+          "American Hornbeam",
+          "39.7'",
+          "27''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. caroliniana",
+            "href": "/Browse/Sites/42364/Species/Carpinus%20caroliniana%20ssp.%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/42364/Species/Carpinus%20caroliniana%20ssp.%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "39.7'",
+            "href": "/Browse/Trees/321879/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/321879/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya aquatica",
+          "Water Hickory",
+          "95.5'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya aquatica",
+            "href": "/Browse/Sites/42364/Species/Carya%20aquatica%20(Water%20Hickory)/Details"
+          },
+          {
+            "text": "Water Hickory",
+            "href": "/Browse/Sites/42364/Species/Carya%20aquatica%20(Water%20Hickory)/Details"
+          },
+          {
+            "text": "95.5'",
+            "href": "/Browse/Trees/321793/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/321793/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "140.8'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/42364/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/42364/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "140.8'",
+            "href": "/Browse/Trees/321772/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/321903/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "125.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/42364/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/42364/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "125.4'",
+            "href": "/Browse/Trees/321770/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "145.7'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/42364/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/42364/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "145.7'",
+            "href": "/Browse/Trees/321968/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/321967/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya laciniosa",
+          "Shellbark Hickory",
+          "118.3'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya laciniosa",
+            "href": "/Browse/Sites/42364/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shellbark Hickory",
+            "href": "/Browse/Sites/42364/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "118.3'",
+            "href": "/Browse/Trees/321926/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/321926/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 56 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 19.823, -090 02.735",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Shelby"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,303 @@
+{
+  "siteId": 40418,
+  "summary": {
+    "Name": "Tennessee Single Tree Sites",
+    "RHI5": "104.68",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "18.97",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "60.3'",
+          "214''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/40418/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/40418/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "60.3'",
+            "href": "/Browse/Trees/229800/Details"
+          },
+          {
+            "text": "214''",
+            "href": "/Browse/Trees/229800/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "141.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/40418/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/40418/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "141.1'",
+            "href": "/Browse/Trees/229807/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa bignonioides",
+          "Southern Catalpa",
+          "86.0'",
+          "208''",
+          "85.0'"
+        ],
+        "links": [
+          {
+            "text": "Catalpa bignonioides",
+            "href": "/Browse/Sites/40418/Species/Catalpa%20bignonioides%20(Southern%20Catalpa)/Details"
+          },
+          {
+            "text": "Southern Catalpa",
+            "href": "/Browse/Sites/40418/Species/Catalpa%20bignonioides%20(Southern%20Catalpa)/Details"
+          },
+          {
+            "text": "86.0'",
+            "href": "/Browse/Trees/229803/Details"
+          },
+          {
+            "text": "208''",
+            "href": "/Browse/Trees/229803/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/229803/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis",
+          "Eastern Redbud",
+          "-",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis",
+            "href": "/Browse/Sites/40418/Species/Cercis%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/Sites/40418/Species/Cercis%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          null,
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/229806/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "108.4'",
+          "260''",
+          "132.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40418/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40418/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "108.4'",
+            "href": "/Browse/Trees/229799/Details"
+          },
+          {
+            "text": "260''",
+            "href": "/Browse/Trees/229801/Details"
+          },
+          {
+            "text": "132.0'",
+            "href": "/Browse/Trees/229799/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus palustris",
+          "Pin Oak",
+          "76.7'",
+          "228''",
+          "105.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus palustris",
+            "href": "/Browse/Sites/40418/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "Pin Oak",
+            "href": "/Browse/Sites/40418/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "76.7'",
+            "href": "/Browse/Trees/229802/Details"
+          },
+          {
+            "text": "228''",
+            "href": "/Browse/Trees/229802/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/229802/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus shumardii",
+          "Shumard's Oak",
+          "84.0'",
+          "224''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus shumardii",
+            "href": "/Browse/Sites/40418/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+          },
+          {
+            "text": "Shumard's Oak",
+            "href": "/Browse/Sites/40418/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/229805/Details"
+          },
+          {
+            "text": "224''",
+            "href": "/Browse/Trees/229805/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus spp.",
+          "Elm",
+          "103.9'",
+          "212''",
+          "70.0'"
+        ],
+        "links": [
+          {
+            "text": "Ulmus spp.",
+            "href": "/Browse/Sites/40418/Species/Ulmus%20spp.%20(Elm)/Details"
+          },
+          {
+            "text": "Elm",
+            "href": "/Browse/Sites/40418/Species/Ulmus%20spp.%20(Elm)/Details"
+          },
+          {
+            "text": "103.9'",
+            "href": "/Browse/Trees/229804/Details"
+          },
+          {
+            "text": "212''",
+            "href": "/Browse/Trees/229804/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/229804/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 09.957, -086 46.917",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public, Private",
+      "County": "Davidson"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

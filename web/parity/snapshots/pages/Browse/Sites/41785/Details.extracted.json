@@ -1,0 +1,98 @@
+{
+  "siteId": 41785,
+  "summary": {
+    "Name": "White Pass, Washington Cascades",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "07/07/2022",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/07/2022",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cupressus nootkatensis",
+          "Alaska Cedar",
+          "113.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cupressus nootkatensis",
+            "href": "/Browse/Sites/41785/Species/Cupressus%20nootkatensis%20(Alaska%20Cedar)/Details"
+          },
+          {
+            "text": "Alaska Cedar",
+            "href": "/Browse/Sites/41785/Species/Cupressus%20nootkatensis%20(Alaska%20Cedar)/Details"
+          },
+          {
+            "text": "113.3'",
+            "href": "/Browse/Trees/274362/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "46 38.289, -121 23.568",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Lewis"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

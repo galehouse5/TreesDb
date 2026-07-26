@@ -1,0 +1,135 @@
+{
+  "siteId": 543,
+  "summary": {
+    "Name": "Shade's Mills Conservation Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "06/15/2011",
+    "Ownership contact": "(private)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/15/2011",
+      "visitors": "William Van Hemessen and Maria Legault",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "31.0'",
+          "75''",
+          "19.0'"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/543/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/543/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "31.0'",
+            "href": "/Browse/Trees/4072/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/4072/Details"
+          },
+          {
+            "text": "19.0'",
+            "href": "/Browse/Trees/4072/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "50.0'",
+          "113''",
+          "35.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/543/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/543/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/4073/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/4073/Details"
+          },
+          {
+            "text": "35.0'",
+            "href": "/Browse/Trees/4073/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 22.912, -080 16.875",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Waterloo Regional Municipality"
+    },
+    "state": {
+      "text": "Ontario (CA)",
+      "href": "/Browse/States/57/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

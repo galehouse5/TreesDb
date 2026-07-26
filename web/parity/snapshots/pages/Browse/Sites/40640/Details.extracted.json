@@ -1,0 +1,126 @@
+{
+  "siteId": 40640,
+  "summary": {
+    "Name": "Catlin Woods",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "12/12/2004",
+    "Ownership contact": "White Memorial Conservation Area 80 Whitehall Road Litchfield, Connecticut",
+    "General comments": "4000 acres and contains Catlin Woods."
+  },
+  "visits": [
+    {
+      "visited": "12/12/2004",
+      "visitors": "Ernie Ostuno",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/ostuno/conn/connecticut_sites.htm",
+      "comments": "4000 acres and contains Catlin Woods."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "109.0'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40640/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40640/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/234234/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/234232/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "-",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40640/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40640/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          null,
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/234231/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 43.352, -073 11.803",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Litchfield"
+    },
+    "state": {
+      "text": "Connecticut (US)",
+      "href": "/Browse/States/6/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

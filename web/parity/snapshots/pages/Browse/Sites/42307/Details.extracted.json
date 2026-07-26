@@ -1,0 +1,157 @@
+{
+  "siteId": 42307,
+  "summary": {
+    "Name": "Glacier Point Rd.",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "07/15/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/15/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies magnifica",
+          "California Red Fir",
+          "220.2'",
+          "203''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies magnifica",
+            "href": "/Browse/Sites/42307/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+          },
+          {
+            "text": "California Red Fir",
+            "href": "/Browse/Sites/42307/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+          },
+          {
+            "text": "220.2'",
+            "href": "/Browse/Trees/318128/Details"
+          },
+          {
+            "text": "203''",
+            "href": "/Browse/Trees/318127/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus jeffreyi",
+          "Jeffrey Pine",
+          "151.4'",
+          "214''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus jeffreyi",
+            "href": "/Browse/Sites/42307/Species/Pinus%20jeffreyi%20(Jeffrey%20Pine)/Details"
+          },
+          {
+            "text": "Jeffrey Pine",
+            "href": "/Browse/Sites/42307/Species/Pinus%20jeffreyi%20(Jeffrey%20Pine)/Details"
+          },
+          {
+            "text": "151.4'",
+            "href": "/Browse/Trees/318126/Details"
+          },
+          {
+            "text": "214''",
+            "href": "/Browse/Trees/318126/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus monticola",
+          "Western White Pine",
+          "140.0'",
+          "169''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus monticola",
+            "href": "/Browse/Sites/42307/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "Western White Pine",
+            "href": "/Browse/Sites/42307/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "140.0'",
+            "href": "/Browse/Trees/318124/Details"
+          },
+          {
+            "text": "169''",
+            "href": "/Browse/Trees/318125/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "37 42.851, -119 35.458",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Mariposa"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

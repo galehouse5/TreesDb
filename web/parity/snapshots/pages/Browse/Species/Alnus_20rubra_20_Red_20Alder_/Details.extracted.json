@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Alnus rubra",
+  "commonName": "Red Alder",
+  "global": {
+    "maxHeight": {
+      "text": "125.0'",
+      "href": "/Browse/Trees/296870/Details"
+    },
+    "maxGirth": {
+      "text": "106''",
+      "href": "/Browse/Trees/296870/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alaska",
+          "53.0'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alaska",
+            "href": "/Browse/States/62/Details"
+          },
+          {
+            "text": "53.0'",
+            "href": "/Browse/Trees/75027/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/75027/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "125.0'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "125.0'",
+            "href": "/Browse/Trees/296870/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/296870/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "botanicalName": "Pinus monticola",
+  "commonName": "Western White Pine",
+  "global": {
+    "maxHeight": {
+      "text": "225.3'",
+      "href": "/Browse/Trees/318047/Details"
+    },
+    "maxGirth": {
+      "text": "311''",
+      "href": "/Browse/Trees/268757/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "140.0'",
+          "311''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "140.0'",
+            "href": "/Browse/Trees/318124/Details"
+          },
+          {
+            "text": "311''",
+            "href": "/Browse/Trees/268757/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "225.3'",
+          "167''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "225.3'",
+            "href": "/Browse/Trees/318047/Details"
+          },
+          {
+            "text": "167''",
+            "href": "/Browse/Trees/296907/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "178.8'",
+          "164''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "178.8'",
+            "href": "/Browse/Trees/318054/Details"
+          },
+          {
+            "text": "164''",
+            "href": "/Browse/Trees/318054/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "107.3'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "107.3'",
+            "href": "/Browse/Trees/226038/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/226038/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oregon",
+          "202.1'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon",
+            "href": "/Browse/States/35/Details"
+          },
+          {
+            "text": "202.1'",
+            "href": "/Browse/Trees/318015/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/318014/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "174.0'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "174.0'",
+            "href": "/Browse/Trees/296900/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/296900/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

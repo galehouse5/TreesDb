@@ -1,0 +1,129 @@
+{
+  "siteId": 40557,
+  "summary": {
+    "Name": "Cathedral Of The Pines",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "06/08/2005",
+    "Ownership contact": "Chequamegon/Nicolet National Forest Clam Lake, Wisconsin",
+    "General comments": "40 Acres and is a State Natural Area. Contains a large heron rookery"
+  },
+  "visits": [
+    {
+      "visited": "06/08/2005",
+      "visitors": "Don Bragg",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/wisconsin/northern_adv/great_northern_adventure.htm",
+      "comments": "40 Acres and is a State Natural Area. Contains a large heron rookery"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "127.3'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/40557/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/40557/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "127.3'",
+            "href": "/Browse/Trees/233383/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/233383/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "134.7'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40557/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40557/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "134.7'",
+            "href": "/Browse/Trees/233373/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/233373/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 17.462, -088 33.847",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Oconto"
+    },
+    "state": {
+      "text": "Wisconsin (US)",
+      "href": "/Browse/States/46/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

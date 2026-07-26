@@ -1,0 +1,557 @@
+{
+  "stateId": 4,
+  "summary": {
+    "Name": "California",
+    "Code": "CA",
+    "RHI5": "289.84",
+    "RHI10": "256.96",
+    "RHI20": "204.44",
+    "RGI5": "53.11",
+    "RGI10": "37.94",
+    "RGI20": "26.13",
+    "Trees measured": "206",
+    "Last measurement date": "01/19/2025"
+  },
+  "location": {
+    "Coordinates": "37 16.171, -119 18.384",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. lowiana",
+          "White Fir",
+          "242.1'",
+          "219''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. lowiana",
+            "href": "/Browse/States/4/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/4/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+          },
+          {
+            "text": "242.1'",
+            "href": "/Browse/Trees/274335/Details"
+          },
+          {
+            "text": "219''",
+            "href": "/Browse/Trees/320699/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lowiana",
+          "Sierra White Fir",
+          "173.6'",
+          "211''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lowiana",
+            "href": "/Browse/States/4/Species/Abies%20lowiana%20(Sierra%20White%20Fir)/Details"
+          },
+          {
+            "text": "Sierra White Fir",
+            "href": "/Browse/States/4/Species/Abies%20lowiana%20(Sierra%20White%20Fir)/Details"
+          },
+          {
+            "text": "173.6'",
+            "href": "/Browse/Trees/241858/Details"
+          },
+          {
+            "text": "211''",
+            "href": "/Browse/Trees/241858/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies magnifica",
+          "California Red Fir",
+          "220.2'",
+          "304''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies magnifica",
+            "href": "/Browse/States/4/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+          },
+          {
+            "text": "California Red Fir",
+            "href": "/Browse/States/4/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+          },
+          {
+            "text": "220.2'",
+            "href": "/Browse/Trees/318128/Details"
+          },
+          {
+            "text": "304''",
+            "href": "/Browse/Trees/268388/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer macrophyllum",
+          "Bigleaf Maple",
+          "160.4'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer macrophyllum",
+            "href": "/Browse/States/4/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "Bigleaf Maple",
+            "href": "/Browse/States/4/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "160.4'",
+            "href": "/Browse/Trees/269083/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/269083/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus rhombifolia",
+          "White Alder",
+          "86.0'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus rhombifolia",
+            "href": "/Browse/States/4/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+          },
+          {
+            "text": "White Alder",
+            "href": "/Browse/States/4/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+          },
+          {
+            "text": "86.0'",
+            "href": "/Browse/Trees/318009/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/318009/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arbutus menziesii",
+          "Pacific Madrone",
+          "62.5'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arbutus menziesii",
+            "href": "/Browse/States/4/Species/Arbutus%20menziesii%20(Pacific%20Madrone)/Details"
+          },
+          {
+            "text": "Pacific Madrone",
+            "href": "/Browse/States/4/Species/Arbutus%20menziesii%20(Pacific%20Madrone)/Details"
+          },
+          {
+            "text": "62.5'",
+            "href": "/Browse/Trees/274985/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/274985/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Calocedrus decurrens",
+          "Incense Cedar",
+          "144.2'",
+          "265''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Calocedrus decurrens",
+            "href": "/Browse/States/4/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "Incense Cedar",
+            "href": "/Browse/States/4/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "144.2'",
+            "href": "/Browse/Trees/274336/Details"
+          },
+          {
+            "text": "265''",
+            "href": "/Browse/Trees/320690/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercocarpus ledifolius",
+          "Curl-Leaf Mountain Mahogany",
+          "22.0'",
+          "144''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "Cercocarpus ledifolius",
+            "href": "/Browse/States/4/Species/Cercocarpus%20ledifolius%20(Curl-Leaf%20Mountain%20Mahogany)/Details"
+          },
+          {
+            "text": "Curl-Leaf Mountain Mahogany",
+            "href": "/Browse/States/4/Species/Cercocarpus%20ledifolius%20(Curl-Leaf%20Mountain%20Mahogany)/Details"
+          },
+          {
+            "text": "22.0'",
+            "href": "/Browse/Trees/268822/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/268822/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/268822/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Chrysolepis chrysophylla",
+          "Giant Chinquapin",
+          "142.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chrysolepis chrysophylla",
+            "href": "/Browse/States/4/Species/Chrysolepis%20chrysophylla%20(Giant%20Chinquapin)/Details"
+          },
+          {
+            "text": "Giant Chinquapin",
+            "href": "/Browse/States/4/Species/Chrysolepis%20chrysophylla%20(Giant%20Chinquapin)/Details"
+          },
+          {
+            "text": "142.6'",
+            "href": "/Browse/Trees/269082/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cupressus sempervirens",
+          "Italian Cypress",
+          "111.4'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cupressus sempervirens",
+            "href": "/Browse/States/4/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "Italian Cypress",
+            "href": "/Browse/States/4/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "111.4'",
+            "href": "/Browse/Trees/274979/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/274979/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 45 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Along Eel River",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Along Eel River",
+            "href": "/Browse/Sites/41669/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Babbitt Peak Research Natural Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Babbitt Peak Research Natural Area",
+            "href": "/Browse/Sites/41877/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bidwell Park",
+          "122.40",
+          "109.95",
+          "12.85",
+          "9.99"
+        ],
+        "links": [
+          {
+            "text": "Bidwell Park",
+            "href": "/Browse/Sites/41838/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big Basin Redwoods State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Big Basin Redwoods State Park",
+            "href": "/Browse/Sites/41655/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big Bear Highway (CA-18)",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Big Bear Highway (CA-18)",
+            "href": "/Browse/Sites/42349/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Calaveras Big Tree State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Calaveras Big Tree State Park",
+            "href": "/Browse/Sites/41629/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "California Single Tree Sites",
+          "164.08",
+          "-",
+          "14.92",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California Single Tree Sites",
+            "href": "/Browse/Sites/41643/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Calpine Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Calpine Area",
+            "href": "/Browse/Sites/41879/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "El Dorado National Forest",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "El Dorado National Forest",
+            "href": "/Browse/Sites/41630/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fuller Mill Creek Picnic Area",
+          "128.74",
+          "-",
+          "9.05",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fuller Mill Creek Picnic Area",
+            "href": "/Browse/Sites/42290/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 35 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

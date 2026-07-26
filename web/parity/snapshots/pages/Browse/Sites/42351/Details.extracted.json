@@ -1,0 +1,185 @@
+{
+  "siteId": 42351,
+  "summary": {
+    "Name": "Flagstaff Snow Bowl Road",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "01/21/2025",
+    "Ownership contact": "Previously visited by Turner Sharp. Trees measured along road and adjacent trails.",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/21/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "127.0'",
+          "155''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/Sites/42351/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/42351/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "127.0'",
+            "href": "/Browse/Trees/320686/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/320686/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobiformis",
+          "Southwestern White Pine",
+          "104.2'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobiformis",
+            "href": "/Browse/Sites/42351/Species/Pinus%20strobiformis%20(Southwestern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Southwestern White Pine",
+            "href": "/Browse/Sites/42351/Species/Pinus%20strobiformis%20(Southwestern%20White%20Pine)/Details"
+          },
+          {
+            "text": "104.2'",
+            "href": "/Browse/Trees/320685/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/320684/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "82.3'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/42351/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/42351/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "82.3'",
+            "href": "/Browse/Trees/320689/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/320689/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "128.0'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/42351/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/42351/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "128.0'",
+            "href": "/Browse/Trees/320688/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/320687/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 19.084, -111 43.232",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

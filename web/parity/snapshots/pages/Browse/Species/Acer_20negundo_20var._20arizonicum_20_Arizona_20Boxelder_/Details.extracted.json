@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Acer negundo var. arizonicum",
+  "commonName": "Arizona Boxelder",
+  "global": {
+    "maxHeight": {
+      "text": "44.2'",
+      "href": "/Browse/Trees/130892/Details"
+    },
+    "maxGirth": {
+      "text": "71''",
+      "href": "/Browse/Trees/130892/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "44.2'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "44.2'",
+            "href": "/Browse/Trees/130892/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/130892/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "43.1'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "43.1'",
+            "href": "/Browse/Trees/70487/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/70487/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

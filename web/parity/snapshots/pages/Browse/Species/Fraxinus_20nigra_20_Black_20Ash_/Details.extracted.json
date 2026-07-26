@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Fraxinus nigra",
+  "commonName": "Black Ash",
+  "global": {
+    "maxHeight": {
+      "text": "120.0'",
+      "href": "/Browse/Trees/233606/Details"
+    },
+    "maxGirth": {
+      "text": "109''",
+      "href": "/Browse/Trees/233606/Details"
+    },
+    "maxCrownSpread": {
+      "text": "52.0'",
+      "href": "/Browse/Trees/313159/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Iowa",
+          "120.0'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Iowa",
+            "href": "/Browse/States/10/Details"
+          },
+          {
+            "text": "120.0'",
+            "href": "/Browse/Trees/233606/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/233606/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Michigan",
+          "89.5'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Michigan",
+            "href": "/Browse/States/20/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/239982/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/239982/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "94.3'",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "94.3'",
+            "href": "/Browse/Trees/220867/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/220867/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "107.8'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "107.8'",
+            "href": "/Browse/Trees/16024/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/16024/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "72.7'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "72.7'",
+            "href": "/Browse/Trees/222053/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/222053/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "68.0'",
+          "68''",
+          "52.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/313159/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/313159/Details"
+          },
+          {
+            "text": "52.0'",
+            "href": "/Browse/Trees/313159/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "botanicalName": "Populus alba",
+  "commonName": "White Poplar",
+  "global": {
+    "maxHeight": {
+      "text": "100.7'",
+      "href": "/Browse/Trees/226080/Details"
+    },
+    "maxGirth": {
+      "text": "106''",
+      "href": "/Browse/Trees/163889/Details"
+    },
+    "maxCrownSpread": {
+      "text": "87.0'",
+      "href": "/Browse/Trees/315051/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New Mexico",
+          "72.8'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "72.8'",
+            "href": "/Browse/Trees/163889/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/163889/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "100.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "100.7'",
+            "href": "/Browse/Trees/226080/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "59.2'",
+          "104''",
+          "87.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "59.2'",
+            "href": "/Browse/Trees/315051/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/315051/Details"
+          },
+          {
+            "text": "87.0'",
+            "href": "/Browse/Trees/315051/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

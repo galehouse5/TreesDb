@@ -1,0 +1,231 @@
+{
+  "botanicalName": "Magnolia virginiana",
+  "commonName": "Sweetbay",
+  "global": {
+    "maxHeight": {
+      "text": "22.92 m",
+      "href": "/Browse/Trees/249359/Details"
+    },
+    "maxGirth": {
+      "text": "165 cm",
+      "href": "/Browse/Trees/170493/Details"
+    },
+    "maxCrownSpread": {
+      "text": "11.28 m",
+      "href": "/Browse/Trees/170493/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "22.34 m",
+          "147 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "22.34 m",
+            "href": "/Browse/Trees/241624/Details"
+          },
+          {
+            "text": "147 cm",
+            "href": "/Browse/Trees/241625/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "22.92 m",
+          "124 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "22.92 m",
+            "href": "/Browse/Trees/249359/Details"
+          },
+          {
+            "text": "124 cm",
+            "href": "/Browse/Trees/249358/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "16.98 m",
+          "85 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "16.98 m",
+            "href": "/Browse/Trees/45424/Details"
+          },
+          {
+            "text": "85 cm",
+            "href": "/Browse/Trees/45422/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "20.73 m",
+          "165 cm",
+          "11.28 m"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          {
+            "text": "20.73 m",
+            "href": "/Browse/Trees/170494/Details"
+          },
+          {
+            "text": "165 cm",
+            "href": "/Browse/Trees/170493/Details"
+          },
+          {
+            "text": "11.28 m",
+            "href": "/Browse/Trees/170493/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "17.34 m",
+          "24 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "17.34 m",
+            "href": "/Browse/Trees/258338/Details"
+          },
+          {
+            "text": "24 cm",
+            "href": "/Browse/Trees/323147/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "-",
+          "65 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          null,
+          {
+            "text": "65 cm",
+            "href": "/Browse/Trees/164157/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "13.14 m",
+          "34 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "13.14 m",
+            "href": "/Browse/Trees/272966/Details"
+          },
+          {
+            "text": "34 cm",
+            "href": "/Browse/Trees/272966/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "7.80 m",
+          "64 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "7.80 m",
+            "href": "/Browse/Trees/315048/Details"
+          },
+          {
+            "text": "64 cm",
+            "href": "/Browse/Trees/315049/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

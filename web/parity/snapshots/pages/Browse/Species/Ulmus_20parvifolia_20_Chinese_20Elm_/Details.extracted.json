@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Ulmus parvifolia",
+  "commonName": "Chinese Elm",
+  "global": {
+    "maxHeight": {
+      "text": "61.5'",
+      "href": "/Browse/Trees/164189/Details"
+    },
+    "maxGirth": {
+      "text": "101''",
+      "href": "/Browse/Trees/164189/Details"
+    },
+    "maxCrownSpread": {
+      "text": "51.0'",
+      "href": "/Browse/Trees/315012/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Missouri",
+          "61.5'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "61.5'",
+            "href": "/Browse/Trees/164189/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/164189/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "56.2'",
+          "78''",
+          "51.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "56.2'",
+            "href": "/Browse/Trees/315012/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/315012/Details"
+          },
+          {
+            "text": "51.0'",
+            "href": "/Browse/Trees/315012/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

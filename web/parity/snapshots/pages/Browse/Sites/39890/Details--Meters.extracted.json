@@ -1,0 +1,344 @@
+{
+  "siteId": 39890,
+  "summary": {
+    "Name": "Powder Mills Park",
+    "RHI5": "40.246",
+    "RHI10": "38.409",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.756",
+    "RGI10": "1.724",
+    "RGI20": "(not enough data)",
+    "Trees measured": "21",
+    "Last measurement date": "05/07/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/07/2017",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/31/2016",
+      "visitors": "Tom Howard and Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "35.36 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/39890/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/39890/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "35.36 m",
+            "href": "/Browse/Trees/207806/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus incana ssp. rugosa",
+          "Speckled Alder",
+          "8.64 m",
+          "25 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus incana ssp. rugosa",
+            "href": "/Browse/Sites/39890/Species/Alnus%20incana%20ssp.%20rugosa%20(Speckled%20Alder)/Details"
+          },
+          {
+            "text": "Speckled Alder",
+            "href": "/Browse/Sites/39890/Species/Alnus%20incana%20ssp.%20rugosa%20(Speckled%20Alder)/Details"
+          },
+          {
+            "text": "8.64 m",
+            "href": "/Browse/Trees/207797/Details"
+          },
+          {
+            "text": "25 cm",
+            "href": "/Browse/Trees/207797/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "38.31 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/39890/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/39890/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "38.31 m",
+            "href": "/Browse/Trees/207803/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "41.70 m",
+          "214 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/39890/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/39890/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "41.70 m",
+            "href": "/Browse/Trees/207789/Details"
+          },
+          {
+            "text": "214 cm",
+            "href": "/Browse/Trees/207789/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "30.42 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/39890/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/39890/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "30.42 m",
+            "href": "/Browse/Trees/258899/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "10.01 m",
+          "41 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/39890/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/39890/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "10.01 m",
+            "href": "/Browse/Trees/207795/Details"
+          },
+          {
+            "text": "41 cm",
+            "href": "/Browse/Trees/207795/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "36.53 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39890/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39890/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "36.53 m",
+            "href": "/Browse/Trees/207792/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "9.45 m",
+          "23 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/39890/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/39890/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "9.45 m",
+            "href": "/Browse/Trees/207796/Details"
+          },
+          {
+            "text": "23 cm",
+            "href": "/Browse/Trees/207796/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "23.77 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/39890/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/39890/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "23.77 m",
+            "href": "/Browse/Trees/207798/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "41.24 m",
+          "419 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39890/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39890/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "41.24 m",
+            "href": "/Browse/Trees/207791/Details"
+          },
+          {
+            "text": "419 cm",
+            "href": "/Browse/Trees/207791/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 17 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 02.846, -077 28.875",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Monroe"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

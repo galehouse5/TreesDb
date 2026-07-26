@@ -1,0 +1,185 @@
+{
+  "botanicalName": "Platanus x hispanica",
+  "commonName": "London Planetree",
+  "global": {
+    "maxHeight": {
+      "text": "146.8'",
+      "href": "/Browse/Trees/216272/Details"
+    },
+    "maxGirth": {
+      "text": "160''",
+      "href": "/Browse/Trees/280518/Details"
+    },
+    "maxCrownSpread": {
+      "text": "65.5'",
+      "href": "/Browse/Trees/314977/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Budapest",
+          "90.0'",
+          "149''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Budapest",
+            "href": "/Browse/States/207/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/283219/Details"
+          },
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/283206/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Connecticut",
+          "90.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/242625/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "123.5'",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "123.5'",
+            "href": "/Browse/Trees/280518/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/280518/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "69.8'",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "69.8'",
+            "href": "/Browse/Trees/96890/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/96890/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "146.8'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "146.8'",
+            "href": "/Browse/Trees/216272/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/255940/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "72.5'",
+          "132''",
+          "65.5'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "72.5'",
+            "href": "/Browse/Trees/314975/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/314975/Details"
+          },
+          {
+            "text": "65.5'",
+            "href": "/Browse/Trees/314977/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

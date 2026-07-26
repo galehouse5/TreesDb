@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Ulmus thomasii",
+  "commonName": "Rock Elm",
+  "global": {
+    "maxHeight": {
+      "text": "105.1'",
+      "href": "/Browse/Trees/262222/Details"
+    },
+    "maxGirth": {
+      "text": "128''",
+      "href": "/Browse/Trees/240295/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Nebraska",
+          "68.0'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nebraska",
+            "href": "/Browse/States/27/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/220694/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/220694/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "105.1'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "105.1'",
+            "href": "/Browse/Trees/262222/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/262222/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "92.0'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "92.0'",
+            "href": "/Browse/Trees/240295/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/240295/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

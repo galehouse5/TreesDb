@@ -1,0 +1,554 @@
+{
+  "stateId": 6,
+  "summary": {
+    "Name": "Connecticut",
+    "Code": "CT",
+    "RHI5": "130.94",
+    "RHI10": "115.70",
+    "RHI20": "95.31",
+    "RGI5": "22.65",
+    "RGI10": "18.33",
+    "RGI20": "12.26",
+    "Trees measured": "89",
+    "Last measurement date": "07/09/2020"
+  },
+  "location": {
+    "Coordinates": "41 29.995, -072 45.443",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer spp.",
+          "Maple",
+          "75.0'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spp.",
+            "href": "/Browse/States/6/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "Maple",
+            "href": "/Browse/States/6/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/243161/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/243161/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "65.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/States/6/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/States/6/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/242633/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "80.0'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/States/6/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/States/6/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "80.0'",
+            "href": "/Browse/Trees/243158/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/243314/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "70.0'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/States/6/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/States/6/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/243159/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/243159/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "95.0'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/States/6/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/States/6/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "95.0'",
+            "href": "/Browse/Trees/242604/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/243313/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus spp.",
+          "Ash",
+          "65.0'",
+          "200''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus spp.",
+            "href": "/Browse/States/6/Species/Fraxinus%20spp.%20(Ash)/Details"
+          },
+          {
+            "text": "Ash",
+            "href": "/Browse/States/6/Species/Fraxinus%20spp.%20(Ash)/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/243167/Details"
+          },
+          {
+            "text": "200''",
+            "href": "/Browse/Trees/243167/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix kaempferi",
+          "Japanese Larch",
+          "90.3'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix kaempferi",
+            "href": "/Browse/States/6/Species/Larix%20kaempferi%20(Japanese%20Larch)/Details"
+          },
+          {
+            "text": "Japanese Larch",
+            "href": "/Browse/States/6/Species/Larix%20kaempferi%20(Japanese%20Larch)/Details"
+          },
+          {
+            "text": "90.3'",
+            "href": "/Browse/Trees/256802/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/256802/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "135.2'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/States/6/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/States/6/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "135.2'",
+            "href": "/Browse/Trees/256801/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/242615/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "80.0'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/States/6/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/States/6/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "80.0'",
+            "href": "/Browse/Trees/243311/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/234253/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus spp.",
+          "Pine",
+          "110.0'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus spp.",
+            "href": "/Browse/States/6/Species/Pinus%20spp.%20(Pine)/Details"
+          },
+          {
+            "text": "Pine",
+            "href": "/Browse/States/6/Species/Pinus%20spp.%20(Pine)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/243315/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/243316/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 20 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Belden Forest",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Belden Forest",
+            "href": "/Browse/Sites/40992/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bigelow Hollow State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bigelow Hollow State Park",
+            "href": "/Browse/Sites/40641/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cathedral Pines",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cathedral Pines",
+            "href": "/Browse/Sites/41001/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catlin Woods",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catlin Woods",
+            "href": "/Browse/Sites/40640/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Connecticut Single Tree Sites",
+          "102.70",
+          "-",
+          "20.65",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut Single Tree Sites",
+            "href": "/Browse/Sites/41309/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "East Granby Farms Recreational Center",
+          "83.20",
+          "-",
+          "9.02",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "East Granby Farms Recreational Center",
+            "href": "/Browse/Sites/41002/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Farmington River Park (Bloomfield)",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Farmington River Park (Bloomfield)",
+            "href": "/Browse/Sites/40991/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lucius Pond Ordway/Devil's Den Preserve",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lucius Pond Ordway/Devil's Den Preserve",
+            "href": "/Browse/Sites/40998/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Matthies Grove",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Matthies Grove",
+            "href": "/Browse/Sites/40995/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metacomet Trail - East Granby",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metacomet Trail - East Granby",
+            "href": "/Browse/Sites/41016/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 17 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

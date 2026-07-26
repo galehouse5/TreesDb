@@ -1,0 +1,240 @@
+{
+  "botanicalName": "Pinus ponderosa var. scopulorum",
+  "commonName": "Ponderosa Pine",
+  "global": {
+    "maxHeight": {
+      "text": "50.67 yd",
+      "href": "/Browse/Trees/242495/Details"
+    },
+    "maxGirth": {
+      "text": "203''",
+      "href": "/Browse/Trees/243293/Details"
+    },
+    "maxCrownSpread": {
+      "text": "17.67 yd",
+      "href": "/Browse/Trees/233587/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "42.33 yd",
+          "155''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "42.33 yd",
+            "href": "/Browse/Trees/320686/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/320686/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Colorado",
+          "50.67 yd",
+          "165''",
+          "11.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "50.67 yd",
+            "href": "/Browse/Trees/242495/Details"
+          },
+          {
+            "text": "165''",
+            "href": "/Browse/Trees/280637/Details"
+          },
+          {
+            "text": "11.67 yd",
+            "href": "/Browse/Trees/242357/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Nebraska",
+          "30.23 yd",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nebraska",
+            "href": "/Browse/States/27/Details"
+          },
+          {
+            "text": "30.23 yd",
+            "href": "/Browse/Trees/220444/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/220445/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nevada",
+          "44.50 yd",
+          "203''",
+          "17.10 yd"
+        ],
+        "links": [
+          {
+            "text": "Nevada",
+            "href": "/Browse/States/31/Details"
+          },
+          {
+            "text": "44.50 yd",
+            "href": "/Browse/Trees/243293/Details"
+          },
+          {
+            "text": "203''",
+            "href": "/Browse/Trees/243293/Details"
+          },
+          {
+            "text": "17.10 yd",
+            "href": "/Browse/Trees/243293/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "45.43 yd",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "45.43 yd",
+            "href": "/Browse/Trees/320670/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/320670/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "37.07 yd",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "37.07 yd",
+            "href": "/Browse/Trees/217790/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/229181/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Dakota",
+          "48.13 yd",
+          "149''",
+          "17.67 yd"
+        ],
+        "links": [
+          {
+            "text": "South Dakota",
+            "href": "/Browse/States/39/Details"
+          },
+          {
+            "text": "48.13 yd",
+            "href": "/Browse/Trees/233558/Details"
+          },
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/233587/Details"
+          },
+          {
+            "text": "17.67 yd",
+            "href": "/Browse/Trees/233587/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Wyoming",
+          "29.37 yd",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wyoming",
+            "href": "/Browse/States/48/Details"
+          },
+          {
+            "text": "29.37 yd",
+            "href": "/Browse/Trees/126306/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/126306/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

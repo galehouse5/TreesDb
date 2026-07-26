@@ -1,0 +1,548 @@
+{
+  "stateId": 44,
+  "summary": {
+    "Name": "Vermont",
+    "Code": "VT",
+    "RHI5": "118.50",
+    "RHI10": "86.70",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.58",
+    "RGI10": "10.20",
+    "RGI20": "(not enough data)",
+    "Trees measured": "54",
+    "Last measurement date": "07/17/2020"
+  },
+  "location": {
+    "Coordinates": "43 52.308, -072 27.092",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "105.6'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/44/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/44/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "105.6'",
+            "href": "/Browse/Trees/253220/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/253220/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer spp.",
+          "Maple",
+          "108.0'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spp.",
+            "href": "/Browse/States/44/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "Maple",
+            "href": "/Browse/States/44/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/253255/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/253224/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "87.0'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/States/44/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/States/44/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "87.0'",
+            "href": "/Browse/Trees/253259/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/253260/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "-",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/States/44/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/States/44/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          null,
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/253233/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "92.3'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/States/44/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/States/44/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "92.3'",
+            "href": "/Browse/Trees/177006/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/177006/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "150.6'",
+          "168''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/States/44/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/States/44/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "150.6'",
+            "href": "/Browse/Trees/253241/Details"
+          },
+          {
+            "text": "168''",
+            "href": "/Browse/Trees/253214/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "106.8'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/States/44/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/States/44/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "106.8'",
+            "href": "/Browse/Trees/253204/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/253204/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "-",
+          "156''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/States/44/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/States/44/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/253254/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Robinia pseudoacacia",
+          "Black Locust",
+          "95.2'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Robinia pseudoacacia",
+            "href": "/Browse/States/44/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "Black Locust",
+            "href": "/Browse/States/44/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "95.2'",
+            "href": "/Browse/Trees/256184/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/256184/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana",
+          "American Basswood",
+          "-",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana",
+            "href": "/Browse/States/44/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/States/44/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          null,
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/253228/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Billings Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Billings Park",
+            "href": "/Browse/Sites/39442/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Broadleaf Wilderness",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Broadleaf Wilderness",
+            "href": "/Browse/Sites/41247/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cambridge Pines Natural Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cambridge Pines Natural Area",
+            "href": "/Browse/Sites/41241/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gifford Woods Natural Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gifford Woods Natural Area",
+            "href": "/Browse/Sites/41243/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Green Mount Cemetery",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Green Mount Cemetery",
+            "href": "/Browse/Sites/41248/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lords Hill Natural Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lords Hill Natural Area",
+            "href": "/Browse/Sites/41244/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Marsh-Billings-Rockefeller NHP Grounds",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Marsh-Billings-Rockefeller NHP Grounds",
+            "href": "/Browse/Sites/39441/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Table Top Mountain",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Table Top Mountain",
+            "href": "/Browse/Sites/41246/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vermont Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vermont Single Tree Sites",
+            "href": "/Browse/Sites/41299/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West River Near Dummerston",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West River Near Dummerston",
+            "href": "/Browse/Sites/41237/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

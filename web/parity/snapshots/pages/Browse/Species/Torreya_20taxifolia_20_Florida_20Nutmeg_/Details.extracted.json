@@ -1,0 +1,93 @@
+{
+  "botanicalName": "Torreya taxifolia",
+  "commonName": "Florida Nutmeg",
+  "global": {
+    "maxHeight": {
+      "text": "53.6'",
+      "href": "/Browse/Trees/258151/Details"
+    },
+    "maxGirth": {
+      "text": "30''",
+      "href": "/Browse/Trees/142268/Details"
+    },
+    "maxCrownSpread": {
+      "text": "18.0'",
+      "href": "/Browse/Trees/142268/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "53.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "53.6'",
+            "href": "/Browse/Trees/258151/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "38.2'",
+          "30''",
+          "18.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "38.2'",
+            "href": "/Browse/Trees/142268/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/142268/Details"
+          },
+          {
+            "text": "18.0'",
+            "href": "/Browse/Trees/142268/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "siteId": 22115,
+  "summary": {
+    "Name": "Elkton",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "11/01/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/01/2005",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/kentucky/todd_county_ky.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "104.2'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/22115/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/22115/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "104.2'",
+            "href": "/Browse/Trees/76442/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/76442/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "78.3'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/22115/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/22115/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "78.3'",
+            "href": "/Browse/Trees/76441/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/76441/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maclura pomifera",
+          "Osage Orange",
+          "75.2'",
+          "192''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maclura pomifera",
+            "href": "/Browse/Sites/22115/Species/Maclura%20pomifera%20(Osage%20Orange)/Details"
+          },
+          {
+            "text": "Osage Orange",
+            "href": "/Browse/Sites/22115/Species/Maclura%20pomifera%20(Osage%20Orange)/Details"
+          },
+          {
+            "text": "75.2'",
+            "href": "/Browse/Trees/76445/Details"
+          },
+          {
+            "text": "192''",
+            "href": "/Browse/Trees/76444/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 48.557, -087 09.247",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public and Private",
+      "County": "Todd"
+    },
+    "state": {
+      "text": "Kentucky (US)",
+      "href": "/Browse/States/15/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,359 @@
+{
+  "siteId": 41013,
+  "summary": {
+    "Name": "Mt. Adnah Cemetery",
+    "RHI5": "31.163",
+    "RHI10": "28.392",
+    "RHI20": "(not enough data)",
+    "RGI5": "4.207",
+    "RGI10": "3.351",
+    "RGI20": "(not enough data)",
+    "Trees measured": "20",
+    "Last measurement date": "05/24/2021",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/24/2021",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/13/2013",
+      "visitors": "Tom Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. concolor",
+          "White Fir",
+          "23.26 m",
+          "171 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. concolor",
+            "href": "/Browse/Sites/41013/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/41013/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "23.26 m",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          {
+            "text": "171 cm",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "21.88 m",
+          "279 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/41013/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41013/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "21.88 m",
+            "href": "/Browse/Trees/243130/Details"
+          },
+          {
+            "text": "279 cm",
+            "href": "/Browse/Trees/243130/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "28.10 m",
+          "295 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/41013/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41013/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "28.10 m",
+            "href": "/Browse/Trees/243131/Details"
+          },
+          {
+            "text": "295 cm",
+            "href": "/Browse/Trees/243131/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "32.16 m",
+          "274 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41013/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41013/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "32.16 m",
+            "href": "/Browse/Trees/243136/Details"
+          },
+          {
+            "text": "274 cm",
+            "href": "/Browse/Trees/243136/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "32.10 m",
+          "338 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/41013/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/41013/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "32.10 m",
+            "href": "/Browse/Trees/243138/Details"
+          },
+          {
+            "text": "338 cm",
+            "href": "/Browse/Trees/243138/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "32.86 m",
+          "342 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41013/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41013/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "32.86 m",
+            "href": "/Browse/Trees/243135/Details"
+          },
+          {
+            "text": "342 cm",
+            "href": "/Browse/Trees/243135/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "26.40 m",
+          "168 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/41013/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/41013/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "26.40 m",
+            "href": "/Browse/Trees/243133/Details"
+          },
+          {
+            "text": "168 cm",
+            "href": "/Browse/Trees/243133/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "30.05 m",
+          "437 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/41013/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/41013/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "30.05 m",
+            "href": "/Browse/Trees/243146/Details"
+          },
+          {
+            "text": "437 cm",
+            "href": "/Browse/Trees/243148/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra var. rubra",
+          "Northern Red Oak",
+          "23.41 m",
+          "410 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra var. rubra",
+            "href": "/Browse/Sites/41013/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41013/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "23.41 m",
+            "href": "/Browse/Trees/243140/Details"
+          },
+          {
+            "text": "410 cm",
+            "href": "/Browse/Trees/243140/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "28.65 m",
+          "577 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/41013/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/41013/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "28.65 m",
+            "href": "/Browse/Trees/243141/Details"
+          },
+          {
+            "text": "577 cm",
+            "href": "/Browse/Trees/243144/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 19.248, -076 24.197",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Oswego"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

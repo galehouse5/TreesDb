@@ -1,0 +1,70 @@
+{
+  "treeId": 2368,
+  "botanicalName": {
+    "text": "Fagus grandifolia",
+    "href": "/Browse/Sites/442/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "commonName": {
+    "text": "American Beech",
+    "href": "/Browse/Sites/442/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "details": {
+    "Height": "102.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "94''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "62.90",
+    "ENTSPTS": "802.92",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.06",
+    "Champion points (abbreviated)": "196.50",
+    "Diameter": "30''",
+    "Conical volume": "166.8 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/03/2011",
+      "summary": {
+        "Height": "102.5'",
+        "Girth": "94''"
+      },
+      "details": {
+        "Botanical name": "Fagus grandifolia",
+        "Common name": "American Beech",
+        "Height": "102.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "94''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "62.90",
+        "ENTSPTS": "802.92",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.06",
+        "Champion points (abbreviated)": "196.50",
+        "Diameter": "30''",
+        "Conical volume": "166.8 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Steve Galehouse"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 13.076, -081 42.254",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Whipp's Ledges",
+      "href": "/Browse/Sites/442/Details"
+    },
+    "rows": {
+      "Ownership type": "Park",
+      "County": "Medina"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

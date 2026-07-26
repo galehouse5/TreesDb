@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Populus fremontii ssp. mesetae",
+  "commonName": "Fremont Cottonwood",
+  "global": {
+    "maxHeight": {
+      "text": "24.35 m",
+      "href": "/Browse/Trees/274855/Details"
+    },
+    "maxGirth": {
+      "text": "302 cm",
+      "href": "/Browse/Trees/274855/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "24.35 m",
+          "302 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "24.35 m",
+            "href": "/Browse/Trees/274855/Details"
+          },
+          {
+            "text": "302 cm",
+            "href": "/Browse/Trees/274855/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

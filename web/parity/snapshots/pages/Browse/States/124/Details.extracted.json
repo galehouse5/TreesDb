@@ -1,0 +1,424 @@
+{
+  "stateId": 124,
+  "summary": {
+    "Name": "Andalusia",
+    "Code": "AN",
+    "RHI5": "84.24",
+    "RHI10": "68.76",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.68",
+    "RGI10": "9.08",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "11/03/2014"
+  },
+  "location": {
+    "Coordinates": "37 20.002, -004 34.575",
+    "Country": "Spain"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies pinsapo",
+          "Spanish Fir",
+          "41.4'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies pinsapo",
+            "href": "/Browse/States/124/Species/Abies%20pinsapo%20(Spanish%20Fir)/Details"
+          },
+          {
+            "text": "Spanish Fir",
+            "href": "/Browse/States/124/Species/Abies%20pinsapo%20(Spanish%20Fir)/Details"
+          },
+          {
+            "text": "41.4'",
+            "href": "/Browse/Trees/283182/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/283181/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "75.7'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/States/124/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/States/124/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "75.7'",
+            "href": "/Browse/Trees/274945/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/274945/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "80.5'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/States/124/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/States/124/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "80.5'",
+            "href": "/Browse/Trees/274942/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/274942/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedrus deodara",
+          "Deodar Cedar",
+          "98.4'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus deodara",
+            "href": "/Browse/States/124/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "Deodar Cedar",
+            "href": "/Browse/States/124/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "98.4'",
+            "href": "/Browse/Trees/283183/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/283183/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercis siliquastrum",
+          "Judas-Tree",
+          "41.5'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis siliquastrum",
+            "href": "/Browse/States/124/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details"
+          },
+          {
+            "text": "Judas-Tree",
+            "href": "/Browse/States/124/Species/Cercis%20%20siliquastrum%20(Judas-Tree)/Details"
+          },
+          {
+            "text": "41.5'",
+            "href": "/Browse/Trees/283185/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/283185/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercis siliquastrum",
+          "Judas-Tree",
+          "45.8'",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis siliquastrum",
+            "href": "/Browse/States/124/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details"
+          },
+          {
+            "text": "Judas-Tree",
+            "href": "/Browse/States/124/Species/Cercis%20siliquastrum%20(Judas-Tree)/Details"
+          },
+          {
+            "text": "45.8'",
+            "href": "/Browse/Trees/274943/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/274943/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Eucalyptus camaldulensis",
+          "River Redgum",
+          "93.8'",
+          "171''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Eucalyptus camaldulensis",
+            "href": "/Browse/States/124/Species/Eucalyptus%20camaldulensis%20(River%20Redgum)/Details"
+          },
+          {
+            "text": "River Redgum",
+            "href": "/Browse/States/124/Species/Eucalyptus%20camaldulensis%20(River%20Redgum)/Details"
+          },
+          {
+            "text": "93.8'",
+            "href": "/Browse/Trees/274944/Details"
+          },
+          {
+            "text": "171''",
+            "href": "/Browse/Trees/274944/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Jacaranda mimosifolia",
+          "Black Poui",
+          "68.7'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Jacaranda mimosifolia",
+            "href": "/Browse/States/124/Species/Jacaranda%20mimosifolia%20(Black%20Poui)/Details"
+          },
+          {
+            "text": "Black Poui",
+            "href": "/Browse/States/124/Species/Jacaranda%20mimosifolia%20(Black%20Poui)/Details"
+          },
+          {
+            "text": "68.7'",
+            "href": "/Browse/Trees/274947/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/274947/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "72.8'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/States/124/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/States/124/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "72.8'",
+            "href": "/Browse/Trees/274946/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/274946/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "49.2'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/States/124/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/States/124/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "49.2'",
+            "href": "/Browse/Trees/274948/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/274948/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Andalusia Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Andalusia Single Tree Sites",
+            "href": "/Browse/Sites/41834/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ronda",
+          "56.00",
+          "-",
+          "8.39",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ronda",
+            "href": "/Browse/Sites/41934/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Royal Alcszar O Selille",
+          "78.30",
+          "-",
+          "8.81",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Royal Alcszar O Selille",
+            "href": "/Browse/Sites/41833/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

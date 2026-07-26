@@ -1,0 +1,154 @@
+{
+  "siteId": 39920,
+  "summary": {
+    "Name": "Rt. 3, Wanakena, NY",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "07/04/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/04/2016",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "84.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/39920/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/39920/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "84.9'",
+            "href": "/Browse/Trees/210545/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus banksiana",
+          "Jack Pine",
+          "92.8'",
+          "63''",
+          "24.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus banksiana",
+            "href": "/Browse/Sites/39920/Species/Pinus%20banksiana%20(Jack%20Pine)/Details"
+          },
+          {
+            "text": "Jack Pine",
+            "href": "/Browse/Sites/39920/Species/Pinus%20banksiana%20(Jack%20Pine)/Details"
+          },
+          {
+            "text": "92.8'",
+            "href": "/Browse/Trees/210547/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/210544/Details"
+          },
+          {
+            "text": "24.0'",
+            "href": "/Browse/Trees/210544/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus sylvestris",
+          "Scots Pine",
+          "89.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus sylvestris",
+            "href": "/Browse/Sites/39920/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "Scots Pine",
+            "href": "/Browse/Sites/39920/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "89.0'",
+            "href": "/Browse/Trees/210546/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 08.864, -074 57.047",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "St. Lawrence"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

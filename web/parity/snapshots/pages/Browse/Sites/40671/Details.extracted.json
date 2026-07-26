@@ -1,0 +1,160 @@
+{
+  "siteId": 40671,
+  "summary": {
+    "Name": "Oaky Woods Wildlife Management Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "12/02/2006",
+    "Ownership contact": "801 Oaky Woods Road Kathleen, Georgia",
+    "General comments": "12,750 acres owned by paper companies and leased by the state as a public hunting area."
+  },
+  "visits": [
+    {
+      "visited": "12/02/2006",
+      "visitors": "Jess Riddle and Doug Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/oaky_woods_wma.htm",
+      "comments": "12,750 acres owned by paper companies and leased by the state as a public hunting area."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "92.1'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/40671/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/40671/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "92.1'",
+            "href": "/Browse/Trees/234573/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/234573/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ptelea trifoliata",
+          "Common Hoptree",
+          "35.6'",
+          "8''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ptelea trifoliata",
+            "href": "/Browse/Sites/40671/Species/Ptelea%20trifoliata%20(Common%20Hoptree)/Details"
+          },
+          {
+            "text": "Common Hoptree",
+            "href": "/Browse/Sites/40671/Species/Ptelea%20trifoliata%20(Common%20Hoptree)/Details"
+          },
+          {
+            "text": "35.6'",
+            "href": "/Browse/Trees/234574/Details"
+          },
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/234574/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus sinuata",
+          "Bastard Oak",
+          "102.4'",
+          "98''",
+          "65.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus sinuata",
+            "href": "/Browse/Sites/40671/Species/Quercus%20sinuata%20(Bastard%20Oak)/Details"
+          },
+          {
+            "text": "Bastard Oak",
+            "href": "/Browse/Sites/40671/Species/Quercus%20sinuata%20(Bastard%20Oak)/Details"
+          },
+          {
+            "text": "102.4'",
+            "href": "/Browse/Trees/234571/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/234572/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/234572/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 29.067, -083 34.614",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private-public",
+      "County": "Houston"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 269077,
+  "botanicalName": {
+    "text": "Sequoia sempervirens",
+    "href": "/Browse/Sites/41669/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+  },
+  "commonName": {
+    "text": "Redwood",
+    "href": "/Browse/Sites/41669/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+  },
+  "details": {
+    "Height": "353.4'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "415''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "4226.69",
+    "ENTSPTS": "12221.75",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.37",
+    "Champion points (abbreviated)": "768.40",
+    "Diameter": "132''",
+    "Conical volume": "11211.6 ft³",
+    "General comments": "Known as the \"Sollstice Tree\""
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 12/22/2017",
+      "summary": {
+        "Height": "353.4'",
+        "Girth": "415''"
+      },
+      "details": {
+        "Botanical name": "Sequoia sempervirens",
+        "Common name": "Redwood",
+        "Height": "353.4'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "415''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "4226.69",
+        "ENTSPTS": "12221.75",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.37",
+        "Champion points (abbreviated)": "768.40",
+        "Diameter": "132''",
+        "Conical volume": "11211.6 ft³",
+        "General comments": "Known as the \"Sollstice Tree\""
+      },
+      "measurers": "Michael Taylor and John Montague"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "40 24.332, -123 56.128",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Along Eel River",
+      "href": "/Browse/Sites/41669/Details"
+    },
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Humboldt"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

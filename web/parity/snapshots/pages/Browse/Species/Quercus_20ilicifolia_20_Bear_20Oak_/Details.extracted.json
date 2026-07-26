@@ -1,0 +1,148 @@
+{
+  "botanicalName": "Quercus ilicifolia",
+  "commonName": "Bear Oak",
+  "global": {
+    "maxHeight": {
+      "text": "47.0'",
+      "href": "/Browse/Trees/226074/Details"
+    },
+    "maxGirth": {
+      "text": "41''",
+      "href": "/Browse/Trees/312143/Details"
+    },
+    "maxCrownSpread": {
+      "text": "30.0'",
+      "href": "/Browse/Trees/312115/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Massachusetts",
+          "2.0'",
+          "21''",
+          "21.0'"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "2.0'",
+            "href": "/Browse/Trees/256009/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/256009/Details"
+          },
+          {
+            "text": "21.0'",
+            "href": "/Browse/Trees/256009/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "47.0'",
+          "26''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "47.0'",
+            "href": "/Browse/Trees/226074/Details"
+          },
+          {
+            "text": "26''",
+            "href": "/Browse/Trees/226074/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "16.7'",
+          "18''",
+          "21.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "16.7'",
+            "href": "/Browse/Trees/142265/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/142265/Details"
+          },
+          {
+            "text": "21.0'",
+            "href": "/Browse/Trees/142265/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "33.8'",
+          "41''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "33.8'",
+            "href": "/Browse/Trees/313089/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/312143/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/312115/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

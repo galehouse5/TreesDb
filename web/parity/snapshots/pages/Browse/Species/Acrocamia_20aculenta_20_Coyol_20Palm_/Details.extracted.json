@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Acrocamia aculenta",
+  "commonName": "Coyol Palm",
+  "global": {
+    "maxHeight": {
+      "text": "51.2'",
+      "href": "/Browse/Trees/213138/Details"
+    },
+    "maxGirth": {
+      "text": "47''",
+      "href": "/Browse/Trees/213138/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Guanacaste",
+          "51.2'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Guanacaste",
+            "href": "/Browse/States/119/Details"
+          },
+          {
+            "text": "51.2'",
+            "href": "/Browse/Trees/213138/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/213138/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

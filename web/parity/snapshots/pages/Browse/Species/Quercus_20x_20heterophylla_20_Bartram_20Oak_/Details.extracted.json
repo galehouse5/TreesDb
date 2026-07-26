@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Quercus x heterophylla",
+  "commonName": "Bartram Oak",
+  "global": {
+    "maxHeight": {
+      "text": "94.9'",
+      "href": "/Browse/Trees/255937/Details"
+    },
+    "maxGirth": {
+      "text": "196''",
+      "href": "/Browse/Trees/255937/Details"
+    },
+    "maxCrownSpread": {
+      "text": "92.0'",
+      "href": "/Browse/Trees/255937/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pennsylvania",
+          "94.9'",
+          "196''",
+          "92.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "94.9'",
+            "href": "/Browse/Trees/255937/Details"
+          },
+          {
+            "text": "196''",
+            "href": "/Browse/Trees/255937/Details"
+          },
+          {
+            "text": "92.0'",
+            "href": "/Browse/Trees/255937/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

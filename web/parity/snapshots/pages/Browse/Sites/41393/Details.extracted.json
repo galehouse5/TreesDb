@@ -1,0 +1,210 @@
+{
+  "siteId": 41393,
+  "summary": {
+    "Name": "Green-Wood Cemetery",
+    "RHI5": "105.36",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.28",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "03/21/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "478 Acres"
+  },
+  "visits": [
+    {
+      "visited": "03/21/2016",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "478 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "120.9'",
+          "203''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41393/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41393/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "120.9'",
+            "href": "/Browse/Trees/258129/Details"
+          },
+          {
+            "text": "203''",
+            "href": "/Browse/Trees/258130/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "112.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/41393/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/41393/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "112.8'",
+            "href": "/Browse/Trees/258133/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "100.8'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/41393/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/41393/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "100.8'",
+            "href": "/Browse/Trees/258127/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/258127/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus wallichiana",
+          "Bhutan Pine",
+          "106.8'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus wallichiana",
+            "href": "/Browse/Sites/41393/Species/Pinus%20wallichiana%20(Bhutan%20Pine)/Details"
+          },
+          {
+            "text": "Bhutan Pine",
+            "href": "/Browse/Sites/41393/Species/Pinus%20wallichiana%20(Bhutan%20Pine)/Details"
+          },
+          {
+            "text": "106.8'",
+            "href": "/Browse/Trees/258134/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/258134/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "85.5'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/41393/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/41393/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "85.5'",
+            "href": "/Browse/Trees/258128/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/258128/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 39.182, -073 59.605",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Brooklyn"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

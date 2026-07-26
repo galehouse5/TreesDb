@@ -1,0 +1,101 @@
+{
+  "siteId": 39214,
+  "summary": {
+    "Name": "Logan County",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "06/05/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees located in Southern part of County"
+  },
+  "visits": [
+    {
+      "visited": "06/05/2016",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees located in Southern part of County"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "76.0'",
+          "174''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/39214/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39214/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "76.0'",
+            "href": "/Browse/Trees/169357/Details"
+          },
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/169357/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 17.995, -083 35.242",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Logan"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

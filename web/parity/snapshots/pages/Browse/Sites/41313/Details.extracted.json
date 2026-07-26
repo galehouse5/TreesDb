@@ -1,0 +1,129 @@
+{
+  "siteId": 41313,
+  "summary": {
+    "Name": "Touro Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "10/14/2021",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/14/2021",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus hippocastanum",
+          "Horse Chestnut",
+          "47.0'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus hippocastanum",
+            "href": "/Browse/Sites/41313/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "Horse Chestnut",
+            "href": "/Browse/Sites/41313/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "47.0'",
+            "href": "/Browse/Trees/256811/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/256811/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "72.7'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/41313/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/41313/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "72.7'",
+            "href": "/Browse/Trees/256810/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/256810/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 29.149, -071 18.602",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Newport"
+    },
+    "state": {
+      "text": "Rhode Island (US)",
+      "href": "/Browse/States/37/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

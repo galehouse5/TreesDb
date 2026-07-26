@@ -1,0 +1,104 @@
+{
+  "siteId": 40025,
+  "summary": {
+    "Name": "Franklin",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "05/05/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/05/2016",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "71.5'",
+          "198''",
+          "92.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/40025/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/40025/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "71.5'",
+            "href": "/Browse/Trees/214463/Details"
+          },
+          {
+            "text": "198''",
+            "href": "/Browse/Trees/214463/Details"
+          },
+          {
+            "text": "92.0'",
+            "href": "/Browse/Trees/214463/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 33.693, -084 17.809",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Various",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

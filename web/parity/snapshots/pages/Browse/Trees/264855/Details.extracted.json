@@ -1,0 +1,70 @@
+{
+  "treeId": 264855,
+  "botanicalName": {
+    "text": "Tsuga canadensis",
+    "href": "/Browse/Sites/41551/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+  },
+  "commonName": {
+    "text": "Eastern Hemlock",
+    "href": "/Browse/Sites/41551/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+  },
+  "details": {
+    "Height": "102.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "118''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "99.11",
+    "ENTSPTS": "1007.92",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.16",
+    "Champion points (abbreviated)": "220.50",
+    "Diameter": "38''",
+    "Conical volume": "262.9 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 04/06/2019",
+      "summary": {
+        "Height": "102.5'",
+        "Girth": "118''"
+      },
+      "details": {
+        "Botanical name": "Tsuga canadensis",
+        "Common name": "Eastern Hemlock",
+        "Height": "102.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "118''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "99.11",
+        "ENTSPTS": "1007.92",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.16",
+        "Champion points (abbreviated)": "220.50",
+        "Diameter": "38''",
+        "Conical volume": "262.9 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Erik Danielson"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "42 03.622, -078 46.054",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Big Basin",
+      "href": "/Browse/Sites/41551/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Cattaraugus"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

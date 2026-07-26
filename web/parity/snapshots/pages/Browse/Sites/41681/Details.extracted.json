@@ -1,0 +1,98 @@
+{
+  "siteId": 41681,
+  "summary": {
+    "Name": "Montgomery Woods State Nature Preserve",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "06/25/2019",
+    "Ownership contact": "(no data)",
+    "General comments": "1323 acres"
+  },
+  "visits": [
+    {
+      "visited": "06/25/2019",
+      "visitors": "Michael Taylor",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "1323 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Sequoia sempervirens",
+          "Redwood",
+          "353.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sequoia sempervirens",
+            "href": "/Browse/Sites/41681/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+          },
+          {
+            "text": "Redwood",
+            "href": "/Browse/Sites/41681/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+          },
+          {
+            "text": "353.2'",
+            "href": "/Browse/Trees/269142/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 13.836, -123 23.754",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Mendocino"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

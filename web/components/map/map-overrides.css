@@ -1,0 +1,58 @@
+/* Design-audit overrides for MapLibre's own default chrome (popup + zoom
+ * controls). Scoped entirely to MapLibre's generated classnames -- nothing
+ * here touches app/globals.css (owned elsewhere) or any rendered app text.
+ * Imported from components/map/map-view.tsx. */
+
+/* Marker popup: transparent MapLibre wrapper so MarkerInfoPopup's own
+ * `bg-card` / `rounded-lg` fully controls the visible shape (avoids the
+ * double-chrome look of MapLibre's default white box + our card). */
+.treesdb-popup .maplibregl-popup-content {
+  background: transparent;
+  padding: 0;
+  border-radius: var(--radius-lg);
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.12),
+    0 4px 6px -4px rgb(0 0 0 / 0.08);
+}
+
+/* The popup's header strip is `bg-secondary` (see marker-info-popup.tsx), so
+ * the tip pointing at the marker should match rather than defaulting to
+ * MapLibre's white. */
+.treesdb-popup.maplibregl-popup-anchor-top .maplibregl-popup-tip,
+.treesdb-popup.maplibregl-popup-anchor-top-left .maplibregl-popup-tip,
+.treesdb-popup.maplibregl-popup-anchor-top-right .maplibregl-popup-tip {
+  border-bottom-color: var(--secondary);
+}
+
+/* Hover name tip (map-view.tsx's `treesdb-tip`): compact, quiet -- the
+ * lightweight equivalent of the legacy Google map's native marker tooltip
+ * (marker.setTitle). */
+.treesdb-tip .maplibregl-popup-content {
+  padding: 4px 10px;
+  font-size: 12px;
+  line-height: 1.3;
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.2);
+  pointer-events: none;
+}
+
+.treesdb-tip {
+  pointer-events: none;
+}
+
+/* Zoom controls (top-right NavigationControl): match the app's rounded/
+ * shadowed control language instead of MapLibre's sharp-cornered default. */
+.maplibregl-ctrl-group {
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+  overflow: hidden;
+}
+
+.maplibregl-ctrl-group button {
+  width: 40px;
+  height: 40px;
+}
+
+.maplibregl-ctrl-group button:hover {
+  background-color: var(--secondary);
+}

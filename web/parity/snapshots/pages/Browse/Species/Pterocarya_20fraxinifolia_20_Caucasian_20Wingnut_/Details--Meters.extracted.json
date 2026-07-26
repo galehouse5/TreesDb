@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Pterocarya fraxinifolia",
+  "commonName": "Caucasian Wingnut",
+  "global": {
+    "maxHeight": {
+      "text": "19.20 m",
+      "href": "/Browse/Trees/226110/Details"
+    },
+    "maxGirth": {
+      "text": "277 cm",
+      "href": "/Browse/Trees/226110/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "19.20 m",
+          "277 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "19.20 m",
+            "href": "/Browse/Trees/226110/Details"
+          },
+          {
+            "text": "277 cm",
+            "href": "/Browse/Trees/226110/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

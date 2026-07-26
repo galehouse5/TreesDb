@@ -1,0 +1,325 @@
+{
+  "siteId": 40103,
+  "summary": {
+    "Name": "Smith Falls State Park",
+    "RHI5": "24.341",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "1.905",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "09/14/2013",
+    "Ownership contact": "90165 Smith Falls Road Valentine, Nebraska 69201",
+    "General comments": "265 Acres"
+  },
+  "visits": [
+    {
+      "visited": "09/14/2013",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "(none)",
+      "comments": "265 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "17.56 m",
+          "188 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/Sites/40103/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/Sites/40103/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "17.56 m",
+            "href": "/Browse/Trees/220439/Details"
+          },
+          {
+            "text": "188 cm",
+            "href": "/Browse/Trees/220439/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera var. papyrifera",
+          "Paper Birch",
+          "22.65 m",
+          "114 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera var. papyrifera",
+            "href": "/Browse/Sites/40103/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/Sites/40103/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "22.65 m",
+            "href": "/Browse/Trees/220438/Details"
+          },
+          {
+            "text": "114 cm",
+            "href": "/Browse/Trees/220438/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "20.76 m",
+          "170 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/40103/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/40103/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "20.76 m",
+            "href": "/Browse/Trees/220440/Details"
+          },
+          {
+            "text": "170 cm",
+            "href": "/Browse/Trees/220440/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "26.09 m",
+          "211 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/40103/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/40103/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "26.09 m",
+            "href": "/Browse/Trees/220441/Details"
+          },
+          {
+            "text": "211 cm",
+            "href": "/Browse/Trees/220441/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "21.61 m",
+          "152 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/40103/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/40103/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "21.61 m",
+            "href": "/Browse/Trees/220442/Details"
+          },
+          {
+            "text": "152 cm",
+            "href": "/Browse/Trees/220442/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "17.71 m",
+          "132 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/40103/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/40103/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "17.71 m",
+            "href": "/Browse/Trees/220443/Details"
+          },
+          {
+            "text": "132 cm",
+            "href": "/Browse/Trees/220443/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "27.65 m",
+          "206 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/Sites/40103/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/40103/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "27.65 m",
+            "href": "/Browse/Trees/220444/Details"
+          },
+          {
+            "text": "206 cm",
+            "href": "/Browse/Trees/220445/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "22.56 m",
+          "150 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/40103/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/40103/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "22.56 m",
+            "href": "/Browse/Trees/220446/Details"
+          },
+          {
+            "text": "150 cm",
+            "href": "/Browse/Trees/220447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus macrocarpa",
+          "Bur Oak",
+          "22.77 m",
+          "178 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa",
+            "href": "/Browse/Sites/40103/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/40103/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "22.77 m",
+            "href": "/Browse/Trees/220448/Details"
+          },
+          {
+            "text": "178 cm",
+            "href": "/Browse/Trees/220448/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 53.564, -100 18.680",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Cherry"
+    },
+    "state": {
+      "text": "Nebraska (US)",
+      "href": "/Browse/States/27/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

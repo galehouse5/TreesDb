@@ -1,0 +1,396 @@
+{
+  "stateId": 122,
+  "summary": {
+    "Name": "Puntarenas",
+    "Code": "PU",
+    "RHI5": "34.875",
+    "RHI10": "29.160",
+    "RHI20": "(not enough data)",
+    "RGI5": "1.652",
+    "RGI10": "1.047",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "01/24/2016"
+  },
+  "location": {
+    "Coordinates": "09 11.500, -084 00.000",
+    "Country": "Costa Rica"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alchorpea latifolia",
+          "Achiotillo",
+          "9.94 m",
+          "74 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alchorpea latifolia",
+            "href": "/Browse/States/122/Species/Alchorpea%20latifolia%20(Achiotillo)/Details"
+          },
+          {
+            "text": "Achiotillo",
+            "href": "/Browse/States/122/Species/Alchorpea%20latifolia%20(Achiotillo)/Details"
+          },
+          {
+            "text": "9.94 m",
+            "href": "/Browse/Trees/234122/Details"
+          },
+          {
+            "text": "74 cm",
+            "href": "/Browse/Trees/234122/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Anacardium excelsum",
+          "Espave",
+          "48.77 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Anacardium excelsum",
+            "href": "/Browse/States/122/Species/Anacardium%20excelsum%20(Espave)/Details"
+          },
+          {
+            "text": "Espave",
+            "href": "/Browse/States/122/Species/Anacardium%20excelsum%20(Espave)/Details"
+          },
+          {
+            "text": "48.77 m",
+            "href": "/Browse/Trees/213099/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Blschmiedaia brenesii",
+          "Aquacatillo",
+          "21.12 m",
+          "115 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Blschmiedaia brenesii",
+            "href": "/Browse/States/122/Species/Blschmiedaia%20brenesii%20(Aquacatillo)/Details"
+          },
+          {
+            "text": "Aquacatillo",
+            "href": "/Browse/States/122/Species/Blschmiedaia%20brenesii%20(Aquacatillo)/Details"
+          },
+          {
+            "text": "21.12 m",
+            "href": "/Browse/Trees/234126/Details"
+          },
+          {
+            "text": "115 cm",
+            "href": "/Browse/Trees/234126/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cecropia obtusifolia",
+          "Guarumo",
+          "25.02 m",
+          "94 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cecropia obtusifolia",
+            "href": "/Browse/States/122/Species/Cecropia%20obtusifolia%20(Guarumo)/Details"
+          },
+          {
+            "text": "Guarumo",
+            "href": "/Browse/States/122/Species/Cecropia%20obtusifolia%20(Guarumo)/Details"
+          },
+          {
+            "text": "25.02 m",
+            "href": "/Browse/Trees/221883/Details"
+          },
+          {
+            "text": "94 cm",
+            "href": "/Browse/Trees/221882/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedrela tonduzii",
+          "Sweet Cedar",
+          "36.24 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrela tonduzii",
+            "href": "/Browse/States/122/Species/Cedrela%20tonduzii%20(Sweet%20Cedar)/Details"
+          },
+          {
+            "text": "Sweet Cedar",
+            "href": "/Browse/States/122/Species/Cedrela%20tonduzii%20(Sweet%20Cedar)/Details"
+          },
+          {
+            "text": "36.24 m",
+            "href": "/Browse/Trees/234130/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus disciflora",
+          "Mata Hombro",
+          "22.40 m",
+          "259 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus disciflora",
+            "href": "/Browse/States/122/Species/Cornus%20disciflora%20(Mata%20Hombro)/Details"
+          },
+          {
+            "text": "Mata Hombro",
+            "href": "/Browse/States/122/Species/Cornus%20disciflora%20(Mata%20Hombro)/Details"
+          },
+          {
+            "text": "22.40 m",
+            "href": "/Browse/Trees/234125/Details"
+          },
+          {
+            "text": "259 cm",
+            "href": "/Browse/Trees/234125/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hesperocyparis luistanica",
+          "Mexican Cypress",
+          "24.14 m",
+          "145 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hesperocyparis luistanica",
+            "href": "/Browse/States/122/Species/Hesperocyparis%20luistanica%20(Mexican%20Cypress)/Details"
+          },
+          {
+            "text": "Mexican Cypress",
+            "href": "/Browse/States/122/Species/Hesperocyparis%20luistanica%20(Mexican%20Cypress)/Details"
+          },
+          {
+            "text": "24.14 m",
+            "href": "/Browse/Trees/234129/Details"
+          },
+          {
+            "text": "145 cm",
+            "href": "/Browse/Trees/234129/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hieroyma 0blonga",
+          "Trompito",
+          "30.11 m",
+          "116 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hieroyma 0blonga",
+            "href": "/Browse/States/122/Species/Hieroyma%200blonga%20(Trompito)/Details"
+          },
+          {
+            "text": "Trompito",
+            "href": "/Browse/States/122/Species/Hieroyma%200blonga%20(Trompito)/Details"
+          },
+          {
+            "text": "30.11 m",
+            "href": "/Browse/Trees/234131/Details"
+          },
+          {
+            "text": "116 cm",
+            "href": "/Browse/Trees/234131/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Laguncularia racemosa",
+          "White Mangrove",
+          "24.54 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Laguncularia racemosa",
+            "href": "/Browse/States/122/Species/Laguncularia%20racemosa%20(White%20Mangrove)/Details"
+          },
+          {
+            "text": "White Mangrove",
+            "href": "/Browse/States/122/Species/Laguncularia%20racemosa%20(White%20Mangrove)/Details"
+          },
+          {
+            "text": "24.54 m",
+            "href": "/Browse/Trees/213100/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus pseudostrobus",
+          "False White Pine",
+          "31.06 m",
+          "191 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus pseudostrobus",
+            "href": "/Browse/States/122/Species/Pinus%20pseudostrobus%20(False%20White%20Pine)/Details"
+          },
+          {
+            "text": "False White Pine",
+            "href": "/Browse/States/122/Species/Pinus%20pseudostrobus%20(False%20White%20Pine)/Details"
+          },
+          {
+            "text": "31.06 m",
+            "href": "/Browse/Trees/234127/Details"
+          },
+          {
+            "text": "191 cm",
+            "href": "/Browse/Trees/234128/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carara National Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carara National Park",
+            "href": "/Browse/Sites/39994/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Santa Elena Area",
+          "96.18",
+          "72.34",
+          "5.42",
+          "3.43"
+        ],
+        "links": [
+          {
+            "text": "Santa Elena Area",
+            "href": "/Browse/Sites/39971/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

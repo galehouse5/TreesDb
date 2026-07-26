@@ -1,0 +1,365 @@
+{
+  "siteId": 31554,
+  "summary": {
+    "Name": "King Island",
+    "RHI5": "111.92",
+    "RHI10": "90.27",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.68",
+    "RGI10": "8.44",
+    "RGI20": "(not enough data)",
+    "Trees measured": "29",
+    "Last measurement date": "09/26/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Some measurements were made on 9/5/2007"
+  },
+  "visits": [
+    {
+      "visited": "09/26/2007",
+      "visitors": "Dale Luthringer and Edward Frank",
+      "tripReportUrl": "(none)",
+      "comments": "Some measurements were made on 9/5/2007"
+    },
+    {
+      "visited": "06/22/2005",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "One of seven islands in the Allegheny River Islands Wilderness area. 11 acres."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "120.1'",
+          "217''",
+          "96.4'"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/31554/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/31554/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "120.1'",
+            "href": "/Browse/Trees/105270/Details"
+          },
+          {
+            "text": "217''",
+            "href": "/Browse/Trees/105141/Details"
+          },
+          {
+            "text": "96.4'",
+            "href": "/Browse/Trees/108599/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "108.0'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/31554/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/31554/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/105265/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/105265/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus spp.",
+          "Hawthorn",
+          "39.3'",
+          "49''",
+          "43.5'"
+        ],
+        "links": [
+          {
+            "text": "Crataegus spp.",
+            "href": "/Browse/Sites/31554/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/31554/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "39.3'",
+            "href": "/Browse/Trees/139083/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/139083/Details"
+          },
+          {
+            "text": "43.5'",
+            "href": "/Browse/Trees/139083/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "81.1'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/31554/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/31554/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "81.1'",
+            "href": "/Browse/Trees/139097/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/139097/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "69.1'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/31554/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/31554/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "69.1'",
+            "href": "/Browse/Trees/139085/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/139085/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "136.1'",
+          "170''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/31554/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/31554/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "136.1'",
+            "href": "/Browse/Trees/139096/Details"
+          },
+          {
+            "text": "170''",
+            "href": "/Browse/Trees/139082/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pyrus communis",
+          "Common Pear",
+          "42.7'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pyrus communis",
+            "href": "/Browse/Sites/31554/Species/Pyrus%20communis%20(Common%20Pear)/Details"
+          },
+          {
+            "text": "Common Pear",
+            "href": "/Browse/Sites/31554/Species/Pyrus%20communis%20(Common%20Pear)/Details"
+          },
+          {
+            "text": "42.7'",
+            "href": "/Browse/Trees/139086/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/139086/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Robinia pseudoacacia",
+          "Black Locust",
+          "100.7'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Robinia pseudoacacia",
+            "href": "/Browse/Sites/31554/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "Black Locust",
+            "href": "/Browse/Sites/31554/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "100.7'",
+            "href": "/Browse/Trees/139098/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/139098/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix nigra",
+          "Black Willow",
+          "60.1'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix nigra",
+            "href": "/Browse/Sites/31554/Species/Salix%20nigra%20(Black%20Willow)/Details"
+          },
+          {
+            "text": "Black Willow",
+            "href": "/Browse/Sites/31554/Species/Salix%20nigra%20(Black%20Willow)/Details"
+          },
+          {
+            "text": "60.1'",
+            "href": "/Browse/Trees/139084/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/139084/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana",
+          "American Basswood",
+          "90.1'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana",
+            "href": "/Browse/Sites/31554/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/31554/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "90.1'",
+            "href": "/Browse/Trees/108596/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/108596/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 33.387, -079 25.686",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Forest"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

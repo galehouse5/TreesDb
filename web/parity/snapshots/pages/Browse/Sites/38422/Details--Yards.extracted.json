@@ -1,0 +1,154 @@
+{
+  "siteId": 38422,
+  "summary": {
+    "Name": "Stewad's Island",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "09/04/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "19 acres. The location is on an island immediately upstream of the main Steward's Island. The main island has 53 acres"
+  },
+  "visits": [
+    {
+      "visited": "09/04/2007",
+      "visitors": "Dale Luthriinger, Edward Frank, and Anthony Kelly",
+      "tripReportUrl": "(none)",
+      "comments": "19 acres. The location is on an island immediately upstream of the main Steward's Island. The main island has 53 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "-",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/38422/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/38422/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/139248/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "28.03 yd",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/38422/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/38422/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "28.03 yd",
+            "href": "/Browse/Trees/139246/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/139246/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "28.43 yd",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/38422/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/38422/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "28.43 yd",
+            "href": "/Browse/Trees/139247/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/139247/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 44.100, -079 19.329",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

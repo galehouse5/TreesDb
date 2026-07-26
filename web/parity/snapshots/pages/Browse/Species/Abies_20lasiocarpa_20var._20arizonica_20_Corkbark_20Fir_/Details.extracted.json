@@ -1,0 +1,109 @@
+{
+  "botanicalName": "Abies lasiocarpa var. arizonica",
+  "commonName": "Corkbark Fir",
+  "global": {
+    "maxHeight": {
+      "text": "123.0'",
+      "href": "/Browse/Trees/137146/Details"
+    },
+    "maxGirth": {
+      "text": "115''",
+      "href": "/Browse/Trees/137146/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "123.0'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "123.0'",
+            "href": "/Browse/Trees/137146/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/137146/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "114.3'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "114.3'",
+            "href": "/Browse/Trees/318005/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/318005/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "63.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "63.3'",
+            "href": "/Browse/Trees/226020/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

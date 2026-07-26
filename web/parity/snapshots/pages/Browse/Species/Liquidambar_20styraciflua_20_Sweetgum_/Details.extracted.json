@@ -1,0 +1,274 @@
+{
+  "botanicalName": "Liquidambar styraciflua",
+  "commonName": "Sweetgum",
+  "global": {
+    "maxHeight": {
+      "text": "157.0'",
+      "href": "/Browse/Trees/252760/Details"
+    },
+    "maxGirth": {
+      "text": "214''",
+      "href": "/Browse/Trees/251088/Details"
+    },
+    "maxCrownSpread": {
+      "text": "100.5'",
+      "href": "/Browse/Trees/96886/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "136.7'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "136.7'",
+            "href": "/Browse/Trees/233883/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/252492/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "137.6'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "137.6'",
+            "href": "/Browse/Trees/241589/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/241593/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "122.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "122.7'",
+            "href": "/Browse/Trees/140152/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "97.7'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "97.7'",
+            "href": "/Browse/Trees/175048/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/175049/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Florida",
+          "119.2'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "119.2'",
+            "href": "/Browse/Trees/323412/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/323412/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "145.6'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "145.6'",
+            "href": "/Browse/Trees/249206/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/235308/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "120.5'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          {
+            "text": "120.5'",
+            "href": "/Browse/Trees/225675/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/273890/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana",
+          "115.2'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana",
+            "href": "/Browse/States/13/Details"
+          },
+          {
+            "text": "115.2'",
+            "href": "/Browse/Trees/174064/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/174064/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "136.2'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "136.2'",
+            "href": "/Browse/Trees/297822/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/297324/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "93.2'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "93.2'",
+            "href": "/Browse/Trees/320734/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/320734/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 23 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

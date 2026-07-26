@@ -1,0 +1,282 @@
+{
+  "siteId": 40306,
+  "summary": {
+    "Name": "VA Medical Hospital, Oteen, NC",
+    "RHI5": "15.964",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.535",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "20",
+    "Last measurement date": "12/09/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Also see: http://nativetreesociety.org/fieldtrips/north_carolina/20090104-norwayspruce/norway_spruce_nc.htm"
+  },
+  "visits": [
+    {
+      "visited": "12/09/2007",
+      "visitors": "James Parton",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/va_hospital/va_hospital_trees.htm",
+      "comments": "Also see: http://nativetreesociety.org/fieldtrips/north_carolina/20090104-norwayspruce/norway_spruce_nc.htm"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "-",
+          "335 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40306/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40306/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          null,
+          {
+            "text": "335 cm",
+            "href": "/Browse/Trees/227789/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "31.70 m",
+          "353 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/40306/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/40306/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "31.70 m",
+            "href": "/Browse/Trees/227796/Details"
+          },
+          {
+            "text": "353 cm",
+            "href": "/Browse/Trees/227792/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "15.61 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/Sites/40306/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/Sites/40306/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "15.61 m",
+            "href": "/Browse/Trees/227795/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "-",
+          "180 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40306/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40306/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "180 cm",
+            "href": "/Browse/Trees/227782/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "30.27 m",
+          "290 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40306/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40306/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "30.27 m",
+            "href": "/Browse/Trees/227794/Details"
+          },
+          {
+            "text": "290 cm",
+            "href": "/Browse/Trees/227794/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "2.25 m",
+          "488 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40306/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40306/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "2.25 m",
+            "href": "/Browse/Trees/227783/Details"
+          },
+          {
+            "text": "488 cm",
+            "href": "/Browse/Trees/227783/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "-",
+          "302 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40306/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40306/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "302 cm",
+            "href": "/Browse/Trees/227793/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "-",
+          "211 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40306/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40306/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          null,
+          {
+            "text": "211 cm",
+            "href": "/Browse/Trees/227791/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 35.282, -082 29.208",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Buncombe"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

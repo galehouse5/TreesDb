@@ -1,0 +1,103 @@
+{
+  "botanicalName": "Phoenix dactylifera",
+  "commonName": "Date Palm",
+  "global": {
+    "maxHeight": {
+      "text": "19.53 yd",
+      "href": "/Browse/Trees/291322/Details"
+    },
+    "maxGirth": {
+      "text": "101''",
+      "href": "/Browse/Trees/274949/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Andalusia",
+          "-",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Andalusia",
+            "href": "/Browse/States/124/Details"
+          },
+          null,
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/274949/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fez-Meknes, Morocco",
+          "14.30 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fez-Meknes, Morocco",
+            "href": "/Browse/States/275/Details"
+          },
+          {
+            "text": "14.30 yd",
+            "href": "/Browse/Trees/291332/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Marrakech-Safi, Morocco",
+          "19.53 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Marrakech-Safi, Morocco",
+            "href": "/Browse/States/279/Details"
+          },
+          {
+            "text": "19.53 yd",
+            "href": "/Browse/Trees/291322/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

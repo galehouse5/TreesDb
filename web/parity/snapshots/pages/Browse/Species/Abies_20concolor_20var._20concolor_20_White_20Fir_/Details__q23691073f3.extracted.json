@@ -1,0 +1,216 @@
+{
+  "botanicalName": "Abies concolor var. concolor",
+  "commonName": "White Fir",
+  "global": {
+    "maxHeight": {
+      "text": "104.0'",
+      "href": "/Browse/Trees/317991/Details"
+    },
+    "maxGirth": {
+      "text": "67''",
+      "href": "/Browse/Trees/243132/Details"
+    }
+  },
+  "state": {
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "76.3'",
+        "href": "/Browse/Trees/243132/Details"
+      },
+      "maxGirth": {
+        "text": "67''",
+        "href": "/Browse/Trees/243132/Details"
+      }
+    }
+  },
+  "site": {
+    "site": {
+      "text": "Mt. Adnah Cemetery",
+      "href": "/Browse/Sites/41013/Details"
+    },
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Oswego"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "76.3'",
+        "href": "/Browse/Trees/243132/Details"
+      },
+      "maxGirth": {
+        "text": "67''",
+        "href": "/Browse/Trees/243132/Details"
+      }
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New Mexico",
+          "104.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "104.0'",
+            "href": "/Browse/Trees/317991/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "76.3'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "76.3'",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedSitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Mt. Adnah Cemetery",
+          "76.3'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mt. Adnah Cemetery",
+            "href": "/Browse/Sites/41013/Details"
+          },
+          {
+            "text": "76.3'",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedTreesGrid": {
+    "columns": [
+      {
+        "header": "Height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "76.3'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "76.3'",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

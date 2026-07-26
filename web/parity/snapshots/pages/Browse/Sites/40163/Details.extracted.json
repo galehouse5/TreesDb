@@ -1,0 +1,123 @@
+{
+  "siteId": 40163,
+  "summary": {
+    "Name": "Fish Creek Island",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "04/02/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "48 acres"
+  },
+  "visits": [
+    {
+      "visited": "04/02/2012",
+      "visitors": "Dick Esker",
+      "tripReportUrl": "(none)",
+      "comments": "48 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "-",
+          "170''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/40163/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/40163/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          null,
+          {
+            "text": "170''",
+            "href": "/Browse/Trees/224268/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides ssp. deltoides",
+          "Eastern Cottonwood",
+          "-",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides ssp. deltoides",
+            "href": "/Browse/Sites/40163/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/40163/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          null,
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/224272/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 48.854, -080 49.144",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Marshall"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,185 @@
+{
+  "siteId": 40104,
+  "summary": {
+    "Name": "Ponca State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "11/11/2013",
+    "Ownership contact": "Box 688 Ponca Nebraska 68770",
+    "General comments": "1400 Acres."
+  },
+  "visits": [
+    {
+      "visited": "11/11/2013",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "(none)",
+      "comments": "1400 Acres."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "81.2'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/40104/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/40104/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "81.2'",
+            "href": "/Browse/Trees/220449/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/220449/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "85.5'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/40104/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/40104/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "85.5'",
+            "href": "/Browse/Trees/220450/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/220450/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gymnocladus dioicus",
+          "Kentucky Coffeetree",
+          "91.4'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gymnocladus dioicus",
+            "href": "/Browse/Sites/40104/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "Kentucky Coffeetree",
+            "href": "/Browse/Sites/40104/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "91.4'",
+            "href": "/Browse/Trees/220451/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/220454/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "92.9'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/40104/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/40104/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "92.9'",
+            "href": "/Browse/Trees/220456/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/220458/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 35.607, -096 42.632",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Dixon"
+    },
+    "state": {
+      "text": "Nebraska (US)",
+      "href": "/Browse/States/27/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Quercus x comptonae",
+  "commonName": "Compton Oak",
+  "global": {
+    "maxHeight": {
+      "text": "18.44 m",
+      "href": "/Browse/Trees/240481/Details"
+    },
+    "maxGirth": {
+      "text": "508 cm",
+      "href": "/Browse/Trees/240481/Details"
+    },
+    "maxCrownSpread": {
+      "text": "2.84 m",
+      "href": "/Browse/Trees/240481/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Virginia",
+          "18.44 m",
+          "508 cm",
+          "2.84 m"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "18.44 m",
+            "href": "/Browse/Trees/240481/Details"
+          },
+          {
+            "text": "508 cm",
+            "href": "/Browse/Trees/240481/Details"
+          },
+          {
+            "text": "2.84 m",
+            "href": "/Browse/Trees/240481/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

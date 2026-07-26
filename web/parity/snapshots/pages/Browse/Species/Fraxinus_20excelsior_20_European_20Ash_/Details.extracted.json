@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Fraxinus excelsior",
+  "commonName": "European Ash",
+  "global": {
+    "maxHeight": {
+      "text": "145.7'",
+      "href": "/Browse/Trees/283470/Details"
+    },
+    "maxGirth": {
+      "text": "207''",
+      "href": "/Browse/Trees/283469/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "71.2'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "71.2'",
+            "href": "/Browse/Trees/226059/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/226059/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Podlaskie Voivodeship",
+          "145.7'",
+          "207''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Podlaskie Voivodeship",
+            "href": "/Browse/States/232/Details"
+          },
+          {
+            "text": "145.7'",
+            "href": "/Browse/Trees/283470/Details"
+          },
+          {
+            "text": "207''",
+            "href": "/Browse/Trees/283469/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

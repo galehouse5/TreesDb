@@ -1,0 +1,263 @@
+{
+  "siteId": 7798,
+  "summary": {
+    "Name": "Clifton Gorge State Nature Preserve",
+    "RHI5": "36.192",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "1.843",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "11/24/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/24/2013",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/23/2013",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "16.18 m",
+          "216 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/Sites/7798/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/7798/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "16.18 m",
+            "href": "/Browse/Trees/52731/Details"
+          },
+          {
+            "text": "216 cm",
+            "href": "/Browse/Trees/52731/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "41.88 m",
+          "355 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/7798/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/7798/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "41.88 m",
+            "href": "/Browse/Trees/52733/Details"
+          },
+          {
+            "text": "355 cm",
+            "href": "/Browse/Trees/52732/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "38.92 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/7798/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/7798/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "38.92 m",
+            "href": "/Browse/Trees/52728/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "36.94 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/7798/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/7798/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "36.94 m",
+            "href": "/Browse/Trees/52719/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus muehlenbergii",
+          "Chinkapin Oak",
+          "26.94 m",
+          "351 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus muehlenbergii",
+            "href": "/Browse/Sites/7798/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "Chinkapin Oak",
+            "href": "/Browse/Sites/7798/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "26.94 m",
+            "href": "/Browse/Trees/52730/Details"
+          },
+          {
+            "text": "351 cm",
+            "href": "/Browse/Trees/52730/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja occidentalis",
+          "Arborvitae",
+          "27.86 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja occidentalis",
+            "href": "/Browse/Sites/7798/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "Arborvitae",
+            "href": "/Browse/Sites/7798/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "27.86 m",
+            "href": "/Browse/Trees/52726/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "35.36 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/7798/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/7798/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "35.36 m",
+            "href": "/Browse/Trees/52720/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 47.862, -083 50.169",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Greene"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

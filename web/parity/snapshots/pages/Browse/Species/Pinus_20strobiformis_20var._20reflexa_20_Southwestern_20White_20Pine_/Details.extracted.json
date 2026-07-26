@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Pinus strobiformis var. reflexa",
+  "commonName": "Southwestern White Pine",
+  "global": {
+    "maxHeight": {
+      "text": "127.5'",
+      "href": "/Browse/Trees/280649/Details"
+    },
+    "maxGirth": {
+      "text": "150''",
+      "href": "/Browse/Trees/137148/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "114.9'",
+          "150''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "114.9'",
+            "href": "/Browse/Trees/137148/Details"
+          },
+          {
+            "text": "150''",
+            "href": "/Browse/Trees/137148/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Colorado",
+          "127.5'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "127.5'",
+            "href": "/Browse/Trees/280649/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/280649/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

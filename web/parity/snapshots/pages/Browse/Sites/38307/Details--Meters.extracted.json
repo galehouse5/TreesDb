@@ -1,0 +1,185 @@
+{
+  "siteId": 38307,
+  "summary": {
+    "Name": "Nolde Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "11/01/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "Full name is Nolde Forest Environmental Education Center."
+  },
+  "visits": [
+    {
+      "visited": "11/01/2011",
+      "visitors": "George Fieo",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Full name is Nolde Forest Environmental Education Center."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "35.42 m",
+          "180 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/Sites/38307/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/38307/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "35.42 m",
+            "href": "/Browse/Trees/135982/Details"
+          },
+          {
+            "text": "180 cm",
+            "href": "/Browse/Trees/135982/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "44.29 m",
+          "195 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38307/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38307/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "44.29 m",
+            "href": "/Browse/Trees/135983/Details"
+          },
+          {
+            "text": "195 cm",
+            "href": "/Browse/Trees/135983/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "42.95 m",
+          "236 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/38307/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/38307/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "42.95 m",
+            "href": "/Browse/Trees/135980/Details"
+          },
+          {
+            "text": "236 cm",
+            "href": "/Browse/Trees/135973/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "38.34 m",
+          "226 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/38307/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/38307/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "38.34 m",
+            "href": "/Browse/Trees/135981/Details"
+          },
+          {
+            "text": "226 cm",
+            "href": "/Browse/Trees/135981/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 16.818, -075 56.954",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Berks"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

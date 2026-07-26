@@ -1,0 +1,238 @@
+{
+  "siteId": 42290,
+  "summary": {
+    "Name": "Fuller Mill Creek Picnic Area",
+    "RHI5": "128.74",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.05",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "07/17/2024",
+    "Ownership contact": "Forest Service",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/17/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus rhombifolia",
+          "White Alder",
+          "86.0'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus rhombifolia",
+            "href": "/Browse/Sites/42290/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+          },
+          {
+            "text": "White Alder",
+            "href": "/Browse/Sites/42290/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+          },
+          {
+            "text": "86.0'",
+            "href": "/Browse/Trees/318009/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/318009/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Calocedrus decurrens",
+          "Incense Cedar",
+          "142.3'",
+          "166''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Calocedrus decurrens",
+            "href": "/Browse/Sites/42290/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "Incense Cedar",
+            "href": "/Browse/Sites/42290/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "142.3'",
+            "href": "/Browse/Trees/318012/Details"
+          },
+          {
+            "text": "166''",
+            "href": "/Browse/Trees/318012/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "109.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/Sites/42290/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/Sites/42290/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "109.5'",
+            "href": "/Browse/Trees/318011/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa",
+          "Ponderosa Pine",
+          "203.8'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa",
+            "href": "/Browse/Sites/42290/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/42290/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "203.8'",
+            "href": "/Browse/Trees/318010/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/318010/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus chrysolepis var. chrysolepis",
+          "Canyon Live Oak",
+          "33.1'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus chrysolepis var. chrysolepis",
+            "href": "/Browse/Sites/42290/Species/Quercus%20chrysolepis%20var.%20chrysolepis%20(Canyon%20Live%20Oak)/Details"
+          },
+          {
+            "text": "Canyon Live Oak",
+            "href": "/Browse/Sites/42290/Species/Quercus%20chrysolepis%20var.%20chrysolepis%20(Canyon%20Live%20Oak)/Details"
+          },
+          {
+            "text": "33.1'",
+            "href": "/Browse/Trees/318008/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/318008/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus kelloggii",
+          "California Black Oak",
+          "102.1'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus kelloggii",
+            "href": "/Browse/Sites/42290/Species/Quercus%20kelloggii%20(California%20Black%20Oak)/Details"
+          },
+          {
+            "text": "California Black Oak",
+            "href": "/Browse/Sites/42290/Species/Quercus%20kelloggii%20(California%20Black%20Oak)/Details"
+          },
+          {
+            "text": "102.1'",
+            "href": "/Browse/Trees/318007/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/318007/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 47.919, -116 44.948",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Riverside"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

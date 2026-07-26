@@ -1,0 +1,101 @@
+{
+  "siteId": 39184,
+  "summary": {
+    "Name": "Oklahoma Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "09/29/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/29/2016",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Taxodium ascendens",
+          "Pond Cypress",
+          "58.0'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium ascendens",
+            "href": "/Browse/Sites/39184/Species/Taxodium%20ascendens%20(Pond%20Cypress)/Details"
+          },
+          {
+            "text": "Pond Cypress",
+            "href": "/Browse/Sites/39184/Species/Taxodium%20ascendens%20(Pond%20Cypress)/Details"
+          },
+          {
+            "text": "58.0'",
+            "href": "/Browse/Trees/168957/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/168957/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 29.800, -097 30.197",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public, Private",
+      "County": "Oklahoma"
+    },
+    "state": {
+      "text": "Oklahoma (US)",
+      "href": "/Browse/States/34/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

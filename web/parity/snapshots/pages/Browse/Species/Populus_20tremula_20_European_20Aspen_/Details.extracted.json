@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Populus tremula",
+  "commonName": "European Aspen",
+  "global": {
+    "maxHeight": {
+      "text": "127.3'",
+      "href": "/Browse/Trees/283484/Details"
+    },
+    "maxGirth": {
+      "text": "156''",
+      "href": "/Browse/Trees/283485/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Podlaskie Voivodeship",
+          "127.3'",
+          "156''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Podlaskie Voivodeship",
+            "href": "/Browse/States/232/Details"
+          },
+          {
+            "text": "127.3'",
+            "href": "/Browse/Trees/283484/Details"
+          },
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/283485/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

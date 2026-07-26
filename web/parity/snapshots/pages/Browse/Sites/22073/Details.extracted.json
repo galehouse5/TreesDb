@@ -1,0 +1,154 @@
+{
+  "siteId": 22073,
+  "summary": {
+    "Name": "Bellevue State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "02/21/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/21/2007",
+      "visitors": "Scott Wade and Meg Varnes",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/delaware/rockwood/delaware_trees.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus hippocastanum",
+          "Horse Chestnut",
+          "62.6'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus hippocastanum",
+            "href": "/Browse/Sites/22073/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "Horse Chestnut",
+            "href": "/Browse/Sites/22073/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "62.6'",
+            "href": "/Browse/Trees/75581/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/75581/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "106.4'",
+          "153''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/22073/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/22073/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "106.4'",
+            "href": "/Browse/Trees/75580/Details"
+          },
+          {
+            "text": "153''",
+            "href": "/Browse/Trees/75580/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus nigra",
+          "Austrian Pine",
+          "66.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus nigra",
+            "href": "/Browse/Sites/22073/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "Austrian Pine",
+            "href": "/Browse/Sites/22073/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "66.2'",
+            "href": "/Browse/Trees/75582/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 47.024, -075 29.703",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - State",
+      "County": "New Castle"
+    },
+    "state": {
+      "text": "Delaware (US)",
+      "href": "/Browse/States/7/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

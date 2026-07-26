@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Terminalia oblonga",
+  "commonName": "Guayabo",
+  "global": {
+    "maxHeight": {
+      "text": "92.5'",
+      "href": "/Browse/Trees/213101/Details"
+    },
+    "maxGirth": {
+      "text": "80''",
+      "href": "/Browse/Trees/213140/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Guanacaste",
+          "80.8'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Guanacaste",
+            "href": "/Browse/States/119/Details"
+          },
+          {
+            "text": "80.8'",
+            "href": "/Browse/Trees/213140/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/213140/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Puntarenas",
+          "92.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Puntarenas",
+            "href": "/Browse/States/122/Details"
+          },
+          {
+            "text": "92.5'",
+            "href": "/Browse/Trees/213101/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 146286,
+  "botanicalName": {
+    "text": "Tsuga canadensis",
+    "href": "/Browse/Sites/38527/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+  },
+  "commonName": {
+    "text": "Eastern Hemlock",
+    "href": "/Browse/Sites/38527/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+  },
+  "details": {
+    "Height": "24.9'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "156''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "42.08",
+    "ENTSPTS": "323.70",
+    "TDI3": "(not enough data)",
+    "TDI2": "0.89",
+    "Champion points (abbreviated)": "180.90",
+    "Diameter": "50''",
+    "Conical volume": "111.6 ft³",
+    "General comments": "Tree is hollow and top out. Measured by Harting 9/6/2005 at top of ridge above Browns Run."
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 02/14/2005",
+      "summary": {
+        "Height": "24.9'",
+        "Girth": "156''"
+      },
+      "details": {
+        "Botanical name": "Tsuga canadensis",
+        "Common name": "Eastern Hemlock",
+        "Height": "24.9'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "156''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "42.08",
+        "ENTSPTS": "323.70",
+        "TDI3": "(not enough data)",
+        "TDI2": "0.89",
+        "Champion points (abbreviated)": "180.90",
+        "Diameter": "50''",
+        "Conical volume": "111.6 ft³",
+        "General comments": "Tree is hollow and top out. Measured by Harting 9/6/2005 at top of ridge above Browns Run."
+      },
+      "measurers": "Dale Luthringer"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 20.802, -079 13.175",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "CFSP-Upper Toms Run",
+      "href": "/Browse/Sites/38527/Details"
+    },
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Clarion"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

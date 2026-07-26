@@ -1,0 +1,263 @@
+{
+  "siteId": 40598,
+  "summary": {
+    "Name": "Mountain Longleaf Pine National Wildlife Refuge",
+    "RHI5": "18.898",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.443",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "08/10/2005",
+    "Ownership contact": "407 Bains Gap Road Anniston, Alabama",
+    "General comments": "9,016 acres"
+  },
+  "visits": [
+    {
+      "visited": "08/10/2005",
+      "visitors": "Jess Riddle and Doug Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/alabama/mountain_longleaf_pine_nwr.htm",
+      "comments": "9,016 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya pallida",
+          "Sand Hickory",
+          "22.28 m",
+          "140 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya pallida",
+            "href": "/Browse/Sites/40598/Species/Carya%20pallida%20(Sand%20Hickory)/Details"
+          },
+          {
+            "text": "Sand Hickory",
+            "href": "/Browse/Sites/40598/Species/Carya%20pallida%20(Sand%20Hickory)/Details"
+          },
+          {
+            "text": "22.28 m",
+            "href": "/Browse/Trees/233699/Details"
+          },
+          {
+            "text": "140 cm",
+            "href": "/Browse/Trees/233699/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "21.64 m",
+          "262 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/40598/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/40598/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "21.64 m",
+            "href": "/Browse/Trees/233706/Details"
+          },
+          {
+            "text": "262 cm",
+            "href": "/Browse/Trees/233706/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus palustris",
+          "Longleaf Pine",
+          "26.82 m",
+          "257 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus palustris",
+            "href": "/Browse/Sites/40598/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "Longleaf Pine",
+            "href": "/Browse/Sites/40598/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "26.82 m",
+            "href": "/Browse/Trees/233704/Details"
+          },
+          {
+            "text": "257 cm",
+            "href": "/Browse/Trees/233704/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus marilandica",
+          "Blackjack Oak",
+          "14.26 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus marilandica",
+            "href": "/Browse/Sites/40598/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "Blackjack Oak",
+            "href": "/Browse/Sites/40598/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "14.26 m",
+            "href": "/Browse/Trees/233700/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus pagoda",
+          "Cherrybark Oak",
+          "-",
+          "536 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus pagoda",
+            "href": "/Browse/Sites/40598/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "Cherrybark Oak",
+            "href": "/Browse/Sites/40598/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "536 cm",
+            "href": "/Browse/Trees/233708/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Rhus copallinum",
+          "Winged Sumac",
+          "9.48 m",
+          "28 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhus copallinum",
+            "href": "/Browse/Sites/40598/Species/Rhus%20copallinum%20(Winged%20Sumac)/Details"
+          },
+          {
+            "text": "Winged Sumac",
+            "href": "/Browse/Sites/40598/Species/Rhus%20copallinum%20(Winged%20Sumac)/Details"
+          },
+          {
+            "text": "9.48 m",
+            "href": "/Browse/Trees/233705/Details"
+          },
+          {
+            "text": "28 cm",
+            "href": "/Browse/Trees/233705/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix caroliniana",
+          "Coastal Plain Willow",
+          "5.76 m",
+          "20 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix caroliniana",
+            "href": "/Browse/Sites/40598/Species/Salix%20caroliniana%20(Coastal%20Plain%20Willow)/Details"
+          },
+          {
+            "text": "Coastal Plain Willow",
+            "href": "/Browse/Sites/40598/Species/Salix%20caroliniana%20(Coastal%20Plain%20Willow)/Details"
+          },
+          {
+            "text": "5.76 m",
+            "href": "/Browse/Trees/233707/Details"
+          },
+          {
+            "text": "20 cm",
+            "href": "/Browse/Trees/233707/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 42.858, -085 45.647",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Calhoun"
+    },
+    "state": {
+      "text": "Alabama (US)",
+      "href": "/Browse/States/1/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

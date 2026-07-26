@@ -1,0 +1,285 @@
+{
+  "siteId": 40275,
+  "summary": {
+    "Name": "Middle Prong Wilderness",
+    "RHI5": "54.86",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.57",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "07/24/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "7900 acres"
+  },
+  "visits": [
+    {
+      "visited": "07/24/2006",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/middleprong/middleprong.htm",
+      "comments": "7900 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies fraseri",
+          "Fraser Fir",
+          "64.8'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies fraseri",
+            "href": "/Browse/Sites/40275/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "Fraser Fir",
+            "href": "/Browse/Sites/40275/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "64.8'",
+            "href": "/Browse/Trees/227251/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/227251/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "-",
+          "39''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/Sites/40275/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/Sites/40275/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "39''",
+            "href": "/Browse/Trees/227260/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer spicatum",
+          "Mountain Maple",
+          "42.4'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spicatum",
+            "href": "/Browse/Sites/40275/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "Mountain Maple",
+            "href": "/Browse/Sites/40275/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "42.4'",
+            "href": "/Browse/Trees/227258/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/227258/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Halesia tetraptera var. monticola",
+          "Mountain Silverbell",
+          "-",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Halesia tetraptera var. monticola",
+            "href": "/Browse/Sites/40275/Species/Halesia%20tetraptera%20var.%20monticola%20(Mountain%20Silverbell)/Details"
+          },
+          {
+            "text": "Mountain Silverbell",
+            "href": "/Browse/Sites/40275/Species/Halesia%20tetraptera%20var.%20monticola%20(Mountain%20Silverbell)/Details"
+          },
+          null,
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/227264/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "113.6'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/40275/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/40275/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "113.6'",
+            "href": "/Browse/Trees/227265/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/227265/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Rhododendron catawbiense",
+          "Catawba Rosebay",
+          "-",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhododendron catawbiense",
+            "href": "/Browse/Sites/40275/Species/Rhododendron%20catawbiense%20(Catawba%20Rosebay)/Details"
+          },
+          {
+            "text": "Catawba Rosebay",
+            "href": "/Browse/Sites/40275/Species/Rhododendron%20catawbiense%20(Catawba%20Rosebay)/Details"
+          },
+          null,
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/227263/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sorbus americana",
+          "American Mountain Ash",
+          "53.5'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sorbus americana",
+            "href": "/Browse/Sites/40275/Species/Sorbus%20americana%20(American%20Mountain%20Ash)/Details"
+          },
+          {
+            "text": "American Mountain Ash",
+            "href": "/Browse/Sites/40275/Species/Sorbus%20americana%20(American%20Mountain%20Ash)/Details"
+          },
+          {
+            "text": "53.5'",
+            "href": "/Browse/Trees/227262/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/227261/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vaccinium corymbosum",
+          "Highbush Blueberry",
+          "-",
+          "17''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vaccinium corymbosum",
+            "href": "/Browse/Sites/40275/Species/Vaccinium%20corymbosum%20(Highbush%20Blueberry)/Details"
+          },
+          {
+            "text": "Highbush Blueberry",
+            "href": "/Browse/Sites/40275/Species/Vaccinium%20corymbosum%20(Highbush%20Blueberry)/Details"
+          },
+          null,
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/227266/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 20.354, -082 56.299",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Haywood"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

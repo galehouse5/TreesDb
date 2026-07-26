@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Abies cilicica",
+  "commonName": "Cilician Fir",
+  "global": {
+    "maxHeight": {
+      "text": "17.10 yd",
+      "href": "/Browse/Trees/226135/Details"
+    },
+    "maxGirth": {
+      "text": "46''",
+      "href": "/Browse/Trees/226135/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "17.10 yd",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "17.10 yd",
+            "href": "/Browse/Trees/226135/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/226135/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

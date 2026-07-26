@@ -1,0 +1,213 @@
+{
+  "siteId": 1678,
+  "summary": {
+    "Name": "Airlie Gardens",
+    "RHI5": "66.94",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.08",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "27",
+    "Last measurement date": "03/31/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/31/2013",
+      "visitors": "Brian Beduhn",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Camellia japonica",
+          "Camellia",
+          "13.6'",
+          "31''",
+          "20.0'"
+        ],
+        "links": [
+          {
+            "text": "Camellia japonica",
+            "href": "/Browse/Sites/1678/Species/Camellia%20japonica%20(Camellia)/Details"
+          },
+          {
+            "text": "Camellia",
+            "href": "/Browse/Sites/1678/Species/Camellia%20japonica%20(Camellia)/Details"
+          },
+          {
+            "text": "13.6'",
+            "href": "/Browse/Trees/40685/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/40685/Details"
+          },
+          {
+            "text": "20.0'",
+            "href": "/Browse/Trees/40685/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca",
+          "American Holly",
+          "54.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca",
+            "href": "/Browse/Sites/1678/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/1678/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "54.9'",
+            "href": "/Browse/Trees/40710/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "84.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/1678/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/1678/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "84.7'",
+            "href": "/Browse/Trees/40709/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "111.5'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/1678/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/1678/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "111.5'",
+            "href": "/Browse/Trees/40700/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/40703/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus virginiana",
+          "Live Oak",
+          "70.0'",
+          "258''",
+          "124.5'"
+        ],
+        "links": [
+          {
+            "text": "Quercus virginiana",
+            "href": "/Browse/Sites/1678/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+          },
+          {
+            "text": "Live Oak",
+            "href": "/Browse/Sites/1678/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/40684/Details"
+          },
+          {
+            "text": "258''",
+            "href": "/Browse/Trees/40684/Details"
+          },
+          {
+            "text": "124.5'",
+            "href": "/Browse/Trees/40684/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 12.674, -077 49.382",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "New Hanover"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

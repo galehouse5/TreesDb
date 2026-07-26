@@ -1,0 +1,347 @@
+{
+  "siteId": 863,
+  "summary": {
+    "Name": "Bedford Reservation",
+    "RHI5": "35.968",
+    "RHI10": "33.922",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.315",
+    "RGI10": "1.927",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "12/13/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/13/2016",
+      "visitors": "Stefan Radivoyevitch",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/02/2011",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "Bedford Reservation is part of the Cleveland MetroParks, with Tinker's Creek Gorge, a National Natural Landmark, its main attraction. Tinker's Creek is the largest tributary of the Cuyahoga River. It's a very scenic area with nice woods in addition to the picturesque creek."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "32.61 m",
+          "295 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/863/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/863/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "32.61 m",
+            "href": "/Browse/Trees/14790/Details"
+          },
+          {
+            "text": "295 cm",
+            "href": "/Browse/Trees/14790/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "32.28 m",
+          "320 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/863/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/863/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "32.28 m",
+            "href": "/Browse/Trees/14781/Details"
+          },
+          {
+            "text": "320 cm",
+            "href": "/Browse/Trees/14781/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "34.63 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/863/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/863/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "34.63 m",
+            "href": "/Browse/Trees/14785/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "31.58 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/863/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/863/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "31.58 m",
+            "href": "/Browse/Trees/14788/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "36.41 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/863/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/863/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "36.41 m",
+            "href": "/Browse/Trees/14786/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "39.32 m",
+          "381 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/863/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/863/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "39.32 m",
+            "href": "/Browse/Trees/169438/Details"
+          },
+          {
+            "text": "381 cm",
+            "href": "/Browse/Trees/169438/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "25.91 m",
+          "337 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/863/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/863/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "25.91 m",
+            "href": "/Browse/Trees/169437/Details"
+          },
+          {
+            "text": "337 cm",
+            "href": "/Browse/Trees/169437/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "30.78 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/863/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/863/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "30.78 m",
+            "href": "/Browse/Trees/14784/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "34.44 m",
+          "325 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/863/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/863/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "34.44 m",
+            "href": "/Browse/Trees/14782/Details"
+          },
+          {
+            "text": "325 cm",
+            "href": "/Browse/Trees/14782/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "32.13 m",
+          "269 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/863/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/863/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "32.13 m",
+            "href": "/Browse/Trees/14789/Details"
+          },
+          {
+            "text": "269 cm",
+            "href": "/Browse/Trees/14789/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 23.080, -081 33.662",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Cuyahoga"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

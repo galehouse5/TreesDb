@@ -1,0 +1,353 @@
+{
+  "siteId": 42356,
+  "summary": {
+    "Name": "T.O. Fuller State Park",
+    "RHI5": "146.40",
+    "RHI10": "140.93",
+    "RHI20": "132.68",
+    "RGI5": "13.53",
+    "RGI10": "12.22",
+    "RGI20": "10.51",
+    "Trees measured": "46",
+    "Last measurement date": "01/27/2025",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/27/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer barbatum",
+          "Southern Sugar Maple",
+          "100.3'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer barbatum",
+            "href": "/Browse/Sites/42356/Species/Acer%20barbatum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/Sites/42356/Species/Acer%20barbatum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "100.3'",
+            "href": "/Browse/Trees/320791/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/320791/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. caroliniana",
+          "American Hornbeam",
+          "49.4'",
+          "26''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. caroliniana",
+            "href": "/Browse/Sites/42356/Species/Carpinus%20caroliniana%20ssp.%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/42356/Species/Carpinus%20caroliniana%20ssp.%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "49.4'",
+            "href": "/Browse/Trees/320785/Details"
+          },
+          {
+            "text": "26''",
+            "href": "/Browse/Trees/320785/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "132.1'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/42356/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/42356/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "132.1'",
+            "href": "/Browse/Trees/320762/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/320761/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "131.4'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/42356/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/42356/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "131.4'",
+            "href": "/Browse/Trees/320763/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/320763/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "122.3'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/42356/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/42356/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "122.3'",
+            "href": "/Browse/Trees/320783/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/320783/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. laevigata",
+          "Sugarberry",
+          "100.7'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. laevigata",
+            "href": "/Browse/Sites/42356/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "Sugarberry",
+            "href": "/Browse/Sites/42356/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "100.7'",
+            "href": "/Browse/Trees/320793/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/320793/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "117.5'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/42356/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/42356/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "117.5'",
+            "href": "/Browse/Trees/320796/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/320796/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "130.0'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/42356/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/42356/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "130.0'",
+            "href": "/Browse/Trees/320784/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/320784/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana var. biltmoreana",
+          "Biltmore Ash",
+          "135.8'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana var. biltmoreana",
+            "href": "/Browse/Sites/42356/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "Biltmore Ash",
+            "href": "/Browse/Sites/42356/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "135.8'",
+            "href": "/Browse/Trees/320766/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/320766/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "118.8'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/42356/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/42356/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "118.8'",
+            "href": "/Browse/Trees/320765/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/320764/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 27 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 03.762, -090 06.830",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Shelby"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

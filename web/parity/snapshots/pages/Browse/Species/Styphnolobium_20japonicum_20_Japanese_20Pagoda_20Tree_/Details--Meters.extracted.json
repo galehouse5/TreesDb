@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Styphnolobium japonicum",
+  "commonName": "Japanese Pagoda Tree",
+  "global": {
+    "maxHeight": {
+      "text": "28.50 m",
+      "href": "/Browse/Trees/260254/Details"
+    },
+    "maxGirth": {
+      "text": "227 cm",
+      "href": "/Browse/Trees/282341/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "12.10 m",
+          "114 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "12.10 m",
+            "href": "/Browse/Trees/102903/Details"
+          },
+          {
+            "text": "114 cm",
+            "href": "/Browse/Trees/102903/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "28.50 m",
+          "227 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "28.50 m",
+            "href": "/Browse/Trees/260254/Details"
+          },
+          {
+            "text": "227 cm",
+            "href": "/Browse/Trees/282341/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "11.31 m",
+          "155 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "11.31 m",
+            "href": "/Browse/Trees/272999/Details"
+          },
+          {
+            "text": "155 cm",
+            "href": "/Browse/Trees/272999/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "siteId": 42263,
+  "summary": {
+    "Name": "Rock Island State Park",
+    "RHI5": "142.44",
+    "RHI10": "138.25",
+    "RHI20": "132.45",
+    "RGI5": "11.29",
+    "RGI10": "9.97",
+    "RGI20": "8.56",
+    "Trees measured": "62",
+    "Last measurement date": "12/30/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/30/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "115.2'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/42263/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42263/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "115.2'",
+            "href": "/Browse/Trees/314519/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/314519/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "135.3'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/42263/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/42263/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "135.3'",
+            "href": "/Browse/Trees/314521/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/314521/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "119.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/42263/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/42263/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "119.3'",
+            "href": "/Browse/Trees/314548/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "116.0'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/42263/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/42263/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "116.0'",
+            "href": "/Browse/Trees/314524/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/314524/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "126.2'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/42263/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/42263/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "126.2'",
+            "href": "/Browse/Trees/314529/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/314529/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "135.0'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/42263/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/42263/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "135.0'",
+            "href": "/Browse/Trees/314527/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/314528/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "137.8'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42263/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42263/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "137.8'",
+            "href": "/Browse/Trees/314526/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/314525/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "130.0'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/42263/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/42263/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "130.0'",
+            "href": "/Browse/Trees/314532/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/314531/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis var. canadensis",
+          "Eastern Redbud",
+          "47.8'",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis var. canadensis",
+            "href": "/Browse/Sites/42263/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/Sites/42263/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "47.8'",
+            "href": "/Browse/Trees/314570/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/314570/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cladrastis kentukea",
+          "Kentucky Yellowwood",
+          "48.5'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cladrastis kentukea",
+            "href": "/Browse/Sites/42263/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "Kentucky Yellowwood",
+            "href": "/Browse/Sites/42263/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "48.5'",
+            "href": "/Browse/Trees/314517/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/314517/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 35 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 48.760, -085 38.597",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

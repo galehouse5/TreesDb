@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Browse - Species</title>
+    <style type="text/css">.ShowIfJavascriptEnabled { display: block; } .ShowIfJavascriptDisabled { display: none; }</style>
+    <noscript><style type="text/css">.ShowIfJavascriptEnabled { display: none; } .ShowIfJavascriptDisabled { display: block; }</style></noscript>
+    <link href="/images/icon.ico?v=20171205155525" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="/css/jquery/jquery-ui-1.8.7.custom.css?v=20171205155525" rel="Stylesheet" type="text/css" />
+    <link href="/css/Shared.css?v=DXLFO8k7beDFNgs6xCunY3nTuR1AWd7usZmysfNXy1g1" rel="stylesheet"/>
+
+    
+</head>
+<body>
+    <div id="wrapper" class="clearfix">
+        <div id="top">
+            <div id="header">
+                <h1><a href="/Main">Trees Database</a></h1>
+<div id="info">
+    <p>
+                You are not logged on
+            <br />
+            <a href="/Account/Logon">Logon</a> or <a href="/Account/Register">Register</a>
+    </p>
+</div> <!-- #info -->
+            </div>
+            <!-- #header -->
+            <div id="nav">
+                <ul class="mega-container mega-grey">
+<li class="mega">
+    <a class="mega-link" href="/Map">Map</a>
+</li>
+<li class="mega mega-current">
+  <span class="mega-tab">Browse</span>
+  <div class="mega-content mega-menu ">
+    <ul>
+      <li><a href="/Browse/Activity">Activity</a></li>
+      <li><a href="/Browse/Locations">Locations</a></li>
+      <li><a href="/Browse/Species">Species</a></li>
+    </ul>
+  </div> 
+</li><li class="mega">
+  <span class="mega-tab">Import</span>
+  <div class="mega-content mega-menu">
+    <ul>
+      <li>
+        
+        <a href="/Import/Trip">New</a>
+      </li>
+          </ul>
+  </div>
+</li>
+<li id="search" class="mega">
+<form action="/Search" class="form" method="get">        <div class="field">
+            <input type="text" name="term" placeholder="Search species and locations" size="50" />
+        </div>
+</form></li>
+                </ul>
+            </div>
+            <!-- #nav -->
+        </div>
+        <!-- #top -->
+        <div id="content" class="content xfluid">
+            
+
+<div class="portlet x12">
+  <div class="portlet-header">
+    <h4>Species</h4>
+    <ul class="portlet-tab-nav">
+      <li class="portlet-tab-nav-ignore">
+        <a href="/Export/SpeciesByFilters">Export tree data</a>
+      </li>
+    </ul>
+  </div>
+  <div class="portlet-content">
+    <div class='dataTablesGrid'><form method='get' action='/Browse/Species' class='form'><input type='hidden' name='Sort' value='MaxHeight'/><input type='hidden' name='SortAsc' value='False'/><table cellspacing='0' cellpadding='0' border='0' class='display'><thead><tr><th class='sortable '><a href='/Browse/Species?sort=BotanicalName&amp;sortAsc=True'><span>Botanical name</span></a></th><th class='sortable '><a href='/Browse/Species?sort=CommonName&amp;sortAsc=True'><span>Common name</span></a></th><th class='sortable sorting_desc'><a href='/Browse/Species?sort=MaxHeight&amp;sortAsc=True'><span>Max height</span></a></th><th class='sortable '><a href='/Browse/Species?sort=MaxGirth&amp;sortAsc=False'><span>Max girth</span></a></th><th class='sortable '><a href='/Browse/Species?sort=MaxCrownSpread&amp;sortAsc=False'><span>Max crown spread</span></a></th></tr><tr class='filters'><th class='field'><input type='text' name='BotanicalNameFilter' value='' title='Search botanical names' placeholder='Search botanical names'/></th><th class='field'><input type='text' name='CommonNameFilter' value='' title='Search common names' placeholder='Search common names'/></th><th class='field'></th><th class='field'></th><th class='field'></th></tr></thead><tbody><tr class='odd'><td><a href="/Browse/Species/Sequoia%20sempervirens%20(Redwood)/Details">Sequoia sempervirens</a></td><td><a href="/Browse/Species/Sequoia%20sempervirens%20(Redwood)/Details">Redwood</a></td><td><a href="/Browse/Trees/269322/Details">354.4&#39;</a></td><td><a href="/Browse/Trees/268683/Details">1101&#39;&#39;</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details">Pseudotsuga menziesii var. menziesii</a></td><td><a href="/Browse/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details">Douglas-Fir</a></td><td><a href="/Browse/Trees/269534/Details">322.8&#39;</a></td><td><a href="/Browse/Trees/297896/Details">516&#39;&#39;</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details">Sequoiadendron giganteum</a></td><td><a href="/Browse/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details">Giant Sequoia</a></td><td><a href="/Browse/Trees/318133/Details">284.8&#39;</a></td><td><a href="/Browse/Trees/268678/Details">999&#39;&#39;</a></td><td><a href="/Browse/Trees/255969/Details">33.0&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details">Picea sitchensis</a></td><td><a href="/Browse/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details">Sitka Spruce</a></td><td><a href="/Browse/Trees/239641/Details">277.0&#39;</a></td><td><a href="/Browse/Trees/269584/Details">504&#39;&#39;</a></td><td><a href="/Browse/Trees/269584/Details">88.0&#39;</a></td></tr><tr class='odd'><td><a href="/Browse/Species/Abies%20procera%20(Noble%20Fir)/Details">Abies procera</a></td><td><a href="/Browse/Species/Abies%20procera%20(Noble%20Fir)/Details">Noble Fir</a></td><td><a href="/Browse/Trees/296619/Details">274.3&#39;</a></td><td><a href="/Browse/Trees/296624/Details">314&#39;&#39;</a></td><td><a href="/Browse/Trees/313205/Details">30.0&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details">Tsuga heterophylla</a></td><td><a href="/Browse/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details">Western Hemlock</a></td><td><a href="/Browse/Trees/269319/Details">272.0&#39;</a></td><td><a href="/Browse/Trees/296611/Details">196&#39;&#39;</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details">Pinus ponderosa var. benthamiana</a></td><td><a href="/Browse/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details">Ponderosa Pine</a></td><td><a href="/Browse/Trees/269562/Details">268.7&#39;</a></td><td><a href="/Browse/Trees/268390/Details">328&#39;&#39;</a></td><td><a href="/Browse/Trees/268762/Details">70.0&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details">Pinus lambertiana</a></td><td><a href="/Browse/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details">Sugar Pine</a></td><td><a href="/Browse/Trees/268995/Details">266.0&#39;</a></td><td><a href="/Browse/Trees/268816/Details">435&#39;&#39;</a></td><td><a href="/Browse/Trees/134986/Details">77.0&#39;</a></td></tr><tr class='odd'><td><a href="/Browse/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details">Abies concolor var. lowiana</a></td><td><a href="/Browse/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details">White Fir</a></td><td><a href="/Browse/Trees/274335/Details">242.1&#39;</a></td><td><a href="/Browse/Trees/320699/Details">219&#39;&#39;</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Species/Thuja%20plicata%20(Western%20Redcedar)/Details">Thuja plicata</a></td><td><a href="/Browse/Species/Thuja%20plicata%20(Western%20Redcedar)/Details">Western Redcedar</a></td><td><a href="/Browse/Trees/274361/Details">232.2&#39;</a></td><td><a href="/Browse/Trees/239723/Details">490&#39;&#39;</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details">Pinus ponderosa var. ponderosa</a></td><td><a href="/Browse/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details">Ponderosa Pine</a></td><td><a href="/Browse/Trees/296896/Details">229.0&#39;</a></td><td><a href="/Browse/Trees/239640/Details">347&#39;&#39;</a></td><td><a href="/Browse/Trees/78329/Details">48.0&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details">Pinus monticola</a></td><td><a href="/Browse/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details">Western White Pine</a></td><td><a href="/Browse/Trees/318047/Details">225.3&#39;</a></td><td><a href="/Browse/Trees/268757/Details">311&#39;&#39;</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details">Pinus ponderosa</a></td><td><a href="/Browse/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details">Ponderosa Pine</a></td><td><a href="/Browse/Trees/318121/Details">224.0&#39;</a></td><td><a href="/Browse/Trees/318115/Details">199&#39;&#39;</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Species/Abies%20grandis%20var.%20grandis%20(Grand%20Fir)/Details">Abies grandis var. grandis</a></td><td><a href="/Browse/Species/Abies%20grandis%20var.%20grandis%20(Grand%20Fir)/Details">Grand Fir</a></td><td><a href="/Browse/Trees/296866/Details">223.4&#39;</a></td><td><a href="/Browse/Trees/296866/Details">269&#39;&#39;</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details">Picea engelmannii var. engelmannii</a></td><td><a href="/Browse/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details">Engelmann Spruce</a></td><td><a href="/Browse/Trees/274363/Details">223.0&#39;</a></td><td><a href="/Browse/Trees/274363/Details">202&#39;&#39;</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details">Abies magnifica</a></td><td><a href="/Browse/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details">California Red Fir</a></td><td><a href="/Browse/Trees/318128/Details">220.2&#39;</a></td><td><a href="/Browse/Trees/268388/Details">304&#39;&#39;</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details">Abies grandis var. idahoensis</a></td><td><a href="/Browse/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details">Grand Fir</a></td><td><a href="/Browse/Trees/296898/Details">215.6&#39;</a></td><td><a href="/Browse/Trees/296946/Details">159&#39;&#39;</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Species/Larix%20occidentalis%20(Western%20Larch)/Details">Larix occidentalis</a></td><td><a href="/Browse/Species/Larix%20occidentalis%20(Western%20Larch)/Details">Western Larch</a></td><td><a href="/Browse/Trees/296925/Details">213.0&#39;</a></td><td><a href="/Browse/Trees/164460/Details">280&#39;&#39;</a></td><td><a href="/Browse/Trees/164460/Details">38.0&#39;</a></td></tr><tr class='odd'><td><a href="/Browse/Species/Abies%20concolor%20var.%20lowiana%20x%20abies%20grandis%20(Hybrid%20Fir)/Details">Abies concolor var. lowiana x abies grandis</a></td><td><a href="/Browse/Species/Abies%20concolor%20var.%20lowiana%20x%20abies%20grandis%20(Hybrid%20Fir)/Details">Hybrid Fir</a></td><td><a href="/Browse/Trees/297902/Details">206.9&#39;</a></td><td><a href="/Browse/Trees/297899/Details">129&#39;&#39;</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details">Abies amabilis</a></td><td><a href="/Browse/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details">Pacific Silver Fir</a></td><td><a href="/Browse/Trees/296630/Details">199.0&#39;</a></td><td><a href="/Browse/Trees/296617/Details">160&#39;&#39;</a></td><td><a href="/Browse/Trees/96892/Details">27.0&#39;</a></td></tr><tr class='odd'><td><a href="/Browse/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details">Pseudotsuga menziesii var. glauca</a></td><td><a href="/Browse/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details">Rocky Mountain Douglas-Fir</a></td><td><a href="/Browse/Trees/318065/Details">192.6&#39;</a></td><td><a href="/Browse/Trees/242476/Details">204&#39;&#39;</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Species/Ulmus%20mexicana%20(Mexican%20Elm)/Details">Ulmus mexicana</a></td><td><a href="/Browse/Species/Ulmus%20mexicana%20(Mexican%20Elm)/Details">Mexican Elm</a></td><td><a href="/Browse/Trees/253281/Details">191.9&#39;</a></td><td><a href="/Browse/Trees/253281/Details">202&#39;&#39;</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details">Liriodendron tulipifera</a></td><td><a href="/Browse/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details">Tuliptree</a></td><td><a href="/Browse/Trees/252473/Details">191.2&#39;</a></td><td><a href="/Browse/Trees/252309/Details">324&#39;&#39;</a></td><td><a href="/Browse/Trees/252353/Details">143.5&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Pinus%20canariensis%20(Canary%20Island%20Pine)/Details">Pinus canariensis</a></td><td><a href="/Browse/Species/Pinus%20canariensis%20(Canary%20Island%20Pine)/Details">Canary Island Pine</a></td><td><a href="/Browse/Trees/283178/Details">187.0&#39;</a></td><td>-</td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Chamaecyparis%20lawsoniana%20(Port%20Orford%20Cedar)/Details">Chamaecyparis lawsoniana</a></td><td><a href="/Browse/Species/Chamaecyparis%20lawsoniana%20(Port%20Orford%20Cedar)/Details">Port Orford Cedar</a></td><td><a href="/Browse/Trees/297898/Details">186.1&#39;</a></td><td><a href="/Browse/Trees/297897/Details">252&#39;&#39;</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details">Pinus strobus</a></td><td><a href="/Browse/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details">Eastern White Pine</a></td><td><a href="/Browse/Trees/235208/Details">185.8&#39;</a></td><td><a href="/Browse/Trees/263778/Details">193&#39;&#39;</a></td><td><a href="/Browse/Trees/163347/Details">77.0&#39;</a></td></tr><tr class='odd'><td><a href="/Browse/Species/Picea%20pungens%20(Blue%20Spruce)/Details">Picea pungens</a></td><td><a href="/Browse/Species/Picea%20pungens%20(Blue%20Spruce)/Details">Blue Spruce</a></td><td><a href="/Browse/Trees/242247/Details">180.6&#39;</a></td><td><a href="/Browse/Trees/242478/Details">158&#39;&#39;</a></td><td><a href="/Browse/Trees/242479/Details">33.5&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details">Populus balsamifera ssp. trichocarpa</a></td><td><a href="/Browse/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details">Black Cottonwood</a></td><td><a href="/Browse/Trees/269597/Details">180.3&#39;</a></td><td><a href="/Browse/Trees/216297/Details">189&#39;&#39;</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details">Aesculus flava</a></td><td><a href="/Browse/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details">Yellow Buckeye</a></td><td><a href="/Browse/Trees/312032/Details">177.7&#39;</a></td><td><a href="/Browse/Trees/229963/Details">217&#39;&#39;</a></td><td><a href="/Browse/Trees/313247/Details">74.0&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Abies%20lowiana%20(Sierra%20White%20Fir)/Details">Abies lowiana</a></td><td><a href="/Browse/Species/Abies%20lowiana%20(Sierra%20White%20Fir)/Details">Sierra White Fir</a></td><td><a href="/Browse/Trees/241858/Details">173.6&#39;</a></td><td><a href="/Browse/Trees/241858/Details">211&#39;&#39;</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details">Tsuga canadensis</a></td><td><a href="/Browse/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details">Eastern Hemlock</a></td><td><a href="/Browse/Trees/230379/Details">173.1&#39;</a></td><td><a href="/Browse/Trees/229933/Details">209&#39;&#39;</a></td><td><a href="/Browse/Trees/274322/Details">80.0&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details">Robinia pseudoacacia</a></td><td><a href="/Browse/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details">Black Locust</a></td><td><a href="/Browse/Trees/229092/Details">171.8&#39;</a></td><td><a href="/Browse/Trees/312145/Details">173&#39;&#39;</a></td><td><a href="/Browse/Trees/313119/Details">91.5&#39;</a></td></tr><tr class='odd'><td><a href="/Browse/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details">Carya ovata</a></td><td><a href="/Browse/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details">Shagbark Hickory</a></td><td><a href="/Browse/Trees/323638/Details">170.3&#39;</a></td><td><a href="/Browse/Trees/257950/Details">163&#39;&#39;</a></td><td><a href="/Browse/Trees/243222/Details">101.0&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Abies%20grandis%20(Grand%20Fir)/Details">Abies grandis</a></td><td><a href="/Browse/Species/Abies%20grandis%20(Grand%20Fir)/Details">Grand Fir</a></td><td><a href="/Browse/Trees/164257/Details">170.1&#39;</a></td><td><a href="/Browse/Trees/164257/Details">132&#39;&#39;</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Species/Eucalyptus%20globulus%20(Tasmanian%20Bluegum)/Details">Eucalyptus globulus</a></td><td><a href="/Browse/Species/Eucalyptus%20globulus%20(Tasmanian%20Bluegum)/Details">Tasmanian Bluegum</a></td><td><a href="/Browse/Trees/234072/Details">169.0&#39;</a></td><td>-</td><td>-</td></tr><tr class='even'><td><a href="/Browse/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details">Pinus taeda</a></td><td><a href="/Browse/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details">Loblolly Pine</a></td><td><a href="/Browse/Trees/242678/Details">168.7&#39;</a></td><td><a href="/Browse/Trees/173485/Details">189&#39;&#39;</a></td><td><a href="/Browse/Trees/242678/Details">93.0&#39;</a></td></tr><tr class='odd'><td><a href="/Browse/Species/Carya%20glabra%20(Pignut%20Hickory)/Details">Carya glabra</a></td><td><a href="/Browse/Species/Carya%20glabra%20(Pignut%20Hickory)/Details">Pignut Hickory</a></td><td><a href="/Browse/Trees/252341/Details">167.0&#39;</a></td><td><a href="/Browse/Trees/251166/Details">199&#39;&#39;</a></td><td><a href="/Browse/Trees/166955/Details">90.0&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details">Quercus rubra var. rubra</a></td><td><a href="/Browse/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details">Northern Red Oak</a></td><td><a href="/Browse/Trees/323704/Details">167.0&#39;</a></td><td><a href="/Browse/Trees/312035/Details">287&#39;&#39;</a></td><td><a href="/Browse/Trees/312062/Details">106.8&#39;</a></td></tr><tr class='odd'><td><a href="/Browse/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details">Carya cordiformis</a></td><td><a href="/Browse/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details">Bitternut Hickory</a></td><td><a href="/Browse/Trees/322129/Details">166.6&#39;</a></td><td><a href="/Browse/Trees/313209/Details">208&#39;&#39;</a></td><td><a href="/Browse/Trees/313209/Details">98.3&#39;</a></td></tr><tr class='even'><td><a href="/Browse/Species/Picea%20abies%20(Norway%20Spruce)/Details">Picea abies</a></td><td><a href="/Browse/Species/Picea%20abies%20(Norway%20Spruce)/Details">Norway Spruce</a></td><td><a href="/Browse/Trees/283478/Details">164.7&#39;</a></td><td><a href="/Browse/Trees/283479/Details">174&#39;&#39;</a></td><td><a href="/Browse/Trees/313138/Details">67.5&#39;</a></td></tr></tbody></table><input type='submit' style='position: absolute; left: -9999px;' /></form><div class='dataTables_info'>Showing 1 to 40 of 764 entries</div><div class='dataTables_paginate paging_two_button'><div class='paginate_disabled_previous' title='Previous'></div><a href='/Browse/Species?sort=MaxHeight&amp;sortAsc=false&amp;Page=1' class='paginate_enabled_next' title='Next'></a></div></div>
+  </div>
+</div>
+
+        </div>
+        <!-- #content -->
+            <div id="footer">
+                <p style="float: left; width: 200px;">
+                    <a href="/Main">
+                        <img id="footer-logo" src="/images/theme/icon.png?v=20171205155525" alt="Trees Database"/>
+                    </a>
+                    <a href="http://ents-bbs.org/viewforum.php?f=15" target="nts-forum">Community Forum</a>
+                    <br />
+                    <a href="/cdn-cgi/l/email-protection#95e1e7f0f0e6f1f7bbfae7f2d5f2f8f4fcf9bbf6faf8" target="email">Website Technical Help</a>
+                    <br />
+                    &copy;2026 Trees Database
+                </p>
+<form action="/Main/SetUnits" method="post" style="float: right;">                    <span>Units:</span>
+<input id="returnUrl" name="returnUrl" type="hidden" value="https://www.treesdb.org/Browse/Species?sort=MaxHeight&amp;sortAsc=false" /><button class="btn btn-small" name="units" type="submit" value="Feet">ft</button><button class="btn btn-small btn-orange" name="units" type="submit" value="Meters">m</button><button class="btn btn-small btn-orange" name="units" type="submit" value="Yards">yd</button></form>            </div>
+            <!-- #footer -->
+    </div>
+    <!-- #wrapper -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery/jquery-1.4.4.min.js?v=20171205155525" type="text/javascript"></script>
+    <script src="/js/jquery/jquery-ui-1.8.7.custom.min.js?v=20171205155525" type="text/javascript"></script>
+    <script type="text/javascript">
+      var applicationRootUrl = '';
+    </script>
+    <script src="/js/Plugins.js?v=kyjB9GguvFZZCqb7IJbphBfiiLwq9eE1bmd-hxUcq0I1"></script>
+
+    <script src="/js/Shared.js?v=tGEPhu9JLOnTY3_EN8GPp06bJHnm5mSXgdmPtGv4sIw1"></script>
+
+    <script type="text/javascript">
+      $(function () { $('body').InitializeUi(); });
+    </script>
+    
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28174143-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    $(document).ajaxComplete(function (event, xhr, options) {
+        _gaq.push(['_trackPageview', options.url]);
+    });
+</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1cc41a4285f34d9',t:'MTc4NDMyMjg2Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

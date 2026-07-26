@@ -1,0 +1,317 @@
+{
+  "columns": [
+    {
+      "header": "Botanical name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Common name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max height",
+      "sortable": true,
+      "sortState": "desc"
+    },
+    {
+      "header": "Max girth",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max crown spread",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Liriodendron tulipifera",
+        "Tuliptree",
+        "143.0'",
+        "113''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Liriodendron tulipifera",
+          "href": "/Browse/States/1/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+        },
+        {
+          "text": "Tuliptree",
+          "href": "/Browse/States/1/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+        },
+        {
+          "text": "143.0'",
+          "href": "/Browse/Trees/315738/Details"
+        },
+        {
+          "text": "113''",
+          "href": "/Browse/Trees/233691/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pinus taeda",
+        "Loblolly Pine",
+        "142.8'",
+        "98''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Pinus taeda",
+          "href": "/Browse/States/1/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+        },
+        {
+          "text": "Loblolly Pine",
+          "href": "/Browse/States/1/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+        },
+        {
+          "text": "142.8'",
+          "href": "/Browse/Trees/233878/Details"
+        },
+        {
+          "text": "98''",
+          "href": "/Browse/Trees/233878/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus montana",
+        "Chestnut Oak",
+        "141.8'",
+        "95''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus montana",
+          "href": "/Browse/States/1/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+        },
+        {
+          "text": "Chestnut Oak",
+          "href": "/Browse/States/1/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+        },
+        {
+          "text": "141.8'",
+          "href": "/Browse/Trees/233719/Details"
+        },
+        {
+          "text": "95''",
+          "href": "/Browse/Trees/233718/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Carya ovata",
+        "Shagbark Hickory",
+        "139.9'",
+        "82''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Carya ovata",
+          "href": "/Browse/States/1/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+        },
+        {
+          "text": "Shagbark Hickory",
+          "href": "/Browse/States/1/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+        },
+        {
+          "text": "139.9'",
+          "href": "/Browse/Trees/233857/Details"
+        },
+        {
+          "text": "82''",
+          "href": "/Browse/Trees/233857/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus rubra",
+        "Northern Red Oak",
+        "137.6'",
+        "124''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus rubra",
+          "href": "/Browse/States/1/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+        },
+        {
+          "text": "Northern Red Oak",
+          "href": "/Browse/States/1/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+        },
+        {
+          "text": "137.6'",
+          "href": "/Browse/Trees/233869/Details"
+        },
+        {
+          "text": "124''",
+          "href": "/Browse/Trees/233869/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus shumardii",
+        "Shumard's Oak",
+        "137.3'",
+        "119''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus shumardii",
+          "href": "/Browse/States/1/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+        },
+        {
+          "text": "Shumard's Oak",
+          "href": "/Browse/States/1/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+        },
+        {
+          "text": "137.3'",
+          "href": "/Browse/Trees/233873/Details"
+        },
+        {
+          "text": "119''",
+          "href": "/Browse/Trees/233870/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Populus deltoides",
+        "Eastern Cottonwood",
+        "136.7'",
+        "170''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Populus deltoides",
+          "href": "/Browse/States/1/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+        },
+        {
+          "text": "Eastern Cottonwood",
+          "href": "/Browse/States/1/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+        },
+        {
+          "text": "136.7'",
+          "href": "/Browse/Trees/233848/Details"
+        },
+        {
+          "text": "170''",
+          "href": "/Browse/Trees/233845/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Liquidambar styraciflua",
+        "Sweetgum",
+        "136.7'",
+        "122''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Liquidambar styraciflua",
+          "href": "/Browse/States/1/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+        },
+        {
+          "text": "Sweetgum",
+          "href": "/Browse/States/1/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+        },
+        {
+          "text": "136.7'",
+          "href": "/Browse/Trees/233883/Details"
+        },
+        {
+          "text": "122''",
+          "href": "/Browse/Trees/252492/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Platanus occidentalis",
+        "American Sycamore",
+        "136.3'",
+        "193''",
+        "88.0'"
+      ],
+      "links": [
+        {
+          "text": "Platanus occidentalis",
+          "href": "/Browse/States/1/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+        },
+        {
+          "text": "American Sycamore",
+          "href": "/Browse/States/1/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+        },
+        {
+          "text": "136.3'",
+          "href": "/Browse/Trees/315711/Details"
+        },
+        {
+          "text": "193''",
+          "href": "/Browse/Trees/253882/Details"
+        },
+        {
+          "text": "88.0'",
+          "href": "/Browse/Trees/253882/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Carya ovalis",
+        "Red Hickory",
+        "135.6'",
+        "87''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Carya ovalis",
+          "href": "/Browse/States/1/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+        },
+        {
+          "text": "Red Hickory",
+          "href": "/Browse/States/1/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+        },
+        {
+          "text": "135.6'",
+          "href": "/Browse/Trees/315732/Details"
+        },
+        {
+          "text": "87''",
+          "href": "/Browse/Trees/315731/Details"
+        },
+        null
+      ]
+    }
+  ],
+  "pageInfo": "Showing 1 to 10 of 58 entries",
+  "hasPreviousPage": false,
+  "hasNextPage": true
+}

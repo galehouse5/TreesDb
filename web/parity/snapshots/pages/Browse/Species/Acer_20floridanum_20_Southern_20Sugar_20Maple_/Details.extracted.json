@@ -1,0 +1,162 @@
+{
+  "botanicalName": "Acer floridanum",
+  "commonName": "Southern Sugar Maple",
+  "global": {
+    "maxHeight": {
+      "text": "114.8'",
+      "href": "/Browse/Trees/233864/Details"
+    },
+    "maxGirth": {
+      "text": "144''",
+      "href": "/Browse/Trees/243215/Details"
+    },
+    "maxCrownSpread": {
+      "text": "42.0'",
+      "href": "/Browse/Trees/315037/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "114.8'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "114.8'",
+            "href": "/Browse/Trees/233864/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/233717/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "91.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "91.5'",
+            "href": "/Browse/Trees/243097/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "94.4'",
+          "144''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "94.4'",
+            "href": "/Browse/Trees/243322/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/243215/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "84.9'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "84.9'",
+            "href": "/Browse/Trees/237851/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/237903/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "58.2'",
+          "102''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "58.2'",
+            "href": "/Browse/Trees/315037/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/315037/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/315037/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

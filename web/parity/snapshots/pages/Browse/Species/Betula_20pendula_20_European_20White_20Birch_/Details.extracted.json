@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Betula pendula",
+  "commonName": "European White Birch",
+  "global": {
+    "maxHeight": {
+      "text": "115.5'",
+      "href": "/Browse/Trees/283488/Details"
+    },
+    "maxGirth": {
+      "text": "118''",
+      "href": "/Browse/Trees/283490/Details"
+    },
+    "maxCrownSpread": {
+      "text": "44.5'",
+      "href": "/Browse/Trees/315013/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Lesser Poland Voivodeship",
+          "65.7'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lesser Poland Voivodeship",
+            "href": "/Browse/States/225/Details"
+          },
+          {
+            "text": "65.7'",
+            "href": "/Browse/Trees/283511/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/283511/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "51.0'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "51.0'",
+            "href": "/Browse/Trees/139456/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/139456/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Podlaskie Voivodeship",
+          "115.5'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Podlaskie Voivodeship",
+            "href": "/Browse/States/232/Details"
+          },
+          {
+            "text": "115.5'",
+            "href": "/Browse/Trees/283488/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/283490/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "39.6'",
+          "40''",
+          "44.5'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "39.6'",
+            "href": "/Browse/Trees/315013/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/315013/Details"
+          },
+          {
+            "text": "44.5'",
+            "href": "/Browse/Trees/315013/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

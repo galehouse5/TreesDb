@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Browse - Locations</title>
+    <style type="text/css">.ShowIfJavascriptEnabled { display: block; } .ShowIfJavascriptDisabled { display: none; }</style>
+    <noscript><style type="text/css">.ShowIfJavascriptEnabled { display: none; } .ShowIfJavascriptDisabled { display: block; }</style></noscript>
+    <link href="/images/icon.ico?v=20171205155525" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="/css/jquery/jquery-ui-1.8.7.custom.css?v=20171205155525" rel="Stylesheet" type="text/css" />
+    <link href="/css/Shared.css?v=DXLFO8k7beDFNgs6xCunY3nTuR1AWd7usZmysfNXy1g1" rel="stylesheet"/>
+
+    
+</head>
+<body>
+    <div id="wrapper" class="clearfix">
+        <div id="top">
+            <div id="header">
+                <h1><a href="/Main">Trees Database</a></h1>
+<div id="info">
+    <p>
+                You are not logged on
+            <br />
+            <a href="/Account/Logon">Logon</a> or <a href="/Account/Register">Register</a>
+    </p>
+</div> <!-- #info -->
+            </div>
+            <!-- #header -->
+            <div id="nav">
+                <ul class="mega-container mega-grey">
+<li class="mega">
+    <a class="mega-link" href="/Map">Map</a>
+</li>
+<li class="mega mega-current">
+  <span class="mega-tab">Browse</span>
+  <div class="mega-content mega-menu ">
+    <ul>
+      <li><a href="/Browse/Activity">Activity</a></li>
+      <li><a href="/Browse/Locations">Locations</a></li>
+      <li><a href="/Browse/Species">Species</a></li>
+    </ul>
+  </div> 
+</li><li class="mega">
+  <span class="mega-tab">Import</span>
+  <div class="mega-content mega-menu">
+    <ul>
+      <li>
+        
+        <a href="/Import/Trip">New</a>
+      </li>
+          </ul>
+  </div>
+</li>
+<li id="search" class="mega">
+<form action="/Search" class="form" method="get">        <div class="field">
+            <input type="text" name="term" placeholder="Search species and locations" size="50" />
+        </div>
+</form></li>
+                </ul>
+            </div>
+            <!-- #nav -->
+        </div>
+        <!-- #top -->
+        <div id="content" class="content xfluid">
+            
+
+<div class="portlet x12">
+  <div class="portlet-header">
+    <h4>Locations</h4>
+    <ul class="portlet-tab-nav">
+      <li class="portlet-tab-nav-ignore">
+        <a href="/Export/LocationsByFilters">Export tree data</a>
+      </li>
+    </ul>
+  </div>
+  <div class="portlet-content">
+    <div class='dataTablesGrid'><form method='get' action='/Browse/Locations' class='form'><input type='hidden' name='Sort' value='State'/><input type='hidden' name='SortAsc' value='True'/><table cellspacing='0' cellpadding='0' border='0' class='display'><thead><tr><th class='sortable '><a href='/Browse/Locations?sort=Site&amp;sortAsc=True'><span>Site</span></a></th><th class='sortable '><a href='/Browse/Locations?sort=County&amp;sortAsc=True'><span>County</span></a></th><th class='sortable sorting_asc'><a href='/Browse/Locations?sort=State&amp;sortAsc=False'><span>State</span></a></th><th class='sortable '><a href='/Browse/Locations?sort=RHI5&amp;sortAsc=False'><span>RHI5</span></a></th><th class='sortable '><a href='/Browse/Locations?sort=RHI10&amp;sortAsc=False'><span>RHI10</span></a></th><th class='sortable '><a href='/Browse/Locations?sort=RGI5&amp;sortAsc=False'><span>RGI5</span></a></th><th class='sortable '><a href='/Browse/Locations?sort=RGI10&amp;sortAsc=False'><span>RGI10</span></a></th><th class='sortable '><a href='/Browse/Locations?sort=LastMeasurement&amp;sortAsc=True'><span>Last measurement</span></a></th></tr><tr class='filters'><th class='field'><input type='text' name='SiteFilter' value='' title='Search sites' placeholder='Search sites'/></th><th class='field'><input type='text' name='CountyFilter' value='' title='Search county' placeholder='Search county'/></th><th class='field'><input type='text' name='StateFilter' value='' title='Search states' placeholder='Search states'/></th><th class='field'></th><th class='field'></th><th class='field'></th><th class='field'></th><th class='field'></th></tr></thead><tbody><tr class='odd'><td><a href="/Browse/Sites/40597/Details">Sispey River Picnic Area</a></td><td>Lawrence</td><td><a href="/Browse/States/1/Details">Alabama</a></td><td>0.00</td><td>-</td><td>7.17</td><td>-</td><td>06/06/2007</td></tr><tr class='even'><td><a href="/Browse/Sites/40598/Details">Mountain Longleaf Pine National Wildlife Refuge</a></td><td>Calhoun</td><td><a href="/Browse/States/1/Details">Alabama</a></td><td>62.00</td><td>-</td><td>8.02</td><td>-</td><td>08/10/2005</td></tr><tr class='odd'><td><a href="/Browse/Sites/40600/Details">Indian Tomb Hollow</a></td><td>Lawrence</td><td><a href="/Browse/States/1/Details">Alabama</a></td><td>120.56</td><td>-</td><td>7.60</td><td>-</td><td>01/06/2006</td></tr><tr class='even'><td><a href="/Browse/Sites/40605/Details">West Flint Creek</a></td><td>Lawrence</td><td><a href="/Browse/States/1/Details">Alabama</a></td><td>139.50</td><td>136.60</td><td>11.87</td><td>10.17</td><td>01/06/2006</td></tr><tr class='odd'><td><a href="/Browse/Sites/41220/Details">Dismals Canyon</a></td><td>Franklin</td><td><a href="/Browse/States/1/Details">Alabama</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>04/25/2010</td></tr><tr class='even'><td><a href="/Browse/Sites/41265/Details">Alabama Single Tree Sites</a></td><td>Montgomery</td><td><a href="/Browse/States/1/Details">Alabama</a></td><td>91.26</td><td>-</td><td>15.03</td><td>-</td><td>01/01/2001</td></tr><tr class='odd'><td><a href="/Browse/Sites/42286/Details">Walls Of Jericho</a></td><td>Jackson</td><td><a href="/Browse/States/1/Details">Alabama</a></td><td>134.92</td><td>129.57</td><td>8.28</td><td>7.57</td><td>04/20/2024</td></tr><tr class='even'><td><a href="/Browse/Sites/40015/Details">Arenal Volcano National Park</a></td><td>San Carlos</td><td><a href="/Browse/States/117/Details">Alajuela</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>02/14/2014</td></tr><tr class='odd'><td><a href="/Browse/Sites/40016/Details">Poas Volcano National Park</a></td><td>Poás</td><td><a href="/Browse/States/117/Details">Alajuela</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>02/11/2014</td></tr><tr class='even'><td><a href="/Browse/Sites/41255/Details">Juan Castro Blanco Water Park</a></td><td>San Carlos</td><td><a href="/Browse/States/117/Details">Alajuela</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>04/27/2017</td></tr><tr class='odd'><td><a href="/Browse/Sites/41256/Details">Alajuela Single Tree Sites</a></td><td>Alajuela</td><td><a href="/Browse/States/117/Details">Alajuela</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>01/01/2010</td></tr><tr class='even'><td><a href="/Browse/Sites/22040/Details">Tongass National Forest-Douglas Island-Rain Forest Trail</a></td><td>Juneau</td><td><a href="/Browse/States/62/Details">Alaska</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>08/05/2012</td></tr><tr class='odd'><td><a href="/Browse/Sites/22041/Details">Portage Cove State Recreational Site</a></td><td>Haines</td><td><a href="/Browse/States/62/Details">Alaska</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>08/05/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/38397/Details">Alaska Single Tree Sites</a></td><td>Juneau</td><td><a href="/Browse/States/62/Details">Alaska</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>08/05/2012</td></tr><tr class='odd'><td><a href="/Browse/Sites/42180/Details">Gateway Knob At  Alsek Lake - Camp</a></td><td>Yakutat</td><td><a href="/Browse/States/62/Details">Alaska</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>08/05/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/22032/Details">Banff National Park - Two Jack</a></td><td>Division No. 15</td><td><a href="/Browse/States/49/Details">Alberta</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>07/30/2012</td></tr><tr class='odd'><td><a href="/Browse/Sites/22033/Details">Demmitt Roadside Park</a></td><td>Division No. 19</td><td><a href="/Browse/States/49/Details">Alberta</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>07/30/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/41833/Details">Royal Alcszar O Selille</a></td><td>Sevilla</td><td><a href="/Browse/States/124/Details">Andalusia</a></td><td>78.30</td><td>-</td><td>8.81</td><td>-</td><td>10/31/2014</td></tr><tr class='odd'><td><a href="/Browse/Sites/41834/Details">Andalusia Single Tree Sites</a></td><td>Sevilla</td><td><a href="/Browse/States/124/Details">Andalusia</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>01/01/2010</td></tr><tr class='even'><td><a href="/Browse/Sites/41934/Details">Ronda</a></td><td>Málaga</td><td><a href="/Browse/States/124/Details">Andalusia</a></td><td>56.00</td><td>-</td><td>8.39</td><td>-</td><td>11/03/2014</td></tr><tr class='odd'><td><a href="/Browse/Sites/1286/Details">Woody Mountain Road</a></td><td>Coconino</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>02/17/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/1305/Details">Mingus Mountain</a></td><td>Yavapai</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>43.08</td><td>-</td><td>5.41</td><td>-</td><td>03/08/2012</td></tr><tr class='odd'><td><a href="/Browse/Sites/1309/Details">Montezuma&#39;s Well</a></td><td>Yavapai</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>59.54</td><td>-</td><td>8.15</td><td>-</td><td>02/28/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/1316/Details">Dragoon Mountains</a></td><td>Cochise</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>02/23/2012</td></tr><tr class='odd'><td><a href="/Browse/Sites/1332/Details">Saguaro NP - West</a></td><td>Pima</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>02/20/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/1440/Details">Red Rock State Park</a></td><td>Yavapai</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>03/06/2012</td></tr><tr class='odd'><td><a href="/Browse/Sites/1461/Details">Campbell Mesa</a></td><td>Coconino</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>03/05/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/1670/Details">Grand Canyon - Colorado River Corridor</a></td><td>Coconino, Mohave</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>03/01/2013</td></tr><tr class='odd'><td><a href="/Browse/Sites/3729/Details">Grand Canyon - South Rim</a></td><td>Coconino</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>02/15/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/3730/Details">Walnut Canyon National Monument</a></td><td>Coconino</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>44.42</td><td>-</td><td>5.82</td><td>-</td><td>02/16/2012</td></tr><tr class='odd'><td><a href="/Browse/Sites/22051/Details">Anita Road</a></td><td>Coconino</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>02/15/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/22052/Details">Oak Creek Canyon</a></td><td>Coconino</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>125.28</td><td>103.17</td><td>11.06</td><td>9.20</td><td>06/02/2015</td></tr><tr class='odd'><td><a href="/Browse/Sites/25430/Details">Pinaleno Mountains</a></td><td>Graham</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>88.18</td><td>-</td><td>8.21</td><td>-</td><td>02/24/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/27483/Details">Aspen Corner Trails</a></td><td>Coconino</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>99.64</td><td>-</td><td>9.38</td><td>-</td><td>06/08/2015</td></tr><tr class='odd'><td><a href="/Browse/Sites/27485/Details">Dead Horse Ranch State Park</a></td><td>Yavapai</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>03/07/2012</td></tr><tr class='even'><td><a href="/Browse/Sites/27486/Details">Grand Canyon -  North Rim</a></td><td>Coconino</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>06/02/2015</td></tr><tr class='odd'><td><a href="/Browse/Sites/28495/Details">Page Springs Fish Hatchery</a></td><td>Yavapai</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>06/10/2015</td></tr><tr class='even'><td><a href="/Browse/Sites/38142/Details">Bonito Park Area</a></td><td>Coconino</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>09/10/2016</td></tr><tr class='odd'><td><a href="/Browse/Sites/38143/Details">Crescent Moon Picnic Area</a></td><td>Yavapai</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>62.18</td><td>-</td><td>10.19</td><td>-</td><td>06/26/2014</td></tr><tr class='even'><td><a href="/Browse/Sites/38144/Details">Lawrence Crossing</a></td><td>Yavapai</td><td><a href="/Browse/States/3/Details">Arizona</a></td><td>60.64</td><td>-</td><td>6.54</td><td>-</td><td>06/21/2014</td></tr></tbody></table><input type='submit' style='position: absolute; left: -9999px;' /></form><div class='dataTables_info'>Showing 1 to 40 of 1370 entries</div><div class='dataTables_paginate paging_two_button'><div class='paginate_disabled_previous' title='Previous'></div><a href='/Browse/Locations?sort=State&amp;sortAsc=true&amp;Page=1' class='paginate_enabled_next' title='Next'></a></div></div>
+  </div>
+</div>
+
+        </div>
+        <!-- #content -->
+            <div id="footer">
+                <p style="float: left; width: 200px;">
+                    <a href="/Main">
+                        <img id="footer-logo" src="/images/theme/icon.png?v=20171205155525" alt="Trees Database"/>
+                    </a>
+                    <a href="http://ents-bbs.org/viewforum.php?f=15" target="nts-forum">Community Forum</a>
+                    <br />
+                    <a href="/cdn-cgi/l/email-protection#dbafa9bebea8bfb9f5b4a9bc9bbcb6bab2b7f5b8b4b6" target="email">Website Technical Help</a>
+                    <br />
+                    &copy;2026 Trees Database
+                </p>
+<form action="/Main/SetUnits" method="post" style="float: right;">                    <span>Units:</span>
+<input id="returnUrl" name="returnUrl" type="hidden" value="https://www.treesdb.org/Browse/Locations?sort=State&amp;sortAsc=true" /><button class="btn btn-small" name="units" type="submit" value="Feet">ft</button><button class="btn btn-small btn-orange" name="units" type="submit" value="Meters">m</button><button class="btn btn-small btn-orange" name="units" type="submit" value="Yards">yd</button></form>            </div>
+            <!-- #footer -->
+    </div>
+    <!-- #wrapper -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery/jquery-1.4.4.min.js?v=20171205155525" type="text/javascript"></script>
+    <script src="/js/jquery/jquery-ui-1.8.7.custom.min.js?v=20171205155525" type="text/javascript"></script>
+    <script type="text/javascript">
+      var applicationRootUrl = '';
+    </script>
+    <script src="/js/Plugins.js?v=kyjB9GguvFZZCqb7IJbphBfiiLwq9eE1bmd-hxUcq0I1"></script>
+
+    <script src="/js/Shared.js?v=tGEPhu9JLOnTY3_EN8GPp06bJHnm5mSXgdmPtGv4sIw1"></script>
+
+    <script type="text/javascript">
+      $(function () { $('body').InitializeUi(); });
+    </script>
+    
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28174143-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    $(document).ajaxComplete(function (event, xhr, options) {
+        _gaq.push(['_trackPageview', options.url]);
+    });
+</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1cc417af91134d9',t:'MTc4NDMyMjg2MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

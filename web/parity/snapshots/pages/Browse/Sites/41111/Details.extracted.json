@@ -1,0 +1,166 @@
+{
+  "siteId": 41111,
+  "summary": {
+    "Name": "Warwomen Road",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "01/07/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/07/2011",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/19/2005",
+      "visitors": "Will Blozan",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/georgia_peaches.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "138.7'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/41111/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/41111/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "138.7'",
+            "href": "/Browse/Trees/249644/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/249644/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "142.3'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/41111/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/41111/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "142.3'",
+            "href": "/Browse/Trees/249642/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/249642/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus virginiana",
+          "Virginia Pine",
+          "122.3'",
+          "61''",
+          "32.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus virginiana",
+            "href": "/Browse/Sites/41111/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "Virginia Pine",
+            "href": "/Browse/Sites/41111/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "122.3'",
+            "href": "/Browse/Trees/249643/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/249643/Details"
+          },
+          {
+            "text": "32.0'",
+            "href": "/Browse/Trees/249643/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 55.577, -083 13.094",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Rabun"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

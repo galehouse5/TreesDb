@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-hidden="true">
+  <!-- Dark keyline so the chip separates from any tile color (map UX audit:
+       the old white-chip-on-beige-OSM design measured 1.2-1.6:1). -->
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#0F172A" stroke-width="2" opacity="0.42" />
+  <!-- White casing ring. -->
+  <circle cx="32" cy="32" r="26" fill="#ffffff" />
+  <!-- Solid teal body (5.3:1 vs the white casing). -->
+  <circle cx="32" cy="32" r="22" fill="#327487" />
+  <!-- Map-pin glyph (lucide MapPin outline, FILLED white - see
+       tree-marker.svg's note). Inner dot re-filled with the body color to
+       keep the pin's "hole" reading. -->
+  <g transform="translate(18.5,18.5) scale(1.125)" stroke="none">
+    <path fill="#ffffff" d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+    <circle cx="12" cy="10" r="3" fill="#327487" />
+  </g>
+</svg>

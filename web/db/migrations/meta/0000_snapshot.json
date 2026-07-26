@@ -1,0 +1,3295 @@
+{
+  "id": "fcaea8a3-2670-4fd4-acec-2b2ea0a17ec2",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.countries": {
+      "name": "countries",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "countries_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "double_letter_code": {
+          "name": "double_letter_code",
+          "type": "char(2)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "triple_letter_code": {
+          "name": "triple_letter_code",
+          "type": "char(3)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ne_latitude": {
+          "name": "ne_latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ne_longitude": {
+          "name": "ne_longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sw_latitude": {
+          "name": "sw_latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sw_longitude": {
+          "name": "sw_longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.import_sites": {
+      "name": "import_sites",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "import_sites_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "created": {
+          "name": "created",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "creator_user_id": {
+          "name": "creator_user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "trip_id": {
+          "name": "trip_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "state_id": {
+          "name": "state_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "county": {
+          "name": "county",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ownership_type": {
+          "name": "ownership_type",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ownership_contact_info": {
+          "name": "ownership_contact_info",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "make_ownership_contact_info_public": {
+          "name": "make_ownership_contact_info_public",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude": {
+          "name": "latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude_input_format": {
+          "name": "latitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude": {
+          "name": "longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude_input_format": {
+          "name": "longitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "comments": {
+          "name": "comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "ix_import_sites_creator_user_id": {
+          "name": "ix_import_sites_creator_user_id",
+          "columns": [
+            {
+              "expression": "creator_user_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_import_sites_trip_id": {
+          "name": "ix_import_sites_trip_id",
+          "columns": [
+            {
+              "expression": "trip_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_import_sites_state_id": {
+          "name": "ix_import_sites_state_id",
+          "columns": [
+            {
+              "expression": "state_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "import_sites_creator_user_id_users_id_fk": {
+          "name": "import_sites_creator_user_id_users_id_fk",
+          "tableFrom": "import_sites",
+          "tableTo": "users",
+          "columnsFrom": [
+            "creator_user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "import_sites_trip_id_import_trips_id_fk": {
+          "name": "import_sites_trip_id_import_trips_id_fk",
+          "tableFrom": "import_sites",
+          "tableTo": "import_trips",
+          "columnsFrom": [
+            "trip_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "import_sites_state_id_states_id_fk": {
+          "name": "import_sites_state_id_states_id_fk",
+          "tableFrom": "import_sites",
+          "tableTo": "states",
+          "columnsFrom": [
+            "state_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.import_trees": {
+      "name": "import_trees",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "import_trees_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "created": {
+          "name": "created",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "creator_user_id": {
+          "name": "creator_user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "site_id": {
+          "name": "site_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "type": {
+          "name": "type",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 1
+        },
+        "tree_name": {
+          "name": "tree_name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tree_number": {
+          "name": "tree_number",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "common_name": {
+          "name": "common_name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "scientific_name": {
+          "name": "scientific_name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "status": {
+          "name": "status",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "health_status": {
+          "name": "health_status",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "age_class": {
+          "name": "age_class",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "age_type": {
+          "name": "age_type",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "age": {
+          "name": "age",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "general_comments": {
+          "name": "general_comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude": {
+          "name": "latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude_input_format": {
+          "name": "latitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude": {
+          "name": "longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude_input_format": {
+          "name": "longitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "make_coordinates_public": {
+          "name": "make_coordinates_public",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "elevation": {
+          "name": "elevation",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "elevation_input_format": {
+          "name": "elevation_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height": {
+          "name": "height",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_input_format": {
+          "name": "height_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurement_method": {
+          "name": "height_measurement_method",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "height_measurements_distance_top": {
+          "name": "height_measurements_distance_top",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_distance_top_input_format": {
+          "name": "height_measurements_distance_top_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_angle_top": {
+          "name": "height_measurements_angle_top",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_angle_top_input_format": {
+          "name": "height_measurements_angle_top_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_distance_bottom": {
+          "name": "height_measurements_distance_bottom",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_distance_bottom_input_format": {
+          "name": "height_measurements_distance_bottom_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_angle_bottom": {
+          "name": "height_measurements_angle_bottom",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_angle_bottom_input_format": {
+          "name": "height_measurements_angle_bottom_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_vertical_offset": {
+          "name": "height_measurements_vertical_offset",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_vertical_offset_input_format": {
+          "name": "height_measurements_vertical_offset_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurement_type": {
+          "name": "height_measurement_type",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "laser_brand": {
+          "name": "laser_brand",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "clinometer_brand": {
+          "name": "clinometer_brand",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_comments": {
+          "name": "height_comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth": {
+          "name": "girth",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_input_format": {
+          "name": "girth_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_measurement_height": {
+          "name": "girth_measurement_height",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_measurement_height_input_format": {
+          "name": "girth_measurement_height_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_root_collar_height": {
+          "name": "girth_root_collar_height",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_root_collar_height_input_format": {
+          "name": "girth_root_collar_height_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_comments": {
+          "name": "girth_comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_spread": {
+          "name": "crown_spread",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_spread_input_format": {
+          "name": "crown_spread_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "maximum_limb_length": {
+          "name": "maximum_limb_length",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "maximum_limb_length_input_format": {
+          "name": "maximum_limb_length_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_spread_measurement_method": {
+          "name": "crown_spread_measurement_method",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "base_crown_height": {
+          "name": "base_crown_height",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "base_crown_height_input_format": {
+          "name": "base_crown_height_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_volume": {
+          "name": "crown_volume",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_volume_input_format": {
+          "name": "crown_volume_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_volume_calculation_method": {
+          "name": "crown_volume_calculation_method",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_comments": {
+          "name": "crown_comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "trunk_volume": {
+          "name": "trunk_volume",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "trunk_volume_input_format": {
+          "name": "trunk_volume_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "trunk_volume_calculation_method": {
+          "name": "trunk_volume_calculation_method",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "trunk_comments": {
+          "name": "trunk_comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "form_type": {
+          "name": "form_type",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "number_of_trunks": {
+          "name": "number_of_trunks",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tree_form_comments": {
+          "name": "tree_form_comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "terrain_type": {
+          "name": "terrain_type",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "terrain_shape_index": {
+          "name": "terrain_shape_index",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "landform_index": {
+          "name": "landform_index",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "terrain_comments": {
+          "name": "terrain_comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "combined_girth_number_of_trunks": {
+          "name": "combined_girth_number_of_trunks",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "ix_import_trees_creator_user_id": {
+          "name": "ix_import_trees_creator_user_id",
+          "columns": [
+            {
+              "expression": "creator_user_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_import_trees_site_id": {
+          "name": "ix_import_trees_site_id",
+          "columns": [
+            {
+              "expression": "site_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "import_trees_creator_user_id_users_id_fk": {
+          "name": "import_trees_creator_user_id_users_id_fk",
+          "tableFrom": "import_trees",
+          "tableTo": "users",
+          "columnsFrom": [
+            "creator_user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "import_trees_site_id_import_sites_id_fk": {
+          "name": "import_trees_site_id_import_sites_id_fk",
+          "tableFrom": "import_trees",
+          "tableTo": "import_sites",
+          "columnsFrom": [
+            "site_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.import_trip_measurers": {
+      "name": "import_trip_measurers",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "import_trip_measurers_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "trip_id": {
+          "name": "trip_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "first_name": {
+          "name": "first_name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "last_name": {
+          "name": "last_name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "ix_import_trip_measurers_trip_id": {
+          "name": "ix_import_trip_measurers_trip_id",
+          "columns": [
+            {
+              "expression": "trip_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "import_trip_measurers_trip_id_import_trips_id_fk": {
+          "name": "import_trip_measurers_trip_id_import_trips_id_fk",
+          "tableFrom": "import_trip_measurers",
+          "tableTo": "import_trips",
+          "columnsFrom": [
+            "trip_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.import_trips": {
+      "name": "import_trips",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "import_trips_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "creator_user_id": {
+          "name": "creator_user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created": {
+          "name": "created",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "imported": {
+          "name": "imported",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date": {
+          "name": "date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "website": {
+          "name": "website",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "photos_available": {
+          "name": "photos_available",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "measurer_contact_info": {
+          "name": "measurer_contact_info",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "make_measurer_contact_info_public": {
+          "name": "make_measurer_contact_info_public",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "default_laser_brand": {
+          "name": "default_laser_brand",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "default_clinometer_brand": {
+          "name": "default_clinometer_brand",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "default_height_measurement_method": {
+          "name": "default_height_measurement_method",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "default_state_id": {
+          "name": "default_state_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "default_county": {
+          "name": "default_county",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "last_saved": {
+          "name": "last_saved",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "ix_import_trips_creator_user_id": {
+          "name": "ix_import_trips_creator_user_id",
+          "columns": [
+            {
+              "expression": "creator_user_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_import_trips_default_state_id": {
+          "name": "ix_import_trips_default_state_id",
+          "columns": [
+            {
+              "expression": "default_state_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "import_trips_creator_user_id_users_id_fk": {
+          "name": "import_trips_creator_user_id_users_id_fk",
+          "tableFrom": "import_trips",
+          "tableTo": "users",
+          "columnsFrom": [
+            "creator_user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "import_trips_default_state_id_states_id_fk": {
+          "name": "import_trips_default_state_id_states_id_fk",
+          "tableFrom": "import_trips",
+          "tableTo": "states",
+          "columnsFrom": [
+            "default_state_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.import_trunks": {
+      "name": "import_trunks",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "import_trunks_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "created": {
+          "name": "created",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "creator_user_id": {
+          "name": "creator_user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tree_id": {
+          "name": "tree_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth": {
+          "name": "girth",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_input_format": {
+          "name": "girth_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_measurement_height": {
+          "name": "girth_measurement_height",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_measurement_height_input_format": {
+          "name": "girth_measurement_height_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height": {
+          "name": "height",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_input_format": {
+          "name": "height_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_distance_top": {
+          "name": "height_measurements_distance_top",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_distance_top_input_format": {
+          "name": "height_measurements_distance_top_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_angle_top": {
+          "name": "height_measurements_angle_top",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_angle_top_input_format": {
+          "name": "height_measurements_angle_top_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_distance_bottom": {
+          "name": "height_measurements_distance_bottom",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_distance_bottom_input_format": {
+          "name": "height_measurements_distance_bottom_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_angle_bottom": {
+          "name": "height_measurements_angle_bottom",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_angle_bottom_input_format": {
+          "name": "height_measurements_angle_bottom_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_vertical_offset": {
+          "name": "height_measurements_vertical_offset",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurements_vertical_offset_input_format": {
+          "name": "height_measurements_vertical_offset_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "include_height_distance_and_angle_measurements": {
+          "name": "include_height_distance_and_angle_measurements",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "trunk_comments": {
+          "name": "trunk_comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "''"
+        }
+      },
+      "indexes": {
+        "ix_import_trunks_creator_user_id": {
+          "name": "ix_import_trunks_creator_user_id",
+          "columns": [
+            {
+              "expression": "creator_user_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_import_trunks_tree_id": {
+          "name": "ix_import_trunks_tree_id",
+          "columns": [
+            {
+              "expression": "tree_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "import_trunks_creator_user_id_users_id_fk": {
+          "name": "import_trunks_creator_user_id_users_id_fk",
+          "tableFrom": "import_trunks",
+          "tableTo": "users",
+          "columnsFrom": [
+            "creator_user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "import_trunks_tree_id_import_trees_id_fk": {
+          "name": "import_trunks_tree_id_import_trees_id_fk",
+          "tableFrom": "import_trunks",
+          "tableTo": "import_trees",
+          "columnsFrom": [
+            "tree_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.known_species": {
+      "name": "known_species",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "known_species_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "accepted_symbol": {
+          "name": "accepted_symbol",
+          "type": "varchar(10)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "scientific_name": {
+          "name": "scientific_name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "common_name": {
+          "name": "common_name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.photo_references": {
+      "name": "photo_references",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "photo_references_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "type": {
+          "name": "type",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "import_site_id": {
+          "name": "import_site_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "import_tree_id": {
+          "name": "import_tree_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "site_id": {
+          "name": "site_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "site_visit_id": {
+          "name": "site_visit_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tree_id": {
+          "name": "tree_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tree_measurement_id": {
+          "name": "tree_measurement_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "photo_id": {
+          "name": "photo_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "caption": {
+          "name": "caption",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "ix_photo_references_import_site_id": {
+          "name": "ix_photo_references_import_site_id",
+          "columns": [
+            {
+              "expression": "import_site_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_photo_references_import_tree_id": {
+          "name": "ix_photo_references_import_tree_id",
+          "columns": [
+            {
+              "expression": "import_tree_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_photo_references_site_id": {
+          "name": "ix_photo_references_site_id",
+          "columns": [
+            {
+              "expression": "site_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_photo_references_site_visit_id": {
+          "name": "ix_photo_references_site_visit_id",
+          "columns": [
+            {
+              "expression": "site_visit_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_photo_references_tree_id": {
+          "name": "ix_photo_references_tree_id",
+          "columns": [
+            {
+              "expression": "tree_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_photo_references_tree_measurement_id": {
+          "name": "ix_photo_references_tree_measurement_id",
+          "columns": [
+            {
+              "expression": "tree_measurement_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_photo_references_photo_id": {
+          "name": "ix_photo_references_photo_id",
+          "columns": [
+            {
+              "expression": "photo_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "photo_references_import_site_id_import_sites_id_fk": {
+          "name": "photo_references_import_site_id_import_sites_id_fk",
+          "tableFrom": "photo_references",
+          "tableTo": "import_sites",
+          "columnsFrom": [
+            "import_site_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "photo_references_import_tree_id_import_trees_id_fk": {
+          "name": "photo_references_import_tree_id_import_trees_id_fk",
+          "tableFrom": "photo_references",
+          "tableTo": "import_trees",
+          "columnsFrom": [
+            "import_tree_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "photo_references_site_id_sites_id_fk": {
+          "name": "photo_references_site_id_sites_id_fk",
+          "tableFrom": "photo_references",
+          "tableTo": "sites",
+          "columnsFrom": [
+            "site_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "photo_references_site_visit_id_site_visits_id_fk": {
+          "name": "photo_references_site_visit_id_site_visits_id_fk",
+          "tableFrom": "photo_references",
+          "tableTo": "site_visits",
+          "columnsFrom": [
+            "site_visit_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "photo_references_tree_id_trees_id_fk": {
+          "name": "photo_references_tree_id_trees_id_fk",
+          "tableFrom": "photo_references",
+          "tableTo": "trees",
+          "columnsFrom": [
+            "tree_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "photo_references_tree_measurement_id_tree_measurements_id_fk": {
+          "name": "photo_references_tree_measurement_id_tree_measurements_id_fk",
+          "tableFrom": "photo_references",
+          "tableTo": "tree_measurements",
+          "columnsFrom": [
+            "tree_measurement_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "photo_references_photo_id_photos_id_fk": {
+          "name": "photo_references_photo_id_photos_id_fk",
+          "tableFrom": "photo_references",
+          "tableTo": "photos",
+          "columnsFrom": [
+            "photo_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "ck_photo_references_owner": {
+          "name": "ck_photo_references_owner",
+          "value": "(\n        (\"photo_references\".\"type\" = 1\n          and \"photo_references\".\"import_site_id\" is null and \"photo_references\".\"import_tree_id\" is null\n          and \"photo_references\".\"site_id\" is null and \"photo_references\".\"site_visit_id\" is null\n          and \"photo_references\".\"tree_id\" is null and \"photo_references\".\"tree_measurement_id\" is null)\n        or (\"photo_references\".\"type\" = 2\n          and \"photo_references\".\"import_site_id\" is not null and \"photo_references\".\"import_tree_id\" is null\n          and \"photo_references\".\"site_id\" is null and \"photo_references\".\"site_visit_id\" is null\n          and \"photo_references\".\"tree_id\" is null and \"photo_references\".\"tree_measurement_id\" is null)\n        or (\"photo_references\".\"type\" = 3\n          and \"photo_references\".\"import_site_id\" is null and \"photo_references\".\"import_tree_id\" is not null\n          and \"photo_references\".\"site_id\" is null and \"photo_references\".\"site_visit_id\" is null\n          and \"photo_references\".\"tree_id\" is null and \"photo_references\".\"tree_measurement_id\" is null)\n        or (\"photo_references\".\"type\" = 4\n          and \"photo_references\".\"import_site_id\" is null and \"photo_references\".\"import_tree_id\" is null\n          and \"photo_references\".\"site_id\" is not null and \"photo_references\".\"site_visit_id\" is null\n          and \"photo_references\".\"tree_id\" is null and \"photo_references\".\"tree_measurement_id\" is null)\n        or (\"photo_references\".\"type\" = 5\n          and \"photo_references\".\"import_site_id\" is null and \"photo_references\".\"import_tree_id\" is null\n          and \"photo_references\".\"site_id\" is null and \"photo_references\".\"site_visit_id\" is not null\n          and \"photo_references\".\"tree_id\" is null and \"photo_references\".\"tree_measurement_id\" is null)\n        or (\"photo_references\".\"type\" = 6\n          and \"photo_references\".\"import_site_id\" is null and \"photo_references\".\"import_tree_id\" is null\n          and \"photo_references\".\"site_id\" is null and \"photo_references\".\"site_visit_id\" is null\n          and \"photo_references\".\"tree_id\" is not null and \"photo_references\".\"tree_measurement_id\" is null)\n        or (\"photo_references\".\"type\" = 7\n          and \"photo_references\".\"import_site_id\" is null and \"photo_references\".\"import_tree_id\" is null\n          and \"photo_references\".\"site_id\" is null and \"photo_references\".\"site_visit_id\" is null\n          and \"photo_references\".\"tree_id\" is null and \"photo_references\".\"tree_measurement_id\" is not null)\n      )"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.photos": {
+      "name": "photos",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "photos_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "creator_user_id": {
+          "name": "creator_user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created": {
+          "name": "created",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "width": {
+          "name": "width",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height": {
+          "name": "height",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "bytes": {
+          "name": "bytes",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "format": {
+          "name": "format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "ix_photos_creator_user_id": {
+          "name": "ix_photos_creator_user_id",
+          "columns": [
+            {
+              "expression": "creator_user_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "photos_creator_user_id_users_id_fk": {
+          "name": "photos_creator_user_id_users_id_fk",
+          "tableFrom": "photos",
+          "tableTo": "users",
+          "columnsFrom": [
+            "creator_user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.site_visitors": {
+      "name": "site_visitors",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "site_visitors_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "site_id": {
+          "name": "site_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "site_visit_id": {
+          "name": "site_visit_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "first_name": {
+          "name": "first_name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "last_name": {
+          "name": "last_name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "ix_site_visitors_site_id": {
+          "name": "ix_site_visitors_site_id",
+          "columns": [
+            {
+              "expression": "site_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_site_visitors_site_visit_id": {
+          "name": "ix_site_visitors_site_visit_id",
+          "columns": [
+            {
+              "expression": "site_visit_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "site_visitors_site_id_sites_id_fk": {
+          "name": "site_visitors_site_id_sites_id_fk",
+          "tableFrom": "site_visitors",
+          "tableTo": "sites",
+          "columnsFrom": [
+            "site_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "site_visitors_site_visit_id_site_visits_id_fk": {
+          "name": "site_visitors_site_visit_id_site_visits_id_fk",
+          "tableFrom": "site_visitors",
+          "tableTo": "site_visits",
+          "columnsFrom": [
+            "site_visit_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.site_visits": {
+      "name": "site_visits",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "site_visits_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "site_id": {
+          "name": "site_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "importing_trip_id": {
+          "name": "importing_trip_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "visited": {
+          "name": "visited",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "state_id": {
+          "name": "state_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "county": {
+          "name": "county",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ownership_type": {
+          "name": "ownership_type",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ownership_contact_info": {
+          "name": "ownership_contact_info",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "make_ownership_contact_info_public": {
+          "name": "make_ownership_contact_info_public",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude": {
+          "name": "latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude_input_format": {
+          "name": "latitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude": {
+          "name": "longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude_input_format": {
+          "name": "longitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_latitude": {
+          "name": "calculated_latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_latitude_input_format": {
+          "name": "calculated_latitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 2
+        },
+        "calculated_longitude": {
+          "name": "calculated_longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_longitude_input_format": {
+          "name": "calculated_longitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 2
+        },
+        "comments": {
+          "name": "comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "trip_report_url": {
+          "name": "trip_report_url",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "''"
+        }
+      },
+      "indexes": {
+        "ix_site_visits_site_id": {
+          "name": "ix_site_visits_site_id",
+          "columns": [
+            {
+              "expression": "site_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_site_visits_importing_trip_id": {
+          "name": "ix_site_visits_importing_trip_id",
+          "columns": [
+            {
+              "expression": "importing_trip_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_site_visits_state_id": {
+          "name": "ix_site_visits_state_id",
+          "columns": [
+            {
+              "expression": "state_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "site_visits_site_id_sites_id_fk": {
+          "name": "site_visits_site_id_sites_id_fk",
+          "tableFrom": "site_visits",
+          "tableTo": "sites",
+          "columnsFrom": [
+            "site_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "site_visits_importing_trip_id_import_trips_id_fk": {
+          "name": "site_visits_importing_trip_id_import_trips_id_fk",
+          "tableFrom": "site_visits",
+          "tableTo": "import_trips",
+          "columnsFrom": [
+            "importing_trip_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "site_visits_state_id_states_id_fk": {
+          "name": "site_visits_state_id_states_id_fk",
+          "tableFrom": "site_visits",
+          "tableTo": "states",
+          "columnsFrom": [
+            "state_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.sites": {
+      "name": "sites",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "sites_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "state_id": {
+          "name": "state_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "county": {
+          "name": "county",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ownership_type": {
+          "name": "ownership_type",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ownership_contact_info": {
+          "name": "ownership_contact_info",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "make_ownership_contact_info_public": {
+          "name": "make_ownership_contact_info_public",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude": {
+          "name": "latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude_input_format": {
+          "name": "latitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude": {
+          "name": "longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude_input_format": {
+          "name": "longitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_latitude": {
+          "name": "calculated_latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_latitude_input_format": {
+          "name": "calculated_latitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 2
+        },
+        "calculated_longitude": {
+          "name": "calculated_longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_longitude_input_format": {
+          "name": "calculated_longitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 2
+        },
+        "computed_rhi5": {
+          "name": "computed_rhi5",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_rhi10": {
+          "name": "computed_rhi10",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_rhi20": {
+          "name": "computed_rhi20",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_rgi5": {
+          "name": "computed_rgi5",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_rgi10": {
+          "name": "computed_rgi10",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_rgi20": {
+          "name": "computed_rgi20",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_trees_measured_count": {
+          "name": "computed_trees_measured_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_last_measurement_date": {
+          "name": "computed_last_measurement_date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_contains_entity_with_coordinates": {
+          "name": "computed_contains_entity_with_coordinates",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "are_metrics_stale": {
+          "name": "are_metrics_stale",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "last_metrics_update_timestamp": {
+          "name": "last_metrics_update_timestamp",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "visit_count": {
+          "name": "visit_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        }
+      },
+      "indexes": {
+        "ix_sites_state_id": {
+          "name": "ix_sites_state_id",
+          "columns": [
+            {
+              "expression": "state_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "sites_state_id_states_id_fk": {
+          "name": "sites_state_id_states_id_fk",
+          "tableFrom": "sites",
+          "tableTo": "states",
+          "columnsFrom": [
+            "state_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.states": {
+      "name": "states",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "states_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "country_id": {
+          "name": "country_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 1
+        },
+        "double_letter_code": {
+          "name": "double_letter_code",
+          "type": "char(2)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "triple_letter_code": {
+          "name": "triple_letter_code",
+          "type": "char(3)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ne_latitude": {
+          "name": "ne_latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "ne_longitude": {
+          "name": "ne_longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "sw_latitude": {
+          "name": "sw_latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "sw_longitude": {
+          "name": "sw_longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "computed_rhi5": {
+          "name": "computed_rhi5",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_rhi10": {
+          "name": "computed_rhi10",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_rhi20": {
+          "name": "computed_rhi20",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_rgi5": {
+          "name": "computed_rgi5",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_rgi10": {
+          "name": "computed_rgi10",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_rgi20": {
+          "name": "computed_rgi20",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_trees_measured_count": {
+          "name": "computed_trees_measured_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_last_measurement_date": {
+          "name": "computed_last_measurement_date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_contains_entity_with_coordinates": {
+          "name": "computed_contains_entity_with_coordinates",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "are_metrics_stale": {
+          "name": "are_metrics_stale",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "last_metrics_update_timestamp": {
+          "name": "last_metrics_update_timestamp",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "ix_states_country_id": {
+          "name": "ix_states_country_id",
+          "columns": [
+            {
+              "expression": "country_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "states_country_id_countries_id_fk": {
+          "name": "states_country_id_countries_id_fk",
+          "tableFrom": "states",
+          "tableTo": "countries",
+          "columnsFrom": [
+            "country_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.tree_measurements": {
+      "name": "tree_measurements",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "tree_measurements_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "tree_id": {
+          "name": "tree_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "importing_trip_id": {
+          "name": "importing_trip_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "computed_measured_species_id": {
+          "name": "computed_measured_species_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "measured": {
+          "name": "measured",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "common_name": {
+          "name": "common_name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "scientific_name": {
+          "name": "scientific_name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height": {
+          "name": "height",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_input_format": {
+          "name": "height_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurement_method": {
+          "name": "height_measurement_method",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth": {
+          "name": "girth",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_input_format": {
+          "name": "girth_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_spread": {
+          "name": "crown_spread",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_spread_input_format": {
+          "name": "crown_spread_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude": {
+          "name": "latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude_input_format": {
+          "name": "latitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude": {
+          "name": "longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude_input_format": {
+          "name": "longitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_latitude": {
+          "name": "calculated_latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_latitude_input_format": {
+          "name": "calculated_latitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 2
+        },
+        "calculated_longitude": {
+          "name": "calculated_longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_longitude_input_format": {
+          "name": "calculated_longitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 2
+        },
+        "elevation": {
+          "name": "elevation",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "elevation_input_format": {
+          "name": "elevation_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "general_comments": {
+          "name": "general_comments",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "diameter": {
+          "name": "diameter",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "diameter_input_format": {
+          "name": "diameter_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "entspts": {
+          "name": "entspts",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "conical_volume": {
+          "name": "conical_volume",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "conical_volume_input_format": {
+          "name": "conical_volume_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "entspts2": {
+          "name": "entspts2",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "champion_points": {
+          "name": "champion_points",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "abbreviated_champion_points": {
+          "name": "abbreviated_champion_points",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "ix_tree_measurements_tree_id": {
+          "name": "ix_tree_measurements_tree_id",
+          "columns": [
+            {
+              "expression": "tree_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_tree_measurements_importing_trip_id": {
+          "name": "ix_tree_measurements_importing_trip_id",
+          "columns": [
+            {
+              "expression": "importing_trip_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_tree_measurements_scientific_name_common_name": {
+          "name": "ix_tree_measurements_scientific_name_common_name",
+          "columns": [
+            {
+              "expression": "scientific_name",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "common_name",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "tree_measurements_tree_id_trees_id_fk": {
+          "name": "tree_measurements_tree_id_trees_id_fk",
+          "tableFrom": "tree_measurements",
+          "tableTo": "trees",
+          "columnsFrom": [
+            "tree_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "tree_measurements_importing_trip_id_import_trips_id_fk": {
+          "name": "tree_measurements_importing_trip_id_import_trips_id_fk",
+          "tableFrom": "tree_measurements",
+          "tableTo": "import_trips",
+          "columnsFrom": [
+            "importing_trip_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.tree_measurers": {
+      "name": "tree_measurers",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "tree_measurers_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "tree_id": {
+          "name": "tree_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "measurement_id": {
+          "name": "measurement_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "first_name": {
+          "name": "first_name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "last_name": {
+          "name": "last_name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "ix_tree_measurers_tree_id": {
+          "name": "ix_tree_measurers_tree_id",
+          "columns": [
+            {
+              "expression": "tree_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_tree_measurers_measurement_id": {
+          "name": "ix_tree_measurers_measurement_id",
+          "columns": [
+            {
+              "expression": "measurement_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "tree_measurers_tree_id_trees_id_fk": {
+          "name": "tree_measurers_tree_id_trees_id_fk",
+          "tableFrom": "tree_measurers",
+          "tableTo": "trees",
+          "columnsFrom": [
+            "tree_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "tree_measurers_measurement_id_tree_measurements_id_fk": {
+          "name": "tree_measurers_measurement_id_tree_measurements_id_fk",
+          "tableFrom": "tree_measurers",
+          "tableTo": "tree_measurements",
+          "columnsFrom": [
+            "measurement_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.trees": {
+      "name": "trees",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "trees_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "site_id": {
+          "name": "site_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "computed_measured_species_id": {
+          "name": "computed_measured_species_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "last_measured": {
+          "name": "last_measured",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "common_name": {
+          "name": "common_name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "scientific_name": {
+          "name": "scientific_name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height": {
+          "name": "height",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_input_format": {
+          "name": "height_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "height_measurement_method": {
+          "name": "height_measurement_method",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth": {
+          "name": "girth",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "girth_input_format": {
+          "name": "girth_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_spread": {
+          "name": "crown_spread",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "crown_spread_input_format": {
+          "name": "crown_spread_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude": {
+          "name": "latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "latitude_input_format": {
+          "name": "latitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude": {
+          "name": "longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "longitude_input_format": {
+          "name": "longitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_latitude": {
+          "name": "calculated_latitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_latitude_input_format": {
+          "name": "calculated_latitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 2
+        },
+        "calculated_longitude": {
+          "name": "calculated_longitude",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calculated_longitude_input_format": {
+          "name": "calculated_longitude_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 2
+        },
+        "elevation": {
+          "name": "elevation",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "elevation_input_format": {
+          "name": "elevation_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "diameter": {
+          "name": "diameter",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "diameter_input_format": {
+          "name": "diameter_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "entspts": {
+          "name": "entspts",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "conical_volume": {
+          "name": "conical_volume",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "conical_volume_input_format": {
+          "name": "conical_volume_input_format",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "entspts2": {
+          "name": "entspts2",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "champion_points": {
+          "name": "champion_points",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "abbreviated_champion_points": {
+          "name": "abbreviated_champion_points",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "ix_trees_site_id": {
+          "name": "ix_trees_site_id",
+          "columns": [
+            {
+              "expression": "site_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "ix_trees_scientific_name_common_name": {
+          "name": "ix_trees_scientific_name_common_name",
+          "columns": [
+            {
+              "expression": "scientific_name",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "common_name",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "trees_site_id_sites_id_fk": {
+          "name": "trees_site_id_sites_id_fk",
+          "tableFrom": "trees",
+          "tableTo": "sites",
+          "columnsFrom": [
+            "site_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.users": {
+      "name": "users",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "users_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "email": {
+          "name": "email",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'Anonymous'"
+        },
+        "firstname": {
+          "name": "firstname",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "''"
+        },
+        "lastname": {
+          "name": "lastname",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "''"
+        },
+        "roles": {
+          "name": "roles",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "password_hash": {
+          "name": "password_hash",
+          "type": "bytea",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "password_numerics": {
+          "name": "password_numerics",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "password_uppercase": {
+          "name": "password_uppercase",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "password_lowercase": {
+          "name": "password_lowercase",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "password_specials": {
+          "name": "password_specials",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "password_length": {
+          "name": "password_length",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "created": {
+          "name": "created",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "last_login": {
+          "name": "last_login",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "email_verification_token": {
+          "name": "email_verification_token",
+          "type": "bytea",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "recently_failed_login_attempts": {
+          "name": "recently_failed_login_attempts",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "email_verified": {
+          "name": "email_verified",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "last_failed_login_attempt": {
+          "name": "last_failed_login_attempt",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "forgotten_password_assistance_token": {
+          "name": "forgotten_password_assistance_token",
+          "type": "bytea",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "forgotten_password_assistance_token_issued": {
+          "name": "forgotten_password_assistance_token_issued",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "forgotten_password_assistance_token_used": {
+          "name": "forgotten_password_assistance_token_used",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "ux_users_email": {
+          "name": "ux_users_email",
+          "columns": [
+            {
+              "expression": "email",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

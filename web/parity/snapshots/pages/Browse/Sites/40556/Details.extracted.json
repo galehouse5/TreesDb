@@ -1,0 +1,129 @@
+{
+  "siteId": 40556,
+  "summary": {
+    "Name": "Highway 8 Pines",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "06/07/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/07/2005",
+      "visitors": "Don Bragg and Bob Bragg",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/wisconsin/northern_adv/great_northern_adventure.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "133.2'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/40556/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/40556/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "133.2'",
+            "href": "/Browse/Trees/233370/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/233371/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "130.7'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40556/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40556/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "130.7'",
+            "href": "/Browse/Trees/233357/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/233361/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 34.194, -088 49.501",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Forest"
+    },
+    "state": {
+      "text": "Wisconsin (US)",
+      "href": "/Browse/States/46/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

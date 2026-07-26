@@ -1,0 +1,157 @@
+{
+  "siteId": 41315,
+  "summary": {
+    "Name": "The Breakers",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "10/15/2021",
+    "Ownership contact": "(no data)",
+    "General comments": "A summer home of Vanderbilts now open to paying tourists. 15 acres"
+  },
+  "visits": [
+    {
+      "visited": "10/15/2021",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "A summer home of Vanderbilts now open to paying tourists. 15 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Chamaecyparis pisifera",
+          "Sawara False Cypress",
+          "57.5'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis pisifera",
+            "href": "/Browse/Sites/41315/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "Sawara False Cypress",
+            "href": "/Browse/Sites/41315/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "57.5'",
+            "href": "/Browse/Trees/256816/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/256816/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cryptomeria japonica",
+          "Japanese Cedar",
+          "64.8'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cryptomeria japonica",
+            "href": "/Browse/Sites/41315/Species/Cryptomeria%20japonica%20(Japanese%20Cedar)/Details"
+          },
+          {
+            "text": "Japanese Cedar",
+            "href": "/Browse/Sites/41315/Species/Cryptomeria%20japonica%20(Japanese%20Cedar)/Details"
+          },
+          {
+            "text": "64.8'",
+            "href": "/Browse/Trees/256817/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/256817/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus sylvatica",
+          "European Beech",
+          "66.0'",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus sylvatica",
+            "href": "/Browse/Sites/41315/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "European Beech",
+            "href": "/Browse/Sites/41315/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/256815/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/256815/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 28.200, -071 17.890",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Newport"
+    },
+    "state": {
+      "text": "Rhode Island (US)",
+      "href": "/Browse/States/37/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

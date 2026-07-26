@@ -1,0 +1,123 @@
+{
+  "siteId": 40902,
+  "summary": {
+    "Name": "Plymouth",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "13",
+    "Last measurement date": "07/17/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/17/2014",
+      "visitors": "Tre Clim",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "-",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40902/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40902/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/239889/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus macrocarpa",
+          "Bur Oak",
+          "-",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa",
+            "href": "/Browse/Sites/40902/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/40902/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/239886/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 00.674, -093 26.664",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Hennepin"
+    },
+    "state": {
+      "text": "Minnesota (US)",
+      "href": "/Browse/States/21/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Parkinsonia microphylla",
+  "commonName": "Yellow Paloverde",
+  "global": {
+    "maxHeight": {
+      "text": "27.0'",
+      "href": "/Browse/Trees/159266/Details"
+    },
+    "maxGirth": {
+      "text": "30''",
+      "href": "/Browse/Trees/159266/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "27.0'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "27.0'",
+            "href": "/Browse/Trees/159266/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/159266/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

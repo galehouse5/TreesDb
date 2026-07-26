@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Cercis siliquastrum",
+  "commonName": "Judas-Tree",
+  "global": {
+    "maxHeight": {
+      "text": "13.96 m",
+      "href": "/Browse/Trees/274943/Details"
+    },
+    "maxGirth": {
+      "text": "56 cm",
+      "href": "/Browse/Trees/274943/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Andalusia",
+          "13.96 m",
+          "56 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Andalusia",
+            "href": "/Browse/States/124/Details"
+          },
+          {
+            "text": "13.96 m",
+            "href": "/Browse/Trees/274943/Details"
+          },
+          {
+            "text": "56 cm",
+            "href": "/Browse/Trees/274943/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "siteId": 40915,
+  "summary": {
+    "Name": "Colonial Point Memorial Forest",
+    "RHI5": "105.08",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.22",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "07/22/2006",
+    "Ownership contact": "10240 Brutus Road Brutus . Michigan",
+    "General comments": "Now known as: Chaboinganing Nature Reserve 484 Acres"
+  },
+  "visits": [
+    {
+      "visited": "07/22/2006",
+      "visitors": "Don Bragg",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/wisconsin/woodruff.htm",
+      "comments": "Now known as: Chaboinganing Nature Reserve 484 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "110.0'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40915/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40915/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/239998/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/240001/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "82.5'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40915/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40915/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "82.5'",
+            "href": "/Browse/Trees/240007/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/240007/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "100.6'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40915/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40915/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "100.6'",
+            "href": "/Browse/Trees/240004/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/240004/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "113.3'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40915/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40915/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "113.3'",
+            "href": "/Browse/Trees/240002/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/240003/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus grandidentata",
+          "Bigtooth Aspen",
+          "103.2'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus grandidentata",
+            "href": "/Browse/Sites/40915/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "Bigtooth Aspen",
+            "href": "/Browse/Sites/40915/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "103.2'",
+            "href": "/Browse/Trees/239997/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/239997/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "98.3'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40915/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40915/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "98.3'",
+            "href": "/Browse/Trees/239999/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/240000/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana",
+          "American Basswood",
+          "-",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana",
+            "href": "/Browse/Sites/40915/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/40915/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          null,
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/240005/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "-",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40915/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40915/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          null,
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/240008/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 29.445, -084 41.760",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Cheboygan"
+    },
+    "state": {
+      "text": "Michigan (US)",
+      "href": "/Browse/States/20/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

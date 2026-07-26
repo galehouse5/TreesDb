@@ -1,0 +1,70 @@
+{
+  "treeId": 274407,
+  "botanicalName": {
+    "text": "Pseudotsuga menziesii var. menziesii",
+    "href": "/Browse/Sites/41793/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "commonName": {
+    "text": "Douglas-Fir",
+    "href": "/Browse/Sites/41793/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "details": {
+    "Height": "265.1'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "366''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "2466.09",
+    "ENTSPTS": "8085.55",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.53",
+    "Champion points (abbreviated)": "631.10",
+    "Diameter": "117''",
+    "Conical volume": "6541.5 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 07/05/2022",
+      "summary": {
+        "Height": "265.1'",
+        "Girth": "366''"
+      },
+      "details": {
+        "Botanical name": "Pseudotsuga menziesii var. menziesii",
+        "Common name": "Douglas-Fir",
+        "Height": "265.1'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "366''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "2466.09",
+        "ENTSPTS": "8085.55",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.53",
+        "Champion points (abbreviated)": "631.10",
+        "Diameter": "117''",
+        "Conical volume": "6541.5 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Elijah Whitcomb"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "48 03.425, -121 24.835",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Mountain Loop Highway",
+      "href": "/Browse/Sites/41793/Details"
+    },
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Snohomish"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

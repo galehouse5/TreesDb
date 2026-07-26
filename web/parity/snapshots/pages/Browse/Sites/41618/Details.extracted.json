@@ -1,0 +1,101 @@
+{
+  "siteId": 41618,
+  "summary": {
+    "Name": "Redwood National Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "05/26/2015",
+    "Ownership contact": "1111 Second Street Crescent City",
+    "General comments": "The State Parks are also jointly managed as part of the national park."
+  },
+  "visits": [
+    {
+      "visited": "05/26/2015",
+      "visitors": "John Montague",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "The State Parks are also jointly managed as part of the national park."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Sequoia sempervirens",
+          "Redwood",
+          "259.0'",
+          "1101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sequoia sempervirens",
+            "href": "/Browse/Sites/41618/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+          },
+          {
+            "text": "Redwood",
+            "href": "/Browse/Sites/41618/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+          },
+          {
+            "text": "259.0'",
+            "href": "/Browse/Trees/268683/Details"
+          },
+          {
+            "text": "1101''",
+            "href": "/Browse/Trees/268683/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 10.170, -123 59.744",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Humboldt"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

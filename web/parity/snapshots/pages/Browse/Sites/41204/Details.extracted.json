@@ -1,0 +1,210 @@
+{
+  "siteId": 41204,
+  "summary": {
+    "Name": "Lanning Woods",
+    "RHI5": "66.06",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.10",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "12/26/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "Mostly Private property of James Lanning between Fletcher and Mountain Home."
+  },
+  "visits": [
+    {
+      "visited": "12/26/2010",
+      "visitors": "James Parton",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Mostly Private property of James Lanning between Fletcher and Mountain Home."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "63.7'",
+          "188''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41204/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41204/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "63.7'",
+            "href": "/Browse/Trees/252263/Details"
+          },
+          {
+            "text": "188''",
+            "href": "/Browse/Trees/252263/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus spp.",
+          "Hawthorn",
+          "21.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus spp.",
+            "href": "/Browse/Sites/41204/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/41204/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "21.3'",
+            "href": "/Browse/Trees/252264/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca",
+          "American Holly",
+          "45.2'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca",
+            "href": "/Browse/Sites/41204/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/41204/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "45.2'",
+            "href": "/Browse/Trees/252256/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/252256/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "106.5'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41204/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41204/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "106.5'",
+            "href": "/Browse/Trees/252260/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/252259/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "93.6'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/41204/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/41204/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "93.6'",
+            "href": "/Browse/Trees/252262/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/252262/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 24.214, -082 29.069",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Henderson"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

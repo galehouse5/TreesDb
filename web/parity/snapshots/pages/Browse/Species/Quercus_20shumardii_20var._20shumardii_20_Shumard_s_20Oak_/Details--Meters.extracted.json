@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Quercus shumardii var. shumardii",
+  "commonName": "Shumard's Oak",
+  "global": {
+    "maxHeight": {
+      "text": "37.28 m",
+      "href": "/Browse/Trees/252285/Details"
+    },
+    "maxGirth": {
+      "text": "152 cm",
+      "href": "/Browse/Trees/252285/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "North Carolina",
+          "37.28 m",
+          "152 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "37.28 m",
+            "href": "/Browse/Trees/252285/Details"
+          },
+          {
+            "text": "152 cm",
+            "href": "/Browse/Trees/252285/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

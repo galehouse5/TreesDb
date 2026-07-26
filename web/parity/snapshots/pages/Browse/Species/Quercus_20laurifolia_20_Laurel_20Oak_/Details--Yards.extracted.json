@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Quercus laurifolia",
+  "commonName": "Laurel Oak",
+  "global": {
+    "maxHeight": {
+      "text": "43.37 yd",
+      "href": "/Browse/Trees/252722/Details"
+    },
+    "maxGirth": {
+      "text": "265''",
+      "href": "/Browse/Trees/252722/Details"
+    },
+    "maxCrownSpread": {
+      "text": "36.67 yd",
+      "href": "/Browse/Trees/2419/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Florida",
+          "21.37 yd",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "21.37 yd",
+            "href": "/Browse/Trees/159250/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/159250/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "43.37 yd",
+          "265''",
+          "36.67 yd"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "43.37 yd",
+            "href": "/Browse/Trees/252722/Details"
+          },
+          {
+            "text": "265''",
+            "href": "/Browse/Trees/252722/Details"
+          },
+          {
+            "text": "36.67 yd",
+            "href": "/Browse/Trees/2419/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

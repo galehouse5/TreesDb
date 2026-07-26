@@ -1,0 +1,283 @@
+{
+  "botanicalName": "Populus deltoides",
+  "commonName": "Eastern Cottonwood",
+  "global": {
+    "maxHeight": {
+      "text": "153.6'",
+      "href": "/Browse/Trees/228987/Details"
+    },
+    "maxGirth": {
+      "text": "348''",
+      "href": "/Browse/Trees/70462/Details"
+    },
+    "maxCrownSpread": {
+      "text": "108.5'",
+      "href": "/Browse/Trees/239915/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "136.7'",
+          "170''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "136.7'",
+            "href": "/Browse/Trees/233848/Details"
+          },
+          {
+            "text": "170''",
+            "href": "/Browse/Trees/233845/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "145.7'",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "145.7'",
+            "href": "/Browse/Trees/241830/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/241832/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Connecticut",
+          "124.0'",
+          "222''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "124.0'",
+            "href": "/Browse/Trees/242595/Details"
+          },
+          {
+            "text": "222''",
+            "href": "/Browse/Trees/242595/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "134.9'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "134.9'",
+            "href": "/Browse/Trees/234446/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/234446/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "130.1'",
+          "258''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          {
+            "text": "130.1'",
+            "href": "/Browse/Trees/170968/Details"
+          },
+          {
+            "text": "258''",
+            "href": "/Browse/Trees/171016/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Iowa",
+          "108.8'",
+          "181''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Iowa",
+            "href": "/Browse/States/10/Details"
+          },
+          {
+            "text": "108.8'",
+            "href": "/Browse/Trees/233679/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/233679/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "111.4'",
+          "185''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "111.4'",
+            "href": "/Browse/Trees/256008/Details"
+          },
+          {
+            "text": "185''",
+            "href": "/Browse/Trees/256008/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Michigan",
+          "108.9'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Michigan",
+            "href": "/Browse/States/20/Details"
+          },
+          {
+            "text": "108.9'",
+            "href": "/Browse/Trees/104002/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/104002/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Minnesota",
+          "112.0'",
+          "277''",
+          "108.5'"
+        ],
+        "links": [
+          {
+            "text": "Minnesota",
+            "href": "/Browse/States/21/Details"
+          },
+          {
+            "text": "112.0'",
+            "href": "/Browse/Trees/239916/Details"
+          },
+          {
+            "text": "277''",
+            "href": "/Browse/Trees/239941/Details"
+          },
+          {
+            "text": "108.5'",
+            "href": "/Browse/Trees/239915/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "120.5'",
+          "98''",
+          "55.5'"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "120.5'",
+            "href": "/Browse/Trees/251114/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/251114/Details"
+          },
+          {
+            "text": "55.5'",
+            "href": "/Browse/Trees/253861/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

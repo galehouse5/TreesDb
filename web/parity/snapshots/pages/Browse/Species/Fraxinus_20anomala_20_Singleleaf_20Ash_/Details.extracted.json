@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Fraxinus anomala",
+  "commonName": "Singleleaf Ash",
+  "global": {
+    "maxHeight": {
+      "text": "16.5'",
+      "href": "/Browse/Trees/126248/Details"
+    },
+    "maxGirth": {
+      "text": "31''",
+      "href": "/Browse/Trees/126248/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Colorado",
+          "16.5'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "16.5'",
+            "href": "/Browse/Trees/126248/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/126248/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

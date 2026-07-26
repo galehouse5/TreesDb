@@ -1,0 +1,359 @@
+{
+  "siteId": 31594,
+  "summary": {
+    "Name": "Baker Island",
+    "RHI5": "110.08",
+    "RHI10": "86.49",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.10",
+    "RGI10": "9.31",
+    "RGI20": "(not enough data)",
+    "Trees measured": "25",
+    "Last measurement date": "04/20/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees entered are from short visits made on 6/18/2008, 10/08/2009, 4/20/2010"
+  },
+  "visits": [
+    {
+      "visited": "04/20/2010",
+      "visitors": "Edward Frank and Carl Harting",
+      "tripReportUrl": "(none)",
+      "comments": "Trees entered are from short visits made on 6/18/2008, 10/08/2009, 4/20/2010"
+    },
+    {
+      "visited": "09/05/2007",
+      "visitors": "Dale Luthringer and Edward Frank",
+      "tripReportUrl": "(none)",
+      "comments": "Island is 67 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "123.0'",
+          "166''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/31594/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/31594/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "123.0'",
+            "href": "/Browse/Trees/139351/Details"
+          },
+          {
+            "text": "166''",
+            "href": "/Browse/Trees/139348/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "78.0'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/31594/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/31594/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "78.0'",
+            "href": "/Browse/Trees/139345/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/139345/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "-",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/31594/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/31594/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          null,
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/139352/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "119.5'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/31594/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/31594/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "119.5'",
+            "href": "/Browse/Trees/139962/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/139337/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "81.6'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/31594/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/31594/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "81.6'",
+            "href": "/Browse/Trees/139334/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/139334/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus spp.",
+          "Hawthorn",
+          "25.0'",
+          "78''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Crataegus spp.",
+            "href": "/Browse/Sites/31594/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/31594/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "25.0'",
+            "href": "/Browse/Trees/139333/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/139333/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/139333/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "54.0'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/31594/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/31594/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "54.0'",
+            "href": "/Browse/Trees/139342/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/139342/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "148.3'",
+          "150''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/31594/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/31594/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "148.3'",
+            "href": "/Browse/Trees/106752/Details"
+          },
+          {
+            "text": "150''",
+            "href": "/Browse/Trees/139350/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Robinia pseudoacacia",
+          "Black Locust",
+          "72.0'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Robinia pseudoacacia",
+            "href": "/Browse/Sites/31594/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "Black Locust",
+            "href": "/Browse/Sites/31594/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/139341/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/139341/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix nigra",
+          "Black Willow",
+          "57.1'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix nigra",
+            "href": "/Browse/Sites/31594/Species/Salix%20nigra%20(Black%20Willow)/Details"
+          },
+          {
+            "text": "Black Willow",
+            "href": "/Browse/Sites/31594/Species/Salix%20nigra%20(Black%20Willow)/Details"
+          },
+          {
+            "text": "57.1'",
+            "href": "/Browse/Trees/139964/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/139964/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 31.593, -079 26.375",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Forest"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

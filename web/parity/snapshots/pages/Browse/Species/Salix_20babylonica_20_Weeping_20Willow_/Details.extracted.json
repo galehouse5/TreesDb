@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Salix babylonica",
+  "commonName": "Weeping Willow",
+  "global": {
+    "maxHeight": {
+      "text": "89.0'",
+      "href": "/Browse/Trees/313140/Details"
+    },
+    "maxGirth": {
+      "text": "247''",
+      "href": "/Browse/Trees/255989/Details"
+    },
+    "maxCrownSpread": {
+      "text": "88.0'",
+      "href": "/Browse/Trees/313140/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pennsylvania",
+          "71.7'",
+          "247''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "71.7'",
+            "href": "/Browse/Trees/255989/Details"
+          },
+          {
+            "text": "247''",
+            "href": "/Browse/Trees/255989/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "89.0'",
+          "240''",
+          "88.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "89.0'",
+            "href": "/Browse/Trees/313140/Details"
+          },
+          {
+            "text": "240''",
+            "href": "/Browse/Trees/313139/Details"
+          },
+          {
+            "text": "88.0'",
+            "href": "/Browse/Trees/313140/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

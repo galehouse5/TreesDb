@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Styrax grandifolius",
+  "commonName": "Bigleaf Snowbell",
+  "global": {
+    "maxHeight": {
+      "text": "8.83 yd",
+      "href": "/Browse/Trees/241622/Details"
+    },
+    "maxGirth": {
+      "text": "9''",
+      "href": "/Browse/Trees/241621/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "8.83 yd",
+          "9''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "8.83 yd",
+            "href": "/Browse/Trees/241622/Details"
+          },
+          {
+            "text": "9''",
+            "href": "/Browse/Trees/241621/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "6.67 yd",
+          "7''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "6.67 yd",
+            "href": "/Browse/Trees/238095/Details"
+          },
+          {
+            "text": "7''",
+            "href": "/Browse/Trees/238095/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

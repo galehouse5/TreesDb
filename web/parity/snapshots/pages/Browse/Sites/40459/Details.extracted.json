@@ -1,0 +1,213 @@
+{
+  "siteId": 40459,
+  "summary": {
+    "Name": "Camillus Unique Area",
+    "RHI5": "112.82",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.77",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "01/18/2021",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/18/2021",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "121.0'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40459/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40459/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "121.0'",
+            "href": "/Browse/Trees/230515/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/230507/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "123.6'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40459/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40459/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "123.6'",
+            "href": "/Browse/Trees/230512/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/230512/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "106.8'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40459/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40459/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "106.8'",
+            "href": "/Browse/Trees/230513/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/230513/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "102.3'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/40459/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/40459/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "102.3'",
+            "href": "/Browse/Trees/230510/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/230510/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana var. americana",
+          "American Basswood",
+          "110.4'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana var. americana",
+            "href": "/Browse/Sites/40459/Species/Tilia%20americana%20var.%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/40459/Species/Tilia%20americana%20var.%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "110.4'",
+            "href": "/Browse/Trees/230517/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/230511/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "43 04.139, -076 17.533",
+    "coordinatesKind": "calculated",
+    "rows": {
+      "Ownership type": "Public (NY DEC)",
+      "County": "Onondaga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

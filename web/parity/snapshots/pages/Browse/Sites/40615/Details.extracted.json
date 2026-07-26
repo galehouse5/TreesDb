@@ -1,0 +1,129 @@
+{
+  "siteId": 40615,
+  "summary": {
+    "Name": "Arkansas Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "01/01/2001",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2001",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Morus rubra",
+          "Red Mulberry",
+          "34.5'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Morus rubra",
+            "href": "/Browse/Sites/40615/Species/Morus%20rubra%20(Red%20Mulberry)/Details"
+          },
+          {
+            "text": "Red Mulberry",
+            "href": "/Browse/Sites/40615/Species/Morus%20rubra%20(Red%20Mulberry)/Details"
+          },
+          {
+            "text": "34.5'",
+            "href": "/Browse/Trees/233928/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/233928/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus phellos",
+          "Willow Oak",
+          "91.8'",
+          "212''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus phellos",
+            "href": "/Browse/Sites/40615/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "Willow Oak",
+            "href": "/Browse/Sites/40615/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "91.8'",
+            "href": "/Browse/Trees/233929/Details"
+          },
+          {
+            "text": "212''",
+            "href": "/Browse/Trees/233929/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 44.791, -092 17.343",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Pulaski"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

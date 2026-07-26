@@ -1,0 +1,356 @@
+{
+  "siteId": 40264,
+  "summary": {
+    "Name": "Paris Mountain State Park",
+    "RHI5": "117.10",
+    "RHI10": "110.29",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.65",
+    "RGI10": "9.99",
+    "RGI20": "(not enough data)",
+    "Trees measured": "36",
+    "Last measurement date": "06/17/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured along the Brissy Mountain and Pepissiwa Trails."
+  },
+  "visits": [
+    {
+      "visited": "06/17/2010",
+      "visitors": "James Parton",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured along the Brissy Mountain and Pepissiwa Trails."
+    },
+    {
+      "visited": "10/09/2004",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/paris_mountain.htm",
+      "comments": "This mountain is a Monaddnock near the Furman University Campus. 1540 Acres."
+    },
+    {
+      "visited": "10/25/2002",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/paris_mountain.htm",
+      "comments": "1540 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "102.3'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40264/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40264/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "102.3'",
+            "href": "/Browse/Trees/237785/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/237785/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "80.0'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/40264/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/40264/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "80.0'",
+            "href": "/Browse/Trees/227139/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/227139/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "-",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40264/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40264/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          null,
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/237784/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya pallida",
+          "Sand Hickory",
+          "87.4'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya pallida",
+            "href": "/Browse/Sites/40264/Species/Carya%20pallida%20(Sand%20Hickory)/Details"
+          },
+          {
+            "text": "Sand Hickory",
+            "href": "/Browse/Sites/40264/Species/Carya%20pallida%20(Sand%20Hickory)/Details"
+          },
+          {
+            "text": "87.4'",
+            "href": "/Browse/Trees/227140/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/227140/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "-",
+          "149''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/40264/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/40264/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          null,
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/237783/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "101.7'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40264/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40264/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "101.7'",
+            "href": "/Browse/Trees/252628/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/252628/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "-",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/40264/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/40264/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          null,
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/237794/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "121.0'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40264/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40264/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "121.0'",
+            "href": "/Browse/Trees/227150/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/227150/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus pungens",
+          "Table Mountain Pine",
+          "98.3'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus pungens",
+            "href": "/Browse/Sites/40264/Species/Pinus%20pungens%20(Table%20Mountain%20Pine)/Details"
+          },
+          {
+            "text": "Table Mountain Pine",
+            "href": "/Browse/Sites/40264/Species/Pinus%20pungens%20(Table%20Mountain%20Pine)/Details"
+          },
+          {
+            "text": "98.3'",
+            "href": "/Browse/Trees/237793/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/237792/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "63.9'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/40264/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/40264/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "63.9'",
+            "href": "/Browse/Trees/252627/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/252627/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 56.278, -082 23.465",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Greenville"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

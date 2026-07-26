@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Alnus acuminata",
+  "commonName": "Mexican Alder",
+  "global": {
+    "maxHeight": {
+      "text": "63.7'",
+      "href": "/Browse/Trees/214115/Details"
+    },
+    "maxGirth": {
+      "text": "42''",
+      "href": "/Browse/Trees/214115/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alajuela",
+          "63.7'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alajuela",
+            "href": "/Browse/States/117/Details"
+          },
+          {
+            "text": "63.7'",
+            "href": "/Browse/Trees/214115/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/214115/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

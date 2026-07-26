@@ -1,0 +1,157 @@
+{
+  "siteId": 22040,
+  "summary": {
+    "Name": "Tongass National Forest-Douglas Island-Rain Forest Trail",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "08/05/2012",
+    "Ownership contact": "Tongass National Forest 204 Siginaka Way Sitka, AK",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/05/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus rubra",
+          "Red Alder",
+          "53.0'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus rubra",
+            "href": "/Browse/Sites/22040/Species/Alnus%20rubra%20(Red%20Alder)/Details"
+          },
+          {
+            "text": "Red Alder",
+            "href": "/Browse/Sites/22040/Species/Alnus%20rubra%20(Red%20Alder)/Details"
+          },
+          {
+            "text": "53.0'",
+            "href": "/Browse/Trees/75027/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/75027/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea sitchensis",
+          "Sitka Spruce",
+          "138.8'",
+          "194''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea sitchensis",
+            "href": "/Browse/Sites/22040/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "Sitka Spruce",
+            "href": "/Browse/Sites/22040/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "138.8'",
+            "href": "/Browse/Trees/75022/Details"
+          },
+          {
+            "text": "194''",
+            "href": "/Browse/Trees/75023/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga heterophylla",
+          "Western Hemlock",
+          "128.8'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga heterophylla",
+            "href": "/Browse/Sites/22040/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "Western Hemlock",
+            "href": "/Browse/Sites/22040/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "128.8'",
+            "href": "/Browse/Trees/75024/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/75026/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "58 18.288, -134 40.168",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Forest",
+      "County": "Juneau"
+    },
+    "state": {
+      "text": "Alaska (US)",
+      "href": "/Browse/States/62/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

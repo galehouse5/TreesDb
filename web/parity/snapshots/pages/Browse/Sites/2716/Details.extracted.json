@@ -1,0 +1,297 @@
+{
+  "siteId": 2716,
+  "summary": {
+    "Name": "Chapman State Park",
+    "RHI5": "122.56",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.02",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "02/01/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "This forest comprises 2,200 acres. Trees were measured near Champman's Landing"
+  },
+  "visits": [
+    {
+      "visited": "02/01/2008",
+      "visitors": "Darian Copiz",
+      "tripReportUrl": "(none)",
+      "comments": "This forest comprises 2,200 acres. Trees were measured near Champman's Landing"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "126.5'",
+          "117''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/2716/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/2716/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "126.5'",
+            "href": "/Browse/Trees/45337/Details"
+          },
+          {
+            "text": "117''",
+            "href": "/Browse/Trees/45338/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "114.1'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/2716/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/2716/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "114.1'",
+            "href": "/Browse/Trees/45339/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/45339/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "108.7'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/2716/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/2716/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "108.7'",
+            "href": "/Browse/Trees/45340/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/45340/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "120.5'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/2716/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/2716/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "120.5'",
+            "href": "/Browse/Trees/45341/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/45342/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "133.0'",
+          "209''",
+          "60.0'"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/2716/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/2716/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/45344/Details"
+          },
+          {
+            "text": "209''",
+            "href": "/Browse/Trees/45343/Details"
+          },
+          {
+            "text": "60.0'",
+            "href": "/Browse/Trees/45343/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "118.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/2716/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/2716/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "118.7'",
+            "href": "/Browse/Trees/45345/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus muehlenbergii",
+          "Chinkapin Oak",
+          "90.0'",
+          "153''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus muehlenbergii",
+            "href": "/Browse/Sites/2716/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "Chinkapin Oak",
+            "href": "/Browse/Sites/2716/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/45346/Details"
+          },
+          {
+            "text": "153''",
+            "href": "/Browse/Trees/45346/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sassafras albidum",
+          "Sassafras",
+          "106.5'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sassafras albidum",
+            "href": "/Browse/Sites/2716/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "Sassafras",
+            "href": "/Browse/Sites/2716/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "106.5'",
+            "href": "/Browse/Trees/45347/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/45347/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 36.904, -077 06.960",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Charles"
+    },
+    "state": {
+      "text": "Maryland (US)",
+      "href": "/Browse/States/18/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

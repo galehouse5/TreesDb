@@ -1,0 +1,377 @@
+{
+  "siteId": 42240,
+  "summary": {
+    "Name": "West Virginia Single Tree Sites",
+    "RHI5": "145.62",
+    "RHI10": "137.06",
+    "RHI20": "126.25",
+    "RGI5": "24.14",
+    "RGI10": "22.27",
+    "RGI20": "20.29",
+    "Trees measured": "209",
+    "Last measurement date": "01/01/1963",
+    "Ownership contact": "(no data)",
+    "General comments": "Wood County is listed separately. Most measuremens made before 2010 do not include height because the the methods used from 1963 thrue 2009 were very inaccurate."
+  },
+  "visits": [
+    {
+      "visited": "01/01/1963",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "Wood County is listed separately. Most measuremens made before 2010 do not include height because the the methods used from 1963 thrue 2009 were very inaccurate."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "85.0'",
+          "66''",
+          "33.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/Sites/42240/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/42240/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/313161/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/313161/Details"
+          },
+          {
+            "text": "33.0'",
+            "href": "/Browse/Trees/313161/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies fraseri",
+          "Fraser Fir",
+          "39.2'",
+          "36''",
+          "27.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies fraseri",
+            "href": "/Browse/Sites/42240/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "Fraser Fir",
+            "href": "/Browse/Sites/42240/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "39.2'",
+            "href": "/Browse/Trees/313267/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/313217/Details"
+          },
+          {
+            "text": "27.0'",
+            "href": "/Browse/Trees/313217/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies procera",
+          "Noble Fir",
+          "72.0'",
+          "84''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies procera",
+            "href": "/Browse/Sites/42240/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "Noble Fir",
+            "href": "/Browse/Sites/42240/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/313205/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/313205/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/313205/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer griseum",
+          "Paperbark Maple",
+          "24.0'",
+          "46''",
+          "21.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer griseum",
+            "href": "/Browse/Sites/42240/Species/Acer%20griseum%20(Paperbark%20Maple)/Details"
+          },
+          {
+            "text": "Paperbark Maple",
+            "href": "/Browse/Sites/42240/Species/Acer%20griseum%20(Paperbark%20Maple)/Details"
+          },
+          {
+            "text": "24.0'",
+            "href": "/Browse/Trees/313227/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/313227/Details"
+          },
+          {
+            "text": "21.0'",
+            "href": "/Browse/Trees/313227/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "67.6'",
+          "154''",
+          "88.9'"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/Sites/42240/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/42240/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "67.6'",
+            "href": "/Browse/Trees/313146/Details"
+          },
+          {
+            "text": "154''",
+            "href": "/Browse/Trees/313208/Details"
+          },
+          {
+            "text": "88.9'",
+            "href": "/Browse/Trees/313146/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "86.0'",
+          "163''",
+          "84.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/Sites/42240/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/Sites/42240/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "86.0'",
+            "href": "/Browse/Trees/313062/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/313062/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/313062/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer palmatum",
+          "Japanese Maple",
+          "-",
+          "56''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer palmatum",
+            "href": "/Browse/Sites/42240/Species/Acer%20palmatum%20(Japanese%20Maple)/Details"
+          },
+          {
+            "text": "Japanese Maple",
+            "href": "/Browse/Sites/42240/Species/Acer%20palmatum%20(Japanese%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/313188/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/313188/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer pseudoplatanus",
+          "Sycamore Maple",
+          "86.0'",
+          "67''",
+          "44.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer pseudoplatanus",
+            "href": "/Browse/Sites/42240/Species/Acer%20pseudoplatanus%20(Sycamore%20Maple)/Details"
+          },
+          {
+            "text": "Sycamore Maple",
+            "href": "/Browse/Sites/42240/Species/Acer%20pseudoplatanus%20(Sycamore%20Maple)/Details"
+          },
+          {
+            "text": "86.0'",
+            "href": "/Browse/Trees/313228/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/313228/Details"
+          },
+          {
+            "text": "44.0'",
+            "href": "/Browse/Trees/313228/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. trilobum",
+          "Red Maple",
+          "71.7'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. trilobum",
+            "href": "/Browse/Sites/42240/Species/Acer%20rubrum%20var.%20trilobum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/42240/Species/Acer%20rubrum%20var.%20trilobum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "71.7'",
+            "href": "/Browse/Trees/313093/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/313093/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "101.7'",
+          "287''",
+          "77.3'"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/42240/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/42240/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "101.7'",
+            "href": "/Browse/Trees/313268/Details"
+          },
+          {
+            "text": "287''",
+            "href": "/Browse/Trees/313268/Details"
+          },
+          {
+            "text": "77.3'",
+            "href": "/Browse/Trees/313268/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 123 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "38 37.657, -080 04.733",
+    "coordinatesKind": "calculated",
+    "rows": {
+      "Ownership type": "Private & Publc",
+      "County": "54 Counties"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

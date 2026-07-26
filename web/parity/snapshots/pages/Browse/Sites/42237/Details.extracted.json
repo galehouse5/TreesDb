@@ -1,0 +1,350 @@
+{
+  "siteId": 42237,
+  "summary": {
+    "Name": "David Crockett State Park",
+    "RHI5": "137.16",
+    "RHI10": "132.70",
+    "RHI20": "126.95",
+    "RGI5": "9.78",
+    "RGI10": "8.95",
+    "RGI20": "7.47",
+    "Trees measured": "79",
+    "Last measurement date": "11/18/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/18/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. schneckii",
+          "Sugar Maple",
+          "109.4'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. schneckii",
+            "href": "/Browse/Sites/42237/Species/Acer%20saccharum%20var.%20schneckii%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42237/Species/Acer%20saccharum%20var.%20schneckii%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "109.4'",
+            "href": "/Browse/Trees/312632/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/312632/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus serrulata",
+          "Hazel Alder",
+          "17.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus serrulata",
+            "href": "/Browse/Sites/42237/Species/Alnus%20serrulata%20(Hazel%20Alder)/Details"
+          },
+          {
+            "text": "Hazel Alder",
+            "href": "/Browse/Sites/42237/Species/Alnus%20serrulata%20(Hazel%20Alder)/Details"
+          },
+          {
+            "text": "17.2'",
+            "href": "/Browse/Trees/312634/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. caroliniana",
+          "American Hornbeam",
+          "43.1'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. caroliniana",
+            "href": "/Browse/Sites/42237/Species/Carpinus%20caroliniana%20ssp.%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/42237/Species/Carpinus%20caroliniana%20ssp.%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "43.1'",
+            "href": "/Browse/Trees/312603/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/312603/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "127.4'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/42237/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/42237/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "127.4'",
+            "href": "/Browse/Trees/312599/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/312598/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "131.1'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/42237/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/42237/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "131.1'",
+            "href": "/Browse/Trees/312628/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/312596/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "119.0'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42237/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42237/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/312630/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/312593/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "128.3'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/42237/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/42237/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "128.3'",
+            "href": "/Browse/Trees/312626/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/312594/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "91.6'",
+          "35''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/42237/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/42237/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "91.6'",
+            "href": "/Browse/Trees/312608/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/312608/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "116.0'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/42237/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/42237/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "116.0'",
+            "href": "/Browse/Trees/312631/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/312631/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana var. biltmoreana",
+          "Biltmore Ash",
+          "114.8'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana var. biltmoreana",
+            "href": "/Browse/Sites/42237/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "Biltmore Ash",
+            "href": "/Browse/Sites/42237/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "114.8'",
+            "href": "/Browse/Trees/312576/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/312576/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 32 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 15.868, -087 21.705",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Lawrence"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

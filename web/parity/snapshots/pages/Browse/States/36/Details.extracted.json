@@ -1,0 +1,569 @@
+{
+  "stateId": 36,
+  "summary": {
+    "Name": "Pennsylvania",
+    "Code": "PA",
+    "RHI5": "161.64",
+    "RHI10": "154.20",
+    "RHI20": "146.03",
+    "RGI5": "24.20",
+    "RGI10": "23.00",
+    "RGI20": "21.29",
+    "Trees measured": "4657",
+    "Last measurement date": "12/02/2019"
+  },
+  "location": {
+    "Coordinates": "41 07.034, -077 36.317",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "102.7'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/States/36/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/States/36/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "102.7'",
+            "href": "/Browse/Trees/212109/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/212109/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies balsamea var. balsamea",
+          "Balsam Fir",
+          "91.8'",
+          "115''",
+          "38.2'"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea var. balsamea",
+            "href": "/Browse/States/36/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/States/36/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "91.8'",
+            "href": "/Browse/Trees/169009/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/169009/Details"
+          },
+          {
+            "text": "38.2'",
+            "href": "/Browse/Trees/169009/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies chinsiensis",
+          "Shensi Fir",
+          "70.0'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies chinsiensis",
+            "href": "/Browse/States/36/Species/Abies%20chinsiensis%20(Shensi%20Fir)/Details"
+          },
+          {
+            "text": "Shensi Fir",
+            "href": "/Browse/States/36/Species/Abies%20chinsiensis%20(Shensi%20Fir)/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/225108/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/225108/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "116.2'",
+          "120''",
+          "45.3'"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/States/36/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/36/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "116.2'",
+            "href": "/Browse/Trees/135982/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/169010/Details"
+          },
+          {
+            "text": "45.3'",
+            "href": "/Browse/Trees/169010/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies fargesii",
+          "Farges Fir",
+          "57.0'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies fargesii",
+            "href": "/Browse/States/36/Species/Abies%20fargesii%20(Farges%20Fir)/Details"
+          },
+          {
+            "text": "Farges Fir",
+            "href": "/Browse/States/36/Species/Abies%20fargesii%20(Farges%20Fir)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/225106/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/225106/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies firma",
+          "Momi Fir",
+          "70.8'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies firma",
+            "href": "/Browse/States/36/Species/Abies%20firma%20(Momi%20Fir)/Details"
+          },
+          {
+            "text": "Momi Fir",
+            "href": "/Browse/States/36/Species/Abies%20firma%20(Momi%20Fir)/Details"
+          },
+          {
+            "text": "70.8'",
+            "href": "/Browse/Trees/225107/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/225107/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies holophylla",
+          "Manchurian Fir",
+          "24.0'",
+          "24''",
+          "25.2'"
+        ],
+        "links": [
+          {
+            "text": "Abies holophylla",
+            "href": "/Browse/States/36/Species/Abies%20holophylla%20(Manchurian%20Fir)/Details"
+          },
+          {
+            "text": "Manchurian Fir",
+            "href": "/Browse/States/36/Species/Abies%20holophylla%20(Manchurian%20Fir)/Details"
+          },
+          {
+            "text": "24.0'",
+            "href": "/Browse/Trees/225109/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/225109/Details"
+          },
+          {
+            "text": "25.2'",
+            "href": "/Browse/Trees/225109/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies nordmanniana",
+          "Nordmann Fir",
+          "91.8'",
+          "138''",
+          "39.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies nordmanniana",
+            "href": "/Browse/States/36/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "Nordmann Fir",
+            "href": "/Browse/States/36/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "91.8'",
+            "href": "/Browse/Trees/119541/Details"
+          },
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/134443/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/134443/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies spp.",
+          "Fir",
+          "81.4'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies spp.",
+            "href": "/Browse/States/36/Species/Abies%20spp.%20(Fir)/Details"
+          },
+          {
+            "text": "Fir",
+            "href": "/Browse/States/36/Species/Abies%20spp.%20(Fir)/Details"
+          },
+          {
+            "text": "81.4'",
+            "href": "/Browse/Trees/243243/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/243243/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer davidii",
+          "Father David's Maple",
+          "58.7'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer davidii",
+            "href": "/Browse/States/36/Species/Acer%20davidii%20(Father%20David's%20Maple)/Details"
+          },
+          {
+            "text": "Father David's Maple",
+            "href": "/Browse/States/36/Species/Acer%20davidii%20(Father%20David's%20Maple)/Details"
+          },
+          {
+            "text": "58.7'",
+            "href": "/Browse/Trees/243241/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/243241/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 206 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Airdrie Forest Preserve",
+          "129.76",
+          "122.05",
+          "11.28",
+          "9.35"
+        ],
+        "links": [
+          {
+            "text": "Airdrie Forest Preserve",
+            "href": "/Browse/Sites/38514/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alan Seeger Natural Area",
+          "125.84",
+          "112.28",
+          "9.82",
+          "8.04"
+        ],
+        "links": [
+          {
+            "text": "Alan Seeger Natural Area",
+            "href": "/Browse/Sites/38114/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Allegheny College",
+          "114.02",
+          "105.06",
+          "12.37",
+          "9.00"
+        ],
+        "links": [
+          {
+            "text": "Allegheny College",
+            "href": "/Browse/Sites/39164/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Along Great Gorge Trail",
+          "125.54",
+          "116.44",
+          "9.80",
+          "8.12"
+        ],
+        "links": [
+          {
+            "text": "Along Great Gorge Trail",
+            "href": "/Browse/Sites/24279/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Anders Run Natural Area",
+          "132.74",
+          "124.05",
+          "14.33",
+          "12.43"
+        ],
+        "links": [
+          {
+            "text": "Anders Run Natural Area",
+            "href": "/Browse/Sites/32605/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Andruss Island",
+          "118.56",
+          "106.84",
+          "10.47",
+          "9.06"
+        ],
+        "links": [
+          {
+            "text": "Andruss Island",
+            "href": "/Browse/Sites/38513/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Appalachian Trail At Delaware Water Gap NRA",
+          "105.30",
+          "-",
+          "10.57",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Appalachian Trail At Delaware Water Gap NRA",
+            "href": "/Browse/Sites/38083/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Baker Island",
+          "110.08",
+          "86.49",
+          "11.10",
+          "9.31"
+        ],
+        "links": [
+          {
+            "text": "Baker Island",
+            "href": "/Browse/Sites/31594/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Barclay Square",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Barclay Square",
+            "href": "/Browse/Sites/437/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bear Meadows Natural Area",
+          "99.78",
+          "93.72",
+          "9.04",
+          "7.62"
+        ],
+        "links": [
+          {
+            "text": "Bear Meadows Natural Area",
+            "href": "/Browse/Sites/39185/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 155 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

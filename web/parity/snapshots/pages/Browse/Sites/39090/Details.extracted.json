@@ -1,0 +1,104 @@
+{
+  "siteId": 39090,
+  "summary": {
+    "Name": "Girard Memorial Tamarack Grove",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "07/21/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/21/2018",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Larix occidentalis",
+          "Western Larch",
+          "169.8'",
+          "280''",
+          "38.0'"
+        ],
+        "links": [
+          {
+            "text": "Larix occidentalis",
+            "href": "/Browse/Sites/39090/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "Western Larch",
+            "href": "/Browse/Sites/39090/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "169.8'",
+            "href": "/Browse/Trees/164454/Details"
+          },
+          {
+            "text": "280''",
+            "href": "/Browse/Trees/164460/Details"
+          },
+          {
+            "text": "38.0'",
+            "href": "/Browse/Trees/164460/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "47 11.062, -113 31.247",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Missoula"
+    },
+    "state": {
+      "text": "Montana (US)",
+      "href": "/Browse/States/24/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

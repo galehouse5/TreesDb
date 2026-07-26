@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Prunus spp.",
+  "commonName": "Cherry",
+  "global": {
+    "maxHeight": {
+      "text": "33.44 m",
+      "href": "/Browse/Trees/263636/Details"
+    },
+    "maxGirth": {
+      "text": "157 cm",
+      "href": "/Browse/Trees/263636/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "33.44 m",
+          "157 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "33.44 m",
+            "href": "/Browse/Trees/263636/Details"
+          },
+          {
+            "text": "157 cm",
+            "href": "/Browse/Trees/263636/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

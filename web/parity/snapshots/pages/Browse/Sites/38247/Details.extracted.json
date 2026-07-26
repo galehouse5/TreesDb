@@ -1,0 +1,362 @@
+{
+  "siteId": 38247,
+  "summary": {
+    "Name": "Rocky Run - Tyler Arboretum",
+    "RHI5": "129.98",
+    "RHI10": "125.07",
+    "RHI20": "(not enough data)",
+    "RGI5": "13.10",
+    "RGI10": "11.31",
+    "RGI20": "(not enough data)",
+    "Trees measured": "21",
+    "Last measurement date": "04/02/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/02/2008",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/tyler_arboretum_pa.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/17/2006",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/tyler/tyler_arboretum.htm",
+      "comments": "Borders Ridley Creek State Park"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "70.2'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/38247/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/38247/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "70.2'",
+            "href": "/Browse/Trees/135640/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/135640/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "126.8'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/38247/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/38247/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "126.8'",
+            "href": "/Browse/Trees/135634/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/135634/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "113.3'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/38247/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/38247/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "113.3'",
+            "href": "/Browse/Trees/135638/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/135638/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya laciniosa",
+          "Shellbark Hickory",
+          "126.1'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya laciniosa",
+            "href": "/Browse/Sites/38247/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shellbark Hickory",
+            "href": "/Browse/Sites/38247/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "126.1'",
+            "href": "/Browse/Trees/135631/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/135630/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "126.1'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/38247/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/38247/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "126.1'",
+            "href": "/Browse/Trees/135629/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/135629/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "124.3'",
+          "86''",
+          "39.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/38247/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/38247/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "124.3'",
+            "href": "/Browse/Trees/166979/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/166979/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/166979/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "116.9'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38247/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38247/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "116.9'",
+            "href": "/Browse/Trees/135636/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/135636/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "125.3'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38247/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38247/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "125.3'",
+            "href": "/Browse/Trees/166980/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/135632/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis vernalis",
+          "Ozark Witchhazel",
+          "27.9'",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis vernalis",
+            "href": "/Browse/Sites/38247/Species/Hamamelis%20vernalis%20(Ozark%20Witchhazel)/Details"
+          },
+          {
+            "text": "Ozark Witchhazel",
+            "href": "/Browse/Sites/38247/Species/Hamamelis%20vernalis%20(Ozark%20Witchhazel)/Details"
+          },
+          {
+            "text": "27.9'",
+            "href": "/Browse/Trees/135641/Details"
+          },
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/135641/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "141.5'",
+          "161''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38247/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38247/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "141.5'",
+            "href": "/Browse/Trees/135628/Details"
+          },
+          {
+            "text": "161''",
+            "href": "/Browse/Trees/135628/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 56.083, -075 26.496",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Delaware"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

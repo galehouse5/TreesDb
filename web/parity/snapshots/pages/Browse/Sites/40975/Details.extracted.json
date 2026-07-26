@@ -1,0 +1,157 @@
+{
+  "siteId": 40975,
+  "summary": {
+    "Name": "Mt Pleasant Research Natural Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "02/17/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "1416 acres in research area. Plumas National Forest 1,146,000 acres. Near Bucks Lake"
+  },
+  "visits": [
+    {
+      "visited": "02/17/2016",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "1416 acres in research area. Plumas National Forest 1,146,000 acres. Near Bucks Lake"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies lowiana",
+          "Sierra White Fir",
+          "173.6'",
+          "211''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lowiana",
+            "href": "/Browse/Sites/40975/Species/Abies%20lowiana%20(Sierra%20White%20Fir)/Details"
+          },
+          {
+            "text": "Sierra White Fir",
+            "href": "/Browse/Sites/40975/Species/Abies%20lowiana%20(Sierra%20White%20Fir)/Details"
+          },
+          {
+            "text": "173.6'",
+            "href": "/Browse/Trees/241858/Details"
+          },
+          {
+            "text": "211''",
+            "href": "/Browse/Trees/241858/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies magnifica",
+          "California Red Fir",
+          "213.8'",
+          "229''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies magnifica",
+            "href": "/Browse/Sites/40975/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+          },
+          {
+            "text": "California Red Fir",
+            "href": "/Browse/Sites/40975/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+          },
+          {
+            "text": "213.8'",
+            "href": "/Browse/Trees/241866/Details"
+          },
+          {
+            "text": "229''",
+            "href": "/Browse/Trees/241861/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. murrayana",
+          "Sierra Lodgepole Pine",
+          "150.5'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. murrayana",
+            "href": "/Browse/Sites/40975/Species/Pinus%20contorta%20var.%20murrayana%20(Sierra%20Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Sierra Lodgepole Pine",
+            "href": "/Browse/Sites/40975/Species/Pinus%20contorta%20var.%20murrayana%20(Sierra%20Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "150.5'",
+            "href": "/Browse/Trees/241869/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/241868/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 53.130, -121 08.943",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Plumas"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

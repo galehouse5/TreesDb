@@ -1,0 +1,359 @@
+{
+  "siteId": 24354,
+  "summary": {
+    "Name": "Erie Bluffs State Park(Formerly Coho Property)",
+    "RHI5": "125.48",
+    "RHI10": "116.28",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.43",
+    "RGI10": "9.18",
+    "RGI20": "(not enough data)",
+    "Trees measured": "63",
+    "Last measurement date": "09/08/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees from trip posted 9/8/2006"
+  },
+  "visits": [
+    {
+      "visited": "09/08/2006",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/erie_bluffs_state_park.htm",
+      "comments": "Trees from trip posted 9/8/2006"
+    },
+    {
+      "visited": "09/17/2003",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/elk_creek.htm",
+      "comments": "Borders Lake Erie to North and Elk Creek to East. Also includes trees from posting if 9/17/2003, 10/4/03, 1/23/2004, 2/6/2004"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "117.1'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/24354/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/24354/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "117.1'",
+            "href": "/Browse/Trees/214286/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/120310/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "75.1'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/24354/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/24354/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "75.1'",
+            "href": "/Browse/Trees/120318/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/120318/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "93.1'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/24354/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/24354/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "93.1'",
+            "href": "/Browse/Trees/120297/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/120296/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "103.4'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/24354/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/24354/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "103.4'",
+            "href": "/Browse/Trees/214290/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/214290/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "111.0'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/24354/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/24354/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/214291/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/120302/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "120.5'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/24354/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/24354/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "120.5'",
+            "href": "/Browse/Trees/120333/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/120299/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "104.6'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/24354/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/24354/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "104.6'",
+            "href": "/Browse/Trees/120294/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/120294/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "140.3'",
+          "181''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/24354/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/24354/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "140.3'",
+            "href": "/Browse/Trees/120331/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/120282/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "64.5'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/24354/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/24354/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "64.5'",
+            "href": "/Browse/Trees/120295/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/120295/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "126.1'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/24354/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/24354/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "126.1'",
+            "href": "/Browse/Trees/214282/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/214282/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 01.252, -080 22.477",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Erie"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

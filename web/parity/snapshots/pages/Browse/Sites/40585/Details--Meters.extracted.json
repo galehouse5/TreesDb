@@ -1,0 +1,182 @@
+{
+  "siteId": 40585,
+  "summary": {
+    "Name": "Custer State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "06/15/1998",
+    "Ownership contact": "Custer State Park 13400 US 16A Custer, SD",
+    "General comments": "71,000 acres"
+  },
+  "visits": [
+    {
+      "visited": "06/15/1998",
+      "visitors": "Mark Rouw",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "71,000 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "-",
+          "157 cm",
+          "10.21 m"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/Sites/40585/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/Sites/40585/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          null,
+          {
+            "text": "157 cm",
+            "href": "/Browse/Trees/233577/Details"
+          },
+          {
+            "text": "10.21 m",
+            "href": "/Browse/Trees/233577/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus chrysocarpa",
+          "Fireberry Hawthorn",
+          "-",
+          "53 cm",
+          "5.18 m"
+        ],
+        "links": [
+          {
+            "text": "Crataegus chrysocarpa",
+            "href": "/Browse/Sites/40585/Species/Crataegus%20chrysocarpa%20(Fireberry%20Hawthorn)/Details"
+          },
+          {
+            "text": "Fireberry Hawthorn",
+            "href": "/Browse/Sites/40585/Species/Crataegus%20chrysocarpa%20(Fireberry%20Hawthorn)/Details"
+          },
+          null,
+          {
+            "text": "53 cm",
+            "href": "/Browse/Trees/233575/Details"
+          },
+          {
+            "text": "5.18 m",
+            "href": "/Browse/Trees/233575/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "-",
+          "150 cm",
+          "8.69 m"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/40585/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/40585/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          null,
+          {
+            "text": "150 cm",
+            "href": "/Browse/Trees/233578/Details"
+          },
+          {
+            "text": "8.69 m",
+            "href": "/Browse/Trees/233578/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Prunus americana",
+          "American Plum",
+          "-",
+          "71 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus americana",
+            "href": "/Browse/Sites/40585/Species/Prunus%20americana%20(American%20Plum)/Details"
+          },
+          {
+            "text": "American Plum",
+            "href": "/Browse/Sites/40585/Species/Prunus%20americana%20(American%20Plum)/Details"
+          },
+          null,
+          {
+            "text": "71 cm",
+            "href": "/Browse/Trees/233576/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 46.308, -103 23.776",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Custer"
+    },
+    "state": {
+      "text": "South Dakota (US)",
+      "href": "/Browse/States/39/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

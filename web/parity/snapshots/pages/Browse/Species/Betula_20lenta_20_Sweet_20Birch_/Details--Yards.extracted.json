@@ -1,0 +1,280 @@
+{
+  "botanicalName": "Betula lenta",
+  "commonName": "Sweet Birch",
+  "global": {
+    "maxHeight": {
+      "text": "40.43 yd",
+      "href": "/Browse/Trees/260179/Details"
+    },
+    "maxGirth": {
+      "text": "138''",
+      "href": "/Browse/Trees/229600/Details"
+    },
+    "maxCrownSpread": {
+      "text": "25.17 yd",
+      "href": "/Browse/Trees/313248/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Connecticut",
+          "26.67 yd",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "26.67 yd",
+            "href": "/Browse/Trees/243158/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/243314/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "30.00 yd",
+          "86''",
+          "14.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "30.00 yd",
+            "href": "/Browse/Trees/140159/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/140159/Details"
+          },
+          {
+            "text": "14.67 yd",
+            "href": "/Browse/Trees/140159/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "37.80 yd",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "37.80 yd",
+            "href": "/Browse/Trees/249290/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/234807/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "30.83 yd",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "30.83 yd",
+            "href": "/Browse/Trees/232326/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/232326/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "35.80 yd",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "35.80 yd",
+            "href": "/Browse/Trees/168105/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/231987/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "36.10 yd",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "36.10 yd",
+            "href": "/Browse/Trees/236099/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/255998/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "40.43 yd",
+          "130''",
+          "14.43 yd"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "40.43 yd",
+            "href": "/Browse/Trees/260179/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/185484/Details"
+          },
+          {
+            "text": "14.43 yd",
+            "href": "/Browse/Trees/260179/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "38.63 yd",
+          "138''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "38.63 yd",
+            "href": "/Browse/Trees/229650/Details"
+          },
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/229600/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "34.33 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "34.33 yd",
+            "href": "/Browse/Trees/162515/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "38.47 yd",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "38.47 yd",
+            "href": "/Browse/Trees/173665/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/119305/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Acacia greggii",
+  "commonName": "Catclaw Acacia",
+  "global": {
+    "maxHeight": {
+      "text": "23.3'",
+      "href": "/Browse/Trees/159287/Details"
+    },
+    "maxGirth": {
+      "text": "25''",
+      "href": "/Browse/Trees/159287/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "23.3'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "23.3'",
+            "href": "/Browse/Trees/159287/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/159287/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Puebla",
+          "19.0'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Puebla",
+            "href": "/Browse/States/91/Details"
+          },
+          {
+            "text": "19.0'",
+            "href": "/Browse/Trees/286954/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/286954/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

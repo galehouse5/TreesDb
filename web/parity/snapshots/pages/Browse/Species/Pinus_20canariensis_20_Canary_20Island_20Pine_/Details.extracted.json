@@ -1,0 +1,59 @@
+{
+  "botanicalName": "Pinus canariensis",
+  "commonName": "Canary Island Pine",
+  "global": {
+    "maxHeight": {
+      "text": "187.0'",
+      "href": "/Browse/Trees/283178/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Canary Islands",
+          "187.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Canary Islands",
+            "href": "/Browse/States/127/Details"
+          },
+          {
+            "text": "187.0'",
+            "href": "/Browse/Trees/283178/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

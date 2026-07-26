@@ -1,0 +1,353 @@
+{
+  "siteId": 42383,
+  "summary": {
+    "Name": "Marshall Forest",
+    "RHI5": "134.88",
+    "RHI10": "115.57",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.97",
+    "RGI10": "6.50",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "11/27/2025",
+    "Ownership contact": "Nature Conservancy",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/27/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "95.3'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42383/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42383/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "95.3'",
+            "href": "/Browse/Trees/322921/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/322921/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya pallida",
+          "Sand Hickory",
+          "98.1'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya pallida",
+            "href": "/Browse/Sites/42383/Species/Carya%20pallida%20(Sand%20Hickory)/Details"
+          },
+          {
+            "text": "Sand Hickory",
+            "href": "/Browse/Sites/42383/Species/Carya%20pallida%20(Sand%20Hickory)/Details"
+          },
+          {
+            "text": "98.1'",
+            "href": "/Browse/Trees/322919/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/322919/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "83.2'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/42383/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/42383/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "83.2'",
+            "href": "/Browse/Trees/322917/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/322917/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "129.0'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/42383/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/42383/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "129.0'",
+            "href": "/Browse/Trees/322915/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/322915/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "146.5'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/42383/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/42383/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "146.5'",
+            "href": "/Browse/Trees/322916/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/322916/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "132.3'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/42383/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/42383/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "132.3'",
+            "href": "/Browse/Trees/322907/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/322904/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "137.1'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/42383/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/42383/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "137.1'",
+            "href": "/Browse/Trees/322912/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/322912/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus falcata",
+          "Southern Red Oak",
+          "88.1'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus falcata",
+            "href": "/Browse/Sites/42383/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Southern Red Oak",
+            "href": "/Browse/Sites/42383/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "88.1'",
+            "href": "/Browse/Trees/322911/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/322911/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus marilandica var. marilandica",
+          "Blackjack Oak",
+          "55.1'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus marilandica var. marilandica",
+            "href": "/Browse/Sites/42383/Species/Quercus%20marilandica%20var.%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "Blackjack Oak",
+            "href": "/Browse/Sites/42383/Species/Quercus%20marilandica%20var.%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "55.1'",
+            "href": "/Browse/Trees/322908/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/322908/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "116.6'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/42383/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/42383/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "116.6'",
+            "href": "/Browse/Trees/322913/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/322913/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 14.907, -085 11.803",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Floyd"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

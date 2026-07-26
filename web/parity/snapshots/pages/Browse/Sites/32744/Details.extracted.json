@@ -1,0 +1,359 @@
+{
+  "siteId": 32744,
+  "summary": {
+    "Name": "Marilla Reservoir",
+    "RHI5": "121.92",
+    "RHI10": "112.11",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.72",
+    "RGI10": "8.97",
+    "RGI20": "(not enough data)",
+    "Trees measured": "35",
+    "Last measurement date": "10/15/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were also measured 9/2009."
+  },
+  "visits": [
+    {
+      "visited": "10/15/2009",
+      "visitors": "Dale Luthringer, John Stoneman, and Patrick Connelly",
+      "tripReportUrl": "(none)",
+      "comments": "Trees were also measured 9/2009."
+    },
+    {
+      "visited": "04/03/2006",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "101.9'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/32744/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/32744/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "101.9'",
+            "href": "/Browse/Trees/119008/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/119239/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "114.1'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/32744/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/32744/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "114.1'",
+            "href": "/Browse/Trees/119004/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/119241/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "86.6'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/32744/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/32744/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "86.6'",
+            "href": "/Browse/Trees/119002/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/119002/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "102.1'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/32744/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/32744/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "102.1'",
+            "href": "/Browse/Trees/119007/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/119007/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "114.1'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/32744/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/32744/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "114.1'",
+            "href": "/Browse/Trees/119003/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/119242/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "97.5'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/32744/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/32744/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "97.5'",
+            "href": "/Browse/Trees/119010/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/119010/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "117.5'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/32744/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/32744/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "117.5'",
+            "href": "/Browse/Trees/119237/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/119236/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "150.0'",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/32744/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/32744/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "150.0'",
+            "href": "/Browse/Trees/118996/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/118995/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "113.9'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/32744/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/32744/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "113.9'",
+            "href": "/Browse/Trees/119006/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/119006/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "96.1'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/32744/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/32744/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "96.1'",
+            "href": "/Browse/Trees/119011/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/119011/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 57.373, -078 44.637",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - sate",
+      "County": "Mckean"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,353 @@
+{
+  "siteId": 39066,
+  "summary": {
+    "Name": "Missouri Botanical Garden",
+    "RHI5": "76.06",
+    "RHI10": "55.76",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.96",
+    "RGI10": "6.98",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "05/20/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/20/2018",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "96.9'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/39066/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/39066/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "96.9'",
+            "href": "/Browse/Trees/164195/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/164195/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus crus-galli",
+          "Cockspur Hawthorn",
+          "21.3'",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus crus-galli",
+            "href": "/Browse/Sites/39066/Species/Crataegus%20crus-galli%20(Cockspur%20Hawthorn)/Details"
+          },
+          {
+            "text": "Cockspur Hawthorn",
+            "href": "/Browse/Sites/39066/Species/Crataegus%20crus-galli%20(Cockspur%20Hawthorn)/Details"
+          },
+          {
+            "text": "21.3'",
+            "href": "/Browse/Trees/164194/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/164194/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex decidua",
+          "Possumhaw",
+          "21.4'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex decidua",
+            "href": "/Browse/Sites/39066/Species/Ilex%20decidua%20(Possumhaw)/Details"
+          },
+          {
+            "text": "Possumhaw",
+            "href": "/Browse/Sites/39066/Species/Ilex%20decidua%20(Possumhaw)/Details"
+          },
+          {
+            "text": "21.4'",
+            "href": "/Browse/Trees/164193/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/164193/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pterocarya x rehderiana",
+          "Wingnut",
+          "58.2'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pterocarya x rehderiana",
+            "href": "/Browse/Sites/39066/Species/Pterocarya%20x%20rehderiana%20(Wingnut)/Details"
+          },
+          {
+            "text": "Wingnut",
+            "href": "/Browse/Sites/39066/Species/Pterocarya%20x%20rehderiana%20(Wingnut)/Details"
+          },
+          {
+            "text": "58.2'",
+            "href": "/Browse/Trees/164188/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/164188/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lyrata",
+          "Overcup Oak",
+          "69.5'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lyrata",
+            "href": "/Browse/Sites/39066/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "Overcup Oak",
+            "href": "/Browse/Sites/39066/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "69.5'",
+            "href": "/Browse/Trees/164187/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/164187/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus shumardii",
+          "Shumard's Oak",
+          "76.6'",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus shumardii",
+            "href": "/Browse/Sites/39066/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+          },
+          {
+            "text": "Shumard's Oak",
+            "href": "/Browse/Sites/39066/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+          },
+          {
+            "text": "76.6'",
+            "href": "/Browse/Trees/164192/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/164192/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sapindus saponaria var. drummondii",
+          "Western Soapberry",
+          "56.9'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sapindus saponaria var. drummondii",
+            "href": "/Browse/Sites/39066/Species/Sapindus%20saponaria%20var.%20drummondii%20(Western%20Soapberry)/Details"
+          },
+          {
+            "text": "Western Soapberry",
+            "href": "/Browse/Sites/39066/Species/Sapindus%20saponaria%20var.%20drummondii%20(Western%20Soapberry)/Details"
+          },
+          {
+            "text": "56.9'",
+            "href": "/Browse/Trees/164191/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/164191/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "75.8'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/39066/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/39066/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "75.8'",
+            "href": "/Browse/Trees/164196/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/164196/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus parvifolia",
+          "Chinese Elm",
+          "61.5'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus parvifolia",
+            "href": "/Browse/Sites/39066/Species/Ulmus%20parvifolia%20(Chinese%20Elm)/Details"
+          },
+          {
+            "text": "Chinese Elm",
+            "href": "/Browse/Sites/39066/Species/Ulmus%20parvifolia%20(Chinese%20Elm)/Details"
+          },
+          {
+            "text": "61.5'",
+            "href": "/Browse/Trees/164189/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/164189/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Viburnum lentago",
+          "Nannyberry",
+          "19.5'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Viburnum lentago",
+            "href": "/Browse/Sites/39066/Species/Viburnum%20lentago%20(Nannyberry)/Details"
+          },
+          {
+            "text": "Nannyberry",
+            "href": "/Browse/Sites/39066/Species/Viburnum%20lentago%20(Nannyberry)/Details"
+          },
+          {
+            "text": "19.5'",
+            "href": "/Browse/Trees/164190/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/164190/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 36.965, -090 15.480",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "St. Louis"
+    },
+    "state": {
+      "text": "Missouri (US)",
+      "href": "/Browse/States/22/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

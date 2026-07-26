@@ -1,0 +1,291 @@
+{
+  "siteId": 40983,
+  "summary": {
+    "Name": "Colorado Single Tree Sites",
+    "RHI5": "114.38",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.90",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "13",
+    "Last measurement date": "07/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies lasiocarpa var. lasiocarpa",
+          "Subalpine Fir",
+          "97.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. lasiocarpa",
+            "href": "/Browse/Sites/40983/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/Sites/40983/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "97.4'",
+            "href": "/Browse/Trees/242522/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus osteosperma",
+          "Utah Juniper",
+          "-",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus osteosperma",
+            "href": "/Browse/Sites/40983/Species/Juniperus%20osteosperma%20(Utah%20Juniper)/Details"
+          },
+          {
+            "text": "Utah Juniper",
+            "href": "/Browse/Sites/40983/Species/Juniperus%20osteosperma%20(Utah%20Juniper)/Details"
+          },
+          null,
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/242520/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii var. engelmannii",
+          "Engelmann Spruce",
+          "72.1'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii var. engelmannii",
+            "href": "/Browse/Sites/40983/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/40983/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "72.1'",
+            "href": "/Browse/Trees/242521/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/242521/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "153.5'",
+          "150''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/Sites/40983/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/Sites/40983/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "153.5'",
+            "href": "/Browse/Trees/242523/Details"
+          },
+          {
+            "text": "150''",
+            "href": "/Browse/Trees/242523/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus angustifolia",
+          "Narrowleaf Cottonwood",
+          "-",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus angustifolia",
+            "href": "/Browse/Sites/40983/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "Narrowleaf Cottonwood",
+            "href": "/Browse/Sites/40983/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          null,
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/242519/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides ssp. wislizeni",
+          "Rio Grande Cottonwood",
+          "90.0'",
+          "290''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides ssp. wislizeni",
+            "href": "/Browse/Sites/40983/Species/Populus%20deltoides%20ssp.%20wislizeni%20(Rio%20Grande%20Cottonwood)/Details"
+          },
+          {
+            "text": "Rio Grande Cottonwood",
+            "href": "/Browse/Sites/40983/Species/Populus%20deltoides%20ssp.%20wislizeni%20(Rio%20Grande%20Cottonwood)/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/242527/Details"
+          },
+          {
+            "text": "290''",
+            "href": "/Browse/Trees/242527/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus grandidentata",
+          "Bigtooth Aspen",
+          "108.0'",
+          "90''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Populus grandidentata",
+            "href": "/Browse/Sites/40983/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "Bigtooth Aspen",
+            "href": "/Browse/Sites/40983/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/242529/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/242529/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/242529/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "123.0'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/40983/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/40983/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "123.0'",
+            "href": "/Browse/Trees/242528/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/242528/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 44.346, -104 59.082",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Private",
+      "County": "Denver"
+    },
+    "state": {
+      "text": "Colorado (US)",
+      "href": "/Browse/States/5/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

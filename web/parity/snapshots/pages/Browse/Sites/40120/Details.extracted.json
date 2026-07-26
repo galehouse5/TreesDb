@@ -1,0 +1,353 @@
+{
+  "siteId": 40120,
+  "summary": {
+    "Name": "Fuertes Bird Sanctuary",
+    "RHI5": "130.72",
+    "RHI10": "117.37",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.83",
+    "RGI10": "10.79",
+    "RGI20": "(not enough data)",
+    "Trees measured": "47",
+    "Last measurement date": "11/08/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "Part of Stewart Park, City of Ithaca, NY."
+  },
+  "visits": [
+    {
+      "visited": "11/08/2020",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Part of Stewart Park, City of Ithaca, NY."
+    },
+    {
+      "visited": "10/08/2014",
+      "visitors": "Tom Howard, Elijah Whitcomb, and Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "A part of Stewart Park which is a 177 acre park managed by the City of Ithaca, Renwick Wilds is adjacent to the Sanctuary. Trees were measured in a series of three visits from 6/13/2014, 7/9/2014; 8/8/2014"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer ×freemanii",
+          "Freeman Maple",
+          "133.1'",
+          "165''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer ×freemanii",
+            "href": "/Browse/Sites/40120/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "Freeman Maple",
+            "href": "/Browse/Sites/40120/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "133.1'",
+            "href": "/Browse/Trees/221043/Details"
+          },
+          {
+            "text": "165''",
+            "href": "/Browse/Trees/280409/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "119.3'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/40120/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/40120/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "119.3'",
+            "href": "/Browse/Trees/221039/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/221039/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "120.1'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/40120/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/40120/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "120.1'",
+            "href": "/Browse/Trees/221049/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/221049/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lindera benzoin",
+          "Northern Spicebush",
+          "26.1'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lindera benzoin",
+            "href": "/Browse/Sites/40120/Species/Lindera%20benzoin%20(Northern%20Spicebush)/Details"
+          },
+          {
+            "text": "Northern Spicebush",
+            "href": "/Browse/Sites/40120/Species/Lindera%20benzoin%20(Northern%20Spicebush)/Details"
+          },
+          {
+            "text": "26.1'",
+            "href": "/Browse/Trees/280431/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/280410/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "54.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/40120/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/40120/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "54.5'",
+            "href": "/Browse/Trees/221033/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "135.5'",
+          "194''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/40120/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/40120/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "135.5'",
+            "href": "/Browse/Trees/221041/Details"
+          },
+          {
+            "text": "194''",
+            "href": "/Browse/Trees/280422/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "132.4'",
+          "200''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/40120/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/40120/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "132.4'",
+            "href": "/Browse/Trees/280427/Details"
+          },
+          {
+            "text": "200''",
+            "href": "/Browse/Trees/280426/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides ssp. deltoides",
+          "Eastern Cottonwood",
+          "132.4'",
+          "200''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides ssp. deltoides",
+            "href": "/Browse/Sites/40120/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/40120/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "132.4'",
+            "href": "/Browse/Trees/221045/Details"
+          },
+          {
+            "text": "200''",
+            "href": "/Browse/Trees/221035/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus bicolor",
+          "Swamp White Oak",
+          "120.2'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus bicolor",
+            "href": "/Browse/Sites/40120/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "Swamp White Oak",
+            "href": "/Browse/Sites/40120/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "120.2'",
+            "href": "/Browse/Trees/221051/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/221051/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix ×sepulcralis",
+          "Weeping Willow",
+          "75.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix ×sepulcralis",
+            "href": "/Browse/Sites/40120/Species/Salix%20%C3%97sepulcralis%20(Weeping%20Willow)/Details"
+          },
+          {
+            "text": "Weeping Willow",
+            "href": "/Browse/Sites/40120/Species/Salix%20%C3%97sepulcralis%20(Weeping%20Willow)/Details"
+          },
+          {
+            "text": "75.6'",
+            "href": "/Browse/Trees/221050/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 27.564, -076 30.327",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Tompkins"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

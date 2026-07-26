@@ -1,0 +1,109 @@
+{
+  "botanicalName": "Cornus alternifolia",
+  "commonName": "Alternateleaf Dogwood",
+  "global": {
+    "maxHeight": {
+      "text": "29.8'",
+      "href": "/Browse/Trees/227730/Details"
+    },
+    "maxGirth": {
+      "text": "20''",
+      "href": "/Browse/Trees/227730/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "20.8'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "20.8'",
+            "href": "/Browse/Trees/234414/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/234414/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "29.8'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "29.8'",
+            "href": "/Browse/Trees/227730/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/227730/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "-",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          null,
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/237798/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

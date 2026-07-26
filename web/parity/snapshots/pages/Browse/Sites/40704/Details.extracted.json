@@ -1,0 +1,325 @@
+{
+  "siteId": 40704,
+  "summary": {
+    "Name": "Sunkhaze Meadows National Wildlife Refuge",
+    "RHI5": "89.84",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.38",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "14",
+    "Last measurement date": "11/15/2006",
+    "Ownership contact": "446 Main Road Milford, Maine",
+    "General comments": "11,446 Acres"
+  },
+  "visits": [
+    {
+      "visited": "11/15/2006",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/maine/sunkhaze_meadows_nwr.htm",
+      "comments": "11,446 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "68.3'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/Sites/40704/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/40704/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "68.3'",
+            "href": "/Browse/Trees/235316/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/235315/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "67.2'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/40704/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/40704/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "67.2'",
+            "href": "/Browse/Trees/235319/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/235319/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea mariana",
+          "Black Spruce",
+          "89.0'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana",
+            "href": "/Browse/Sites/40704/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/Sites/40704/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "89.0'",
+            "href": "/Browse/Trees/235323/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/235322/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "69.0'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/40704/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/40704/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "69.0'",
+            "href": "/Browse/Trees/235324/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/235324/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "95.4'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/40704/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/40704/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "95.4'",
+            "href": "/Browse/Trees/235321/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/235321/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "101.7'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40704/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40704/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "101.7'",
+            "href": "/Browse/Trees/235320/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/235320/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "78.1'",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/40704/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/40704/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "78.1'",
+            "href": "/Browse/Trees/235313/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/235312/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja occidentalis",
+          "Arborvitae",
+          "62.1'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja occidentalis",
+            "href": "/Browse/Sites/40704/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "Arborvitae",
+            "href": "/Browse/Sites/40704/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "62.1'",
+            "href": "/Browse/Trees/235325/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/235325/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "85.0'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40704/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40704/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/235318/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/235318/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 59.374, -068 38.024",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Penobscot"
+    },
+    "state": {
+      "text": "Maine (US)",
+      "href": "/Browse/States/19/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

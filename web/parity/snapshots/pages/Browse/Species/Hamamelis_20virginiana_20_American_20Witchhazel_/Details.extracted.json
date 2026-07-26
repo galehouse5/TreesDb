@@ -1,0 +1,228 @@
+{
+  "botanicalName": "Hamamelis virginiana",
+  "commonName": "American Witchhazel",
+  "global": {
+    "maxHeight": {
+      "text": "44.7'",
+      "href": "/Browse/Trees/136717/Details"
+    },
+    "maxGirth": {
+      "text": "26''",
+      "href": "/Browse/Trees/225120/Details"
+    },
+    "maxCrownSpread": {
+      "text": "20.5'",
+      "href": "/Browse/Trees/146745/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "28.7'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "28.7'",
+            "href": "/Browse/Trees/241620/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/241620/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "34.0'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "34.0'",
+            "href": "/Browse/Trees/142958/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/75453/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "44.4'",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "44.4'",
+            "href": "/Browse/Trees/234401/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/234401/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "44.6'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "44.6'",
+            "href": "/Browse/Trees/221141/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/323118/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "42.6'",
+          "26''",
+          "20.5'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "42.6'",
+            "href": "/Browse/Trees/222066/Details"
+          },
+          {
+            "text": "26''",
+            "href": "/Browse/Trees/225120/Details"
+          },
+          {
+            "text": "20.5'",
+            "href": "/Browse/Trees/146745/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "29.0'",
+          "10''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "29.0'",
+            "href": "/Browse/Trees/323543/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/323543/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "44.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "44.7'",
+            "href": "/Browse/Trees/136717/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "-",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          null,
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/291280/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

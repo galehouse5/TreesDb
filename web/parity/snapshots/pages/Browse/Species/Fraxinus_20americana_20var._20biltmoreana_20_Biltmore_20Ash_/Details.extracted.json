@@ -1,0 +1,178 @@
+{
+  "botanicalName": "Fraxinus americana var. biltmoreana",
+  "commonName": "Biltmore Ash",
+  "global": {
+    "maxHeight": {
+      "text": "150.4'",
+      "href": "/Browse/Trees/257629/Details"
+    },
+    "maxGirth": {
+      "text": "162''",
+      "href": "/Browse/Trees/321767/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "127.7'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "127.7'",
+            "href": "/Browse/Trees/315736/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/315736/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "147.0'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "147.0'",
+            "href": "/Browse/Trees/297332/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/297757/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "73.0'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "73.0'",
+            "href": "/Browse/Trees/226057/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/226057/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "124.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "124.3'",
+            "href": "/Browse/Trees/40174/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "150.4'",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "150.4'",
+            "href": "/Browse/Trees/257629/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/321767/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "134.0'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "134.0'",
+            "href": "/Browse/Trees/314407/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/314407/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

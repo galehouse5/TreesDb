@@ -1,0 +1,70 @@
+{
+  "treeId": 2367,
+  "botanicalName": {
+    "text": "Quercus alba",
+    "href": "/Browse/Sites/442/Species/Quercus%20alba%20(White%20Oak)/Details"
+  },
+  "commonName": {
+    "text": "White Oak",
+    "href": "/Browse/Sites/442/Species/Quercus%20alba%20(White%20Oak)/Details"
+  },
+  "details": {
+    "Height": "102.1'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "101''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "72.33",
+    "ENTSPTS": "859.34",
+    "TDI3": "(not enough data)",
+    "TDI2": "0.99",
+    "Champion points (abbreviated)": "203.10",
+    "Diameter": "32''",
+    "Conical volume": "191.9 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/03/2011",
+      "summary": {
+        "Height": "102.1'",
+        "Girth": "101''"
+      },
+      "details": {
+        "Botanical name": "Quercus alba",
+        "Common name": "White Oak",
+        "Height": "102.1'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "101''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "72.33",
+        "ENTSPTS": "859.34",
+        "TDI3": "(not enough data)",
+        "TDI2": "0.99",
+        "Champion points (abbreviated)": "203.10",
+        "Diameter": "32''",
+        "Conical volume": "191.9 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Steve Galehouse"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 13.076, -081 42.254",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Whipp's Ledges",
+      "href": "/Browse/Sites/442/Details"
+    },
+    "rows": {
+      "Ownership type": "Park",
+      "County": "Medina"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

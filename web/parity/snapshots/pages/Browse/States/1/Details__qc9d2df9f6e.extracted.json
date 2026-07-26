@@ -1,0 +1,308 @@
+{
+  "columns": [
+    {
+      "header": "Botanical name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Common name",
+      "sortable": true,
+      "sortState": "desc"
+    },
+    {
+      "header": "Max height",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max girth",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max crown spread",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Taxus spp.",
+        "Yew",
+        "55.5'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Taxus spp.",
+          "href": "/Browse/States/1/Species/Taxus%20spp.%20(Yew)/Details"
+        },
+        {
+          "text": "Yew",
+          "href": "/Browse/States/1/Species/Taxus%20spp.%20(Yew)/Details"
+        },
+        {
+          "text": "55.5'",
+          "href": "/Browse/Trees/253887/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Aesculus flava",
+        "Yellow Buckeye",
+        "110.2'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Aesculus flava",
+          "href": "/Browse/States/1/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+        },
+        {
+          "text": "Yellow Buckeye",
+          "href": "/Browse/States/1/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+        },
+        {
+          "text": "110.2'",
+          "href": "/Browse/Trees/315726/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Rhus copallinum",
+        "Winged Sumac",
+        "31.1'",
+        "11''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Rhus copallinum",
+          "href": "/Browse/States/1/Species/Rhus%20copallinum%20(Winged%20Sumac)/Details"
+        },
+        {
+          "text": "Winged Sumac",
+          "href": "/Browse/States/1/Species/Rhus%20copallinum%20(Winged%20Sumac)/Details"
+        },
+        {
+          "text": "31.1'",
+          "href": "/Browse/Trees/233705/Details"
+        },
+        {
+          "text": "11''",
+          "href": "/Browse/Trees/233705/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus alba",
+        "White Oak",
+        "129.9'",
+        "146''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus alba",
+          "href": "/Browse/States/1/Species/Quercus%20alba%20(White%20Oak)/Details"
+        },
+        {
+          "text": "White Oak",
+          "href": "/Browse/States/1/Species/Quercus%20alba%20(White%20Oak)/Details"
+        },
+        {
+          "text": "129.9'",
+          "href": "/Browse/Trees/233721/Details"
+        },
+        {
+          "text": "146''",
+          "href": "/Browse/Trees/233876/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus nigra",
+        "Water Oak",
+        "120.8'",
+        "72''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus nigra",
+          "href": "/Browse/States/1/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+        },
+        {
+          "text": "Water Oak",
+          "href": "/Browse/States/1/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+        },
+        {
+          "text": "120.8'",
+          "href": "/Browse/Trees/233875/Details"
+        },
+        {
+          "text": "72''",
+          "href": "/Browse/Trees/233875/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Liriodendron tulipifera",
+        "Tuliptree",
+        "143.0'",
+        "113''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Liriodendron tulipifera",
+          "href": "/Browse/States/1/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+        },
+        {
+          "text": "Tuliptree",
+          "href": "/Browse/States/1/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+        },
+        {
+          "text": "143.0'",
+          "href": "/Browse/Trees/315738/Details"
+        },
+        {
+          "text": "113''",
+          "href": "/Browse/Trees/233691/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Liquidambar styraciflua",
+        "Sweetgum",
+        "136.7'",
+        "122''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Liquidambar styraciflua",
+          "href": "/Browse/States/1/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+        },
+        {
+          "text": "Sweetgum",
+          "href": "/Browse/States/1/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+        },
+        {
+          "text": "136.7'",
+          "href": "/Browse/Trees/233883/Details"
+        },
+        {
+          "text": "122''",
+          "href": "/Browse/Trees/252492/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus michauxii",
+        "Swamp Chestnut Oak",
+        "119.5'",
+        "103''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus michauxii",
+          "href": "/Browse/States/1/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+        },
+        {
+          "text": "Swamp Chestnut Oak",
+          "href": "/Browse/States/1/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+        },
+        {
+          "text": "119.5'",
+          "href": "/Browse/Trees/233720/Details"
+        },
+        {
+          "text": "103''",
+          "href": "/Browse/Trees/233720/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Celtis laevigata var. laevigata",
+        "Sugarberry",
+        "117.4'",
+        "153''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Celtis laevigata var. laevigata",
+          "href": "/Browse/States/1/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+        },
+        {
+          "text": "Sugarberry",
+          "href": "/Browse/States/1/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+        },
+        {
+          "text": "117.4'",
+          "href": "/Browse/Trees/233882/Details"
+        },
+        {
+          "text": "153''",
+          "href": "/Browse/Trees/233881/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Acer floridanum",
+        "Southern Sugar Maple",
+        "114.8'",
+        "103''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Acer floridanum",
+          "href": "/Browse/States/1/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+        },
+        {
+          "text": "Southern Sugar Maple",
+          "href": "/Browse/States/1/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+        },
+        {
+          "text": "114.8'",
+          "href": "/Browse/Trees/233864/Details"
+        },
+        {
+          "text": "103''",
+          "href": "/Browse/Trees/233717/Details"
+        },
+        null
+      ]
+    }
+  ],
+  "pageInfo": "Showing 1 to 10 of 58 entries",
+  "hasPreviousPage": false,
+  "hasNextPage": true
+}

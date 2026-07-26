@@ -1,0 +1,101 @@
+{
+  "siteId": 39291,
+  "summary": {
+    "Name": "Cedar Swmp Natural Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "02/15/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "Natural area is 735 acres within the 34,725 acre Brenden Byrne State Forest"
+  },
+  "visits": [
+    {
+      "visited": "02/15/2013",
+      "visitors": "Doug Bidlack and Ellen Bidlack",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Natural area is 735 acres within the 34,725 acre Brenden Byrne State Forest"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Chamaecyparis thyoides",
+          "Atlantic White Cedar",
+          "86.4'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis thyoides",
+            "href": "/Browse/Sites/39291/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "Atlantic White Cedar",
+            "href": "/Browse/Sites/39291/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "86.4'",
+            "href": "/Browse/Trees/170959/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/170958/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 53.688, -074 32.306",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Burlington"
+    },
+    "state": {
+      "text": "New Jersey (US)",
+      "href": "/Browse/States/29/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

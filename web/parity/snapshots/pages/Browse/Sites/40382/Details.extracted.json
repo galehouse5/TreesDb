@@ -1,0 +1,353 @@
+{
+  "siteId": 40382,
+  "summary": {
+    "Name": "Mingus Creek",
+    "RHI5": "151.08",
+    "RHI10": "143.50",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.52",
+    "RGI10": "8.24",
+    "RGI20": "(not enough data)",
+    "Trees measured": "44",
+    "Last measurement date": "04/30/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Mingus Creek into Oconaluftee River,"
+  },
+  "visits": [
+    {
+      "visited": "04/30/2007",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/gsmnp/mingus_creek.htm",
+      "comments": "Mingus Creek into Oconaluftee River,"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "126.1'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40382/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40382/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "126.1'",
+            "href": "/Browse/Trees/229296/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/229296/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "137.4'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40382/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40382/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "137.4'",
+            "href": "/Browse/Trees/229290/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/229290/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "52.0'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/40382/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/40382/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "52.0'",
+            "href": "/Browse/Trees/229289/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/229289/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "142.6'",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40382/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40382/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "142.6'",
+            "href": "/Browse/Trees/229287/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/229286/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "148.6'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40382/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40382/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "148.6'",
+            "href": "/Browse/Trees/229274/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/229276/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "171.4'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40382/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40382/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "171.4'",
+            "href": "/Browse/Trees/229315/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/229311/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "143.8'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/40382/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/40382/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "143.8'",
+            "href": "/Browse/Trees/229295/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/229294/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "144.3'",
+          "166''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40382/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40382/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "144.3'",
+            "href": "/Browse/Trees/229302/Details"
+          },
+          {
+            "text": "166''",
+            "href": "/Browse/Trees/229298/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "129.7'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/40382/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/40382/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "129.7'",
+            "href": "/Browse/Trees/229297/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/229297/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Rhus copallinum",
+          "Winged Sumac",
+          "38.7'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhus copallinum",
+            "href": "/Browse/Sites/40382/Species/Rhus%20copallinum%20(Winged%20Sumac)/Details"
+          },
+          {
+            "text": "Winged Sumac",
+            "href": "/Browse/Sites/40382/Species/Rhus%20copallinum%20(Winged%20Sumac)/Details"
+          },
+          {
+            "text": "38.7'",
+            "href": "/Browse/Trees/229303/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/229303/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 31.187, -083 20.426",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Swain"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

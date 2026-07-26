@@ -1,0 +1,283 @@
+{
+  "botanicalName": "Picea rubens",
+  "commonName": "Red Spruce",
+  "global": {
+    "maxHeight": {
+      "text": "48.86 m",
+      "href": "/Browse/Trees/323603/Details"
+    },
+    "maxGirth": {
+      "text": "386 cm",
+      "href": "/Browse/Trees/229195/Details"
+    },
+    "maxCrownSpread": {
+      "text": "10.97 m",
+      "href": "/Browse/Trees/306135/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maine",
+          "21.03 m",
+          "135 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maine",
+            "href": "/Browse/States/19/Details"
+          },
+          {
+            "text": "21.03 m",
+            "href": "/Browse/Trees/235324/Details"
+          },
+          {
+            "text": "135 cm",
+            "href": "/Browse/Trees/235324/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "33.22 m",
+          "165 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "33.22 m",
+            "href": "/Browse/Trees/235560/Details"
+          },
+          {
+            "text": "165 cm",
+            "href": "/Browse/Trees/235560/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Brunswick",
+          "33.22 m",
+          "220 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Brunswick",
+            "href": "/Browse/States/52/Details"
+          },
+          {
+            "text": "33.22 m",
+            "href": "/Browse/Trees/240021/Details"
+          },
+          {
+            "text": "220 cm",
+            "href": "/Browse/Trees/240299/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Hampshire",
+          "20.91 m",
+          "130 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Hampshire",
+            "href": "/Browse/States/28/Details"
+          },
+          {
+            "text": "20.91 m",
+            "href": "/Browse/Trees/256182/Details"
+          },
+          {
+            "text": "130 cm",
+            "href": "/Browse/Trees/256183/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "18.29 m",
+          "147 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          {
+            "text": "18.29 m",
+            "href": "/Browse/Trees/169986/Details"
+          },
+          {
+            "text": "147 cm",
+            "href": "/Browse/Trees/169986/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "34.99 m",
+          "290 cm",
+          "7.92 m"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "34.99 m",
+            "href": "/Browse/Trees/214352/Details"
+          },
+          {
+            "text": "290 cm",
+            "href": "/Browse/Trees/258872/Details"
+          },
+          {
+            "text": "7.92 m",
+            "href": "/Browse/Trees/228335/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "48.86 m",
+          "386 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "48.86 m",
+            "href": "/Browse/Trees/323603/Details"
+          },
+          {
+            "text": "386 cm",
+            "href": "/Browse/Trees/229195/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "28.83 m",
+          "177 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "28.83 m",
+            "href": "/Browse/Trees/168987/Details"
+          },
+          {
+            "text": "177 cm",
+            "href": "/Browse/Trees/168983/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "45.66 m",
+          "376 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "45.66 m",
+            "href": "/Browse/Trees/318656/Details"
+          },
+          {
+            "text": "376 cm",
+            "href": "/Browse/Trees/318656/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "35.05 m",
+          "282 cm",
+          "10.97 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "35.05 m",
+            "href": "/Browse/Trees/219395/Details"
+          },
+          {
+            "text": "282 cm",
+            "href": "/Browse/Trees/306135/Details"
+          },
+          {
+            "text": "10.97 m",
+            "href": "/Browse/Trees/306135/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

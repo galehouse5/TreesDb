@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Picea pungens",
+  "commonName": "Blue Spruce",
+  "global": {
+    "maxHeight": {
+      "text": "60.20 yd",
+      "href": "/Browse/Trees/242247/Details"
+    },
+    "maxGirth": {
+      "text": "158''",
+      "href": "/Browse/Trees/242478/Details"
+    },
+    "maxCrownSpread": {
+      "text": "11.17 yd",
+      "href": "/Browse/Trees/242479/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Colorado",
+          "60.20 yd",
+          "158''",
+          "11.17 yd"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "60.20 yd",
+            "href": "/Browse/Trees/242247/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/242478/Details"
+          },
+          {
+            "text": "11.17 yd",
+            "href": "/Browse/Trees/242479/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "31.87 yd",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "31.87 yd",
+            "href": "/Browse/Trees/320674/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/320674/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "33.87 yd",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "33.87 yd",
+            "href": "/Browse/Trees/225850/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/225854/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "17.07 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "17.07 yd",
+            "href": "/Browse/Trees/227795/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "38.93 yd",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "38.93 yd",
+            "href": "/Browse/Trees/147964/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/146272/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "17.07 yd",
+          "96''",
+          "8.50 yd"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "17.07 yd",
+            "href": "/Browse/Trees/315281/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/315281/Details"
+          },
+          {
+            "text": "8.50 yd",
+            "href": "/Browse/Trees/315249/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Picea torano",
+  "commonName": "Tiger-Tail Spruce",
+  "global": {
+    "maxHeight": {
+      "text": "88.8'",
+      "href": "/Browse/Trees/153347/Details"
+    },
+    "maxGirth": {
+      "text": "102''",
+      "href": "/Browse/Trees/140160/Details"
+    },
+    "maxCrownSpread": {
+      "text": "50.0'",
+      "href": "/Browse/Trees/153347/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "83.2'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "83.2'",
+            "href": "/Browse/Trees/140160/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/140160/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "56.5'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "56.5'",
+            "href": "/Browse/Trees/226041/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/226041/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "49.0'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "49.0'",
+            "href": "/Browse/Trees/225115/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/225115/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "88.8'",
+          "95''",
+          "50.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "88.8'",
+            "href": "/Browse/Trees/153347/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/153347/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/153347/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "siteId": 39952,
+  "summary": {
+    "Name": "Bucktail State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "10/15/2019",
+    "Ownership contact": "Pennsylvania Department of Conservation and Natural Resources. Renovo Road, North Bend, Pa.",
+    "General comments": "16,433 acres along Pa 120 between Lock Haven and Emporium. The road follows the West Branch of the Susquehanna and Sinnemahoning Creek. Part of the park is also in Cameron County."
+  },
+  "visits": [
+    {
+      "visited": "10/15/2019",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "16,433 acres along Pa 120 between Lock Haven and Emporium. The road follows the West Branch of the Susquehanna and Sinnemahoning Creek. Part of the park is also in Cameron County."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "97.9'",
+          "192''",
+          "48.5'"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/39952/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/39952/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "97.9'",
+            "href": "/Browse/Trees/212206/Details"
+          },
+          {
+            "text": "192''",
+            "href": "/Browse/Trees/212206/Details"
+          },
+          {
+            "text": "48.5'",
+            "href": "/Browse/Trees/212206/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 20.525, -077 42.336",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Clinton"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

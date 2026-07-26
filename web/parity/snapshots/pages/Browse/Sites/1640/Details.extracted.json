@@ -1,0 +1,323 @@
+{
+  "siteId": 1640,
+  "summary": {
+    "Name": "Whitewater River & Waterfall",
+    "RHI5": "131.00",
+    "RHI10": "124.83",
+    "RHI20": "(not enough data)",
+    "RGI5": "0.00",
+    "RGI10": "0.00",
+    "RGI20": "(not enough data)",
+    "Trees measured": "31",
+    "Last measurement date": "01/19/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/19/2013",
+      "visitors": "Brian Beduhn",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "110.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/1640/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/1640/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "110.7'",
+            "href": "/Browse/Trees/39868/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "125.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/1640/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/1640/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "125.6'",
+            "href": "/Browse/Trees/39856/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "116.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/1640/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/1640/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "116.5'",
+            "href": "/Browse/Trees/39853/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "115.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/1640/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/1640/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "115.0'",
+            "href": "/Browse/Trees/39859/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "85.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/1640/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/1640/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "85.9'",
+            "href": "/Browse/Trees/39871/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "118.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/1640/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/1640/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "118.5'",
+            "href": "/Browse/Trees/39872/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "123.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/1640/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/1640/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "123.3'",
+            "href": "/Browse/Trees/39876/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Halesia tetraptera var. monticola",
+          "Mountain Silverbell",
+          "85.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Halesia tetraptera var. monticola",
+            "href": "/Browse/Sites/1640/Species/Halesia%20tetraptera%20var.%20monticola%20(Mountain%20Silverbell)/Details"
+          },
+          {
+            "text": "Mountain Silverbell",
+            "href": "/Browse/Sites/1640/Species/Halesia%20tetraptera%20var.%20monticola%20(Mountain%20Silverbell)/Details"
+          },
+          {
+            "text": "85.6'",
+            "href": "/Browse/Trees/39870/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "142.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/1640/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/1640/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "142.9'",
+            "href": "/Browse/Trees/39883/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia fraseri",
+          "Mountain Magnolia",
+          "94.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia fraseri",
+            "href": "/Browse/Sites/1640/Species/Magnolia%20fraseri%20(Mountain%20Magnolia)/Details"
+          },
+          {
+            "text": "Mountain Magnolia",
+            "href": "/Browse/Sites/1640/Species/Magnolia%20fraseri%20(Mountain%20Magnolia)/Details"
+          },
+          {
+            "text": "94.0'",
+            "href": "/Browse/Trees/39877/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 01.914, -083 00.757",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Transylvania"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

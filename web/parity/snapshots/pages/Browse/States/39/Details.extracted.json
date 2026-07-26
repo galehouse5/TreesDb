@@ -1,0 +1,550 @@
+{
+  "stateId": 39,
+  "summary": {
+    "Name": "South Dakota",
+    "Code": "SD",
+    "RHI5": "114.78",
+    "RHI10": "93.36",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.17",
+    "RGI10": "8.72",
+    "RGI20": "(not enough data)",
+    "Trees measured": "63",
+    "Last measurement date": "12/13/2014"
+  },
+  "location": {
+    "Coordinates": "44 12.760, -100 14.821",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "69.6'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/39/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/39/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "69.6'",
+            "href": "/Browse/Trees/233483/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/233483/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "66.5'",
+          "62''",
+          "33.5'"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/States/39/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/States/39/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "66.5'",
+            "href": "/Browse/Trees/243373/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/233577/Details"
+          },
+          {
+            "text": "33.5'",
+            "href": "/Browse/Trees/233577/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Cornus drummondii",
+          "Roughleaf Dogwood",
+          "26.1'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus drummondii",
+            "href": "/Browse/States/39/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "Roughleaf Dogwood",
+            "href": "/Browse/States/39/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "26.1'",
+            "href": "/Browse/Trees/233484/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/233484/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus chrysocarpa",
+          "Fireberry Hawthorn",
+          "-",
+          "21''",
+          "17.0'"
+        ],
+        "links": [
+          {
+            "text": "Crataegus chrysocarpa",
+            "href": "/Browse/States/39/Species/Crataegus%20chrysocarpa%20(Fireberry%20Hawthorn)/Details"
+          },
+          {
+            "text": "Fireberry Hawthorn",
+            "href": "/Browse/States/39/Species/Crataegus%20chrysocarpa%20(Fireberry%20Hawthorn)/Details"
+          },
+          null,
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/233575/Details"
+          },
+          {
+            "text": "17.0'",
+            "href": "/Browse/Trees/233575/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "81.5'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/States/39/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/States/39/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "81.5'",
+            "href": "/Browse/Trees/233485/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/233486/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea x albertiana",
+          "Western White Spruce",
+          "114.1'",
+          "117''",
+          "31.0'"
+        ],
+        "links": [
+          {
+            "text": "Picea x albertiana",
+            "href": "/Browse/States/39/Species/Picea%20x%20albertiana%20(Western%20White%20Spruce)/Details"
+          },
+          {
+            "text": "Western White Spruce",
+            "href": "/Browse/States/39/Species/Picea%20x%20albertiana%20(Western%20White%20Spruce)/Details"
+          },
+          {
+            "text": "114.1'",
+            "href": "/Browse/Trees/243376/Details"
+          },
+          {
+            "text": "117''",
+            "href": "/Browse/Trees/243381/Details"
+          },
+          {
+            "text": "31.0'",
+            "href": "/Browse/Trees/233583/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. latifolia",
+          "Lodgepole Pine",
+          "-",
+          "70''",
+          "27.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. latifolia",
+            "href": "/Browse/States/39/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Lodgepole Pine",
+            "href": "/Browse/States/39/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/233588/Details"
+          },
+          {
+            "text": "27.0'",
+            "href": "/Browse/Trees/233588/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus flexilis",
+          "Limber Pine",
+          "48.0'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus flexilis",
+            "href": "/Browse/States/39/Species/Pinus%20flexilis%20(Limber%20Pine)/Details"
+          },
+          {
+            "text": "Limber Pine",
+            "href": "/Browse/States/39/Species/Pinus%20flexilis%20(Limber%20Pine)/Details"
+          },
+          {
+            "text": "48.0'",
+            "href": "/Browse/Trees/233579/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/233580/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "144.4'",
+          "149''",
+          "53.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/States/39/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/States/39/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "144.4'",
+            "href": "/Browse/Trees/233558/Details"
+          },
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/233587/Details"
+          },
+          {
+            "text": "53.0'",
+            "href": "/Browse/Trees/233587/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Populus angustifolia",
+          "Narrowleaf Cottonwood",
+          "114.5'",
+          "144''",
+          "61.0'"
+        ],
+        "links": [
+          {
+            "text": "Populus angustifolia",
+            "href": "/Browse/States/39/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "Narrowleaf Cottonwood",
+            "href": "/Browse/States/39/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "114.5'",
+            "href": "/Browse/Trees/243383/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/233571/Details"
+          },
+          {
+            "text": "61.0'",
+            "href": "/Browse/Trees/233571/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Black Elk Wilderness Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Black Elk Wilderness Area",
+            "href": "/Browse/Sites/40586/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Custer State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Custer State Park",
+            "href": "/Browse/Sites/40585/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Dakota Dunes",
+          "75.42",
+          "-",
+          "6.45",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Dakota Dunes",
+            "href": "/Browse/Sites/40572/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "French Creek Natural Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "French Creek Natural Area",
+            "href": "/Browse/Sites/40582/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Highway 89, Black Hills National Forest",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Highway 89, Black Hills National Forest",
+            "href": "/Browse/Sites/40587/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Horsethief Lake",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Horsethief Lake",
+            "href": "/Browse/Sites/22021/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Peter Norbeck Scenic Byway",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Peter Norbeck Scenic Byway",
+            "href": "/Browse/Sites/41031/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Dakota Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Dakota Single Tree Sites",
+            "href": "/Browse/Sites/39060/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Spearfish,SD",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Spearfish,SD",
+            "href": "/Browse/Sites/40584/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

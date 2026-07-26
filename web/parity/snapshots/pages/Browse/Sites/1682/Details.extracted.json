@@ -1,0 +1,323 @@
+{
+  "siteId": 1682,
+  "summary": {
+    "Name": "Owl's Roost Trail",
+    "RHI5": "123.56",
+    "RHI10": "117.29",
+    "RHI20": "103.40",
+    "RGI5": "0.00",
+    "RGI10": "0.00",
+    "RGI20": "0.00",
+    "Trees measured": "20",
+    "Last measurement date": "11/25/2011",
+    "Ownership contact": "City of Greensboro",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/25/2011",
+      "visitors": "Brian Beduhn",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "96.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/1682/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/1682/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "96.0'",
+            "href": "/Browse/Trees/40810/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya carolinae-septentrionalis",
+          "Southern Shagbark Hickory",
+          "114.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya carolinae-septentrionalis",
+            "href": "/Browse/Sites/1682/Species/Carya%20carolinae-septentrionalis%20(Southern%20Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Southern Shagbark Hickory",
+            "href": "/Browse/Sites/1682/Species/Carya%20carolinae-septentrionalis%20(Southern%20Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "114.4'",
+            "href": "/Browse/Trees/40816/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "119.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/1682/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/1682/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "119.5'",
+            "href": "/Browse/Trees/40802/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "119.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/1682/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/1682/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "119.8'",
+            "href": "/Browse/Trees/40815/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "99.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/1682/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/1682/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "99.0'",
+            "href": "/Browse/Trees/40811/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "102.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/1682/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/1682/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "102.0'",
+            "href": "/Browse/Trees/40812/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "76.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/Sites/1682/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/1682/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "76.7'",
+            "href": "/Browse/Trees/40808/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "113.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/1682/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/1682/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "113.0'",
+            "href": "/Browse/Trees/40809/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "140.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/1682/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/1682/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "140.6'",
+            "href": "/Browse/Trees/40814/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oxydendrum arboreum",
+          "Sourwood",
+          "68.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oxydendrum arboreum",
+            "href": "/Browse/Sites/1682/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "Sourwood",
+            "href": "/Browse/Sites/1682/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "68.5'",
+            "href": "/Browse/Trees/40813/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 20 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 10.085, -079 50.836",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private, Trails Public",
+      "County": "Guilford"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Pinus glabra",
+  "commonName": "Spruce Pine",
+  "global": {
+    "maxHeight": {
+      "text": "118.1'",
+      "href": "/Browse/Trees/252666/Details"
+    },
+    "maxGirth": {
+      "text": "148''",
+      "href": "/Browse/Trees/280385/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "North Carolina",
+          "97.3'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "97.3'",
+            "href": "/Browse/Trees/280385/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/280385/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "118.1'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "118.1'",
+            "href": "/Browse/Trees/252666/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/252666/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

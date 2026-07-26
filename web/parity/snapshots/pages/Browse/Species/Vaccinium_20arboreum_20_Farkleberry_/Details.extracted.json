@@ -1,0 +1,116 @@
+{
+  "botanicalName": "Vaccinium arboreum",
+  "commonName": "Farkleberry",
+  "global": {
+    "maxHeight": {
+      "text": "29.4'",
+      "href": "/Browse/Trees/2427/Details"
+    },
+    "maxGirth": {
+      "text": "29''",
+      "href": "/Browse/Trees/2426/Details"
+    },
+    "maxCrownSpread": {
+      "text": "25.5'",
+      "href": "/Browse/Trees/2426/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "28.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "28.7'",
+            "href": "/Browse/Trees/253889/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Florida",
+          "24.5'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "24.5'",
+            "href": "/Browse/Trees/159255/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/159255/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "29.4'",
+          "29''",
+          "25.5'"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "29.4'",
+            "href": "/Browse/Trees/2427/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/2426/Details"
+          },
+          {
+            "text": "25.5'",
+            "href": "/Browse/Trees/2426/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

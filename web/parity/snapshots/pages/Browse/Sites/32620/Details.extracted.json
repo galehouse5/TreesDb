@@ -1,0 +1,356 @@
+{
+  "siteId": 32620,
+  "summary": {
+    "Name": "Buckaloons Recreation Area",
+    "RHI5": "119.90",
+    "RHI10": "111.85",
+    "RHI20": "99.05",
+    "RGI5": "10.85",
+    "RGI10": "9.06",
+    "RGI20": "6.44",
+    "Trees measured": "34",
+    "Last measurement date": "04/13/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "USFS Campground"
+  },
+  "visits": [
+    {
+      "visited": "04/13/2011",
+      "visitors": "Dale Luthringer, Edward Frank, and Carl Harting",
+      "tripReportUrl": "(none)",
+      "comments": "USFS Campground"
+    },
+    {
+      "visited": "04/25/2005",
+      "visitors": "Dale Luthringer and Will Blozan",
+      "tripReportUrl": "(none)",
+      "comments": "USFS campground"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "100.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/32620/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/32620/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "100.0'",
+            "href": "/Browse/Trees/139979/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "89.0'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/32620/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/32620/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "89.0'",
+            "href": "/Browse/Trees/139981/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/139981/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "33.0'",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/32620/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/32620/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "33.0'",
+            "href": "/Browse/Trees/139965/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/139965/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "108.0'",
+          "144''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/32620/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/32620/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/139967/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/139967/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "89.5'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/32620/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/32620/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/139978/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/139977/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "76.5'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/32620/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/32620/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "76.5'",
+            "href": "/Browse/Trees/139975/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/139975/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chamaecyparis pisifera",
+          "Sawara False Cypress",
+          "87.7'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis pisifera",
+            "href": "/Browse/Sites/32620/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "Sawara False Cypress",
+            "href": "/Browse/Sites/32620/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "87.7'",
+            "href": "/Browse/Trees/108840/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/108840/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus punctata",
+          "Dotted Hawthorn",
+          "45.0'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus punctata",
+            "href": "/Browse/Sites/32620/Species/Crataegus%20punctata%20(Dotted%20Hawthorn)/Details"
+          },
+          {
+            "text": "Dotted Hawthorn",
+            "href": "/Browse/Sites/32620/Species/Crataegus%20punctata%20(Dotted%20Hawthorn)/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/139971/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/139971/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "109.0'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/32620/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/32620/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/139989/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/139989/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "78.1'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/32620/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/32620/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "78.1'",
+            "href": "/Browse/Trees/139974/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/139974/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 22 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 50.230, -079 15.468",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public -federal",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

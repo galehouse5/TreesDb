@@ -1,0 +1,191 @@
+{
+  "siteId": 40590,
+  "summary": {
+    "Name": "Iowa Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fraxinus nigra",
+          "Black Ash",
+          "120.0'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus nigra",
+            "href": "/Browse/Sites/40590/Species/Fraxinus%20nigra%20(Black%20Ash)/Details"
+          },
+          {
+            "text": "Black Ash",
+            "href": "/Browse/Sites/40590/Species/Fraxinus%20nigra%20(Black%20Ash)/Details"
+          },
+          {
+            "text": "120.0'",
+            "href": "/Browse/Trees/233606/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/233606/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "144.6'",
+          "159''",
+          "65.5'"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40590/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40590/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "144.6'",
+            "href": "/Browse/Trees/233612/Details"
+          },
+          {
+            "text": "159''",
+            "href": "/Browse/Trees/233608/Details"
+          },
+          {
+            "text": "65.5'",
+            "href": "/Browse/Trees/233608/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "90.4'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/40590/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/40590/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "90.4'",
+            "href": "/Browse/Trees/233605/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/233605/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "114.0'",
+          "155''",
+          "77.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40590/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40590/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "114.0'",
+            "href": "/Browse/Trees/233607/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/233607/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/233607/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 35.472, -093 36.218",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Polk"
+    },
+    "state": {
+      "text": "Iowa (US)",
+      "href": "/Browse/States/10/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

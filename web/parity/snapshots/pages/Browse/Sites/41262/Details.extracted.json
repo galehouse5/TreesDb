@@ -1,0 +1,228 @@
+{
+  "siteId": 41262,
+  "summary": {
+    "Name": "Mississippi Single Tree Sites",
+    "RHI5": "76.02",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.98",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "01/01/2001",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2001",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "111.0'",
+          "208''",
+          "81.0'"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/41262/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/41262/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/253858/Details"
+          },
+          {
+            "text": "208''",
+            "href": "/Browse/Trees/253858/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/253859/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Phoenix canariensis",
+          "Canary Island Date Palm",
+          "38.8'",
+          "74''",
+          "21.5'"
+        ],
+        "links": [
+          {
+            "text": "Phoenix canariensis",
+            "href": "/Browse/Sites/41262/Species/Phoenix%20canariensis%20(Canary%20Island%20Date%20Palm)/Details"
+          },
+          {
+            "text": "Canary Island Date Palm",
+            "href": "/Browse/Sites/41262/Species/Phoenix%20canariensis%20(Canary%20Island%20Date%20Palm)/Details"
+          },
+          {
+            "text": "38.8'",
+            "href": "/Browse/Trees/253863/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/253863/Details"
+          },
+          {
+            "text": "21.5'",
+            "href": "/Browse/Trees/253863/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus palustris",
+          "Longleaf Pine",
+          "66.0'",
+          "54''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus palustris",
+            "href": "/Browse/Sites/41262/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "Longleaf Pine",
+            "href": "/Browse/Sites/41262/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/253860/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/253860/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/253860/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "105.0'",
+          "112''",
+          "63.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/41262/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/41262/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/253862/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/253862/Details"
+          },
+          {
+            "text": "63.0'",
+            "href": "/Browse/Trees/253862/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "59.3'",
+          "91''",
+          "55.5'"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/41262/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/41262/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "59.3'",
+            "href": "/Browse/Trees/253861/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/253861/Details"
+          },
+          {
+            "text": "55.5'",
+            "href": "/Browse/Trees/253861/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 18.204, -090 10.931",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Hinds"
+    },
+    "state": {
+      "text": "Mississippi (US)",
+      "href": "/Browse/States/23/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

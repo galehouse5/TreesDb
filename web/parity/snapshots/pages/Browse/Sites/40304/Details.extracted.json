@@ -1,0 +1,213 @@
+{
+  "siteId": 40304,
+  "summary": {
+    "Name": "Chestnut Creek/Bear Pen Gap",
+    "RHI5": "64.08",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "4.73",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "01/18/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/18/2006",
+      "visitors": "Jess Riddle and Michael Davie",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/chestnut_creek.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies fraseri",
+          "Fraser Fir",
+          "44.7'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies fraseri",
+            "href": "/Browse/Sites/40304/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "Fraser Fir",
+            "href": "/Browse/Sites/40304/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "44.7'",
+            "href": "/Browse/Trees/227750/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/227750/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer spicatum",
+          "Mountain Maple",
+          "36.0'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spicatum",
+            "href": "/Browse/Sites/40304/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "Mountain Maple",
+            "href": "/Browse/Sites/40304/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/227751/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/227751/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "127.5'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/40304/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/40304/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "127.5'",
+            "href": "/Browse/Trees/227756/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/227756/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus pensylvanica",
+          "Pin Cherry",
+          "58.4'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus pensylvanica",
+            "href": "/Browse/Sites/40304/Species/Prunus%20pensylvanica%20(Pin%20Cherry)/Details"
+          },
+          {
+            "text": "Pin Cherry",
+            "href": "/Browse/Sites/40304/Species/Prunus%20pensylvanica%20(Pin%20Cherry)/Details"
+          },
+          {
+            "text": "58.4'",
+            "href": "/Browse/Trees/227749/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/227749/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sorbus americana",
+          "American Mountain Ash",
+          "53.8'",
+          "33''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sorbus americana",
+            "href": "/Browse/Sites/40304/Species/Sorbus%20americana%20(American%20Mountain%20Ash)/Details"
+          },
+          {
+            "text": "American Mountain Ash",
+            "href": "/Browse/Sites/40304/Species/Sorbus%20americana%20(American%20Mountain%20Ash)/Details"
+          },
+          {
+            "text": "53.8'",
+            "href": "/Browse/Trees/227753/Details"
+          },
+          {
+            "text": "33''",
+            "href": "/Browse/Trees/227752/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 19.331, -082 57.942",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Jackson"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

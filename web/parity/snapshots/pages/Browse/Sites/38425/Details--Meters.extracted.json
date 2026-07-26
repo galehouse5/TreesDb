@@ -1,0 +1,185 @@
+{
+  "siteId": 38425,
+  "summary": {
+    "Name": "Lower Jerry Run Natural Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "09/08/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "852 acres with 32 acres old growth White Pine and Hemlock. Part of the natural area is in Cameron County."
+  },
+  "visits": [
+    {
+      "visited": "09/08/2004",
+      "visitors": "Edward Frank, Anthony Kelly, and Jacqui Noel",
+      "tripReportUrl": "(none)",
+      "comments": "852 acres with 32 acres old growth White Pine and Hemlock. Part of the natural area is in Cameron County."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "30.24 m",
+          "241 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38425/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38425/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "30.24 m",
+            "href": "/Browse/Trees/139434/Details"
+          },
+          {
+            "text": "241 cm",
+            "href": "/Browse/Trees/139434/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer spicatum",
+          "Mountain Maple",
+          "7.77 m",
+          "43 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spicatum",
+            "href": "/Browse/Sites/38425/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "Mountain Maple",
+            "href": "/Browse/Sites/38425/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "7.77 m",
+            "href": "/Browse/Trees/139433/Details"
+          },
+          {
+            "text": "43 cm",
+            "href": "/Browse/Trees/139433/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "33.50 m",
+          "271 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/38425/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/38425/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "33.50 m",
+            "href": "/Browse/Trees/139435/Details"
+          },
+          {
+            "text": "271 cm",
+            "href": "/Browse/Trees/139436/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "36.09 m",
+          "292 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/38425/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/38425/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "36.09 m",
+            "href": "/Browse/Trees/139431/Details"
+          },
+          {
+            "text": "292 cm",
+            "href": "/Browse/Trees/139429/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 15.798, -078 04.019",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Plublic - state",
+      "County": "Clinton"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,554 @@
+{
+  "stateId": 13,
+  "summary": {
+    "Name": "Indiana",
+    "Code": "IN",
+    "RHI5": "142.92",
+    "RHI10": "137.25",
+    "RHI20": "128.86",
+    "RGI5": "14.68",
+    "RGI10": "13.71",
+    "RGI20": "11.82",
+    "Trees measured": "162",
+    "Last measurement date": "02/25/2017"
+  },
+  "location": {
+    "Coordinates": "39 45.993, -086 26.529",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "-",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/13/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/13/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/174062/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "115.9'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/13/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/13/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "115.9'",
+            "href": "/Browse/Trees/169867/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/169755/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "130.3'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/States/13/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/States/13/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "130.3'",
+            "href": "/Browse/Trees/169857/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/169619/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "124.3'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/States/13/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/States/13/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "124.3'",
+            "href": "/Browse/Trees/169943/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/169943/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "137.5'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/States/13/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/States/13/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "137.5'",
+            "href": "/Browse/Trees/169960/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/169960/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya spp.",
+          "Hickory",
+          "138.2'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya spp.",
+            "href": "/Browse/States/13/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "Hickory",
+            "href": "/Browse/States/13/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "138.2'",
+            "href": "/Browse/Trees/169959/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/169875/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "98.0'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/States/13/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/States/13/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "98.0'",
+            "href": "/Browse/Trees/169951/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/169844/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "126.5'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/States/13/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/States/13/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "126.5'",
+            "href": "/Browse/Trees/169936/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/169616/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "135.0'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/States/13/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/States/13/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "135.0'",
+            "href": "/Browse/Trees/169940/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/169940/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus spp.",
+          "Ash",
+          "125.4'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus spp.",
+            "href": "/Browse/States/13/Species/Fraxinus%20spp.%20(Ash)/Details"
+          },
+          {
+            "text": "Ash",
+            "href": "/Browse/States/13/Species/Fraxinus%20spp.%20(Ash)/Details"
+          },
+          {
+            "text": "125.4'",
+            "href": "/Browse/Trees/169850/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/169861/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 29 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Calli Nature Preserve",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Calli Nature Preserve",
+            "href": "/Browse/Sites/4824/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Donaldson Cave Nature Preserve",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Donaldson Cave Nature Preserve",
+            "href": "/Browse/Sites/39237/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Donaldson Woods Nature Preserve",
+          "139.42",
+          "127.91",
+          "12.26",
+          "9.53"
+        ],
+        "links": [
+          {
+            "text": "Donaldson Woods Nature Preserve",
+            "href": "/Browse/Sites/39223/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Dunn's Woods",
+          "113.34",
+          "108.52",
+          "10.34",
+          "8.46"
+        ],
+        "links": [
+          {
+            "text": "Dunn's Woods",
+            "href": "/Browse/Sites/39228/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hemlock Bluff Nature Preserve",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hemlock Bluff Nature Preserve",
+            "href": "/Browse/Sites/39233/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana Single Tree Sites",
+            "href": "/Browse/Sites/39241/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pine Hills Nature Preserve",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pine Hills Nature Preserve",
+            "href": "/Browse/Sites/39231/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pioneer Mother's Memorial Forest",
+          "137.72",
+          "131.72",
+          "12.62",
+          "11.75"
+        ],
+        "links": [
+          {
+            "text": "Pioneer Mother's Memorial Forest",
+            "href": "/Browse/Sites/39224/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pioneer Village",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pioneer Village",
+            "href": "/Browse/Sites/40596/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tribett's Woods Nature Preserve",
+          "92.34",
+          "-",
+          "11.56",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tribett's Woods Nature Preserve",
+            "href": "/Browse/Sites/39349/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Anacardium excelsum",
+  "commonName": "Espave",
+  "global": {
+    "maxHeight": {
+      "text": "160.0'",
+      "href": "/Browse/Trees/213099/Details"
+    },
+    "maxGirth": {
+      "text": "225''",
+      "href": "/Browse/Trees/213082/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Guanacaste",
+          "128.6'",
+          "225''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Guanacaste",
+            "href": "/Browse/States/119/Details"
+          },
+          {
+            "text": "128.6'",
+            "href": "/Browse/Trees/213082/Details"
+          },
+          {
+            "text": "225''",
+            "href": "/Browse/Trees/213082/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Puntarenas",
+          "160.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Puntarenas",
+            "href": "/Browse/States/122/Details"
+          },
+          {
+            "text": "160.0'",
+            "href": "/Browse/Trees/213099/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

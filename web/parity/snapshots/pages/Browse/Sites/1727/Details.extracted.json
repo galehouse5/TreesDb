@@ -1,0 +1,266 @@
+{
+  "siteId": 1727,
+  "summary": {
+    "Name": "Fanny Bennet Hemlock Grove",
+    "RHI5": "98.34",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.64",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "10/23/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/23/2011",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "90.2'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/1727/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/1727/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "90.2'",
+            "href": "/Browse/Trees/44715/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/44715/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "93.6'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/1727/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/1727/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "93.6'",
+            "href": "/Browse/Trees/44714/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/44714/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "83.2'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/1727/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/1727/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "83.2'",
+            "href": "/Browse/Trees/44716/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/44716/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "78.1'",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/1727/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/1727/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "78.1'",
+            "href": "/Browse/Trees/44717/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/44717/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus muehlenbergii",
+          "Chinkapin Oak",
+          "105.8'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus muehlenbergii",
+            "href": "/Browse/Sites/1727/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "Chinkapin Oak",
+            "href": "/Browse/Sites/1727/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "105.8'",
+            "href": "/Browse/Trees/44718/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/44718/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "-",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/1727/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/1727/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/44713/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "118.9'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/1727/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/1727/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "118.9'",
+            "href": "/Browse/Trees/44709/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/44711/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 38.889, -079 33.343",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Forest",
+      "County": "Pendleton"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

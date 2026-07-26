@@ -1,0 +1,154 @@
+{
+  "siteId": 4759,
+  "summary": {
+    "Name": "C&O Canal Historical Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "11/26/2010",
+    "Ownership contact": "11710 MacArthur Boulevard, Potomac, MD",
+    "General comments": "Trees are upstream from lockhouse."
+  },
+  "visits": [
+    {
+      "visited": "11/26/2010",
+      "visitors": "Will Blozan and Darian Copiz",
+      "tripReportUrl": "(none)",
+      "comments": "Trees are upstream from lockhouse."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "99.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/4759/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/4759/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "99.6'",
+            "href": "/Browse/Trees/47843/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "126.8'",
+          "212''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/4759/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/4759/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "126.8'",
+            "href": "/Browse/Trees/47844/Details"
+          },
+          {
+            "text": "212''",
+            "href": "/Browse/Trees/47844/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus shumardii",
+          "Shumard's Oak",
+          "130.6'",
+          "176''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus shumardii",
+            "href": "/Browse/Sites/4759/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+          },
+          {
+            "text": "Shumard's Oak",
+            "href": "/Browse/Sites/4759/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+          },
+          {
+            "text": "130.6'",
+            "href": "/Browse/Trees/47842/Details"
+          },
+          {
+            "text": "176''",
+            "href": "/Browse/Trees/47840/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 00.087, -077 14.838",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public- National Park",
+      "County": "Montgomery"
+    },
+    "state": {
+      "text": "Maryland (US)",
+      "href": "/Browse/States/18/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

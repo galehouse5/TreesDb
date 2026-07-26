@@ -1,0 +1,217 @@
+{
+  "botanicalName": "Pinus palustris",
+  "commonName": "Longleaf Pine",
+  "global": {
+    "maxHeight": {
+      "text": "104.7'",
+      "href": "/Browse/Trees/2423/Details"
+    },
+    "maxGirth": {
+      "text": "101''",
+      "href": "/Browse/Trees/233704/Details"
+    },
+    "maxCrownSpread": {
+      "text": "51.0'",
+      "href": "/Browse/Trees/253888/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "88.0'",
+          "101''",
+          "51.0'"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "88.0'",
+            "href": "/Browse/Trees/233704/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/233704/Details"
+          },
+          {
+            "text": "51.0'",
+            "href": "/Browse/Trees/253888/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Florida",
+          "92.0'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "92.0'",
+            "href": "/Browse/Trees/159256/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/159256/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "66.0'",
+          "54''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/253860/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/253860/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/253860/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "59.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "59.5'",
+            "href": "/Browse/Trees/40747/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "64.2'",
+          "66''",
+          "24.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "64.2'",
+            "href": "/Browse/Trees/134439/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/134439/Details"
+          },
+          {
+            "text": "24.0'",
+            "href": "/Browse/Trees/134439/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "104.7'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "104.7'",
+            "href": "/Browse/Trees/2423/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/2423/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "45.8'",
+          "57''",
+          "35.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "45.8'",
+            "href": "/Browse/Trees/312074/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/312074/Details"
+          },
+          {
+            "text": "35.0'",
+            "href": "/Browse/Trees/312074/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

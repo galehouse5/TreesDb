@@ -1,0 +1,185 @@
+{
+  "siteId": 40254,
+  "summary": {
+    "Name": "Rich Mountain",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "11/10/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "Partly owned by the Rich Mountain Conservancy"
+  },
+  "visits": [
+    {
+      "visited": "11/10/2008",
+      "visitors": "James Parton, Smitty Petersen, and Kim Lyman",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/richmt/rich_mountain_nc.htm",
+      "comments": "Partly owned by the Rich Mountain Conservancy"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "95.9'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40254/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40254/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "95.9'",
+            "href": "/Browse/Trees/226997/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/226997/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya spp.",
+          "Hickory",
+          "94.4'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya spp.",
+            "href": "/Browse/Sites/40254/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "Hickory",
+            "href": "/Browse/Sites/40254/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "94.4'",
+            "href": "/Browse/Trees/226999/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/226999/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "89.3'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40254/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40254/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "89.3'",
+            "href": "/Browse/Trees/227000/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/227000/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "75.6'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40254/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40254/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "75.6'",
+            "href": "/Browse/Trees/226998/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/226998/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 11.166, -082 40.054",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private , public",
+      "County": "Transylvania"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

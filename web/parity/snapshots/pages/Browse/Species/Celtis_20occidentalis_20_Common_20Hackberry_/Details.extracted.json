@@ -1,0 +1,277 @@
+{
+  "botanicalName": "Celtis occidentalis",
+  "commonName": "Common Hackberry",
+  "global": {
+    "maxHeight": {
+      "text": "130.2'",
+      "href": "/Browse/Trees/297569/Details"
+    },
+    "maxGirth": {
+      "text": "233''",
+      "href": "/Browse/Trees/313066/Details"
+    },
+    "maxCrownSpread": {
+      "text": "97.0'",
+      "href": "/Browse/Trees/313066/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "113.0'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "113.0'",
+            "href": "/Browse/Trees/315717/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/315717/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "95.5'",
+          "180''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "95.5'",
+            "href": "/Browse/Trees/174798/Details"
+          },
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/174798/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "-",
+          "210''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          null,
+          {
+            "text": "210''",
+            "href": "/Browse/Trees/171015/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana",
+          "98.0'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana",
+            "href": "/Browse/States/13/Details"
+          },
+          {
+            "text": "98.0'",
+            "href": "/Browse/Trees/169951/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/169844/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "130.2'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "130.2'",
+            "href": "/Browse/Trees/297569/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/297570/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "111.1'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "111.1'",
+            "href": "/Browse/Trees/231996/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/163344/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Minnesota",
+          "90.0'",
+          "98''",
+          "53.0'"
+        ],
+        "links": [
+          {
+            "text": "Minnesota",
+            "href": "/Browse/States/21/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/239918/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/239918/Details"
+          },
+          {
+            "text": "53.0'",
+            "href": "/Browse/Trees/239917/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "117.1'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "117.1'",
+            "href": "/Browse/Trees/171803/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/171803/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nebraska",
+          "99.8'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nebraska",
+            "href": "/Browse/States/27/Details"
+          },
+          {
+            "text": "99.8'",
+            "href": "/Browse/Trees/220657/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/220658/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "108.5'",
+          "193''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "108.5'",
+            "href": "/Browse/Trees/221128/Details"
+          },
+          {
+            "text": "193''",
+            "href": "/Browse/Trees/189780/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

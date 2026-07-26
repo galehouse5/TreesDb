@@ -1,0 +1,145 @@
+{
+  "botanicalName": "Picea orientalis",
+  "commonName": "Oriental Spruce",
+  "global": {
+    "maxHeight": {
+      "text": "96.5'",
+      "href": "/Browse/Trees/226137/Details"
+    },
+    "maxGirth": {
+      "text": "122''",
+      "href": "/Browse/Trees/224546/Details"
+    },
+    "maxCrownSpread": {
+      "text": "25.5'",
+      "href": "/Browse/Trees/174156/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "96.5'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "96.5'",
+            "href": "/Browse/Trees/226137/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/226137/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "93.1'",
+          "80''",
+          "25.5'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "93.1'",
+            "href": "/Browse/Trees/174157/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/174156/Details"
+          },
+          {
+            "text": "25.5'",
+            "href": "/Browse/Trees/174156/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "82.5'",
+          "89''",
+          "24.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "82.5'",
+            "href": "/Browse/Trees/133210/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/133210/Details"
+          },
+          {
+            "text": "24.0'",
+            "href": "/Browse/Trees/133210/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "87.5'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "87.5'",
+            "href": "/Browse/Trees/224546/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/224546/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

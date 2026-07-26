@@ -1,0 +1,338 @@
+{
+  "siteId": 39310,
+  "summary": {
+    "Name": "New Jersey Single Tree Sites",
+    "RHI5": "72.00",
+    "RHI10": "36.00",
+    "RHI20": "(not enough data)",
+    "RGI5": "21.60",
+    "RGI10": "18.95",
+    "RGI20": "(not enough data)",
+    "Trees measured": "73",
+    "Last measurement date": "01/01/2001",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2001",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Chamaecyparis thyoides",
+          "Atlantic White Cedar",
+          "75.0'",
+          "126''",
+          "25.0'"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis thyoides",
+            "href": "/Browse/Sites/39310/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "Atlantic White Cedar",
+            "href": "/Browse/Sites/39310/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/171570/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/171570/Details"
+          },
+          {
+            "text": "25.0'",
+            "href": "/Browse/Trees/171570/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "-",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/39310/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/39310/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          null,
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/171565/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca var. opaca",
+          "American Holly",
+          "-",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca var. opaca",
+            "href": "/Browse/Sites/39310/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/39310/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          null,
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/171538/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "-",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/39310/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/39310/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          null,
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/171567/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "145.0'",
+          "209''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39310/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39310/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "145.0'",
+            "href": "/Browse/Trees/171573/Details"
+          },
+          {
+            "text": "209''",
+            "href": "/Browse/Trees/171605/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "-",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/39310/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/39310/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/171544/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "-",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/39310/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/39310/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/171535/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "-",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/39310/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/39310/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/171561/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "65.0'",
+          "317''",
+          "99.0'"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/39310/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/39310/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/171572/Details"
+          },
+          {
+            "text": "317''",
+            "href": "/Browse/Trees/171597/Details"
+          },
+          {
+            "text": "99.0'",
+            "href": "/Browse/Trees/171577/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides ssp. deltoides",
+          "Eastern Cottonwood",
+          "-",
+          "257''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides ssp. deltoides",
+            "href": "/Browse/Sites/39310/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/39310/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          null,
+          {
+            "text": "257''",
+            "href": "/Browse/Trees/171596/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 13.242, -074 46.184",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public, Private",
+      "County": "Mercer"
+    },
+    "state": {
+      "text": "New Jersey (US)",
+      "href": "/Browse/States/29/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

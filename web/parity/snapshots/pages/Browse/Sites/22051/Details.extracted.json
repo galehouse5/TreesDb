@@ -1,0 +1,129 @@
+{
+  "siteId": 22051,
+  "summary": {
+    "Name": "Anita Road",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "02/15/2012",
+    "Ownership contact": "Tusayan Ranger District 176 Lincoln Log Loop Grand Canyon, AZ",
+    "General comments": "Trees were measure on either side of Anita Road near the intersection of AZ 180/64"
+  },
+  "visits": [
+    {
+      "visited": "02/15/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Trees were measure on either side of Anita Road near the intersection of AZ 180/64"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus osteosperma",
+          "Utah Juniper",
+          "30.2'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus osteosperma",
+            "href": "/Browse/Sites/22051/Species/Juniperus%20osteosperma%20(Utah%20Juniper)/Details"
+          },
+          {
+            "text": "Utah Juniper",
+            "href": "/Browse/Sites/22051/Species/Juniperus%20osteosperma%20(Utah%20Juniper)/Details"
+          },
+          {
+            "text": "30.2'",
+            "href": "/Browse/Trees/75125/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/75125/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus edulis",
+          "Twoneedle Pinyon",
+          "36.8'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus edulis",
+            "href": "/Browse/Sites/22051/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "Twoneedle Pinyon",
+            "href": "/Browse/Sites/22051/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "36.8'",
+            "href": "/Browse/Trees/75124/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/75123/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 51.670, -112 08.014",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Kaibab National Forest",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,181 @@
+{
+  "stateId": 49,
+  "summary": {
+    "Name": "Alberta",
+    "Code": "AB",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "07/30/2012"
+  },
+  "location": {
+    "Coordinates": "54 29.913, -115 00.186",
+    "Country": "Canada"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus contorta var. latifolia",
+          "Lodgepole Pine",
+          "74.6'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. latifolia",
+            "href": "/Browse/States/49/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Lodgepole Pine",
+            "href": "/Browse/States/49/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "74.6'",
+            "href": "/Browse/Trees/74975/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/74979/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "72.5'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/States/49/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/States/49/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "72.5'",
+            "href": "/Browse/Trees/74983/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/74982/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Banff National Park - Two Jack",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Banff National Park - Two Jack",
+            "href": "/Browse/Sites/22032/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Demmitt Roadside Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Demmitt Roadside Park",
+            "href": "/Browse/Sites/22033/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

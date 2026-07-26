@@ -1,0 +1,286 @@
+{
+  "botanicalName": "Pinus virginiana",
+  "commonName": "Virginia Pine",
+  "global": {
+    "maxHeight": {
+      "text": "126.4'",
+      "href": "/Browse/Trees/320619/Details"
+    },
+    "maxGirth": {
+      "text": "108''",
+      "href": "/Browse/Trees/76407/Details"
+    },
+    "maxCrownSpread": {
+      "text": "61.0'",
+      "href": "/Browse/Trees/39539/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "District of Columbia",
+          "98.1'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "98.1'",
+            "href": "/Browse/Trees/126752/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/175064/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "122.3'",
+          "73''",
+          "32.0'"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "122.3'",
+            "href": "/Browse/Trees/249643/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/249319/Details"
+          },
+          {
+            "text": "32.0'",
+            "href": "/Browse/Trees/249643/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "119.4'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "119.4'",
+            "href": "/Browse/Trees/297474/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/76407/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "112.3'",
+          "84''",
+          "38.8'"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "112.3'",
+            "href": "/Browse/Trees/45425/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/231449/Details"
+          },
+          {
+            "text": "38.8'",
+            "href": "/Browse/Trees/231414/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "120.5'",
+          "91''",
+          "61.0'"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "120.5'",
+            "href": "/Browse/Trees/40616/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/39539/Details"
+          },
+          {
+            "text": "61.0'",
+            "href": "/Browse/Trees/39539/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "63.7'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "63.7'",
+            "href": "/Browse/Trees/302688/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/302688/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "94.5'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "94.5'",
+            "href": "/Browse/Trees/169004/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/169004/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "124.6'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "124.6'",
+            "href": "/Browse/Trees/40420/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/252632/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "126.4'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "126.4'",
+            "href": "/Browse/Trees/320619/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/228351/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "105.7'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "105.7'",
+            "href": "/Browse/Trees/168550/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/168550/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

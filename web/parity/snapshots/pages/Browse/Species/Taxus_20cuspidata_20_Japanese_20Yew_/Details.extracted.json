@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Taxus cuspidata",
+  "commonName": "Japanese Yew",
+  "global": {
+    "maxHeight": {
+      "text": "38.8'",
+      "href": "/Browse/Trees/226065/Details"
+    },
+    "maxGirth": {
+      "text": "35''",
+      "href": "/Browse/Trees/226065/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "38.8'",
+          "35''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "38.8'",
+            "href": "/Browse/Trees/226065/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/226065/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

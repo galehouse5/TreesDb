@@ -1,0 +1,98 @@
+{
+  "siteId": 41331,
+  "summary": {
+    "Name": "St, Patricks Church",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "10/14/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Was formerly St. Matthews Church"
+  },
+  "visits": [
+    {
+      "visited": "10/14/2007",
+      "visitors": "Diana Lee",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/bedford/bedford_ny.htm",
+      "comments": "Was formerly St. Matthews Church"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "-",
+          "207''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/41331/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/41331/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          null,
+          {
+            "text": "207''",
+            "href": "/Browse/Trees/257181/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 12.064, -073 38.613",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Westchester"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

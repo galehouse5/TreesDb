@@ -1,0 +1,129 @@
+{
+  "siteId": 39068,
+  "summary": {
+    "Name": "Paradise Valley Campground",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "07/16/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "Located on bottom land along the Yellowstone River."
+  },
+  "visits": [
+    {
+      "visited": "07/16/2018",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Located on bottom land along the Yellowstone River."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus scopulorum",
+          "Rocky Mountain Juniper",
+          "13.66 m",
+          "124 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus scopulorum",
+            "href": "/Browse/Sites/39068/Species/Juniperus%20scopulorum%20(Rocky%20Mountain%20Juniper)/Details"
+          },
+          {
+            "text": "Rocky Mountain Juniper",
+            "href": "/Browse/Sites/39068/Species/Juniperus%20scopulorum%20(Rocky%20Mountain%20Juniper)/Details"
+          },
+          {
+            "text": "13.66 m",
+            "href": "/Browse/Trees/164204/Details"
+          },
+          {
+            "text": "124 cm",
+            "href": "/Browse/Trees/164203/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus angustifolia",
+          "Narrowleaf Cottonwood",
+          "29.54 m",
+          "302 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus angustifolia",
+            "href": "/Browse/Sites/39068/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "Narrowleaf Cottonwood",
+            "href": "/Browse/Sites/39068/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "29.54 m",
+            "href": "/Browse/Trees/164206/Details"
+          },
+          {
+            "text": "302 cm",
+            "href": "/Browse/Trees/164206/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 30.644, -110 34.772",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Park"
+    },
+    "state": {
+      "text": "Montana (US)",
+      "href": "/Browse/States/24/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

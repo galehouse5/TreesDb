@@ -1,0 +1,356 @@
+{
+  "siteId": 4795,
+  "summary": {
+    "Name": "Montpelier - Landmark Forest",
+    "RHI5": "144.54",
+    "RHI10": "135.07",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.49",
+    "RGI10": "12.14",
+    "RGI20": "(not enough data)",
+    "Trees measured": "45",
+    "Last measurement date": "12/30/2009",
+    "Ownership contact": "National Trust for Historic Preservation Nature Conservancy has easement on the \"Landmark Forest\"",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/30/2009",
+      "visitors": "Robert Leverett",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/17/2005",
+      "visitors": "Will Blozan and Jess Riddle",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "53.3'",
+          "17''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/Sites/4795/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/Sites/4795/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "53.3'",
+            "href": "/Browse/Trees/224305/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/224305/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "142.6'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/4795/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/4795/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "142.6'",
+            "href": "/Browse/Trees/224318/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/224316/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "119.5'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/4795/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/4795/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "119.5'",
+            "href": "/Browse/Trees/224310/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/224310/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "-",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/4795/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/4795/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          null,
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/224306/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "129.8'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/4795/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/4795/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "129.8'",
+            "href": "/Browse/Trees/224309/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/224309/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex verticillata",
+          "Common Winterberry",
+          "16.9'",
+          "26''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex verticillata",
+            "href": "/Browse/Sites/4795/Species/Ilex%20verticillata%20(Common%20Winterberry)/Details"
+          },
+          {
+            "text": "Common Winterberry",
+            "href": "/Browse/Sites/4795/Species/Ilex%20verticillata%20(Common%20Winterberry)/Details"
+          },
+          {
+            "text": "16.9'",
+            "href": "/Browse/Trees/224308/Details"
+          },
+          {
+            "text": "26''",
+            "href": "/Browse/Trees/224308/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "129.2'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/4795/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/4795/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "129.2'",
+            "href": "/Browse/Trees/224303/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/224303/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "168.1'",
+          "270''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/4795/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/4795/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "168.1'",
+            "href": "/Browse/Trees/224329/Details"
+          },
+          {
+            "text": "270''",
+            "href": "/Browse/Trees/224324/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "111.8'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/4795/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/4795/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "111.8'",
+            "href": "/Browse/Trees/224302/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/224302/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "120.1'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/4795/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/4795/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "120.1'",
+            "href": "/Browse/Trees/224320/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/224319/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 13.145, -078 10.128",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private - open to public",
+      "County": "Orange"
+    },
+    "state": {
+      "text": "Virginia (US)",
+      "href": "/Browse/States/43/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

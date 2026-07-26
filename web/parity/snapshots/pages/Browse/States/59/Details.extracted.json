@@ -1,0 +1,206 @@
+{
+  "stateId": 59,
+  "summary": {
+    "Name": "Quebec",
+    "Code": "QC",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "09/23/2013"
+  },
+  "location": {
+    "Coordinates": "53 47.156, -068 26.389",
+    "Country": "Canada"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "114.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/States/59/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/States/59/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "114.4'",
+            "href": "/Browse/Trees/240279/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus americana",
+          "American Elm",
+          "88.0'",
+          "184''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus americana",
+            "href": "/Browse/States/59/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "American Elm",
+            "href": "/Browse/States/59/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "88.0'",
+            "href": "/Browse/Trees/240282/Details"
+          },
+          {
+            "text": "184''",
+            "href": "/Browse/Trees/240282/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus rubra",
+          "Slippery Elm",
+          "65.0'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus rubra",
+            "href": "/Browse/States/59/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "Slippery Elm",
+            "href": "/Browse/States/59/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/240281/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/240281/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pointe Du Lac",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pointe Du Lac",
+            "href": "/Browse/Sites/40919/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quebec Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quebec Single Tree Sites",
+            "href": "/Browse/Sites/40920/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

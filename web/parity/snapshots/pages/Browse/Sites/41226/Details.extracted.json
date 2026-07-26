@@ -1,0 +1,157 @@
+{
+  "siteId": 41226,
+  "summary": {
+    "Name": "Parton Property",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "05/25/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/25/2011",
+      "visitors": "James Parton",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "107.0'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41226/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41226/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/252620/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/252620/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Melia azedarach",
+          "Chinaberrytree",
+          "47.5'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Melia azedarach",
+            "href": "/Browse/Sites/41226/Species/Melia%20azedarach%20(Chinaberrytree)/Details"
+          },
+          {
+            "text": "Chinaberrytree",
+            "href": "/Browse/Sites/41226/Species/Melia%20azedarach%20(Chinaberrytree)/Details"
+          },
+          {
+            "text": "47.5'",
+            "href": "/Browse/Trees/252618/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/252618/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Morus spp.",
+          "Mulberry",
+          "27.6'",
+          "35''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Morus spp.",
+            "href": "/Browse/Sites/41226/Species/Morus%20spp.%20(Mulberry)/Details"
+          },
+          {
+            "text": "Mulberry",
+            "href": "/Browse/Sites/41226/Species/Morus%20spp.%20(Mulberry)/Details"
+          },
+          {
+            "text": "27.6'",
+            "href": "/Browse/Trees/252619/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/252619/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 12.791, -082 39.074",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Abbeville"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

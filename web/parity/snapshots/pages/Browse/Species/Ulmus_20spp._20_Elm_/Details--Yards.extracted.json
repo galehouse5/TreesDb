@@ -1,0 +1,214 @@
+{
+  "botanicalName": "Ulmus spp.",
+  "commonName": "Elm",
+  "global": {
+    "maxHeight": {
+      "text": "43.00 yd",
+      "href": "/Browse/Trees/251169/Details"
+    },
+    "maxGirth": {
+      "text": "212''",
+      "href": "/Browse/Trees/229804/Details"
+    },
+    "maxCrownSpread": {
+      "text": "30.00 yd",
+      "href": "/Browse/Trees/251169/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Budapest",
+          "28.53 yd",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Budapest",
+            "href": "/Browse/States/207/Details"
+          },
+          {
+            "text": "28.53 yd",
+            "href": "/Browse/Trees/283217/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/283217/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "25.40 yd",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          {
+            "text": "25.40 yd",
+            "href": "/Browse/Trees/171018/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/171018/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "43.00 yd",
+          "164''",
+          "30.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "43.00 yd",
+            "href": "/Browse/Trees/251169/Details"
+          },
+          {
+            "text": "164''",
+            "href": "/Browse/Trees/251169/Details"
+          },
+          {
+            "text": "30.00 yd",
+            "href": "/Browse/Trees/251169/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "33.17 yd",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "33.17 yd",
+            "href": "/Browse/Trees/259967/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/259967/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "27.17 yd",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "27.17 yd",
+            "href": "/Browse/Trees/171378/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/171378/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "19.43 yd",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "19.43 yd",
+            "href": "/Browse/Trees/252614/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/252614/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "34.63 yd",
+          "212''",
+          "23.33 yd"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "34.63 yd",
+            "href": "/Browse/Trees/229804/Details"
+          },
+          {
+            "text": "212''",
+            "href": "/Browse/Trees/229804/Details"
+          },
+          {
+            "text": "23.33 yd",
+            "href": "/Browse/Trees/229804/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 230029,
+  "botanicalName": {
+    "text": "Platanus occidentalis",
+    "href": "/Browse/Sites/40416/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+  },
+  "commonName": {
+    "text": "American Sycamore",
+    "href": "/Browse/Sites/40416/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+  },
+  "details": {
+    "Height": "159.6'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "108''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "129.28",
+    "ENTSPTS": "1436.40",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.30",
+    "Champion points (abbreviated)": "267.60",
+    "Diameter": "34''",
+    "Conical volume": "342.9 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 10/22/2002",
+      "summary": {
+        "Height": "159.6'",
+        "Girth": "108''"
+      },
+      "details": {
+        "Botanical name": "Platanus occidentalis",
+        "Common name": "American Sycamore",
+        "Height": "159.6'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "108''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "129.28",
+        "ENTSPTS": "1436.40",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.30",
+        "Champion points (abbreviated)": "267.60",
+        "Diameter": "34''",
+        "Conical volume": "342.9 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Dale Luthringer"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "35 26.848, -083 26.443",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Deep Creek",
+      "href": "/Browse/Sites/40416/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Swain"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

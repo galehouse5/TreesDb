@@ -1,0 +1,201 @@
+{
+  "siteId": 41216,
+  "summary": {
+    "Name": "Pretty Hollow Gap Trail",
+    "RHI5": "86.50",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.42",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "08/22/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "See also: http://www.ents-bbs.org/viewtopic.php?f=74&t=567&sid=5889e46023df58e7bc6da42345d72d3e"
+  },
+  "visits": [
+    {
+      "visited": "08/22/2010",
+      "visitors": "James Parton and Will Blozan",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "See also: http://www.ents-bbs.org/viewtopic.php?f=74&t=567&sid=5889e46023df58e7bc6da42345d72d3e"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "-",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/41216/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/41216/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          null,
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/252469/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "150.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41216/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41216/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "150.0'",
+            "href": "/Browse/Trees/252461/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "143.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/41216/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/41216/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "143.3'",
+            "href": "/Browse/Trees/252463/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "139.2'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/41216/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41216/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "139.2'",
+            "href": "/Browse/Trees/252462/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/252462/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "-",
+          "185''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/41216/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/41216/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          null,
+          {
+            "text": "185''",
+            "href": "/Browse/Trees/252467/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 38.157, -083 07.156",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Haywood"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,338 @@
+{
+  "siteId": 919,
+  "summary": {
+    "Name": "Elmwood Park",
+    "RHI5": "114.42",
+    "RHI10": "108.95",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.92",
+    "RGI10": "4.46",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "11/01/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "Elmwood Park is a small park in Rocky River, less than 1/4 S of Lake Erie. Some of the park is developed, but most of the land is wooded, with low hills and valleys that appear to once have been creek beds."
+  },
+  "visits": [
+    {
+      "visited": "11/01/2011",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "Elmwood Park is a small park in Rocky River, less than 1/4 S of Lake Erie. Some of the park is developed, but most of the land is wooded, with low hills and valleys that appear to once have been creek beds."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "107.6'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/919/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/919/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "107.6'",
+            "href": "/Browse/Trees/16580/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/16580/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "103.2'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/919/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/919/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "103.2'",
+            "href": "/Browse/Trees/16577/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/16577/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "119.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/919/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/919/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "119.4'",
+            "href": "/Browse/Trees/16578/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "102.9'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/919/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/919/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "102.9'",
+            "href": "/Browse/Trees/16585/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/16585/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "106.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/919/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/919/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "106.5'",
+            "href": "/Browse/Trees/16583/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "120.6'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/919/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/919/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "120.6'",
+            "href": "/Browse/Trees/16586/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/16586/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "103.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/919/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/919/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "103.5'",
+            "href": "/Browse/Trees/16584/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "106.9'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/919/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/919/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "106.9'",
+            "href": "/Browse/Trees/16581/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/16581/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Robinia pseudoacacia",
+          "Black Locust",
+          "117.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Robinia pseudoacacia",
+            "href": "/Browse/Sites/919/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "Black Locust",
+            "href": "/Browse/Sites/919/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "117.6'",
+            "href": "/Browse/Trees/16582/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sassafras albidum",
+          "Sassafras",
+          "101.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sassafras albidum",
+            "href": "/Browse/Sites/919/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "Sassafras",
+            "href": "/Browse/Sites/919/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "101.3'",
+            "href": "/Browse/Trees/16579/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 28.686, -081 51.733",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "City park",
+      "County": "Cuyahoga"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

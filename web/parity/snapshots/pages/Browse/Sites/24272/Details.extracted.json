@@ -1,0 +1,359 @@
+{
+  "siteId": 24272,
+  "summary": {
+    "Name": "Ferncliff Penisular Natural Area",
+    "RHI5": "112.78",
+    "RHI10": "93.96",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.18",
+    "RGI10": "7.86",
+    "RGI20": "(not enough data)",
+    "Trees measured": "21",
+    "Last measurement date": "03/26/2008",
+    "Ownership contact": "Ohiopyle State Park Box 105 Ohiopyle, PA 15470",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/26/2008",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/ohiopyle_state_park07.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/14/2006",
+      "visitors": "Edward Frank and Anthony Kelly",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/ohiopyle06/ohiopyle_state_park.htm",
+      "comments": "100 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "40.5'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/Sites/24272/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/Sites/24272/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "40.5'",
+            "href": "/Browse/Trees/167638/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/167638/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "89.5'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/24272/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/24272/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/167635/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/167635/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "108.6'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/24272/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/24272/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "108.6'",
+            "href": "/Browse/Trees/167632/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/167632/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "65.2'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/24272/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/24272/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "65.2'",
+            "href": "/Browse/Trees/167633/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/167633/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "132.6'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/24272/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/24272/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "132.6'",
+            "href": "/Browse/Trees/167646/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/167637/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "112.2'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/24272/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/24272/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "112.2'",
+            "href": "/Browse/Trees/167641/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/167639/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "105.5'",
+          "204''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/24272/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/24272/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "105.5'",
+            "href": "/Browse/Trees/167627/Details"
+          },
+          {
+            "text": "204''",
+            "href": "/Browse/Trees/167627/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "105.0'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/24272/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/24272/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/167640/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/167631/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "90.0'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/24272/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/24272/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/167626/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/167626/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "90.5'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/24272/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/24272/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "90.5'",
+            "href": "/Browse/Trees/167629/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/167629/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 52.165, -079 29.739",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - State Park",
+      "County": "Fayette"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,213 @@
+{
+  "siteId": 40479,
+  "summary": {
+    "Name": "Valley Garden Park",
+    "RHI5": "123.82",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "13.43",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "11/14/2014",
+    "Ownership contact": "Valley Garden Park 500 Campbell Road Greenville, DE",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/14/2014",
+      "visitors": "George Fieo",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "150.4'",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40479/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40479/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "150.4'",
+            "href": "/Browse/Trees/231144/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/231142/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "93.8'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/40479/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/40479/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "93.8'",
+            "href": "/Browse/Trees/231140/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/231140/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "117.7'",
+          "228''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/40479/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/40479/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "117.7'",
+            "href": "/Browse/Trees/231141/Details"
+          },
+          {
+            "text": "228''",
+            "href": "/Browse/Trees/231141/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "133.0'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/40479/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/40479/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/231139/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/231137/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus x saulii",
+          "Hybrid Oak",
+          "124.2'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus x saulii",
+            "href": "/Browse/Sites/40479/Species/Quercus%20x%20saulii%20(Hybrid%20Oak)/Details"
+          },
+          {
+            "text": "Hybrid Oak",
+            "href": "/Browse/Sites/40479/Species/Quercus%20x%20saulii%20(Hybrid%20Oak)/Details"
+          },
+          {
+            "text": "124.2'",
+            "href": "/Browse/Trees/231145/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/231145/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 47.342, -075 36.826",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "New Castle"
+    },
+    "state": {
+      "text": "Delaware (US)",
+      "href": "/Browse/States/7/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

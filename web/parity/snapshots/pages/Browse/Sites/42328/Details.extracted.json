@@ -1,0 +1,353 @@
+{
+  "siteId": 42328,
+  "summary": {
+    "Name": "Cedars Of Lebanon State Park",
+    "RHI5": "103.70",
+    "RHI10": "96.31",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.62",
+    "RGI10": "6.70",
+    "RGI20": "(not enough data)",
+    "Trees measured": "25",
+    "Last measurement date": "09/14/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/14/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. schneckii",
+          "Sugar Maple",
+          "101.6'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. schneckii",
+            "href": "/Browse/Sites/42328/Species/Acer%20saccharum%20var.%20schneckii%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42328/Species/Acer%20saccharum%20var.%20schneckii%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "101.6'",
+            "href": "/Browse/Trees/319050/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/319050/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "116.8'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/42328/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/42328/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "116.8'",
+            "href": "/Browse/Trees/319056/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/319056/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "105.6'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42328/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42328/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "105.6'",
+            "href": "/Browse/Trees/319057/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/319057/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "84.4'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/42328/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/42328/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "84.4'",
+            "href": "/Browse/Trees/319060/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/319060/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Frangula caroliniana",
+          "Carolina Buckthorn",
+          "19.1'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Frangula caroliniana",
+            "href": "/Browse/Sites/42328/Species/Frangula%20caroliniana%20(Carolina%20Buckthorn)/Details"
+          },
+          {
+            "text": "Carolina Buckthorn",
+            "href": "/Browse/Sites/42328/Species/Frangula%20caroliniana%20(Carolina%20Buckthorn)/Details"
+          },
+          {
+            "text": "19.1'",
+            "href": "/Browse/Trees/319061/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/319061/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana var. biltmoreana",
+          "Biltmore Ash",
+          "88.4'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana var. biltmoreana",
+            "href": "/Browse/Sites/42328/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "Biltmore Ash",
+            "href": "/Browse/Sites/42328/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "88.4'",
+            "href": "/Browse/Trees/319055/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/319055/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus quadrangulata",
+          "Blue Ash",
+          "81.0'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus quadrangulata",
+            "href": "/Browse/Sites/42328/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "Blue Ash",
+            "href": "/Browse/Sites/42328/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/319054/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/319053/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "76.3'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/42328/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/42328/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "76.3'",
+            "href": "/Browse/Trees/319062/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/319062/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "74.0'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/42328/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/42328/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "74.0'",
+            "href": "/Browse/Trees/319058/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/319058/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "77.1'",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/42328/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/42328/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "77.1'",
+            "href": "/Browse/Trees/319063/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/319063/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 04.762, -086 18.865",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Wilson"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

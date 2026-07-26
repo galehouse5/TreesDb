@@ -1,0 +1,154 @@
+{
+  "siteId": 39323,
+  "summary": {
+    "Name": "Baker Park Reserve",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "05/11/2016",
+    "Ownership contact": "(private)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/11/2016",
+      "visitors": "Riley Smith",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus macrocarpa",
+          "Bur Oak",
+          "-",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa",
+            "href": "/Browse/Sites/39323/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39323/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/172278/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "68.0'",
+          "157''",
+          "95.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/39323/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/39323/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/172279/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/172279/Details"
+          },
+          {
+            "text": "95.0'",
+            "href": "/Browse/Trees/172279/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana",
+          "American Basswood",
+          "-",
+          "172''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana",
+            "href": "/Browse/Sites/39323/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/39323/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          null,
+          {
+            "text": "172''",
+            "href": "/Browse/Trees/172277/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 01.344, -093 38.045",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Hennepin"
+    },
+    "state": {
+      "text": "Minnesota (US)",
+      "href": "/Browse/States/21/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,148 @@
+{
+  "siteId": 42292,
+  "summary": {
+    "Name": "Hardesty Mt. Trail",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "07/14/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "Willamette National Forest"
+  },
+  "visits": [
+    {
+      "visited": "07/14/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "Willamette National Forest"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "75.04 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/42292/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/42292/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "75.04 m",
+            "href": "/Browse/Trees/318016/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja plicata",
+          "Western Redcedar",
+          "53.40 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja plicata",
+            "href": "/Browse/Sites/42292/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "Western Redcedar",
+            "href": "/Browse/Sites/42292/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "53.40 m",
+            "href": "/Browse/Trees/318017/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga heterophylla",
+          "Western Hemlock",
+          "55.29 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga heterophylla",
+            "href": "/Browse/Sites/42292/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "Western Hemlock",
+            "href": "/Browse/Sites/42292/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "55.29 m",
+            "href": "/Browse/Trees/318018/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 50.825, -122 39.608",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Lane"
+    },
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Pinus halepensis",
+  "commonName": "Aleppo Pine",
+  "global": {
+    "maxHeight": {
+      "text": "27.87 yd",
+      "href": "/Browse/Trees/274938/Details"
+    },
+    "maxGirth": {
+      "text": "116''",
+      "href": "/Browse/Trees/274938/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "18.27 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "18.27 yd",
+            "href": "/Browse/Trees/274851/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Community of Madrid",
+          "27.87 yd",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Community of Madrid",
+            "href": "/Browse/States/137/Details"
+          },
+          {
+            "text": "27.87 yd",
+            "href": "/Browse/Trees/274938/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/274938/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

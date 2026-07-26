@@ -1,0 +1,210 @@
+{
+  "siteId": 38831,
+  "summary": {
+    "Name": "Catalina State Park",
+    "RHI5": "27.50",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "5.01",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "02/09/2017",
+    "Ownership contact": "Catalina State Park 11570 North Oracle Road, Tuscon, Arizona 85737",
+    "General comments": "Trees were measured along the washes and campground areas."
+  },
+  "visits": [
+    {
+      "visited": "02/09/2017",
+      "visitors": "Turner Sharp and Susan Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured along the washes and campground areas."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carnegiea gigantea",
+          "Saguaro",
+          "37.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carnegiea gigantea",
+            "href": "/Browse/Sites/38831/Species/Carnegiea%20gigantea%20(Saguaro)/Details"
+          },
+          {
+            "text": "Saguaro",
+            "href": "/Browse/Sites/38831/Species/Carnegiea%20gigantea%20(Saguaro)/Details"
+          },
+          {
+            "text": "37.8'",
+            "href": "/Browse/Trees/159298/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. reticulata",
+          "Netleaf Hackberry",
+          "19.6'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. reticulata",
+            "href": "/Browse/Sites/38831/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "Netleaf Hackberry",
+            "href": "/Browse/Sites/38831/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "19.6'",
+            "href": "/Browse/Trees/159300/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/159300/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chilopsis linearis",
+          "Desert Willow",
+          "32.2'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chilopsis linearis",
+            "href": "/Browse/Sites/38831/Species/Chilopsis%20linearis%20(Desert%20Willow)/Details"
+          },
+          {
+            "text": "Desert Willow",
+            "href": "/Browse/Sites/38831/Species/Chilopsis%20linearis%20(Desert%20Willow)/Details"
+          },
+          {
+            "text": "32.2'",
+            "href": "/Browse/Trees/159297/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/159297/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus velutina",
+          "Velvet Ash",
+          "19.6'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus velutina",
+            "href": "/Browse/Sites/38831/Species/Fraxinus%20velutina%20(Velvet%20Ash)/Details"
+          },
+          {
+            "text": "Velvet Ash",
+            "href": "/Browse/Sites/38831/Species/Fraxinus%20velutina%20(Velvet%20Ash)/Details"
+          },
+          {
+            "text": "19.6'",
+            "href": "/Browse/Trees/159299/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/159299/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prosopis velutina",
+          "Velvet Mesquite",
+          "28.3'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prosopis velutina",
+            "href": "/Browse/Sites/38831/Species/Prosopis%20velutina%20(Velvet%20Mesquite)/Details"
+          },
+          {
+            "text": "Velvet Mesquite",
+            "href": "/Browse/Sites/38831/Species/Prosopis%20velutina%20(Velvet%20Mesquite)/Details"
+          },
+          {
+            "text": "28.3'",
+            "href": "/Browse/Trees/159301/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/159301/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 25.132, -110 55.743",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Pima"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

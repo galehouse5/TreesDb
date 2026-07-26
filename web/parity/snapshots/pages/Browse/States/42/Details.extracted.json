@@ -1,0 +1,321 @@
+{
+  "stateId": 42,
+  "summary": {
+    "Name": "Utah",
+    "Code": "UT",
+    "RHI5": "46.56",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.14",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "07/27/2015"
+  },
+  "location": {
+    "Coordinates": "39 29.984, -111 32.835",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "41.9'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/42/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/42/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "41.9'",
+            "href": "/Browse/Trees/126232/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/126232/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Artemisia tridentata",
+          "Big Sagebrush",
+          "9.6'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Artemisia tridentata",
+            "href": "/Browse/States/42/Species/Artemisia%20tridentata%20(Big%20Sagebrush)/Details"
+          },
+          {
+            "text": "Big Sagebrush",
+            "href": "/Browse/States/42/Species/Artemisia%20tridentata%20(Big%20Sagebrush)/Details"
+          },
+          {
+            "text": "9.6'",
+            "href": "/Browse/Trees/126230/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/126230/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Elaeagnus angustifolia",
+          "Russian Olive",
+          "41.7'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Elaeagnus angustifolia",
+            "href": "/Browse/States/42/Species/Elaeagnus%20angustifolia%20(Russian%20Olive)/Details"
+          },
+          {
+            "text": "Russian Olive",
+            "href": "/Browse/States/42/Species/Elaeagnus%20angustifolia%20(Russian%20Olive)/Details"
+          },
+          {
+            "text": "41.7'",
+            "href": "/Browse/Trees/239650/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/239650/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus monosperma",
+          "Oneseed Juniper",
+          "22.9'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus monosperma",
+            "href": "/Browse/States/42/Species/Juniperus%20monosperma%20(Oneseed%20Juniper)/Details"
+          },
+          {
+            "text": "Oneseed Juniper",
+            "href": "/Browse/States/42/Species/Juniperus%20monosperma%20(Oneseed%20Juniper)/Details"
+          },
+          {
+            "text": "22.9'",
+            "href": "/Browse/Trees/126233/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/126233/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus fremontii ssp. fremontii",
+          "Fremont Cottonwood",
+          "63.1'",
+          "167''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus fremontii ssp. fremontii",
+            "href": "/Browse/States/42/Species/Populus%20fremontii%20ssp.%20fremontii%20(Fremont%20Cottonwood)/Details"
+          },
+          {
+            "text": "Fremont Cottonwood",
+            "href": "/Browse/States/42/Species/Populus%20fremontii%20ssp.%20fremontii%20(Fremont%20Cottonwood)/Details"
+          },
+          {
+            "text": "63.1'",
+            "href": "/Browse/Trees/126227/Details"
+          },
+          {
+            "text": "167''",
+            "href": "/Browse/Trees/239653/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sambucus nigra ssp. cerulea",
+          "Blue Elderberry",
+          "13.9'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sambucus nigra ssp. cerulea",
+            "href": "/Browse/States/42/Species/Sambucus%20nigra%20ssp.%20cerulea%20(Blue%20Elderberry)/Details"
+          },
+          {
+            "text": "Blue Elderberry",
+            "href": "/Browse/States/42/Species/Sambucus%20nigra%20ssp.%20cerulea%20(Blue%20Elderberry)/Details"
+          },
+          {
+            "text": "13.9'",
+            "href": "/Browse/Trees/126234/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/126234/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus pumila",
+          "Siberian Elm",
+          "63.2'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus pumila",
+            "href": "/Browse/States/42/Species/Ulmus%20pumila%20(Siberian%20Elm)/Details"
+          },
+          {
+            "text": "Siberian Elm",
+            "href": "/Browse/States/42/Species/Ulmus%20pumila%20(Siberian%20Elm)/Details"
+          },
+          {
+            "text": "63.2'",
+            "href": "/Browse/Trees/239655/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/239654/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Green River Corrider - UT",
+          "30.28",
+          "-",
+          "4.13",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Green River Corrider - UT",
+            "href": "/Browse/Sites/37976/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Utah Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Utah Single Tree Sites",
+            "href": "/Browse/Sites/40887/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

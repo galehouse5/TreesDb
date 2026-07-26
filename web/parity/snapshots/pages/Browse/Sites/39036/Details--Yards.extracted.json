@@ -1,0 +1,110 @@
+{
+  "siteId": 39036,
+  "summary": {
+    "Name": "City Park - New Orleans",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "04/27/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/27/2018",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "09/10/2008",
+      "visitors": "Larry Tucei",
+      "tripReportUrl": "groups.google.com/group/entstrees/browse_thread/thread/188cf5de11a2090e",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus virginiana",
+          "Live Oak",
+          "19.80 yd",
+          "331''",
+          "51.50 yd"
+        ],
+        "links": [
+          {
+            "text": "Quercus virginiana",
+            "href": "/Browse/Sites/39036/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+          },
+          {
+            "text": "Live Oak",
+            "href": "/Browse/Sites/39036/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+          },
+          {
+            "text": "19.80 yd",
+            "href": "/Browse/Trees/163293/Details"
+          },
+          {
+            "text": "331''",
+            "href": "/Browse/Trees/163205/Details"
+          },
+          {
+            "text": "51.50 yd",
+            "href": "/Browse/Trees/163205/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "29 59.604, -090 05.891",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Orleans Parish"
+    },
+    "state": {
+      "text": "Louisiana (US)",
+      "href": "/Browse/States/16/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

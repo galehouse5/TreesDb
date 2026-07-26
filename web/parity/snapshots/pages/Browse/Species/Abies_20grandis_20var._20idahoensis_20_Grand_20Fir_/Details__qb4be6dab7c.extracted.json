@@ -1,0 +1,243 @@
+{
+  "botanicalName": "Abies grandis var. idahoensis",
+  "commonName": "Grand Fir",
+  "global": {
+    "maxHeight": {
+      "text": "215.6'",
+      "href": "/Browse/Trees/296898/Details"
+    },
+    "maxGirth": {
+      "text": "159''",
+      "href": "/Browse/Trees/296946/Details"
+    }
+  },
+  "state": {
+    "state": {
+      "text": "Idaho (US)",
+      "href": "/Browse/States/11/Details"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "208.3'",
+        "href": "/Browse/Trees/318045/Details"
+      },
+      "maxGirth": {
+        "text": "116''",
+        "href": "/Browse/Trees/318045/Details"
+      }
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Idaho",
+          "208.3'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "208.3'",
+            "href": "/Browse/Trees/318045/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/318045/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "148.3'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "148.3'",
+            "href": "/Browse/Trees/318056/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/318056/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "215.6'",
+          "159''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "215.6'",
+            "href": "/Browse/Trees/296898/Details"
+          },
+          {
+            "text": "159''",
+            "href": "/Browse/Trees/296946/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedSitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Floodwood State Forest",
+          "208.3'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Floodwood State Forest",
+            "href": "/Browse/Sites/42297/Details"
+          },
+          {
+            "text": "208.3'",
+            "href": "/Browse/Trees/318045/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/318045/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ponderosa State Park",
+          "150.7'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ponderosa State Park",
+            "href": "/Browse/Sites/39072/Details"
+          },
+          {
+            "text": "150.7'",
+            "href": "/Browse/Trees/318076/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/318076/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "St. Joe River Road",
+          "176.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "St. Joe River Road",
+            "href": "/Browse/Sites/42299/Details"
+          },
+          {
+            "text": "176.5'",
+            "href": "/Browse/Trees/318061/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "White Pine Scenic Byway",
+          "176.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "White Pine Scenic Byway",
+            "href": "/Browse/Sites/42081/Details"
+          },
+          {
+            "text": "176.1'",
+            "href": "/Browse/Trees/296911/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

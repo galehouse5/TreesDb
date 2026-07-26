@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Acer nigrum",
+  "commonName": "Black Maple",
+  "global": {
+    "maxHeight": {
+      "text": "38.46 m",
+      "href": "/Browse/Trees/221847/Details"
+    },
+    "maxGirth": {
+      "text": "414 cm",
+      "href": "/Browse/Trees/313062/Details"
+    },
+    "maxCrownSpread": {
+      "text": "25.60 m",
+      "href": "/Browse/Trees/313062/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Kentucky",
+          "21.79 m",
+          "143 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "21.79 m",
+            "href": "/Browse/Trees/297769/Details"
+          },
+          {
+            "text": "143 cm",
+            "href": "/Browse/Trees/297769/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "38.46 m",
+          "367 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "38.46 m",
+            "href": "/Browse/Trees/221847/Details"
+          },
+          {
+            "text": "367 cm",
+            "href": "/Browse/Trees/186281/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "36.09 m",
+          "279 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "36.09 m",
+            "href": "/Browse/Trees/63696/Details"
+          },
+          {
+            "text": "279 cm",
+            "href": "/Browse/Trees/17336/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "25.27 m",
+          "327 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "25.27 m",
+            "href": "/Browse/Trees/299289/Details"
+          },
+          {
+            "text": "327 cm",
+            "href": "/Browse/Trees/299289/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "33.74 m",
+          "271 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "33.74 m",
+            "href": "/Browse/Trees/168545/Details"
+          },
+          {
+            "text": "271 cm",
+            "href": "/Browse/Trees/168546/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "30.42 m",
+          "414 cm",
+          "25.60 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "30.42 m",
+            "href": "/Browse/Trees/292500/Details"
+          },
+          {
+            "text": "414 cm",
+            "href": "/Browse/Trees/313062/Details"
+          },
+          {
+            "text": "25.60 m",
+            "href": "/Browse/Trees/313062/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

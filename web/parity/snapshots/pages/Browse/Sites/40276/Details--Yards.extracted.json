@@ -1,0 +1,104 @@
+{
+  "siteId": 40276,
+  "summary": {
+    "Name": "Linville Gorge Wilderness",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "08/31/2003",
+    "Ownership contact": "(no data)",
+    "General comments": "11,786 acres"
+  },
+  "visits": [
+    {
+      "visited": "08/31/2003",
+      "visitors": "Jess Riddle, Will Blozan, and Michael Davie",
+      "tripReportUrl": "(none)",
+      "comments": "11,786 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Tsuga caroliniana",
+          "Carolina Hemlock",
+          "36.50 yd",
+          "129''",
+          "16.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Tsuga caroliniana",
+            "href": "/Browse/Sites/40276/Species/Tsuga%20caroliniana%20(Carolina%20Hemlock)/Details"
+          },
+          {
+            "text": "Carolina Hemlock",
+            "href": "/Browse/Sites/40276/Species/Tsuga%20caroliniana%20(Carolina%20Hemlock)/Details"
+          },
+          {
+            "text": "36.50 yd",
+            "href": "/Browse/Trees/227272/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/227273/Details"
+          },
+          {
+            "text": "16.67 yd",
+            "href": "/Browse/Trees/227273/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 54.380, -081 53.920",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Burke"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

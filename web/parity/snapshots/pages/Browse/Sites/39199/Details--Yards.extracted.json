@@ -1,0 +1,132 @@
+{
+  "siteId": 39199,
+  "summary": {
+    "Name": "Delshire Woods Preserve",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "11/22/2015",
+    "Ownership contact": "Western Wildlife Corridor Cincinnati, Ohio",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/22/2015",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "38.33 yd",
+          "170''",
+          "26.33 yd"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/39199/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39199/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "38.33 yd",
+            "href": "/Browse/Trees/169269/Details"
+          },
+          {
+            "text": "170''",
+            "href": "/Browse/Trees/169270/Details"
+          },
+          {
+            "text": "26.33 yd",
+            "href": "/Browse/Trees/169269/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus muehlenbergii",
+          "Chinkapin Oak",
+          "28.83 yd",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus muehlenbergii",
+            "href": "/Browse/Sites/39199/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "Chinkapin Oak",
+            "href": "/Browse/Sites/39199/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "28.83 yd",
+            "href": "/Browse/Trees/169271/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/169271/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 05.112, -084 35.788",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Hamilton"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

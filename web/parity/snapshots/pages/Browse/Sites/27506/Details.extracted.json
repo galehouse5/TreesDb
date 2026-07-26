@@ -1,0 +1,157 @@
+{
+  "siteId": 27506,
+  "summary": {
+    "Name": "Thirteen Mile Creek",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "08/01/2015",
+    "Ownership contact": "Thirteen Mile creek is pinched between parts of the Hideout Camp Ground and other private property.",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/01/2015",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "76.0'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/Sites/27506/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/Sites/27506/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "76.0'",
+            "href": "/Browse/Trees/98182/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/98182/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus angustifolia",
+          "Narrowleaf Cottonwood",
+          "91.1'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus angustifolia",
+            "href": "/Browse/Sites/27506/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "Narrowleaf Cottonwood",
+            "href": "/Browse/Sites/27506/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "91.1'",
+            "href": "/Browse/Trees/98181/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/98181/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus virginiana var. melanocarpa",
+          "Black Chokecherry",
+          "28.9'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus virginiana var. melanocarpa",
+            "href": "/Browse/Sites/27506/Species/Prunus%20virginiana%20var.%20melanocarpa%20(Black%20Chokecherry)/Details"
+          },
+          {
+            "text": "Black Chokecherry",
+            "href": "/Browse/Sites/27506/Species/Prunus%20virginiana%20var.%20melanocarpa%20(Black%20Chokecherry)/Details"
+          },
+          {
+            "text": "28.9'",
+            "href": "/Browse/Trees/98184/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/98184/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 30.563, -107 19.110",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Garfield"
+    },
+    "state": {
+      "text": "Colorado (US)",
+      "href": "/Browse/States/5/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

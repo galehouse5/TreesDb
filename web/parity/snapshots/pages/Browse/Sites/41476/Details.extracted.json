@@ -1,0 +1,353 @@
+{
+  "siteId": 41476,
+  "summary": {
+    "Name": "Hunters Creek Gorge",
+    "RHI5": "121.44",
+    "RHI10": "117.83",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.87",
+    "RGI10": "9.44",
+    "RGI20": "(not enough data)",
+    "Trees measured": "28",
+    "Last measurement date": "04/06/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured on the Kenneglen Preserve owned by the Western New York Land Conservancy and the Emmerling property to be acquired."
+  },
+  "visits": [
+    {
+      "visited": "04/06/2018",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured on the Kenneglen Preserve owned by the Western New York Land Conservancy and the Emmerling property to be acquired."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "112.2'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/Sites/41476/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/Sites/41476/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "112.2'",
+            "href": "/Browse/Trees/261634/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/261635/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "111.0'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/41476/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41476/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/261636/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/261637/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "126.6'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/41476/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/41476/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "126.6'",
+            "href": "/Browse/Trees/261613/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/261616/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "106.5'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41476/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41476/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "106.5'",
+            "href": "/Browse/Trees/261639/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/261639/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "112.9'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/41476/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/41476/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "112.9'",
+            "href": "/Browse/Trees/261630/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/261630/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "60.5'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/41476/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/41476/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "60.5'",
+            "href": "/Browse/Trees/261640/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/261640/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "110.0'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41476/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41476/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/261638/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/261638/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "117.3'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/41476/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/41476/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "117.3'",
+            "href": "/Browse/Trees/261627/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/261627/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "112.5'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/41476/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/41476/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "112.5'",
+            "href": "/Browse/Trees/261633/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/261633/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "121.3'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/41476/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/41476/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "121.3'",
+            "href": "/Browse/Trees/261621/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/261623/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 45.248, -078 32.804",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Erie"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,98 @@
+{
+  "siteId": 41933,
+  "summary": {
+    "Name": "Vvtaflor",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "12/13/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/13/2013",
+      "visitors": "Ray Kouta and Ray Tuomas",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus canariensis",
+          "Canary Island Pine",
+          "187.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus canariensis",
+            "href": "/Browse/Sites/41933/Species/Pinus%20canariensis%20(Canary%20Island%20Pine)/Details"
+          },
+          {
+            "text": "Canary Island Pine",
+            "href": "/Browse/Sites/41933/Species/Pinus%20canariensis%20(Canary%20Island%20Pine)/Details"
+          },
+          {
+            "text": "187.0'",
+            "href": "/Browse/Trees/283178/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "28 09.505, -016 38.328",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Santa Cruz De Tenerife"
+    },
+    "state": {
+      "text": "Canary Islands (ES)",
+      "href": "/Browse/States/127/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

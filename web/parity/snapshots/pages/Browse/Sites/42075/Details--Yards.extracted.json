@@ -1,0 +1,204 @@
+{
+  "siteId": 42075,
+  "summary": {
+    "Name": "Marymere Falls Trail",
+    "RHI5": "65.287",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "1.933",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "06/16/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/16/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies grandis var. grandis",
+          "Grand Fir",
+          "74.47 yd",
+          "269''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis var. grandis",
+            "href": "/Browse/Sites/42075/Species/Abies%20grandis%20var.%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/Sites/42075/Species/Abies%20grandis%20var.%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "74.47 yd",
+            "href": "/Browse/Trees/296866/Details"
+          },
+          {
+            "text": "269''",
+            "href": "/Browse/Trees/296866/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer macrophyllum",
+          "Bigleaf Maple",
+          "47.40 yd",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer macrophyllum",
+            "href": "/Browse/Sites/42075/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "Bigleaf Maple",
+            "href": "/Browse/Sites/42075/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "47.40 yd",
+            "href": "/Browse/Trees/296869/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/296869/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "83.33 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/42075/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/42075/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "83.33 yd",
+            "href": "/Browse/Trees/296861/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja plicata",
+          "Western Redcedar",
+          "64.47 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja plicata",
+            "href": "/Browse/Sites/42075/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "Western Redcedar",
+            "href": "/Browse/Sites/42075/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "64.47 yd",
+            "href": "/Browse/Trees/296863/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga heterophylla",
+          "Western Hemlock",
+          "56.77 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga heterophylla",
+            "href": "/Browse/Sites/42075/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "Western Hemlock",
+            "href": "/Browse/Sites/42075/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "56.77 yd",
+            "href": "/Browse/Trees/296867/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "48 03.381, -123 47.577",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Clallam"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

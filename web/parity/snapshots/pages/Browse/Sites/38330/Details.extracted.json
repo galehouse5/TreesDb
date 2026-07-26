@@ -1,0 +1,191 @@
+{
+  "siteId": 38330,
+  "summary": {
+    "Name": "Snow Bowl",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "27",
+    "Last measurement date": "09/11/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured along the Kachina Trail which was formerly named the Anasazi Trail."
+  },
+  "visits": [
+    {
+      "visited": "09/11/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Trees were measured along the Kachina Trail which was formerly named the Anasazi Trail."
+    },
+    {
+      "visited": "03/04/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies lasiocarpa var. arizonica",
+          "Corkbark Fir",
+          "109.8'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. arizonica",
+            "href": "/Browse/Sites/38330/Species/Abies%20lasiocarpa%20var.%20arizonica%20(Corkbark%20Fir)/Details"
+          },
+          {
+            "text": "Corkbark Fir",
+            "href": "/Browse/Sites/38330/Species/Abies%20lasiocarpa%20var.%20arizonica%20(Corkbark%20Fir)/Details"
+          },
+          {
+            "text": "109.8'",
+            "href": "/Browse/Trees/136809/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/136809/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii",
+          "Engelmann Spruce",
+          "72.1'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii",
+            "href": "/Browse/Sites/38330/Species/Picea%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/38330/Species/Picea%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "72.1'",
+            "href": "/Browse/Trees/136796/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/136797/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "90.3'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/38330/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/38330/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "90.3'",
+            "href": "/Browse/Trees/136808/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/136812/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "119.5'",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/38330/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/38330/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "119.5'",
+            "href": "/Browse/Trees/136807/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/136817/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 19.595, -111 42.683",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,347 @@
+{
+  "siteId": 42390,
+  "summary": {
+    "Name": "Winding Stairs Park",
+    "RHI5": "139.06",
+    "RHI10": "130.32",
+    "RHI20": "121.38",
+    "RGI5": "8.21",
+    "RGI10": "7.18",
+    "RGI20": "6.12",
+    "Trees measured": "32",
+    "Last measurement date": "02/20/2026",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/20/2026",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "115.8'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/42390/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42390/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "115.8'",
+            "href": "/Browse/Trees/323386/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/323386/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "106.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/42390/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/42390/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "106.2'",
+            "href": "/Browse/Trees/323385/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "107.5'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/42390/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/42390/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "107.5'",
+            "href": "/Browse/Trees/323387/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/323387/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "134.0'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/42390/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/42390/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "134.0'",
+            "href": "/Browse/Trees/323369/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/323369/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "120.1'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/42390/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/42390/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "120.1'",
+            "href": "/Browse/Trees/323370/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/323370/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "128.4'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42390/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42390/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "128.4'",
+            "href": "/Browse/Trees/323392/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/323392/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "103.3'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/42390/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/42390/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "103.3'",
+            "href": "/Browse/Trees/323371/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/323371/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cladrastis kentukea",
+          "Kentucky Yellowwood",
+          "75.0'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cladrastis kentukea",
+            "href": "/Browse/Sites/42390/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "Kentucky Yellowwood",
+            "href": "/Browse/Sites/42390/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/323390/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/323389/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "116.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/42390/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/42390/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "116.7'",
+            "href": "/Browse/Trees/323384/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana var. biltmoreana",
+          "Biltmore Ash",
+          "120.1'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana var. biltmoreana",
+            "href": "/Browse/Sites/42390/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "Biltmore Ash",
+            "href": "/Browse/Sites/42390/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "120.1'",
+            "href": "/Browse/Trees/323388/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/323388/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 25 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 30.739, -086 03.173",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Macon"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,332 @@
+{
+  "siteId": 40462,
+  "summary": {
+    "Name": "Abrams Creek",
+    "RHI5": "139.52",
+    "RHI10": "69.76",
+    "RHI20": "(not enough data)",
+    "RGI5": "13.40",
+    "RGI10": "11.03",
+    "RGI20": "(not enough data)",
+    "Trees measured": "27",
+    "Last measurement date": "03/20/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/20/2004",
+      "visitors": "Michael Davie and Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/gsmnp/west_end_gsmnp.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "-",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40462/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40462/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          null,
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/230551/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "149.5'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40462/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40462/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "149.5'",
+            "href": "/Browse/Trees/230552/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/230552/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca var. opaca",
+          "American Holly",
+          "83.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca var. opaca",
+            "href": "/Browse/Sites/40462/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/40462/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "83.6'",
+            "href": "/Browse/Trees/230553/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "160.1'",
+          "173''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40462/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40462/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "160.1'",
+            "href": "/Browse/Trees/230575/Details"
+          },
+          {
+            "text": "173''",
+            "href": "/Browse/Trees/230572/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus pungens",
+          "Table Mountain Pine",
+          "-",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus pungens",
+            "href": "/Browse/Sites/40462/Species/Pinus%20pungens%20(Table%20Mountain%20Pine)/Details"
+          },
+          {
+            "text": "Table Mountain Pine",
+            "href": "/Browse/Sites/40462/Species/Pinus%20pungens%20(Table%20Mountain%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/230566/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "169.5'",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40462/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40462/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "169.5'",
+            "href": "/Browse/Trees/230565/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/230559/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "-",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/40462/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/40462/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          null,
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/230570/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "-",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40462/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40462/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/230557/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus coccinea",
+          "Scarlet Oak",
+          "-",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus coccinea",
+            "href": "/Browse/Sites/40462/Species/Quercus%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "Scarlet Oak",
+            "href": "/Browse/Sites/40462/Species/Quercus%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/230556/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "-",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/40462/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/40462/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/230555/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 35.995, -083 51.421",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Blount"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,178 @@
+{
+  "botanicalName": "Cornus drummondii",
+  "commonName": "Roughleaf Dogwood",
+  "global": {
+    "maxHeight": {
+      "text": "41.8'",
+      "href": "/Browse/Trees/251065/Details"
+    },
+    "maxGirth": {
+      "text": "20''",
+      "href": "/Browse/Trees/233484/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "34.3'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "34.3'",
+            "href": "/Browse/Trees/241818/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/241818/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Iowa",
+          "22.4'",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Iowa",
+            "href": "/Browse/States/10/Details"
+          },
+          {
+            "text": "22.4'",
+            "href": "/Browse/Trees/233678/Details"
+          },
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/233678/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "17.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "17.7'",
+            "href": "/Browse/Trees/189027/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "41.8'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "41.8'",
+            "href": "/Browse/Trees/251065/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/251065/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nebraska",
+          "25.6'",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nebraska",
+            "href": "/Browse/States/27/Details"
+          },
+          {
+            "text": "25.6'",
+            "href": "/Browse/Trees/220660/Details"
+          },
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/220661/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Dakota",
+          "26.1'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Dakota",
+            "href": "/Browse/States/39/Details"
+          },
+          {
+            "text": "26.1'",
+            "href": "/Browse/Trees/233484/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/233484/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "siteId": 41045,
+  "summary": {
+    "Name": "Pennsbury Manor State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "11/23/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/23/2004",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/pennsbury_manor.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Corylus spp.",
+          "Hazelnut",
+          "-",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Corylus spp.",
+            "href": "/Browse/Sites/41045/Species/Corylus%20spp.%20(Hazelnut)/Details"
+          },
+          {
+            "text": "Hazelnut",
+            "href": "/Browse/Sites/41045/Species/Corylus%20spp.%20(Hazelnut)/Details"
+          },
+          null,
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/243580/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "74.0'",
+          "86''",
+          "51.0'"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/41045/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/41045/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "74.0'",
+            "href": "/Browse/Trees/243578/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/243578/Details"
+          },
+          {
+            "text": "51.0'",
+            "href": "/Browse/Trees/243578/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Sassafras albidum",
+          "Sassafras",
+          "62.0'",
+          "123''",
+          "41.0'"
+        ],
+        "links": [
+          {
+            "text": "Sassafras albidum",
+            "href": "/Browse/Sites/41045/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "Sassafras",
+            "href": "/Browse/Sites/41045/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "62.0'",
+            "href": "/Browse/Trees/243579/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/243579/Details"
+          },
+          {
+            "text": "41.0'",
+            "href": "/Browse/Trees/243579/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 07.968, -074 46.098",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Bucks"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

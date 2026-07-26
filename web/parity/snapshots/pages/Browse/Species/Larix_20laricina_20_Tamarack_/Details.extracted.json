@@ -1,0 +1,257 @@
+{
+  "botanicalName": "Larix laricina",
+  "commonName": "Tamarack",
+  "global": {
+    "maxHeight": {
+      "text": "131.6'",
+      "href": "/Browse/Trees/211754/Details"
+    },
+    "maxGirth": {
+      "text": "143''",
+      "href": "/Browse/Trees/239943/Details"
+    },
+    "maxCrownSpread": {
+      "text": "67.0'",
+      "href": "/Browse/Trees/239943/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "British Columbia",
+          "70.2'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "British Columbia",
+            "href": "/Browse/States/50/Details"
+          },
+          {
+            "text": "70.2'",
+            "href": "/Browse/Trees/74995/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/74995/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maine",
+          "67.2'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maine",
+            "href": "/Browse/States/19/Details"
+          },
+          {
+            "text": "67.2'",
+            "href": "/Browse/Trees/235319/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/235319/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Minnesota",
+          "67.0'",
+          "143''",
+          "67.0'"
+        ],
+        "links": [
+          {
+            "text": "Minnesota",
+            "href": "/Browse/States/21/Details"
+          },
+          {
+            "text": "67.0'",
+            "href": "/Browse/Trees/239943/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/239943/Details"
+          },
+          {
+            "text": "67.0'",
+            "href": "/Browse/Trees/239943/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "131.6'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "131.6'",
+            "href": "/Browse/Trees/211754/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/264759/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "44.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "44.0'",
+            "href": "/Browse/Trees/196035/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "-",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          null,
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/233128/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "115.2'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "115.2'",
+            "href": "/Browse/Trees/119533/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/139973/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "51.8'",
+          "47''",
+          "38.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "51.8'",
+            "href": "/Browse/Trees/313182/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/314955/Details"
+          },
+          {
+            "text": "38.0'",
+            "href": "/Browse/Trees/314955/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Wisconsin",
+          "68.4'",
+          "50''",
+          "21.0'"
+        ],
+        "links": [
+          {
+            "text": "Wisconsin",
+            "href": "/Browse/States/46/Details"
+          },
+          {
+            "text": "68.4'",
+            "href": "/Browse/Trees/233356/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/233394/Details"
+          },
+          {
+            "text": "21.0'",
+            "href": "/Browse/Trees/233394/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "siteId": 39070,
+  "summary": {
+    "Name": "Idaho Single Tree Sites",
+    "RHI5": "88.76",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.78",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "08/23/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/23/2010",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus rhombifolia",
+          "White Alder",
+          "45.7'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus rhombifolia",
+            "href": "/Browse/Sites/39070/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+          },
+          {
+            "text": "White Alder",
+            "href": "/Browse/Sites/39070/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+          },
+          {
+            "text": "45.7'",
+            "href": "/Browse/Trees/164217/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/164218/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. latifolia",
+          "Lodgepole Pine",
+          "111.1'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. latifolia",
+            "href": "/Browse/Sites/39070/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Lodgepole Pine",
+            "href": "/Browse/Sites/39070/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "111.1'",
+            "href": "/Browse/Trees/164213/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/164213/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "147.5'",
+          "137''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/39070/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/39070/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "147.5'",
+            "href": "/Browse/Trees/164214/Details"
+          },
+          {
+            "text": "137''",
+            "href": "/Browse/Trees/164214/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Robinia pseudoacacia",
+          "Black Locust",
+          "67.6'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Robinia pseudoacacia",
+            "href": "/Browse/Sites/39070/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "Black Locust",
+            "href": "/Browse/Sites/39070/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "67.6'",
+            "href": "/Browse/Trees/164215/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/164215/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus pumila",
+          "Siberian Elm",
+          "71.9'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus pumila",
+            "href": "/Browse/Sites/39070/Species/Ulmus%20pumila%20(Siberian%20Elm)/Details"
+          },
+          {
+            "text": "Siberian Elm",
+            "href": "/Browse/Sites/39070/Species/Ulmus%20pumila%20(Siberian%20Elm)/Details"
+          },
+          {
+            "text": "71.9'",
+            "href": "/Browse/Trees/164216/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/164216/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 36.758, -116 12.665",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Ada"
+    },
+    "state": {
+      "text": "Idaho (US)",
+      "href": "/Browse/States/11/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

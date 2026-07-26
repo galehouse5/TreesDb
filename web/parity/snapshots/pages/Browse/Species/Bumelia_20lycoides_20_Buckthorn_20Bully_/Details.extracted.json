@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Bumelia lycoides",
+  "commonName": "Buckthorn Bully",
+  "global": {
+    "maxHeight": {
+      "text": "23.5'",
+      "href": "/Browse/Trees/142267/Details"
+    },
+    "maxGirth": {
+      "text": "17''",
+      "href": "/Browse/Trees/142267/Details"
+    },
+    "maxCrownSpread": {
+      "text": "18.0'",
+      "href": "/Browse/Trees/142267/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pennsylvania",
+          "23.5'",
+          "17''",
+          "18.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "23.5'",
+            "href": "/Browse/Trees/142267/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/142267/Details"
+          },
+          {
+            "text": "18.0'",
+            "href": "/Browse/Trees/142267/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

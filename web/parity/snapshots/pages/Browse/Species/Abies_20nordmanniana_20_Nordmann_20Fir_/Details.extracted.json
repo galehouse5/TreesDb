@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Abies nordmanniana",
+  "commonName": "Nordmann Fir",
+  "global": {
+    "maxHeight": {
+      "text": "116.7'",
+      "href": "/Browse/Trees/217764/Details"
+    },
+    "maxGirth": {
+      "text": "138''",
+      "href": "/Browse/Trees/134443/Details"
+    },
+    "maxCrownSpread": {
+      "text": "39.0'",
+      "href": "/Browse/Trees/134443/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "116.7'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "116.7'",
+            "href": "/Browse/Trees/217764/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/217763/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "91.8'",
+          "138''",
+          "39.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "91.8'",
+            "href": "/Browse/Trees/119541/Details"
+          },
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/134443/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/134443/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "siteId": 39119,
+  "summary": {
+    "Name": "Dinsmore Nature Preserve - South",
+    "RHI5": "115.06",
+    "RHI10": "102.45",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.60",
+    "RGI10": "7.62",
+    "RGI20": "(not enough data)",
+    "Trees measured": "25",
+    "Last measurement date": "09/29/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Nature Conservancy turned this over to the Boone County Court"
+  },
+  "visits": [
+    {
+      "visited": "09/29/2007",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/kentucky/dismore_woods.htm",
+      "comments": "Nature Conservancy turned this over to the Boone County Court"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "69.1'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/Sites/39119/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/39119/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "69.1'",
+            "href": "/Browse/Trees/165563/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/165563/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "81.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/39119/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/39119/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "81.1'",
+            "href": "/Browse/Trees/165583/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "99.3'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/39119/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/39119/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "99.3'",
+            "href": "/Browse/Trees/165572/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/165571/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "100.6'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/39119/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/39119/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "100.6'",
+            "href": "/Browse/Trees/165565/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/165565/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "81.1'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/39119/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/39119/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "81.1'",
+            "href": "/Browse/Trees/165566/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/165566/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "105.1'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/39119/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/39119/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "105.1'",
+            "href": "/Browse/Trees/165562/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/165561/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "120.1'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39119/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39119/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "120.1'",
+            "href": "/Browse/Trees/165580/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/165580/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia tripetala",
+          "Umbrella-Tree",
+          "33.0'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia tripetala",
+            "href": "/Browse/Sites/39119/Species/Magnolia%20tripetala%20(Umbrella-Tree)/Details"
+          },
+          {
+            "text": "Umbrella-Tree",
+            "href": "/Browse/Sites/39119/Species/Magnolia%20tripetala%20(Umbrella-Tree)/Details"
+          },
+          {
+            "text": "33.0'",
+            "href": "/Browse/Trees/165581/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/165581/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "126.1'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/39119/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/39119/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "126.1'",
+            "href": "/Browse/Trees/165577/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/165577/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus grandidentata",
+          "Bigtooth Aspen",
+          "121.9'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus grandidentata",
+            "href": "/Browse/Sites/39119/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "Bigtooth Aspen",
+            "href": "/Browse/Sites/39119/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "121.9'",
+            "href": "/Browse/Trees/165560/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/165560/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 59.967, -084 48.656",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Boone County Court",
+      "County": "Boone"
+    },
+    "state": {
+      "text": "Kentucky (US)",
+      "href": "/Browse/States/15/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,335 @@
+{
+  "siteId": 41443,
+  "summary": {
+    "Name": "Prospect Park",
+    "RHI5": "115.42",
+    "RHI10": "111.82",
+    "RHI20": "105.10",
+    "RGI5": "12.07",
+    "RGI10": "6.03",
+    "RGI20": "3.02",
+    "Trees measured": "40",
+    "Last measurement date": "03/12/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "Measurements were made 8/8/2016 and 3/12/2017"
+  },
+  "visits": [
+    {
+      "visited": "03/12/2017",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Measurements were made 8/8/2016 and 3/12/2017"
+    },
+    {
+      "visited": "04/09/2016",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "586 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer platanoides",
+          "Norway Maple",
+          "108.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer platanoides",
+            "href": "/Browse/Sites/41443/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "Norway Maple",
+            "href": "/Browse/Sites/41443/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "108.6'",
+            "href": "/Browse/Trees/280525/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer pseudoplatanus",
+          "Sycamore Maple",
+          "92.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pseudoplatanus",
+            "href": "/Browse/Sites/41443/Species/Acer%20pseudoplatanus%20(Sycamore%20Maple)/Details"
+          },
+          {
+            "text": "Sycamore Maple",
+            "href": "/Browse/Sites/41443/Species/Acer%20pseudoplatanus%20(Sycamore%20Maple)/Details"
+          },
+          {
+            "text": "92.5'",
+            "href": "/Browse/Trees/280526/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "78.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/41443/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/41443/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "78.9'",
+            "href": "/Browse/Trees/280527/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "99.5'",
+          "188''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41443/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41443/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "99.5'",
+            "href": "/Browse/Trees/280516/Details"
+          },
+          {
+            "text": "188''",
+            "href": "/Browse/Trees/280516/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "109.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/41443/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/41443/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "109.6'",
+            "href": "/Browse/Trees/280528/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "91.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/41443/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/41443/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "91.9'",
+            "href": "/Browse/Trees/280515/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "90.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/41443/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/41443/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "90.4'",
+            "href": "/Browse/Trees/280529/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "108.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/41443/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/41443/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "108.1'",
+            "href": "/Browse/Trees/280530/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "124.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41443/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41443/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "124.0'",
+            "href": "/Browse/Trees/280512/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus x hispanica",
+          "London Planetree",
+          "123.5'",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus x hispanica",
+            "href": "/Browse/Sites/41443/Species/Platanus%20x%20hispanica%20(London%20Planetree)/Details"
+          },
+          {
+            "text": "London Planetree",
+            "href": "/Browse/Sites/41443/Species/Platanus%20x%20hispanica%20(London%20Planetree)/Details"
+          },
+          {
+            "text": "123.5'",
+            "href": "/Browse/Trees/280518/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/280518/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 23 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 39.612, -073 58.137",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Brooklyn"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

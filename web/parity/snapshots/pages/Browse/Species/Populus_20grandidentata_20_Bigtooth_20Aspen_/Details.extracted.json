@@ -1,0 +1,286 @@
+{
+  "botanicalName": "Populus grandidentata",
+  "commonName": "Bigtooth Aspen",
+  "global": {
+    "maxHeight": {
+      "text": "126.2'",
+      "href": "/Browse/Trees/168319/Details"
+    },
+    "maxGirth": {
+      "text": "126''",
+      "href": "/Browse/Trees/262678/Details"
+    },
+    "maxCrownSpread": {
+      "text": "56.0'",
+      "href": "/Browse/Trees/313081/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Colorado",
+          "108.0'",
+          "90''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/242529/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/242529/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/242529/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "102.1'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "102.1'",
+            "href": "/Browse/Trees/232094/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/232094/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "121.9'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "121.9'",
+            "href": "/Browse/Trees/165560/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/165560/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "122.5'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "122.5'",
+            "href": "/Browse/Trees/231353/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/168099/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "122.5'",
+          "77''",
+          "49.5'"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "122.5'",
+            "href": "/Browse/Trees/236017/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/250533/Details"
+          },
+          {
+            "text": "49.5'",
+            "href": "/Browse/Trees/250533/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Michigan",
+          "104.2'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Michigan",
+            "href": "/Browse/States/20/Details"
+          },
+          {
+            "text": "104.2'",
+            "href": "/Browse/Trees/239994/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/239997/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Minnesota",
+          "93.5'",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Minnesota",
+            "href": "/Browse/States/21/Details"
+          },
+          {
+            "text": "93.5'",
+            "href": "/Browse/Trees/233309/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/239869/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "125.1'",
+          "126''",
+          "41.9'"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "125.1'",
+            "href": "/Browse/Trees/217844/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/262678/Details"
+          },
+          {
+            "text": "41.9'",
+            "href": "/Browse/Trees/262678/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "121.2'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "121.2'",
+            "href": "/Browse/Trees/166417/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/166417/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "126.2'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "126.2'",
+            "href": "/Browse/Trees/168319/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/120173/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "siteId": 40725,
+  "summary": {
+    "Name": "Robinson State Park",
+    "RHI5": "119.24",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.03",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "25",
+    "Last measurement date": "12/03/2006",
+    "Ownership contact": "428 North Street Feeding Hills, Massachusetts",
+    "General comments": "Trees were measured in two different coves"
+  },
+  "visits": [
+    {
+      "visited": "12/03/2006",
+      "visitors": "John Eichholz",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mass/robinson/robinson_state_park_update.htm",
+      "comments": "Trees were measured in two different coves"
+    },
+    {
+      "visited": "11/29/2006",
+      "visitors": "Gary Beluzo",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mass/robinson/robinson_state_park20061127.htm",
+      "comments": "The Tuliptrees were measured in a ravine off of James Street in Agawan."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "112.1'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40725/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40725/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "112.1'",
+            "href": "/Browse/Trees/235619/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/235619/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "97.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40725/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40725/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "97.8'",
+            "href": "/Browse/Trees/235618/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "107.6'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40725/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40725/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "107.6'",
+            "href": "/Browse/Trees/235622/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/235621/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "129.3'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40725/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40725/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "129.3'",
+            "href": "/Browse/Trees/235617/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/235614/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "140.9'",
+          "149''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40725/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40725/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "140.9'",
+            "href": "/Browse/Trees/235613/Details"
+          },
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/235630/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "106.3'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40725/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40725/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "106.3'",
+            "href": "/Browse/Trees/235616/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/235616/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 05.040, -072 39.580",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Hampden"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

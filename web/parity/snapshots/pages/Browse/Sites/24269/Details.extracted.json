@@ -1,0 +1,362 @@
+{
+  "siteId": 24269,
+  "summary": {
+    "Name": "Mcconnells Mill State Park",
+    "RHI5": "137.52",
+    "RHI10": "131.53",
+    "RHI20": "118.49",
+    "RGI5": "12.62",
+    "RGI10": "11.40",
+    "RGI20": "8.73",
+    "Trees measured": "131",
+    "Last measurement date": "04/01/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/01/2007",
+      "visitors": "Anthony Kelly",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "01/07/2006",
+      "visitors": "Anthony Kelly",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/mcconnells/mcconnells_mill_state_park.htm",
+      "comments": "2545 acres Six trips were made to this park from 12/5/2005 to 4/1/2006 by Anthony Kelly and occasionally accompanied by C.Harting, E.Frank, D. Luthringer."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "107.4'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/24269/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/24269/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "107.4'",
+            "href": "/Browse/Trees/117443/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/117443/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "127.3'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/24269/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/24269/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "127.3'",
+            "href": "/Browse/Trees/117448/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/117402/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "132.7'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/24269/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/24269/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "132.7'",
+            "href": "/Browse/Trees/117437/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/117437/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "96.9'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/24269/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/24269/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "96.9'",
+            "href": "/Browse/Trees/117442/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/117442/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "118.4'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/24269/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/24269/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "118.4'",
+            "href": "/Browse/Trees/117401/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/117401/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "120.5'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/24269/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/24269/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "120.5'",
+            "href": "/Browse/Trees/117385/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/117416/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "137.5'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/24269/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/24269/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "137.5'",
+            "href": "/Browse/Trees/117434/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/117411/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "110.9'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/24269/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/24269/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "110.9'",
+            "href": "/Browse/Trees/117440/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/117322/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "148.3'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/24269/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/24269/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "148.3'",
+            "href": "/Browse/Trees/117363/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/117405/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "131.6'",
+          "140''",
+          "51.0'"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/24269/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/24269/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "131.6'",
+            "href": "/Browse/Trees/117379/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/117451/Details"
+          },
+          {
+            "text": "51.0'",
+            "href": "/Browse/Trees/117379/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 21 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 57.194, -080 10.183",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - State Park",
+      "County": "Lawrence"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

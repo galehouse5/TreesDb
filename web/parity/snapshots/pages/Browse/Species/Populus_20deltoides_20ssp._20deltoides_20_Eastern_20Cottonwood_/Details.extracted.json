@@ -1,0 +1,277 @@
+{
+  "botanicalName": "Populus deltoides ssp. deltoides",
+  "commonName": "Eastern Cottonwood",
+  "global": {
+    "maxHeight": {
+      "text": "160.3'",
+      "href": "/Browse/Trees/321869/Details"
+    },
+    "maxGirth": {
+      "text": "257''",
+      "href": "/Browse/Trees/171596/Details"
+    },
+    "maxCrownSpread": {
+      "text": "123.0'",
+      "href": "/Browse/Trees/315268/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "District of Columbia",
+          "105.9'",
+          "156''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "105.9'",
+            "href": "/Browse/Trees/174791/Details"
+          },
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/175044/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "88.1'",
+          "174''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          {
+            "text": "88.1'",
+            "href": "/Browse/Trees/171010/Details"
+          },
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/171013/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "147.8'",
+          "166''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "147.8'",
+            "href": "/Browse/Trees/297286/Details"
+          },
+          {
+            "text": "166''",
+            "href": "/Browse/Trees/297286/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "118.2'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "118.2'",
+            "href": "/Browse/Trees/158526/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/158526/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "146.8'",
+          "216''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "146.8'",
+            "href": "/Browse/Trees/283678/Details"
+          },
+          {
+            "text": "216''",
+            "href": "/Browse/Trees/283679/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "-",
+          "257''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          null,
+          {
+            "text": "257''",
+            "href": "/Browse/Trees/171596/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "140.7'",
+          "235''",
+          "75.0'"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "140.7'",
+            "href": "/Browse/Trees/221810/Details"
+          },
+          {
+            "text": "235''",
+            "href": "/Browse/Trees/230435/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/221810/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "98.9'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "98.9'",
+            "href": "/Browse/Trees/272965/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/272965/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Dakota",
+          "119.4'",
+          "138''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Dakota",
+            "href": "/Browse/States/39/Details"
+          },
+          {
+            "text": "119.4'",
+            "href": "/Browse/Trees/233488/Details"
+          },
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/233487/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "160.3'",
+          "246''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "160.3'",
+            "href": "/Browse/Trees/321869/Details"
+          },
+          {
+            "text": "246''",
+            "href": "/Browse/Trees/321815/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

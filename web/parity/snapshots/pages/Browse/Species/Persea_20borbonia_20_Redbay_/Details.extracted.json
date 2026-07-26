@@ -1,0 +1,93 @@
+{
+  "botanicalName": "Persea borbonia",
+  "commonName": "Redbay",
+  "global": {
+    "maxHeight": {
+      "text": "73.8'",
+      "href": "/Browse/Trees/242651/Details"
+    },
+    "maxGirth": {
+      "text": "86''",
+      "href": "/Browse/Trees/2403/Details"
+    },
+    "maxCrownSpread": {
+      "text": "50.0'",
+      "href": "/Browse/Trees/2403/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "North Carolina",
+          "31.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "31.0'",
+            "href": "/Browse/Trees/40680/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "73.8'",
+          "86''",
+          "50.0'"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "73.8'",
+            "href": "/Browse/Trees/242651/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/2403/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/2403/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

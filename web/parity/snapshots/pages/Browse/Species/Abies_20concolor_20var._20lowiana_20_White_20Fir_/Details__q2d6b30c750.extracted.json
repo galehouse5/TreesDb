@@ -1,0 +1,220 @@
+{
+  "botanicalName": "Abies concolor var. lowiana",
+  "commonName": "White Fir",
+  "global": {
+    "maxHeight": {
+      "text": "242.1'",
+      "href": "/Browse/Trees/274335/Details"
+    },
+    "maxGirth": {
+      "text": "219''",
+      "href": "/Browse/Trees/320699/Details"
+    }
+  },
+  "state": {
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "242.1'",
+        "href": "/Browse/Trees/274335/Details"
+      },
+      "maxGirth": {
+        "text": "219''",
+        "href": "/Browse/Trees/320699/Details"
+      }
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "242.1'",
+          "219''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "242.1'",
+            "href": "/Browse/Trees/274335/Details"
+          },
+          {
+            "text": "219''",
+            "href": "/Browse/Trees/320699/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedSitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Mt. San Jacinto Deer Springs Trail",
+          "148.3'",
+          "219''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mt. San Jacinto Deer Springs Trail",
+            "href": "/Browse/Sites/42352/Details"
+          },
+          {
+            "text": "148.3'",
+            "href": "/Browse/Trees/320699/Details"
+          },
+          {
+            "text": "219''",
+            "href": "/Browse/Trees/320699/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mt. San Jacinto Long Valley",
+          "134.8'",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mt. San Jacinto Long Valley",
+            "href": "/Browse/Sites/42353/Details"
+          },
+          {
+            "text": "134.8'",
+            "href": "/Browse/Trees/320706/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/320705/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sequoia National Park",
+          "242.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sequoia National Park",
+            "href": "/Browse/Sites/40649/Details"
+          },
+          {
+            "text": "242.1'",
+            "href": "/Browse/Trees/274335/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tioga Pass Rd.",
+          "209.2'",
+          "194''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tioga Pass Rd.",
+            "href": "/Browse/Sites/42305/Details"
+          },
+          {
+            "text": "209.2'",
+            "href": "/Browse/Trees/318119/Details"
+          },
+          {
+            "text": "194''",
+            "href": "/Browse/Trees/318119/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tuolumne Grove Trail",
+          "218.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tuolumne Grove Trail",
+            "href": "/Browse/Sites/42308/Details"
+          },
+          {
+            "text": "218.8'",
+            "href": "/Browse/Trees/318129/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

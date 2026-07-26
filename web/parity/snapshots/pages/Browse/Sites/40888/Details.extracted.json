@@ -1,0 +1,129 @@
+{
+  "siteId": 40888,
+  "summary": {
+    "Name": "Ohanapecosh",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "11/19/2013",
+    "Ownership contact": "Mt. Ranier National Park 55210 238th Street East Ashford, Washington",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/19/2013",
+      "visitors": "Rand Brown",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "261.0'",
+          "215''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/40888/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/40888/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "261.0'",
+            "href": "/Browse/Trees/239658/Details"
+          },
+          {
+            "text": "215''",
+            "href": "/Browse/Trees/239658/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja plicata",
+          "Western Redcedar",
+          "37.2'",
+          "408''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja plicata",
+            "href": "/Browse/Sites/40888/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "Western Redcedar",
+            "href": "/Browse/Sites/40888/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "37.2'",
+            "href": "/Browse/Trees/239662/Details"
+          },
+          {
+            "text": "408''",
+            "href": "/Browse/Trees/239661/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "46 44.286, -121 33.997",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Lewis"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

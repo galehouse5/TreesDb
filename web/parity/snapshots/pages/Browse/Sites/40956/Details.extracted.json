@@ -1,0 +1,213 @@
+{
+  "siteId": 40956,
+  "summary": {
+    "Name": "Sand Barrens And Oak-Pine Forest Preserve",
+    "RHI5": "65.86",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.67",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "06/01/2014",
+    "Ownership contact": "2501 Maul Road Camden, Arkansas",
+    "General comments": "The State Forest is 23,506 acres. The Preserve contains 435 aces in seven non-contiguous areas"
+  },
+  "visits": [
+    {
+      "visited": "06/01/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "The State Forest is 23,506 acres. The Preserve contains 435 aces in seven non-contiguous areas"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Castanea pumila",
+          "Chinkapin",
+          "33.2'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea pumila",
+            "href": "/Browse/Sites/40956/Species/Castanea%20pumila%20(Chinkapin)/Details"
+          },
+          {
+            "text": "Chinkapin",
+            "href": "/Browse/Sites/40956/Species/Castanea%20pumila%20(Chinkapin)/Details"
+          },
+          {
+            "text": "33.2'",
+            "href": "/Browse/Trees/241623/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/241623/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia virginiana",
+          "Sweetbay",
+          "73.3'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia virginiana",
+            "href": "/Browse/Sites/40956/Species/Magnolia%20virginiana%20(Sweetbay)/Details"
+          },
+          {
+            "text": "Sweetbay",
+            "href": "/Browse/Sites/40956/Species/Magnolia%20virginiana%20(Sweetbay)/Details"
+          },
+          {
+            "text": "73.3'",
+            "href": "/Browse/Trees/241624/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/241625/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "126.4'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/40956/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/40956/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "126.4'",
+            "href": "/Browse/Trees/241626/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/241626/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus arkansana",
+          "Arkansas Oak",
+          "52.7'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus arkansana",
+            "href": "/Browse/Sites/40956/Species/Quercus%20arkansana%20(Arkansas%20Oak)/Details"
+          },
+          {
+            "text": "Arkansas Oak",
+            "href": "/Browse/Sites/40956/Species/Quercus%20arkansana%20(Arkansas%20Oak)/Details"
+          },
+          {
+            "text": "52.7'",
+            "href": "/Browse/Trees/241627/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/241628/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus incana",
+          "Bluejack Oak",
+          "43.7'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus incana",
+            "href": "/Browse/Sites/40956/Species/Quercus%20incana%20(Bluejack%20Oak)/Details"
+          },
+          {
+            "text": "Bluejack Oak",
+            "href": "/Browse/Sites/40956/Species/Quercus%20incana%20(Bluejack%20Oak)/Details"
+          },
+          {
+            "text": "43.7'",
+            "href": "/Browse/Trees/241629/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/241629/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 38.172, -093 00.230",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Ouachita"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

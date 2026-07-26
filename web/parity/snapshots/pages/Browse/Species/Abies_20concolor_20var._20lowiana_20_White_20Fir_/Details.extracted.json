@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Abies concolor var. lowiana",
+  "commonName": "White Fir",
+  "global": {
+    "maxHeight": {
+      "text": "242.1'",
+      "href": "/Browse/Trees/274335/Details"
+    },
+    "maxGirth": {
+      "text": "219''",
+      "href": "/Browse/Trees/320699/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "242.1'",
+          "219''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "242.1'",
+            "href": "/Browse/Trees/274335/Details"
+          },
+          {
+            "text": "219''",
+            "href": "/Browse/Trees/320699/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

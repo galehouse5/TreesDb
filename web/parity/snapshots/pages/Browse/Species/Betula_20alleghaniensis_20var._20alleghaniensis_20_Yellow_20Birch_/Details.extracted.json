@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Betula alleghaniensis var. alleghaniensis",
+  "commonName": "Yellow Birch",
+  "global": {
+    "maxHeight": {
+      "text": "100.1'",
+      "href": "/Browse/Trees/214304/Details"
+    },
+    "maxGirth": {
+      "text": "152''",
+      "href": "/Browse/Trees/213667/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "100.1'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "100.1'",
+            "href": "/Browse/Trees/214304/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/213667/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "96.0'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "96.0'",
+            "href": "/Browse/Trees/257682/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/323549/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

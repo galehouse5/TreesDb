@@ -1,0 +1,181 @@
+{
+  "botanicalName": "Celtis laevigata var. reticulata",
+  "commonName": "Netleaf Hackberry",
+  "global": {
+    "maxHeight": {
+      "text": "38.9'",
+      "href": "/Browse/Trees/23987/Details"
+    },
+    "maxGirth": {
+      "text": "67''",
+      "href": "/Browse/Trees/78331/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "38.9'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "38.9'",
+            "href": "/Browse/Trees/23987/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/159300/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Colorado",
+          "25.6'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "25.6'",
+            "href": "/Browse/Trees/126246/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/126246/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "35.6'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "35.6'",
+            "href": "/Browse/Trees/78331/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/78331/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "36.7'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "36.7'",
+            "href": "/Browse/Trees/226092/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/226092/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "31.6'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "31.6'",
+            "href": "/Browse/Trees/91834/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/91835/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Wyoming",
+          "16.7'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wyoming",
+            "href": "/Browse/States/48/Details"
+          },
+          {
+            "text": "16.7'",
+            "href": "/Browse/Trees/253268/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/253268/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

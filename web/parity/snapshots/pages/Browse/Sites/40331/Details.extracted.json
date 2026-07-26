@@ -1,0 +1,316 @@
+{
+  "siteId": 40331,
+  "summary": {
+    "Name": "Cherry Patch Pond",
+    "RHI5": "107.81",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.75",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "23",
+    "Last measurement date": "10/21/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/21/2014",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea var. balsamea",
+          "Balsam Fir",
+          "108.7'",
+          "68''",
+          "17.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea var. balsamea",
+            "href": "/Browse/Sites/40331/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/40331/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "108.7'",
+            "href": "/Browse/Trees/228334/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/228334/Details"
+          },
+          {
+            "text": "17.0'",
+            "href": "/Browse/Trees/228334/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "110.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/40331/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/40331/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/228337/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "94.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/40331/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/40331/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "94.0'",
+            "href": "/Browse/Trees/228318/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "101.3'",
+          "89''",
+          "26.0'"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/40331/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/40331/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "101.3'",
+            "href": "/Browse/Trees/228335/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/228335/Details"
+          },
+          {
+            "text": "26.0'",
+            "href": "/Browse/Trees/228335/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus banksiana",
+          "Jack Pine",
+          "80.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus banksiana",
+            "href": "/Browse/Sites/40331/Species/Pinus%20banksiana%20(Jack%20Pine)/Details"
+          },
+          {
+            "text": "Jack Pine",
+            "href": "/Browse/Sites/40331/Species/Pinus%20banksiana%20(Jack%20Pine)/Details"
+          },
+          {
+            "text": "80.0'",
+            "href": "/Browse/Trees/228331/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "95.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/40331/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/40331/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "95.0'",
+            "href": "/Browse/Trees/228324/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "124.0'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40331/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40331/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "124.0'",
+            "href": "/Browse/Trees/228332/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/228332/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus balsamifera ssp. balsamifera",
+          "Balsam Poplar",
+          "85.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. balsamifera",
+            "href": "/Browse/Sites/40331/Species/Populus%20balsamifera%20ssp.%20balsamifera%20(Balsam%20Poplar)/Details"
+          },
+          {
+            "text": "Balsam Poplar",
+            "href": "/Browse/Sites/40331/Species/Populus%20balsamifera%20ssp.%20balsamifera%20(Balsam%20Poplar)/Details"
+          },
+          {
+            "text": "85.2'",
+            "href": "/Browse/Trees/228336/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja occidentalis",
+          "Arborvitae",
+          "70.0'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja occidentalis",
+            "href": "/Browse/Sites/40331/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "Arborvitae",
+            "href": "/Browse/Sites/40331/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/228333/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/228333/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 17.677, -073 56.748",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Essex"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

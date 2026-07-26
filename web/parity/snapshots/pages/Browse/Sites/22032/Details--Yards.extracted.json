@@ -1,0 +1,129 @@
+{
+  "siteId": 22032,
+  "summary": {
+    "Name": "Banff National Park - Two Jack",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "07/30/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/30/2012",
+      "visitors": "Turner Sharp and John Fichtner",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus contorta var. latifolia",
+          "Lodgepole Pine",
+          "24.87 yd",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. latifolia",
+            "href": "/Browse/Sites/22032/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Lodgepole Pine",
+            "href": "/Browse/Sites/22032/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "24.87 yd",
+            "href": "/Browse/Trees/74975/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/74979/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "17.50 yd",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/22032/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/22032/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "17.50 yd",
+            "href": "/Browse/Trees/74980/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/74980/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "51 10.678, -115 34.216",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Division No. 15"
+    },
+    "state": {
+      "text": "Alberta (CA)",
+      "href": "/Browse/States/49/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

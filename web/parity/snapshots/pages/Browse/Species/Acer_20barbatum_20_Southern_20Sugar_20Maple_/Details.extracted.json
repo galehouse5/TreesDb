@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Acer barbatum",
+  "commonName": "Southern Sugar Maple",
+  "global": {
+    "maxHeight": {
+      "text": "109.0'",
+      "href": "/Browse/Trees/321868/Details"
+    },
+    "maxGirth": {
+      "text": "104''",
+      "href": "/Browse/Trees/321817/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Tennessee",
+          "109.0'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/321868/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/321817/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

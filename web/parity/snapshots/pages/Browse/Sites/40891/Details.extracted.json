@@ -1,0 +1,151 @@
+{
+  "siteId": 40891,
+  "summary": {
+    "Name": "Middle Fork Of Snoqualamie River",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "11/15/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/15/2016",
+      "visitors": "Thursday Hiker",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea sitchensis",
+          "Sitka Spruce",
+          "-",
+          "377''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea sitchensis",
+            "href": "/Browse/Sites/40891/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "Sitka Spruce",
+            "href": "/Browse/Sites/40891/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          null,
+          {
+            "text": "377''",
+            "href": "/Browse/Trees/239715/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "28.3'",
+          "415''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/40891/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/40891/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "28.3'",
+            "href": "/Browse/Trees/239716/Details"
+          },
+          {
+            "text": "415''",
+            "href": "/Browse/Trees/239714/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja plicata",
+          "Western Redcedar",
+          "-",
+          "490''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja plicata",
+            "href": "/Browse/Sites/40891/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "Western Redcedar",
+            "href": "/Browse/Sites/40891/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          null,
+          {
+            "text": "490''",
+            "href": "/Browse/Trees/239723/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "47 33.028, -121 32.068",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "King"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

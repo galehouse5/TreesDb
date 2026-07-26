@@ -1,0 +1,166 @@
+{
+  "siteId": 38201,
+  "summary": {
+    "Name": "Stabler Drive",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "10/11/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Property located at 160 Stabler Drive near Chadds Ford."
+  },
+  "visits": [
+    {
+      "visited": "10/11/2007",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/new_red_oak.htm",
+      "comments": "Property located at 160 Stabler Drive near Chadds Ford."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "36.73 m",
+          "415 cm",
+          "18.59 m"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/38201/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/38201/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "36.73 m",
+            "href": "/Browse/Trees/132870/Details"
+          },
+          {
+            "text": "415 cm",
+            "href": "/Browse/Trees/132870/Details"
+          },
+          {
+            "text": "18.59 m",
+            "href": "/Browse/Trees/132870/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Castanea mollissima",
+          "Chinese Chestnut",
+          "14.87 m",
+          "399 cm",
+          "21.03 m"
+        ],
+        "links": [
+          {
+            "text": "Castanea mollissima",
+            "href": "/Browse/Sites/38201/Species/Castanea%20mollissima%20(Chinese%20Chestnut)/Details"
+          },
+          {
+            "text": "Chinese Chestnut",
+            "href": "/Browse/Sites/38201/Species/Castanea%20mollissima%20(Chinese%20Chestnut)/Details"
+          },
+          {
+            "text": "14.87 m",
+            "href": "/Browse/Trees/132872/Details"
+          },
+          {
+            "text": "399 cm",
+            "href": "/Browse/Trees/132872/Details"
+          },
+          {
+            "text": "21.03 m",
+            "href": "/Browse/Trees/132872/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "29.78 m",
+          "570 cm",
+          "24.69 m"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/38201/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/38201/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "29.78 m",
+            "href": "/Browse/Trees/132871/Details"
+          },
+          {
+            "text": "570 cm",
+            "href": "/Browse/Trees/132871/Details"
+          },
+          {
+            "text": "24.69 m",
+            "href": "/Browse/Trees/132871/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 51.430, -075 36.199",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Chester"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

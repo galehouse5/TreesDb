@@ -1,0 +1,383 @@
+{
+  "siteId": 42273,
+  "summary": {
+    "Name": "Wood County Historical Trees",
+    "RHI5": "28.727",
+    "RHI10": "26.937",
+    "RHI20": "24.217",
+    "RGI5": "5.306",
+    "RGI10": "4.675",
+    "RGI20": "3.910",
+    "Trees measured": "49",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees that have died or been removed for various reasons, Trees measured before 2009 may not hav height listed either because it was not measured or used a method that was hifgly inaccurate."
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Trees that have died or been removed for various reasons, Trees measured before 2009 may not hav height listed either because it was not measured or used a method that was hifgly inaccurate."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "14.93 yd",
+          "140''",
+          "14.93 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/Sites/42273/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/42273/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "14.93 yd",
+            "href": "/Browse/Trees/315257/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/315257/Details"
+          },
+          {
+            "text": "14.93 yd",
+            "href": "/Browse/Trees/315257/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer platanoides",
+          "Norway Maple",
+          "20.27 yd",
+          "86''",
+          "13.50 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer platanoides",
+            "href": "/Browse/Sites/42273/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "Norway Maple",
+            "href": "/Browse/Sites/42273/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "20.27 yd",
+            "href": "/Browse/Trees/315282/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/315282/Details"
+          },
+          {
+            "text": "13.50 yd",
+            "href": "/Browse/Trees/315282/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "22.67 yd",
+          "106''",
+          "16.33 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/42273/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/42273/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "22.67 yd",
+            "href": "/Browse/Trees/315260/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/315260/Details"
+          },
+          {
+            "text": "16.33 yd",
+            "href": "/Browse/Trees/315260/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "20.00 yd",
+          "81''",
+          "17.33 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/42273/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42273/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "20.00 yd",
+            "href": "/Browse/Trees/315258/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/315258/Details"
+          },
+          {
+            "text": "17.33 yd",
+            "href": "/Browse/Trees/315258/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Albizia julibrissin",
+          "Silktree",
+          "13.33 yd",
+          "46''",
+          "13.50 yd"
+        ],
+        "links": [
+          {
+            "text": "Albizia julibrissin",
+            "href": "/Browse/Sites/42273/Species/Albizia%20julibrissin%20(Silktree)/Details"
+          },
+          {
+            "text": "Silktree",
+            "href": "/Browse/Sites/42273/Species/Albizia%20julibrissin%20(Silktree)/Details"
+          },
+          {
+            "text": "13.33 yd",
+            "href": "/Browse/Trees/315252/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/315252/Details"
+          },
+          {
+            "text": "13.50 yd",
+            "href": "/Browse/Trees/315252/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "7.67 yd",
+          "10''",
+          "5.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/Sites/42273/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/Sites/42273/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "7.67 yd",
+            "href": "/Browse/Trees/315259/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/315259/Details"
+          },
+          {
+            "text": "5.00 yd",
+            "href": "/Browse/Trees/315259/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus betulus",
+          "European Hornbeam",
+          "21.00 yd",
+          "72''",
+          "17.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Carpinus betulus",
+            "href": "/Browse/Sites/42273/Species/Carpinus%20betulus%20(European%20Hornbeam)/Details"
+          },
+          {
+            "text": "European Hornbeam",
+            "href": "/Browse/Sites/42273/Species/Carpinus%20betulus%20(European%20Hornbeam)/Details"
+          },
+          {
+            "text": "21.00 yd",
+            "href": "/Browse/Trees/315245/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/315245/Details"
+          },
+          {
+            "text": "17.67 yd",
+            "href": "/Browse/Trees/315245/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "27.07 yd",
+          "91''",
+          "14.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/42273/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/42273/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "27.07 yd",
+            "href": "/Browse/Trees/315283/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/315283/Details"
+          },
+          {
+            "text": "14.67 yd",
+            "href": "/Browse/Trees/315283/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa speciosa",
+          "Northern Catalpa",
+          "24.33 yd",
+          "106''",
+          "17.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Catalpa speciosa",
+            "href": "/Browse/Sites/42273/Species/Catalpa%20speciosa%20(Northern%20Catalpa)/Details"
+          },
+          {
+            "text": "Northern Catalpa",
+            "href": "/Browse/Sites/42273/Species/Catalpa%20speciosa%20(Northern%20Catalpa)/Details"
+          },
+          {
+            "text": "24.33 yd",
+            "href": "/Browse/Trees/315261/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/315261/Details"
+          },
+          {
+            "text": "17.00 yd",
+            "href": "/Browse/Trees/315261/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis var. canadensis",
+          "Eastern Redbud",
+          "4.67 yd",
+          "30''",
+          "8.33 yd"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis var. canadensis",
+            "href": "/Browse/Sites/42273/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/Sites/42273/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "4.67 yd",
+            "href": "/Browse/Trees/315262/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/315262/Details"
+          },
+          {
+            "text": "8.33 yd",
+            "href": "/Browse/Trees/315262/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 40 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 15.906, -081 33.774",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public and Private",
+      "County": "Wood"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

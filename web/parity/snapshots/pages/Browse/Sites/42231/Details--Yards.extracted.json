@@ -1,0 +1,368 @@
+{
+  "siteId": 42231,
+  "summary": {
+    "Name": "West Virginia Historical Trees",
+    "RHI5": "48.053",
+    "RHI10": "42.780",
+    "RHI20": "37.035",
+    "RGI5": "8.078",
+    "RGI10": "7.344",
+    "RGI20": "6.456",
+    "Trees measured": "114",
+    "Last measurement date": "01/01/1963",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees that have died or been removed.This is a State wide listing except for Wood County which is in a separate list. All heights determined by Sine method with laser/inclinometer. Some trees have height missing because it was never taken or the Sine method was not used. These trees were mostly measured 2008 and before."
+  },
+  "visits": [
+    {
+      "visited": "01/01/1963",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "Trees that have died or been removed.This is a State wide listing except for Wood County which is in a separate list. All heights determined by Sine method with laser/inclinometer. Some trees have height missing because it was never taken or the Sine method was not used. These trees were mostly measured 2008 and before."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "-",
+          "72''",
+          "9.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/Sites/42231/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/42231/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          null,
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/312114/Details"
+          },
+          {
+            "text": "9.00 yd",
+            "href": "/Browse/Trees/312114/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "15.87 yd",
+          "121''",
+          "36.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/Sites/42231/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/42231/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "15.87 yd",
+            "href": "/Browse/Trees/312049/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/312049/Details"
+          },
+          {
+            "text": "36.67 yd",
+            "href": "/Browse/Trees/312049/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "27.60 yd",
+          "143''",
+          "26.17 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/Sites/42231/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/Sites/42231/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "27.60 yd",
+            "href": "/Browse/Trees/312137/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/312137/Details"
+          },
+          {
+            "text": "26.17 yd",
+            "href": "/Browse/Trees/312137/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "-",
+          "180''",
+          "20.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/42231/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/42231/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/312107/Details"
+          },
+          {
+            "text": "20.00 yd",
+            "href": "/Browse/Trees/312107/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "23.87 yd",
+          "181''",
+          "22.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/42231/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/42231/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "23.87 yd",
+            "href": "/Browse/Trees/312046/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/312046/Details"
+          },
+          {
+            "text": "22.00 yd",
+            "href": "/Browse/Trees/312046/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "-",
+          "229''",
+          "28.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/42231/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/42231/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "229''",
+            "href": "/Browse/Trees/312140/Details"
+          },
+          {
+            "text": "28.67 yd",
+            "href": "/Browse/Trees/312140/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "36.00 yd",
+          "207''",
+          "29.30 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/42231/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42231/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "36.00 yd",
+            "href": "/Browse/Trees/312070/Details"
+          },
+          {
+            "text": "207''",
+            "href": "/Browse/Trees/312120/Details"
+          },
+          {
+            "text": "29.30 yd",
+            "href": "/Browse/Trees/312070/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "59.23 yd",
+          "173''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/42231/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/42231/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "59.23 yd",
+            "href": "/Browse/Trees/312032/Details"
+          },
+          {
+            "text": "173''",
+            "href": "/Browse/Trees/312032/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Albizia julibrissin",
+          "Silktree",
+          "9.37 yd",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Albizia julibrissin",
+            "href": "/Browse/Sites/42231/Species/Albizia%20julibrissin%20(Silktree)/Details"
+          },
+          {
+            "text": "Silktree",
+            "href": "/Browse/Sites/42231/Species/Albizia%20julibrissin%20(Silktree)/Details"
+          },
+          {
+            "text": "9.37 yd",
+            "href": "/Browse/Trees/312040/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/312040/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier laevis",
+          "Allegheny Serviceberry",
+          "22.77 yd",
+          "53''",
+          "0.64 yd"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier laevis",
+            "href": "/Browse/Sites/42231/Species/Amelanchier%20laevis%20(Allegheny%20Serviceberry)/Details"
+          },
+          {
+            "text": "Allegheny Serviceberry",
+            "href": "/Browse/Sites/42231/Species/Amelanchier%20laevis%20(Allegheny%20Serviceberry)/Details"
+          },
+          {
+            "text": "22.77 yd",
+            "href": "/Browse/Trees/312048/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/312048/Details"
+          },
+          {
+            "text": "0.64 yd",
+            "href": "/Browse/Trees/312048/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 75 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 20.173, -081 36.734",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public and Private",
+      "County": "54 Counties"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

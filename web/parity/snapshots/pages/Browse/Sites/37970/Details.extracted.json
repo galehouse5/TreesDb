@@ -1,0 +1,210 @@
+{
+  "siteId": 37970,
+  "summary": {
+    "Name": "Storm Pass Trail",
+    "RHI5": "49.02",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.01",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "06/16/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "Portions of the park are also in Grand and Boulder counties."
+  },
+  "visits": [
+    {
+      "visited": "06/16/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Portions of the park are also in Grand and Boulder counties."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies lasiocarpa var. lasiocarpa",
+          "Subalpine Fir",
+          "59.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. lasiocarpa",
+            "href": "/Browse/Sites/37970/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/Sites/37970/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "59.2'",
+            "href": "/Browse/Trees/126183/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus incana ssp. tenuifolia",
+          "Thinleaf Alder",
+          "19.8'",
+          "9''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus incana ssp. tenuifolia",
+            "href": "/Browse/Sites/37970/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "Thinleaf Alder",
+            "href": "/Browse/Sites/37970/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "19.8'",
+            "href": "/Browse/Trees/126181/Details"
+          },
+          {
+            "text": "9''",
+            "href": "/Browse/Trees/126181/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii var. engelmannii",
+          "Engelmann Spruce",
+          "78.9'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii var. engelmannii",
+            "href": "/Browse/Sites/37970/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/37970/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "78.9'",
+            "href": "/Browse/Trees/126179/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/126179/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. latifolia",
+          "Lodgepole Pine",
+          "59.9'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. latifolia",
+            "href": "/Browse/Sites/37970/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Lodgepole Pine",
+            "href": "/Browse/Sites/37970/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "59.9'",
+            "href": "/Browse/Trees/126180/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/126180/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus flexilis",
+          "Limber Pine",
+          "27.3'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus flexilis",
+            "href": "/Browse/Sites/37970/Species/Pinus%20flexilis%20(Limber%20Pine)/Details"
+          },
+          {
+            "text": "Limber Pine",
+            "href": "/Browse/Sites/37970/Species/Pinus%20flexilis%20(Limber%20Pine)/Details"
+          },
+          {
+            "text": "27.3'",
+            "href": "/Browse/Trees/126182/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/126182/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 19.200, -105 37.200",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Park",
+      "County": "Larimer"
+    },
+    "state": {
+      "text": "Colorado (US)",
+      "href": "/Browse/States/5/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

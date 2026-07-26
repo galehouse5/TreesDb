@@ -1,0 +1,241 @@
+{
+  "siteId": 42086,
+  "summary": {
+    "Name": "Noxon Rapids Reservoir",
+    "RHI5": "145.14",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.29",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "06/13/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/13/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies grandis var. idahoensis",
+          "Grand Fir",
+          "131.6'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis var. idahoensis",
+            "href": "/Browse/Sites/42086/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/Sites/42086/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "131.6'",
+            "href": "/Browse/Trees/296959/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/296959/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix occidentalis",
+          "Western Larch",
+          "147.2'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix occidentalis",
+            "href": "/Browse/Sites/42086/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "Western Larch",
+            "href": "/Browse/Sites/42086/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "147.2'",
+            "href": "/Browse/Trees/296958/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/296958/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. latifolia",
+          "Lodgepole Pine",
+          "124.4'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. latifolia",
+            "href": "/Browse/Sites/42086/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Lodgepole Pine",
+            "href": "/Browse/Sites/42086/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "124.4'",
+            "href": "/Browse/Trees/296957/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/296956/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus monticola",
+          "Western White Pine",
+          "147.3'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus monticola",
+            "href": "/Browse/Sites/42086/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "Western White Pine",
+            "href": "/Browse/Sites/42086/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "147.3'",
+            "href": "/Browse/Trees/296955/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/296955/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. ponderosa",
+          "Ponderosa Pine",
+          "168.4'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. ponderosa",
+            "href": "/Browse/Sites/42086/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/42086/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "168.4'",
+            "href": "/Browse/Trees/296953/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/296954/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "131.2'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/42086/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/42086/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "131.2'",
+            "href": "/Browse/Trees/296960/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/296960/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "47 58.409, -115 43.253",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Sanders"
+    },
+    "state": {
+      "text": "Montana (US)",
+      "href": "/Browse/States/24/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

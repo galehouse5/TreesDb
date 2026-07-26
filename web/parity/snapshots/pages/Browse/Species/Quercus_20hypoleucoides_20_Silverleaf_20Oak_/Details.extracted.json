@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Quercus hypoleucoides",
+  "commonName": "Silverleaf Oak",
+  "global": {
+    "maxHeight": {
+      "text": "36.4'",
+      "href": "/Browse/Trees/93004/Details"
+    },
+    "maxGirth": {
+      "text": "65''",
+      "href": "/Browse/Trees/93004/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "36.4'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "36.4'",
+            "href": "/Browse/Trees/93004/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/93004/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

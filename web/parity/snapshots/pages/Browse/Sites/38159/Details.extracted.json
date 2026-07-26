@@ -1,0 +1,383 @@
+{
+  "siteId": 38159,
+  "summary": {
+    "Name": "Wissahickon Valley Park",
+    "RHI5": "153.52",
+    "RHI10": "145.97",
+    "RHI20": "134.77",
+    "RGI5": "15.92",
+    "RGI10": "14.07",
+    "RGI20": "12.30",
+    "Trees measured": "160",
+    "Last measurement date": "12/02/2019",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/02/2019",
+      "visitors": "Eric Danielson",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/16/2011",
+      "visitors": "George Feio",
+      "tripReportUrl": "(none)",
+      "comments": "Part of the Fairmount Park system"
+    },
+    {
+      "visited": "11/15/2011",
+      "visitors": "George Fieo",
+      "tripReportUrl": "(none)",
+      "comments": "Within Fairmount Park System."
+    },
+    {
+      "visited": "01/11/2006",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/fairmount_park_2006.htm",
+      "comments": "Trees were measured north of Bells Mill in the Andorra Natural Area."
+    },
+    {
+      "visited": "04/20/2005",
+      "visitors": "John Eichholz",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/fairmount_2005.htm",
+      "comments": "Trees were measured along Forbidden Avenue and a stream valley off of Chestnut Hill Avenue"
+    },
+    {
+      "visited": "10/04/2003",
+      "visitors": "Will Blozan and Ben Blozan",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/fairmount/fairmont_park.htm",
+      "comments": "Trees were measured along two miles of Wissahickon Creek and Forbidden Dive"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "97.8'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38159/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38159/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "97.8'",
+            "href": "/Browse/Trees/173694/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/173694/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "104.6'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/38159/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38159/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "104.6'",
+            "href": "/Browse/Trees/173704/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/173704/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "103.7'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/38159/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/38159/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "103.7'",
+            "href": "/Browse/Trees/173659/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/173659/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "115.4'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/38159/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/38159/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "115.4'",
+            "href": "/Browse/Trees/173665/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/214174/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "156.1'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/38159/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/38159/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "156.1'",
+            "href": "/Browse/Trees/173663/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/173663/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "133.8'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/38159/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/38159/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "133.8'",
+            "href": "/Browse/Trees/173693/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/173693/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "122.4'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/38159/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/38159/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "122.4'",
+            "href": "/Browse/Trees/173703/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/173703/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "116.1'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/38159/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/38159/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "116.1'",
+            "href": "/Browse/Trees/173687/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/173687/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "130.1'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38159/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38159/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "130.1'",
+            "href": "/Browse/Trees/173661/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/173660/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus sylvatica",
+          "European Beech",
+          "102.5'",
+          "257''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus sylvatica",
+            "href": "/Browse/Sites/38159/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "European Beech",
+            "href": "/Browse/Sites/38159/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "102.5'",
+            "href": "/Browse/Trees/214528/Details"
+          },
+          {
+            "text": "257''",
+            "href": "/Browse/Trees/214528/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 35 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 03.089, -075 12.945",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Philadelphia"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,101 @@
+{
+  "siteId": 41170,
+  "summary": {
+    "Name": "Westborough Cedar Swamp",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "03/12/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "65 acres"
+  },
+  "visits": [
+    {
+      "visited": "03/12/2017",
+      "visitors": "Jared Lockwood",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "65 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Chamaecyparis thyoides",
+          "Atlantic White Cedar",
+          "69.5'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis thyoides",
+            "href": "/Browse/Sites/41170/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "Atlantic White Cedar",
+            "href": "/Browse/Sites/41170/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "69.5'",
+            "href": "/Browse/Trees/250879/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/250878/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 15.581, -071 34.930",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Middlesex"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

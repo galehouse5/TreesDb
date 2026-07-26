@@ -1,0 +1,322 @@
+{
+  "siteId": 40524,
+  "summary": {
+    "Name": "Wawa Area-Voyager And Nokomis Trails",
+    "RHI5": "19.818",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "1.196",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "17",
+    "Last measurement date": "08/10/2013",
+    "Ownership contact": "Lake Superior Provincial Park 96 Broadway Avenue, WAWA, Ontario",
+    "General comments": "Also see: http://www.ents-bbs.org/viewtopic.php?f=113&t=6037&sid=1d493e39fcc69fb73dc249f02e7e5c6d"
+  },
+  "visits": [
+    {
+      "visited": "08/10/2013",
+      "visitors": "Doug Bidlack and Kouta Rasanen",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Also see: http://www.ents-bbs.org/viewtopic.php?f=113&t=6037&sid=1d493e39fcc69fb73dc249f02e7e5c6d"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "22.71 m",
+          "112 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/Sites/40524/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/40524/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "22.71 m",
+            "href": "/Browse/Trees/233054/Details"
+          },
+          {
+            "text": "112 cm",
+            "href": "/Browse/Trees/233054/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer spicatum",
+          "Mountain Maple",
+          "9.81 m",
+          "38 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spicatum",
+            "href": "/Browse/Sites/40524/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "Mountain Maple",
+            "href": "/Browse/Sites/40524/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "9.81 m",
+            "href": "/Browse/Trees/233044/Details"
+          },
+          {
+            "text": "38 cm",
+            "href": "/Browse/Trees/233044/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus viridis",
+          "Green Alder",
+          "4.21 m",
+          "8 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus viridis",
+            "href": "/Browse/Sites/40524/Species/Alnus%20viridis%20(Green%20Alder)/Details"
+          },
+          {
+            "text": "Green Alder",
+            "href": "/Browse/Sites/40524/Species/Alnus%20viridis%20(Green%20Alder)/Details"
+          },
+          {
+            "text": "4.21 m",
+            "href": "/Browse/Trees/233047/Details"
+          },
+          {
+            "text": "8 cm",
+            "href": "/Browse/Trees/233047/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "28.90 m",
+          "142 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/40524/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/40524/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "28.90 m",
+            "href": "/Browse/Trees/233055/Details"
+          },
+          {
+            "text": "142 cm",
+            "href": "/Browse/Trees/233055/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea mariana",
+          "Black Spruce",
+          "21.40 m",
+          "84 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana",
+            "href": "/Browse/Sites/40524/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/Sites/40524/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "21.40 m",
+            "href": "/Browse/Trees/233057/Details"
+          },
+          {
+            "text": "84 cm",
+            "href": "/Browse/Trees/233057/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus banksiana",
+          "Jack Pine",
+          "-",
+          "138 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus banksiana",
+            "href": "/Browse/Sites/40524/Species/Pinus%20banksiana%20(Jack%20Pine)/Details"
+          },
+          {
+            "text": "Jack Pine",
+            "href": "/Browse/Sites/40524/Species/Pinus%20banksiana%20(Jack%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "138 cm",
+            "href": "/Browse/Trees/233051/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix bebbiana",
+          "Bebb Willow",
+          "7.89 m",
+          "25 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix bebbiana",
+            "href": "/Browse/Sites/40524/Species/Salix%20bebbiana%20(Bebb%20Willow)/Details"
+          },
+          {
+            "text": "Bebb Willow",
+            "href": "/Browse/Sites/40524/Species/Salix%20bebbiana%20(Bebb%20Willow)/Details"
+          },
+          {
+            "text": "7.89 m",
+            "href": "/Browse/Trees/233050/Details"
+          },
+          {
+            "text": "25 cm",
+            "href": "/Browse/Trees/233050/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix discolor",
+          "Pussy Willow",
+          "10.09 m",
+          "40 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix discolor",
+            "href": "/Browse/Sites/40524/Species/Salix%20discolor%20(Pussy%20Willow)/Details"
+          },
+          {
+            "text": "Pussy Willow",
+            "href": "/Browse/Sites/40524/Species/Salix%20discolor%20(Pussy%20Willow)/Details"
+          },
+          {
+            "text": "10.09 m",
+            "href": "/Browse/Trees/233049/Details"
+          },
+          {
+            "text": "40 cm",
+            "href": "/Browse/Trees/233049/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sorbus decora",
+          "Northern Mountain Ash",
+          "16.00 m",
+          "122 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sorbus decora",
+            "href": "/Browse/Sites/40524/Species/Sorbus%20decora%20(Northern%20Mountain%20Ash)/Details"
+          },
+          {
+            "text": "Northern Mountain Ash",
+            "href": "/Browse/Sites/40524/Species/Sorbus%20decora%20(Northern%20Mountain%20Ash)/Details"
+          },
+          {
+            "text": "16.00 m",
+            "href": "/Browse/Trees/233053/Details"
+          },
+          {
+            "text": "122 cm",
+            "href": "/Browse/Trees/233053/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "47 50.195, -084 56.009",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Algoma District"
+    },
+    "state": {
+      "text": "Ontario (CA)",
+      "href": "/Browse/States/57/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

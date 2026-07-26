@@ -1,0 +1,371 @@
+{
+  "siteId": 41283,
+  "summary": {
+    "Name": "Pennsylvania Single Tree Sites",
+    "RHI5": "148.24",
+    "RHI10": "133.20",
+    "RHI20": "115.35",
+    "RGI5": "23.70",
+    "RGI10": "22.45",
+    "RGI20": "19.97",
+    "Trees measured": "127",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "29.7'",
+          "19''",
+          "16.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/Sites/41283/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/Sites/41283/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "29.7'",
+            "href": "/Browse/Trees/255916/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/255916/Details"
+          },
+          {
+            "text": "16.0'",
+            "href": "/Browse/Trees/255916/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "97.7'",
+          "228''",
+          "107.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/41283/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/41283/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "97.7'",
+            "href": "/Browse/Trees/255913/Details"
+          },
+          {
+            "text": "228''",
+            "href": "/Browse/Trees/255913/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/255913/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "88.1'",
+          "198''",
+          "71.1'"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/41283/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41283/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "88.1'",
+            "href": "/Browse/Trees/255871/Details"
+          },
+          {
+            "text": "198''",
+            "href": "/Browse/Trees/255871/Details"
+          },
+          {
+            "text": "71.1'",
+            "href": "/Browse/Trees/255871/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Aralia spinosa",
+          "Devil's Walkingstick",
+          "-",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aralia spinosa",
+            "href": "/Browse/Sites/41283/Species/Aralia%20spinosa%20(Devil's%20Walkingstick)/Details"
+          },
+          {
+            "text": "Devil's Walkingstick",
+            "href": "/Browse/Sites/41283/Species/Aralia%20spinosa%20(Devil's%20Walkingstick)/Details"
+          },
+          null,
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/255884/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "94.3'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41283/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41283/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "94.3'",
+            "href": "/Browse/Trees/255902/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/255902/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "71.7'",
+          "137''",
+          "110.3'"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/41283/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/41283/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "71.7'",
+            "href": "/Browse/Trees/255971/Details"
+          },
+          {
+            "text": "137''",
+            "href": "/Browse/Trees/255972/Details"
+          },
+          {
+            "text": "110.3'",
+            "href": "/Browse/Trees/255972/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "46.5'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/41283/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/41283/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "46.5'",
+            "href": "/Browse/Trees/255890/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/255890/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya carolinae-septentrionalis",
+          "Southern Shagbark Hickory",
+          "95.9'",
+          "110''",
+          "66.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya carolinae-septentrionalis",
+            "href": "/Browse/Sites/41283/Species/Carya%20carolinae-septentrionalis%20(Southern%20Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Southern Shagbark Hickory",
+            "href": "/Browse/Sites/41283/Species/Carya%20carolinae-septentrionalis%20(Southern%20Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "95.9'",
+            "href": "/Browse/Trees/255923/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/255923/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/255923/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "126.0'",
+          "109''",
+          "71.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41283/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41283/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "126.0'",
+            "href": "/Browse/Trees/255973/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/255973/Details"
+          },
+          {
+            "text": "71.0'",
+            "href": "/Browse/Trees/255973/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "91.9'",
+          "224''",
+          "132.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/41283/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/41283/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "91.9'",
+            "href": "/Browse/Trees/255936/Details"
+          },
+          {
+            "text": "224''",
+            "href": "/Browse/Trees/255936/Details"
+          },
+          {
+            "text": "132.0'",
+            "href": "/Browse/Trees/255936/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 53 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 15.865, -076 53.022",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public, Private",
+      "County": "Various Counties"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,157 @@
+{
+  "siteId": 38145,
+  "summary": {
+    "Name": "Locket Meadow",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "06/22/2014",
+    "Ownership contact": "Peaks Ranger District 5075 North Highway 89 Flagstaff, AZ 86044",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/22/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus ponderosa var. brachyptera",
+          "Ponderosa Pine",
+          "34.50 yd",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. brachyptera",
+            "href": "/Browse/Sites/38145/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/38145/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "34.50 yd",
+            "href": "/Browse/Trees/130918/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/130917/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobiformis var. reflexa",
+          "Southwestern White Pine",
+          "28.97 yd",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobiformis var. reflexa",
+            "href": "/Browse/Sites/38145/Species/Pinus%20strobiformis%20var.%20reflexa%20(Southwestern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Southwestern White Pine",
+            "href": "/Browse/Sites/38145/Species/Pinus%20strobiformis%20var.%20reflexa%20(Southwestern%20White%20Pine)/Details"
+          },
+          {
+            "text": "28.97 yd",
+            "href": "/Browse/Trees/130912/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/130912/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "25.37 yd",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/38145/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/38145/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "25.37 yd",
+            "href": "/Browse/Trees/130910/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/130911/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 21.627, -111 37.181",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Forest",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

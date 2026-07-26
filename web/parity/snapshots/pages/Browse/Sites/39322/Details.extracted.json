@@ -1,0 +1,132 @@
+{
+  "siteId": 39322,
+  "summary": {
+    "Name": "Wood-Rill SNA",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "05/11/2016",
+    "Ownership contact": "(private)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/11/2016",
+      "visitors": "Riley Smith",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "106.0'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/39322/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/39322/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "106.0'",
+            "href": "/Browse/Trees/172274/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/172274/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "73.0'",
+          "92''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/39322/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/39322/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "73.0'",
+            "href": "/Browse/Trees/172276/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/172276/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/172276/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 59.046, -093 32.623",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "State DNR",
+      "County": "Hennepin"
+    },
+    "state": {
+      "text": "Minnesota (US)",
+      "href": "/Browse/States/21/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,182 @@
+{
+  "siteId": 39269,
+  "summary": {
+    "Name": "Morristown National Historic Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "10/26/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "2000 acres"
+  },
+  "visits": [
+    {
+      "visited": "10/26/2010",
+      "visitors": "Robert Leverett",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "2000 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "117.5'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39269/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39269/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "117.5'",
+            "href": "/Browse/Trees/170211/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/170211/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "150.2'",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39269/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39269/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "150.2'",
+            "href": "/Browse/Trees/170208/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/170209/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "111.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/39269/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/39269/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/170212/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "110.0'",
+          "137''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/39269/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/39269/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/170213/Details"
+          },
+          {
+            "text": "137''",
+            "href": "/Browse/Trees/170213/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 47.821, -074 28.061",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Morris"
+    },
+    "state": {
+      "text": "New Jersey (US)",
+      "href": "/Browse/States/29/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Prunus virginiana var. melanocarpa",
+  "commonName": "Black Chokecherry",
+  "global": {
+    "maxHeight": {
+      "text": "28.9'",
+      "href": "/Browse/Trees/98184/Details"
+    },
+    "maxGirth": {
+      "text": "12''",
+      "href": "/Browse/Trees/98184/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Colorado",
+          "28.9'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "28.9'",
+            "href": "/Browse/Trees/98184/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/98184/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

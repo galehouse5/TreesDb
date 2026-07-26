@@ -1,0 +1,350 @@
+{
+  "siteId": 32609,
+  "summary": {
+    "Name": "Hemlock Island",
+    "RHI5": "39.640",
+    "RHI10": "38.240",
+    "RHI20": "34.260",
+    "RGI5": "3.673",
+    "RGI10": "3.127",
+    "RGI20": "2.434",
+    "Trees measured": "73",
+    "Last measurement date": "07/16/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/16/2008",
+      "visitors": "Dale Luthringer and Edward Frank",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "24.93 yd",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/32609/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/32609/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "24.93 yd",
+            "href": "/Browse/Trees/173839/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/173839/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "38.70 yd",
+          "176''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/32609/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/32609/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "38.70 yd",
+            "href": "/Browse/Trees/173849/Details"
+          },
+          {
+            "text": "176''",
+            "href": "/Browse/Trees/173847/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "25.33 yd",
+          "33''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/32609/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/32609/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "25.33 yd",
+            "href": "/Browse/Trees/173860/Details"
+          },
+          {
+            "text": "33''",
+            "href": "/Browse/Trees/173860/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "32.03 yd",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/32609/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/32609/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "32.03 yd",
+            "href": "/Browse/Trees/173803/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/173803/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "11.43 yd",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/32609/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/32609/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "11.43 yd",
+            "href": "/Browse/Trees/173794/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/173793/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "37.20 yd",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/32609/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/32609/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "37.20 yd",
+            "href": "/Browse/Trees/173800/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/173796/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "26.90 yd",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/32609/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/32609/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "26.90 yd",
+            "href": "/Browse/Trees/173838/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/173838/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "35.70 yd",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/32609/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/32609/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "35.70 yd",
+            "href": "/Browse/Trees/173844/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/173844/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus punctata",
+          "Dotted Hawthorn",
+          "-",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus punctata",
+            "href": "/Browse/Sites/32609/Species/Crataegus%20punctata%20(Dotted%20Hawthorn)/Details"
+          },
+          {
+            "text": "Dotted Hawthorn",
+            "href": "/Browse/Sites/32609/Species/Crataegus%20punctata%20(Dotted%20Hawthorn)/Details"
+          },
+          null,
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/173814/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "32.27 yd",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/32609/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/32609/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "32.27 yd",
+            "href": "/Browse/Trees/173792/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/173791/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 27 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 35.627, -079 24.425",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Forest"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

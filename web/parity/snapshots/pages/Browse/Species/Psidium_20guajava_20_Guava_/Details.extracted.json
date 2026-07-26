@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Psidium guajava",
+  "commonName": "Guava",
+  "global": {
+    "maxHeight": {
+      "text": "29.3'",
+      "href": "/Browse/Trees/213145/Details"
+    },
+    "maxGirth": {
+      "text": "43''",
+      "href": "/Browse/Trees/213145/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Guanacaste",
+          "29.3'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Guanacaste",
+            "href": "/Browse/States/119/Details"
+          },
+          {
+            "text": "29.3'",
+            "href": "/Browse/Trees/213145/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/213145/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 126178,
+  "botanicalName": {
+    "text": "Pinus contorta var. latifolia",
+    "href": "/Browse/Sites/37970/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Lodgepole Pine",
+    "href": "/Browse/Sites/37970/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+  },
+  "details": {
+    "Height": "17.80 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "137 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "11.83",
+    "ENTSPTS": "262.80",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.12",
+    "Champion points (abbreviated)": "112.40",
+    "Diameter": "44 cm",
+    "Conical volume": "0.89 m³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 06/16/2016",
+      "summary": {
+        "Height": "17.80 m",
+        "Girth": "137 cm"
+      },
+      "details": {
+        "Botanical name": "Pinus contorta var. latifolia",
+        "Common name": "Lodgepole Pine",
+        "Height": "17.80 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "137 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "11.83",
+        "ENTSPTS": "262.80",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.12",
+        "Champion points (abbreviated)": "112.40",
+        "Diameter": "44 cm",
+        "Conical volume": "0.89 m³",
+        "General comments": "(none)"
+      },
+      "measurers": "Turner Sharp"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "40 19.200, -105 37.200",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Storm Pass Trail",
+      "href": "/Browse/Sites/37970/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - National Park",
+      "County": "Larimer"
+    },
+    "state": {
+      "text": "Colorado (US)",
+      "href": "/Browse/States/5/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

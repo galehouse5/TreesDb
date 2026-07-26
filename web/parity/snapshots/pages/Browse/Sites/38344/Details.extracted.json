@@ -1,0 +1,241 @@
+{
+  "siteId": 38344,
+  "summary": {
+    "Name": "Hot Springs National Park",
+    "RHI5": "51.64",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "5.10",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "09/05/2016",
+    "Ownership contact": "369 Central avenue Hot Springs, AR",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/05/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Celtis laevigata var. laevigata",
+          "Sugarberry",
+          "56.2'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. laevigata",
+            "href": "/Browse/Sites/38344/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "Sugarberry",
+            "href": "/Browse/Sites/38344/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "56.2'",
+            "href": "/Browse/Trees/137052/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/137052/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis var. canadensis",
+          "Eastern Redbud",
+          "39.8'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis var. canadensis",
+            "href": "/Browse/Sites/38344/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/Sites/38344/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "39.8'",
+            "href": "/Browse/Trees/137049/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/137049/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "54.2'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/Sites/38344/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/38344/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "54.2'",
+            "href": "/Browse/Trees/137051/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/137050/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "52.9'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/38344/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/38344/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "52.9'",
+            "href": "/Browse/Trees/137055/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/137055/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus marilandica",
+          "Blackjack Oak",
+          "41.5'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus marilandica",
+            "href": "/Browse/Sites/38344/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "Blackjack Oak",
+            "href": "/Browse/Sites/38344/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "41.5'",
+            "href": "/Browse/Trees/137054/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/137054/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus stellata",
+          "Post Oak",
+          "53.4'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus stellata",
+            "href": "/Browse/Sites/38344/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "Post Oak",
+            "href": "/Browse/Sites/38344/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "53.4'",
+            "href": "/Browse/Trees/137053/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/137053/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 30.822, -093 03.227",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Garland"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

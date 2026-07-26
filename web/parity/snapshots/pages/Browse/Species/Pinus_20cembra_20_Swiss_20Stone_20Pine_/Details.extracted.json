@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Pinus cembra",
+  "commonName": "Swiss Stone Pine",
+  "global": {
+    "maxHeight": {
+      "text": "61.5'",
+      "href": "/Browse/Trees/226033/Details"
+    },
+    "maxGirth": {
+      "text": "84''",
+      "href": "/Browse/Trees/282391/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "61.5'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "61.5'",
+            "href": "/Browse/Trees/226033/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/226033/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "40.8'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "40.8'",
+            "href": "/Browse/Trees/282391/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/282391/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "42.0'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/225119/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/225119/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,344 @@
+{
+  "siteId": 14904,
+  "summary": {
+    "Name": "Cuyahoga Valley Composite",
+    "RHI5": "151.34",
+    "RHI10": "142.76",
+    "RHI20": "132.58",
+    "RGI5": "12.82",
+    "RGI10": "10.77",
+    "RGI20": "8.42",
+    "Trees measured": "27",
+    "Last measurement date": "11/06/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "This is a composite of the tallest trees by species previously recorded in a number of smaller sites within the Cuyahoga Valley, which are all part of the Akron/Summit County Metropark System or the Cuyahoga Valley National Park."
+  },
+  "visits": [
+    {
+      "visited": "11/06/2011",
+      "visitors": "Steve Galehouse and Rand Brown",
+      "tripReportUrl": "(none)",
+      "comments": "This is a composite of the tallest trees by species previously recorded in a number of smaller sites within the Cuyahoga Valley, which are all part of the Akron/Summit County Metropark System or the Cuyahoga Valley National Park."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "118.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/Sites/14904/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/Sites/14904/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "118.4'",
+            "href": "/Browse/Trees/63696/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "112.0'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/14904/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/14904/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "112.0'",
+            "href": "/Browse/Trees/63707/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/63707/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "122.2'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/14904/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/14904/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "122.2'",
+            "href": "/Browse/Trees/63695/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/63695/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "74.5'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/14904/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/14904/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "74.5'",
+            "href": "/Browse/Trees/63712/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/63712/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "141.8'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/14904/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/14904/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "141.8'",
+            "href": "/Browse/Trees/63697/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/63697/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "128.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/14904/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/14904/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "128.8'",
+            "href": "/Browse/Trees/63714/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "135.2'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/14904/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/14904/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "135.2'",
+            "href": "/Browse/Trees/63704/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/63704/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "135.7'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/14904/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/14904/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "135.7'",
+            "href": "/Browse/Trees/63703/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/63703/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "95.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/14904/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/14904/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "95.0'",
+            "href": "/Browse/Trees/63711/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "133.0'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/14904/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/14904/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/63694/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/63694/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 26 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 17.171, -081 34.320",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Metropark, National Park",
+      "County": "Summit"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

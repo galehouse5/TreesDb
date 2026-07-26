@@ -1,0 +1,807 @@
+{
+  "category": "search",
+  "generatedAt": "2026-07-19T04:22:16.545Z",
+  "checksRun": 233,
+  "pass": 95,
+  "fail": 0,
+  "waived": 138,
+  "diffs": [],
+  "waivedDiffs": [
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=AL",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Valles Caldera National Preserve",
+          "Description": "Sandoval, New Mexico (30)",
+          "Url": "/Browse/Sites/42348/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=AL rank-group[2]: result \"Valles Caldera National Preserve\" (sites) present in legacy but missing from new"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=AL",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Ragged Mountain Natural Area",
+          "Description": "Albemarle, Virginia (43)",
+          "Url": "/Browse/Sites/42260/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=AL rank-group[2]: result \"Ragged Mountain Natural Area\" (sites) present in legacy but missing from new"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=AL",
+        "field": "results",
+        "actual": {
+          "Category": "sites",
+          "Subject": "Alkie Creek Confluence",
+          "Description": "Stikine Regional District, British Columbia (50)",
+          "Url": "/sites/22038"
+        },
+        "message": "https://www.treesdb.org/Search?term=AL rank-group[2]: result \"Alkie Creek Confluence\" (sites) present in new but not in legacy"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=AL",
+        "field": "results",
+        "actual": {
+          "Category": "sites",
+          "Subject": "Real County Cypress",
+          "Description": "Real, Texas (41)",
+          "Url": "/sites/40886"
+        },
+        "message": "https://www.treesdb.org/Search?term=AL rank-group[2]: result \"Real County Cypress\" (sites) present in new but not in legacy"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=AL",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Alnus oblongifolia",
+          "Description": "Arizona Alder",
+          "Url": "/Browse/Species/Alnus%20oblongifolia%20(Arizona%20Alder)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=AL rank-group[3]: result \"Alnus oblongifolia\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=AL",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Alnus rhombifolia",
+          "Description": "White Alder",
+          "Url": "/Browse/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=AL rank-group[3]: result \"Alnus rhombifolia\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=AL",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Alnus rubra",
+          "Description": "Red Alder",
+          "Url": "/Browse/Species/Alnus%20rubra%20(Red%20Alder)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=AL rank-group[3]: result \"Alnus rubra\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=AL",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Alnus acuminata",
+          "Description": "Mexican Alder",
+          "Url": "/species/alnus-acuminata--mexican-alder"
+        },
+        "message": "https://www.treesdb.org/Search?term=AL rank-group[3]: result \"Alnus acuminata\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=AL",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Alnus incana ssp. rugosa",
+          "Description": "Speckled Alder",
+          "Url": "/species/alnus-incana-ssp-rugosa--speckled-alder"
+        },
+        "message": "https://www.treesdb.org/Search?term=AL rank-group[3]: result \"Alnus incana ssp. rugosa\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=AL",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Alnus incana ssp. tenuifolia",
+          "Description": "Thinleaf Alder",
+          "Url": "/species/alnus-incana-ssp-tenuifolia--thinleaf-alder"
+        },
+        "message": "https://www.treesdb.org/Search?term=AL rank-group[3]: result \"Alnus incana ssp. tenuifolia\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=DIF",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Styrax grandifolius",
+          "Description": "Bigleaf Snowbell",
+          "Url": "/Browse/Species/Styrax%20grandifolius%20(Bigleaf%20Snowbell)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=DIF rank-group[1]: result \"Styrax grandifolius\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=DIF",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Magnolia grandiflora",
+          "Description": "Southern Magnolia",
+          "Url": "/Browse/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=DIF rank-group[1]: result \"Magnolia grandiflora\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=DIF",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Carya cordiformis",
+          "Description": "Bitternut Hickory",
+          "Url": "/species/carya-cordiformis--bitternut-hickory"
+        },
+        "message": "https://www.treesdb.org/Search?term=DIF rank-group[1]: result \"Carya cordiformis\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=DIF",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Fagus grandifolia",
+          "Description": "American Beech",
+          "Url": "/species/fagus-grandifolia--american-beech"
+        },
+        "message": "https://www.treesdb.org/Search?term=DIF rank-group[1]: result \"Fagus grandifolia\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Sand Barrens And Oak-Pine Forest Preserve",
+          "Description": "Ouachita, Arkansas (2)",
+          "Url": "/Browse/Sites/40956/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[2]: result \"Sand Barrens And Oak-Pine Forest Preserve\" (sites) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Choctaw Island Wildlife Management Area",
+          "Description": "Desha, Arkansas (2)",
+          "Url": "/Browse/Sites/40971/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[2]: result \"Choctaw Island Wildlife Management Area\" (sites) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Grand Canyon - Colorado River Corridor",
+          "Description": "Coconino, Mohave, Arizona (3)",
+          "Url": "/Browse/Sites/1670/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[2]: result \"Grand Canyon - Colorado River Corridor\" (sites) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Grand Canyon - South Rim",
+          "Description": "Coconino, Arizona (3)",
+          "Url": "/Browse/Sites/3729/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[2]: result \"Grand Canyon - South Rim\" (sites) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Grand Canyon -  North Rim",
+          "Description": "Coconino, Arizona (3)",
+          "Url": "/Browse/Sites/27486/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[2]: result \"Grand Canyon -  North Rim\" (sites) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "actual": {
+          "Category": "sites",
+          "Subject": "Sand Run",
+          "Description": "Summit, Ohio (33)",
+          "Url": "/sites/440"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[2]: result \"Sand Run\" (sites) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "actual": {
+          "Category": "sites",
+          "Subject": "Tallyrand Park",
+          "Description": "Centre, Pennsylvania (36)",
+          "Url": "/sites/441"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[2]: result \"Tallyrand Park\" (sites) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "actual": {
+          "Category": "sites",
+          "Subject": "Rocky River Upland Forest",
+          "Description": "Cuyahoga, Ohio (33)",
+          "Url": "/sites/450"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[2]: result \"Rocky River Upland Forest\" (sites) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "actual": {
+          "Category": "sites",
+          "Subject": "Warren OH Bottomland Hardwoods",
+          "Description": "Trumbull, Ohio (33)",
+          "Url": "/sites/702"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[2]: result \"Warren OH Bottomland Hardwoods\" (sites) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "actual": {
+          "Category": "sites",
+          "Subject": "Poland Woods OH",
+          "Description": "Mahoning, Ohio (33)",
+          "Url": "/sites/708"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[2]: result \"Poland Woods OH\" (sites) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Pinus clausa",
+          "Description": "Sand Pine",
+          "Url": "/Browse/Species/Pinus%20clausa%20(Sand%20Pine)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[3]: result \"Pinus clausa\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Pinus serotina",
+          "Description": "Pond Pine",
+          "Url": "/Browse/Species/Pinus%20serotina%20(Pond%20Pine)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[3]: result \"Pinus serotina\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Pinus canariensis",
+          "Description": "Canary Island Pine",
+          "Url": "/Browse/Species/Pinus%20canariensis%20(Canary%20Island%20Pine)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[3]: result \"Pinus canariensis\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Abies grandis",
+          "Description": "Grand Fir",
+          "Url": "/species/abies-grandis--grand-fir"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[3]: result \"Abies grandis\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Abies grandis var. grandis",
+          "Description": "Grand Fir",
+          "Url": "/species/abies-grandis-var-grandis--grand-fir"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[3]: result \"Abies grandis var. grandis\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=nd+",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Abies grandis var. idahoensis",
+          "Description": "Grand Fir",
+          "Url": "/species/abies-grandis-var-idahoensis--grand-fir"
+        },
+        "message": "https://www.treesdb.org/Search?term=nd+ rank-group[3]: result \"Abies grandis var. idahoensis\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=Abies",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Abies spp.",
+          "Description": "Fir",
+          "Url": "/Browse/Species/Abies%20spp.%20(Fir)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=Abies rank-group[0]: result \"Abies spp.\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=Abies",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Abies fargesii",
+          "Description": "Farges Fir",
+          "Url": "/Browse/Species/Abies%20fargesii%20(Farges%20Fir)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=Abies rank-group[0]: result \"Abies fargesii\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=Abies",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Abies concolor var. lowiana x abies grandis",
+          "Description": "Hybrid Fir",
+          "Url": "/Browse/Species/Abies%20concolor%20var.%20lowiana%20x%20abies%20grandis%20(Hybrid%20Fir)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=Abies rank-group[0]: result \"Abies concolor var. lowiana x abies grandis\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=Abies",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Abies concolor var. lowiana",
+          "Description": "White Fir",
+          "Url": "/Browse/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=Abies rank-group[0]: result \"Abies concolor var. lowiana\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=Abies",
+        "field": "results",
+        "expected": {
+          "Category": "species",
+          "Subject": "Abies lasiocarpa var. bifolia",
+          "Description": "Subalpine Fir",
+          "Url": "/Browse/Species/Abies%20lasiocarpa%20var.%20bifolia%20(Subalpine%20Fir)/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=Abies rank-group[0]: result \"Abies lasiocarpa var. bifolia\" (species) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=Abies",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Abies alba",
+          "Description": "Silver Fir",
+          "Url": "/species/abies-alba--silver-fir"
+        },
+        "message": "https://www.treesdb.org/Search?term=Abies rank-group[0]: result \"Abies alba\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=Abies",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Abies amabilis",
+          "Description": "Pacific Silver Fir",
+          "Url": "/species/abies-amabilis--pacific-silver-fir"
+        },
+        "message": "https://www.treesdb.org/Search?term=Abies rank-group[0]: result \"Abies amabilis\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=Abies",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Abies balsamea",
+          "Description": "Balsam Fir",
+          "Url": "/species/abies-balsamea--balsam-fir"
+        },
+        "message": "https://www.treesdb.org/Search?term=Abies rank-group[0]: result \"Abies balsamea\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=Abies",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Abies balsamea var. balsamea",
+          "Description": "Balsam Fir",
+          "Url": "/species/abies-balsamea-var-balsamea--balsam-fir"
+        },
+        "message": "https://www.treesdb.org/Search?term=Abies rank-group[0]: result \"Abies balsamea var. balsamea\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=Abies",
+        "field": "results",
+        "actual": {
+          "Category": "species",
+          "Subject": "Abies cephalonica",
+          "Description": "Greek Fir",
+          "Url": "/species/abies-cephalonica--greek-fir"
+        },
+        "message": "https://www.treesdb.org/Search?term=Abies rank-group[0]: result \"Abies cephalonica\" (species) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=e",
+        "field": "results",
+        "expected": {
+          "Category": "states",
+          "Subject": "Marche",
+          "Description": "Italy",
+          "Url": "/Browse/States/154/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=e rank-group[0]: result \"Marche\" (states) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=e",
+        "field": "results",
+        "expected": {
+          "Category": "states",
+          "Subject": "Molise",
+          "Description": "Italy",
+          "Url": "/Browse/States/155/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=e rank-group[0]: result \"Molise\" (states) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=e",
+        "field": "results",
+        "actual": {
+          "Category": "states",
+          "Subject": "Delaware",
+          "Description": "United States",
+          "Url": "/states/7"
+        },
+        "message": "https://www.treesdb.org/Search?term=e rank-group[0]: result \"Delaware\" (states) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=e",
+        "field": "results",
+        "actual": {
+          "Category": "states",
+          "Subject": "Maine",
+          "Description": "United States",
+          "Url": "/states/19"
+        },
+        "message": "https://www.treesdb.org/Search?term=e rank-group[0]: result \"Maine\" (states) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=e",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Elders Grove",
+          "Description": "Berkshire, Massachusetts (17)",
+          "Url": "/Browse/Sites/41177/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=e rank-group[1]: result \"Elders Grove\" (sites) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=e",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Alexander Preserve",
+          "Description": "Erie, New York (32)",
+          "Url": "/Browse/Sites/41347/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=e rank-group[1]: result \"Alexander Preserve\" (sites) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=e",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Hunters Creek Gorge",
+          "Description": "Erie, New York (32)",
+          "Url": "/Browse/Sites/41476/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=e rank-group[1]: result \"Hunters Creek Gorge\" (sites) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=e",
+        "field": "results",
+        "expected": {
+          "Category": "sites",
+          "Subject": "Edison Woods Metropark",
+          "Description": "Erie, Ohio (33)",
+          "Url": "/Browse/Sites/39144/Details"
+        },
+        "message": "https://www.treesdb.org/Search?term=e rank-group[1]: result \"Edison Woods Metropark\" (sites) present in legacy but missing from new",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=e",
+        "field": "results",
+        "actual": {
+          "Category": "sites",
+          "Subject": "Walnut Creek Gorge",
+          "Description": "Erie, Pennsylvania (36)",
+          "Url": "/sites/24339"
+        },
+        "message": "https://www.treesdb.org/Search?term=e rank-group[1]: result \"Walnut Creek Gorge\" (sites) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    },
+    {
+      "waiverId": "W-009",
+      "diff": {
+        "kind": "field",
+        "table": "https://www.treesdb.org/Search?term=e",
+        "field": "results",
+        "actual": {
+          "Category": "sites",
+          "Subject": "Erie Bluffs State Park(Formerly Coho Property)",
+          "Description": "Erie, Pennsylvania (36)",
+          "Url": "/sites/24354"
+        },
+        "message": "https://www.treesdb.org/Search?term=e rank-group[1]: result \"Erie Bluffs State Park(Formerly Coho Property)\" (sites) present in new but not in legacy",
+        "waiverHint": "W-009"
+      }
+    }
+  ]
+}

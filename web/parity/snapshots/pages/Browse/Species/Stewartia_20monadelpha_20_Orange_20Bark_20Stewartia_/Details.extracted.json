@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Stewartia monadelpha",
+  "commonName": "Orange Bark Stewartia",
+  "global": {
+    "maxHeight": {
+      "text": "41.4'",
+      "href": "/Browse/Trees/142266/Details"
+    },
+    "maxGirth": {
+      "text": "37''",
+      "href": "/Browse/Trees/142266/Details"
+    },
+    "maxCrownSpread": {
+      "text": "27.0'",
+      "href": "/Browse/Trees/142266/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pennsylvania",
+          "41.4'",
+          "37''",
+          "27.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "41.4'",
+            "href": "/Browse/Trees/142266/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/142266/Details"
+          },
+          {
+            "text": "27.0'",
+            "href": "/Browse/Trees/142266/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Platanus wrightii",
+  "commonName": "Arizona Sycamore",
+  "global": {
+    "maxHeight": {
+      "text": "119.9'",
+      "href": "/Browse/Trees/96827/Details"
+    },
+    "maxGirth": {
+      "text": "157''",
+      "href": "/Browse/Trees/23990/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "119.9'",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "119.9'",
+            "href": "/Browse/Trees/96827/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/23990/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

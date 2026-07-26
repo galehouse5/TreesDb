@@ -1,0 +1,213 @@
+{
+  "siteId": 40504,
+  "summary": {
+    "Name": "Chesapeake Bay Girl Scout Council Property",
+    "RHI5": "140.06",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.32",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "17",
+    "Last measurement date": "11/21/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "40 Acres"
+  },
+  "visits": [
+    {
+      "visited": "11/21/2014",
+      "visitors": "George Fieo",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "40 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "121.0'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40504/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40504/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "121.0'",
+            "href": "/Browse/Trees/232239/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/232239/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "167.0'",
+          "150''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40504/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40504/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "167.0'",
+            "href": "/Browse/Trees/232252/Details"
+          },
+          {
+            "text": "150''",
+            "href": "/Browse/Trees/232253/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "121.2'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40504/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40504/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "121.2'",
+            "href": "/Browse/Trees/232255/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/232255/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "146.0'",
+          "154''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40504/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40504/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "146.0'",
+            "href": "/Browse/Trees/232245/Details"
+          },
+          {
+            "text": "154''",
+            "href": "/Browse/Trees/232246/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "145.1'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/40504/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/40504/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "145.1'",
+            "href": "/Browse/Trees/232241/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/232240/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 39.489, -075 40.580",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "New Castle"
+    },
+    "state": {
+      "text": "Delaware (US)",
+      "href": "/Browse/States/7/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

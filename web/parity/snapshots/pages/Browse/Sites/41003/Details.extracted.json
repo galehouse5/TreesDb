@@ -1,0 +1,101 @@
+{
+  "siteId": 41003,
+  "summary": {
+    "Name": "Tate's Hell State Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "07/10/2010",
+    "Ownership contact": "290 Airport Road Carrabello, Florida",
+    "General comments": "202,000 acres"
+  },
+  "visits": [
+    {
+      "visited": "07/10/2010",
+      "visitors": "James Parton",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "202,000 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Chamaecyparis thyoides",
+          "Atlantic White Cedar",
+          "62.4'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis thyoides",
+            "href": "/Browse/Sites/41003/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "Atlantic White Cedar",
+            "href": "/Browse/Sites/41003/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "62.4'",
+            "href": "/Browse/Trees/242636/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/242635/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "29 53.871, -084 42.031",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "Florida (US)",
+      "href": "/Browse/States/8/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

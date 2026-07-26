@@ -1,0 +1,554 @@
+{
+  "stateId": 11,
+  "summary": {
+    "Name": "Idaho",
+    "Code": "ID",
+    "RHI5": "200.46",
+    "RHI10": "179.01",
+    "RHI20": "124.90",
+    "RGI5": "14.98",
+    "RGI10": "12.97",
+    "RGI20": "9.37",
+    "Trees measured": "171",
+    "Last measurement date": "07/10/2024"
+  },
+  "location": {
+    "Coordinates": "45 29.667, -114 08.598",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "129.0'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/States/11/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/11/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "129.0'",
+            "href": "/Browse/Trees/226250/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/226316/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies grandis",
+          "Grand Fir",
+          "170.1'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis",
+            "href": "/Browse/States/11/Species/Abies%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/States/11/Species/Abies%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "170.1'",
+            "href": "/Browse/Trees/164257/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/164257/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies grandis var. idahoensis",
+          "Grand Fir",
+          "208.3'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis var. idahoensis",
+            "href": "/Browse/States/11/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/States/11/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "208.3'",
+            "href": "/Browse/Trees/318045/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/318045/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. bifolia",
+          "Subalpine Fir",
+          "142.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. bifolia",
+            "href": "/Browse/States/11/Species/Abies%20lasiocarpa%20var.%20bifolia%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/States/11/Species/Abies%20lasiocarpa%20var.%20bifolia%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "142.2'",
+            "href": "/Browse/Trees/318060/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. lasiocarpa",
+          "Subalpine Fir",
+          "90.4'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. lasiocarpa",
+            "href": "/Browse/States/11/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/States/11/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "90.4'",
+            "href": "/Browse/Trees/220367/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/220367/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus incana ssp. tenuifolia",
+          "Thinleaf Alder",
+          "38.9'",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus incana ssp. tenuifolia",
+            "href": "/Browse/States/11/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "Thinleaf Alder",
+            "href": "/Browse/States/11/Species/Alnus%20incana%20ssp.%20tenuifolia%20(Thinleaf%20Alder)/Details"
+          },
+          {
+            "text": "38.9'",
+            "href": "/Browse/Trees/226313/Details"
+          },
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/226313/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus rhombifolia",
+          "White Alder",
+          "64.5'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus rhombifolia",
+            "href": "/Browse/States/11/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+          },
+          {
+            "text": "White Alder",
+            "href": "/Browse/States/11/Species/Alnus%20rhombifolia%20(White%20Alder)/Details"
+          },
+          {
+            "text": "64.5'",
+            "href": "/Browse/Trees/78321/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/78322/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier alnifolia",
+          "Saskatoon Serviceberry",
+          "25.8'",
+          "7''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier alnifolia",
+            "href": "/Browse/States/11/Species/Amelanchier%20alnifolia%20(Saskatoon%20Serviceberry)/Details"
+          },
+          {
+            "text": "Saskatoon Serviceberry",
+            "href": "/Browse/States/11/Species/Amelanchier%20alnifolia%20(Saskatoon%20Serviceberry)/Details"
+          },
+          {
+            "text": "25.8'",
+            "href": "/Browse/Trees/220375/Details"
+          },
+          {
+            "text": "7''",
+            "href": "/Browse/Trees/98160/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula occidentalis",
+          "Water Birch",
+          "33.1'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula occidentalis",
+            "href": "/Browse/States/11/Species/Betula%20occidentalis%20(Water%20Birch)/Details"
+          },
+          {
+            "text": "Water Birch",
+            "href": "/Browse/States/11/Species/Betula%20occidentalis%20(Water%20Birch)/Details"
+          },
+          {
+            "text": "33.1'",
+            "href": "/Browse/Trees/196068/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/196067/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. reticulata",
+          "Netleaf Hackberry",
+          "35.6'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. reticulata",
+            "href": "/Browse/States/11/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "Netleaf Hackberry",
+            "href": "/Browse/States/11/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "35.6'",
+            "href": "/Browse/Trees/78331/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/78331/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 26 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Devoto Memorial Grove",
+          "128.34",
+          "-",
+          "10.43",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Devoto Memorial Grove",
+            "href": "/Browse/Sites/39076/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Floodwood State Forest",
+          "195.76",
+          "-",
+          "4.18",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Floodwood State Forest",
+            "href": "/Browse/Sites/42297/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Forest Service Road 301",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Forest Service Road 301",
+            "href": "/Browse/Sites/42295/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho Single Tree Sites",
+          "88.76",
+          "-",
+          "7.78",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho Single Tree Sites",
+            "href": "/Browse/Sites/39070/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lower Gibson Jack Trail",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lower Gibson Jack Trail",
+            "href": "/Browse/Sites/38395/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Middle Fork Of Salmon River Corridor-Dagger Falls To Confluence Of Salmon River",
+          "89.10",
+          "-",
+          "8.20",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Middle Fork Of Salmon River Corridor-Dagger Falls To Confluence Of Salmon River",
+            "href": "/Browse/Sites/39719/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ponderosa State Park",
+          "159.94",
+          "-",
+          "11.24",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ponderosa State Park",
+            "href": "/Browse/Sites/39072/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Powell Campground",
+          "158.28",
+          "120.39",
+          "10.30",
+          "7.49"
+        ],
+        "links": [
+          {
+            "text": "Powell Campground",
+            "href": "/Browse/Sites/39078/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salmon River Corridor - Corn Creek To Carey Creek",
+          "102.62",
+          "-",
+          "8.92",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salmon River Corridor - Corn Creek To Carey Creek",
+            "href": "/Browse/Sites/22103/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salmon River Corridor -Hammer Creek To Confluence With Snake River",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salmon River Corridor -Hammer Creek To Confluence With Snake River",
+            "href": "/Browse/Sites/27498/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

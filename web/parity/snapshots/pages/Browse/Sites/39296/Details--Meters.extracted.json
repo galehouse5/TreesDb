@@ -1,0 +1,182 @@
+{
+  "siteId": 39296,
+  "summary": {
+    "Name": "Cache River State Natural Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "01/03/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "15,000 Acres, three management sections: Little Black Slough, Lower Cache River, Glass Hill."
+  },
+  "visits": [
+    {
+      "visited": "01/03/2007",
+      "visitors": "Don Bragg and Beth Koebel",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/illinois/cache_river_nature_area.htm",
+      "comments": "15,000 Acres, three management sections: Little Black Slough, Lower Cache River, Glass Hill."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "36.12 m",
+          "246 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/39296/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/39296/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "36.12 m",
+            "href": "/Browse/Trees/170986/Details"
+          },
+          {
+            "text": "246 cm",
+            "href": "/Browse/Trees/170986/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "36.12 m",
+          "211 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39296/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39296/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "36.12 m",
+            "href": "/Browse/Trees/170987/Details"
+          },
+          {
+            "text": "211 cm",
+            "href": "/Browse/Trees/170987/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus pagoda",
+          "Cherrybark Oak",
+          "31.09 m",
+          "772 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus pagoda",
+            "href": "/Browse/Sites/39296/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "Cherrybark Oak",
+            "href": "/Browse/Sites/39296/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "31.09 m",
+            "href": "/Browse/Trees/170988/Details"
+          },
+          {
+            "text": "772 cm",
+            "href": "/Browse/Trees/170988/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "33.83 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/39296/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/39296/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "33.83 m",
+            "href": "/Browse/Trees/170985/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "37 19.082, -088 56.366",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Johnson"
+    },
+    "state": {
+      "text": "Illinois (US)",
+      "href": "/Browse/States/12/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

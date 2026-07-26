@@ -1,0 +1,238 @@
+{
+  "siteId": 40811,
+  "summary": {
+    "Name": "Cane Creek, Issaqueena Falls",
+    "RHI5": "134.24",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.62",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "03/31/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "Trip report is titled Stumphouse Mountain."
+  },
+  "visits": [
+    {
+      "visited": "03/31/2004",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/stumphouse_mountain.htm",
+      "comments": "Trip report is titled Stumphouse Mountain."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "142.5'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40811/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40811/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "142.5'",
+            "href": "/Browse/Trees/237706/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/237706/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "139.9'",
+          "175''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40811/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40811/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "139.9'",
+            "href": "/Browse/Trees/237713/Details"
+          },
+          {
+            "text": "175''",
+            "href": "/Browse/Trees/237712/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus coccinea",
+          "Scarlet Oak",
+          "-",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus coccinea",
+            "href": "/Browse/Sites/40811/Species/Quercus%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "Scarlet Oak",
+            "href": "/Browse/Sites/40811/Species/Quercus%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/237711/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "134.3'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/40811/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/40811/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "134.3'",
+            "href": "/Browse/Trees/237709/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/237709/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "128.4'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40811/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40811/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "128.4'",
+            "href": "/Browse/Trees/237710/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/237710/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "126.1'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/40811/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/40811/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "126.1'",
+            "href": "/Browse/Trees/237708/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/237708/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 48.411, -083 07.264",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Oconee"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Alnus viridis",
+  "commonName": "Green Alder",
+  "global": {
+    "maxHeight": {
+      "text": "13.8'",
+      "href": "/Browse/Trees/233047/Details"
+    },
+    "maxGirth": {
+      "text": "3''",
+      "href": "/Browse/Trees/233047/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ontario",
+          "13.8'",
+          "3''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "13.8'",
+            "href": "/Browse/Trees/233047/Details"
+          },
+          {
+            "text": "3''",
+            "href": "/Browse/Trees/233047/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

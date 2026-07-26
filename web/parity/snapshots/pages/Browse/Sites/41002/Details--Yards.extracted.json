@@ -1,0 +1,241 @@
+{
+  "siteId": 41002,
+  "summary": {
+    "Name": "East Granby Farms Recreational Center",
+    "RHI5": "27.733",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.006",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "11/23/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/23/2014",
+      "visitors": "Sam Goodwin",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/14/2011",
+      "visitors": "Sam Goodwin",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "21.67 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/41002/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/41002/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "21.67 yd",
+            "href": "/Browse/Trees/242633/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "25.00 yd",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41002/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41002/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "25.00 yd",
+            "href": "/Browse/Trees/242634/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/242634/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "31.67 yd",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41002/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41002/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "31.67 yd",
+            "href": "/Browse/Trees/242623/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/242623/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "28.33 yd",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41002/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41002/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "28.33 yd",
+            "href": "/Browse/Trees/242632/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/242632/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus x hispanica",
+          "London Planetree",
+          "30.00 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus x hispanica",
+            "href": "/Browse/Sites/41002/Species/Platanus%20x%20hispanica%20(London%20Planetree)/Details"
+          },
+          {
+            "text": "London Planetree",
+            "href": "/Browse/Sites/41002/Species/Platanus%20x%20hispanica%20(London%20Planetree)/Details"
+          },
+          {
+            "text": "30.00 yd",
+            "href": "/Browse/Trees/242625/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus bicolor",
+          "Swamp White Oak",
+          "23.67 yd",
+          "235''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus bicolor",
+            "href": "/Browse/Sites/41002/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "Swamp White Oak",
+            "href": "/Browse/Sites/41002/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "23.67 yd",
+            "href": "/Browse/Trees/242624/Details"
+          },
+          {
+            "text": "235''",
+            "href": "/Browse/Trees/242624/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 57.418, -072 43.538",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Hartford"
+    },
+    "state": {
+      "text": "Connecticut (US)",
+      "href": "/Browse/States/6/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

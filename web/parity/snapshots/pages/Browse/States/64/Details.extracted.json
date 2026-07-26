@@ -1,0 +1,538 @@
+{
+  "stateId": 64,
+  "summary": {
+    "Name": "District of Columbia",
+    "Code": "DC",
+    "RHI5": "143.74",
+    "RHI10": "135.71",
+    "RHI20": "125.23",
+    "RGI5": "17.88",
+    "RGI10": "16.07",
+    "RGI20": "14.01",
+    "Trees measured": "163",
+    "Last measurement date": "05/22/2016"
+  },
+  "location": {
+    "Coordinates": "38 53.624, -077 00.874",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "89.4'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/States/64/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/64/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "89.4'",
+            "href": "/Browse/Trees/128210/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/128210/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "103.0'",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/64/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/64/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/128211/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/174800/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "103.4'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/States/64/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/States/64/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "103.4'",
+            "href": "/Browse/Trees/128213/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/175051/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "129.7'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/States/64/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/States/64/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "129.7'",
+            "href": "/Browse/Trees/76128/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/76128/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "120.3'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/States/64/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/States/64/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "120.3'",
+            "href": "/Browse/Trees/126762/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/175035/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedrus deodara",
+          "Deodar Cedar",
+          "60.2'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus deodara",
+            "href": "/Browse/States/64/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "Deodar Cedar",
+            "href": "/Browse/States/64/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "60.2'",
+            "href": "/Browse/Trees/125465/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/125465/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "95.5'",
+          "180''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/States/64/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/States/64/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "95.5'",
+            "href": "/Browse/Trees/174798/Details"
+          },
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/174798/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis spp.",
+          "Hackberry",
+          "40.7'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis spp.",
+            "href": "/Browse/States/64/Species/Celtis%20spp.%20(Hackberry)/Details"
+          },
+          {
+            "text": "Hackberry",
+            "href": "/Browse/States/64/Species/Celtis%20spp.%20(Hackberry)/Details"
+          },
+          {
+            "text": "40.7'",
+            "href": "/Browse/Trees/175065/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/175065/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cryptomeria japonica",
+          "Japanese Cedar",
+          "65.1'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cryptomeria japonica",
+            "href": "/Browse/States/64/Species/Cryptomeria%20japonica%20(Japanese%20Cedar)/Details"
+          },
+          {
+            "text": "Japanese Cedar",
+            "href": "/Browse/States/64/Species/Cryptomeria%20japonica%20(Japanese%20Cedar)/Details"
+          },
+          {
+            "text": "65.1'",
+            "href": "/Browse/Trees/125464/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/125464/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "77.0'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/States/64/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/States/64/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/174807/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/174807/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 46 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Flood Plain Along Potomac River Upstream Of Georgetown",
+          "118.30",
+          "108.92",
+          "15.43",
+          "13.27"
+        ],
+        "links": [
+          {
+            "text": "Flood Plain Along Potomac River Upstream Of Georgetown",
+            "href": "/Browse/Sites/39401/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Glover - Archbold Park",
+          "142.30",
+          "134.53",
+          "10.96",
+          "9.77"
+        ],
+        "links": [
+          {
+            "text": "Glover - Archbold Park",
+            "href": "/Browse/Sites/22093/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Klingle Valley Parkway",
+          "131.92",
+          "120.10",
+          "10.90",
+          "9.18"
+        ],
+        "links": [
+          {
+            "text": "Klingle Valley Parkway",
+            "href": "/Browse/Sites/22087/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Melvin Hazen Trail Into Rock Creek Park",
+          "137.08",
+          "-",
+          "9.95",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Melvin Hazen Trail Into Rock Creek Park",
+            "href": "/Browse/Sites/22090/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "National Arboretum",
+          "73.74",
+          "-",
+          "8.00",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "National Arboretum",
+            "href": "/Browse/Sites/37952/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Potomac Palisades",
+          "122.02",
+          "113.26",
+          "15.13",
+          "13.88"
+        ],
+        "links": [
+          {
+            "text": "Potomac Palisades",
+            "href": "/Browse/Sites/39409/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Theodore Roosevelt Island",
+          "110.28",
+          "104.09",
+          "12.40",
+          "10.58"
+        ],
+        "links": [
+          {
+            "text": "Theodore Roosevelt Island",
+            "href": "/Browse/Sites/38043/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Trees Near Roadways And Parking Lots (Rock Creek Park)",
+          "126.72",
+          "-",
+          "9.85",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Trees Near Roadways And Parking Lots (Rock Creek Park)",
+            "href": "/Browse/Sites/38005/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington, D. C. Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington, D. C. Single Tree Sites",
+            "href": "/Browse/Sites/22092/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

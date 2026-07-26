@@ -1,0 +1,119 @@
+{
+  "botanicalName": "Albizia julibrissin",
+  "commonName": "Silktree",
+  "global": {
+    "maxHeight": {
+      "text": "81.7'",
+      "href": "/Browse/Trees/253017/Details"
+    },
+    "maxGirth": {
+      "text": "61''",
+      "href": "/Browse/Trees/315052/Details"
+    },
+    "maxCrownSpread": {
+      "text": "72.8'",
+      "href": "/Browse/Trees/315052/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "31.5'",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "31.5'",
+            "href": "/Browse/Trees/280946/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/128441/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "81.7'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "81.7'",
+            "href": "/Browse/Trees/253017/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/253017/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "40.0'",
+          "61''",
+          "72.8'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "40.0'",
+            "href": "/Browse/Trees/315252/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/315052/Details"
+          },
+          {
+            "text": "72.8'",
+            "href": "/Browse/Trees/315052/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

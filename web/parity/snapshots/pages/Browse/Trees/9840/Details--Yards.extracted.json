@@ -1,0 +1,71 @@
+{
+  "treeId": 9840,
+  "botanicalName": {
+    "text": "Fagus grandifolia",
+    "href": "/Browse/Sites/713/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "commonName": {
+    "text": "American Beech",
+    "href": "/Browse/Sites/713/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "details": {
+    "Height": "42.70 yd",
+    "Height measurement method": "(no data)",
+    "Girth": "106''",
+    "Crown spread": "26.67 yd",
+    "ENTSPTS2": "99.95",
+    "ENTSPTS": "1131.55",
+    "TDI3": "1.87",
+    "TDI2": "1.28",
+    "Champion points": "254.10",
+    "Diameter": "34''",
+    "Conical volume": "9.82 yd³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 04/02/2005",
+      "summary": {
+        "Height": "42.70 yd",
+        "Girth": "106''",
+        "Crown spread": "26.67 yd"
+      },
+      "details": {
+        "Botanical name": "Fagus grandifolia",
+        "Common name": "American Beech",
+        "Height": "42.70 yd",
+        "Height measurement method": "(no data)",
+        "Girth": "106''",
+        "Crown spread": "26.67 yd",
+        "ENTSPTS2": "99.95",
+        "ENTSPTS": "1131.55",
+        "TDI3": "1.87",
+        "TDI2": "1.28",
+        "Champion points": "254.10",
+        "Diameter": "34''",
+        "Conical volume": "9.82 yd³",
+        "General comments": "(none)"
+      },
+      "measurers": "Thomas Diggins"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "39 29.456, -082 28.517",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Hocking Hills SP, OH",
+      "href": "/Browse/Sites/713/Details"
+    },
+    "rows": {
+      "Ownership type": "public",
+      "County": "Hocking"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

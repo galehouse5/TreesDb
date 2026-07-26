@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Populus deltoides ssp. wislizeni",
+  "commonName": "Rio Grande Cottonwood",
+  "global": {
+    "maxHeight": {
+      "text": "90.0'",
+      "href": "/Browse/Trees/242527/Details"
+    },
+    "maxGirth": {
+      "text": "290''",
+      "href": "/Browse/Trees/242527/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Colorado",
+          "90.0'",
+          "290''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/242527/Details"
+          },
+          {
+            "text": "290''",
+            "href": "/Browse/Trees/242527/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "75.1'",
+          "150''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "75.1'",
+            "href": "/Browse/Trees/163891/Details"
+          },
+          {
+            "text": "150''",
+            "href": "/Browse/Trees/163891/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

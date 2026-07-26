@@ -1,0 +1,208 @@
+{
+  "botanicalName": "Pinus pungens",
+  "commonName": "Table Mountain Pine",
+  "global": {
+    "maxHeight": {
+      "text": "98.3'",
+      "href": "/Browse/Trees/237793/Details"
+    },
+    "maxGirth": {
+      "text": "74''",
+      "href": "/Browse/Trees/313123/Details"
+    },
+    "maxCrownSpread": {
+      "text": "42.0'",
+      "href": "/Browse/Trees/222944/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "30.3'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "30.3'",
+            "href": "/Browse/Trees/218289/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/218289/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "96.0'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "96.0'",
+            "href": "/Browse/Trees/229607/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/229607/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "81.9'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "81.9'",
+            "href": "/Browse/Trees/119200/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/119197/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "98.3'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "98.3'",
+            "href": "/Browse/Trees/237793/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/237792/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "-",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          null,
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/230566/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "68.0'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/168561/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/168562/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "96.4'",
+          "74''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "96.4'",
+            "href": "/Browse/Trees/313105/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/313123/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/222944/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

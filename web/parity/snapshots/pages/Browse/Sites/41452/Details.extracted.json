@@ -1,0 +1,104 @@
+{
+  "siteId": 41452,
+  "summary": {
+    "Name": "Ward Pound Ridge Reservation",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "08/10/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "4700 acres"
+  },
+  "visits": [
+    {
+      "visited": "08/10/2017",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "4700 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "72.0'",
+          "158''",
+          "41.4'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/41452/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/41452/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/260708/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/260707/Details"
+          },
+          {
+            "text": "41.4'",
+            "href": "/Browse/Trees/260707/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 15.037, -073 35.741",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Westchester"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

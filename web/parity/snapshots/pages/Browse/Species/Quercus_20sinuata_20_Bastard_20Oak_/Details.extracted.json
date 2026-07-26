@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Quercus sinuata",
+  "commonName": "Bastard Oak",
+  "global": {
+    "maxHeight": {
+      "text": "102.4'",
+      "href": "/Browse/Trees/234571/Details"
+    },
+    "maxGirth": {
+      "text": "98''",
+      "href": "/Browse/Trees/234572/Details"
+    },
+    "maxCrownSpread": {
+      "text": "65.0'",
+      "href": "/Browse/Trees/234572/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "102.4'",
+          "98''",
+          "65.0'"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "102.4'",
+            "href": "/Browse/Trees/234571/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/234572/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/234572/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

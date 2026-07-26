@@ -1,0 +1,238 @@
+{
+  "siteId": 42085,
+  "summary": {
+    "Name": "White Pine Creek Trail",
+    "RHI5": "172.84",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "14.05",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "06/13/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/13/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies grandis var. idahoensis",
+          "Grand Fir",
+          "198.6'",
+          "159''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis var. idahoensis",
+            "href": "/Browse/Sites/42085/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/Sites/42085/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "198.6'",
+            "href": "/Browse/Trees/296946/Details"
+          },
+          {
+            "text": "159''",
+            "href": "/Browse/Trees/296946/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii var. engelmannii",
+          "Engelmann Spruce",
+          "147.0'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii var. engelmannii",
+            "href": "/Browse/Sites/42085/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/42085/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "147.0'",
+            "href": "/Browse/Trees/296950/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/296950/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus monticola",
+          "Western White Pine",
+          "153.3'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus monticola",
+            "href": "/Browse/Sites/42085/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "Western White Pine",
+            "href": "/Browse/Sites/42085/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "153.3'",
+            "href": "/Browse/Trees/296952/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/296951/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "180.7'",
+          "189''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/42085/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/42085/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "180.7'",
+            "href": "/Browse/Trees/296943/Details"
+          },
+          {
+            "text": "189''",
+            "href": "/Browse/Trees/296943/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja plicata",
+          "Western Redcedar",
+          "176.3'",
+          "288''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja plicata",
+            "href": "/Browse/Sites/42085/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "Western Redcedar",
+            "href": "/Browse/Sites/42085/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "176.3'",
+            "href": "/Browse/Trees/296947/Details"
+          },
+          {
+            "text": "288''",
+            "href": "/Browse/Trees/296947/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga heterophylla",
+          "Western Hemlock",
+          "155.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga heterophylla",
+            "href": "/Browse/Sites/42085/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "Western Hemlock",
+            "href": "/Browse/Sites/42085/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "155.3'",
+            "href": "/Browse/Trees/296945/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "47 45.622, -120 56.263",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Chelan"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

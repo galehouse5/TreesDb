@@ -1,0 +1,129 @@
+{
+  "siteId": 41105,
+  "summary": {
+    "Name": "Mark Trail Wilderness",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "04/26/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "16,400 Acres 14 miles of the Appalachian Trail traverse the wilderness. Trees were measured just off trail on north facing slope."
+  },
+  "visits": [
+    {
+      "visited": "04/26/2015",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "16,400 Acres 14 miles of the Appalachian Trail traverse the wilderness. Trees were measured just off trail on north facing slope."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "60.1'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/41105/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/41105/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "60.1'",
+            "href": "/Browse/Trees/249597/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/249597/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana var. americana",
+          "American Basswood",
+          "111.4'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana var. americana",
+            "href": "/Browse/Sites/41105/Species/Tilia%20americana%20var.%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/41105/Species/Tilia%20americana%20var.%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "111.4'",
+            "href": "/Browse/Trees/249598/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/249598/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 48.146, -083 48.339",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "White"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

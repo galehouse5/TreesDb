@@ -1,0 +1,157 @@
+{
+  "siteId": 38078,
+  "summary": {
+    "Name": "Godfrey Ridge",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "04/28/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "A Land Trust has purchased 180 acres on the slopes"
+  },
+  "visits": [
+    {
+      "visited": "04/28/2007",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/delaware_water_gap_and_adjacent_.htm",
+      "comments": "A Land Trust has purchased 180 acres on the slopes"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "80.6'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/38078/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/38078/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "80.6'",
+            "href": "/Browse/Trees/129342/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/129342/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "96.1'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/38078/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/38078/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "96.1'",
+            "href": "/Browse/Trees/129340/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/129340/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Rhododendron maximum",
+          "Great Laurel",
+          "16.1'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhododendron maximum",
+            "href": "/Browse/Sites/38078/Species/Rhododendron%20maximum%20(Great%20Laurel)/Details"
+          },
+          {
+            "text": "Great Laurel",
+            "href": "/Browse/Sites/38078/Species/Rhododendron%20maximum%20(Great%20Laurel)/Details"
+          },
+          {
+            "text": "16.1'",
+            "href": "/Browse/Trees/129341/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/129341/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 58.961, -075 10.048",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Monroe"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

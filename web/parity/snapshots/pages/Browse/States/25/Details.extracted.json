@@ -1,0 +1,548 @@
+{
+  "stateId": 25,
+  "summary": {
+    "Name": "North Carolina",
+    "Code": "NC",
+    "RHI5": "177.64",
+    "RHI10": "168.05",
+    "RHI20": "155.98",
+    "RGI5": "21.58",
+    "RGI10": "19.39",
+    "RGI20": "17.10",
+    "Trees measured": "1645",
+    "Last measurement date": "05/24/2026"
+  },
+  "location": {
+    "Coordinates": "35 10.228, -079 51.660",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies alba",
+          "Silver Fir",
+          "67.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies alba",
+            "href": "/Browse/States/25/Species/Abies%20alba%20(Silver%20Fir)/Details"
+          },
+          {
+            "text": "Silver Fir",
+            "href": "/Browse/States/25/Species/Abies%20alba%20(Silver%20Fir)/Details"
+          },
+          {
+            "text": "67.8'",
+            "href": "/Browse/Trees/39771/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies fraseri",
+          "Fraser Fir",
+          "64.8'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies fraseri",
+            "href": "/Browse/States/25/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "Fraser Fir",
+            "href": "/Browse/States/25/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "64.8'",
+            "href": "/Browse/Trees/227251/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/227251/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "-",
+          "39''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/States/25/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/States/25/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "39''",
+            "href": "/Browse/Trees/227260/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "138.2'",
+          "188''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/25/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/25/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "138.2'",
+            "href": "/Browse/Trees/230335/Details"
+          },
+          {
+            "text": "188''",
+            "href": "/Browse/Trees/252263/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "70.7'",
+          "190''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/25/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/25/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "70.7'",
+            "href": "/Browse/Trees/252343/Details"
+          },
+          {
+            "text": "190''",
+            "href": "/Browse/Trees/252316/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "139.9'",
+          "150''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/25/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/25/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "139.9'",
+            "href": "/Browse/Trees/230523/Details"
+          },
+          {
+            "text": "150''",
+            "href": "/Browse/Trees/226357/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer spicatum",
+          "Mountain Maple",
+          "42.4'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spicatum",
+            "href": "/Browse/States/25/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "Mountain Maple",
+            "href": "/Browse/States/25/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "42.4'",
+            "href": "/Browse/Trees/227258/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/230525/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer spp.",
+          "Maple",
+          "-",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spp.",
+            "href": "/Browse/States/25/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "Maple",
+            "href": "/Browse/States/25/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          null,
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/243395/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "142.9'",
+          "184''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/States/25/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/States/25/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "142.9'",
+            "href": "/Browse/Trees/226362/Details"
+          },
+          {
+            "text": "184''",
+            "href": "/Browse/Trees/229339/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "49.3'",
+          "153''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/States/25/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/States/25/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "49.3'",
+            "href": "/Browse/Trees/252321/Details"
+          },
+          {
+            "text": "153''",
+            "href": "/Browse/Trees/252321/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 126 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Airlie Gardens",
+          "66.94",
+          "-",
+          "7.08",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Airlie Gardens",
+            "href": "/Browse/Sites/1678/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Barnett Branch",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Barnett Branch",
+            "href": "/Browse/Sites/41202/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Battle Park",
+          "127.02",
+          "123.48",
+          "10.73",
+          "7.79"
+        ],
+        "links": [
+          {
+            "text": "Battle Park",
+            "href": "/Browse/Sites/41206/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Baxter Creek",
+          "136.04",
+          "98.78",
+          "13.27",
+          "9.23"
+        ],
+        "links": [
+          {
+            "text": "Baxter Creek",
+            "href": "/Browse/Sites/40457/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bent Creek Experiment Station",
+          "92.55",
+          "-",
+          "7.67",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bent Creek Experiment Station",
+            "href": "/Browse/Sites/40315/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big Creek",
+          "127.72",
+          "-",
+          "9.53",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Big Creek",
+            "href": "/Browse/Sites/40456/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Biltmore Estate",
+          "108.64",
+          "-",
+          "13.47",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Biltmore Estate",
+            "href": "/Browse/Sites/41041/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Blue Ridge Parkway Headquarters To Swannanoa River",
+          "119.52",
+          "-",
+          "0.00",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Blue Ridge Parkway Headquarters To Swannanoa River",
+            "href": "/Browse/Sites/1620/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bluethenthal Wildflower Preserve",
+          "82.40",
+          "-",
+          "1.96",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bluethenthal Wildflower Preserve",
+            "href": "/Browse/Sites/1677/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bradley Fork",
+          "141.56",
+          "-",
+          "9.17",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bradley Fork",
+            "href": "/Browse/Sites/40452/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 103 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "siteId": 40587,
+  "summary": {
+    "Name": "Highway 89, Black Hills National Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "06/29/1998",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/29/1998",
+      "visitors": "Mark Rouw",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea x albertiana",
+          "Western White Spruce",
+          "-",
+          "110''",
+          "31.0'"
+        ],
+        "links": [
+          {
+            "text": "Picea x albertiana",
+            "href": "/Browse/Sites/40587/Species/Picea%20x%20albertiana%20(Western%20White%20Spruce)/Details"
+          },
+          {
+            "text": "Western White Spruce",
+            "href": "/Browse/Sites/40587/Species/Picea%20x%20albertiana%20(Western%20White%20Spruce)/Details"
+          },
+          null,
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/233584/Details"
+          },
+          {
+            "text": "31.0'",
+            "href": "/Browse/Trees/233583/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. latifolia",
+          "Lodgepole Pine",
+          "-",
+          "70''",
+          "27.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. latifolia",
+            "href": "/Browse/Sites/40587/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Lodgepole Pine",
+            "href": "/Browse/Sites/40587/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/233588/Details"
+          },
+          {
+            "text": "27.0'",
+            "href": "/Browse/Trees/233588/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "-",
+          "149''",
+          "53.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/Sites/40587/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/40587/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/233587/Details"
+          },
+          {
+            "text": "53.0'",
+            "href": "/Browse/Trees/233587/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 49.482, -103 34.718",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Custer"
+    },
+    "state": {
+      "text": "South Dakota (US)",
+      "href": "/Browse/States/39/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

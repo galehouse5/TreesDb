@@ -1,0 +1,350 @@
+{
+  "siteId": 38450,
+  "summary": {
+    "Name": "Seneca Division-Erie National Wildlife Refuge",
+    "RHI5": "29.584",
+    "RHI10": "26.542",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.685",
+    "RGI10": "1.962",
+    "RGI20": "(not enough data)",
+    "Trees measured": "21",
+    "Last measurement date": "09/25/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/25/2007",
+      "visitors": "Dale Luthringer and Brian Perry",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/erie_wildlife_refuge.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "31.42 m",
+          "206 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/38450/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38450/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "31.42 m",
+            "href": "/Browse/Trees/140081/Details"
+          },
+          {
+            "text": "206 cm",
+            "href": "/Browse/Trees/140080/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "11.61 m",
+          "71 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/38450/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/38450/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "11.61 m",
+            "href": "/Browse/Trees/140065/Details"
+          },
+          {
+            "text": "71 cm",
+            "href": "/Browse/Trees/140066/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "27.46 m",
+          "168 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/38450/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/38450/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "27.46 m",
+            "href": "/Browse/Trees/140067/Details"
+          },
+          {
+            "text": "168 cm",
+            "href": "/Browse/Trees/140067/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "27.16 m",
+          "219 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/38450/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/38450/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "27.16 m",
+            "href": "/Browse/Trees/140077/Details"
+          },
+          {
+            "text": "219 cm",
+            "href": "/Browse/Trees/140077/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "30.88 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/38450/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/38450/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "30.88 m",
+            "href": "/Browse/Trees/140074/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus bicolor",
+          "Swamp White Oak",
+          "26.55 m",
+          "296 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus bicolor",
+            "href": "/Browse/Sites/38450/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "Swamp White Oak",
+            "href": "/Browse/Sites/38450/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "26.55 m",
+            "href": "/Browse/Trees/140083/Details"
+          },
+          {
+            "text": "296 cm",
+            "href": "/Browse/Trees/140083/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "27.46 m",
+          "305 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38450/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38450/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "27.46 m",
+            "href": "/Browse/Trees/140075/Details"
+          },
+          {
+            "text": "305 cm",
+            "href": "/Browse/Trees/140075/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana",
+          "American Basswood",
+          "24.72 m",
+          "158 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana",
+            "href": "/Browse/Sites/38450/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/38450/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "24.72 m",
+            "href": "/Browse/Trees/140064/Details"
+          },
+          {
+            "text": "158 cm",
+            "href": "/Browse/Trees/140064/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "29.08 m",
+          "317 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/38450/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/38450/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "29.08 m",
+            "href": "/Browse/Trees/140073/Details"
+          },
+          {
+            "text": "317 cm",
+            "href": "/Browse/Trees/140073/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus rubra",
+          "Slippery Elm",
+          "29.08 m",
+          "177 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus rubra",
+            "href": "/Browse/Sites/38450/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "Slippery Elm",
+            "href": "/Browse/Sites/38450/Species/Ulmus%20rubra%20(Slippery%20Elm)/Details"
+          },
+          {
+            "text": "29.08 m",
+            "href": "/Browse/Trees/140078/Details"
+          },
+          {
+            "text": "177 cm",
+            "href": "/Browse/Trees/140078/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 47.142, -079 58.777",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Crawford"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

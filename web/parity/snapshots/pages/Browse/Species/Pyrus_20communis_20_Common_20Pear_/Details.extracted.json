@@ -1,0 +1,109 @@
+{
+  "botanicalName": "Pyrus communis",
+  "commonName": "Common Pear",
+  "global": {
+    "maxHeight": {
+      "text": "75.5'",
+      "href": "/Browse/Trees/220869/Details"
+    },
+    "maxGirth": {
+      "text": "55''",
+      "href": "/Browse/Trees/220869/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "75.5'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "75.5'",
+            "href": "/Browse/Trees/220869/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/220869/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "42.7'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "42.7'",
+            "href": "/Browse/Trees/139086/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/139086/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "26.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "26.4'",
+            "href": "/Browse/Trees/248861/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

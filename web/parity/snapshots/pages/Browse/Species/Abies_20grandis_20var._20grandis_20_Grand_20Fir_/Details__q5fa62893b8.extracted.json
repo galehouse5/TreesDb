@@ -1,0 +1,134 @@
+{
+  "botanicalName": "Abies grandis var. grandis",
+  "commonName": "Grand Fir",
+  "global": {
+    "maxHeight": {
+      "text": "223.4'",
+      "href": "/Browse/Trees/296866/Details"
+    },
+    "maxGirth": {
+      "text": "269''",
+      "href": "/Browse/Trees/296866/Details"
+    }
+  },
+  "state": {
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "223.4'",
+        "href": "/Browse/Trees/296866/Details"
+      },
+      "maxGirth": {
+        "text": "269''",
+        "href": "/Browse/Trees/296866/Details"
+      }
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Washington",
+          "223.4'",
+          "269''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "223.4'",
+            "href": "/Browse/Trees/296866/Details"
+          },
+          {
+            "text": "269''",
+            "href": "/Browse/Trees/296866/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedSitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Marymere Falls Trail",
+          "223.4'",
+          "269''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Marymere Falls Trail",
+            "href": "/Browse/Sites/42075/Details"
+          },
+          {
+            "text": "223.4'",
+            "href": "/Browse/Trees/296866/Details"
+          },
+          {
+            "text": "269''",
+            "href": "/Browse/Trees/296866/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

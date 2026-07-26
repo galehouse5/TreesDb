@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Juniperus scopulorum",
+  "commonName": "Rocky Mountain Juniper",
+  "global": {
+    "maxHeight": {
+      "text": "56.2'",
+      "href": "/Browse/Trees/121527/Details"
+    },
+    "maxGirth": {
+      "text": "95''",
+      "href": "/Browse/Trees/280648/Details"
+    },
+    "maxCrownSpread": {
+      "text": "16.8'",
+      "href": "/Browse/Trees/280648/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "56.2'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "56.2'",
+            "href": "/Browse/Trees/121527/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/46446/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Colorado",
+          "35.0'",
+          "95''",
+          "16.8'"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "35.0'",
+            "href": "/Browse/Trees/280648/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/280648/Details"
+          },
+          {
+            "text": "16.8'",
+            "href": "/Browse/Trees/280648/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "23.7'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "23.7'",
+            "href": "/Browse/Trees/196079/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/196079/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "44.8'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "44.8'",
+            "href": "/Browse/Trees/164204/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/164203/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "47.2'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "47.2'",
+            "href": "/Browse/Trees/70485/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/163888/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Wyoming",
+          "31.7'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wyoming",
+            "href": "/Browse/States/48/Details"
+          },
+          {
+            "text": "31.7'",
+            "href": "/Browse/Trees/126311/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/126311/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "siteId": 42277,
+  "summary": {
+    "Name": "Mt. Olivet & Calvary Cemeteries",
+    "RHI5": "107.62",
+    "RHI10": "99.41",
+    "RHI20": "88.08",
+    "RGI5": "17.56",
+    "RGI10": "16.08",
+    "RGI20": "13.90",
+    "Trees measured": "27",
+    "Last measurement date": "02/10/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/10/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "74.5'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/42277/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42277/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "74.5'",
+            "href": "/Browse/Trees/315488/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/315488/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "103.1'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/42277/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/42277/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "103.1'",
+            "href": "/Browse/Trees/315491/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/315491/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "98.9'",
+          "138''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/42277/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/42277/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "98.9'",
+            "href": "/Browse/Trees/315492/Details"
+          },
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/315492/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "69.6'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/42277/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/42277/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "69.6'",
+            "href": "/Browse/Trees/315485/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/315485/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "93.3'",
+          "161''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/42277/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/42277/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "93.3'",
+            "href": "/Browse/Trees/315489/Details"
+          },
+          {
+            "text": "161''",
+            "href": "/Browse/Trees/315489/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus quadrangulata",
+          "Blue Ash",
+          "72.9'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus quadrangulata",
+            "href": "/Browse/Sites/42277/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "Blue Ash",
+            "href": "/Browse/Sites/42277/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "72.9'",
+            "href": "/Browse/Trees/315490/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/315490/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "73.8'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/42277/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/42277/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "73.8'",
+            "href": "/Browse/Trees/315487/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/315487/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "116.7'",
+          "190''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/42277/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/42277/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "116.7'",
+            "href": "/Browse/Trees/315482/Details"
+          },
+          {
+            "text": "190''",
+            "href": "/Browse/Trees/315482/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "78.1'",
+          "197''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/42277/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/42277/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "78.1'",
+            "href": "/Browse/Trees/315484/Details"
+          },
+          {
+            "text": "197''",
+            "href": "/Browse/Trees/315484/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "70.5'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/42277/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/42277/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "70.5'",
+            "href": "/Browse/Trees/315494/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/315494/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 24 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 08.996, -086 44.123",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Davidson"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

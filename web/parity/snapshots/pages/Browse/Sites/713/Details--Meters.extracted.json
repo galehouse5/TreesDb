@@ -1,0 +1,359 @@
+{
+  "siteId": 713,
+  "summary": {
+    "Name": "Hocking Hills SP, OH",
+    "RHI5": "45.226",
+    "RHI10": "41.587",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.099",
+    "RGI10": "2.814",
+    "RGI20": "(not enough data)",
+    "Trees measured": "41",
+    "Last measurement date": "01/17/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/17/2011",
+      "visitors": "Rand Brown",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/02/2005",
+      "visitors": "Thomas Diggins",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "37.06 m",
+          "267 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/713/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/713/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "37.06 m",
+            "href": "/Browse/Trees/18849/Details"
+          },
+          {
+            "text": "267 cm",
+            "href": "/Browse/Trees/18849/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "37.37 m",
+          "239 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/713/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/713/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "37.37 m",
+            "href": "/Browse/Trees/18848/Details"
+          },
+          {
+            "text": "239 cm",
+            "href": "/Browse/Trees/18848/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "26.88 m",
+          "231 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/713/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/713/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "26.88 m",
+            "href": "/Browse/Trees/9850/Details"
+          },
+          {
+            "text": "231 cm",
+            "href": "/Browse/Trees/9850/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "30.94 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/713/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/713/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "30.94 m",
+            "href": "/Browse/Trees/9847/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "41.39 m",
+          "269 cm",
+          "24.38 m"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/713/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/713/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "41.39 m",
+            "href": "/Browse/Trees/18845/Details"
+          },
+          {
+            "text": "269 cm",
+            "href": "/Browse/Trees/9840/Details"
+          },
+          {
+            "text": "24.38 m",
+            "href": "/Browse/Trees/9840/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "47.03 m",
+          "279 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/713/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/713/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "47.03 m",
+            "href": "/Browse/Trees/18841/Details"
+          },
+          {
+            "text": "279 cm",
+            "href": "/Browse/Trees/18841/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "30.82 m",
+          "171 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/713/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/713/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "30.82 m",
+            "href": "/Browse/Trees/9848/Details"
+          },
+          {
+            "text": "171 cm",
+            "href": "/Browse/Trees/9848/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "46.02 m",
+          "259 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/713/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/713/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "46.02 m",
+            "href": "/Browse/Trees/18842/Details"
+          },
+          {
+            "text": "259 cm",
+            "href": "/Browse/Trees/18842/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "46.02 m",
+          "274 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/713/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/713/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "46.02 m",
+            "href": "/Browse/Trees/9835/Details"
+          },
+          {
+            "text": "274 cm",
+            "href": "/Browse/Trees/9833/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "36.82 m",
+          "168 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/713/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/713/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "36.82 m",
+            "href": "/Browse/Trees/9846/Details"
+          },
+          {
+            "text": "168 cm",
+            "href": "/Browse/Trees/9846/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 29.456, -082 28.517",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Hocking"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

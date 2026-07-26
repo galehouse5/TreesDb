@@ -1,0 +1,274 @@
+{
+  "botanicalName": "Betula alleghaniensis",
+  "commonName": "Yellow Birch",
+  "global": {
+    "maxHeight": {
+      "text": "33.89 m",
+      "href": "/Browse/Trees/221851/Details"
+    },
+    "maxGirth": {
+      "text": "475 cm",
+      "href": "/Browse/Trees/252323/Details"
+    },
+    "maxCrownSpread": {
+      "text": "17.50 m",
+      "href": "/Browse/Trees/256022/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Connecticut",
+          "19.81 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "19.81 m",
+            "href": "/Browse/Trees/242633/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "27.74 m",
+          "358 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "27.74 m",
+            "href": "/Browse/Trees/234412/Details"
+          },
+          {
+            "text": "358 cm",
+            "href": "/Browse/Trees/235273/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "26.46 m",
+          "390 cm",
+          "17.50 m"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "26.46 m",
+            "href": "/Browse/Trees/256022/Details"
+          },
+          {
+            "text": "390 cm",
+            "href": "/Browse/Trees/256022/Details"
+          },
+          {
+            "text": "17.50 m",
+            "href": "/Browse/Trees/256022/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New Hampshire",
+          "-",
+          "236 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Hampshire",
+            "href": "/Browse/States/28/Details"
+          },
+          null,
+          {
+            "text": "236 cm",
+            "href": "/Browse/Trees/235938/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "33.89 m",
+          "371 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "33.89 m",
+            "href": "/Browse/Trees/221851/Details"
+          },
+          {
+            "text": "371 cm",
+            "href": "/Browse/Trees/221352/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "33.31 m",
+          "475 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "33.31 m",
+            "href": "/Browse/Trees/229351/Details"
+          },
+          {
+            "text": "475 cm",
+            "href": "/Browse/Trees/252323/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "27.86 m",
+          "231 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "27.86 m",
+            "href": "/Browse/Trees/16075/Details"
+          },
+          {
+            "text": "231 cm",
+            "href": "/Browse/Trees/9850/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "24.23 m",
+          "388 cm",
+          "5.79 m"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "24.23 m",
+            "href": "/Browse/Trees/233102/Details"
+          },
+          {
+            "text": "388 cm",
+            "href": "/Browse/Trees/233102/Details"
+          },
+          {
+            "text": "5.79 m",
+            "href": "/Browse/Trees/4072/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "32.95 m",
+          "344 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "32.95 m",
+            "href": "/Browse/Trees/168092/Details"
+          },
+          {
+            "text": "344 cm",
+            "href": "/Browse/Trees/119002/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "26.24 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "26.24 m",
+            "href": "/Browse/Trees/228889/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

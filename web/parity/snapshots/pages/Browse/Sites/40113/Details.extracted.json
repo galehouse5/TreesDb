@@ -1,0 +1,350 @@
+{
+  "siteId": 40113,
+  "summary": {
+    "Name": "Fontenelle Forest",
+    "RHI5": "121.54",
+    "RHI10": "110.29",
+    "RHI20": "96.21",
+    "RGI5": "13.77",
+    "RGI10": "11.83",
+    "RGI20": "9.45",
+    "Trees measured": "47",
+    "Last measurement date": "11/03/2013",
+    "Ownership contact": "Fontenelle Nature Association 1111 Bellevue Boulevard, North Bellevue, Nebraska 68005",
+    "General comments": "1400 Acres"
+  },
+  "visits": [
+    {
+      "visited": "11/03/2013",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "(none)",
+      "comments": "1400 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "81.0'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/Sites/40113/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/40113/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/220648/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/220649/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "93.3'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/40113/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/40113/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "93.3'",
+            "href": "/Browse/Trees/220650/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/220651/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "28.0'",
+          "10''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/Sites/40113/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/Sites/40113/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "28.0'",
+            "href": "/Browse/Trees/220652/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/220652/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "92.2'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40113/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40113/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "92.2'",
+            "href": "/Browse/Trees/220653/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/220654/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "90.6'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40113/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40113/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "90.6'",
+            "href": "/Browse/Trees/220655/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/220656/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "99.8'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/40113/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/40113/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "99.8'",
+            "href": "/Browse/Trees/220657/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/220658/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis var. canadensis",
+          "Eastern Redbud",
+          "38.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis var. canadensis",
+            "href": "/Browse/Sites/40113/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/Sites/40113/Species/Cercis%20canadensis%20var.%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "38.7'",
+            "href": "/Browse/Trees/220659/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus drummondii",
+          "Roughleaf Dogwood",
+          "25.6'",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus drummondii",
+            "href": "/Browse/Sites/40113/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "Roughleaf Dogwood",
+            "href": "/Browse/Sites/40113/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "25.6'",
+            "href": "/Browse/Trees/220660/Details"
+          },
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/220661/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus mollis",
+          "Downy Hawthorn",
+          "38.6'",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus mollis",
+            "href": "/Browse/Sites/40113/Species/Crataegus%20mollis%20(Downy%20Hawthorn)/Details"
+          },
+          {
+            "text": "Downy Hawthorn",
+            "href": "/Browse/Sites/40113/Species/Crataegus%20mollis%20(Downy%20Hawthorn)/Details"
+          },
+          {
+            "text": "38.6'",
+            "href": "/Browse/Trees/220663/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/220664/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "101.4'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40113/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40113/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "101.4'",
+            "href": "/Browse/Trees/220665/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/220666/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 25 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 10.819, -095 55.080",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Sarpy"
+    },
+    "state": {
+      "text": "Nebraska (US)",
+      "href": "/Browse/States/27/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

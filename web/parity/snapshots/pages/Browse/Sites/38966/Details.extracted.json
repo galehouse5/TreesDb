@@ -1,0 +1,353 @@
+{
+  "siteId": 38966,
+  "summary": {
+    "Name": "Pike Ste Forest",
+    "RHI5": "137.88",
+    "RHI10": "128.93",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.52",
+    "RGI10": "9.21",
+    "RGI20": "(not enough data)",
+    "Trees measured": "26",
+    "Last measurement date": "02/23/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees measured were in two coves."
+  },
+  "visits": [
+    {
+      "visited": "02/23/2014",
+      "visitors": "Matt Markworth and Rand Brown",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees measured were in two coves."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "116.5'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38966/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38966/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "116.5'",
+            "href": "/Browse/Trees/161933/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/161933/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "125.5'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/38966/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/38966/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "125.5'",
+            "href": "/Browse/Trees/161927/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/161927/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "124.0'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/38966/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/38966/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "124.0'",
+            "href": "/Browse/Trees/161931/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/161931/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "121.0'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38966/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38966/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "121.0'",
+            "href": "/Browse/Trees/161926/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/161932/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "134.5'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38966/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38966/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "134.5'",
+            "href": "/Browse/Trees/161936/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/161938/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "150.9'",
+          "149''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38966/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38966/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "150.9'",
+            "href": "/Browse/Trees/161918/Details"
+          },
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/161928/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "141.5'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/38966/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/38966/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "141.5'",
+            "href": "/Browse/Trees/161920/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/161915/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "119.5'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/38966/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/38966/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "119.5'",
+            "href": "/Browse/Trees/161923/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/161913/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "137.0'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/38966/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/38966/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "137.0'",
+            "href": "/Browse/Trees/161937/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/161935/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "116.0'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38966/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38966/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "116.0'",
+            "href": "/Browse/Trees/161914/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/161930/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 06.825, -083 25.147",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Highland"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

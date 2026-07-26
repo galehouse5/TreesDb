@@ -1,0 +1,182 @@
+{
+  "siteId": 41152,
+  "summary": {
+    "Name": "Sochalaski Cnservation Lands",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "05/01/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/01/2016",
+      "visitors": "Jared Lockwood",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "78.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/Sites/41152/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/Sites/41152/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "78.1'",
+            "href": "/Browse/Trees/250371/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "69.7'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/41152/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/41152/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "69.7'",
+            "href": "/Browse/Trees/250369/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/250369/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "119.5'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/41152/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/41152/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "119.5'",
+            "href": "/Browse/Trees/250368/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/250368/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia spp.",
+          "Basswood",
+          "82.8'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia spp.",
+            "href": "/Browse/Sites/41152/Species/Tilia%20spp.%20(Basswood)/Details"
+          },
+          {
+            "text": "Basswood",
+            "href": "/Browse/Sites/41152/Species/Tilia%20spp.%20(Basswood)/Details"
+          },
+          {
+            "text": "82.8'",
+            "href": "/Browse/Trees/250370/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/250370/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 27.387, -071 35.883",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Worcester"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

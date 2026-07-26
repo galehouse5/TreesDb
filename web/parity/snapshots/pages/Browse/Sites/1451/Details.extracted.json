@@ -1,0 +1,157 @@
+{
+  "siteId": 1451,
+  "summary": {
+    "Name": "Red Rock Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "02/10/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "formerly a state Park, now managed by the city of Gallup"
+  },
+  "visits": [
+    {
+      "visited": "02/10/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "formerly a state Park, now managed by the city of Gallup"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus osteosperma",
+          "Utah Juniper",
+          "19.6'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus osteosperma",
+            "href": "/Browse/Sites/1451/Species/Juniperus%20osteosperma%20(Utah%20Juniper)/Details"
+          },
+          {
+            "text": "Utah Juniper",
+            "href": "/Browse/Sites/1451/Species/Juniperus%20osteosperma%20(Utah%20Juniper)/Details"
+          },
+          {
+            "text": "19.6'",
+            "href": "/Browse/Trees/33197/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/33197/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus edulis",
+          "Twoneedle Pinyon",
+          "30.1'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus edulis",
+            "href": "/Browse/Sites/1451/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "Twoneedle Pinyon",
+            "href": "/Browse/Sites/1451/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "30.1'",
+            "href": "/Browse/Trees/33198/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/33198/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus gambelii var. gambelii",
+          "Gambel Oak",
+          "27.2'",
+          "27''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus gambelii var. gambelii",
+            "href": "/Browse/Sites/1451/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "Gambel Oak",
+            "href": "/Browse/Sites/1451/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "27.2'",
+            "href": "/Browse/Trees/33196/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/33195/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 33.027, -108 36.552",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - City Park",
+      "County": "Mckinley"
+    },
+    "state": {
+      "text": "New Mexico (US)",
+      "href": "/Browse/States/30/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

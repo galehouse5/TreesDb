@@ -1,0 +1,353 @@
+{
+  "siteId": 42243,
+  "summary": {
+    "Name": "Fort Donelson National Battlefield",
+    "RHI5": "49.127",
+    "RHI10": "47.150",
+    "RHI20": "43.350",
+    "RGI5": "4.171",
+    "RGI10": "3.597",
+    "RGI20": "2.982",
+    "Trees measured": "95",
+    "Last measurement date": "11/25/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/25/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. schneckii",
+          "Sugar Maple",
+          "35.10 yd",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. schneckii",
+            "href": "/Browse/Sites/42243/Species/Acer%20saccharum%20var.%20schneckii%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42243/Species/Acer%20saccharum%20var.%20schneckii%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "35.10 yd",
+            "href": "/Browse/Trees/313554/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/313553/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "43.60 yd",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/42243/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/42243/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "43.60 yd",
+            "href": "/Browse/Trees/313501/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/313501/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "50.60 yd",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/42243/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/42243/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "50.60 yd",
+            "href": "/Browse/Trees/313500/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/313500/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "46.90 yd",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42243/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42243/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "46.90 yd",
+            "href": "/Browse/Trees/313505/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/313505/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "34.23 yd",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/42243/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/42243/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "34.23 yd",
+            "href": "/Browse/Trees/313530/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/313530/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "43.17 yd",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/42243/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/42243/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "43.17 yd",
+            "href": "/Browse/Trees/313525/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/313525/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "14.87 yd",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/42243/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/42243/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "14.87 yd",
+            "href": "/Browse/Trees/313531/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/313531/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "29.63 yd",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/42243/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/42243/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "29.63 yd",
+            "href": "/Browse/Trees/313557/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/313557/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "37.77 yd",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/42243/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/42243/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "37.77 yd",
+            "href": "/Browse/Trees/313556/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/313556/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana var. biltmoreana",
+          "Biltmore Ash",
+          "36.33 yd",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana var. biltmoreana",
+            "href": "/Browse/Sites/42243/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "Biltmore Ash",
+            "href": "/Browse/Sites/42243/Species/Fraxinus%20americana%20var.%20biltmoreana%20(Biltmore%20Ash)/Details"
+          },
+          {
+            "text": "36.33 yd",
+            "href": "/Browse/Trees/313518/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/313518/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 29 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 29.246, -087 51.726",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Stewart"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

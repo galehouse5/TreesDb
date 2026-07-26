@@ -1,0 +1,135 @@
+{
+  "siteId": 4836,
+  "summary": {
+    "Name": "Eno River, Hillsborough",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "01/16/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/16/2013",
+      "visitors": "Patrick Brandt",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "01/04/2013",
+      "visitors": "Patrick Brandt",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "143.4'",
+          "156''",
+          "71.5'"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/4836/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/4836/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "143.4'",
+            "href": "/Browse/Trees/252360/Details"
+          },
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/252360/Details"
+          },
+          {
+            "text": "71.5'",
+            "href": "/Browse/Trees/252360/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "-",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/4836/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/4836/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          null,
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/252364/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 04.297, -079 05.853",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Private",
+      "County": "Orange"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

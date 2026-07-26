@@ -1,0 +1,283 @@
+{
+  "botanicalName": "Quercus alba",
+  "commonName": "White Oak",
+  "global": {
+    "maxHeight": {
+      "text": "48.60 yd",
+      "href": "/Browse/Trees/128379/Details"
+    },
+    "maxGirth": {
+      "text": "343''",
+      "href": "/Browse/Trees/240480/Details"
+    },
+    "maxCrownSpread": {
+      "text": "49.00 yd",
+      "href": "/Browse/Trees/48746/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "43.30 yd",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "43.30 yd",
+            "href": "/Browse/Trees/233721/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/233876/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "43.80 yd",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "43.80 yd",
+            "href": "/Browse/Trees/241687/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/241602/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Connecticut",
+          "25.03 yd",
+          "240''",
+          "45.20 yd"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "25.03 yd",
+            "href": "/Browse/Trees/256797/Details"
+          },
+          {
+            "text": "240''",
+            "href": "/Browse/Trees/256797/Details"
+          },
+          {
+            "text": "45.20 yd",
+            "href": "/Browse/Trees/256797/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "45.97 yd",
+          "198''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "45.97 yd",
+            "href": "/Browse/Trees/142955/Details"
+          },
+          {
+            "text": "198''",
+            "href": "/Browse/Trees/142952/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "41.97 yd",
+          "181''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "41.97 yd",
+            "href": "/Browse/Trees/76098/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/175042/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "46.67 yd",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "46.67 yd",
+            "href": "/Browse/Trees/249209/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/234923/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "43.70 yd",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          {
+            "text": "43.70 yd",
+            "href": "/Browse/Trees/273893/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/273893/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana",
+          "43.83 yd",
+          "159''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana",
+            "href": "/Browse/States/13/Details"
+          },
+          {
+            "text": "43.83 yd",
+            "href": "/Browse/Trees/169964/Details"
+          },
+          {
+            "text": "159''",
+            "href": "/Browse/Trees/169846/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Iowa",
+          "36.00 yd",
+          "118''",
+          "21.50 yd"
+        ],
+        "links": [
+          {
+            "text": "Iowa",
+            "href": "/Browse/States/10/Details"
+          },
+          {
+            "text": "36.00 yd",
+            "href": "/Browse/Trees/233673/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/233673/Details"
+          },
+          {
+            "text": "21.50 yd",
+            "href": "/Browse/Trees/233673/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "46.70 yd",
+          "156''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "46.70 yd",
+            "href": "/Browse/Trees/297537/Details"
+          },
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/76409/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 27 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

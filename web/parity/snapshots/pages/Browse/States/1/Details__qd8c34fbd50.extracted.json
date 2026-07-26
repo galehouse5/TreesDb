@@ -1,0 +1,293 @@
+{
+  "columns": [
+    {
+      "header": "Botanical name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Common name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max height",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max girth",
+      "sortable": true,
+      "sortState": "asc"
+    },
+    {
+      "header": "Max crown spread",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Aesculus flava",
+        "Yellow Buckeye",
+        "110.2'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Aesculus flava",
+          "href": "/Browse/States/1/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+        },
+        {
+          "text": "Yellow Buckeye",
+          "href": "/Browse/States/1/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+        },
+        {
+          "text": "110.2'",
+          "href": "/Browse/Trees/315726/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Fraxinus quadrangulata",
+        "Blue Ash",
+        "108.8'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Fraxinus quadrangulata",
+          "href": "/Browse/States/1/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+        },
+        {
+          "text": "Blue Ash",
+          "href": "/Browse/States/1/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+        },
+        {
+          "text": "108.8'",
+          "href": "/Browse/Trees/315724/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Juniperus virginiana",
+        "Eastern Redcedar",
+        "96.3'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Juniperus virginiana",
+          "href": "/Browse/States/1/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+        },
+        {
+          "text": "Eastern Redcedar",
+          "href": "/Browse/States/1/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+        },
+        {
+          "text": "96.3'",
+          "href": "/Browse/Trees/233880/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pinus echinata",
+        "Shortleaf Pine",
+        "118.1'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Pinus echinata",
+          "href": "/Browse/States/1/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+        },
+        {
+          "text": "Shortleaf Pine",
+          "href": "/Browse/States/1/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+        },
+        {
+          "text": "118.1'",
+          "href": "/Browse/Trees/233879/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus marilandica",
+        "Blackjack Oak",
+        "46.8'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus marilandica",
+          "href": "/Browse/States/1/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+        },
+        {
+          "text": "Blackjack Oak",
+          "href": "/Browse/States/1/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+        },
+        {
+          "text": "46.8'",
+          "href": "/Browse/Trees/233700/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Taxus spp.",
+        "Yew",
+        "55.5'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Taxus spp.",
+          "href": "/Browse/States/1/Species/Taxus%20spp.%20(Yew)/Details"
+        },
+        {
+          "text": "Yew",
+          "href": "/Browse/States/1/Species/Taxus%20spp.%20(Yew)/Details"
+        },
+        {
+          "text": "55.5'",
+          "href": "/Browse/Trees/253887/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Vaccinium arboreum",
+        "Farkleberry",
+        "28.7'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Vaccinium arboreum",
+          "href": "/Browse/States/1/Species/Vaccinium%20arboreum%20(Farkleberry)/Details"
+        },
+        {
+          "text": "Farkleberry",
+          "href": "/Browse/States/1/Species/Vaccinium%20arboreum%20(Farkleberry)/Details"
+        },
+        {
+          "text": "28.7'",
+          "href": "/Browse/Trees/253889/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Salix caroliniana",
+        "Coastal Plain Willow",
+        "18.9'",
+        "8''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Salix caroliniana",
+          "href": "/Browse/States/1/Species/Salix%20caroliniana%20(Coastal%20Plain%20Willow)/Details"
+        },
+        {
+          "text": "Coastal Plain Willow",
+          "href": "/Browse/States/1/Species/Salix%20caroliniana%20(Coastal%20Plain%20Willow)/Details"
+        },
+        {
+          "text": "18.9'",
+          "href": "/Browse/Trees/233707/Details"
+        },
+        {
+          "text": "8''",
+          "href": "/Browse/Trees/233707/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Rhus copallinum",
+        "Winged Sumac",
+        "31.1'",
+        "11''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Rhus copallinum",
+          "href": "/Browse/States/1/Species/Rhus%20copallinum%20(Winged%20Sumac)/Details"
+        },
+        {
+          "text": "Winged Sumac",
+          "href": "/Browse/States/1/Species/Rhus%20copallinum%20(Winged%20Sumac)/Details"
+        },
+        {
+          "text": "31.1'",
+          "href": "/Browse/Trees/233705/Details"
+        },
+        {
+          "text": "11''",
+          "href": "/Browse/Trees/233705/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Firmiana simplex",
+        "Chinese Parasoltree",
+        "30.0'",
+        "19''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Firmiana simplex",
+          "href": "/Browse/States/1/Species/Firmiana%20simplex%20(Chinese%20Parasoltree)/Details"
+        },
+        {
+          "text": "Chinese Parasoltree",
+          "href": "/Browse/States/1/Species/Firmiana%20simplex%20(Chinese%20Parasoltree)/Details"
+        },
+        {
+          "text": "30.0'",
+          "href": "/Browse/Trees/253886/Details"
+        },
+        {
+          "text": "19''",
+          "href": "/Browse/Trees/253886/Details"
+        },
+        null
+      ]
+    }
+  ],
+  "pageInfo": "Showing 1 to 10 of 58 entries",
+  "hasPreviousPage": false,
+  "hasNextPage": true
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 127942,
+  "botanicalName": {
+    "text": "Quercus falcata",
+    "href": "/Browse/Sites/38037/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+  },
+  "commonName": {
+    "text": "Southern Red Oak",
+    "href": "/Browse/Sites/38037/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+  },
+  "details": {
+    "Height": "123.8'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "150''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "193.44",
+    "ENTSPTS": "1547.50",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.43",
+    "Champion points (abbreviated)": "273.80",
+    "Diameter": "48''",
+    "Conical volume": "513.1 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 11/11/2015",
+      "summary": {
+        "Height": "123.8'",
+        "Girth": "150''"
+      },
+      "details": {
+        "Botanical name": "Quercus falcata",
+        "Common name": "Southern Red Oak",
+        "Height": "123.8'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "150''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "193.44",
+        "ENTSPTS": "1547.50",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.43",
+        "Champion points (abbreviated)": "273.80",
+        "Diameter": "48''",
+        "Conical volume": "513.1 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Darian Copiz"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "38 20.022, -077 08.574",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Caledon State Park",
+      "href": "/Browse/Sites/38037/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - State Park",
+      "County": "King George"
+    },
+    "state": {
+      "text": "Virginia (US)",
+      "href": "/Browse/States/43/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

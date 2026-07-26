@@ -1,0 +1,101 @@
+{
+  "siteId": 40015,
+  "summary": {
+    "Name": "Arenal Volcano National Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "02/14/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/14/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ceiba pentandra",
+          "Ceiba",
+          "154.6'",
+          "181''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ceiba pentandra",
+            "href": "/Browse/Sites/40015/Species/Ceiba%20pentandra%20(Ceiba)/Details"
+          },
+          {
+            "text": "Ceiba",
+            "href": "/Browse/Sites/40015/Species/Ceiba%20pentandra%20(Ceiba)/Details"
+          },
+          {
+            "text": "154.6'",
+            "href": "/Browse/Trees/214112/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/214110/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "10 27.742, -084 44.206",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "San Carlos"
+    },
+    "state": {
+      "text": "Alajuela (CR)",
+      "href": "/Browse/States/117/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

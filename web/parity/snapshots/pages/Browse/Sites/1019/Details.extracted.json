@@ -1,0 +1,350 @@
+{
+  "siteId": 1019,
+  "summary": {
+    "Name": "Mill Stream Run Reservation",
+    "RHI5": "115.16",
+    "RHI10": "109.63",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.30",
+    "RGI10": "8.50",
+    "RGI20": "(not enough data)",
+    "Trees measured": "17",
+    "Last measurement date": "12/26/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/26/2011",
+      "visitors": "Steve Galehouse and Mitch Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer ×freemanii",
+          "Freeman Maple",
+          "105.1'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer ×freemanii",
+            "href": "/Browse/Sites/1019/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "Freeman Maple",
+            "href": "/Browse/Sites/1019/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "105.1'",
+            "href": "/Browse/Trees/18670/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/18670/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus glabra",
+          "Ohio Buckeye",
+          "81.4'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus glabra",
+            "href": "/Browse/Sites/1019/Species/Aesculus%20glabra%20(Ohio%20Buckeye)/Details"
+          },
+          {
+            "text": "Ohio Buckeye",
+            "href": "/Browse/Sites/1019/Species/Aesculus%20glabra%20(Ohio%20Buckeye)/Details"
+          },
+          {
+            "text": "81.4'",
+            "href": "/Browse/Trees/18684/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/18684/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "100.0'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/1019/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/1019/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "100.0'",
+            "href": "/Browse/Trees/18669/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/18669/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "112.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/1019/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/1019/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "112.9'",
+            "href": "/Browse/Trees/18672/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "103.8'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/1019/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/1019/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "103.8'",
+            "href": "/Browse/Trees/18683/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/18683/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "100.9'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/1019/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/1019/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "100.9'",
+            "href": "/Browse/Trees/18671/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/18671/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "101.8'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/1019/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/1019/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "101.8'",
+            "href": "/Browse/Trees/18682/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/18682/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "116.1'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/1019/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/1019/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "116.1'",
+            "href": "/Browse/Trees/18668/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/18674/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "106.4'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/1019/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/1019/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "106.4'",
+            "href": "/Browse/Trees/18676/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/18676/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "119.2'",
+          "168''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/1019/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/1019/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "119.2'",
+            "href": "/Browse/Trees/18681/Details"
+          },
+          {
+            "text": "168''",
+            "href": "/Browse/Trees/18681/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 20.706, -081 50.185",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Metropark",
+      "County": "Cuyahoga"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

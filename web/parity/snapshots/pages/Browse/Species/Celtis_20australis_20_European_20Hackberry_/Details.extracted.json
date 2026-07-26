@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Celtis australis",
+  "commonName": "European Hackberry",
+  "global": {
+    "maxHeight": {
+      "text": "55.1'",
+      "href": "/Browse/Trees/274934/Details"
+    },
+    "maxGirth": {
+      "text": "91''",
+      "href": "/Browse/Trees/283208/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Budapest",
+          "54.9'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Budapest",
+            "href": "/Browse/States/207/Details"
+          },
+          {
+            "text": "54.9'",
+            "href": "/Browse/Trees/283220/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/283208/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Community of Madrid",
+          "55.1'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Community of Madrid",
+            "href": "/Browse/States/137/Details"
+          },
+          {
+            "text": "55.1'",
+            "href": "/Browse/Trees/274934/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/274934/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "siteId": 41284,
+  "summary": {
+    "Name": "Massachusetts Single Tree Sites",
+    "RHI5": "110.86",
+    "RHI10": "101.75",
+    "RHI20": "81.59",
+    "RGI5": "17.27",
+    "RGI10": "15.00",
+    "RGI20": "10.24",
+    "Trees measured": "38",
+    "Last measurement date": "01/01/2001",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2001",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "86.8'",
+          "153''",
+          "57.4'"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/41284/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/41284/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "86.8'",
+            "href": "/Browse/Trees/256022/Details"
+          },
+          {
+            "text": "153''",
+            "href": "/Browse/Trees/256022/Details"
+          },
+          {
+            "text": "57.4'",
+            "href": "/Browse/Trees/256022/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "-",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41284/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41284/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          null,
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/255998/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "89.8'",
+          "146''",
+          "85.1'"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/41284/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/41284/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "89.8'",
+            "href": "/Browse/Trees/256028/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/256028/Details"
+          },
+          {
+            "text": "85.1'",
+            "href": "/Browse/Trees/256028/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "81.7'",
+          "32''",
+          "32.0'"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/41284/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/41284/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "81.7'",
+            "href": "/Browse/Trees/256010/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/256010/Details"
+          },
+          {
+            "text": "32.0'",
+            "href": "/Browse/Trees/256010/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa speciosa",
+          "Northern Catalpa",
+          "86.1'",
+          "165''",
+          "5.8'"
+        ],
+        "links": [
+          {
+            "text": "Catalpa speciosa",
+            "href": "/Browse/Sites/41284/Species/Catalpa%20speciosa%20(Northern%20Catalpa)/Details"
+          },
+          {
+            "text": "Northern Catalpa",
+            "href": "/Browse/Sites/41284/Species/Catalpa%20speciosa%20(Northern%20Catalpa)/Details"
+          },
+          {
+            "text": "86.1'",
+            "href": "/Browse/Trees/256027/Details"
+          },
+          {
+            "text": "165''",
+            "href": "/Browse/Trees/256027/Details"
+          },
+          {
+            "text": "5.8'",
+            "href": "/Browse/Trees/256027/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Chamaecyparis thyoides",
+          "Atlantic White Cedar",
+          "74.9'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis thyoides",
+            "href": "/Browse/Sites/41284/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "Atlantic White Cedar",
+            "href": "/Browse/Sites/41284/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "74.9'",
+            "href": "/Browse/Trees/256026/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/256023/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "85.0'",
+          "237''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41284/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41284/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/256007/Details"
+          },
+          {
+            "text": "237''",
+            "href": "/Browse/Trees/256007/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "70.0'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/41284/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/41284/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/256012/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/256012/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "93.4'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/41284/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/41284/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "93.4'",
+            "href": "/Browse/Trees/256000/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/256000/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex verticillata",
+          "Common Winterberry",
+          "28.1'",
+          "8''",
+          "11.0'"
+        ],
+        "links": [
+          {
+            "text": "Ilex verticillata",
+            "href": "/Browse/Sites/41284/Species/Ilex%20verticillata%20(Common%20Winterberry)/Details"
+          },
+          {
+            "text": "Common Winterberry",
+            "href": "/Browse/Sites/41284/Species/Ilex%20verticillata%20(Common%20Winterberry)/Details"
+          },
+          {
+            "text": "28.1'",
+            "href": "/Browse/Trees/256015/Details"
+          },
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/256015/Details"
+          },
+          {
+            "text": "11.0'",
+            "href": "/Browse/Trees/256015/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 21 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 21.523, -071 03.816",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Suffolk"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

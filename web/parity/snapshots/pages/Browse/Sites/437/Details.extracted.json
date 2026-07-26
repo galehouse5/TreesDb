@@ -1,0 +1,135 @@
+{
+  "siteId": 437,
+  "summary": {
+    "Name": "Barclay Square",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "08/16/2009",
+    "Ownership contact": "Mayor's Office 301 E Mahoning St, Punxsutawney, PA 15767 (814) 938-2710",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/16/2009",
+      "visitors": "Edward Frank",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/20090815-punxy/punxsutawney_%20tree_lilac.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "73.9'",
+          "97''",
+          "40.0'"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/437/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/437/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "73.9'",
+            "href": "/Browse/Trees/2308/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/2308/Details"
+          },
+          {
+            "text": "40.0'",
+            "href": "/Browse/Trees/2308/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Syringa reticulata",
+          "Japanese Tree Lilac",
+          "36.1'",
+          "110''",
+          "39.0'"
+        ],
+        "links": [
+          {
+            "text": "Syringa reticulata",
+            "href": "/Browse/Sites/437/Species/Syringa%20reticulata%20(Japanese%20Tree%20Lilac)/Details"
+          },
+          {
+            "text": "Japanese Tree Lilac",
+            "href": "/Browse/Sites/437/Species/Syringa%20reticulata%20(Japanese%20Tree%20Lilac)/Details"
+          },
+          {
+            "text": "36.1'",
+            "href": "/Browse/Trees/2307/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/2307/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/2307/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 56.606, -078 58.139",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Jefferson"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,198 @@
+{
+  "siteId": 40535,
+  "summary": {
+    "Name": "Rainy River",
+    "RHI5": "0.000",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.114",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "06/10/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "1,180,000 acres"
+  },
+  "visits": [
+    {
+      "visited": "06/10/2014",
+      "visitors": "Climbs Bigtreees",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "1,180,000 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer spicatum",
+          "Mountain Maple",
+          "-",
+          "135 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spicatum",
+            "href": "/Browse/Sites/40535/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "Mountain Maple",
+            "href": "/Browse/Sites/40535/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "135 cm",
+            "href": "/Browse/Trees/233129/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "-",
+          "310 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/40535/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/40535/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          null,
+          {
+            "text": "310 cm",
+            "href": "/Browse/Trees/233128/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "-",
+          "363 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/40535/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/40535/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "363 cm",
+            "href": "/Browse/Trees/233124/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "-",
+          "455 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40535/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40535/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "455 cm",
+            "href": "/Browse/Trees/233127/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja occidentalis",
+          "Arborvitae",
+          "-",
+          "295 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja occidentalis",
+            "href": "/Browse/Sites/40535/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "Arborvitae",
+            "href": "/Browse/Sites/40535/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          null,
+          {
+            "text": "295 cm",
+            "href": "/Browse/Trees/233130/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "48 39.505, -091 06.043",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Rainy River District"
+    },
+    "state": {
+      "text": "Ontario (CA)",
+      "href": "/Browse/States/57/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

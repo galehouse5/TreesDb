@@ -1,0 +1,185 @@
+{
+  "siteId": 39151,
+  "summary": {
+    "Name": "Pennypack Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "03/22/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Park stretches nine miles along Pennypack Creek."
+  },
+  "visits": [
+    {
+      "visited": "03/22/2007",
+      "visitors": "Scott Wade, Meg Varney, and Bill Sweeney",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/lorimer_park.htm",
+      "comments": "Park stretches nine miles along Pennypack Creek."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "39.80 yd",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/39151/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/39151/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "39.80 yd",
+            "href": "/Browse/Trees/166987/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/166987/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "32.93 yd",
+          "172''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/39151/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/39151/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "32.93 yd",
+            "href": "/Browse/Trees/166990/Details"
+          },
+          {
+            "text": "172''",
+            "href": "/Browse/Trees/166990/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "48.20 yd",
+          "208''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39151/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39151/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "48.20 yd",
+            "href": "/Browse/Trees/166989/Details"
+          },
+          {
+            "text": "208''",
+            "href": "/Browse/Trees/166989/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "40.97 yd",
+          "217''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/39151/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/39151/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "40.97 yd",
+            "href": "/Browse/Trees/166984/Details"
+          },
+          {
+            "text": "217''",
+            "href": "/Browse/Trees/166984/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 03.018, -075 02.123",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - City",
+      "County": "Philadelphia"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,277 @@
+{
+  "botanicalName": "Thuja occidentalis",
+  "commonName": "Arborvitae",
+  "global": {
+    "maxHeight": {
+      "text": "30.47 yd",
+      "href": "/Browse/Trees/52726/Details"
+    },
+    "maxGirth": {
+      "text": "146''",
+      "href": "/Browse/Trees/240294/Details"
+    },
+    "maxCrownSpread": {
+      "text": "10.17 yd",
+      "href": "/Browse/Trees/313222/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maine",
+          "20.70 yd",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maine",
+            "href": "/Browse/States/19/Details"
+          },
+          {
+            "text": "20.70 yd",
+            "href": "/Browse/Trees/235325/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/235325/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "14.57 yd",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "14.57 yd",
+            "href": "/Browse/Trees/158531/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/158531/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "26.03 yd",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "26.03 yd",
+            "href": "/Browse/Trees/235834/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/235834/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "28.81 yd",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "28.81 yd",
+            "href": "/Browse/Trees/214332/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/221354/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "26.47 yd",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "26.47 yd",
+            "href": "/Browse/Trees/39491/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/227832/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "30.47 yd",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "30.47 yd",
+            "href": "/Browse/Trees/52726/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/96900/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "24.33 yd",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "24.33 yd",
+            "href": "/Browse/Trees/240294/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/240294/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "15.67 yd",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "15.67 yd",
+            "href": "/Browse/Trees/2304/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/2304/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "19.80 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "19.80 yd",
+            "href": "/Browse/Trees/240482/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "24.33 yd",
+          "126''",
+          "10.17 yd"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "24.33 yd",
+            "href": "/Browse/Trees/313180/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/312097/Details"
+          },
+          {
+            "text": "10.17 yd",
+            "href": "/Browse/Trees/313222/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Calocedrus decurrens",
+  "commonName": "Incense Cedar",
+  "global": {
+    "maxHeight": {
+      "text": "144.2'",
+      "href": "/Browse/Trees/274336/Details"
+    },
+    "maxGirth": {
+      "text": "265''",
+      "href": "/Browse/Trees/320690/Details"
+    },
+    "maxCrownSpread": {
+      "text": "31.0'",
+      "href": "/Browse/Trees/225710/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "144.2'",
+          "265''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "144.2'",
+            "href": "/Browse/Trees/274336/Details"
+          },
+          {
+            "text": "265''",
+            "href": "/Browse/Trees/320690/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "42.1'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "42.1'",
+            "href": "/Browse/Trees/226085/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/226085/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "122.5'",
+          "152''",
+          "31.0'"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "122.5'",
+            "href": "/Browse/Trees/40595/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/225711/Details"
+          },
+          {
+            "text": "31.0'",
+            "href": "/Browse/Trees/225710/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "64.7'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "64.7'",
+            "href": "/Browse/Trees/224543/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/224543/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

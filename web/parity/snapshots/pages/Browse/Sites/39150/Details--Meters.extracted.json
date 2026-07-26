@@ -1,0 +1,347 @@
+{
+  "siteId": 39150,
+  "summary": {
+    "Name": "Rocky River Park",
+    "RHI5": "33.894",
+    "RHI10": "32.156",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.891",
+    "RGI10": "2.494",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "03/22/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/22/2009",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/ohio/rocky_river.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "29.87 m",
+          "170 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/39150/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39150/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "29.87 m",
+            "href": "/Browse/Trees/166916/Details"
+          },
+          {
+            "text": "170 cm",
+            "href": "/Browse/Trees/166916/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "30.78 m",
+          "277 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/39150/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/39150/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "30.78 m",
+            "href": "/Browse/Trees/166913/Details"
+          },
+          {
+            "text": "277 cm",
+            "href": "/Browse/Trees/166913/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "29.87 m",
+          "297 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39150/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39150/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "29.87 m",
+            "href": "/Browse/Trees/166912/Details"
+          },
+          {
+            "text": "297 cm",
+            "href": "/Browse/Trees/166912/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "30.78 m",
+          "226 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/39150/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/39150/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "30.78 m",
+            "href": "/Browse/Trees/166909/Details"
+          },
+          {
+            "text": "226 cm",
+            "href": "/Browse/Trees/166909/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "36.88 m",
+          "300 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39150/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39150/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "36.88 m",
+            "href": "/Browse/Trees/166911/Details"
+          },
+          {
+            "text": "300 cm",
+            "href": "/Browse/Trees/166911/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "30.78 m",
+          "264 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/39150/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/39150/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "30.78 m",
+            "href": "/Browse/Trees/166915/Details"
+          },
+          {
+            "text": "264 cm",
+            "href": "/Browse/Trees/166915/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "34.44 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/39150/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/39150/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "34.44 m",
+            "href": "/Browse/Trees/166920/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "30.33 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/39150/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/39150/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "30.33 m",
+            "href": "/Browse/Trees/166919/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "29.87 m",
+          "168 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/39150/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/39150/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "29.87 m",
+            "href": "/Browse/Trees/166917/Details"
+          },
+          {
+            "text": "168 cm",
+            "href": "/Browse/Trees/166917/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "30.33 m",
+          "269 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/39150/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/39150/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "30.33 m",
+            "href": "/Browse/Trees/166910/Details"
+          },
+          {
+            "text": "269 cm",
+            "href": "/Browse/Trees/166910/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 29.194, -081 50.826",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-city",
+      "County": "Cuyahoga"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

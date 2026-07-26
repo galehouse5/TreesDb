@@ -1,0 +1,201 @@
+{
+  "botanicalName": "Picea glauca",
+  "commonName": "White Spruce",
+  "global": {
+    "maxHeight": {
+      "text": "127.6'",
+      "href": "/Browse/Trees/211375/Details"
+    },
+    "maxGirth": {
+      "text": "88''",
+      "href": "/Browse/Trees/211375/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "British Columbia",
+          "87.3'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "British Columbia",
+            "href": "/Browse/States/50/Details"
+          },
+          {
+            "text": "87.3'",
+            "href": "/Browse/Trees/74991/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/74991/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Minnesota",
+          "94.0'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Minnesota",
+            "href": "/Browse/States/21/Details"
+          },
+          {
+            "text": "94.0'",
+            "href": "/Browse/Trees/233306/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/233306/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "127.6'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "127.6'",
+            "href": "/Browse/Trees/211375/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/211375/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "67.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "67.4'",
+            "href": "/Browse/Trees/39772/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "103.0'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/240292/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/240292/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Wisconsin",
+          "78.8'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wisconsin",
+            "href": "/Browse/States/46/Details"
+          },
+          {
+            "text": "78.8'",
+            "href": "/Browse/Trees/233341/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/233355/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Yukon",
+          "92.7'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yukon",
+            "href": "/Browse/States/61/Details"
+          },
+          {
+            "text": "92.7'",
+            "href": "/Browse/Trees/75002/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/75002/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

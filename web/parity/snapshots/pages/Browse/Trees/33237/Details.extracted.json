@@ -1,0 +1,70 @@
+{
+  "treeId": 33237,
+  "botanicalName": {
+    "text": "Pinus ponderosa var. brachyptera",
+    "href": "/Browse/Sites/1461/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Ponderosa Pine",
+    "href": "/Browse/Sites/1461/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+  },
+  "details": {
+    "Height": "89.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "92''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "52.61",
+    "ENTSPTS": "686.17",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.17",
+    "Champion points (abbreviated)": "181.50",
+    "Diameter": "29''",
+    "Conical volume": "139.5 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 03/05/2012",
+      "summary": {
+        "Height": "89.5'",
+        "Girth": "92''"
+      },
+      "details": {
+        "Botanical name": "Pinus ponderosa var. brachyptera",
+        "Common name": "Ponderosa Pine",
+        "Height": "89.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "92''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "52.61",
+        "ENTSPTS": "686.17",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.17",
+        "Champion points (abbreviated)": "181.50",
+        "Diameter": "29''",
+        "Conical volume": "139.5 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Turner Sharp"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "35 11.936, -111 33.392",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Campbell Mesa",
+      "href": "/Browse/Sites/1461/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - National Forest",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

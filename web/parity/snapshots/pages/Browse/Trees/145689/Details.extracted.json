@@ -1,0 +1,70 @@
+{
+  "treeId": 145689,
+  "botanicalName": {
+    "text": "Fagus grandifolia",
+    "href": "/Browse/Sites/38495/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "commonName": {
+    "text": "American Beech",
+    "href": "/Browse/Sites/38495/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "details": {
+    "Height": "100.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "95''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "62.41",
+    "ENTSPTS": "790.00",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.04",
+    "Champion points (abbreviated)": "194.80",
+    "Diameter": "30''",
+    "Conical volume": "165.5 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 10/21/2003",
+      "summary": {
+        "Height": "100.0'",
+        "Girth": "95''"
+      },
+      "details": {
+        "Botanical name": "Fagus grandifolia",
+        "Common name": "American Beech",
+        "Height": "100.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "95''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "62.41",
+        "ENTSPTS": "790.00",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.04",
+        "Champion points (abbreviated)": "194.80",
+        "Diameter": "30''",
+        "Conical volume": "165.5 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Dale Luthringer and Edward Frank"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 21.197, -079 13.247",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "CFSP-Paved Trail/Black Bear Trail",
+      "href": "/Browse/Sites/38495/Details"
+    },
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Clarion"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

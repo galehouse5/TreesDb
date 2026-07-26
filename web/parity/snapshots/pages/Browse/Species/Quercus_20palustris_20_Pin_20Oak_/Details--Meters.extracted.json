@@ -1,0 +1,283 @@
+{
+  "botanicalName": "Quercus palustris",
+  "commonName": "Pin Oak",
+  "global": {
+    "maxHeight": {
+      "text": "41.97 m",
+      "href": "/Browse/Trees/322699/Details"
+    },
+    "maxGirth": {
+      "text": "608 cm",
+      "href": "/Browse/Trees/273887/Details"
+    },
+    "maxCrownSpread": {
+      "text": "32.00 m",
+      "href": "/Browse/Trees/229802/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "District of Columbia",
+          "25.24 m",
+          "315 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "25.24 m",
+            "href": "/Browse/Trees/175057/Details"
+          },
+          {
+            "text": "315 cm",
+            "href": "/Browse/Trees/175057/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "28.13 m",
+          "429 cm",
+          "31.70 m"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "28.13 m",
+            "href": "/Browse/Trees/235303/Details"
+          },
+          {
+            "text": "429 cm",
+            "href": "/Browse/Trees/235303/Details"
+          },
+          {
+            "text": "31.70 m",
+            "href": "/Browse/Trees/235303/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "39.72 m",
+          "608 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          {
+            "text": "39.72 m",
+            "href": "/Browse/Trees/273887/Details"
+          },
+          {
+            "text": "608 cm",
+            "href": "/Browse/Trees/273887/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana",
+          "36.27 m",
+          "391 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana",
+            "href": "/Browse/States/13/Details"
+          },
+          {
+            "text": "36.27 m",
+            "href": "/Browse/Trees/174071/Details"
+          },
+          {
+            "text": "391 cm",
+            "href": "/Browse/Trees/174071/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "41.97 m",
+          "479 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "41.97 m",
+            "href": "/Browse/Trees/322699/Details"
+          },
+          {
+            "text": "479 cm",
+            "href": "/Browse/Trees/322700/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "38.13 m",
+          "357 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "38.13 m",
+            "href": "/Browse/Trees/168128/Details"
+          },
+          {
+            "text": "357 cm",
+            "href": "/Browse/Trees/45430/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "38.40 m",
+          "436 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "38.40 m",
+            "href": "/Browse/Trees/283675/Details"
+          },
+          {
+            "text": "436 cm",
+            "href": "/Browse/Trees/283675/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "37.89 m",
+          "380 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "37.89 m",
+            "href": "/Browse/Trees/261813/Details"
+          },
+          {
+            "text": "380 cm",
+            "href": "/Browse/Trees/226130/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "37.61 m",
+          "477 cm",
+          "28.04 m"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "37.61 m",
+            "href": "/Browse/Trees/15942/Details"
+          },
+          {
+            "text": "477 cm",
+            "href": "/Browse/Trees/9749/Details"
+          },
+          {
+            "text": "28.04 m",
+            "href": "/Browse/Trees/9749/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "37.19 m",
+          "451 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "37.19 m",
+            "href": "/Browse/Trees/18543/Details"
+          },
+          {
+            "text": "451 cm",
+            "href": "/Browse/Trees/166247/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "siteId": 713,
+  "summary": {
+    "Name": "Hocking Hills SP, OH",
+    "RHI5": "148.38",
+    "RHI10": "136.44",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.17",
+    "RGI10": "9.23",
+    "RGI20": "(not enough data)",
+    "Trees measured": "41",
+    "Last measurement date": "01/17/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/17/2011",
+      "visitors": "Rand Brown",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/02/2005",
+      "visitors": "Thomas Diggins",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "121.6'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/713/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/713/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "121.6'",
+            "href": "/Browse/Trees/18849/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/18849/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "122.6'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/713/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/713/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "122.6'",
+            "href": "/Browse/Trees/18848/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/18848/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "88.2'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/713/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/713/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "88.2'",
+            "href": "/Browse/Trees/9850/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/9850/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "101.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/713/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/713/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "101.5'",
+            "href": "/Browse/Trees/9847/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "135.8'",
+          "106''",
+          "80.0'"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/713/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/713/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "135.8'",
+            "href": "/Browse/Trees/18845/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/9840/Details"
+          },
+          {
+            "text": "80.0'",
+            "href": "/Browse/Trees/9840/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "154.3'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/713/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/713/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "154.3'",
+            "href": "/Browse/Trees/18841/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/18841/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "101.1'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/713/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/713/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "101.1'",
+            "href": "/Browse/Trees/9848/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/9848/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "151.0'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/713/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/713/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "151.0'",
+            "href": "/Browse/Trees/18842/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/18842/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "151.0'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/713/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/713/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "151.0'",
+            "href": "/Browse/Trees/9835/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/9833/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "120.8'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/713/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/713/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "120.8'",
+            "href": "/Browse/Trees/9846/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/9846/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 29.456, -082 28.517",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Hocking"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

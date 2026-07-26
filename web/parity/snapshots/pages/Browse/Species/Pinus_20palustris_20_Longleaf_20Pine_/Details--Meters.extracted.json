@@ -1,0 +1,217 @@
+{
+  "botanicalName": "Pinus palustris",
+  "commonName": "Longleaf Pine",
+  "global": {
+    "maxHeight": {
+      "text": "31.91 m",
+      "href": "/Browse/Trees/2423/Details"
+    },
+    "maxGirth": {
+      "text": "257 cm",
+      "href": "/Browse/Trees/233704/Details"
+    },
+    "maxCrownSpread": {
+      "text": "15.54 m",
+      "href": "/Browse/Trees/253888/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "26.82 m",
+          "257 cm",
+          "15.54 m"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "26.82 m",
+            "href": "/Browse/Trees/233704/Details"
+          },
+          {
+            "text": "257 cm",
+            "href": "/Browse/Trees/233704/Details"
+          },
+          {
+            "text": "15.54 m",
+            "href": "/Browse/Trees/253888/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Florida",
+          "28.04 m",
+          "193 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "28.04 m",
+            "href": "/Browse/Trees/159256/Details"
+          },
+          {
+            "text": "193 cm",
+            "href": "/Browse/Trees/159256/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "20.12 m",
+          "137 cm",
+          "9.14 m"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "20.12 m",
+            "href": "/Browse/Trees/253860/Details"
+          },
+          {
+            "text": "137 cm",
+            "href": "/Browse/Trees/253860/Details"
+          },
+          {
+            "text": "9.14 m",
+            "href": "/Browse/Trees/253860/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "18.14 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "18.14 m",
+            "href": "/Browse/Trees/40747/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "19.57 m",
+          "168 cm",
+          "7.32 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "19.57 m",
+            "href": "/Browse/Trees/134439/Details"
+          },
+          {
+            "text": "168 cm",
+            "href": "/Browse/Trees/134439/Details"
+          },
+          {
+            "text": "7.32 m",
+            "href": "/Browse/Trees/134439/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "31.91 m",
+          "198 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "31.91 m",
+            "href": "/Browse/Trees/2423/Details"
+          },
+          {
+            "text": "198 cm",
+            "href": "/Browse/Trees/2423/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "13.96 m",
+          "145 cm",
+          "10.67 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "13.96 m",
+            "href": "/Browse/Trees/312074/Details"
+          },
+          {
+            "text": "145 cm",
+            "href": "/Browse/Trees/312074/Details"
+          },
+          {
+            "text": "10.67 m",
+            "href": "/Browse/Trees/312074/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "siteId": 39187,
+  "summary": {
+    "Name": "Witchita Mountain National Wildlife Refuge",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "03/13/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/13/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "35.7'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/39187/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/39187/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "35.7'",
+            "href": "/Browse/Trees/169028/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/169028/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus marilandica",
+          "Blackjack Oak",
+          "33.5'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus marilandica",
+            "href": "/Browse/Sites/39187/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "Blackjack Oak",
+            "href": "/Browse/Sites/39187/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "33.5'",
+            "href": "/Browse/Trees/169027/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/169026/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus stellata",
+          "Post Oak",
+          "44.3'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus stellata",
+            "href": "/Browse/Sites/39187/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "Post Oak",
+            "href": "/Browse/Sites/39187/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "44.3'",
+            "href": "/Browse/Trees/169025/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/169025/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 43.111, -098 38.359",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Wildlife Refuge",
+      "County": "Comanche"
+    },
+    "state": {
+      "text": "Oklahoma (US)",
+      "href": "/Browse/States/34/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

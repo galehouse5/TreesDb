@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Acer spicatum",
+  "commonName": "Mountain Maple",
+  "global": {
+    "maxHeight": {
+      "text": "44.2'",
+      "href": "/Browse/Trees/306151/Details"
+    },
+    "maxGirth": {
+      "text": "53''",
+      "href": "/Browse/Trees/233129/Details"
+    },
+    "maxCrownSpread": {
+      "text": "32.0'",
+      "href": "/Browse/Trees/306151/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "32.2'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "32.2'",
+            "href": "/Browse/Trees/151517/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/151517/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "42.4'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "42.4'",
+            "href": "/Browse/Trees/227258/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/230525/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "32.2'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "32.2'",
+            "href": "/Browse/Trees/233044/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/233129/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "35.6'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "35.6'",
+            "href": "/Browse/Trees/222068/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/222068/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "41.1'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "41.1'",
+            "href": "/Browse/Trees/226891/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/226891/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "44.2'",
+          "31''",
+          "32.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "44.2'",
+            "href": "/Browse/Trees/306151/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/306151/Details"
+          },
+          {
+            "text": "32.0'",
+            "href": "/Browse/Trees/306151/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

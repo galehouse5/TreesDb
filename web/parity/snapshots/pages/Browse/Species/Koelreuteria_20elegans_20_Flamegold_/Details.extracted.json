@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Koelreuteria elegans",
+  "commonName": "Flamegold",
+  "global": {
+    "maxHeight": {
+      "text": "44.7'",
+      "href": "/Browse/Trees/283221/Details"
+    },
+    "maxGirth": {
+      "text": "81''",
+      "href": "/Browse/Trees/283221/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Budapest",
+          "44.7'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Budapest",
+            "href": "/Browse/States/207/Details"
+          },
+          {
+            "text": "44.7'",
+            "href": "/Browse/Trees/283221/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/283221/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

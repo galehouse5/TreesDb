@@ -1,0 +1,135 @@
+{
+  "botanicalName": "Ulmus crassifolia",
+  "commonName": "Cedar Elm",
+  "global": {
+    "maxHeight": {
+      "text": "118.2'",
+      "href": "/Browse/Trees/321890/Details"
+    },
+    "maxGirth": {
+      "text": "163''",
+      "href": "/Browse/Trees/321818/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "101.2'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "101.2'",
+            "href": "/Browse/Trees/241854/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/241729/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "61.8'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "61.8'",
+            "href": "/Browse/Trees/320735/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/320735/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "88.8'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "88.8'",
+            "href": "/Browse/Trees/320717/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/320717/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "118.2'",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "118.2'",
+            "href": "/Browse/Trees/321890/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/321818/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

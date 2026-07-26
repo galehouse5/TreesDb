@@ -1,0 +1,173 @@
+{
+  "siteId": 39254,
+  "summary": {
+    "Name": "Weymouth Furnace County Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "02/01/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "Located near the intersection of Weymouth Road and Black Horse Pike."
+  },
+  "visits": [
+    {
+      "visited": "02/01/2009",
+      "visitors": "Barry Caselli",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_jersey/20090210-pitchpine/more_measuring_today.htm",
+      "comments": "Located near the intersection of Weymouth Road and Black Horse Pike."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "-",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/39254/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/39254/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          null,
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/170077/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "-",
+          "144''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/39254/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/39254/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          null,
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/170078/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "-",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/39254/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/39254/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          null,
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/170075/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "-",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/39254/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/39254/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          null,
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/170074/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 30.963, -074 46.842",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Atlantic"
+    },
+    "state": {
+      "text": "New Jersey (US)",
+      "href": "/Browse/States/29/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

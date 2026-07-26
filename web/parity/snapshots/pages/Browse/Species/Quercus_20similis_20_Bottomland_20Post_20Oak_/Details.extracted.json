@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Quercus similis",
+  "commonName": "Bottomland Post Oak",
+  "global": {
+    "maxHeight": {
+      "text": "82.4'",
+      "href": "/Browse/Trees/241503/Details"
+    },
+    "maxGirth": {
+      "text": "123''",
+      "href": "/Browse/Trees/241640/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "82.4'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "82.4'",
+            "href": "/Browse/Trees/241503/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/241640/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "72.0'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/320723/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/320723/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

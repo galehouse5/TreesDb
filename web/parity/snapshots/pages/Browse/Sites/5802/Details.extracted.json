@@ -1,0 +1,266 @@
+{
+  "siteId": 5802,
+  "summary": {
+    "Name": "Scotts Run Nature Preserve",
+    "RHI5": "134.02",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.27",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "03/02/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "Preserve managed by staff of Riverbend Park"
+  },
+  "visits": [
+    {
+      "visited": "03/02/2011",
+      "visitors": "Darian Copiz",
+      "tripReportUrl": "(none)",
+      "comments": "Preserve managed by staff of Riverbend Park"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "67.4'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/Sites/5802/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/Sites/5802/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "67.4'",
+            "href": "/Browse/Trees/49606/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/49606/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "118.5'",
+          "3''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/5802/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/5802/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "118.5'",
+            "href": "/Browse/Trees/49607/Details"
+          },
+          {
+            "text": "3''",
+            "href": "/Browse/Trees/49607/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "123.1'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/5802/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/5802/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "123.1'",
+            "href": "/Browse/Trees/49608/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/49608/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "145.5'",
+          "211''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/5802/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/5802/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "145.5'",
+            "href": "/Browse/Trees/49609/Details"
+          },
+          {
+            "text": "211''",
+            "href": "/Browse/Trees/49609/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "149.7'",
+          "187''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/5802/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/5802/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "149.7'",
+            "href": "/Browse/Trees/49610/Details"
+          },
+          {
+            "text": "187''",
+            "href": "/Browse/Trees/49610/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "133.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/5802/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/5802/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "133.3'",
+            "href": "/Browse/Trees/49611/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus americana",
+          "American Elm",
+          "100.8'",
+          "153''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus americana",
+            "href": "/Browse/Sites/5802/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "American Elm",
+            "href": "/Browse/Sites/5802/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "100.8'",
+            "href": "/Browse/Trees/49612/Details"
+          },
+          {
+            "text": "153''",
+            "href": "/Browse/Trees/49612/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 57.717, -077 11.808",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - County",
+      "County": "Fairfax"
+    },
+    "state": {
+      "text": "Virginia (US)",
+      "href": "/Browse/States/43/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

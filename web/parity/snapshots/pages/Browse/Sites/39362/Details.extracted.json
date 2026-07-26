@@ -1,0 +1,207 @@
+{
+  "siteId": 39362,
+  "summary": {
+    "Name": "Woodland Park",
+    "RHI5": "48.60",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "13.72",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "09/14/2014",
+    "Ownership contact": "Lexington Parks and Recreation 469 Parkway Drive Lexington, KY",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/14/2014",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fraxinus quadrangulata",
+          "Blue Ash",
+          "80.0'",
+          "164''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus quadrangulata",
+            "href": "/Browse/Sites/39362/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "Blue Ash",
+            "href": "/Browse/Sites/39362/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "80.0'",
+            "href": "/Browse/Trees/174119/Details"
+          },
+          {
+            "text": "164''",
+            "href": "/Browse/Trees/174119/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gymnocladus dioicus",
+          "Kentucky Coffeetree",
+          "62.0'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gymnocladus dioicus",
+            "href": "/Browse/Sites/39362/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "Kentucky Coffeetree",
+            "href": "/Browse/Sites/39362/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "62.0'",
+            "href": "/Browse/Trees/174123/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/174123/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "-",
+          "180''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/39362/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39362/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/174120/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "-",
+          "177''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/39362/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/39362/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "177''",
+            "href": "/Browse/Trees/174121/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus shumardii",
+          "Shumard's Oak",
+          "101.0'",
+          "175''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus shumardii",
+            "href": "/Browse/Sites/39362/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+          },
+          {
+            "text": "Shumard's Oak",
+            "href": "/Browse/Sites/39362/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/174122/Details"
+          },
+          {
+            "text": "175''",
+            "href": "/Browse/Trees/174122/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 02.096, -084 29.416",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-city",
+      "County": "Fayette"
+    },
+    "state": {
+      "text": "Kentucky (US)",
+      "href": "/Browse/States/15/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

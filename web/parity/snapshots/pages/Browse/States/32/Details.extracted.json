@@ -1,0 +1,560 @@
+{
+  "stateId": 32,
+  "summary": {
+    "Name": "New York",
+    "Code": "NY",
+    "RHI5": "200.52",
+    "RHI10": "173.73",
+    "RHI20": "155.42",
+    "RGI5": "31.90",
+    "RGI10": "25.99",
+    "RGI20": "21.52",
+    "Trees measured": "5019",
+    "Last measurement date": "12/26/2025"
+  },
+  "location": {
+    "Coordinates": "42 44.798, -075 46.550",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "103.9'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/States/32/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/States/32/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "103.9'",
+            "href": "/Browse/Trees/263831/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/264497/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies balsamea var. balsamea",
+          "Balsam Fir",
+          "108.7'",
+          "68''",
+          "17.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea var. balsamea",
+            "href": "/Browse/States/32/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/States/32/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "108.7'",
+            "href": "/Browse/Trees/228334/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/228334/Details"
+          },
+          {
+            "text": "17.0'",
+            "href": "/Browse/Trees/228334/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies cephalonica",
+          "Greek Fir",
+          "105.5'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies cephalonica",
+            "href": "/Browse/States/32/Species/Abies%20cephalonica%20(Greek%20Fir)/Details"
+          },
+          {
+            "text": "Greek Fir",
+            "href": "/Browse/States/32/Species/Abies%20cephalonica%20(Greek%20Fir)/Details"
+          },
+          {
+            "text": "105.5'",
+            "href": "/Browse/Trees/226043/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/226042/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies cilicica",
+          "Cilician Fir",
+          "51.3'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies cilicica",
+            "href": "/Browse/States/32/Species/Abies%20cilicica%20(Cilician%20Fir)/Details"
+          },
+          {
+            "text": "Cilician Fir",
+            "href": "/Browse/States/32/Species/Abies%20cilicica%20(Cilician%20Fir)/Details"
+          },
+          {
+            "text": "51.3'",
+            "href": "/Browse/Trees/226135/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/226135/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "113.0'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/States/32/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/32/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "113.0'",
+            "href": "/Browse/Trees/281825/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/281825/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies concolor var. concolor",
+          "White Fir",
+          "76.3'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. concolor",
+            "href": "/Browse/States/32/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/32/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "76.3'",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/243132/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies firma",
+          "Momi Fir",
+          "35.6'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies firma",
+            "href": "/Browse/States/32/Species/Abies%20firma%20(Momi%20Fir)/Details"
+          },
+          {
+            "text": "Momi Fir",
+            "href": "/Browse/States/32/Species/Abies%20firma%20(Momi%20Fir)/Details"
+          },
+          {
+            "text": "35.6'",
+            "href": "/Browse/Trees/282346/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/282346/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies fraseri",
+          "Fraser Fir",
+          "26.5'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies fraseri",
+            "href": "/Browse/States/32/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "Fraser Fir",
+            "href": "/Browse/States/32/Species/Abies%20fraseri%20(Fraser%20Fir)/Details"
+          },
+          {
+            "text": "26.5'",
+            "href": "/Browse/Trees/282345/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/282345/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies grandis",
+          "Grand Fir",
+          "60.1'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis",
+            "href": "/Browse/States/32/Species/Abies%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/States/32/Species/Abies%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "60.1'",
+            "href": "/Browse/Trees/282344/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/282344/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies holophylla",
+          "Manchurian Fir",
+          "87.3'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies holophylla",
+            "href": "/Browse/States/32/Species/Abies%20holophylla%20(Manchurian%20Fir)/Details"
+          },
+          {
+            "text": "Manchurian Fir",
+            "href": "/Browse/States/32/Species/Abies%20holophylla%20(Manchurian%20Fir)/Details"
+          },
+          {
+            "text": "87.3'",
+            "href": "/Browse/Trees/226017/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/226017/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 327 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "184 Main St., Moravia, NY",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "184 Main St., Moravia, NY",
+            "href": "/Browse/Sites/20950/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abraham Lincoln Park",
+          "136.48",
+          "131.49",
+          "9.41",
+          "8.04"
+        ],
+        "links": [
+          {
+            "text": "Abraham Lincoln Park",
+            "href": "/Browse/Sites/40889/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alexander Preserve",
+          "109.46",
+          "-",
+          "10.88",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alexander Preserve",
+            "href": "/Browse/Sites/41347/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "All Saints Chapel",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "All Saints Chapel",
+            "href": "/Browse/Sites/39693/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alley Pond Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alley Pond Park",
+            "href": "/Browse/Sites/41405/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Allison Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Allison Park",
+            "href": "/Browse/Sites/41412/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ampersand Basin",
+          "117.94",
+          "109.02",
+          "12.54",
+          "10.53"
+        ],
+        "links": [
+          {
+            "text": "Ampersand Basin",
+            "href": "/Browse/Sites/41545/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ampersand Mountain",
+          "122.74",
+          "113.45",
+          "10.83",
+          "8.89"
+        ],
+        "links": [
+          {
+            "text": "Ampersand Mountain",
+            "href": "/Browse/Sites/39859/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ascent Of Mount Van Dorrien",
+          "107.60",
+          "-",
+          "11.23",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ascent Of Mount Van Dorrien",
+            "href": "/Browse/Sites/41553/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bailey Arboretum",
+          "110.04",
+          "-",
+          "0.00",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bailey Arboretum",
+            "href": "/Browse/Sites/41395/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 182 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

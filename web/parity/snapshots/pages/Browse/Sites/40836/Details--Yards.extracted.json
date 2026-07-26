@@ -1,0 +1,157 @@
+{
+  "siteId": 40836,
+  "summary": {
+    "Name": "Cedar Creek",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "05/04/2003",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/04/2003",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/cedar_creek.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer leucoderme",
+          "Chalk Maple",
+          "14.00 yd",
+          "27''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer leucoderme",
+            "href": "/Browse/Sites/40836/Species/Acer%20leucoderme%20(Chalk%20Maple)/Details"
+          },
+          {
+            "text": "Chalk Maple",
+            "href": "/Browse/Sites/40836/Species/Acer%20leucoderme%20(Chalk%20Maple)/Details"
+          },
+          {
+            "text": "14.00 yd",
+            "href": "/Browse/Trees/238096/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/238096/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "39.30 yd",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40836/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40836/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "39.30 yd",
+            "href": "/Browse/Trees/238101/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/238100/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus coccinea",
+          "Scarlet Oak",
+          "41.27 yd",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus coccinea",
+            "href": "/Browse/Sites/40836/Species/Quercus%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "Scarlet Oak",
+            "href": "/Browse/Sites/40836/Species/Quercus%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "41.27 yd",
+            "href": "/Browse/Trees/238099/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/238098/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 45.743, -083 11.378",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Oconee"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

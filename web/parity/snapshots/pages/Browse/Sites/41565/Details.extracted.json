@@ -1,0 +1,297 @@
+{
+  "siteId": 41565,
+  "summary": {
+    "Name": "Saranac Lakes Wild Forest",
+    "RHI5": "103.82",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.18",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "20",
+    "Last measurement date": "12/01/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "86,000 discontinuous acres including 19,000 acres of water."
+  },
+  "visits": [
+    {
+      "visited": "12/01/2017",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "(none)",
+      "comments": "86,000 discontinuous acres including 19,000 acres of water."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "87.0'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41565/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41565/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "87.0'",
+            "href": "/Browse/Trees/265398/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/265398/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "76.4'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/41565/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/41565/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "76.4'",
+            "href": "/Browse/Trees/265399/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/265399/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "81.0'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/41565/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/41565/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/265400/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/265400/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus nigra",
+          "Black Ash",
+          "72.5'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus nigra",
+            "href": "/Browse/Sites/41565/Species/Fraxinus%20nigra%20(Black%20Ash)/Details"
+          },
+          {
+            "text": "Black Ash",
+            "href": "/Browse/Sites/41565/Species/Fraxinus%20nigra%20(Black%20Ash)/Details"
+          },
+          {
+            "text": "72.5'",
+            "href": "/Browse/Trees/265402/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/265402/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "97.5'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/41565/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/41565/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "97.5'",
+            "href": "/Browse/Trees/265405/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/265404/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "136.6'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41565/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41565/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "136.6'",
+            "href": "/Browse/Trees/265407/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/265407/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja occidentalis",
+          "Arborvitae",
+          "85.8'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja occidentalis",
+            "href": "/Browse/Sites/41565/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "Arborvitae",
+            "href": "/Browse/Sites/41565/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "85.8'",
+            "href": "/Browse/Trees/265411/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/265410/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "112.2'",
+          "137''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/41565/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/41565/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "112.2'",
+            "href": "/Browse/Trees/265417/Details"
+          },
+          {
+            "text": "137''",
+            "href": "/Browse/Trees/265412/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 19.427, -074 12.166",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

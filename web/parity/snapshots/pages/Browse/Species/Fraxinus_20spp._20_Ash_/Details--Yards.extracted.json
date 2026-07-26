@@ -1,0 +1,109 @@
+{
+  "botanicalName": "Fraxinus spp.",
+  "commonName": "Ash",
+  "global": {
+    "maxHeight": {
+      "text": "41.80 yd",
+      "href": "/Browse/Trees/169850/Details"
+    },
+    "maxGirth": {
+      "text": "200''",
+      "href": "/Browse/Trees/243167/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Connecticut",
+          "21.67 yd",
+          "200''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "21.67 yd",
+            "href": "/Browse/Trees/243167/Details"
+          },
+          {
+            "text": "200''",
+            "href": "/Browse/Trees/243167/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana",
+          "41.80 yd",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana",
+            "href": "/Browse/States/13/Details"
+          },
+          {
+            "text": "41.80 yd",
+            "href": "/Browse/Trees/169850/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/169861/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Minnesota",
+          "-",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Minnesota",
+            "href": "/Browse/States/21/Details"
+          },
+          null,
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/239870/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

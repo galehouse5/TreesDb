@@ -1,0 +1,350 @@
+{
+  "siteId": 41012,
+  "summary": {
+    "Name": "Beech Creek In Overflow National Wildlife Refuge",
+    "RHI5": "130.96",
+    "RHI10": "127.12",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.65",
+    "RGI10": "10.41",
+    "RGI20": "(not enough data)",
+    "Trees measured": "34",
+    "Last measurement date": "07/04/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "12,247 Acres in the Overlow National Wildlife Refuge. 239 Acres tract along Beech Creek featuring mature Sugar Maple and Beech"
+  },
+  "visits": [
+    {
+      "visited": "07/04/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "12,247 Acres in the Overlow National Wildlife Refuge. 239 Acres tract along Beech Creek featuring mature Sugar Maple and Beech"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer floridanum",
+          "Southern Sugar Maple",
+          "91.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer floridanum",
+            "href": "/Browse/Sites/41012/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/Sites/41012/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "91.5'",
+            "href": "/Browse/Trees/243097/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "46.3'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/Sites/41012/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/Sites/41012/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "46.3'",
+            "href": "/Browse/Trees/243096/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/243096/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "118.7'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/41012/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/41012/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "118.7'",
+            "href": "/Browse/Trees/243098/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/243098/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "121.4'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41012/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41012/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "121.4'",
+            "href": "/Browse/Trees/243099/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/243099/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "114.8'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/41012/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/41012/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "114.8'",
+            "href": "/Browse/Trees/243100/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/243100/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "113.6'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41012/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41012/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "113.6'",
+            "href": "/Browse/Trees/243101/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/243101/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "131.6'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/41012/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/41012/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "131.6'",
+            "href": "/Browse/Trees/243102/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/243102/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "122.4'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41012/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41012/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "122.4'",
+            "href": "/Browse/Trees/243103/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/243104/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "115.0'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/41012/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/41012/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "115.0'",
+            "href": "/Browse/Trees/243105/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/243105/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "67.1'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/41012/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/41012/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "67.1'",
+            "href": "/Browse/Trees/243107/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/243107/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 05.228, -091 40.091",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Ashley"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

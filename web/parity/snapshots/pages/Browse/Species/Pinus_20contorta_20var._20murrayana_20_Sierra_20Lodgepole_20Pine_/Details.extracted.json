@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Pinus contorta var. murrayana",
+  "commonName": "Sierra Lodgepole Pine",
+  "global": {
+    "maxHeight": {
+      "text": "150.5'",
+      "href": "/Browse/Trees/241869/Details"
+    },
+    "maxGirth": {
+      "text": "163''",
+      "href": "/Browse/Trees/320698/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "150.5'",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "150.5'",
+            "href": "/Browse/Trees/241869/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/320698/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

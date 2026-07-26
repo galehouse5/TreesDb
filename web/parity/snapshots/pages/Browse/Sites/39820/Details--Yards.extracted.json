@@ -1,0 +1,383 @@
+{
+  "siteId": 39820,
+  "summary": {
+    "Name": "Oakwood",
+    "RHI5": "34.987",
+    "RHI10": "31.393",
+    "RHI20": "25.615",
+    "RGI5": "3.978",
+    "RGI10": "3.315",
+    "RGI20": "2.525",
+    "Trees measured": "36",
+    "Last measurement date": "11/23/2022",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/23/2022",
+      "visitors": "Turner Sharp and Bill Schlier",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/03/2013",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/15/2007",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer platanoides",
+          "Norway Maple",
+          "24.37 yd",
+          "96''",
+          "16.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer platanoides",
+            "href": "/Browse/Sites/39820/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "Norway Maple",
+            "href": "/Browse/Sites/39820/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "24.37 yd",
+            "href": "/Browse/Trees/283776/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/283776/Details"
+          },
+          {
+            "text": "16.67 yd",
+            "href": "/Browse/Trees/283776/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus hippocastanum",
+          "Horse Chestnut",
+          "16.23 yd",
+          "77''",
+          "23.33 yd"
+        ],
+        "links": [
+          {
+            "text": "Aesculus hippocastanum",
+            "href": "/Browse/Sites/39820/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "Horse Chestnut",
+            "href": "/Browse/Sites/39820/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "16.23 yd",
+            "href": "/Browse/Trees/203606/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/203606/Details"
+          },
+          {
+            "text": "23.33 yd",
+            "href": "/Browse/Trees/203606/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "28.77 yd",
+          "82''",
+          "14.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/39820/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/39820/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "28.77 yd",
+            "href": "/Browse/Trees/291301/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/291282/Details"
+          },
+          {
+            "text": "14.00 yd",
+            "href": "/Browse/Trees/291282/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Castanea mollissima",
+          "Chinese Chestnut",
+          "23.73 yd",
+          "69''",
+          "12.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Castanea mollissima",
+            "href": "/Browse/Sites/39820/Species/Castanea%20mollissima%20(Chinese%20Chestnut)/Details"
+          },
+          {
+            "text": "Chinese Chestnut",
+            "href": "/Browse/Sites/39820/Species/Castanea%20mollissima%20(Chinese%20Chestnut)/Details"
+          },
+          {
+            "text": "23.73 yd",
+            "href": "/Browse/Trees/283757/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/283757/Details"
+          },
+          {
+            "text": "12.00 yd",
+            "href": "/Browse/Trees/283757/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "22.73 yd",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39820/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39820/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "22.73 yd",
+            "href": "/Browse/Trees/291300/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/291300/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Franklinia alatamaha",
+          "Franklin Tree",
+          "6.23 yd",
+          "9''",
+          "4.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Franklinia alatamaha",
+            "href": "/Browse/Sites/39820/Species/Franklinia%20alatamaha%20(Franklin%20Tree)/Details"
+          },
+          {
+            "text": "Franklin Tree",
+            "href": "/Browse/Sites/39820/Species/Franklinia%20alatamaha%20(Franklin%20Tree)/Details"
+          },
+          {
+            "text": "6.23 yd",
+            "href": "/Browse/Trees/291273/Details"
+          },
+          {
+            "text": "9''",
+            "href": "/Browse/Trees/291273/Details"
+          },
+          {
+            "text": "4.00 yd",
+            "href": "/Browse/Trees/291273/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "-",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/39820/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/39820/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          null,
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/291280/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca var. opaca",
+          "American Holly",
+          "20.13 yd",
+          "56''",
+          "14.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca var. opaca",
+            "href": "/Browse/Sites/39820/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/39820/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "20.13 yd",
+            "href": "/Browse/Trees/291285/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/291285/Details"
+          },
+          {
+            "text": "14.00 yd",
+            "href": "/Browse/Trees/291285/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "24.40 yd",
+          "113''",
+          "17.33 yd"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/39820/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/39820/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "24.40 yd",
+            "href": "/Browse/Trees/291289/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/291289/Details"
+          },
+          {
+            "text": "17.33 yd",
+            "href": "/Browse/Trees/291289/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "40.60 yd",
+          "155''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39820/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39820/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "40.60 yd",
+            "href": "/Browse/Trees/291281/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/291276/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 22 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 15.871, -081 32.590",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Wood"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

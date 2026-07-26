@@ -1,0 +1,185 @@
+{
+  "siteId": 40871,
+  "summary": {
+    "Name": "Joshua Tree National Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "10/01/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "The Park is also located in Riverside County"
+  },
+  "visits": [
+    {
+      "visited": "10/01/2009",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "The Park is also located in Riverside County"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus monophylla",
+          "Singleleaf Pinyon",
+          "28.1'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus monophylla",
+            "href": "/Browse/Sites/40871/Species/Pinus%20monophylla%20(Singleleaf%20Pinyon)/Details"
+          },
+          {
+            "text": "Singleleaf Pinyon",
+            "href": "/Browse/Sites/40871/Species/Pinus%20monophylla%20(Singleleaf%20Pinyon)/Details"
+          },
+          {
+            "text": "28.1'",
+            "href": "/Browse/Trees/239525/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/239525/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washingtonia filifera",
+          "California Fan Palm",
+          "67.6'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washingtonia filifera",
+            "href": "/Browse/Sites/40871/Species/Washingtonia%20filifera%20(California%20Fan%20Palm)/Details"
+          },
+          {
+            "text": "California Fan Palm",
+            "href": "/Browse/Sites/40871/Species/Washingtonia%20filifera%20(California%20Fan%20Palm)/Details"
+          },
+          {
+            "text": "67.6'",
+            "href": "/Browse/Trees/239519/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/239521/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Yucca brevifolia var. brevifolia",
+          "Joshua Tree",
+          "40.2'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yucca brevifolia var. brevifolia",
+            "href": "/Browse/Sites/40871/Species/Yucca%20brevifolia%20var.%20brevifolia%20(Joshua%20Tree)/Details"
+          },
+          {
+            "text": "Joshua Tree",
+            "href": "/Browse/Sites/40871/Species/Yucca%20brevifolia%20var.%20brevifolia%20(Joshua%20Tree)/Details"
+          },
+          {
+            "text": "40.2'",
+            "href": "/Browse/Trees/239524/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/239524/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Yucca schidigera",
+          "Mojave Yucca",
+          "13.8'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yucca schidigera",
+            "href": "/Browse/Sites/40871/Species/Yucca%20schidigera%20(Mojave%20Yucca)/Details"
+          },
+          {
+            "text": "Mojave Yucca",
+            "href": "/Browse/Sites/40871/Species/Yucca%20schidigera%20(Mojave%20Yucca)/Details"
+          },
+          {
+            "text": "13.8'",
+            "href": "/Browse/Trees/239523/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/239523/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 04.778, -116 02.250",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public, National Park",
+      "County": "San Bernardino"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,293 @@
+{
+  "stateId": 31,
+  "summary": {
+    "Name": "Nevada",
+    "Code": "NV",
+    "RHI5": "25.613",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.789",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "55",
+    "Last measurement date": "03/14/2015"
+  },
+  "location": {
+    "Coordinates": "38 30.123, -117 01.359",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "38.00 yd",
+          "117''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/States/31/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/31/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "38.00 yd",
+            "href": "/Browse/Trees/243302/Details"
+          },
+          {
+            "text": "117''",
+            "href": "/Browse/Trees/243302/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus longaeva",
+          "Great Basin Bristlecone Pine",
+          "25.10 yd",
+          "181''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus longaeva",
+            "href": "/Browse/States/31/Species/Pinus%20longaeva%20(Great%20Basin%20Bristlecone%20Pine)/Details"
+          },
+          {
+            "text": "Great Basin Bristlecone Pine",
+            "href": "/Browse/States/31/Species/Pinus%20longaeva%20(Great%20Basin%20Bristlecone%20Pine)/Details"
+          },
+          {
+            "text": "25.10 yd",
+            "href": "/Browse/Trees/243306/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/243305/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus monophylla",
+          "Singleleaf Pinyon",
+          "10.97 yd",
+          "73''",
+          "12.83 yd"
+        ],
+        "links": [
+          {
+            "text": "Pinus monophylla",
+            "href": "/Browse/States/31/Species/Pinus%20monophylla%20(Singleleaf%20Pinyon)/Details"
+          },
+          {
+            "text": "Singleleaf Pinyon",
+            "href": "/Browse/States/31/Species/Pinus%20monophylla%20(Singleleaf%20Pinyon)/Details"
+          },
+          {
+            "text": "10.97 yd",
+            "href": "/Browse/Trees/239538/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/239584/Details"
+          },
+          {
+            "text": "12.83 yd",
+            "href": "/Browse/Trees/239584/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "44.50 yd",
+          "203''",
+          "17.10 yd"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/States/31/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/States/31/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "44.50 yd",
+            "href": "/Browse/Trees/243293/Details"
+          },
+          {
+            "text": "203''",
+            "href": "/Browse/Trees/243293/Details"
+          },
+          {
+            "text": "17.10 yd",
+            "href": "/Browse/Trees/243293/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Yucca brevifolia var. jaegeriana",
+          "Jaeger's Joshua Tree",
+          "9.50 yd",
+          "108''",
+          "9.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Yucca brevifolia var. jaegeriana",
+            "href": "/Browse/States/31/Species/Yucca%20brevifolia%20var.%20jaegeriana%20(Jaeger's%20Joshua%20Tree)/Details"
+          },
+          {
+            "text": "Jaeger's Joshua Tree",
+            "href": "/Browse/States/31/Species/Yucca%20brevifolia%20var.%20jaegeriana%20(Jaeger's%20Joshua%20Tree)/Details"
+          },
+          {
+            "text": "9.50 yd",
+            "href": "/Browse/Trees/239588/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/239585/Details"
+          },
+          {
+            "text": "9.67 yd",
+            "href": "/Browse/Trees/239585/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Lee Canyon",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lee Canyon",
+            "href": "/Browse/Sites/41025/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Red Rock Canyon",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Red Rock Canyon",
+            "href": "/Browse/Sites/40873/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Of Las Vegas",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Of Las Vegas",
+            "href": "/Browse/Sites/40875/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

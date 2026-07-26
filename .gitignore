@@ -3,3 +3,7 @@
 bin
 obj
 packages
+# Design-audit screenshots: regenerable via web/scripts/design-audit/capture.ts, ~25MB
+docs/design/audit/**/*.png
+web/scripts/design-audit/shots/
+web/skills-lock.json

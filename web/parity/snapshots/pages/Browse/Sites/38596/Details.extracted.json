@@ -1,0 +1,104 @@
+{
+  "siteId": 38596,
+  "summary": {
+    "Name": "Vineland",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "08/01/2015",
+    "Ownership contact": "Smaltz Osborne Ave. Call 856-563-1283 Have to sell Do Not Want to See Trees Cut Down. Any Help is Good.",
+    "General comments": "Trees in a Grove Can Be Seen from Delsea Dr. Over 150' Tall and at The Base 203\" Around 6' Diameter Can Only Guess Over 300 Years Old ? Oak, Poplar, Maple all Giant, Old and Appear in Good Health. House is for sale and a Shopping Mall and Walmart Close So Look Now"
+  },
+  "visits": [
+    {
+      "visited": "08/01/2015",
+      "visitors": "Jimmy Delastings and Jed Delastings",
+      "tripReportUrl": "(none)",
+      "comments": "Trees in a Grove Can Be Seen from Delsea Dr. Over 150' Tall and at The Base 203\" Around 6' Diameter Can Only Guess Over 300 Years Old ? Oak, Poplar, Maple all Giant, Old and Appear in Good Health. House is for sale and a Shopping Mall and Walmart Close So Look Now"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus durata var. gabrielensis",
+          "Leather Oak",
+          "128.0'",
+          "203''",
+          "45.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus durata var. gabrielensis",
+            "href": "/Browse/Sites/38596/Species/Quercus%20durata%20var.%20gabrielensis%20(Leather%20Oak)/Details"
+          },
+          {
+            "text": "Leather Oak",
+            "href": "/Browse/Sites/38596/Species/Quercus%20durata%20var.%20gabrielensis%20(Leather%20Oak)/Details"
+          },
+          {
+            "text": "128.0'",
+            "href": "/Browse/Trees/148114/Details"
+          },
+          {
+            "text": "203''",
+            "href": "/Browse/Trees/148114/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/148114/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 29.289, -075 02.244",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Privet",
+      "County": "Cumberland"
+    },
+    "state": {
+      "text": "New Jersey (US)",
+      "href": "/Browse/States/29/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

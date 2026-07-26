@@ -1,0 +1,350 @@
+{
+  "siteId": 40697,
+  "summary": {
+    "Name": "Camp Creek",
+    "RHI5": "45.342",
+    "RHI10": "41.898",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.982",
+    "RGI10": "2.258",
+    "RGI20": "(not enough data)",
+    "Trees measured": "37",
+    "Last measurement date": "09/21/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured on an alluvial flat."
+  },
+  "visits": [
+    {
+      "visited": "09/21/2013",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured on an alluvial flat."
+    },
+    {
+      "visited": "06/13/2005",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/camp_creek.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "30.78 m",
+          "97 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40697/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40697/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "30.78 m",
+            "href": "/Browse/Trees/235228/Details"
+          },
+          {
+            "text": "97 cm",
+            "href": "/Browse/Trees/235228/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "40.08 m",
+          "180 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40697/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40697/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "40.08 m",
+            "href": "/Browse/Trees/235237/Details"
+          },
+          {
+            "text": "180 cm",
+            "href": "/Browse/Trees/235237/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "39.93 m",
+          "180 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40697/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40697/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "39.93 m",
+            "href": "/Browse/Trees/249340/Details"
+          },
+          {
+            "text": "180 cm",
+            "href": "/Browse/Trees/249340/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "15.54 m",
+          "51 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/40697/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/40697/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "15.54 m",
+            "href": "/Browse/Trees/249341/Details"
+          },
+          {
+            "text": "51 cm",
+            "href": "/Browse/Trees/249341/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "38.34 m",
+          "356 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40697/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40697/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "38.34 m",
+            "href": "/Browse/Trees/235227/Details"
+          },
+          {
+            "text": "356 cm",
+            "href": "/Browse/Trees/235226/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "34.84 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/40697/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/40697/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "34.84 m",
+            "href": "/Browse/Trees/235222/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Halesia tetraptera var. monticola",
+          "Mountain Silverbell",
+          "32.13 m",
+          "127 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Halesia tetraptera var. monticola",
+            "href": "/Browse/Sites/40697/Species/Halesia%20tetraptera%20var.%20monticola%20(Mountain%20Silverbell)/Details"
+          },
+          {
+            "text": "Mountain Silverbell",
+            "href": "/Browse/Sites/40697/Species/Halesia%20tetraptera%20var.%20monticola%20(Mountain%20Silverbell)/Details"
+          },
+          {
+            "text": "32.13 m",
+            "href": "/Browse/Trees/249342/Details"
+          },
+          {
+            "text": "127 cm",
+            "href": "/Browse/Trees/249342/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "36.85 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/40697/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/40697/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "36.85 m",
+            "href": "/Browse/Trees/235242/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "43.19 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40697/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40697/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "43.19 m",
+            "href": "/Browse/Trees/235244/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "40.39 m",
+          "175 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40697/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40697/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "40.39 m",
+            "href": "/Browse/Trees/249344/Details"
+          },
+          {
+            "text": "175 cm",
+            "href": "/Browse/Trees/249344/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 46.766, -083 19.722",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Rabun"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

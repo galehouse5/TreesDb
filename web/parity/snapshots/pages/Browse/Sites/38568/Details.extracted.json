@@ -1,0 +1,353 @@
+{
+  "siteId": 38568,
+  "summary": {
+    "Name": "CFSP-River Cabins And Flats",
+    "RHI5": "126.96",
+    "RHI10": "116.49",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.73",
+    "RGI10": "7.79",
+    "RGI20": "(not enough data)",
+    "Trees measured": "20",
+    "Last measurement date": "08/06/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "Measurements made between 1/1/2002 and 8/6/2004"
+  },
+  "visits": [
+    {
+      "visited": "08/06/2004",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "Measurements made between 1/1/2002 and 8/6/2004"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "100.4'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/38568/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38568/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "100.4'",
+            "href": "/Browse/Trees/145382/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/145382/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "107.8'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/38568/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/38568/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "107.8'",
+            "href": "/Browse/Trees/145375/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/145375/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "37.4'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/38568/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/38568/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "37.4'",
+            "href": "/Browse/Trees/145387/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/145387/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "106.2'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/38568/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/38568/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "106.2'",
+            "href": "/Browse/Trees/145374/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/145373/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "120.6'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38568/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38568/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "120.6'",
+            "href": "/Browse/Trees/145388/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/145388/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "128.3'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38568/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38568/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "128.3'",
+            "href": "/Browse/Trees/145392/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/145392/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "15.1'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/38568/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/38568/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "15.1'",
+            "href": "/Browse/Trees/145386/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/145386/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "86.2'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/38568/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/38568/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "86.2'",
+            "href": "/Browse/Trees/145378/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/145378/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "84.2'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/38568/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/38568/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "84.2'",
+            "href": "/Browse/Trees/145381/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/145381/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "136.6'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38568/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38568/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "136.6'",
+            "href": "/Browse/Trees/145383/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/145383/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 19.566, -079 11.547",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Forest"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

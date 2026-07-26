@@ -1,0 +1,123 @@
+{
+  "siteId": 39260,
+  "summary": {
+    "Name": "Atisoen Village",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "02/01/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "Located near Intersection of Route 206 and Quaker Bridge Road"
+  },
+  "visits": [
+    {
+      "visited": "02/01/2009",
+      "visitors": "Barry Caselli",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_jersey/20090210-pitchpine/more_measuring_today.htm",
+      "comments": "Located near Intersection of Route 206 and Quaker Bridge Road"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "-",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/39260/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/39260/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/170130/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "-",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/39260/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/39260/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/170128/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 44.402, -074 43.644",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Burlington"
+    },
+    "state": {
+      "text": "New Jersey (US)",
+      "href": "/Browse/States/29/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

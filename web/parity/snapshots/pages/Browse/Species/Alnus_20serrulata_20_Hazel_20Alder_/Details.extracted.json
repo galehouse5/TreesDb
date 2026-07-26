@@ -1,0 +1,132 @@
+{
+  "botanicalName": "Alnus serrulata",
+  "commonName": "Hazel Alder",
+  "global": {
+    "maxHeight": {
+      "text": "43.5'",
+      "href": "/Browse/Trees/252637/Details"
+    },
+    "maxGirth": {
+      "text": "17''",
+      "href": "/Browse/Trees/313219/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "27.7'",
+          "8''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "27.7'",
+            "href": "/Browse/Trees/280963/Details"
+          },
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/280963/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "43.5'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "43.5'",
+            "href": "/Browse/Trees/252637/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/252638/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "17.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "17.2'",
+            "href": "/Browse/Trees/312634/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "30.5'",
+          "17''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "30.5'",
+            "href": "/Browse/Trees/313219/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/313219/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

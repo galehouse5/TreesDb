@@ -1,0 +1,101 @@
+{
+  "siteId": 40974,
+  "summary": {
+    "Name": "Torrey Pines State Reserve",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "01/21/2019",
+    "Ownership contact": "(no data)",
+    "General comments": "2000 Acres"
+  },
+  "visits": [
+    {
+      "visited": "01/21/2019",
+      "visitors": "Doug Bidlack",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "2000 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus torreyana",
+          "Torrey Pine",
+          "88.5'",
+          "149''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus torreyana",
+            "href": "/Browse/Sites/40974/Species/Pinus%20torreyana%20(Torrey%20Pine)/Details"
+          },
+          {
+            "text": "Torrey Pine",
+            "href": "/Browse/Sites/40974/Species/Pinus%20torreyana%20(Torrey%20Pine)/Details"
+          },
+          {
+            "text": "88.5'",
+            "href": "/Browse/Trees/241857/Details"
+          },
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/241857/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 55.455, -117 15.474",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "San Diego"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

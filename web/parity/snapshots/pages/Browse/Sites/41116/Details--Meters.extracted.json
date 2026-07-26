@@ -1,0 +1,107 @@
+{
+  "siteId": 41116,
+  "summary": {
+    "Name": "Bowdoin Pines",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "29",
+    "Last measurement date": "09/01/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "Pines are bordered by ME 123 and 24"
+  },
+  "visits": [
+    {
+      "visited": "09/01/2012",
+      "visitors": "Tom Howard and Jack Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Pines are bordered by ME 123 and 24"
+    },
+    {
+      "visited": "12/19/2006",
+      "visitors": "John Knuerr and Ann Goodale",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/maine/bowdoin_college_pines.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "38.59 m",
+          "264 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41116/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41116/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "38.59 m",
+            "href": "/Browse/Trees/249722/Details"
+          },
+          {
+            "text": "264 cm",
+            "href": "/Browse/Trees/249686/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 54.653, -069 57.458",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Cumberland"
+    },
+    "state": {
+      "text": "Maine (US)",
+      "href": "/Browse/States/19/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

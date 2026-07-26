@@ -1,0 +1,353 @@
+{
+  "siteId": 719,
+  "summary": {
+    "Name": "Davey Woods Nature Preserve, OH",
+    "RHI5": "131.18",
+    "RHI10": "123.28",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.92",
+    "RGI10": "9.23",
+    "RGI20": "(not enough data)",
+    "Trees measured": "29",
+    "Last measurement date": "07/10/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/10/2009",
+      "visitors": "Robert Leverett",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/ohio/davey_woods_oh.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/17/2008",
+      "visitors": "Randy Brown",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/ohio/daveywoods/davey_woods_nature_preserve_oh.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "93.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/719/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/719/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "93.0'",
+            "href": "/Browse/Trees/9958/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "98.8'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/719/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/719/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "98.8'",
+            "href": "/Browse/Trees/9979/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/9979/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "102.0'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/719/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/719/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "102.0'",
+            "href": "/Browse/Trees/9970/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/9970/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "105.8'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/719/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/719/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "105.8'",
+            "href": "/Browse/Trees/9974/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/9974/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "115.2'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/719/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/719/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "115.2'",
+            "href": "/Browse/Trees/9954/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/9954/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "129.6'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/719/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/719/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "129.6'",
+            "href": "/Browse/Trees/9960/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/9960/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus quadrangulata",
+          "Blue Ash",
+          "113.9'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus quadrangulata",
+            "href": "/Browse/Sites/719/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "Blue Ash",
+            "href": "/Browse/Sites/719/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "113.9'",
+            "href": "/Browse/Trees/9975/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/9975/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "118.6'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/719/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/719/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "118.6'",
+            "href": "/Browse/Trees/9969/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/9969/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "144.5'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/719/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/719/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "144.5'",
+            "href": "/Browse/Trees/166878/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/9965/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "107.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/719/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/719/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/9953/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 23.398, -083 50.838",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Logan"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

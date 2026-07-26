@@ -1,0 +1,162 @@
+{
+  "botanicalName": "Amelanchier laevis",
+  "commonName": "Allegheny Serviceberry",
+  "global": {
+    "maxHeight": {
+      "text": "104.9'",
+      "href": "/Browse/Trees/229345/Details"
+    },
+    "maxGirth": {
+      "text": "70''",
+      "href": "/Browse/Trees/313108/Details"
+    },
+    "maxCrownSpread": {
+      "text": "59.0'",
+      "href": "/Browse/Trees/292507/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maine",
+          "56.3'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maine",
+            "href": "/Browse/States/19/Details"
+          },
+          {
+            "text": "56.3'",
+            "href": "/Browse/Trees/256804/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/256804/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "23.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "23.0'",
+            "href": "/Browse/Trees/226129/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "104.9'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "104.9'",
+            "href": "/Browse/Trees/229345/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/229344/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "51.9'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "51.9'",
+            "href": "/Browse/Trees/222062/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/222062/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "68.3'",
+          "70''",
+          "59.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "68.3'",
+            "href": "/Browse/Trees/312048/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/313108/Details"
+          },
+          {
+            "text": "59.0'",
+            "href": "/Browse/Trees/292507/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

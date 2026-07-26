@@ -1,0 +1,347 @@
+{
+  "siteId": 42066,
+  "summary": {
+    "Name": "Mcdonough Wildlife Preserve",
+    "RHI5": "116.74",
+    "RHI10": "109.03",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.28",
+    "RGI10": "7.34",
+    "RGI20": "(not enough data)",
+    "Trees measured": "24",
+    "Last measurement date": "03/09/2009",
+    "Ownership contact": "City of Vienna Box 5097 Vienna, WV 26105",
+    "General comments": "Trees measured were on north facing slope below the Main Loop Trail"
+  },
+  "visits": [
+    {
+      "visited": "03/09/2009",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/west_virginia/mcdonough.htm",
+      "comments": "Trees measured were on north facing slope below the Main Loop Trail"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "86.0'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/42066/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/42066/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "86.0'",
+            "href": "/Browse/Trees/296164/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/296164/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "102.0'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/42066/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42066/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "102.0'",
+            "href": "/Browse/Trees/296155/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/296155/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "96.5'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/42066/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/42066/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "96.5'",
+            "href": "/Browse/Trees/296161/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/296161/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "89.3'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/42066/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/42066/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "89.3'",
+            "href": "/Browse/Trees/296163/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/296163/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "102.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/42066/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/42066/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "102.9'",
+            "href": "/Browse/Trees/296154/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "109.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42066/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42066/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "109.2'",
+            "href": "/Browse/Trees/296151/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "58.4'",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/42066/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/42066/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "58.4'",
+            "href": "/Browse/Trees/296165/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/296165/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "101.6'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/42066/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/42066/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "101.6'",
+            "href": "/Browse/Trees/296156/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/296156/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "106.7'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/42066/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/42066/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "106.7'",
+            "href": "/Browse/Trees/296153/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/296170/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "90.2'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/42066/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/42066/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "90.2'",
+            "href": "/Browse/Trees/296162/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/296171/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 19.501, -081 31.418",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public- City Owned",
+      "County": "Wood County"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

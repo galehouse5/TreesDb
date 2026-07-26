@@ -1,0 +1,340 @@
+{
+  "siteId": 40939,
+  "summary": {
+    "Name": "White River National Wildlife Refuge",
+    "RHI5": "34.034",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.401",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "12/29/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured along trail leading to the state champion Bald Cypress."
+  },
+  "visits": [
+    {
+      "visited": "12/29/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured along trail leading to the state champion Bald Cypress."
+    },
+    {
+      "visited": "03/08/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "09/21/2006",
+      "visitors": "Don Bragg and Kirby Sneed",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/arkansas/water_tupelo/water_tupelo_champion.htm",
+      "comments": "160,756 acres located in Desha, Monroe, Phillips, Arkansas Counties."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Crataegus viridis",
+          "Green Hawthorn",
+          "13.72 m",
+          "66 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus viridis",
+            "href": "/Browse/Sites/40939/Species/Crataegus%20viridis%20(Green%20Hawthorn)/Details"
+          },
+          {
+            "text": "Green Hawthorn",
+            "href": "/Browse/Sites/40939/Species/Crataegus%20viridis%20(Green%20Hawthorn)/Details"
+          },
+          {
+            "text": "13.72 m",
+            "href": "/Browse/Trees/241847/Details"
+          },
+          {
+            "text": "66 cm",
+            "href": "/Browse/Trees/241847/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia aquatica",
+          "Water Locust",
+          "31.27 m",
+          "206 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia aquatica",
+            "href": "/Browse/Sites/40939/Species/Gleditsia%20aquatica%20(Water%20Locust)/Details"
+          },
+          {
+            "text": "Water Locust",
+            "href": "/Browse/Sites/40939/Species/Gleditsia%20aquatica%20(Water%20Locust)/Details"
+          },
+          {
+            "text": "31.27 m",
+            "href": "/Browse/Trees/241850/Details"
+          },
+          {
+            "text": "206 cm",
+            "href": "/Browse/Trees/241848/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa aquatica",
+          "Water Tupelo",
+          "23.53 m",
+          "1008 cm",
+          "16.46 m"
+        ],
+        "links": [
+          {
+            "text": "Nyssa aquatica",
+            "href": "/Browse/Sites/40939/Species/Nyssa%20aquatica%20(Water%20Tupelo)/Details"
+          },
+          {
+            "text": "Water Tupelo",
+            "href": "/Browse/Sites/40939/Species/Nyssa%20aquatica%20(Water%20Tupelo)/Details"
+          },
+          {
+            "text": "23.53 m",
+            "href": "/Browse/Trees/241390/Details"
+          },
+          {
+            "text": "1008 cm",
+            "href": "/Browse/Trees/241390/Details"
+          },
+          {
+            "text": "16.46 m",
+            "href": "/Browse/Trees/241389/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "35.97 m",
+          "526 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/40939/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/40939/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "35.97 m",
+            "href": "/Browse/Trees/241727/Details"
+          },
+          {
+            "text": "526 cm",
+            "href": "/Browse/Trees/241727/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus nigra",
+          "Water Oak",
+          "32.95 m",
+          "424 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus nigra",
+            "href": "/Browse/Sites/40939/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+          },
+          {
+            "text": "Water Oak",
+            "href": "/Browse/Sites/40939/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+          },
+          {
+            "text": "32.95 m",
+            "href": "/Browse/Trees/241728/Details"
+          },
+          {
+            "text": "424 cm",
+            "href": "/Browse/Trees/241728/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus texana",
+          "Texas Red Oak",
+          "36.18 m",
+          "417 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus texana",
+            "href": "/Browse/Sites/40939/Species/Quercus%20texana%20(Texas%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Texas Red Oak",
+            "href": "/Browse/Sites/40939/Species/Quercus%20texana%20(Texas%20Red%20Oak)/Details"
+          },
+          {
+            "text": "36.18 m",
+            "href": "/Browse/Trees/241852/Details"
+          },
+          {
+            "text": "417 cm",
+            "href": "/Browse/Trees/241851/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix nigra",
+          "Black Willow",
+          "32.00 m",
+          "361 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Salix nigra",
+            "href": "/Browse/Sites/40939/Species/Salix%20nigra%20(Black%20Willow)/Details"
+          },
+          {
+            "text": "Black Willow",
+            "href": "/Browse/Sites/40939/Species/Salix%20nigra%20(Black%20Willow)/Details"
+          },
+          {
+            "text": "32.00 m",
+            "href": "/Browse/Trees/241853/Details"
+          },
+          {
+            "text": "361 cm",
+            "href": "/Browse/Trees/241853/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "33.07 m",
+          "826 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/40939/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/40939/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "33.07 m",
+            "href": "/Browse/Trees/241845/Details"
+          },
+          {
+            "text": "826 cm",
+            "href": "/Browse/Trees/241846/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus crassifolia",
+          "Cedar Elm",
+          "30.85 m",
+          "279 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus crassifolia",
+            "href": "/Browse/Sites/40939/Species/Ulmus%20crassifolia%20(Cedar%20Elm)/Details"
+          },
+          {
+            "text": "Cedar Elm",
+            "href": "/Browse/Sites/40939/Species/Ulmus%20crassifolia%20(Cedar%20Elm)/Details"
+          },
+          {
+            "text": "30.85 m",
+            "href": "/Browse/Trees/241854/Details"
+          },
+          {
+            "text": "279 cm",
+            "href": "/Browse/Trees/241729/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 21.916, -091 07.130",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Arkansas"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

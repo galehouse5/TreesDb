@@ -1,0 +1,129 @@
+{
+  "siteId": 42041,
+  "summary": {
+    "Name": "Ifrane National Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "10/05/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/05/2018",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cedrus atlantica",
+          "Atlas Cedar",
+          "101.4'",
+          "248''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus atlantica",
+            "href": "/Browse/Sites/42041/Species/Cedrus%20atlantica%20(Atlas%20Cedar)/Details"
+          },
+          {
+            "text": "Atlas Cedar",
+            "href": "/Browse/Sites/42041/Species/Cedrus%20atlantica%20(Atlas%20Cedar)/Details"
+          },
+          {
+            "text": "101.4'",
+            "href": "/Browse/Trees/291901/Details"
+          },
+          {
+            "text": "248''",
+            "href": "/Browse/Trees/291901/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus ilex",
+          "Holly Oak",
+          "32.2'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus ilex",
+            "href": "/Browse/Sites/42041/Species/Quercus%20ilex%20(Holly%20Oak)/Details"
+          },
+          {
+            "text": "Holly Oak",
+            "href": "/Browse/Sites/42041/Species/Quercus%20ilex%20(Holly%20Oak)/Details"
+          },
+          {
+            "text": "32.2'",
+            "href": "/Browse/Trees/291902/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/291902/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 24.955, -005 11.423",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Province D’Ifrane"
+    },
+    "state": {
+      "text": "Fez-Meknes, Morocco (MA)",
+      "href": "/Browse/States/275/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

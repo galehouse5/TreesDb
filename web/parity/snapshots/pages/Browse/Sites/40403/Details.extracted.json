@@ -1,0 +1,291 @@
+{
+  "siteId": 40403,
+  "summary": {
+    "Name": "Kalanu Prong",
+    "RHI5": "137.72",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.23",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "03/12/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "Kalanu Prong into False Gap Prong, into Porters Creek into Little Pigeon River"
+  },
+  "visits": [
+    {
+      "visited": "03/12/2006",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/gsmnp/kalanu_prong.htm",
+      "comments": "Kalanu Prong into False Gap Prong, into Porters Creek into Little Pigeon River"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "128.3'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40403/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40403/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "128.3'",
+            "href": "/Browse/Trees/229605/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/229605/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "-",
+          "149''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40403/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40403/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/229606/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "142.6'",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/40403/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/40403/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "142.6'",
+            "href": "/Browse/Trees/229603/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/229602/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "-",
+          "138''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40403/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40403/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          null,
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/229600/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "157.1'",
+          "274''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40403/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40403/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "157.1'",
+            "href": "/Browse/Trees/229610/Details"
+          },
+          {
+            "text": "274''",
+            "href": "/Browse/Trees/229611/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oxydendrum arboreum",
+          "Sourwood",
+          "107.7'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oxydendrum arboreum",
+            "href": "/Browse/Sites/40403/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "Sourwood",
+            "href": "/Browse/Sites/40403/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "107.7'",
+            "href": "/Browse/Trees/229608/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/229608/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus pungens",
+          "Table Mountain Pine",
+          "96.0'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus pungens",
+            "href": "/Browse/Sites/40403/Species/Pinus%20pungens%20(Table%20Mountain%20Pine)/Details"
+          },
+          {
+            "text": "Table Mountain Pine",
+            "href": "/Browse/Sites/40403/Species/Pinus%20pungens%20(Table%20Mountain%20Pine)/Details"
+          },
+          {
+            "text": "96.0'",
+            "href": "/Browse/Trees/229607/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/229607/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "152.9'",
+          "181''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40403/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40403/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "152.9'",
+            "href": "/Browse/Trees/229604/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/229604/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 40.482, -083 21.668",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Cocke"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

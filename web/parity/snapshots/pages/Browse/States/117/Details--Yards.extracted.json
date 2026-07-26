@@ -1,0 +1,275 @@
+{
+  "stateId": 117,
+  "summary": {
+    "Name": "Alajuela",
+    "Code": "AL",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "04/27/2017"
+  },
+  "location": {
+    "Coordinates": "10 27.500, -084 47.500",
+    "Country": "Costa Rica"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus acuminata",
+          "Mexican Alder",
+          "21.23 yd",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus acuminata",
+            "href": "/Browse/States/117/Species/Alnus%20acuminata%20(Mexican%20Alder)/Details"
+          },
+          {
+            "text": "Mexican Alder",
+            "href": "/Browse/States/117/Species/Alnus%20acuminata%20(Mexican%20Alder)/Details"
+          },
+          {
+            "text": "21.23 yd",
+            "href": "/Browse/Trees/214115/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/214115/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ceiba pentandra",
+          "Ceiba",
+          "51.53 yd",
+          "181''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ceiba pentandra",
+            "href": "/Browse/States/117/Species/Ceiba%20pentandra%20(Ceiba)/Details"
+          },
+          {
+            "text": "Ceiba",
+            "href": "/Browse/States/117/Species/Ceiba%20pentandra%20(Ceiba)/Details"
+          },
+          {
+            "text": "51.53 yd",
+            "href": "/Browse/Trees/214112/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/214110/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Escalonia myrilloides var. putens",
+          "Escalonia",
+          "13.23 yd",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Escalonia myrilloides var. putens",
+            "href": "/Browse/States/117/Species/Escalonia%20myrilloides%20var.%20putens%20(Escalonia)/Details"
+          },
+          {
+            "text": "Escalonia",
+            "href": "/Browse/States/117/Species/Escalonia%20myrilloides%20var.%20putens%20(Escalonia)/Details"
+          },
+          {
+            "text": "13.23 yd",
+            "href": "/Browse/Trees/214114/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/214113/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus mexicana",
+          "Mexican Elm",
+          "63.97 yd",
+          "202''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus mexicana",
+            "href": "/Browse/States/117/Species/Ulmus%20mexicana%20(Mexican%20Elm)/Details"
+          },
+          {
+            "text": "Mexican Elm",
+            "href": "/Browse/States/117/Species/Ulmus%20mexicana%20(Mexican%20Elm)/Details"
+          },
+          {
+            "text": "63.97 yd",
+            "href": "/Browse/Trees/253281/Details"
+          },
+          {
+            "text": "202''",
+            "href": "/Browse/Trees/253281/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alajuela Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alajuela Single Tree Sites",
+            "href": "/Browse/Sites/41256/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arenal Volcano National Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arenal Volcano National Park",
+            "href": "/Browse/Sites/40015/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juan Castro Blanco Water Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juan Castro Blanco Water Park",
+            "href": "/Browse/Sites/41255/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Poas Volcano National Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Poas Volcano National Park",
+            "href": "/Browse/Sites/40016/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,1169 @@
+{
+  "columns": [
+    {
+      "header": "Site",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "County",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "State",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RHI5",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RHI10",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RGI5",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RGI10",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Last measurement",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Horse Creek",
+        "Haywood",
+        "North Carolina",
+        "-",
+        "-",
+        "-",
+        "-",
+        "05/24/2026"
+      ],
+      "links": [
+        {
+          "text": "Horse Creek",
+          "href": "/Browse/Sites/42395/Details"
+        },
+        null,
+        {
+          "text": "North Carolina",
+          "href": "/Browse/States/25/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Frozen Head State Park",
+        "Morgan",
+        "Tennessee",
+        "167.14",
+        "160.90",
+        "13.74",
+        "12.84",
+        "05/16/2026"
+      ],
+      "links": [
+        {
+          "text": "Frozen Head State Park",
+          "href": "/Browse/Sites/41233/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Big South Fork",
+        "Scott",
+        "Tennessee",
+        "150.12",
+        "144.20",
+        "10.66",
+        "9.55",
+        "03/28/2026"
+      ],
+      "links": [
+        {
+          "text": "Big South Fork",
+          "href": "/Browse/Sites/42394/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "College Of The South",
+        "Franklin",
+        "Tennessee",
+        "122.10",
+        "97.99",
+        "7.61",
+        "5.94",
+        "02/28/2026"
+      ],
+      "links": [
+        {
+          "text": "College Of The South",
+          "href": "/Browse/Sites/42393/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Shakerag Hollow",
+        "Franklin",
+        "Tennessee",
+        "147.58",
+        "142.49",
+        "12.22",
+        "11.16",
+        "02/28/2026"
+      ],
+      "links": [
+        {
+          "text": "Shakerag Hollow",
+          "href": "/Browse/Sites/41236/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Bearwaller Gap Trail",
+        "Smith",
+        "Tennessee",
+        "127.08",
+        "117.14",
+        "8.36",
+        "6.37",
+        "02/21/2026"
+      ],
+      "links": [
+        {
+          "text": "Bearwaller Gap Trail",
+          "href": "/Browse/Sites/42391/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Winding Stairs Park",
+        "Macon",
+        "Tennessee",
+        "139.06",
+        "130.32",
+        "8.21",
+        "7.18",
+        "02/20/2026"
+      ],
+      "links": [
+        {
+          "text": "Winding Stairs Park",
+          "href": "/Browse/Sites/42390/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Torreya State Park",
+        "Calhoun",
+        "Florida",
+        "120.98",
+        "-",
+        "7.09",
+        "-",
+        "02/19/2026"
+      ],
+      "links": [
+        {
+          "text": "Torreya State Park",
+          "href": "/Browse/Sites/42392/Details"
+        },
+        null,
+        {
+          "text": "Florida",
+          "href": "/Browse/States/8/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Radnor Lake State Park",
+        "Davidson",
+        "Tennessee",
+        "144.36",
+        "137.31",
+        "10.88",
+        "9.84",
+        "01/10/2026"
+      ],
+      "links": [
+        {
+          "text": "Radnor Lake State Park",
+          "href": "/Browse/Sites/42387/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Montgomery Bell State Park",
+        "Dickson",
+        "Tennessee",
+        "144.20",
+        "137.49",
+        "10.88",
+        "9.84",
+        "01/02/2026"
+      ],
+      "links": [
+        {
+          "text": "Montgomery Bell State Park",
+          "href": "/Browse/Sites/42386/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Holly River State Park",
+        "Webster",
+        "West Virginia",
+        "149.02",
+        "143.26",
+        "10.06",
+        "9.08",
+        "12/27/2025"
+      ],
+      "links": [
+        {
+          "text": "Holly River State Park",
+          "href": "/Browse/Sites/39152/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Abraham Lincoln Park",
+        "Monroe",
+        "New York",
+        "136.48",
+        "131.49",
+        "9.41",
+        "8.04",
+        "12/26/2025"
+      ],
+      "links": [
+        {
+          "text": "Abraham Lincoln Park",
+          "href": "/Browse/Sites/40889/Details"
+        },
+        null,
+        {
+          "text": "New York",
+          "href": "/Browse/States/32/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Lucien Morin County Park",
+        "Monroe",
+        "New York",
+        "142.62",
+        "135.45",
+        "9.98",
+        "7.67",
+        "12/26/2025"
+      ],
+      "links": [
+        {
+          "text": "Lucien Morin County Park",
+          "href": "/Browse/Sites/40930/Details"
+        },
+        null,
+        {
+          "text": "New York",
+          "href": "/Browse/States/32/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Ellison Park",
+        "Monroe",
+        "New York",
+        "147.62",
+        "138.13",
+        "9.87",
+        "8.55",
+        "12/26/2025"
+      ],
+      "links": [
+        {
+          "text": "Ellison Park",
+          "href": "/Browse/Sites/42385/Details"
+        },
+        null,
+        {
+          "text": "New York",
+          "href": "/Browse/States/32/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pickett CCC Memorial State Park",
+        "Fentress",
+        "Tennessee",
+        "125.92",
+        "121.50",
+        "9.01",
+        "6.71",
+        "12/20/2025"
+      ],
+      "links": [
+        {
+          "text": "Pickett CCC Memorial State Park",
+          "href": "/Browse/Sites/42388/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Dunbar Cave State Park",
+        "Montgomery",
+        "Tennessee",
+        "133.90",
+        "127.60",
+        "8.81",
+        "8.00",
+        "12/13/2025"
+      ],
+      "links": [
+        {
+          "text": "Dunbar Cave State Park",
+          "href": "/Browse/Sites/42389/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Lafayette TN Downtown",
+        "Macon",
+        "Tennessee",
+        "-",
+        "-",
+        "-",
+        "-",
+        "11/29/2025"
+      ],
+      "links": [
+        {
+          "text": "Lafayette TN Downtown",
+          "href": "/Browse/Sites/42384/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Marshall Forest",
+        "Floyd",
+        "Georgia",
+        "134.88",
+        "115.57",
+        "7.97",
+        "6.50",
+        "11/27/2025"
+      ],
+      "links": [
+        {
+          "text": "Marshall Forest",
+          "href": "/Browse/Sites/42383/Details"
+        },
+        null,
+        {
+          "text": "Georgia",
+          "href": "/Browse/States/9/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Virgin Falls State Natural Area",
+        "White",
+        "Tennessee",
+        "148.62",
+        "145.14",
+        "9.64",
+        "8.86",
+        "11/22/2025"
+      ],
+      "links": [
+        {
+          "text": "Virgin Falls State Natural Area",
+          "href": "/Browse/Sites/42382/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Bridgestone Nature Reserve",
+        "White",
+        "Tennessee",
+        "138.96",
+        "135.62",
+        "8.32",
+        "7.28",
+        "10/25/2025"
+      ],
+      "links": [
+        {
+          "text": "Bridgestone Nature Reserve",
+          "href": "/Browse/Sites/42380/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Overton Park",
+        "Shelby",
+        "Tennessee",
+        "146.82",
+        "141.37",
+        "17.64",
+        "16.00",
+        "10/04/2025"
+      ],
+      "links": [
+        {
+          "text": "Overton Park",
+          "href": "/Browse/Sites/40335/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Hatchie National Wildlife Refuge",
+        "Haywood",
+        "Tennessee",
+        "135.78",
+        "132.06",
+        "10.96",
+        "9.79",
+        "09/27/2025"
+      ],
+      "links": [
+        {
+          "text": "Hatchie National Wildlife Refuge",
+          "href": "/Browse/Sites/42377/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Hematite Lake",
+        "Trigg",
+        "Kentucky",
+        "138.66",
+        "132.30",
+        "13.67",
+        "11.63",
+        "09/20/2025"
+      ],
+      "links": [
+        {
+          "text": "Hematite Lake",
+          "href": "/Browse/Sites/42376/Details"
+        },
+        null,
+        {
+          "text": "Kentucky",
+          "href": "/Browse/States/15/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Standing Stone State Park",
+        "Overton",
+        "Tennessee",
+        "136.34",
+        "129.93",
+        "9.41",
+        "8.56",
+        "07/05/2025"
+      ],
+      "links": [
+        {
+          "text": "Standing Stone State Park",
+          "href": "/Browse/Sites/42375/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Collins Gulf",
+        "Grundy",
+        "Tennessee",
+        "140.56",
+        "133.92",
+        "8.41",
+        "6.75",
+        "06/21/2025"
+      ],
+      "links": [
+        {
+          "text": "Collins Gulf",
+          "href": "/Browse/Sites/42374/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Nathan Bedford Forrest State Park",
+        "Benton",
+        "Tennessee",
+        "132.28",
+        "125.70",
+        "7.81",
+        "7.22",
+        "04/19/2025"
+      ],
+      "links": [
+        {
+          "text": "Nathan Bedford Forrest State Park",
+          "href": "/Browse/Sites/42373/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "First Branch",
+        "Sevier",
+        "Tennessee",
+        "-",
+        "-",
+        "-",
+        "-",
+        "04/13/2025"
+      ],
+      "links": [
+        {
+          "text": "First Branch",
+          "href": "/Browse/Sites/42369/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Cucumber Gap",
+        "Sevier",
+        "Tennessee",
+        "-",
+        "-",
+        "-",
+        "-",
+        "04/13/2025"
+      ],
+      "links": [
+        {
+          "text": "Cucumber Gap",
+          "href": "/Browse/Sites/42371/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Burnt Mountain",
+        "Sevier",
+        "Tennessee",
+        "164.38",
+        "-",
+        "8.67",
+        "-",
+        "04/13/2025"
+      ],
+      "links": [
+        {
+          "text": "Burnt Mountain",
+          "href": "/Browse/Sites/42372/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Boulevard Prong",
+        "Sevier",
+        "Tennessee",
+        "152.14",
+        "-",
+        "10.17",
+        "-",
+        "04/12/2025"
+      ],
+      "links": [
+        {
+          "text": "Boulevard Prong",
+          "href": "/Browse/Sites/42368/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Cheatham WMA",
+        "Cheatham",
+        "Tennessee",
+        "139.02",
+        "132.20",
+        "10.65",
+        "9.00",
+        "03/29/2025"
+      ],
+      "links": [
+        {
+          "text": "Cheatham WMA",
+          "href": "/Browse/Sites/42366/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Meeman-Shelby Forest State Park",
+        "Shelby",
+        "Tennessee",
+        "158.06",
+        "154.56",
+        "19.42",
+        "17.40",
+        "02/13/2025"
+      ],
+      "links": [
+        {
+          "text": "Meeman-Shelby Forest State Park",
+          "href": "/Browse/Sites/42364/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Edgar Evins State Park",
+        "Dekalb",
+        "Tennessee",
+        "152.64",
+        "145.67",
+        "12.40",
+        "11.47",
+        "02/01/2025"
+      ],
+      "links": [
+        {
+          "text": "Edgar Evins State Park",
+          "href": "/Browse/Sites/42360/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "T.O. Fuller State Park",
+        "Shelby",
+        "Tennessee",
+        "146.40",
+        "140.93",
+        "13.53",
+        "12.22",
+        "01/27/2025"
+      ],
+      "links": [
+        {
+          "text": "T.O. Fuller State Park",
+          "href": "/Browse/Sites/42356/Details"
+        },
+        null,
+        {
+          "text": "Tennessee",
+          "href": "/Browse/States/40/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Valles Caldera National Preserve",
+        "Sandoval",
+        "New Mexico",
+        "117.06",
+        "-",
+        "2.36",
+        "-",
+        "01/22/2025"
+      ],
+      "links": [
+        {
+          "text": "Valles Caldera National Preserve",
+          "href": "/Browse/Sites/42348/Details"
+        },
+        null,
+        {
+          "text": "New Mexico",
+          "href": "/Browse/States/30/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Flagstaff Snow Bowl Road",
+        "Coconino",
+        "Arizona",
+        "-",
+        "-",
+        "-",
+        "-",
+        "01/21/2025"
+      ],
+      "links": [
+        {
+          "text": "Flagstaff Snow Bowl Road",
+          "href": "/Browse/Sites/42351/Details"
+        },
+        null,
+        {
+          "text": "Arizona",
+          "href": "/Browse/States/3/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Vicente Flat Trail",
+        "Monterey",
+        "California",
+        "151.92",
+        "-",
+        "1.32",
+        "-",
+        "01/19/2025"
+      ],
+      "links": [
+        {
+          "text": "Vicente Flat Trail",
+          "href": "/Browse/Sites/42355/Details"
+        },
+        null,
+        {
+          "text": "California",
+          "href": "/Browse/States/4/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Mt. San Jacinto Long Valley",
+        "Riverside",
+        "California",
+        "-",
+        "-",
+        "-",
+        "-",
+        "01/18/2025"
+      ],
+      "links": [
+        {
+          "text": "Mt. San Jacinto Long Valley",
+          "href": "/Browse/Sites/42353/Details"
+        },
+        null,
+        {
+          "text": "California",
+          "href": "/Browse/States/4/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Mt. San Jacinto Deer Springs Trail",
+        "Riverside",
+        "California",
+        "126.30",
+        "-",
+        "16.97",
+        "-",
+        "01/17/2025"
+      ],
+      "links": [
+        {
+          "text": "Mt. San Jacinto Deer Springs Trail",
+          "href": "/Browse/Sites/42352/Details"
+        },
+        null,
+        {
+          "text": "California",
+          "href": "/Browse/States/4/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Big Bear Highway (CA-18)",
+        "San Bernardino",
+        "California",
+        "-",
+        "-",
+        "-",
+        "-",
+        "01/16/2025"
+      ],
+      "links": [
+        {
+          "text": "Big Bear Highway (CA-18)",
+          "href": "/Browse/Sites/42349/Details"
+        },
+        null,
+        {
+          "text": "California",
+          "href": "/Browse/States/4/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "pageInfo": "Showing 1 to 40 of 1370 entries",
+  "hasPreviousPage": false,
+  "hasNextPage": true
+}

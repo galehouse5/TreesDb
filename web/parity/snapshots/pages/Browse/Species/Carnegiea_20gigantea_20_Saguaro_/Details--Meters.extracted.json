@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Carnegiea gigantea",
+  "commonName": "Saguaro",
+  "global": {
+    "maxHeight": {
+      "text": "12.89 m",
+      "href": "/Browse/Trees/24662/Details"
+    },
+    "maxGirth": {
+      "text": "206 cm",
+      "href": "/Browse/Trees/159294/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "12.89 m",
+          "206 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "12.89 m",
+            "href": "/Browse/Trees/24662/Details"
+          },
+          {
+            "text": "206 cm",
+            "href": "/Browse/Trees/159294/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

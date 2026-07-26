@@ -1,0 +1,8 @@
+# Never upload parity artifacts to Vercel:
+# - parity/dumps contains PII (emails, password hashes) — must never leave
+#   this machine (also gitignored)
+# - parity/snapshots is thousands of files the app doesn't need at runtime
+parity/
+*.log
+db/seed/
+scripts/

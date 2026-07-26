@@ -1,0 +1,277 @@
+{
+  "botanicalName": "Carpinus caroliniana",
+  "commonName": "American Hornbeam",
+  "global": {
+    "maxHeight": {
+      "text": "40.23 m",
+      "href": "/Browse/Trees/242649/Details"
+    },
+    "maxGirth": {
+      "text": "142 cm",
+      "href": "/Browse/Trees/237901/Details"
+    },
+    "maxCrownSpread": {
+      "text": "13.11 m",
+      "href": "/Browse/Trees/242649/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "19.08 m",
+          "104 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "19.08 m",
+            "href": "/Browse/Trees/233860/Details"
+          },
+          {
+            "text": "104 cm",
+            "href": "/Browse/Trees/233860/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "17.65 m",
+          "66 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "17.65 m",
+            "href": "/Browse/Trees/241447/Details"
+          },
+          {
+            "text": "66 cm",
+            "href": "/Browse/Trees/241447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "20.48 m",
+          "117 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "20.48 m",
+            "href": "/Browse/Trees/235190/Details"
+          },
+          {
+            "text": "117 cm",
+            "href": "/Browse/Trees/235190/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "17.22 m",
+          "116 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "17.22 m",
+            "href": "/Browse/Trees/45415/Details"
+          },
+          {
+            "text": "116 cm",
+            "href": "/Browse/Trees/45414/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "8.93 m",
+          "46 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "8.93 m",
+            "href": "/Browse/Trees/250526/Details"
+          },
+          {
+            "text": "46 cm",
+            "href": "/Browse/Trees/250527/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "13.72 m",
+          "102 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "13.72 m",
+            "href": "/Browse/Trees/251191/Details"
+          },
+          {
+            "text": "102 cm",
+            "href": "/Browse/Trees/251191/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "14.54 m",
+          "61 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "14.54 m",
+            "href": "/Browse/Trees/263252/Details"
+          },
+          {
+            "text": "61 cm",
+            "href": "/Browse/Trees/220873/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "9.45 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "9.45 m",
+            "href": "/Browse/Trees/40774/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "15.27 m",
+          "51 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "15.27 m",
+            "href": "/Browse/Trees/143212/Details"
+          },
+          {
+            "text": "51 cm",
+            "href": "/Browse/Trees/142992/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "40.23 m",
+          "142 cm",
+          "13.11 m"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "40.23 m",
+            "href": "/Browse/Trees/242649/Details"
+          },
+          {
+            "text": "142 cm",
+            "href": "/Browse/Trees/237901/Details"
+          },
+          {
+            "text": "13.11 m",
+            "href": "/Browse/Trees/242649/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

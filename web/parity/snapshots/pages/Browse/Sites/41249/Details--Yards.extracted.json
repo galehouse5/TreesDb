@@ -1,0 +1,101 @@
+{
+  "siteId": 41249,
+  "summary": {
+    "Name": "Purgatory Gulch",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "10/10/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/10/2016",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea engelmannii",
+          "Engelmann Spruce",
+          "45.00 yd",
+          "1146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii",
+            "href": "/Browse/Sites/41249/Species/Picea%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/41249/Species/Picea%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "45.00 yd",
+            "href": "/Browse/Trees/253267/Details"
+          },
+          {
+            "text": "1146''",
+            "href": "/Browse/Trees/253267/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 07.592, -106 46.824",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Carbon"
+    },
+    "state": {
+      "text": "Wyoming (US)",
+      "href": "/Browse/States/48/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

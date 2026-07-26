@@ -1,0 +1,362 @@
+{
+  "siteId": 41545,
+  "summary": {
+    "Name": "Ampersand Basin",
+    "RHI5": "39.313",
+    "RHI10": "36.340",
+    "RHI20": "(not enough data)",
+    "RGI5": "4.180",
+    "RGI10": "3.509",
+    "RGI20": "(not enough data)",
+    "Trees measured": "84",
+    "Last measurement date": "09/14/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees measured on 10/22 2019, E. Whitcomb 9/8/2020. 9/9/2020, 9/13/2020,9/14/2020, E. Danielson. 10/22"
+  },
+  "visits": [
+    {
+      "visited": "09/14/2020",
+      "visitors": "Erik Danielson and Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees measured on 10/22 2019, E. Whitcomb 9/8/2020. 9/9/2020, 9/13/2020,9/14/2020, E. Danielson. 10/22"
+    },
+    {
+      "visited": "11/15/2017",
+      "visitors": "Erik Danielson, Elijah Whitcomb, and Rob Leverett",
+      "tripReportUrl": "www.ents-bbs.org/download/file.php",
+      "comments": "Jared Lockwood was also among the participants."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "32.17 yd",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/Sites/41545/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/41545/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "32.17 yd",
+            "href": "/Browse/Trees/264497/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/264497/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "32.50 yd",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41545/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41545/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "32.50 yd",
+            "href": "/Browse/Trees/264500/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/264757/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "34.17 yd",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/41545/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41545/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "34.17 yd",
+            "href": "/Browse/Trees/264488/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/264755/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "27.83 yd",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/41545/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/41545/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "27.83 yd",
+            "href": "/Browse/Trees/264498/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/264740/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "34.33 yd",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41545/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41545/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "34.33 yd",
+            "href": "/Browse/Trees/264723/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/264723/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "33.83 yd",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/41545/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/41545/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "33.83 yd",
+            "href": "/Browse/Trees/264738/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/264738/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "36.57 yd",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/41545/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/41545/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "36.57 yd",
+            "href": "/Browse/Trees/264759/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/264759/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "34.83 yd",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/41545/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/41545/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "34.83 yd",
+            "href": "/Browse/Trees/264725/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/264728/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "55.50 yd",
+          "192''",
+          "5.33 yd"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41545/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41545/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "55.50 yd",
+            "href": "/Browse/Trees/264762/Details"
+          },
+          {
+            "text": "192''",
+            "href": "/Browse/Trees/264471/Details"
+          },
+          {
+            "text": "5.33 yd",
+            "href": "/Browse/Trees/264471/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "34.17 yd",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/41545/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/41545/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "34.17 yd",
+            "href": "/Browse/Trees/264484/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/264751/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 16.209, -074 11.859",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

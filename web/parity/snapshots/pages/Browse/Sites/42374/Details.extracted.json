@@ -1,0 +1,347 @@
+{
+  "siteId": 42374,
+  "summary": {
+    "Name": "Collins Gulf",
+    "RHI5": "140.56",
+    "RHI10": "133.92",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.41",
+    "RGI10": "6.75",
+    "RGI20": "(not enough data)",
+    "Trees measured": "13",
+    "Last measurement date": "06/21/2025",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/21/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "143.3'",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/42374/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/42374/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "143.3'",
+            "href": "/Browse/Trees/322639/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/322638/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "143.5'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/42374/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/42374/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "143.5'",
+            "href": "/Browse/Trees/322640/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/322640/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "130.5'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42374/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42374/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "130.5'",
+            "href": "/Browse/Trees/322637/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/322637/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "132.2'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/42374/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/42374/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "132.2'",
+            "href": "/Browse/Trees/322636/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/322636/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "120.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/42374/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/42374/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "120.0'",
+            "href": "/Browse/Trees/322645/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "149.5'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/42374/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/42374/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "149.5'",
+            "href": "/Browse/Trees/322641/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/322641/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus coccinea var. coccinea",
+          "Scarlet Oak",
+          "130.2'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus coccinea var. coccinea",
+            "href": "/Browse/Sites/42374/Species/Quercus%20coccinea%20var.%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "Scarlet Oak",
+            "href": "/Browse/Sites/42374/Species/Quercus%20coccinea%20var.%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "130.2'",
+            "href": "/Browse/Trees/322635/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/322635/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus muehlenbergii",
+          "Chinkapin Oak",
+          "125.5'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus muehlenbergii",
+            "href": "/Browse/Sites/42374/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "Chinkapin Oak",
+            "href": "/Browse/Sites/42374/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "125.5'",
+            "href": "/Browse/Trees/322634/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/322634/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana var. heterophylla",
+          "American Basswood",
+          "134.3'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana var. heterophylla",
+            "href": "/Browse/Sites/42374/Species/Tilia%20americana%20var.%20heterophylla%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/42374/Species/Tilia%20americana%20var.%20heterophylla%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "134.3'",
+            "href": "/Browse/Trees/322644/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/322644/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "126.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/42374/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/42374/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "126.8'",
+            "href": "/Browse/Trees/322646/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 25.954, -085 36.240",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Grundy"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

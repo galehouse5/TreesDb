@@ -1,0 +1,277 @@
+{
+  "botanicalName": "Betula papyrifera",
+  "commonName": "Paper Birch",
+  "global": {
+    "maxHeight": {
+      "text": "83.0'",
+      "href": "/Browse/Trees/207811/Details"
+    },
+    "maxGirth": {
+      "text": "79''",
+      "href": "/Browse/Trees/207811/Details"
+    },
+    "maxCrownSpread": {
+      "text": "33.5'",
+      "href": "/Browse/Trees/233577/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Connecticut",
+          "70.0'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/243159/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/243159/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "78.1'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "78.1'",
+            "href": "/Browse/Trees/124416/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/250489/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nebraska",
+          "57.6'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nebraska",
+            "href": "/Browse/States/27/Details"
+          },
+          {
+            "text": "57.6'",
+            "href": "/Browse/Trees/220439/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/220439/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "83.0'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "83.0'",
+            "href": "/Browse/Trees/207811/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/207811/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "74.8'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "74.8'",
+            "href": "/Browse/Trees/166118/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/139526/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Dakota",
+          "66.5'",
+          "62''",
+          "33.5'"
+        ],
+        "links": [
+          {
+            "text": "South Dakota",
+            "href": "/Browse/States/39/Details"
+          },
+          {
+            "text": "66.5'",
+            "href": "/Browse/Trees/243373/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/233577/Details"
+          },
+          {
+            "text": "33.5'",
+            "href": "/Browse/Trees/233577/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Vermont",
+          "-",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vermont",
+            "href": "/Browse/States/44/Details"
+          },
+          null,
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/253233/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "67.0'",
+          "36''",
+          "22.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "67.0'",
+            "href": "/Browse/Trees/313122/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/312144/Details"
+          },
+          {
+            "text": "22.0'",
+            "href": "/Browse/Trees/313122/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Wisconsin",
+          "65.2'",
+          "52''",
+          "30.0'"
+        ],
+        "links": [
+          {
+            "text": "Wisconsin",
+            "href": "/Browse/States/46/Details"
+          },
+          {
+            "text": "65.2'",
+            "href": "/Browse/Trees/233389/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/233389/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/233389/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

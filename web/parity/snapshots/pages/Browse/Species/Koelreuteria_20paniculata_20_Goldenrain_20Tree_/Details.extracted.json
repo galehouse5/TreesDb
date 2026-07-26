@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Koelreuteria paniculata",
+  "commonName": "Goldenrain Tree",
+  "global": {
+    "maxHeight": {
+      "text": "24.1'",
+      "href": "/Browse/Trees/226123/Details"
+    },
+    "maxGirth": {
+      "text": "34''",
+      "href": "/Browse/Trees/226123/Details"
+    },
+    "maxCrownSpread": {
+      "text": "20.0'",
+      "href": "/Browse/Trees/315285/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "24.1'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "24.1'",
+            "href": "/Browse/Trees/226123/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/226123/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "18.0'",
+          "30''",
+          "20.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "18.0'",
+            "href": "/Browse/Trees/315285/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/315285/Details"
+          },
+          {
+            "text": "20.0'",
+            "href": "/Browse/Trees/315285/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

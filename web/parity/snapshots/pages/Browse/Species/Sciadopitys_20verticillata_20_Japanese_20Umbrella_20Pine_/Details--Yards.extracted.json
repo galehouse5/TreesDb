@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Sciadopitys verticillata",
+  "commonName": "Japanese Umbrella Pine",
+  "global": {
+    "maxHeight": {
+      "text": "14.03 yd",
+      "href": "/Browse/Trees/286423/Details"
+    },
+    "maxGirth": {
+      "text": "43''",
+      "href": "/Browse/Trees/286423/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Lazio",
+          "14.03 yd",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lazio",
+            "href": "/Browse/States/151/Details"
+          },
+          {
+            "text": "14.03 yd",
+            "href": "/Browse/Trees/286423/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/286423/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "12.30 yd",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "12.30 yd",
+            "href": "/Browse/Trees/226032/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/226032/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "10.13 yd",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "10.13 yd",
+            "href": "/Browse/Trees/282393/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/282393/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

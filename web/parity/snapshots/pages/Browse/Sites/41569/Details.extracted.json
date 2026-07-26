@@ -1,0 +1,353 @@
+{
+  "siteId": 41569,
+  "summary": {
+    "Name": "Clove Lakes Park",
+    "RHI5": "122.74",
+    "RHI10": "116.11",
+    "RHI20": "104.31",
+    "RGI5": "13.55",
+    "RGI10": "10.17",
+    "RGI20": "5.76",
+    "Trees measured": "91",
+    "Last measurement date": "12/20/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured 12/20/2015 and 3/3/2016"
+  },
+  "visits": [
+    {
+      "visited": "12/20/2015",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured 12/20/2015 and 3/3/2016"
+    },
+    {
+      "visited": "09/22/2015",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "91.0'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41569/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41569/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "91.0'",
+            "href": "/Browse/Trees/265842/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/265842/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus glutinosa",
+          "European Alder",
+          "86.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus glutinosa",
+            "href": "/Browse/Sites/41569/Species/Alnus%20glutinosa%20(European%20Alder)/Details"
+          },
+          {
+            "text": "European Alder",
+            "href": "/Browse/Sites/41569/Species/Alnus%20glutinosa%20(European%20Alder)/Details"
+          },
+          {
+            "text": "86.8'",
+            "href": "/Browse/Trees/265833/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "93.1'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41569/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41569/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "93.1'",
+            "href": "/Browse/Trees/265874/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/265874/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "118.7'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/41569/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/41569/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "118.7'",
+            "href": "/Browse/Trees/265879/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/265879/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "127.4'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41569/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41569/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "127.4'",
+            "href": "/Browse/Trees/265878/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/265878/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "91.4'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/41569/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/41569/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "91.4'",
+            "href": "/Browse/Trees/265891/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/265891/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "114.0'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/41569/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/41569/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "114.0'",
+            "href": "/Browse/Trees/265882/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/265819/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "77.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/41569/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/41569/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "77.4'",
+            "href": "/Browse/Trees/265892/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "128.0'",
+          "282''",
+          "99.6'"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41569/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41569/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "128.0'",
+            "href": "/Browse/Trees/265900/Details"
+          },
+          {
+            "text": "282''",
+            "href": "/Browse/Trees/265807/Details"
+          },
+          {
+            "text": "99.6'",
+            "href": "/Browse/Trees/265807/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "50.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/41569/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/41569/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "50.5'",
+            "href": "/Browse/Trees/265886/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 22 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 37.143, -074 06.848",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Richmond"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

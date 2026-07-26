@@ -1,0 +1,503 @@
+{
+  "stateId": 24,
+  "summary": {
+    "Name": "Montana",
+    "Code": "MT",
+    "RHI5": "183.06",
+    "RHI10": "167.60",
+    "RHI20": "(not enough data)",
+    "RGI5": "18.11",
+    "RGI10": "13.64",
+    "RGI20": "(not enough data)",
+    "Trees measured": "56",
+    "Last measurement date": "07/08/2024"
+  },
+  "location": {
+    "Coordinates": "46 40.771, -110 02.664",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies grandis var. idahoensis",
+          "Grand Fir",
+          "148.3'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis var. idahoensis",
+            "href": "/Browse/States/24/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/States/24/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "148.3'",
+            "href": "/Browse/Trees/318056/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/318056/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. bifolia",
+          "Subalpine Fir",
+          "137.6'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. bifolia",
+            "href": "/Browse/States/24/Species/Abies%20lasiocarpa%20var.%20bifolia%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/States/24/Species/Abies%20lasiocarpa%20var.%20bifolia%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "137.6'",
+            "href": "/Browse/Trees/318058/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/318058/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. latifolia",
+          "Subalpine Fir",
+          "80.4'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. latifolia",
+            "href": "/Browse/States/24/Species/Abies%20lasiocarpa%20var.%20latifolia%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/States/24/Species/Abies%20lasiocarpa%20var.%20latifolia%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "80.4'",
+            "href": "/Browse/Trees/296889/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/296889/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus scopulorum",
+          "Rocky Mountain Juniper",
+          "44.8'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus scopulorum",
+            "href": "/Browse/States/24/Species/Juniperus%20scopulorum%20(Rocky%20Mountain%20Juniper)/Details"
+          },
+          {
+            "text": "Rocky Mountain Juniper",
+            "href": "/Browse/States/24/Species/Juniperus%20scopulorum%20(Rocky%20Mountain%20Juniper)/Details"
+          },
+          {
+            "text": "44.8'",
+            "href": "/Browse/Trees/164204/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/164203/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix occidentalis",
+          "Western Larch",
+          "173.8'",
+          "280''",
+          "38.0'"
+        ],
+        "links": [
+          {
+            "text": "Larix occidentalis",
+            "href": "/Browse/States/24/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "Western Larch",
+            "href": "/Browse/States/24/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "173.8'",
+            "href": "/Browse/Trees/318053/Details"
+          },
+          {
+            "text": "280''",
+            "href": "/Browse/Trees/164460/Details"
+          },
+          {
+            "text": "38.0'",
+            "href": "/Browse/Trees/164460/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii var. engelmannii",
+          "Engelmann Spruce",
+          "165.3'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii var. engelmannii",
+            "href": "/Browse/States/24/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/States/24/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "165.3'",
+            "href": "/Browse/Trees/297909/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/296893/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. latifolia",
+          "Lodgepole Pine",
+          "124.4'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. latifolia",
+            "href": "/Browse/States/24/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Lodgepole Pine",
+            "href": "/Browse/States/24/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "124.4'",
+            "href": "/Browse/Trees/296957/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/296956/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus monticola",
+          "Western White Pine",
+          "178.8'",
+          "164''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus monticola",
+            "href": "/Browse/States/24/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "Western White Pine",
+            "href": "/Browse/States/24/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "178.8'",
+            "href": "/Browse/Trees/318054/Details"
+          },
+          {
+            "text": "164''",
+            "href": "/Browse/Trees/318054/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. ponderosa",
+          "Ponderosa Pine",
+          "183.2'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. ponderosa",
+            "href": "/Browse/States/24/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/States/24/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "183.2'",
+            "href": "/Browse/Trees/318055/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/296892/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus angustifolia",
+          "Narrowleaf Cottonwood",
+          "96.9'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus angustifolia",
+            "href": "/Browse/States/24/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "Narrowleaf Cottonwood",
+            "href": "/Browse/States/24/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "96.9'",
+            "href": "/Browse/Trees/164206/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/164206/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Girard Memorial Tamarack Grove",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Girard Memorial Tamarack Grove",
+            "href": "/Browse/Sites/39090/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Little Joe Road",
+          "165.54",
+          "-",
+          "9.98",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Little Joe Road",
+            "href": "/Browse/Sites/42298/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana Single Tree Sites",
+            "href": "/Browse/Sites/39063/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Noxon Rapids Reservoir",
+          "145.14",
+          "-",
+          "7.29",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Noxon Rapids Reservoir",
+            "href": "/Browse/Sites/42086/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Paradise Valley Campground",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Paradise Valley Campground",
+            "href": "/Browse/Sites/39068/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pleasant Valley Campground, Kootenai National Forest",
+          "137.08",
+          "-",
+          "8.86",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pleasant Valley Campground, Kootenai National Forest",
+            "href": "/Browse/Sites/42077/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ross Creek Scenic Area Giant Cedars",
+          "170.86",
+          "-",
+          "13.70",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ross Creek Scenic Area Giant Cedars",
+            "href": "/Browse/Sites/42097/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

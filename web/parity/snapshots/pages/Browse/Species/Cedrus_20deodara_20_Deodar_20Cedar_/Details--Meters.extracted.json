@@ -1,0 +1,178 @@
+{
+  "botanicalName": "Cedrus deodara",
+  "commonName": "Deodar Cedar",
+  "global": {
+    "maxHeight": {
+      "text": "29.99 m",
+      "href": "/Browse/Trees/283183/Details"
+    },
+    "maxGirth": {
+      "text": "439 cm",
+      "href": "/Browse/Trees/275148/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Andalusia",
+          "29.99 m",
+          "385 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Andalusia",
+            "href": "/Browse/States/124/Details"
+          },
+          {
+            "text": "29.99 m",
+            "href": "/Browse/Trees/283183/Details"
+          },
+          {
+            "text": "385 cm",
+            "href": "/Browse/Trees/283183/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Community of Madrid",
+          "29.32 m",
+          "439 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Community of Madrid",
+            "href": "/Browse/States/137/Details"
+          },
+          {
+            "text": "29.32 m",
+            "href": "/Browse/Trees/275148/Details"
+          },
+          {
+            "text": "439 cm",
+            "href": "/Browse/Trees/275148/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "18.35 m",
+          "246 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "18.35 m",
+            "href": "/Browse/Trees/125465/Details"
+          },
+          {
+            "text": "246 cm",
+            "href": "/Browse/Trees/125465/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "26.79 m",
+          "335 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "26.79 m",
+            "href": "/Browse/Trees/235286/Details"
+          },
+          {
+            "text": "335 cm",
+            "href": "/Browse/Trees/235286/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "20.82 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "20.82 m",
+            "href": "/Browse/Trees/39764/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tuscany",
+          "19.81 m",
+          "307 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tuscany",
+            "href": "/Browse/States/160/Details"
+          },
+          {
+            "text": "19.81 m",
+            "href": "/Browse/Trees/283116/Details"
+          },
+          {
+            "text": "307 cm",
+            "href": "/Browse/Trees/283116/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

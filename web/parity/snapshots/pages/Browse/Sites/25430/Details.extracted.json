@@ -1,0 +1,213 @@
+{
+  "siteId": 25430,
+  "summary": {
+    "Name": "Pinaleno Mountains",
+    "RHI5": "88.18",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.21",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "14",
+    "Last measurement date": "02/24/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/24/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus oblongifolia",
+          "Arizona Alder",
+          "105.9'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus oblongifolia",
+            "href": "/Browse/Sites/25430/Species/Alnus%20oblongifolia%20(Arizona%20Alder)/Details"
+          },
+          {
+            "text": "Arizona Alder",
+            "href": "/Browse/Sites/25430/Species/Alnus%20oblongifolia%20(Arizona%20Alder)/Details"
+          },
+          {
+            "text": "105.9'",
+            "href": "/Browse/Trees/93013/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/93013/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus arizonica var. arizonica",
+          "Arizona Pine",
+          "81.4'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus arizonica var. arizonica",
+            "href": "/Browse/Sites/25430/Species/Pinus%20arizonica%20var.%20arizonica%20(Arizona%20Pine)/Details"
+          },
+          {
+            "text": "Arizona Pine",
+            "href": "/Browse/Sites/25430/Species/Pinus%20arizonica%20var.%20arizonica%20(Arizona%20Pine)/Details"
+          },
+          {
+            "text": "81.4'",
+            "href": "/Browse/Trees/93007/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/93007/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. brachyptera",
+          "Ponderosa Pine",
+          "72.2'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. brachyptera",
+            "href": "/Browse/Sites/25430/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/25430/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "72.2'",
+            "href": "/Browse/Trees/93012/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/93012/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "145.0'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/25430/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/25430/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "145.0'",
+            "href": "/Browse/Trees/93015/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/93008/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus hypoleucoides",
+          "Silverleaf Oak",
+          "36.4'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus hypoleucoides",
+            "href": "/Browse/Sites/25430/Species/Quercus%20hypoleucoides%20(Silverleaf%20Oak)/Details"
+          },
+          {
+            "text": "Silverleaf Oak",
+            "href": "/Browse/Sites/25430/Species/Quercus%20hypoleucoides%20(Silverleaf%20Oak)/Details"
+          },
+          {
+            "text": "36.4'",
+            "href": "/Browse/Trees/93004/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/93004/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 38.875, -109 48.959",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Forest",
+      "County": "Graham"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

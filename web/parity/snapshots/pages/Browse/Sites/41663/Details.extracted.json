@@ -1,0 +1,157 @@
+{
+  "siteId": 41663,
+  "summary": {
+    "Name": "Redwood National Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "12/30/2012",
+    "Ownership contact": "1111 Second Street Crescent City, California",
+    "General comments": "Redwood National Park was created in 1968. It was formed to augment the holdings of three California State Parks. The state and national lands are managed jointly by the California Department of Parks and Recreation and the National Park Service. The three state parks are Jedediah Smith Redwoods State Park, Del Norte Coast Park and Prarie Creek Redwood State Park."
+  },
+  "visits": [
+    {
+      "visited": "12/30/2012",
+      "visitors": "Mario Vaden",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Redwood National Park was created in 1968. It was formed to augment the holdings of three California State Parks. The state and national lands are managed jointly by the California Department of Parks and Recreation and the National Park Service. The three state parks are Jedediah Smith Redwoods State Park, Del Norte Coast Park and Prarie Creek Redwood State Park."
+    },
+    {
+      "visited": "03/15/2011",
+      "visitors": "Mario Vaden and Michael Taylor",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Redwood National Park was created in 1968. It was formed to augment the holdings of three California State Parks. The state and national lands are managed jointly by the California Department of Parks and Recreation and the National Park Service. The three state parks are Jedediah Smith Redwoods State Park, Del Norte Coast Park and Prarie Creek Redwood State Park."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Chrysolepis chrysophylla",
+          "Giant Chinquapin",
+          "142.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chrysolepis chrysophylla",
+            "href": "/Browse/Sites/41663/Species/Chrysolepis%20chrysophylla%20(Giant%20Chinquapin)/Details"
+          },
+          {
+            "text": "Giant Chinquapin",
+            "href": "/Browse/Sites/41663/Species/Chrysolepis%20chrysophylla%20(Giant%20Chinquapin)/Details"
+          },
+          {
+            "text": "142.6'",
+            "href": "/Browse/Trees/269082/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "178.0'",
+          "324''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/41663/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/41663/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "178.0'",
+            "href": "/Browse/Trees/269081/Details"
+          },
+          {
+            "text": "324''",
+            "href": "/Browse/Trees/269079/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga heterophylla",
+          "Western Hemlock",
+          "272.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga heterophylla",
+            "href": "/Browse/Sites/41663/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "Western Hemlock",
+            "href": "/Browse/Sites/41663/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "272.0'",
+            "href": "/Browse/Trees/269319/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 10.170, -123 59.744",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Humboldt"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

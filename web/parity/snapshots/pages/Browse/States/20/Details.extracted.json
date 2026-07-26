@@ -1,0 +1,560 @@
+{
+  "stateId": 20,
+  "summary": {
+    "Name": "Michigan",
+    "Code": "MI",
+    "RHI5": "126.21",
+    "RHI10": "115.78",
+    "RHI20": "104.71",
+    "RGI5": "12.93",
+    "RGI10": "11.45",
+    "RGI20": "9.50",
+    "Trees measured": "108",
+    "Last measurement date": "06/23/2017"
+  },
+  "location": {
+    "Coordinates": "45 00.066, -086 16.242",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "110.0'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/20/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/20/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/239998/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/240001/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "108.9'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/20/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/20/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "108.9'",
+            "href": "/Browse/Trees/104975/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/104975/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "106.3'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/20/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/20/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "106.3'",
+            "href": "/Browse/Trees/104007/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/104007/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "40.0'",
+          "14''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/States/20/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/States/20/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "40.0'",
+            "href": "/Browse/Trees/104974/Details"
+          },
+          {
+            "text": "14''",
+            "href": "/Browse/Trees/104974/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "104.3'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/States/20/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/States/20/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "104.3'",
+            "href": "/Browse/Trees/104004/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/104004/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus mollis",
+          "Downy Hawthorn",
+          "39.0'",
+          "99''",
+          "40.0'"
+        ],
+        "links": [
+          {
+            "text": "Crataegus mollis",
+            "href": "/Browse/States/20/Species/Crataegus%20mollis%20(Downy%20Hawthorn)/Details"
+          },
+          {
+            "text": "Downy Hawthorn",
+            "href": "/Browse/States/20/Species/Crataegus%20mollis%20(Downy%20Hawthorn)/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/239996/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/239996/Details"
+          },
+          {
+            "text": "40.0'",
+            "href": "/Browse/Trees/239996/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "102.0'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/States/20/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/States/20/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "102.0'",
+            "href": "/Browse/Trees/239975/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/239975/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "100.6'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/States/20/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/States/20/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "100.6'",
+            "href": "/Browse/Trees/240004/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/240004/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus nigra",
+          "Black Ash",
+          "89.5'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus nigra",
+            "href": "/Browse/States/20/Species/Fraxinus%20nigra%20(Black%20Ash)/Details"
+          },
+          {
+            "text": "Black Ash",
+            "href": "/Browse/States/20/Species/Fraxinus%20nigra%20(Black%20Ash)/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/239982/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/239982/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gymnocladus dioicus",
+          "Kentucky Coffeetree",
+          "87.3'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gymnocladus dioicus",
+            "href": "/Browse/States/20/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "Kentucky Coffeetree",
+            "href": "/Browse/States/20/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "87.3'",
+            "href": "/Browse/Trees/141078/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/141078/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 23 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aman Park",
+          "106.17",
+          "90.12",
+          "9.04",
+          "7.13"
+        ],
+        "links": [
+          {
+            "text": "Aman Park",
+            "href": "/Browse/Sites/31543/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Black River Harbor",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Black River Harbor",
+            "href": "/Browse/Sites/40567/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Blandford Nature Center",
+          "109.58",
+          "-",
+          "8.94",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Blandford Nature Center",
+            "href": "/Browse/Sites/30550/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Clark Lake",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Clark Lake",
+            "href": "/Browse/Sites/40911/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Colonial Point Memorial Forest",
+          "105.08",
+          "-",
+          "9.22",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colonial Point Memorial Forest",
+            "href": "/Browse/Sites/40915/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Eaton County Coffeetree",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Eaton County Coffeetree",
+            "href": "/Browse/Sites/38460/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fabius State Game Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fabius State Game Area",
+            "href": "/Browse/Sites/37964/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fred Russ Forest Experimental Station",
+          "107.50",
+          "-",
+          "11.17",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fred Russ Forest Experimental Station",
+            "href": "/Browse/Sites/40910/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hartwick Pines State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hartwick Pines State Park",
+            "href": "/Browse/Sites/40912/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Michigan Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Michigan Single Tree Sites",
+            "href": "/Browse/Sites/40914/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

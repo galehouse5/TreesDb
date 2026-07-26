@@ -1,0 +1,123 @@
+{
+  "siteId": 39381,
+  "summary": {
+    "Name": "Lexington Cemetery",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "10/13/2014",
+    "Ownership contact": "803 West Main Street Lexington, KY",
+    "General comments": "Established 1849. 170 Acres"
+  },
+  "visits": [
+    {
+      "visited": "10/13/2014",
+      "visitors": "Mark Rouw, Matt Markworth, and Landon Smith",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Established 1849. 170 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus glabra var. glabra",
+          "Ohio Buckeye",
+          "-",
+          "174''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus glabra var. glabra",
+            "href": "/Browse/Sites/39381/Species/Aesculus%20glabra%20var.%20glabra%20(Ohio%20Buckeye)/Details"
+          },
+          {
+            "text": "Ohio Buckeye",
+            "href": "/Browse/Sites/39381/Species/Aesculus%20glabra%20var.%20glabra%20(Ohio%20Buckeye)/Details"
+          },
+          null,
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/174563/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "-",
+          "255''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/39381/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39381/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "255''",
+            "href": "/Browse/Trees/174562/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 03.660, -084 30.540",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Fayette"
+    },
+    "state": {
+      "text": "Kentucky (US)",
+      "href": "/Browse/States/15/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

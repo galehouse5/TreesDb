@@ -1,0 +1,70 @@
+{
+  "treeId": 269544,
+  "botanicalName": {
+    "text": "Pseudotsuga menziesii var. menziesii",
+    "href": "/Browse/Sites/41696/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "commonName": {
+    "text": "Douglas-Fir",
+    "href": "/Browse/Sites/41696/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "details": {
+    "Height": "92.35 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "805 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "2114.46",
+    "ENTSPTS": "8004.25",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.55",
+    "Champion points (abbreviated)": "620.00",
+    "Diameter": "256 cm",
+    "Conical volume": "158.82 m³",
+    "General comments": "Tioga Creek"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 08/13/2011",
+      "summary": {
+        "Height": "92.35 m",
+        "Girth": "805 cm"
+      },
+      "details": {
+        "Botanical name": "Pseudotsuga menziesii var. menziesii",
+        "Common name": "Douglas-Fir",
+        "Height": "92.35 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "805 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "2114.46",
+        "ENTSPTS": "8004.25",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.55",
+        "Champion points (abbreviated)": "620.00",
+        "Diameter": "256 cm",
+        "Conical volume": "158.82 m³",
+        "General comments": "Tioga Creek"
+      },
+      "measurers": "Michael Taylor, Mario Vaden, and Chris Atkins"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "43 14.756, -123 50.040",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Bureau Of Land Management-Coos County",
+      "href": "/Browse/Sites/41696/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Coos"
+    },
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

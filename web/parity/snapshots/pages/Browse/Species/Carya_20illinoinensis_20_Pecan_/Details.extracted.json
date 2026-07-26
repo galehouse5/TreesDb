@@ -1,0 +1,277 @@
+{
+  "botanicalName": "Carya illinoinensis",
+  "commonName": "Pecan",
+  "global": {
+    "maxHeight": {
+      "text": "145.7'",
+      "href": "/Browse/Trees/321968/Details"
+    },
+    "maxGirth": {
+      "text": "224''",
+      "href": "/Browse/Trees/255936/Details"
+    },
+    "maxCrownSpread": {
+      "text": "150.0'",
+      "href": "/Browse/Trees/252607/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "127.3'",
+          "197''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "127.3'",
+            "href": "/Browse/Trees/253883/Details"
+          },
+          {
+            "text": "197''",
+            "href": "/Browse/Trees/253883/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Andalusia",
+          "80.5'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Andalusia",
+            "href": "/Browse/States/124/Details"
+          },
+          {
+            "text": "80.5'",
+            "href": "/Browse/Trees/274942/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/274942/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "77.4'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "77.4'",
+            "href": "/Browse/Trees/233951/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/233951/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "121.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "121.5'",
+            "href": "/Browse/Trees/19250/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Illinois",
+          "100.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Illinois",
+            "href": "/Browse/States/12/Details"
+          },
+          {
+            "text": "100.0'",
+            "href": "/Browse/Trees/171017/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "90.0'",
+          "146''",
+          "121.5'"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/253891/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/253891/Details"
+          },
+          {
+            "text": "121.5'",
+            "href": "/Browse/Trees/253891/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "121.0'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "121.0'",
+            "href": "/Browse/Trees/320711/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/251109/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "131.3'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "131.3'",
+            "href": "/Browse/Trees/283637/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/283685/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "88.1'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "88.1'",
+            "href": "/Browse/Trees/226047/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/226047/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "91.9'",
+          "224''",
+          "132.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "91.9'",
+            "href": "/Browse/Trees/255936/Details"
+          },
+          {
+            "text": "224''",
+            "href": "/Browse/Trees/255936/Details"
+          },
+          {
+            "text": "132.0'",
+            "href": "/Browse/Trees/255936/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "siteId": 25455,
+  "summary": {
+    "Name": "Hermosa Creek",
+    "RHI5": "165.58",
+    "RHI10": "135.54",
+    "RHI20": "(not enough data)",
+    "RGI5": "13.52",
+    "RGI10": "9.52",
+    "RGI20": "(not enough data)",
+    "Trees measured": "80",
+    "Last measurement date": "10/04/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/04/2016",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "06/22/2015",
+      "visitors": "Matt Markworth, Will Blozan, and Larry Tucei",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured between 6/22/2015 and 7/2/2015. Additional measurer Eli Dickinson"
+    },
+    {
+      "visited": "08/15/2014",
+      "visitors": "Matt Markworth, Will Blozan, and Chris Morris",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Hermosa Creek Wilderness 37,236 Acres Hermosa Creek Special Management Area 70,600 Acres San Juan National Forest 1,879,000 Acres Trees were measured between 8/1/2014 to 8/18/14 Additional Measurers L. Tucei, M. Rouw Additional trip reports: Bushwack Hike to Clear Creek: http://www.ents-bbs.org/viewtopic.php?f=70&t=6536&sid=e1653b73bd5467d4ef4e1980f628b19a 2014 Trip to Southwest Colorado http://www.ents-bbs.org/viewtopic.php?f=70&t=6739&sid=b5cf3e2ef6f4fa3d5c3586295e2879d6#p31087"
+    },
+    {
+      "visited": "08/03/2014",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "163.5'",
+          "126''",
+          "27.8'"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/Sites/25455/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/25455/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "163.5'",
+            "href": "/Browse/Trees/242411/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/242475/Details"
+          },
+          {
+            "text": "27.8'",
+            "href": "/Browse/Trees/242411/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa",
+          "Subalpine Fir",
+          "133.0'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa",
+            "href": "/Browse/Sites/25455/Species/Abies%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/Sites/25455/Species/Abies%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/280641/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/280641/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus scopulorum",
+          "Rocky Mountain Juniper",
+          "35.0'",
+          "95''",
+          "16.8'"
+        ],
+        "links": [
+          {
+            "text": "Juniperus scopulorum",
+            "href": "/Browse/Sites/25455/Species/Juniperus%20scopulorum%20(Rocky%20Mountain%20Juniper)/Details"
+          },
+          {
+            "text": "Rocky Mountain Juniper",
+            "href": "/Browse/Sites/25455/Species/Juniperus%20scopulorum%20(Rocky%20Mountain%20Juniper)/Details"
+          },
+          {
+            "text": "35.0'",
+            "href": "/Browse/Trees/280648/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/280648/Details"
+          },
+          {
+            "text": "16.8'",
+            "href": "/Browse/Trees/280648/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii",
+          "Engelmann Spruce",
+          "152.5'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii",
+            "href": "/Browse/Sites/25455/Species/Picea%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/25455/Species/Picea%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "152.5'",
+            "href": "/Browse/Trees/242477/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/280640/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "180.6'",
+          "158''",
+          "33.5'"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/Sites/25455/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/Sites/25455/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "180.6'",
+            "href": "/Browse/Trees/242247/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/242478/Details"
+          },
+          {
+            "text": "33.5'",
+            "href": "/Browse/Trees/242479/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Ponderosa Pine",
+          "152.0'",
+          "165''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/Sites/25455/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/25455/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "152.0'",
+            "href": "/Browse/Trees/242495/Details"
+          },
+          {
+            "text": "165''",
+            "href": "/Browse/Trees/280637/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. scopulorum",
+          "Rocky Mountain Ponderosa Pine",
+          "162.3'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. scopulorum",
+            "href": "/Browse/Sites/25455/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Rocky%20Mountain%20Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Rocky Mountain Ponderosa Pine",
+            "href": "/Browse/Sites/25455/Species/Pinus%20ponderosa%20var.%20scopulorum%20(Rocky%20Mountain%20Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "162.3'",
+            "href": "/Browse/Trees/93946/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/93950/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobiformis var. reflexa",
+          "Southwestern White Pine",
+          "127.5'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobiformis var. reflexa",
+            "href": "/Browse/Sites/25455/Species/Pinus%20strobiformis%20var.%20reflexa%20(Southwestern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Southwestern White Pine",
+            "href": "/Browse/Sites/25455/Species/Pinus%20strobiformis%20var.%20reflexa%20(Southwestern%20White%20Pine)/Details"
+          },
+          {
+            "text": "127.5'",
+            "href": "/Browse/Trees/280649/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/280649/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus angustifolia",
+          "Narrowleaf Cottonwood",
+          "117.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus angustifolia",
+            "href": "/Browse/Sites/25455/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "Narrowleaf Cottonwood",
+            "href": "/Browse/Sites/25455/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "117.0'",
+            "href": "/Browse/Trees/280638/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "115.0'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/25455/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/25455/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "115.0'",
+            "href": "/Browse/Trees/242467/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/242468/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "37 27.416, -107 51.535",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "La Plata"
+    },
+    "state": {
+      "text": "Colorado (US)",
+      "href": "/Browse/States/5/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

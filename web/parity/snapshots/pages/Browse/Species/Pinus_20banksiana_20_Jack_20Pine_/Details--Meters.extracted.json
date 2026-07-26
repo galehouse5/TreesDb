@@ -1,0 +1,119 @@
+{
+  "botanicalName": "Pinus banksiana",
+  "commonName": "Jack Pine",
+  "global": {
+    "maxHeight": {
+      "text": "28.29 m",
+      "href": "/Browse/Trees/210547/Details"
+    },
+    "maxGirth": {
+      "text": "160 cm",
+      "href": "/Browse/Trees/210544/Details"
+    },
+    "maxCrownSpread": {
+      "text": "7.32 m",
+      "href": "/Browse/Trees/210544/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "28.29 m",
+          "160 cm",
+          "7.32 m"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "28.29 m",
+            "href": "/Browse/Trees/210547/Details"
+          },
+          {
+            "text": "160 cm",
+            "href": "/Browse/Trees/210544/Details"
+          },
+          {
+            "text": "7.32 m",
+            "href": "/Browse/Trees/210544/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "26.40 m",
+          "138 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "26.40 m",
+            "href": "/Browse/Trees/240286/Details"
+          },
+          {
+            "text": "138 cm",
+            "href": "/Browse/Trees/233051/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "9.45 m",
+          "57 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "9.45 m",
+            "href": "/Browse/Trees/222949/Details"
+          },
+          {
+            "text": "57 cm",
+            "href": "/Browse/Trees/222949/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

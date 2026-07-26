@@ -1,0 +1,347 @@
+{
+  "siteId": 1017,
+  "summary": {
+    "Name": "Mingo Creek County Park",
+    "RHI5": "127.60",
+    "RHI10": "122.95",
+    "RHI20": "113.68",
+    "RGI5": "16.77",
+    "RGI10": "14.80",
+    "RGI20": "12.50",
+    "Trees measured": "62",
+    "Last measurement date": "10/24/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/24/2011",
+      "visitors": "Steve Halow",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "77.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/Sites/1017/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/1017/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/18645/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "102.5'",
+          "149''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/1017/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/1017/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "102.5'",
+            "href": "/Browse/Trees/18589/Details"
+          },
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/18626/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "90.5'",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/1017/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/1017/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "90.5'",
+            "href": "/Browse/Trees/18627/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/18627/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "116.0'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/1017/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/1017/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "116.0'",
+            "href": "/Browse/Trees/18590/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/18635/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "121.0'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/1017/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/1017/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "121.0'",
+            "href": "/Browse/Trees/18591/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/18628/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "119.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/1017/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/1017/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/18592/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "101.0'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/1017/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/1017/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/18593/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/18629/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa speciosa",
+          "Northern Catalpa",
+          "70.0'",
+          "180''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catalpa speciosa",
+            "href": "/Browse/Sites/1017/Species/Catalpa%20speciosa%20(Northern%20Catalpa)/Details"
+          },
+          {
+            "text": "Northern Catalpa",
+            "href": "/Browse/Sites/1017/Species/Catalpa%20speciosa%20(Northern%20Catalpa)/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/18594/Details"
+          },
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/18594/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "98.0'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/1017/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/1017/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "98.0'",
+            "href": "/Browse/Trees/18639/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/18595/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "30.5'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/1017/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/1017/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "30.5'",
+            "href": "/Browse/Trees/18649/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/18649/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 41 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "40 11.984, -080 02.016",
+    "coordinatesKind": "calculated",
+    "rows": {
+      "Ownership type": "County Government",
+      "County": "Washington"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,157 @@
+{
+  "siteId": 41194,
+  "summary": {
+    "Name": "Pisgah Inn",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "06/09/2008",
+    "Ownership contact": "Blue Ridge Parkway 199 Hemphill Knob Road Asheville, NC",
+    "General comments": "Inn is ay milepost 408. Trees were measured along the Parkway at altitude of 5,000 feet"
+  },
+  "visits": [
+    {
+      "visited": "06/09/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/pisgahchestnut/pisgah_chestnut_hunt.htm",
+      "comments": "Inn is ay milepost 408. Trees were measured along the Parkway at altitude of 5,000 feet"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "28.7'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/41194/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/41194/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "28.7'",
+            "href": "/Browse/Trees/252136/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/252135/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataagus spp.",
+          "Hawthorn",
+          "17.6'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataagus spp.",
+            "href": "/Browse/Sites/41194/Species/Crataagus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/41194/Species/Crataagus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "17.6'",
+            "href": "/Browse/Trees/252141/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/252141/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "57.0'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/41194/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/41194/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/252140/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/252137/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 24.123, -082 45.479",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Transylvania"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

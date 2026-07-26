@@ -1,0 +1,83 @@
+{
+  "botanicalName": "Quercus douglasii",
+  "commonName": "Blue Oak",
+  "global": {
+    "maxHeight": {
+      "text": "128.6'",
+      "href": "/Browse/Trees/9623/Details"
+    },
+    "maxGirth": {
+      "text": "132''",
+      "href": "/Browse/Trees/234265/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "-",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          null,
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/234265/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "128.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "128.6'",
+            "href": "/Browse/Trees/9623/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

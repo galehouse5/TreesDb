@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Quercus acutissima",
+  "commonName": "Sawtooth Oak",
+  "global": {
+    "maxHeight": {
+      "text": "90.1'",
+      "href": "/Browse/Trees/243240/Details"
+    },
+    "maxGirth": {
+      "text": "120''",
+      "href": "/Browse/Trees/243240/Details"
+    },
+    "maxCrownSpread": {
+      "text": "65.8'",
+      "href": "/Browse/Trees/196161/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "65.0'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/282336/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/226098/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "40.1'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "40.1'",
+            "href": "/Browse/Trees/273000/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/273000/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "90.1'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "90.1'",
+            "href": "/Browse/Trees/243240/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/243240/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "59.0'",
+          "75''",
+          "65.8'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "59.0'",
+            "href": "/Browse/Trees/313215/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/196161/Details"
+          },
+          {
+            "text": "65.8'",
+            "href": "/Browse/Trees/196161/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "botanicalName": "Lagerstroemia indica",
+  "commonName": "Crapemyrtle",
+  "global": {
+    "maxHeight": {
+      "text": "31.9'",
+      "href": "/Browse/Trees/67554/Details"
+    },
+    "maxGirth": {
+      "text": "21''",
+      "href": "/Browse/Trees/67554/Details"
+    },
+    "maxCrownSpread": {
+      "text": "17.0'",
+      "href": "/Browse/Trees/315055/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "17.1'",
+          "5''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "17.1'",
+            "href": "/Browse/Trees/128454/Details"
+          },
+          {
+            "text": "5''",
+            "href": "/Browse/Trees/128454/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "31.9'",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "31.9'",
+            "href": "/Browse/Trees/67554/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/67554/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "26.6'",
+          "17''",
+          "17.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "26.6'",
+            "href": "/Browse/Trees/315055/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/315055/Details"
+          },
+          {
+            "text": "17.0'",
+            "href": "/Browse/Trees/315055/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

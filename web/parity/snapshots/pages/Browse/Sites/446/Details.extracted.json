@@ -1,0 +1,401 @@
+{
+  "siteId": 446,
+  "summary": {
+    "Name": "Congaree National Park",
+    "RHI5": "158.14",
+    "RHI10": "149.32",
+    "RHI20": "139.82",
+    "RGI5": "21.95",
+    "RGI10": "19.69",
+    "RGI20": "15.66",
+    "Trees measured": "157",
+    "Last measurement date": "03/13/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/13/2017",
+      "visitors": "Turner Sharrp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "02/27/2016",
+      "visitors": "Doug Bidlack, Jess Riddle, and Ellen Bidlack",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Also see: http://www.ents-bbs.org/viewtopic.php?f=122&t=7566"
+    },
+    {
+      "visited": "02/26/2011",
+      "visitors": "Tyler Phillips",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/20/2010",
+      "visitors": "Tyler Phillips",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "02/27/2010",
+      "visitors": "Tyler Phillips",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "02/25/2009",
+      "visitors": "Larry Tucei",
+      "tripReportUrl": "www.nativetreesociety.org/events/congaree2009/index_congaree_expedition_2009.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/02/2007",
+      "visitors": "Jess Riddle, Michael Davie, and Marcus Houchins",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/spring_congaree_2007.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/03/2006",
+      "visitors": "Jess Riddle, John Eichholz, and Will Blozan",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/congaree_np2006.htm",
+      "comments": "Additional personnel included Doug Riddle, Marcas Houtchins, John Torrence"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "94.5'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/Sites/446/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/446/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "94.5'",
+            "href": "/Browse/Trees/252703/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/252772/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "130.3'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/446/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/446/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "130.3'",
+            "href": "/Browse/Trees/238589/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/238589/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus pavia",
+          "Red Buckeye",
+          "30.7'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus pavia",
+            "href": "/Browse/Sites/446/Species/Aesculus%20pavia%20(Red%20Buckeye)/Details"
+          },
+          {
+            "text": "Red Buckeye",
+            "href": "/Browse/Sites/446/Species/Aesculus%20pavia%20(Red%20Buckeye)/Details"
+          },
+          {
+            "text": "30.7'",
+            "href": "/Browse/Trees/238588/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/238588/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "60.9'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/Sites/446/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/Sites/446/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "60.9'",
+            "href": "/Browse/Trees/252773/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/252773/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana",
+          "American Hornbeam",
+          "132.0'",
+          "50''",
+          "43.0'"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana",
+            "href": "/Browse/Sites/446/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/446/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "132.0'",
+            "href": "/Browse/Trees/242649/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/238599/Details"
+          },
+          {
+            "text": "43.0'",
+            "href": "/Browse/Trees/242649/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya aquatica",
+          "Water Hickory",
+          "137.2'",
+          "155''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya aquatica",
+            "href": "/Browse/Sites/446/Species/Carya%20aquatica%20(Water%20Hickory)/Details"
+          },
+          {
+            "text": "Water Hickory",
+            "href": "/Browse/Sites/446/Species/Carya%20aquatica%20(Water%20Hickory)/Details"
+          },
+          {
+            "text": "137.2'",
+            "href": "/Browse/Trees/252709/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/252709/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata",
+          "Sugarberry",
+          "109.4'",
+          "160''",
+          "69.0'"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata",
+            "href": "/Browse/Sites/446/Species/Celtis%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "Sugarberry",
+            "href": "/Browse/Sites/446/Species/Celtis%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "109.4'",
+            "href": "/Browse/Trees/2392/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/2392/Details"
+          },
+          {
+            "text": "69.0'",
+            "href": "/Browse/Trees/2392/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. laevigata",
+          "Sugarberry",
+          "133.6'",
+          "156''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. laevigata",
+            "href": "/Browse/Sites/446/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "Sugarberry",
+            "href": "/Browse/Sites/446/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "133.6'",
+            "href": "/Browse/Trees/252748/Details"
+          },
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/252747/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus viridis",
+          "Green Hawthorn",
+          "41.1'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus viridis",
+            "href": "/Browse/Sites/446/Species/Crataegus%20viridis%20(Green%20Hawthorn)/Details"
+          },
+          {
+            "text": "Green Hawthorn",
+            "href": "/Browse/Sites/446/Species/Crataegus%20viridis%20(Green%20Hawthorn)/Details"
+          },
+          {
+            "text": "41.1'",
+            "href": "/Browse/Trees/238595/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/238595/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "131.4'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/446/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/446/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "131.4'",
+            "href": "/Browse/Trees/252735/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/252733/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 34 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 49.595, -080 49.111",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Richland"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

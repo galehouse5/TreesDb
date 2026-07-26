@@ -1,0 +1,166 @@
+{
+  "siteId": 39369,
+  "summary": {
+    "Name": "Castlewood Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "09/27/2014",
+    "Ownership contact": "Lexington Parks and Recreation 469 Park Drive Lexington, KY",
+    "General comments": "32 Acres The park contains Loudoun House (1850's) now used as a community center."
+  },
+  "visits": [
+    {
+      "visited": "09/27/2014",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "32 Acres The park contains Loudoun House (1850's) now used as a community center."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fraxinus quadrangulata",
+          "Blue Ash",
+          "81.0'",
+          "177''",
+          "57.0'"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus quadrangulata",
+            "href": "/Browse/Sites/39369/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "Blue Ash",
+            "href": "/Browse/Sites/39369/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/174135/Details"
+          },
+          {
+            "text": "177''",
+            "href": "/Browse/Trees/174135/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/174135/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "83.5'",
+          "217''",
+          "95.5'"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/39369/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39369/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "83.5'",
+            "href": "/Browse/Trees/174141/Details"
+          },
+          {
+            "text": "217''",
+            "href": "/Browse/Trees/174141/Details"
+          },
+          {
+            "text": "95.5'",
+            "href": "/Browse/Trees/174141/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus muehlenbergii",
+          "Chinkapin Oak",
+          "66.0'",
+          "215''",
+          "71.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus muehlenbergii",
+            "href": "/Browse/Sites/39369/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "Chinkapin Oak",
+            "href": "/Browse/Sites/39369/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/174144/Details"
+          },
+          {
+            "text": "215''",
+            "href": "/Browse/Trees/174143/Details"
+          },
+          {
+            "text": "71.0'",
+            "href": "/Browse/Trees/174144/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 03.310, -084 28.533",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Fayette"
+    },
+    "state": {
+      "text": "Kentucky (US)",
+      "href": "/Browse/States/15/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

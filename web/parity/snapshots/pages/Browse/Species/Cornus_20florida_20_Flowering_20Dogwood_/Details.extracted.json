@@ -1,0 +1,277 @@
+{
+  "botanicalName": "Cornus florida",
+  "commonName": "Flowering Dogwood",
+  "global": {
+    "maxHeight": {
+      "text": "60.1'",
+      "href": "/Browse/Trees/249597/Details"
+    },
+    "maxGirth": {
+      "text": "74''",
+      "href": "/Browse/Trees/224405/Details"
+    },
+    "maxCrownSpread": {
+      "text": "42.0'",
+      "href": "/Browse/Trees/224405/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "52.4'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "52.4'",
+            "href": "/Browse/Trees/142900/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/142900/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "60.1'",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "60.1'",
+            "href": "/Browse/Trees/249597/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/235288/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "33.7'",
+          "26''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "33.7'",
+            "href": "/Browse/Trees/297423/Details"
+          },
+          {
+            "text": "26''",
+            "href": "/Browse/Trees/112329/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "51.2'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "51.2'",
+            "href": "/Browse/Trees/168117/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/128449/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "-",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          null,
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/171565/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "52.0'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "52.0'",
+            "href": "/Browse/Trees/221067/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/229191/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "52.9'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "52.9'",
+            "href": "/Browse/Trees/252161/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/229289/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "53.2'",
+          "74''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "53.2'",
+            "href": "/Browse/Trees/132900/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/224405/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/224405/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "43.3'",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "43.3'",
+            "href": "/Browse/Trees/236548/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/237748/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "44.6'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "44.6'",
+            "href": "/Browse/Trees/313531/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/313531/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

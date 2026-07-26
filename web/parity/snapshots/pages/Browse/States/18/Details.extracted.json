@@ -1,0 +1,560 @@
+{
+  "stateId": 18,
+  "summary": {
+    "Name": "Maryland",
+    "Code": "MD",
+    "RHI5": "153.10",
+    "RHI10": "148.87",
+    "RHI20": "141.64",
+    "RGI5": "20.24",
+    "RGI10": "17.76",
+    "RGI20": "15.24",
+    "Trees measured": "771",
+    "Last measurement date": "09/08/2022"
+  },
+  "location": {
+    "Coordinates": "38 48.286, -077 14.174",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies firma",
+          "Momi Fir",
+          "57.5'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies firma",
+            "href": "/Browse/States/18/Species/Abies%20firma%20(Momi%20Fir)/Details"
+          },
+          {
+            "text": "Momi Fir",
+            "href": "/Browse/States/18/Species/Abies%20firma%20(Momi%20Fir)/Details"
+          },
+          {
+            "text": "57.5'",
+            "href": "/Browse/Trees/102905/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/102905/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies homolepis",
+          "Nikko Fir",
+          "51.5'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies homolepis",
+            "href": "/Browse/States/18/Species/Abies%20homolepis%20(Nikko%20Fir)/Details"
+          },
+          {
+            "text": "Nikko Fir",
+            "href": "/Browse/States/18/Species/Abies%20homolepis%20(Nikko%20Fir)/Details"
+          },
+          {
+            "text": "51.5'",
+            "href": "/Browse/Trees/102904/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/102904/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer davidii",
+          "Father David's Maple",
+          "47.0'",
+          "28''",
+          "29.5'"
+        ],
+        "links": [
+          {
+            "text": "Acer davidii",
+            "href": "/Browse/States/18/Species/Acer%20davidii%20(Father%20David's%20Maple)/Details"
+          },
+          {
+            "text": "Father David's Maple",
+            "href": "/Browse/States/18/Species/Acer%20davidii%20(Father%20David's%20Maple)/Details"
+          },
+          {
+            "text": "47.0'",
+            "href": "/Browse/Trees/163348/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/163348/Details"
+          },
+          {
+            "text": "29.5'",
+            "href": "/Browse/Trees/163348/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "59.5'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/States/18/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/18/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "59.5'",
+            "href": "/Browse/Trees/280936/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/230926/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer platanoides",
+          "Norway Maple",
+          "59.3'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer platanoides",
+            "href": "/Browse/States/18/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "Norway Maple",
+            "href": "/Browse/States/18/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "59.3'",
+            "href": "/Browse/Trees/128447/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/128447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "112.4'",
+          "144''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/18/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/18/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "112.4'",
+            "href": "/Browse/Trees/158460/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/163349/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "124.9'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/18/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/18/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "124.9'",
+            "href": "/Browse/Trees/232022/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/232022/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "88.1'",
+          "174''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/18/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/18/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "88.1'",
+            "href": "/Browse/Trees/232026/Details"
+          },
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/232026/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "105.0'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/States/18/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/18/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/158527/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/158527/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "91.0'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/States/18/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/States/18/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "91.0'",
+            "href": "/Browse/Trees/280928/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/280928/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 99 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arlington Echo Outdoor Education Center",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arlington Echo Outdoor Education Center",
+            "href": "/Browse/Sites/2720/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Avalon Section Of Patapsco Valley State Park",
+          "147.14",
+          "138.51",
+          "14.31",
+          "12.47"
+        ],
+        "links": [
+          {
+            "text": "Avalon Section Of Patapsco Valley State Park",
+            "href": "/Browse/Sites/40469/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Belt Woods - South Tract",
+          "148.22",
+          "135.81",
+          "13.82",
+          "11.14"
+        ],
+        "links": [
+          {
+            "text": "Belt Woods - South Tract",
+            "href": "/Browse/Sites/1730/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Broad Creek Memorial Scout Reservation",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Broad Creek Memorial Scout Reservation",
+            "href": "/Browse/Sites/2714/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Broadneck Hill",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Broadneck Hill",
+            "href": "/Browse/Sites/2719/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "C&O Canal Historical Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "C&O Canal Historical Park",
+            "href": "/Browse/Sites/4759/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catoctin Mountain Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catoctin Mountain Park",
+            "href": "/Browse/Sites/38451/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chapman State Park",
+          "122.56",
+          "-",
+          "12.02",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chapman State Park",
+            "href": "/Browse/Sites/2716/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chase Creek Woods",
+          "139.04",
+          "130.22",
+          "15.27",
+          "11.90"
+        ],
+        "links": [
+          {
+            "text": "Chase Creek Woods",
+            "href": "/Browse/Sites/41882/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Conowingo-Funks Pond Recreational Area",
+          "142.44",
+          "133.77",
+          "14.12",
+          "11.58"
+        ],
+        "links": [
+          {
+            "text": "Conowingo-Funks Pond Recreational Area",
+            "href": "/Browse/Sites/40497/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 29 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

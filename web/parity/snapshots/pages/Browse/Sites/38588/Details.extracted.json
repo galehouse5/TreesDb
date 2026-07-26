@@ -1,0 +1,344 @@
+{
+  "siteId": 38588,
+  "summary": {
+    "Name": "Cooksburg Area-Private Property",
+    "RHI5": "123.42",
+    "RHI10": "106.97",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.22",
+    "RGI10": "8.31",
+    "RGI20": "(not enough data)",
+    "Trees measured": "41",
+    "Last measurement date": "09/12/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/12/2008",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "121.4'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/38588/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/38588/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "121.4'",
+            "href": "/Browse/Trees/147773/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/147773/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea x",
+          "Chestnut Hybrid",
+          "48.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea x",
+            "href": "/Browse/Sites/38588/Species/Castanea%20x%20(Chestnut%20Hybrid)/Details"
+          },
+          {
+            "text": "Chestnut Hybrid",
+            "href": "/Browse/Sites/38588/Species/Castanea%20x%20(Chestnut%20Hybrid)/Details"
+          },
+          {
+            "text": "48.8'",
+            "href": "/Browse/Trees/147793/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa spp.",
+          "Catalpa",
+          "108.8'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catalpa spp.",
+            "href": "/Browse/Sites/38588/Species/Catalpa%20spp.%20(Catalpa)/Details"
+          },
+          {
+            "text": "Catalpa",
+            "href": "/Browse/Sites/38588/Species/Catalpa%20spp.%20(Catalpa)/Details"
+          },
+          {
+            "text": "108.8'",
+            "href": "/Browse/Trees/147790/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/147790/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chamaecyparis pisifera",
+          "Sawara False Cypress",
+          "85.4'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis pisifera",
+            "href": "/Browse/Sites/38588/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "Sawara False Cypress",
+            "href": "/Browse/Sites/38588/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "85.4'",
+            "href": "/Browse/Trees/147787/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/147788/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "-",
+          "149''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/38588/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/38588/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          null,
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/147775/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hydrangea paniculata",
+          "Panicled Hydrangea",
+          "21.6'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hydrangea paniculata",
+            "href": "/Browse/Sites/38588/Species/Hydrangea%20paniculata%20(Panicled%20Hydrangea)/Details"
+          },
+          {
+            "text": "Panicled Hydrangea",
+            "href": "/Browse/Sites/38588/Species/Hydrangea%20paniculata%20(Panicled%20Hydrangea)/Details"
+          },
+          {
+            "text": "21.6'",
+            "href": "/Browse/Trees/147812/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/147778/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "66.1'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/38588/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/38588/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "66.1'",
+            "href": "/Browse/Trees/147791/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/147791/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "117.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/38588/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/38588/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "117.0'",
+            "href": "/Browse/Trees/147806/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "110.1'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/Sites/38588/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/Sites/38588/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "110.1'",
+            "href": "/Browse/Trees/147789/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/147789/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "100.0'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/38588/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/38588/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "100.0'",
+            "href": "/Browse/Trees/147810/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/147811/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 19.920, -079 12.556",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public -state, Private",
+      "County": "Clarion"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

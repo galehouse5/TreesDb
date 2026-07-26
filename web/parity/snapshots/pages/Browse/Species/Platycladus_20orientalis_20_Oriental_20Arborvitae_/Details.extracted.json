@@ -1,0 +1,109 @@
+{
+  "botanicalName": "Platycladus orientalis",
+  "commonName": "Oriental Arborvitae",
+  "global": {
+    "maxHeight": {
+      "text": "56.4'",
+      "href": "/Browse/Trees/274867/Details"
+    },
+    "maxGirth": {
+      "text": "69''",
+      "href": "/Browse/Trees/224545/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "56.4'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "56.4'",
+            "href": "/Browse/Trees/274867/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/274867/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "40.3'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "40.3'",
+            "href": "/Browse/Trees/224545/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/224545/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "29.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "29.8'",
+            "href": "/Browse/Trees/313200/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

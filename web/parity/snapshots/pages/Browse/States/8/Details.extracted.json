@@ -1,0 +1,541 @@
+{
+  "stateId": 8,
+  "summary": {
+    "Name": "Florida",
+    "Code": "FL",
+    "RHI5": "123.32",
+    "RHI10": "108.16",
+    "RHI20": "(not enough data)",
+    "RGI5": "13.00",
+    "RGI10": "10.48",
+    "RGI20": "(not enough data)",
+    "Trees measured": "37",
+    "Last measurement date": "02/19/2026"
+  },
+  "location": {
+    "Coordinates": "27 41.918, -083 48.276",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "80.3'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/States/8/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/States/8/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "80.3'",
+            "href": "/Browse/Trees/159259/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/159258/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "104.3'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/States/8/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/States/8/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "104.3'",
+            "href": "/Browse/Trees/323414/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/323414/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chamaecyparis thyoides",
+          "Atlantic White Cedar",
+          "62.4'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis thyoides",
+            "href": "/Browse/States/8/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "Atlantic White Cedar",
+            "href": "/Browse/States/8/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "62.4'",
+            "href": "/Browse/Trees/242636/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/242635/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cunninghamia lanceolata",
+          "Chinese Fir",
+          "-",
+          "144''",
+          "57.0'"
+        ],
+        "links": [
+          {
+            "text": "Cunninghamia lanceolata",
+            "href": "/Browse/States/8/Species/Cunninghamia%20lanceolata%20(Chinese%20Fir)/Details"
+          },
+          {
+            "text": "Chinese Fir",
+            "href": "/Browse/States/8/Species/Cunninghamia%20lanceolata%20(Chinese%20Fir)/Details"
+          },
+          null,
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/253896/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/253896/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ilex cassine",
+          "Dahoon",
+          "41.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex cassine",
+            "href": "/Browse/States/8/Species/Ilex%20cassine%20(Dahoon)/Details"
+          },
+          {
+            "text": "Dahoon",
+            "href": "/Browse/States/8/Species/Ilex%20cassine%20(Dahoon)/Details"
+          },
+          {
+            "text": "41.0'",
+            "href": "/Browse/Trees/242641/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "72.7'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/States/8/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/States/8/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "72.7'",
+            "href": "/Browse/Trees/159252/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/159252/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "119.2'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/States/8/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/States/8/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "119.2'",
+            "href": "/Browse/Trees/323412/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/323412/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "119.8'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/States/8/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/States/8/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "119.8'",
+            "href": "/Browse/Trees/323413/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/323413/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "101.4'",
+          "169''",
+          "84.0'"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/States/8/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/States/8/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "101.4'",
+            "href": "/Browse/Trees/323415/Details"
+          },
+          {
+            "text": "169''",
+            "href": "/Browse/Trees/253895/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/253895/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa biflora",
+          "Swamp Tupelo",
+          "87.0'",
+          "151''",
+          "39.0'"
+        ],
+        "links": [
+          {
+            "text": "Nyssa biflora",
+            "href": "/Browse/States/8/Species/Nyssa%20biflora%20(Swamp%20Tupelo)/Details"
+          },
+          {
+            "text": "Swamp Tupelo",
+            "href": "/Browse/States/8/Species/Nyssa%20biflora%20(Swamp%20Tupelo)/Details"
+          },
+          {
+            "text": "87.0'",
+            "href": "/Browse/Trees/242640/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/242640/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/242640/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Apalachicola National Forest",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Apalachicola National Forest",
+            "href": "/Browse/Sites/41004/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedar Key",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedar Key",
+            "href": "/Browse/Sites/38826/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Florida Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida Single Tree Sites",
+            "href": "/Browse/Sites/41268/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Manatee Springs State Park",
+          "90.26",
+          "-",
+          "8.78",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Manatee Springs State Park",
+            "href": "/Browse/Sites/38824/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ocala National Forest",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ocala National Forest",
+            "href": "/Browse/Sites/41005/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Silver Springs State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Silver Springs State Park",
+            "href": "/Browse/Sites/38825/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tate's Hell State Forest",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tate's Hell State Forest",
+            "href": "/Browse/Sites/41003/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Torreya State Park",
+          "120.98",
+          "-",
+          "7.09",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Torreya State Park",
+            "href": "/Browse/Sites/42392/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tosohatchee Wildlife Management Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tosohatchee Wildlife Management Area",
+            "href": "/Browse/Sites/41006/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

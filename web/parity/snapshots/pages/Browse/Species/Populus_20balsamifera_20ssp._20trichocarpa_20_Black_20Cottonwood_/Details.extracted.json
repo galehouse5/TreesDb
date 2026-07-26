@@ -1,0 +1,181 @@
+{
+  "botanicalName": "Populus balsamifera ssp. trichocarpa",
+  "commonName": "Black Cottonwood",
+  "global": {
+    "maxHeight": {
+      "text": "180.3'",
+      "href": "/Browse/Trees/269597/Details"
+    },
+    "maxGirth": {
+      "text": "189''",
+      "href": "/Browse/Trees/216297/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alaska",
+          "92.8'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alaska",
+            "href": "/Browse/States/62/Details"
+          },
+          {
+            "text": "92.8'",
+            "href": "/Browse/Trees/75030/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/75030/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "British Columbia",
+          "91.4'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "British Columbia",
+            "href": "/Browse/States/50/Details"
+          },
+          {
+            "text": "91.4'",
+            "href": "/Browse/Trees/74993/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/74993/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "65.8'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "65.8'",
+            "href": "/Browse/Trees/196059/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/196059/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "151.2'",
+          "180''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "151.2'",
+            "href": "/Browse/Trees/297914/Details"
+          },
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/297914/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "180.3'",
+          "189''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "180.3'",
+            "href": "/Browse/Trees/269597/Details"
+          },
+          {
+            "text": "189''",
+            "href": "/Browse/Trees/216297/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Wyoming",
+          "68.0'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wyoming",
+            "href": "/Browse/States/48/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/126225/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/126225/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Pinus parviflora",
+  "commonName": "Japanese White Pine",
+  "global": {
+    "maxHeight": {
+      "text": "74.0'",
+      "href": "/Browse/Trees/225117/Details"
+    },
+    "maxGirth": {
+      "text": "91''",
+      "href": "/Browse/Trees/225117/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "56.7'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "56.7'",
+            "href": "/Browse/Trees/226026/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/226026/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "74.0'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "74.0'",
+            "href": "/Browse/Trees/225117/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/225117/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

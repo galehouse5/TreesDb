@@ -1,0 +1,344 @@
+{
+  "siteId": 39299,
+  "summary": {
+    "Name": "Illinois Single Tree Sites",
+    "RHI5": "91.66",
+    "RHI10": "59.20",
+    "RHI20": "(not enough data)",
+    "RGI5": "17.76",
+    "RGI10": "12.36",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "100.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/39299/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/39299/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "100.0'",
+            "href": "/Browse/Trees/171017/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. laevigata",
+          "Sugarberry",
+          "64.5'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. laevigata",
+            "href": "/Browse/Sites/39299/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "Sugarberry",
+            "href": "/Browse/Sites/39299/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "64.5'",
+            "href": "/Browse/Trees/171012/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/171012/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "-",
+          "210''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/39299/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/39299/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          null,
+          {
+            "text": "210''",
+            "href": "/Browse/Trees/171015/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "69.2'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/39299/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/39299/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "69.2'",
+            "href": "/Browse/Trees/171011/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/171011/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "109.0'",
+          "258''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/39299/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/39299/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/171016/Details"
+          },
+          {
+            "text": "258''",
+            "href": "/Browse/Trees/171016/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides ssp. deltoides",
+          "Eastern Cottonwood",
+          "88.1'",
+          "174''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides ssp. deltoides",
+            "href": "/Browse/Sites/39299/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/39299/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "88.1'",
+            "href": "/Browse/Trees/171010/Details"
+          },
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/171013/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus bicolor",
+          "Swamp White Oak",
+          "-",
+          "202''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus bicolor",
+            "href": "/Browse/Sites/39299/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "Swamp White Oak",
+            "href": "/Browse/Sites/39299/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "202''",
+            "href": "/Browse/Trees/171014/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus imbricaria",
+          "Shingle Oak",
+          "-",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus imbricaria",
+            "href": "/Browse/Sites/39299/Species/Quercus%20imbricaria%20(Shingle%20Oak)/Details"
+          },
+          {
+            "text": "Shingle Oak",
+            "href": "/Browse/Sites/39299/Species/Quercus%20imbricaria%20(Shingle%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/171009/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "85.0'",
+          "222''",
+          "77.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/39299/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/39299/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/171019/Details"
+          },
+          {
+            "text": "222''",
+            "href": "/Browse/Trees/171019/Details"
+          },
+          {
+            "text": "77.0'",
+            "href": "/Browse/Trees/171019/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus spp.",
+          "Elm",
+          "76.2'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus spp.",
+            "href": "/Browse/Sites/39299/Species/Ulmus%20spp.%20(Elm)/Details"
+          },
+          {
+            "text": "Elm",
+            "href": "/Browse/Sites/39299/Species/Ulmus%20spp.%20(Elm)/Details"
+          },
+          {
+            "text": "76.2'",
+            "href": "/Browse/Trees/171018/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/171018/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 46.903, -089 39.009",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public- Private",
+      "County": "Sangamon"
+    },
+    "state": {
+      "text": "Illinois (US)",
+      "href": "/Browse/States/12/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,285 @@
+{
+  "siteId": 42076,
+  "summary": {
+    "Name": "Bogachiel Rainforest River Trail",
+    "RHI5": "204.10",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.43",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "13",
+    "Last measurement date": "06/16/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/16/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer circinatum",
+          "Vine Maple",
+          "21.5'",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer circinatum",
+            "href": "/Browse/Sites/42076/Species/Acer%20circinatum%20(Vine%20Maple)/Details"
+          },
+          {
+            "text": "Vine Maple",
+            "href": "/Browse/Sites/42076/Species/Acer%20circinatum%20(Vine%20Maple)/Details"
+          },
+          {
+            "text": "21.5'",
+            "href": "/Browse/Trees/296872/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/296872/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer macrophyllum",
+          "Bigleaf Maple",
+          "116.3'",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer macrophyllum",
+            "href": "/Browse/Sites/42076/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "Bigleaf Maple",
+            "href": "/Browse/Sites/42076/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "116.3'",
+            "href": "/Browse/Trees/296871/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/296871/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus rubra",
+          "Red Alder",
+          "125.0'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus rubra",
+            "href": "/Browse/Sites/42076/Species/Alnus%20rubra%20(Red%20Alder)/Details"
+          },
+          {
+            "text": "Red Alder",
+            "href": "/Browse/Sites/42076/Species/Alnus%20rubra%20(Red%20Alder)/Details"
+          },
+          {
+            "text": "125.0'",
+            "href": "/Browse/Trees/296870/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/296870/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea sitchensis",
+          "Sitka Spruce",
+          "267.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea sitchensis",
+            "href": "/Browse/Sites/42076/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "Sitka Spruce",
+            "href": "/Browse/Sites/42076/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "267.1'",
+            "href": "/Browse/Trees/296874/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus balsamifera ssp. trichocarpa",
+          "Black Cottonwood",
+          "152.4'",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. trichocarpa",
+            "href": "/Browse/Sites/42076/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "Black Cottonwood",
+            "href": "/Browse/Sites/42076/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "152.4'",
+            "href": "/Browse/Trees/296873/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/296873/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "200.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/42076/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/42076/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "200.3'",
+            "href": "/Browse/Trees/296882/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja plicata",
+          "Western Redcedar",
+          "190.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja plicata",
+            "href": "/Browse/Sites/42076/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "Western Redcedar",
+            "href": "/Browse/Sites/42076/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "190.5'",
+            "href": "/Browse/Trees/296880/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga heterophylla",
+          "Western Hemlock",
+          "210.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga heterophylla",
+            "href": "/Browse/Sites/42076/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "Western Hemlock",
+            "href": "/Browse/Sites/42076/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "210.2'",
+            "href": "/Browse/Trees/296877/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "47 52.826, -124 16.192",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Clallam"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

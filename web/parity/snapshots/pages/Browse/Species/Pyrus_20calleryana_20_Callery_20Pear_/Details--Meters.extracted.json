@@ -1,0 +1,119 @@
+{
+  "botanicalName": "Pyrus calleryana",
+  "commonName": "Callery Pear",
+  "global": {
+    "maxHeight": {
+      "text": "13.72 m",
+      "href": "/Browse/Trees/281877/Details"
+    },
+    "maxGirth": {
+      "text": "305 cm",
+      "href": "/Browse/Trees/128437/Details"
+    },
+    "maxCrownSpread": {
+      "text": "15.70 m",
+      "href": "/Browse/Trees/272990/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "12.41 m",
+          "305 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "12.41 m",
+            "href": "/Browse/Trees/128437/Details"
+          },
+          {
+            "text": "305 cm",
+            "href": "/Browse/Trees/128437/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "13.72 m",
+          "125 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "13.72 m",
+            "href": "/Browse/Trees/281877/Details"
+          },
+          {
+            "text": "125 cm",
+            "href": "/Browse/Trees/281877/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "13.47 m",
+          "145 cm",
+          "15.70 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "13.47 m",
+            "href": "/Browse/Trees/206794/Details"
+          },
+          {
+            "text": "145 cm",
+            "href": "/Browse/Trees/271870/Details"
+          },
+          {
+            "text": "15.70 m",
+            "href": "/Browse/Trees/272990/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

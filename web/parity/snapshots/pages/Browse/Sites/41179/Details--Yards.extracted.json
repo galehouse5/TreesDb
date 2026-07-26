@@ -1,0 +1,368 @@
+{
+  "siteId": 41179,
+  "summary": {
+    "Name": "Delta National Forest",
+    "RHI5": "44.233",
+    "RHI10": "41.140",
+    "RHI20": "(not enough data)",
+    "RGI5": "5.611",
+    "RGI10": "4.344",
+    "RGI20": "(not enough data)",
+    "Trees measured": "32",
+    "Last measurement date": "12/29/2014",
+    "Ownership contact": "Forest Supervisor 6425 Lakeover Road Suite A Jackson, Mississippi",
+    "General comments": "90,898 acres with seven Ranger Districts. This entire national forest is under supervision of the State of Mississippi's Wildlife Department under the name of the Sunflower Wildlife Management Area."
+  },
+  "visits": [
+    {
+      "visited": "12/29/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "(none)",
+      "comments": "90,898 acres with seven Ranger Districts. This entire national forest is under supervision of the State of Mississippi's Wildlife Department under the name of the Sunflower Wildlife Management Area."
+    },
+    {
+      "visited": "02/19/2014",
+      "visitors": "Larry Tucei",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Visited 5 times between 11/9/2013 and 2/19/2014. See the Native Tree Society trip reports for that time period."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "41.17 yd",
+          "155''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41179/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41179/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "41.17 yd",
+            "href": "/Browse/Trees/251102/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/251102/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "40.17 yd",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/41179/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/41179/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "40.17 yd",
+            "href": "/Browse/Trees/251109/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/251109/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Forestiera segregata",
+          "Florida Swampprivet",
+          "16.70 yd",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Forestiera segregata",
+            "href": "/Browse/Sites/41179/Species/Forestiera%20segregata%20(Florida%20Swampprivet)/Details"
+          },
+          {
+            "text": "Florida Swampprivet",
+            "href": "/Browse/Sites/41179/Species/Forestiera%20segregata%20(Florida%20Swampprivet)/Details"
+          },
+          {
+            "text": "16.70 yd",
+            "href": "/Browse/Trees/251020/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/251020/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "43.00 yd",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/41179/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/41179/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "43.00 yd",
+            "href": "/Browse/Trees/251110/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/251111/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia aquatica",
+          "Water Locust",
+          "28.90 yd",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia aquatica",
+            "href": "/Browse/Sites/41179/Species/Gleditsia%20aquatica%20(Water%20Locust)/Details"
+          },
+          {
+            "text": "Water Locust",
+            "href": "/Browse/Sites/41179/Species/Gleditsia%20aquatica%20(Water%20Locust)/Details"
+          },
+          {
+            "text": "28.90 yd",
+            "href": "/Browse/Trees/251019/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/251019/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "45.50 yd",
+          "214''",
+          "22.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/41179/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/41179/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "45.50 yd",
+            "href": "/Browse/Trees/251087/Details"
+          },
+          {
+            "text": "214''",
+            "href": "/Browse/Trees/251088/Details"
+          },
+          {
+            "text": "22.67 yd",
+            "href": "/Browse/Trees/251088/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "40.17 yd",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/41179/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/41179/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "40.17 yd",
+            "href": "/Browse/Trees/251114/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/251114/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lyrata",
+          "Overcup Oak",
+          "40.83 yd",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lyrata",
+            "href": "/Browse/Sites/41179/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "Overcup Oak",
+            "href": "/Browse/Sites/41179/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "40.83 yd",
+            "href": "/Browse/Trees/251097/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/251091/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus phellos",
+          "Willow Oak",
+          "46.00 yd",
+          "194''",
+          "30.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Quercus phellos",
+            "href": "/Browse/Sites/41179/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "Willow Oak",
+            "href": "/Browse/Sites/41179/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "46.00 yd",
+            "href": "/Browse/Trees/251105/Details"
+          },
+          {
+            "text": "194''",
+            "href": "/Browse/Trees/251104/Details"
+          },
+          {
+            "text": "30.00 yd",
+            "href": "/Browse/Trees/251104/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "45.50 yd",
+          "181''",
+          "36.27 yd"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/41179/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/41179/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "45.50 yd",
+            "href": "/Browse/Trees/251106/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/251106/Details"
+          },
+          {
+            "text": "36.27 yd",
+            "href": "/Browse/Trees/251106/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 45.714, -090 47.487",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Sharkey"
+    },
+    "state": {
+      "text": "Mississippi (US)",
+      "href": "/Browse/States/23/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

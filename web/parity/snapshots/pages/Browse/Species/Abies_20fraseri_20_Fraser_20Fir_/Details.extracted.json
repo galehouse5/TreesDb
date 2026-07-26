@@ -1,0 +1,119 @@
+{
+  "botanicalName": "Abies fraseri",
+  "commonName": "Fraser Fir",
+  "global": {
+    "maxHeight": {
+      "text": "64.8'",
+      "href": "/Browse/Trees/227251/Details"
+    },
+    "maxGirth": {
+      "text": "73''",
+      "href": "/Browse/Trees/227251/Details"
+    },
+    "maxCrownSpread": {
+      "text": "27.0'",
+      "href": "/Browse/Trees/313217/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "26.5'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "26.5'",
+            "href": "/Browse/Trees/282345/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/282345/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "64.8'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "64.8'",
+            "href": "/Browse/Trees/227251/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/227251/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "39.2'",
+          "36''",
+          "27.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "39.2'",
+            "href": "/Browse/Trees/313267/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/313217/Details"
+          },
+          {
+            "text": "27.0'",
+            "href": "/Browse/Trees/313217/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

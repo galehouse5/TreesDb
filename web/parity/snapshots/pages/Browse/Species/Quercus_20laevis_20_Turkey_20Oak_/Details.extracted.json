@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Quercus laevis",
+  "commonName": "Turkey Oak",
+  "global": {
+    "maxHeight": {
+      "text": "52.5'",
+      "href": "/Browse/Trees/2422/Details"
+    },
+    "maxGirth": {
+      "text": "51''",
+      "href": "/Browse/Trees/2422/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "North Carolina",
+          "-",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          null,
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/164153/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "52.5'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "52.5'",
+            "href": "/Browse/Trees/2422/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/2422/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

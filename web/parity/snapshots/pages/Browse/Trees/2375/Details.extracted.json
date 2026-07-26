@@ -1,0 +1,70 @@
+{
+  "treeId": 2375,
+  "botanicalName": {
+    "text": "Acer saccharum",
+    "href": "/Browse/Sites/442/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+  },
+  "commonName": {
+    "text": "Sugar Maple",
+    "href": "/Browse/Sites/442/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+  },
+  "details": {
+    "Height": "105.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "108''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "85.46",
+    "ENTSPTS": "949.50",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.37",
+    "Champion points (abbreviated)": "213.50",
+    "Diameter": "34''",
+    "Conical volume": "226.7 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/03/2011",
+      "summary": {
+        "Height": "105.5'",
+        "Girth": "108''"
+      },
+      "details": {
+        "Botanical name": "Acer saccharum",
+        "Common name": "Sugar Maple",
+        "Height": "105.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "108''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "85.46",
+        "ENTSPTS": "949.50",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.37",
+        "Champion points (abbreviated)": "213.50",
+        "Diameter": "34''",
+        "Conical volume": "226.7 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Steve Galehouse"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 13.076, -081 42.254",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Whipp's Ledges",
+      "href": "/Browse/Sites/442/Details"
+    },
+    "rows": {
+      "Ownership type": "Park",
+      "County": "Medina"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

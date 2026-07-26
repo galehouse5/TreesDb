@@ -1,0 +1,325 @@
+{
+  "siteId": 38824,
+  "summary": {
+    "Name": "Manatee Springs State Park",
+    "RHI5": "90.26",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.78",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "03/08/2017",
+    "Ownership contact": "11650 NW 115th Street, Chiefland, Fl., 32626",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/08/2017",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "80.3'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/38824/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/38824/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "80.3'",
+            "href": "/Browse/Trees/159259/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/159258/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "72.7'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/Sites/38824/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/38824/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "72.7'",
+            "href": "/Browse/Trees/159252/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/159252/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "84.9'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/38824/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/38824/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "84.9'",
+            "href": "/Browse/Trees/159247/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/159247/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "43.5'",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/38824/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/38824/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "43.5'",
+            "href": "/Browse/Trees/159253/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/159254/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus palustris",
+          "Longleaf Pine",
+          "92.0'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus palustris",
+            "href": "/Browse/Sites/38824/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "Longleaf Pine",
+            "href": "/Browse/Sites/38824/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "92.0'",
+            "href": "/Browse/Trees/159256/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/159256/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "111.1'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/38824/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/38824/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "111.1'",
+            "href": "/Browse/Trees/159251/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/159251/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus laurifolia",
+          "Laurel Oak",
+          "64.1'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus laurifolia",
+            "href": "/Browse/Sites/38824/Species/Quercus%20laurifolia%20(Laurel%20Oak)/Details"
+          },
+          {
+            "text": "Laurel Oak",
+            "href": "/Browse/Sites/38824/Species/Quercus%20laurifolia%20(Laurel%20Oak)/Details"
+          },
+          {
+            "text": "64.1'",
+            "href": "/Browse/Trees/159250/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/159250/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "83.0'",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/38824/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/38824/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "83.0'",
+            "href": "/Browse/Trees/159248/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/159249/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vaccinium arboreum",
+          "Farkleberry",
+          "24.5'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vaccinium arboreum",
+            "href": "/Browse/Sites/38824/Species/Vaccinium%20arboreum%20(Farkleberry)/Details"
+          },
+          {
+            "text": "Farkleberry",
+            "href": "/Browse/Sites/38824/Species/Vaccinium%20arboreum%20(Farkleberry)/Details"
+          },
+          {
+            "text": "24.5'",
+            "href": "/Browse/Trees/159255/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/159255/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "29 29.270, -082 58.626",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Levy"
+    },
+    "state": {
+      "text": "Florida (US)",
+      "href": "/Browse/States/8/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

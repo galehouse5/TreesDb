@@ -1,0 +1,69 @@
+{
+  "treeId": 260416,
+  "botanicalName": {
+    "text": "Picea abies",
+    "href": "/Browse/Sites/41447/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+  },
+  "commonName": {
+    "text": "Norway Spruce",
+    "href": "/Browse/Sites/41447/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+  },
+  "details": {
+    "Height": "32.92 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "(no data)",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "(not enough data)",
+    "ENTSPTS": "(not enough data)",
+    "TDI3": "(not enough data)",
+    "TDI2": "(not enough data)",
+    "Champion points": "(not enough data)",
+    "Diameter": "(no data)",
+    "Conical volume": "(no data)",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 04/13/2016",
+      "summary": {
+        "Height": "32.92 m"
+      },
+      "details": {
+        "Botanical name": "Picea abies",
+        "Common name": "Norway Spruce",
+        "Height": "32.92 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "(no data)",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "(not enough data)",
+        "ENTSPTS": "(not enough data)",
+        "TDI3": "(not enough data)",
+        "TDI2": "(not enough data)",
+        "Champion points": "(not enough data)",
+        "Diameter": "(no data)",
+        "Conical volume": "(no data)",
+        "General comments": "(none)"
+      },
+      "measurers": "Erik Danielson and David Berg"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "40 52.079, -073 48.426",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Pelham Bay Park",
+      "href": "/Browse/Sites/41447/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Bronx"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

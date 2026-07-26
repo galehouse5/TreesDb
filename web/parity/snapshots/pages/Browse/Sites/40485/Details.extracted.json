@@ -1,0 +1,266 @@
+{
+  "siteId": 40485,
+  "summary": {
+    "Name": "Leakin Park",
+    "RHI5": "140.48",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "13.10",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "29",
+    "Last measurement date": "01/03/2016",
+    "Ownership contact": "Leakin Park Gwynns Falls Park 4921 Windsor Mill Road Gwynn Falls, MD",
+    "General comments": "1,216 contiguous Acres"
+  },
+  "visits": [
+    {
+      "visited": "01/03/2016",
+      "visitors": "George Fieo",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "1,216 contiguous Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "139.2'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/40485/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/40485/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "139.2'",
+            "href": "/Browse/Trees/231445/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/231444/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "155.1'",
+          "257''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40485/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40485/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "155.1'",
+            "href": "/Browse/Trees/231463/Details"
+          },
+          {
+            "text": "257''",
+            "href": "/Browse/Trees/231464/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus virginiana",
+          "Virginia Pine",
+          "92.0'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus virginiana",
+            "href": "/Browse/Sites/40485/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "Virginia Pine",
+            "href": "/Browse/Sites/40485/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "92.0'",
+            "href": "/Browse/Trees/231449/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/231449/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "142.8'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/40485/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/40485/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "142.8'",
+            "href": "/Browse/Trees/231443/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/231443/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "132.5'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40485/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40485/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "132.5'",
+            "href": "/Browse/Trees/231456/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/231450/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "132.8'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40485/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40485/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "132.8'",
+            "href": "/Browse/Trees/231447/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/231448/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus americana",
+          "American Elm",
+          "125.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus americana",
+            "href": "/Browse/Sites/40485/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "American Elm",
+            "href": "/Browse/Sites/40485/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "125.9'",
+            "href": "/Browse/Trees/231442/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 18.570, -076 42.024",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Baltimore City"
+    },
+    "state": {
+      "text": "Maryland (US)",
+      "href": "/Browse/States/18/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

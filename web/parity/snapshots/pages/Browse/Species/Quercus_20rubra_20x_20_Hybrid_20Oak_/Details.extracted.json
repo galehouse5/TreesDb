@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Quercus rubra x",
+  "commonName": "Hybrid Oak",
+  "global": {
+    "maxHeight": {
+      "text": "106.7'",
+      "href": "/Browse/Trees/212142/Details"
+    },
+    "maxGirth": {
+      "text": "65''",
+      "href": "/Browse/Trees/212142/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pennsylvania",
+          "106.7'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "106.7'",
+            "href": "/Browse/Trees/212142/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/212142/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

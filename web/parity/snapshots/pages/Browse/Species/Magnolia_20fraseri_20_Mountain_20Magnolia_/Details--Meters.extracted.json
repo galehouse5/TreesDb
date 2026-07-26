@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Magnolia fraseri",
+  "commonName": "Mountain Magnolia",
+  "global": {
+    "maxHeight": {
+      "text": "37.03 m",
+      "href": "/Browse/Trees/229659/Details"
+    },
+    "maxGirth": {
+      "text": "239 cm",
+      "href": "/Browse/Trees/229500/Details"
+    },
+    "maxCrownSpread": {
+      "text": "15.85 m",
+      "href": "/Browse/Trees/166978/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "33.83 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "33.83 m",
+            "href": "/Browse/Trees/249297/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "37.03 m",
+          "210 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "37.03 m",
+            "href": "/Browse/Trees/229659/Details"
+          },
+          {
+            "text": "210 cm",
+            "href": "/Browse/Trees/227652/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "22.43 m",
+          "168 cm",
+          "15.85 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "22.43 m",
+            "href": "/Browse/Trees/142273/Details"
+          },
+          {
+            "text": "168 cm",
+            "href": "/Browse/Trees/142273/Details"
+          },
+          {
+            "text": "15.85 m",
+            "href": "/Browse/Trees/166978/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "32.28 m",
+          "231 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "32.28 m",
+            "href": "/Browse/Trees/281317/Details"
+          },
+          {
+            "text": "231 cm",
+            "href": "/Browse/Trees/281317/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "35.17 m",
+          "239 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "35.17 m",
+            "href": "/Browse/Trees/229540/Details"
+          },
+          {
+            "text": "239 cm",
+            "href": "/Browse/Trees/229500/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "34.72 m",
+          "212 cm",
+          "13.41 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "34.72 m",
+            "href": "/Browse/Trees/167008/Details"
+          },
+          {
+            "text": "212 cm",
+            "href": "/Browse/Trees/313166/Details"
+          },
+          {
+            "text": "13.41 m",
+            "href": "/Browse/Trees/313076/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "siteId": 42295,
+  "summary": {
+    "Name": "Forest Service Road 301",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "07/08/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/08/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Tsuga mertensiana",
+          "Mountain Hemlock",
+          "41.48 m",
+          "354 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga mertensiana",
+            "href": "/Browse/Sites/42295/Species/Tsuga%20mertensiana%20(Mountain%20Hemlock)/Details"
+          },
+          {
+            "text": "Mountain Hemlock",
+            "href": "/Browse/Sites/42295/Species/Tsuga%20mertensiana%20(Mountain%20Hemlock)/Details"
+          },
+          {
+            "text": "41.48 m",
+            "href": "/Browse/Trees/318038/Details"
+          },
+          {
+            "text": "354 cm",
+            "href": "/Browse/Trees/318038/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "47 02.462, -115 51.974",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Shoshone"
+    },
+    "state": {
+      "text": "Idaho (US)",
+      "href": "/Browse/States/11/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

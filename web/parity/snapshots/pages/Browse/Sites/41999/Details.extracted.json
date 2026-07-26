@@ -1,0 +1,213 @@
+{
+  "siteId": 41999,
+  "summary": {
+    "Name": "University Of Vienna Botanical Garden",
+    "RHI5": "68.82",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.69",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "03/15/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "Established in 1754 but heavily damaged during WW 11 and repaired after the war."
+  },
+  "visits": [
+    {
+      "visited": "03/15/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Established in 1754 but heavily damaged during WW 11 and repaired after the war."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Larix sibirica",
+          "Siberian Larch",
+          "71.2'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix sibirica",
+            "href": "/Browse/Sites/41999/Species/Larix%20sibirica%20(Siberian%20Larch)/Details"
+          },
+          {
+            "text": "Siberian Larch",
+            "href": "/Browse/Sites/41999/Species/Larix%20sibirica%20(Siberian%20Larch)/Details"
+          },
+          {
+            "text": "71.2'",
+            "href": "/Browse/Trees/286417/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/286417/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus nigra",
+          "Austrian Pine",
+          "61.3'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus nigra",
+            "href": "/Browse/Sites/41999/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "Austrian Pine",
+            "href": "/Browse/Sites/41999/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "61.3'",
+            "href": "/Browse/Trees/286416/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/286416/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus orientalis",
+          "Oriental Planetree",
+          "83.5'",
+          "200''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus orientalis",
+            "href": "/Browse/Sites/41999/Species/Platanus%20orientalis%20(Oriental%20Planetree)/Details"
+          },
+          {
+            "text": "Oriental Planetree",
+            "href": "/Browse/Sites/41999/Species/Platanus%20orientalis%20(Oriental%20Planetree)/Details"
+          },
+          {
+            "text": "83.5'",
+            "href": "/Browse/Trees/286420/Details"
+          },
+          {
+            "text": "200''",
+            "href": "/Browse/Trees/286420/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus nigra",
+          "Lombardy Poplar",
+          "74.0'",
+          "230''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus nigra",
+            "href": "/Browse/Sites/41999/Species/Populus%20nigra%20(Lombardy%20Poplar)/Details"
+          },
+          {
+            "text": "Lombardy Poplar",
+            "href": "/Browse/Sites/41999/Species/Populus%20nigra%20(Lombardy%20Poplar)/Details"
+          },
+          {
+            "text": "74.0'",
+            "href": "/Browse/Trees/286419/Details"
+          },
+          {
+            "text": "230''",
+            "href": "/Browse/Trees/286419/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus cerris",
+          "European Turkey Oak",
+          "54.1'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus cerris",
+            "href": "/Browse/Sites/41999/Species/Quercus%20cerris%20(European%20Turkey%20Oak)/Details"
+          },
+          {
+            "text": "European Turkey Oak",
+            "href": "/Browse/Sites/41999/Species/Quercus%20cerris%20(European%20Turkey%20Oak)/Details"
+          },
+          {
+            "text": "54.1'",
+            "href": "/Browse/Trees/286418/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/286418/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "48 11.467, 016 22.969",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Wien"
+    },
+    "state": {
+      "text": "Vienna (AT)",
+      "href": "/Browse/States/254/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

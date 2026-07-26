@@ -1,0 +1,131 @@
+{
+  "category": "derived",
+  "generatedAt": "2026-07-17T19:51:46.305Z",
+  "checksRun": 27315,
+  "pass": 27305,
+  "fail": 0,
+  "waived": 10,
+  "diffs": [],
+  "waivedDiffs": [
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "maxCrownSpreadTreeId",
+        "expected": 299714,
+        "actual": 224404,
+        "message": "measured_species.maxCrownSpreadTreeId: expected 299714, got 224404",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species",
+        "field": "maxCrownSpreadTreeId",
+        "expected": 274320,
+        "actual": 255929,
+        "message": "measured_species.maxCrownSpreadTreeId: expected 274320, got 255929",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 173661,
+        "actual": 142810,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 173661, got 142810",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 253241,
+        "actual": 177007,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 253241, got 177007",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxGirthTreeId",
+        "expected": 258897,
+        "actual": 226010,
+        "message": "measured_species_by_state.maxGirthTreeId: expected 258897, got 226010",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 166114,
+        "actual": 166108,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 166114, got 166108",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 234935,
+        "actual": 234716,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 234935, got 234716",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 249112,
+        "actual": 234710,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 249112, got 234710",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxGirthTreeId",
+        "expected": 235515,
+        "actual": 227965,
+        "message": "measured_species_by_state.maxGirthTreeId: expected 235515, got 227965",
+        "waiverHint": "W-001"
+      }
+    },
+    {
+      "waiverId": "W-001",
+      "diff": {
+        "kind": "field",
+        "table": "measured_species_by_state",
+        "field": "maxHeightTreeId",
+        "expected": 280431,
+        "actual": 265915,
+        "message": "measured_species_by_state.maxHeightTreeId: expected 280431, got 265915",
+        "waiverHint": "W-001"
+      }
+    }
+  ]
+}

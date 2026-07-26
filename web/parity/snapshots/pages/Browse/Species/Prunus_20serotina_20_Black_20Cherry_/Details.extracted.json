@@ -1,0 +1,286 @@
+{
+  "botanicalName": "Prunus serotina",
+  "commonName": "Black Cherry",
+  "global": {
+    "maxHeight": {
+      "text": "154.5'",
+      "href": "/Browse/Trees/288176/Details"
+    },
+    "maxGirth": {
+      "text": "171''",
+      "href": "/Browse/Trees/142521/Details"
+    },
+    "maxCrownSpread": {
+      "text": "81.5'",
+      "href": "/Browse/Trees/142521/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "105.1'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "105.1'",
+            "href": "/Browse/Trees/233844/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/233844/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "97.6'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "97.6'",
+            "href": "/Browse/Trees/241466/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/241466/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "115.6'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "115.6'",
+            "href": "/Browse/Trees/142888/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/142888/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "137.8'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "137.8'",
+            "href": "/Browse/Trees/234935/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/234933/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "127.1'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "127.1'",
+            "href": "/Browse/Trees/250174/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/256032/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Michigan",
+          "103.0'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Michigan",
+            "href": "/Browse/States/20/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/104001/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/104001/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Minnesota",
+          "73.0'",
+          "92''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "Minnesota",
+            "href": "/Browse/States/21/Details"
+          },
+          {
+            "text": "73.0'",
+            "href": "/Browse/Trees/172276/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/172276/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/172276/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "134.8'",
+          "171''",
+          "81.5'"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "134.8'",
+            "href": "/Browse/Trees/265252/Details"
+          },
+          {
+            "text": "171''",
+            "href": "/Browse/Trees/142521/Details"
+          },
+          {
+            "text": "81.5'",
+            "href": "/Browse/Trees/142521/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "143.3'",
+          "120''",
+          "6.6'"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "143.3'",
+            "href": "/Browse/Trees/252463/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/230420/Details"
+          },
+          {
+            "text": "6.6'",
+            "href": "/Browse/Trees/227729/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "154.5'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "154.5'",
+            "href": "/Browse/Trees/288176/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/33578/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

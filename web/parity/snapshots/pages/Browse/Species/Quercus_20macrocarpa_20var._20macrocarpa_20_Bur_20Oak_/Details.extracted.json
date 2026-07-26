@@ -1,0 +1,266 @@
+{
+  "botanicalName": "Quercus macrocarpa var. macrocarpa",
+  "commonName": "Bur Oak",
+  "global": {
+    "maxHeight": {
+      "text": "132.7'",
+      "href": "/Browse/Trees/171794/Details"
+    },
+    "maxGirth": {
+      "text": "285''",
+      "href": "/Browse/Trees/313061/Details"
+    },
+    "maxCrownSpread": {
+      "text": "141.0'",
+      "href": "/Browse/Trees/255950/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Kentucky",
+          "83.5'",
+          "255''",
+          "95.5'"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "83.5'",
+            "href": "/Browse/Trees/174141/Details"
+          },
+          {
+            "text": "255''",
+            "href": "/Browse/Trees/174562/Details"
+          },
+          {
+            "text": "95.5'",
+            "href": "/Browse/Trees/174141/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "132.7'",
+          "211''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "132.7'",
+            "href": "/Browse/Trees/171794/Details"
+          },
+          {
+            "text": "211''",
+            "href": "/Browse/Trees/171794/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "122.6'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "122.6'",
+            "href": "/Browse/Trees/320526/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/226077/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "122.4'",
+          "242''",
+          "98.4'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "122.4'",
+            "href": "/Browse/Trees/169518/Details"
+          },
+          {
+            "text": "242''",
+            "href": "/Browse/Trees/169326/Details"
+          },
+          {
+            "text": "98.4'",
+            "href": "/Browse/Trees/302713/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "91.2'",
+          "223''",
+          "141.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "91.2'",
+            "href": "/Browse/Trees/255950/Details"
+          },
+          {
+            "text": "223''",
+            "href": "/Browse/Trees/255950/Details"
+          },
+          {
+            "text": "141.0'",
+            "href": "/Browse/Trees/255950/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Dakota",
+          "58.1'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Dakota",
+            "href": "/Browse/States/39/Details"
+          },
+          {
+            "text": "58.1'",
+            "href": "/Browse/Trees/74833/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/74833/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "124.8'",
+          "199''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "124.8'",
+            "href": "/Browse/Trees/321888/Details"
+          },
+          {
+            "text": "199''",
+            "href": "/Browse/Trees/315477/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "114.3'",
+          "285''",
+          "114.8'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "114.3'",
+            "href": "/Browse/Trees/313061/Details"
+          },
+          {
+            "text": "285''",
+            "href": "/Browse/Trees/313061/Details"
+          },
+          {
+            "text": "114.8'",
+            "href": "/Browse/Trees/313061/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Wyoming",
+          "49.9'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wyoming",
+            "href": "/Browse/States/48/Details"
+          },
+          {
+            "text": "49.9'",
+            "href": "/Browse/Trees/126314/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/126314/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

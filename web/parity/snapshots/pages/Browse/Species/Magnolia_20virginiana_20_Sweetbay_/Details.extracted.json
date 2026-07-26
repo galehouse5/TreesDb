@@ -1,0 +1,231 @@
+{
+  "botanicalName": "Magnolia virginiana",
+  "commonName": "Sweetbay",
+  "global": {
+    "maxHeight": {
+      "text": "75.2'",
+      "href": "/Browse/Trees/249359/Details"
+    },
+    "maxGirth": {
+      "text": "65''",
+      "href": "/Browse/Trees/170493/Details"
+    },
+    "maxCrownSpread": {
+      "text": "37.0'",
+      "href": "/Browse/Trees/170493/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "73.3'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "73.3'",
+            "href": "/Browse/Trees/241624/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/241625/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "75.2'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "75.2'",
+            "href": "/Browse/Trees/249359/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/249358/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "55.7'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "55.7'",
+            "href": "/Browse/Trees/45424/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/45422/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "68.0'",
+          "65''",
+          "37.0'"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/170494/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/170493/Details"
+          },
+          {
+            "text": "37.0'",
+            "href": "/Browse/Trees/170493/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "56.9'",
+          "10''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "56.9'",
+            "href": "/Browse/Trees/258338/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/323147/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "-",
+          "26''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          null,
+          {
+            "text": "26''",
+            "href": "/Browse/Trees/164157/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "43.1'",
+          "14''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "43.1'",
+            "href": "/Browse/Trees/272966/Details"
+          },
+          {
+            "text": "14''",
+            "href": "/Browse/Trees/272966/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "25.6'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "25.6'",
+            "href": "/Browse/Trees/315048/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/315049/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

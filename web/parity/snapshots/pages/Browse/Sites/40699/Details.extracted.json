@@ -1,0 +1,210 @@
+{
+  "siteId": 40699,
+  "summary": {
+    "Name": "Brasstown Bald",
+    "RHI5": "86.34",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.75",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "11/29/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "Highest elevation in Georgia"
+  },
+  "visits": [
+    {
+      "visited": "11/29/2004",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/brasstown_bald.htm",
+      "comments": "Highest elevation in Georgia"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "85.9'",
+          "141''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/40699/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/40699/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "85.9'",
+            "href": "/Browse/Trees/235272/Details"
+          },
+          {
+            "text": "141''",
+            "href": "/Browse/Trees/235273/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "133.3'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40699/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40699/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "133.3'",
+            "href": "/Browse/Trees/235274/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/235274/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oxydendrum arboreum",
+          "Sourwood",
+          "86.7'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oxydendrum arboreum",
+            "href": "/Browse/Sites/40699/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "Sourwood",
+            "href": "/Browse/Sites/40699/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "86.7'",
+            "href": "/Browse/Trees/235277/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/235277/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "-",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40699/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40699/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/235276/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "125.8'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/40699/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/40699/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "125.8'",
+            "href": "/Browse/Trees/235275/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/235275/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 52.471, -083 48.468",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Towns"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

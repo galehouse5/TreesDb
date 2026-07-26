@@ -1,0 +1,154 @@
+{
+  "siteId": 42369,
+  "summary": {
+    "Name": "First Branch",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "04/13/2025",
+    "Ownership contact": "Great Smoky Mountains National Park",
+    "General comments": "Trees measured in a group outing by B. Beduhn, R. Granade, J. Riddle, & E. Whitcomb"
+  },
+  "visits": [
+    {
+      "visited": "04/13/2025",
+      "visitors": "Brian Beduhn, Jess Riddle, and Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "Trees measured in a group outing by B. Beduhn, R. Granade, J. Riddle, & E. Whitcomb"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "50.67 yd",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/42369/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/42369/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "50.67 yd",
+            "href": "/Browse/Trees/322105/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/322105/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "54.20 yd",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/42369/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/42369/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "54.20 yd",
+            "href": "/Browse/Trees/322106/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/322106/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra var. rubra",
+          "Northern Red Oak",
+          "48.83 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra var. rubra",
+            "href": "/Browse/Sites/42369/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/42369/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "48.83 yd",
+            "href": "/Browse/Trees/322107/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 38.137, -083 32.577",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Sevier"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

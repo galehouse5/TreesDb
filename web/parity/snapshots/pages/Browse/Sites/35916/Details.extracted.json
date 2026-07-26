@@ -1,0 +1,129 @@
+{
+  "siteId": 35916,
+  "summary": {
+    "Name": "Onondaga Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "04/03/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/03/2016",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus hippocastanum",
+          "Horse Chestnut",
+          "65.3'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus hippocastanum",
+            "href": "/Browse/Sites/35916/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "Horse Chestnut",
+            "href": "/Browse/Sites/35916/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "65.3'",
+            "href": "/Browse/Trees/121995/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/121995/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Rhus typhina",
+          "Staghorn Sumac",
+          "24.0'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhus typhina",
+            "href": "/Browse/Sites/35916/Species/Rhus%20typhina%20(Staghorn%20Sumac)/Details"
+          },
+          {
+            "text": "Staghorn Sumac",
+            "href": "/Browse/Sites/35916/Species/Rhus%20typhina%20(Staghorn%20Sumac)/Details"
+          },
+          {
+            "text": "24.0'",
+            "href": "/Browse/Trees/121996/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/121996/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 01.561, -076 09.946",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Onondaga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

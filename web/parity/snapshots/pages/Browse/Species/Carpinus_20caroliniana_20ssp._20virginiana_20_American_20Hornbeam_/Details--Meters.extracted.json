@@ -1,0 +1,191 @@
+{
+  "botanicalName": "Carpinus caroliniana ssp. virginiana",
+  "commonName": "American Hornbeam",
+  "global": {
+    "maxHeight": {
+      "text": "22.22 m",
+      "href": "/Browse/Trees/166278/Details"
+    },
+    "maxGirth": {
+      "text": "262 cm",
+      "href": "/Browse/Trees/166278/Details"
+    },
+    "maxCrownSpread": {
+      "text": "16.76 m",
+      "href": "/Browse/Trees/166232/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Kentucky",
+          "16.64 m",
+          "101 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "16.64 m",
+            "href": "/Browse/Trees/297583/Details"
+          },
+          {
+            "text": "101 cm",
+            "href": "/Browse/Trees/297583/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "15.18 m",
+          "58 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "15.18 m",
+            "href": "/Browse/Trees/231978/Details"
+          },
+          {
+            "text": "58 cm",
+            "href": "/Browse/Trees/231978/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "13.81 m",
+          "50 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "13.81 m",
+            "href": "/Browse/Trees/220903/Details"
+          },
+          {
+            "text": "50 cm",
+            "href": "/Browse/Trees/323158/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "9.72 m",
+          "84 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "9.72 m",
+            "href": "/Browse/Trees/272998/Details"
+          },
+          {
+            "text": "84 cm",
+            "href": "/Browse/Trees/272998/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "22.22 m",
+          "262 cm",
+          "16.76 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "22.22 m",
+            "href": "/Browse/Trees/166278/Details"
+          },
+          {
+            "text": "262 cm",
+            "href": "/Browse/Trees/166278/Details"
+          },
+          {
+            "text": "16.76 m",
+            "href": "/Browse/Trees/166232/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "15.21 m",
+          "137 cm",
+          "15.54 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "15.21 m",
+            "href": "/Browse/Trees/297284/Details"
+          },
+          {
+            "text": "137 cm",
+            "href": "/Browse/Trees/312087/Details"
+          },
+          {
+            "text": "15.54 m",
+            "href": "/Browse/Trees/312045/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "siteId": 40955,
+  "summary": {
+    "Name": "Bradley County Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "05/15/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/15/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Amelanchier arborea",
+          "Common Serviceberry",
+          "37.1'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea",
+            "href": "/Browse/Sites/40955/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/40955/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "37.1'",
+            "href": "/Browse/Trees/241619/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/241619/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "28.7'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/40955/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/40955/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "28.7'",
+            "href": "/Browse/Trees/241620/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/241620/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Styrax grandifolius",
+          "Bigleaf Snowbell",
+          "26.5'",
+          "9''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Styrax grandifolius",
+            "href": "/Browse/Sites/40955/Species/Styrax%20grandifolius%20(Bigleaf%20Snowbell)/Details"
+          },
+          {
+            "text": "Bigleaf Snowbell",
+            "href": "/Browse/Sites/40955/Species/Styrax%20grandifolius%20(Bigleaf%20Snowbell)/Details"
+          },
+          {
+            "text": "26.5'",
+            "href": "/Browse/Trees/241622/Details"
+          },
+          {
+            "text": "9''",
+            "href": "/Browse/Trees/241621/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 37.974, -092 05.995",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Bradley"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

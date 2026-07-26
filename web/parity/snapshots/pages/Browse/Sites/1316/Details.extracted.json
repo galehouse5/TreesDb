@@ -1,0 +1,129 @@
+{
+  "siteId": 1316,
+  "summary": {
+    "Name": "Dragoon Mountains",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "02/23/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "This area is known as Cochise's Stronghold"
+  },
+  "visits": [
+    {
+      "visited": "02/23/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "This area is known as Cochise's Stronghold"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Agave chrysantha",
+          "Golden Flower Century Plant",
+          "13.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Agave chrysantha",
+            "href": "/Browse/Sites/1316/Species/Agave%20chrysantha%20(Golden%20Flower%20Century%20Plant)/Details"
+          },
+          {
+            "text": "Golden Flower Century Plant",
+            "href": "/Browse/Sites/1316/Species/Agave%20chrysantha%20(Golden%20Flower%20Century%20Plant)/Details"
+          },
+          {
+            "text": "13.8'",
+            "href": "/Browse/Trees/24033/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus emoryi",
+          "Emory Oak",
+          "41.5'",
+          "75''",
+          "61.5'"
+        ],
+        "links": [
+          {
+            "text": "Quercus emoryi",
+            "href": "/Browse/Sites/1316/Species/Quercus%20emoryi%20(Emory%20Oak)/Details"
+          },
+          {
+            "text": "Emory Oak",
+            "href": "/Browse/Sites/1316/Species/Quercus%20emoryi%20(Emory%20Oak)/Details"
+          },
+          {
+            "text": "41.5'",
+            "href": "/Browse/Trees/24031/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/24032/Details"
+          },
+          {
+            "text": "61.5'",
+            "href": "/Browse/Trees/24032/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "31 54.101, -109 55.081",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public National Forest",
+      "County": "Cochise"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

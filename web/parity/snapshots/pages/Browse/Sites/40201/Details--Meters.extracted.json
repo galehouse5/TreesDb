@@ -1,0 +1,350 @@
+{
+  "siteId": 40201,
+  "summary": {
+    "Name": "Highland Park",
+    "RHI5": "33.016",
+    "RHI10": "32.370",
+    "RHI20": "31.327",
+    "RGI5": "4.718",
+    "RGI10": "4.284",
+    "RGI20": "3.812",
+    "Trees measured": "141",
+    "Last measurement date": "11/01/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/01/2020",
+      "visitors": "Elijah Whitcomb and Tom Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies cephalonica",
+          "Greek Fir",
+          "32.16 m",
+          "283 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies cephalonica",
+            "href": "/Browse/Sites/40201/Species/Abies%20cephalonica%20(Greek%20Fir)/Details"
+          },
+          {
+            "text": "Greek Fir",
+            "href": "/Browse/Sites/40201/Species/Abies%20cephalonica%20(Greek%20Fir)/Details"
+          },
+          {
+            "text": "32.16 m",
+            "href": "/Browse/Trees/226043/Details"
+          },
+          {
+            "text": "283 cm",
+            "href": "/Browse/Trees/226042/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies cilicica",
+          "Cilician Fir",
+          "15.64 m",
+          "117 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies cilicica",
+            "href": "/Browse/Sites/40201/Species/Abies%20cilicica%20(Cilician%20Fir)/Details"
+          },
+          {
+            "text": "Cilician Fir",
+            "href": "/Browse/Sites/40201/Species/Abies%20cilicica%20(Cilician%20Fir)/Details"
+          },
+          {
+            "text": "15.64 m",
+            "href": "/Browse/Trees/226135/Details"
+          },
+          {
+            "text": "117 cm",
+            "href": "/Browse/Trees/226135/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies holophylla",
+          "Manchurian Fir",
+          "26.61 m",
+          "175 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies holophylla",
+            "href": "/Browse/Sites/40201/Species/Abies%20holophylla%20(Manchurian%20Fir)/Details"
+          },
+          {
+            "text": "Manchurian Fir",
+            "href": "/Browse/Sites/40201/Species/Abies%20holophylla%20(Manchurian%20Fir)/Details"
+          },
+          {
+            "text": "26.61 m",
+            "href": "/Browse/Trees/226017/Details"
+          },
+          {
+            "text": "175 cm",
+            "href": "/Browse/Trees/226017/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies homolepis",
+          "Nikko Fir",
+          "30.78 m",
+          "305 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies homolepis",
+            "href": "/Browse/Sites/40201/Species/Abies%20homolepis%20(Nikko%20Fir)/Details"
+          },
+          {
+            "text": "Nikko Fir",
+            "href": "/Browse/Sites/40201/Species/Abies%20homolepis%20(Nikko%20Fir)/Details"
+          },
+          {
+            "text": "30.78 m",
+            "href": "/Browse/Trees/226019/Details"
+          },
+          {
+            "text": "305 cm",
+            "href": "/Browse/Trees/226006/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. arizonica",
+          "Corkbark Fir",
+          "19.29 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. arizonica",
+            "href": "/Browse/Sites/40201/Species/Abies%20lasiocarpa%20var.%20arizonica%20(Corkbark%20Fir)/Details"
+          },
+          {
+            "text": "Corkbark Fir",
+            "href": "/Browse/Sites/40201/Species/Abies%20lasiocarpa%20var.%20arizonica%20(Corkbark%20Fir)/Details"
+          },
+          {
+            "text": "19.29 m",
+            "href": "/Browse/Trees/226020/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies nordmanniana",
+          "Nordmann Fir",
+          "31.42 m",
+          "203 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies nordmanniana",
+            "href": "/Browse/Sites/40201/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "Nordmann Fir",
+            "href": "/Browse/Sites/40201/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "31.42 m",
+            "href": "/Browse/Trees/226005/Details"
+          },
+          {
+            "text": "203 cm",
+            "href": "/Browse/Trees/226005/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies numidica",
+          "Algerian Fir",
+          "30.63 m",
+          "261 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies numidica",
+            "href": "/Browse/Sites/40201/Species/Abies%20numidica%20(Algerian%20Fir)/Details"
+          },
+          {
+            "text": "Algerian Fir",
+            "href": "/Browse/Sites/40201/Species/Abies%20numidica%20(Algerian%20Fir)/Details"
+          },
+          {
+            "text": "30.63 m",
+            "href": "/Browse/Trees/226009/Details"
+          },
+          {
+            "text": "261 cm",
+            "href": "/Browse/Trees/226009/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies procera",
+          "Noble Fir",
+          "26.27 m",
+          "262 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies procera",
+            "href": "/Browse/Sites/40201/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "Noble Fir",
+            "href": "/Browse/Sites/40201/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "26.27 m",
+            "href": "/Browse/Trees/226040/Details"
+          },
+          {
+            "text": "262 cm",
+            "href": "/Browse/Trees/226040/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies recurvata var. ernestii",
+          "Min Fir",
+          "26.64 m",
+          "166 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies recurvata var. ernestii",
+            "href": "/Browse/Sites/40201/Species/Abies%20recurvata%20var.%20ernestii%20(Min%20Fir)/Details"
+          },
+          {
+            "text": "Min Fir",
+            "href": "/Browse/Sites/40201/Species/Abies%20recurvata%20var.%20ernestii%20(Min%20Fir)/Details"
+          },
+          {
+            "text": "26.64 m",
+            "href": "/Browse/Trees/226016/Details"
+          },
+          {
+            "text": "166 cm",
+            "href": "/Browse/Trees/226016/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies sachalinensis",
+          "Sakhalin Fir",
+          "17.27 m",
+          "112 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies sachalinensis",
+            "href": "/Browse/Sites/40201/Species/Abies%20sachalinensis%20(Sakhalin%20Fir)/Details"
+          },
+          {
+            "text": "Sakhalin Fir",
+            "href": "/Browse/Sites/40201/Species/Abies%20sachalinensis%20(Sakhalin%20Fir)/Details"
+          },
+          {
+            "text": "17.27 m",
+            "href": "/Browse/Trees/226029/Details"
+          },
+          {
+            "text": "112 cm",
+            "href": "/Browse/Trees/226029/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 125 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 07.830, -077 36.332",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Monroe"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

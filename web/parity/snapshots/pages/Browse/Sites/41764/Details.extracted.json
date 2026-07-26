@@ -1,0 +1,219 @@
+{
+  "siteId": 41764,
+  "summary": {
+    "Name": "John Blomburg Arboretum",
+    "RHI5": "63.32",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.54",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "12/04/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "A small arboretum specializing in native trees, shrubs and plants of West Virginia."
+  },
+  "visits": [
+    {
+      "visited": "12/04/2018",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "A small arboretum specializing in native trees, shrubs and plants of West Virginia."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "74.1'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/41764/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41764/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "74.1'",
+            "href": "/Browse/Trees/272896/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/272896/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "69.9'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/41764/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/41764/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "69.9'",
+            "href": "/Browse/Trees/272893/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/272892/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus americana",
+          "American Plum",
+          "13.8'",
+          "23''",
+          "30.5'"
+        ],
+        "links": [
+          {
+            "text": "Prunus americana",
+            "href": "/Browse/Sites/41764/Species/Prunus%20americana%20(American%20Plum)/Details"
+          },
+          {
+            "text": "American Plum",
+            "href": "/Browse/Sites/41764/Species/Prunus%20americana%20(American%20Plum)/Details"
+          },
+          {
+            "text": "13.8'",
+            "href": "/Browse/Trees/272897/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/272897/Details"
+          },
+          {
+            "text": "30.5'",
+            "href": "/Browse/Trees/272897/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "71.7'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/41764/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/41764/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "71.7'",
+            "href": "/Browse/Trees/272895/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/272895/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus palustris",
+          "Pin Oak",
+          "87.1'",
+          "153''",
+          "75.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus palustris",
+            "href": "/Browse/Sites/41764/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "Pin Oak",
+            "href": "/Browse/Sites/41764/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "87.1'",
+            "href": "/Browse/Trees/272898/Details"
+          },
+          {
+            "text": "153''",
+            "href": "/Browse/Trees/272898/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/272898/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 17.165, -081 32.189",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Wood"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

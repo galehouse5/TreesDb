@@ -1,0 +1,560 @@
+{
+  "stateId": 17,
+  "summary": {
+    "Name": "Massachusetts",
+    "Code": "MA",
+    "RHI5": "149.28",
+    "RHI10": "138.70",
+    "RHI20": "128.48",
+    "RGI5": "17.57",
+    "RGI10": "15.96",
+    "RGI20": "13.55",
+    "Trees measured": "549",
+    "Last measurement date": "06/30/2019"
+  },
+  "location": {
+    "Coordinates": "42 02.267, -071 41.048",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies veitchii",
+          "Shikoku Fir",
+          "54.4'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies veitchii",
+            "href": "/Browse/States/17/Species/Abies%20veitchii%20(Shikoku%20Fir)/Details"
+          },
+          {
+            "text": "Shikoku Fir",
+            "href": "/Browse/States/17/Species/Abies%20veitchii%20(Shikoku%20Fir)/Details"
+          },
+          {
+            "text": "54.4'",
+            "href": "/Browse/Trees/189017/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/189017/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer maximowiczianum",
+          "Nikko Maple",
+          "37.0'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer maximowiczianum",
+            "href": "/Browse/States/17/Species/Acer%20maximowiczianum%20(Nikko%20Maple)/Details"
+          },
+          {
+            "text": "Nikko Maple",
+            "href": "/Browse/States/17/Species/Acer%20maximowiczianum%20(Nikko%20Maple)/Details"
+          },
+          {
+            "text": "37.0'",
+            "href": "/Browse/Trees/189029/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/189029/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "115.7'",
+          "187''",
+          "45.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/17/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/17/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "115.7'",
+            "href": "/Browse/Trees/236097/Details"
+          },
+          {
+            "text": "187''",
+            "href": "/Browse/Trees/235724/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/19219/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "125.2'",
+          "101''",
+          "55.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/States/17/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/17/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "125.2'",
+            "href": "/Browse/Trees/19226/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/19227/Details"
+          },
+          {
+            "text": "55.0'",
+            "href": "/Browse/Trees/19227/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "112.7'",
+          "170''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/17/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/17/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "112.7'",
+            "href": "/Browse/Trees/250151/Details"
+          },
+          {
+            "text": "170''",
+            "href": "/Browse/Trees/250158/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "129.7'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/States/17/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/17/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "129.7'",
+            "href": "/Browse/Trees/236057/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/236058/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer sieboldianum",
+          "Siebold's Maple",
+          "24.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer sieboldianum",
+            "href": "/Browse/States/17/Species/Acer%20sieboldianum%20(Siebold's%20Maple)/Details"
+          },
+          {
+            "text": "Siebold's Maple",
+            "href": "/Browse/States/17/Species/Acer%20sieboldianum%20(Siebold's%20Maple)/Details"
+          },
+          {
+            "text": "24.3'",
+            "href": "/Browse/Trees/189030/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer spp.",
+          "Maple",
+          "60.0'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spp.",
+            "href": "/Browse/States/17/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "Maple",
+            "href": "/Browse/States/17/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "60.0'",
+            "href": "/Browse/Trees/250227/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/250227/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "22.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/States/17/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/States/17/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "22.0'",
+            "href": "/Browse/Trees/189028/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "86.8'",
+          "153''",
+          "57.4'"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/States/17/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/States/17/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "86.8'",
+            "href": "/Browse/Trees/256022/Details"
+          },
+          {
+            "text": "153''",
+            "href": "/Browse/Trees/256022/Details"
+          },
+          {
+            "text": "57.4'",
+            "href": "/Browse/Trees/256022/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 87 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arnold Arboretum",
+          "82.82",
+          "74.49",
+          "7.64",
+          "6.76"
+        ],
+        "links": [
+          {
+            "text": "Arnold Arboretum",
+            "href": "/Browse/Sites/39617/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Blomfelt Conservation Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Blomfelt Conservation Area",
+            "href": "/Browse/Sites/41159/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Blue Hills Reservation",
+          "78.40",
+          "-",
+          "8.62",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Blue Hills Reservation",
+            "href": "/Browse/Sites/40739/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bryant Woods",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bryant Woods",
+            "href": "/Browse/Sites/638/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Buckland State Forest",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Buckland State Forest",
+            "href": "/Browse/Sites/41137/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Burnt Hill",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Burnt Hill",
+            "href": "/Browse/Sites/40770/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chickley River Valley",
+          "127.94",
+          "119.58",
+          "7.73",
+          "6.03"
+        ],
+        "links": [
+          {
+            "text": "Chickley River Valley",
+            "href": "/Browse/Sites/41134/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Clark Ridge",
+          "124.36",
+          "-",
+          "3.80",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Clark Ridge",
+            "href": "/Browse/Sites/40771/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cobb Memorial Forest",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cobb Memorial Forest",
+            "href": "/Browse/Sites/41146/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Codman-North Conservation Area",
+          "116.28",
+          "107.71",
+          "10.55",
+          "7.97"
+        ],
+        "links": [
+          {
+            "text": "Codman-North Conservation Area",
+            "href": "/Browse/Sites/41172/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 48 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

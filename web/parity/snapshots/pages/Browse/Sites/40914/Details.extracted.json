@@ -1,0 +1,104 @@
+{
+  "siteId": 40914,
+  "summary": {
+    "Name": "Michigan Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "01/01/2001",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2001",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Crataegus mollis",
+          "Downy Hawthorn",
+          "39.0'",
+          "99''",
+          "40.0'"
+        ],
+        "links": [
+          {
+            "text": "Crataegus mollis",
+            "href": "/Browse/Sites/40914/Species/Crataegus%20mollis%20(Downy%20Hawthorn)/Details"
+          },
+          {
+            "text": "Downy Hawthorn",
+            "href": "/Browse/Sites/40914/Species/Crataegus%20mollis%20(Downy%20Hawthorn)/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/239996/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/239996/Details"
+          },
+          {
+            "text": "40.0'",
+            "href": "/Browse/Trees/239996/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 44.016, -084 33.265",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Ingham"
+    },
+    "state": {
+      "text": "Michigan (US)",
+      "href": "/Browse/States/20/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

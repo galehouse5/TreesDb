@@ -1,0 +1,126 @@
+{
+  "siteId": 38909,
+  "summary": {
+    "Name": "Avon Center Cemetery",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "07/24/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "Also known as Mound Cemetery."
+  },
+  "visits": [
+    {
+      "visited": "07/24/2010",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Also known as Mound Cemetery."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "57.0'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/38909/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/38909/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/161087/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/161088/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus nigra",
+          "Austrian Pine",
+          "35.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus nigra",
+            "href": "/Browse/Sites/38909/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "Austrian Pine",
+            "href": "/Browse/Sites/38909/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "35.0'",
+            "href": "/Browse/Trees/161089/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 27.545, -082 01.196",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Lorain"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

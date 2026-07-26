@@ -1,0 +1,70 @@
+{
+  "treeId": 235970,
+  "botanicalName": {
+    "text": "Taxodium distichum",
+    "href": "/Browse/Sites/40761/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+  },
+  "commonName": {
+    "text": "Bald Cypress",
+    "href": "/Browse/Sites/40761/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+  },
+  "details": {
+    "Height": "81.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "556''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "1736.39",
+    "ENTSPTS": "3750.30",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.55",
+    "Champion points (abbreviated)": "636.60",
+    "Diameter": "177''",
+    "Conical volume": "4605.9 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 12/01/2007",
+      "summary": {
+        "Height": "81.0'",
+        "Girth": "556''"
+      },
+      "details": {
+        "Botanical name": "Taxodium distichum",
+        "Common name": "Bald Cypress",
+        "Height": "81.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "556''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "1736.39",
+        "ENTSPTS": "3750.30",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.55",
+        "Champion points (abbreviated)": "636.60",
+        "Diameter": "177''",
+        "Conical volume": "4605.9 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Don Bragg, Gary Smith, and Beth Koebel"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "33 17.159, -090 28.944",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Sky Lake Wildlife Management Area",
+      "href": "/Browse/Sites/40761/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Humphreys"
+    },
+    "state": {
+      "text": "Mississippi (US)",
+      "href": "/Browse/States/23/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

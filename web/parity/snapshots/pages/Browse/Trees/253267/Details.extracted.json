@@ -1,0 +1,70 @@
+{
+  "treeId": 253267,
+  "botanicalName": {
+    "text": "Picea engelmannii",
+    "href": "/Browse/Sites/41249/Species/Picea%20engelmannii%20(Engelmann%20Spruce)/Details"
+  },
+  "commonName": {
+    "text": "Engelmann Spruce",
+    "href": "/Browse/Sites/41249/Species/Picea%20engelmannii%20(Engelmann%20Spruce)/Details"
+  },
+  "details": {
+    "Height": "135.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "1146''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "12312.34",
+    "ENTSPTS": "12892.50",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.89",
+    "Champion points (abbreviated)": "1281.00",
+    "Diameter": "365''",
+    "Conical volume": "32659.5 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 10/10/2016",
+      "summary": {
+        "Height": "135.0'",
+        "Girth": "1146''"
+      },
+      "details": {
+        "Botanical name": "Picea engelmannii",
+        "Common name": "Engelmann Spruce",
+        "Height": "135.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "1146''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "12312.34",
+        "ENTSPTS": "12892.50",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.89",
+        "Champion points (abbreviated)": "1281.00",
+        "Diameter": "365''",
+        "Conical volume": "32659.5 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Matt Markworth"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 07.592, -106 46.824",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Purgatory Gulch",
+      "href": "/Browse/Sites/41249/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Carbon"
+    },
+    "state": {
+      "text": "Wyoming (US)",
+      "href": "/Browse/States/48/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

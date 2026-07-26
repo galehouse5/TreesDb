@@ -1,0 +1,151 @@
+{
+  "botanicalName": "Quercus virginiana",
+  "commonName": "Live Oak",
+  "global": {
+    "maxHeight": {
+      "text": "79.5'",
+      "href": "/Browse/Trees/39750/Details"
+    },
+    "maxGirth": {
+      "text": "395''",
+      "href": "/Browse/Trees/39759/Details"
+    },
+    "maxCrownSpread": {
+      "text": "163.8'",
+      "href": "/Browse/Trees/39760/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "71.0'",
+          "296''",
+          "149.8'"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "71.0'",
+            "href": "/Browse/Trees/249647/Details"
+          },
+          {
+            "text": "296''",
+            "href": "/Browse/Trees/249647/Details"
+          },
+          {
+            "text": "149.8'",
+            "href": "/Browse/Trees/249647/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "59.4'",
+          "331''",
+          "154.5'"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "59.4'",
+            "href": "/Browse/Trees/163293/Details"
+          },
+          {
+            "text": "331''",
+            "href": "/Browse/Trees/163205/Details"
+          },
+          {
+            "text": "154.5'",
+            "href": "/Browse/Trees/163205/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "70.0'",
+          "258''",
+          "124.5'"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/40684/Details"
+          },
+          {
+            "text": "258''",
+            "href": "/Browse/Trees/40684/Details"
+          },
+          {
+            "text": "124.5'",
+            "href": "/Browse/Trees/40684/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "79.5'",
+          "395''",
+          "163.8'"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "79.5'",
+            "href": "/Browse/Trees/39750/Details"
+          },
+          {
+            "text": "395''",
+            "href": "/Browse/Trees/39759/Details"
+          },
+          {
+            "text": "163.8'",
+            "href": "/Browse/Trees/39760/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

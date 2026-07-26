@@ -1,0 +1,247 @@
+{
+  "siteId": 41112,
+  "summary": {
+    "Name": "Single Tree Sites In Georgia",
+    "RHI5": "80.52",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "17.83",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "02/01/2001",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/01/2001",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "88.5'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/41112/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/41112/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "88.5'",
+            "href": "/Browse/Trees/249652/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/249653/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "81.0'",
+          "227''",
+          "101.0'"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/41112/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/41112/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/249650/Details"
+          },
+          {
+            "text": "227''",
+            "href": "/Browse/Trees/249650/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/249650/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "135.6'",
+          "231''",
+          "105.0'"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41112/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41112/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "135.6'",
+            "href": "/Browse/Trees/249649/Details"
+          },
+          {
+            "text": "231''",
+            "href": "/Browse/Trees/249649/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/249649/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus hemisphaerica",
+          "Darlington Oak",
+          "-",
+          "185''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus hemisphaerica",
+            "href": "/Browse/Sites/41112/Species/Quercus%20hemisphaerica%20(Darlington%20Oak)/Details"
+          },
+          {
+            "text": "Darlington Oak",
+            "href": "/Browse/Sites/41112/Species/Quercus%20hemisphaerica%20(Darlington%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "185''",
+            "href": "/Browse/Trees/249648/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus virginiana",
+          "Live Oak",
+          "71.0'",
+          "296''",
+          "149.8'"
+        ],
+        "links": [
+          {
+            "text": "Quercus virginiana",
+            "href": "/Browse/Sites/41112/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+          },
+          {
+            "text": "Live Oak",
+            "href": "/Browse/Sites/41112/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+          },
+          {
+            "text": "71.0'",
+            "href": "/Browse/Trees/249647/Details"
+          },
+          {
+            "text": "296''",
+            "href": "/Browse/Trees/249647/Details"
+          },
+          {
+            "text": "149.8'",
+            "href": "/Browse/Trees/249647/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Rhododendron catawbiense",
+          "Catawba Rosebay",
+          "26.5'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhododendron catawbiense",
+            "href": "/Browse/Sites/41112/Species/Rhododendron%20catawbiense%20(Catawba%20Rosebay)/Details"
+          },
+          {
+            "text": "Catawba Rosebay",
+            "href": "/Browse/Sites/41112/Species/Rhododendron%20catawbiense%20(Catawba%20Rosebay)/Details"
+          },
+          {
+            "text": "26.5'",
+            "href": "/Browse/Trees/249651/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/249651/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 44.931, -084 23.236",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Fulton"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

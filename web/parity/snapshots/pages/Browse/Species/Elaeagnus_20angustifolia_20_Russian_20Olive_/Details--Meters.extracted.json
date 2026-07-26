@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Elaeagnus angustifolia",
+  "commonName": "Russian Olive",
+  "global": {
+    "maxHeight": {
+      "text": "12.71 m",
+      "href": "/Browse/Trees/239650/Details"
+    },
+    "maxGirth": {
+      "text": "117 cm",
+      "href": "/Browse/Trees/239650/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New Mexico",
+          "9.94 m",
+          "96 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "9.94 m",
+            "href": "/Browse/Trees/163896/Details"
+          },
+          {
+            "text": "96 cm",
+            "href": "/Browse/Trees/163896/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Utah",
+          "12.71 m",
+          "117 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Utah",
+            "href": "/Browse/States/42/Details"
+          },
+          {
+            "text": "12.71 m",
+            "href": "/Browse/Trees/239650/Details"
+          },
+          {
+            "text": "117 cm",
+            "href": "/Browse/Trees/239650/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

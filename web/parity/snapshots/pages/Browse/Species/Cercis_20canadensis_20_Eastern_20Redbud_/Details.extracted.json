@@ -1,0 +1,178 @@
+{
+  "botanicalName": "Cercis canadensis",
+  "commonName": "Eastern Redbud",
+  "global": {
+    "maxHeight": {
+      "text": "66.2'",
+      "href": "/Browse/Trees/238171/Details"
+    },
+    "maxGirth": {
+      "text": "46''",
+      "href": "/Browse/Trees/9997/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "40.5'",
+          "33''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "40.5'",
+            "href": "/Browse/Trees/241817/Details"
+          },
+          {
+            "text": "33''",
+            "href": "/Browse/Trees/241817/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "60.9'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "60.9'",
+            "href": "/Browse/Trees/249201/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/234518/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "41.7'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "41.7'",
+            "href": "/Browse/Trees/226776/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/226776/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "39.7'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "39.7'",
+            "href": "/Browse/Trees/9997/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/9997/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "66.2'",
+          "35''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "66.2'",
+            "href": "/Browse/Trees/238171/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/236283/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "-",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          null,
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/229806/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Alnus incana ssp. tenuifolia",
+  "commonName": "Thinleaf Alder",
+  "global": {
+    "maxHeight": {
+      "text": "38.9'",
+      "href": "/Browse/Trees/226313/Details"
+    },
+    "maxGirth": {
+      "text": "16''",
+      "href": "/Browse/Trees/75013/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "British Columbia",
+          "26.1'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "British Columbia",
+            "href": "/Browse/States/50/Details"
+          },
+          {
+            "text": "26.1'",
+            "href": "/Browse/Trees/74992/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/75013/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Colorado",
+          "21.5'",
+          "14''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "21.5'",
+            "href": "/Browse/Trees/126302/Details"
+          },
+          {
+            "text": "14''",
+            "href": "/Browse/Trees/126302/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "38.9'",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "38.9'",
+            "href": "/Browse/Trees/226313/Details"
+          },
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/226313/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

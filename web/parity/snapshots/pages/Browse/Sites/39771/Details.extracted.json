@@ -1,0 +1,350 @@
+{
+  "siteId": 39771,
+  "summary": {
+    "Name": "Montpelier Estate Landmark Forest",
+    "RHI5": "147.06",
+    "RHI10": "134.70",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.75",
+    "RGI10": "7.28",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "12/12/2019",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/12/2019",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "143.0'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/39771/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/39771/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "143.0'",
+            "href": "/Browse/Trees/199215/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/199215/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "120.8'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/39771/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/39771/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "120.8'",
+            "href": "/Browse/Trees/199213/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/199213/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "125.2'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39771/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39771/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "125.2'",
+            "href": "/Browse/Trees/199208/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/199208/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "115.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/39771/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/39771/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "115.4'",
+            "href": "/Browse/Trees/199207/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "172.7'",
+          "156''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39771/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39771/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "172.7'",
+            "href": "/Browse/Trees/199200/Details"
+          },
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/199201/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "128.4'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/39771/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/39771/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "128.4'",
+            "href": "/Browse/Trees/199211/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/199211/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus avium",
+          "Sweet Cherry",
+          "121.9'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus avium",
+            "href": "/Browse/Sites/39771/Species/Prunus%20avium%20(Sweet%20Cherry)/Details"
+          },
+          {
+            "text": "Sweet Cherry",
+            "href": "/Browse/Sites/39771/Species/Prunus%20avium%20(Sweet%20Cherry)/Details"
+          },
+          {
+            "text": "121.9'",
+            "href": "/Browse/Trees/199212/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/199212/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "136.3'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/39771/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/39771/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "136.3'",
+            "href": "/Browse/Trees/199214/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/199214/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "131.0'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/39771/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/39771/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "131.0'",
+            "href": "/Browse/Trees/199209/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/199209/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra var. rubra",
+          "Northern Red Oak",
+          "152.3'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra var. rubra",
+            "href": "/Browse/Sites/39771/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/39771/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "152.3'",
+            "href": "/Browse/Trees/199205/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/199206/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 13.142, -078 10.125",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Orange"
+    },
+    "state": {
+      "text": "Virginia (US)",
+      "href": "/Browse/States/43/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

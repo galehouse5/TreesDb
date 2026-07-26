@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Acer ×freemanii",
+  "commonName": "Freeman Maple",
+  "global": {
+    "maxHeight": {
+      "text": "135.7'",
+      "href": "/Browse/Trees/302715/Details"
+    },
+    "maxGirth": {
+      "text": "165''",
+      "href": "/Browse/Trees/280409/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "133.1'",
+          "165''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "133.1'",
+            "href": "/Browse/Trees/221043/Details"
+          },
+          {
+            "text": "165''",
+            "href": "/Browse/Trees/280409/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "135.7'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "135.7'",
+            "href": "/Browse/Trees/302715/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/10000/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "45.7'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "45.7'",
+            "href": "/Browse/Trees/271878/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/271878/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "siteId": 3730,
+  "summary": {
+    "Name": "Walnut Canyon National Monument",
+    "RHI5": "44.42",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "5.82",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "02/16/2012",
+    "Ownership contact": "National Park Service 6400 North highway 89 Flafstaff, AZ. 86004",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/16/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juglans major",
+          "Arizona Walnut",
+          "27.7'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans major",
+            "href": "/Browse/Sites/3730/Species/Juglans%20major%20(Arizona%20Walnut)/Details"
+          },
+          {
+            "text": "Arizona Walnut",
+            "href": "/Browse/Sites/3730/Species/Juglans%20major%20(Arizona%20Walnut)/Details"
+          },
+          {
+            "text": "27.7'",
+            "href": "/Browse/Trees/46447/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/46447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus deppeana",
+          "Alligator Juniper",
+          "23.8'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus deppeana",
+            "href": "/Browse/Sites/3730/Species/Juniperus%20deppeana%20(Alligator%20Juniper)/Details"
+          },
+          {
+            "text": "Alligator Juniper",
+            "href": "/Browse/Sites/3730/Species/Juniperus%20deppeana%20(Alligator%20Juniper)/Details"
+          },
+          {
+            "text": "23.8'",
+            "href": "/Browse/Trees/46444/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/46444/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus monosperma",
+          "Oneseed Juniper",
+          "17.8'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus monosperma",
+            "href": "/Browse/Sites/3730/Species/Juniperus%20monosperma%20(Oneseed%20Juniper)/Details"
+          },
+          {
+            "text": "Oneseed Juniper",
+            "href": "/Browse/Sites/3730/Species/Juniperus%20monosperma%20(Oneseed%20Juniper)/Details"
+          },
+          {
+            "text": "17.8'",
+            "href": "/Browse/Trees/46449/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/46449/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus osteosperma",
+          "Utah Juniper",
+          "28.4'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus osteosperma",
+            "href": "/Browse/Sites/3730/Species/Juniperus%20osteosperma%20(Utah%20Juniper)/Details"
+          },
+          {
+            "text": "Utah Juniper",
+            "href": "/Browse/Sites/3730/Species/Juniperus%20osteosperma%20(Utah%20Juniper)/Details"
+          },
+          {
+            "text": "28.4'",
+            "href": "/Browse/Trees/46456/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/46456/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus scopulorum",
+          "Rocky Mountain Juniper",
+          "40.2'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus scopulorum",
+            "href": "/Browse/Sites/3730/Species/Juniperus%20scopulorum%20(Rocky%20Mountain%20Juniper)/Details"
+          },
+          {
+            "text": "Rocky Mountain Juniper",
+            "href": "/Browse/Sites/3730/Species/Juniperus%20scopulorum%20(Rocky%20Mountain%20Juniper)/Details"
+          },
+          {
+            "text": "40.2'",
+            "href": "/Browse/Trees/46446/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/46446/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mahonia fremontii",
+          "Fremont's Mahonia",
+          "11.6'",
+          "10''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mahonia fremontii",
+            "href": "/Browse/Sites/3730/Species/Mahonia%20fremontii%20(Fremont's%20Mahonia)/Details"
+          },
+          {
+            "text": "Fremont's Mahonia",
+            "href": "/Browse/Sites/3730/Species/Mahonia%20fremontii%20(Fremont's%20Mahonia)/Details"
+          },
+          {
+            "text": "11.6'",
+            "href": "/Browse/Trees/46448/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/46448/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus edulis",
+          "Twoneedle Pinyon",
+          "47.1'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus edulis",
+            "href": "/Browse/Sites/3730/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "Twoneedle Pinyon",
+            "href": "/Browse/Sites/3730/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "47.1'",
+            "href": "/Browse/Trees/46451/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/46451/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. brachyptera",
+          "Ponderosa Pine",
+          "70.3'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. brachyptera",
+            "href": "/Browse/Sites/3730/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/3730/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "70.3'",
+            "href": "/Browse/Trees/46454/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/46455/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus gambelii var. gambelii",
+          "Gambel Oak",
+          "36.1'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus gambelii var. gambelii",
+            "href": "/Browse/Sites/3730/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "Gambel Oak",
+            "href": "/Browse/Sites/3730/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "36.1'",
+            "href": "/Browse/Trees/46457/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/46457/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 14.399, -111 34.197",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Monument",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

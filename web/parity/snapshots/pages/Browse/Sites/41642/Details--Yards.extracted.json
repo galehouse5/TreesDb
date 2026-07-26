@@ -1,0 +1,166 @@
+{
+  "siteId": 41642,
+  "summary": {
+    "Name": "Plumas National Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "10/21/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/21/2018",
+      "visitors": "Michael Taylor and Duncan Kennedy",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "01/27/2016",
+      "visitors": "Duncan Kennedy and Michael Taylor",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Also see measurements of Ponderosa Pine on Lumpkin Ridge 7/10/2016 at: http://www.ents-bbs.org/viewtopic.php?f=69&t=7758"
+    },
+    {
+      "visited": "10/21/2015",
+      "visitors": "Michael Taylor",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "1,146,000 acres in Plumas , Butte, Sierra, Lassen, Yuba counties"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies lowiana",
+          "Sierra White Fir",
+          "-",
+          "171''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lowiana",
+            "href": "/Browse/Sites/41642/Species/Abies%20lowiana%20(Sierra%20White%20Fir)/Details"
+          },
+          {
+            "text": "Sierra White Fir",
+            "href": "/Browse/Sites/41642/Species/Abies%20lowiana%20(Sierra%20White%20Fir)/Details"
+          },
+          null,
+          {
+            "text": "171''",
+            "href": "/Browse/Trees/269109/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. murrayana",
+          "Sierra Lodgepole Pine",
+          "43.70 yd",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. murrayana",
+            "href": "/Browse/Sites/41642/Species/Pinus%20contorta%20var.%20murrayana%20(Sierra%20Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Sierra Lodgepole Pine",
+            "href": "/Browse/Sites/41642/Species/Pinus%20contorta%20var.%20murrayana%20(Sierra%20Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "43.70 yd",
+            "href": "/Browse/Trees/269107/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/269108/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. benthamiana",
+          "Ponderosa Pine",
+          "63.33 yd",
+          "308''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. benthamiana",
+            "href": "/Browse/Sites/41642/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/41642/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "63.33 yd",
+            "href": "/Browse/Trees/269112/Details"
+          },
+          {
+            "text": "308''",
+            "href": "/Browse/Trees/269112/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 56.960, -120 48.789",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Plumas"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

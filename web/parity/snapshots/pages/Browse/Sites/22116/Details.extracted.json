@@ -1,0 +1,182 @@
+{
+  "siteId": 22116,
+  "summary": {
+    "Name": "Jefferson Davis State Historic Site",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "11/01/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "Features a 351 foot obelisk commemerating Jefferson Davis"
+  },
+  "visits": [
+    {
+      "visited": "11/01/2005",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/kentucky/todd_county_ky.htm",
+      "comments": "Features a 351 foot obelisk commemerating Jefferson Davis"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus imbricaria",
+          "Shingle Oak",
+          "80.3'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus imbricaria",
+            "href": "/Browse/Sites/22116/Species/Quercus%20imbricaria%20(Shingle%20Oak)/Details"
+          },
+          {
+            "text": "Shingle Oak",
+            "href": "/Browse/Sites/22116/Species/Quercus%20imbricaria%20(Shingle%20Oak)/Details"
+          },
+          {
+            "text": "80.3'",
+            "href": "/Browse/Trees/76446/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/76446/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus muehlenbergii",
+          "Chinkapin Oak",
+          "74.4'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus muehlenbergii",
+            "href": "/Browse/Sites/22116/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "Chinkapin Oak",
+            "href": "/Browse/Sites/22116/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "74.4'",
+            "href": "/Browse/Trees/76448/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/76448/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus stellata",
+          "Post Oak",
+          "72.7'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus stellata",
+            "href": "/Browse/Sites/22116/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "Post Oak",
+            "href": "/Browse/Sites/22116/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "72.7'",
+            "href": "/Browse/Trees/76447/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/76447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sassafras albidum",
+          "Sassafras",
+          "-",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sassafras albidum",
+            "href": "/Browse/Sites/22116/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "Sassafras",
+            "href": "/Browse/Sites/22116/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          null,
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/76449/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 50.531, -087 18.016",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state park",
+      "County": "Todd"
+    },
+    "state": {
+      "text": "Kentucky (US)",
+      "href": "/Browse/States/15/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

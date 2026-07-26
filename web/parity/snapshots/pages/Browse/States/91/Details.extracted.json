@@ -1,0 +1,299 @@
+{
+  "stateId": 91,
+  "summary": {
+    "Name": "Puebla",
+    "Code": "PUE",
+    "RHI5": "21.72",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "1.90",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "01/11/2023"
+  },
+  "location": {
+    "Coordinates": "19 21.016, -097 53.856",
+    "Country": "Mexico"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acacia greggii",
+          "Catclaw Acacia",
+          "19.0'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acacia greggii",
+            "href": "/Browse/States/91/Species/Acacia%20greggii%20(Catclaw%20Acacia)/Details"
+          },
+          {
+            "text": "Catclaw Acacia",
+            "href": "/Browse/States/91/Species/Acacia%20greggii%20(Catclaw%20Acacia)/Details"
+          },
+          {
+            "text": "19.0'",
+            "href": "/Browse/Trees/286954/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/286954/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cephalocereus columna-trajani",
+          "Torch Cactus",
+          "32.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cephalocereus columna-trajani",
+            "href": "/Browse/States/91/Species/Cephalocereus%20columna-trajani%20(Torch%20Cactus)/Details"
+          },
+          {
+            "text": "Torch Cactus",
+            "href": "/Browse/States/91/Species/Cephalocereus%20columna-trajani%20(Torch%20Cactus)/Details"
+          },
+          {
+            "text": "32.8'",
+            "href": "/Browse/Trees/286958/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Parkinsonia praecox",
+          "Palo Brea",
+          "15.1'",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Parkinsonia praecox",
+            "href": "/Browse/States/91/Species/Parkinsonia%20praecox%20(Palo%20Brea)/Details"
+          },
+          {
+            "text": "Palo Brea",
+            "href": "/Browse/States/91/Species/Parkinsonia%20praecox%20(Palo%20Brea)/Details"
+          },
+          {
+            "text": "15.1'",
+            "href": "/Browse/Trees/286959/Details"
+          },
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/286959/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prosopis laevigata",
+          "Smooth Mesquite",
+          "18.5'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prosopis laevigata",
+            "href": "/Browse/States/91/Species/Prosopis%20laevigata%20(Smooth%20Mesquite)/Details"
+          },
+          {
+            "text": "Smooth Mesquite",
+            "href": "/Browse/States/91/Species/Prosopis%20laevigata%20(Smooth%20Mesquite)/Details"
+          },
+          {
+            "text": "18.5'",
+            "href": "/Browse/Trees/286956/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/286956/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Protium copal",
+          "Copal Tree",
+          "12.6'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Protium copal",
+            "href": "/Browse/States/91/Species/Protium%20copal%20(Copal%20Tree)/Details"
+          },
+          {
+            "text": "Copal Tree",
+            "href": "/Browse/States/91/Species/Protium%20copal%20(Copal%20Tree)/Details"
+          },
+          {
+            "text": "12.6'",
+            "href": "/Browse/Trees/286960/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/286960/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Yucca gigantea",
+          "Elephant-Foot Yucca",
+          "17.5'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yucca gigantea",
+            "href": "/Browse/States/91/Species/Yucca%20gigantea%20(Elephant-Foot%20Yucca)/Details"
+          },
+          {
+            "text": "Elephant-Foot Yucca",
+            "href": "/Browse/States/91/Species/Yucca%20gigantea%20(Elephant-Foot%20Yucca)/Details"
+          },
+          {
+            "text": "17.5'",
+            "href": "/Browse/Trees/286957/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/286957/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Yucca mixteca",
+          "Mixteca Yucca",
+          "20.8'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yucca mixteca",
+            "href": "/Browse/States/91/Species/Yucca%20mixteca%20(Mixteca%20Yucca)/Details"
+          },
+          {
+            "text": "Mixteca Yucca",
+            "href": "/Browse/States/91/Species/Yucca%20mixteca%20(Mixteca%20Yucca)/Details"
+          },
+          {
+            "text": "20.8'",
+            "href": "/Browse/Trees/286955/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/286955/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Hela Bravo Hollis Botanical Garden",
+          "21.72",
+          "-",
+          "1.90",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hela Bravo Hollis Botanical Garden",
+            "href": "/Browse/Sites/42006/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

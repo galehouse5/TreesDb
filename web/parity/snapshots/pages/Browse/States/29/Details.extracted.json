@@ -1,0 +1,542 @@
+{
+  "stateId": 29,
+  "summary": {
+    "Name": "New Jersey",
+    "Code": "NJ",
+    "RHI5": "132.52",
+    "RHI10": "123.15",
+    "RHI20": "102.20",
+    "RGI5": "21.92",
+    "RGI10": "19.41",
+    "RGI20": "16.48",
+    "Trees measured": "177",
+    "Last measurement date": "08/01/2015"
+  },
+  "location": {
+    "Coordinates": "40 04.467, -074 43.723",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer spp.",
+          "Maple",
+          "-",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spp.",
+            "href": "/Browse/States/29/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "Maple",
+            "href": "/Browse/States/29/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          null,
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/170431/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/States/29/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/States/29/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa spp.",
+          "Catalpa",
+          "-",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catalpa spp.",
+            "href": "/Browse/States/29/Species/Catalpa%20spp.%20(Catalpa)/Details"
+          },
+          {
+            "text": "Catalpa",
+            "href": "/Browse/States/29/Species/Catalpa%20spp.%20(Catalpa)/Details"
+          },
+          null,
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/170435/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chamaecyparis thyoides",
+          "Atlantic White Cedar",
+          "86.4'",
+          "126''",
+          "25.0'"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis thyoides",
+            "href": "/Browse/States/29/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "Atlantic White Cedar",
+            "href": "/Browse/States/29/Species/Chamaecyparis%20thyoides%20(Atlantic%20White%20Cedar)/Details"
+          },
+          {
+            "text": "86.4'",
+            "href": "/Browse/Trees/170959/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/171570/Details"
+          },
+          {
+            "text": "25.0'",
+            "href": "/Browse/Trees/171570/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "-",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/States/29/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/States/29/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          null,
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/171565/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "123.0'",
+          "175''",
+          "65.0'"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/States/29/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/States/29/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "123.0'",
+            "href": "/Browse/Trees/170604/Details"
+          },
+          {
+            "text": "175''",
+            "href": "/Browse/Trees/170604/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/170942/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "109.9'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/States/29/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/States/29/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "109.9'",
+            "href": "/Browse/Trees/171040/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/171040/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca var. opaca",
+          "American Holly",
+          "71.2'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca var. opaca",
+            "href": "/Browse/States/29/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/States/29/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "71.2'",
+            "href": "/Browse/Trees/170489/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/171538/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "-",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/States/29/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/States/29/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          null,
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/170436/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "-",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/States/29/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/States/29/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          null,
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/171567/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 41 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Atisoen Village",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Atisoen Village",
+            "href": "/Browse/Sites/39260/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Batsto Village",
+          "0.00",
+          "-",
+          "11.20",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Batsto Village",
+            "href": "/Browse/Sites/39276/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bear Swamp",
+          "80.50",
+          "-",
+          "10.73",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bear Swamp",
+            "href": "/Browse/Sites/39278/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedar Swmp Natural Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedar Swmp Natural Area",
+            "href": "/Browse/Sites/39291/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Dryden Kuser Natural Area",
+          "65.18",
+          "-",
+          "7.01",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Dryden Kuser Natural Area",
+            "href": "/Browse/Sites/39239/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mantua Nature Preserve",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mantua Nature Preserve",
+            "href": "/Browse/Sites/39289/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Morristown National Historic Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Morristown National Historic Park",
+            "href": "/Browse/Sites/39269/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey Single Tree Sites",
+          "72.00",
+          "36.00",
+          "21.60",
+          "18.95"
+        ],
+        "links": [
+          {
+            "text": "New Jersey Single Tree Sites",
+            "href": "/Browse/Sites/39310/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Princeton University",
+          "112.90",
+          "-",
+          "15.18",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Princeton University",
+            "href": "/Browse/Sites/39302/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Saddler's Woods",
+          "123.80",
+          "-",
+          "14.77",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Saddler's Woods",
+            "href": "/Browse/Sites/39282/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

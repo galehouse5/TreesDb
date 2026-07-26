@@ -1,0 +1,359 @@
+{
+  "siteId": 40070,
+  "summary": {
+    "Name": "Letchworth State Park",
+    "RHI5": "148.70",
+    "RHI10": "143.01",
+    "RHI20": "135.23",
+    "RGI5": "12.93",
+    "RGI10": "11.56",
+    "RGI20": "10.09",
+    "Trees measured": "130",
+    "Last measurement date": "10/11/2020",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/11/2020",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/01/2008",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/letchworth2008/letchworth_state_park.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies nordmanniana",
+          "Nordmann Fir",
+          "116.7'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies nordmanniana",
+            "href": "/Browse/Sites/40070/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "Nordmann Fir",
+            "href": "/Browse/Sites/40070/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "116.7'",
+            "href": "/Browse/Trees/217764/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/217763/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "108.7'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/Sites/40070/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/Sites/40070/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "108.7'",
+            "href": "/Browse/Trees/217841/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/217841/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "123.3'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/40070/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40070/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "123.3'",
+            "href": "/Browse/Trees/217870/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/217870/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "127.3'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40070/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40070/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "127.3'",
+            "href": "/Browse/Trees/217805/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/217781/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "80.8'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/40070/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/40070/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "80.8'",
+            "href": "/Browse/Trees/217773/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/217773/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus glabra",
+          "Ohio Buckeye",
+          "84.1'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus glabra",
+            "href": "/Browse/Sites/40070/Species/Aesculus%20glabra%20(Ohio%20Buckeye)/Details"
+          },
+          {
+            "text": "Ohio Buckeye",
+            "href": "/Browse/Sites/40070/Species/Aesculus%20glabra%20(Ohio%20Buckeye)/Details"
+          },
+          {
+            "text": "84.1'",
+            "href": "/Browse/Trees/217774/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/217774/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "134.2'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40070/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40070/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "134.2'",
+            "href": "/Browse/Trees/217835/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/217834/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "153.4'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40070/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40070/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "153.4'",
+            "href": "/Browse/Trees/217779/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/217785/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "142.7'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/40070/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/40070/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "142.7'",
+            "href": "/Browse/Trees/217848/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/217848/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "140.5'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40070/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40070/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "140.5'",
+            "href": "/Browse/Trees/217842/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/217842/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 43 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 35.566, -078 01.649",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Wyoming/Livingston"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

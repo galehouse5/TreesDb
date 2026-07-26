@@ -1,0 +1,101 @@
+{
+  "siteId": 41834,
+  "summary": {
+    "Name": "Andalusia Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "01/01/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2010",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus suber",
+          "Cork Oak",
+          "42.7'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus suber",
+            "href": "/Browse/Sites/41834/Species/Quercus%20suber%20(Cork%20Oak)/Details"
+          },
+          {
+            "text": "Cork Oak",
+            "href": "/Browse/Sites/41834/Species/Quercus%20suber%20(Cork%20Oak)/Details"
+          },
+          {
+            "text": "42.7'",
+            "href": "/Browse/Trees/274950/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/274950/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "37 23.535, -005 59.409",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Sevilla"
+    },
+    "state": {
+      "text": "Andalusia (ES)",
+      "href": "/Browse/States/124/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

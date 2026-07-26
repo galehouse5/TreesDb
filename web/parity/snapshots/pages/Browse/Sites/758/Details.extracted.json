@@ -1,0 +1,353 @@
+{
+  "siteId": 758,
+  "summary": {
+    "Name": "Kyle Woods, OH",
+    "RHI5": "117.78",
+    "RHI10": "114.78",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.62",
+    "RGI10": "10.59",
+    "RGI20": "(not enough data)",
+    "Trees measured": "45",
+    "Last measurement date": "03/18/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/18/2004",
+      "visitors": "Thomas Diggins",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/04/2003",
+      "visitors": "Thomas Diggins",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/ohio/kyle_woods.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "115.6'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/758/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/758/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "115.6'",
+            "href": "/Browse/Trees/11093/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/166944/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "117.2'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/758/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/758/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "117.2'",
+            "href": "/Browse/Trees/11092/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/166935/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "115.2'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/758/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/758/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "115.2'",
+            "href": "/Browse/Trees/11097/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/11097/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "114.8'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/758/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/758/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "114.8'",
+            "href": "/Browse/Trees/11098/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/166942/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "106.6'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/758/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/758/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "106.6'",
+            "href": "/Browse/Trees/11101/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/166937/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "116.0'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/758/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/758/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "116.0'",
+            "href": "/Browse/Trees/11100/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/166946/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "-",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/758/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/758/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          null,
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/166952/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "123.1'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/758/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/758/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "123.1'",
+            "href": "/Browse/Trees/11094/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/166938/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "107.8'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/758/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/758/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "107.8'",
+            "href": "/Browse/Trees/11103/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/11103/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "-",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/758/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/758/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          null,
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/166950/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 59.231, -080 43.287",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "public",
+      "County": "Mahoning"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

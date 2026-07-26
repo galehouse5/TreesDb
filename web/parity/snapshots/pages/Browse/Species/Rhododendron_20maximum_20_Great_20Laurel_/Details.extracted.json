@@ -1,0 +1,132 @@
+{
+  "botanicalName": "Rhododendron maximum",
+  "commonName": "Great Laurel",
+  "global": {
+    "maxHeight": {
+      "text": "28.5'",
+      "href": "/Browse/Trees/249684/Details"
+    },
+    "maxGirth": {
+      "text": "20''",
+      "href": "/Browse/Trees/249684/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "28.5'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "28.5'",
+            "href": "/Browse/Trees/249684/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/249684/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "-",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          null,
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/169989/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "12.2'",
+          "8''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "12.2'",
+            "href": "/Browse/Trees/221070/Details"
+          },
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/221070/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "20.0'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "20.0'",
+            "href": "/Browse/Trees/148212/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/129341/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "siteId": 40289,
+  "summary": {
+    "Name": "Jackson Park",
+    "RHI5": "63.30",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.48",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "14",
+    "Last measurement date": "04/06/2008",
+    "Ownership contact": "city of Hendersonville, NC",
+    "General comments": "220 acres Also see: http://nativetreesociety.org/fieldtrips/north_carolina/jacksonpark/jackson_park_hendersonville2.htm"
+  },
+  "visits": [
+    {
+      "visited": "04/06/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/jacksonpark/jackson_park_hendersonville2.htm",
+      "comments": "220 acres Also see: http://nativetreesociety.org/fieldtrips/north_carolina/jacksonpark/jackson_park_hendersonville2.htm"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Crateagus spp.",
+          "Hawthorn",
+          "-",
+          "15''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crateagus spp.",
+            "href": "/Browse/Sites/40289/Species/Crateagus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/40289/Species/Crateagus%20spp.%20(Hawthorn)/Details"
+          },
+          null,
+          {
+            "text": "15''",
+            "href": "/Browse/Trees/227594/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca",
+          "American Holly",
+          "50.2'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca",
+            "href": "/Browse/Sites/40289/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/40289/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "50.2'",
+            "href": "/Browse/Trees/227600/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/227600/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "-",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40289/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40289/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          null,
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/227590/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "94.0'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/40289/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/40289/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "94.0'",
+            "href": "/Browse/Trees/227597/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/227597/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "102.1'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40289/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40289/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "102.1'",
+            "href": "/Browse/Trees/227598/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/227596/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "-",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40289/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40289/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/227587/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "70.2'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/40289/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/40289/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "70.2'",
+            "href": "/Browse/Trees/227599/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/227599/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 18.937, -082 26.698",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Henderson"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

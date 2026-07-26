@@ -1,0 +1,129 @@
+{
+  "siteId": 38830,
+  "summary": {
+    "Name": "Saguaro National Park - East",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "02/08/2017",
+    "Ownership contact": "Saguaro National Park - East 3693 South Old Spanish Trail, Tuscon, AZ. 85730",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/08/2017",
+      "visitors": "Turner Sharp and Susan Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carnegiea gigantea",
+          "Saguaro",
+          "37.5'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carnegiea gigantea",
+            "href": "/Browse/Sites/38830/Species/Carnegiea%20gigantea%20(Saguaro)/Details"
+          },
+          {
+            "text": "Saguaro",
+            "href": "/Browse/Sites/38830/Species/Carnegiea%20gigantea%20(Saguaro)/Details"
+          },
+          {
+            "text": "37.5'",
+            "href": "/Browse/Trees/159295/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/159294/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cylindropuntia fulgida",
+          "Jumping Cholla",
+          "9.1'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cylindropuntia fulgida",
+            "href": "/Browse/Sites/38830/Species/Cylindropuntia%20fulgida%20(Jumping%20Cholla)/Details"
+          },
+          {
+            "text": "Jumping Cholla",
+            "href": "/Browse/Sites/38830/Species/Cylindropuntia%20fulgida%20(Jumping%20Cholla)/Details"
+          },
+          {
+            "text": "9.1'",
+            "href": "/Browse/Trees/159296/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/159296/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 10.810, -110 44.180",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Pima"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

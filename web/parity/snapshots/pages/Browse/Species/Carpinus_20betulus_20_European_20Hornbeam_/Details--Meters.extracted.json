@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Carpinus betulus",
+  "commonName": "European Hornbeam",
+  "global": {
+    "maxHeight": {
+      "text": "32.40 m",
+      "href": "/Browse/Trees/283491/Details"
+    },
+    "maxGirth": {
+      "text": "414 cm",
+      "href": "/Browse/Trees/283492/Details"
+    },
+    "maxCrownSpread": {
+      "text": "16.15 m",
+      "href": "/Browse/Trees/315245/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "13.01 m",
+          "189 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "13.01 m",
+            "href": "/Browse/Trees/226050/Details"
+          },
+          {
+            "text": "189 cm",
+            "href": "/Browse/Trees/226050/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Podlaskie Voivodeship",
+          "32.40 m",
+          "414 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Podlaskie Voivodeship",
+            "href": "/Browse/States/232/Details"
+          },
+          {
+            "text": "32.40 m",
+            "href": "/Browse/Trees/283491/Details"
+          },
+          {
+            "text": "414 cm",
+            "href": "/Browse/Trees/283492/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Bohemian Region",
+          "22.13 m",
+          "181 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Bohemian Region",
+            "href": "/Browse/States/258/Details"
+          },
+          {
+            "text": "22.13 m",
+            "href": "/Browse/Trees/284683/Details"
+          },
+          {
+            "text": "181 cm",
+            "href": "/Browse/Trees/284683/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "19.20 m",
+          "183 cm",
+          "16.15 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "19.20 m",
+            "href": "/Browse/Trees/315245/Details"
+          },
+          {
+            "text": "183 cm",
+            "href": "/Browse/Trees/315245/Details"
+          },
+          {
+            "text": "16.15 m",
+            "href": "/Browse/Trees/315245/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

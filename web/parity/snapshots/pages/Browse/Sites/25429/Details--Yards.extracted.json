@@ -1,0 +1,377 @@
+{
+  "siteId": 25429,
+  "summary": {
+    "Name": "Worthington Golf Course",
+    "RHI5": "30.327",
+    "RHI10": "26.420",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.132",
+    "RGI10": "2.448",
+    "RGI20": "(not enough data)",
+    "Trees measured": "13",
+    "Last measurement date": "12/13/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/13/2017",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "02/13/2015",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "All Trees measured are within the portion of the golf course within the city limits of Parkersburg, WV."
+    },
+    {
+      "visited": "10/15/2009",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "All measured trees are in the portion of the golf course within the city limits of Parkersburg, WV"
+    },
+    {
+      "visited": "01/16/2007",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "The trees measured are in the portion of the golf course that are in the city limits of Parkersburg, WV"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "22.60 yd",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/25429/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/25429/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "22.60 yd",
+            "href": "/Browse/Trees/272667/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/272667/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "18.50 yd",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/25429/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/25429/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "18.50 yd",
+            "href": "/Browse/Trees/154585/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/154585/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "33.10 yd",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/25429/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/25429/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "33.10 yd",
+            "href": "/Browse/Trees/154572/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/154572/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "23.83 yd",
+          "64''",
+          "15.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/25429/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/25429/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "23.83 yd",
+            "href": "/Browse/Trees/272665/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/272665/Details"
+          },
+          {
+            "text": "15.00 yd",
+            "href": "/Browse/Trees/272665/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Castanea mollissima",
+          "Chinese Chestnut",
+          "14.60 yd",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea mollissima",
+            "href": "/Browse/Sites/25429/Species/Castanea%20mollissima%20(Chinese%20Chestnut)/Details"
+          },
+          {
+            "text": "Chinese Chestnut",
+            "href": "/Browse/Sites/25429/Species/Castanea%20mollissima%20(Chinese%20Chestnut)/Details"
+          },
+          {
+            "text": "14.60 yd",
+            "href": "/Browse/Trees/154573/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/154573/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "22.47 yd",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/25429/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/25429/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "22.47 yd",
+            "href": "/Browse/Trees/272663/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/272663/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "20.43 yd",
+          "35''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/25429/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/25429/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "20.43 yd",
+            "href": "/Browse/Trees/272668/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/272668/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "36.60 yd",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/25429/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/25429/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "36.60 yd",
+            "href": "/Browse/Trees/272666/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/272664/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides ssp. deltoides",
+          "Eastern Cottonwood",
+          "30.67 yd",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides ssp. deltoides",
+            "href": "/Browse/Sites/25429/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/25429/Species/Populus%20deltoides%20ssp.%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "30.67 yd",
+            "href": "/Browse/Trees/272662/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/272662/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus phellos",
+          "Willow Oak",
+          "23.23 yd",
+          "110''",
+          "23.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Quercus phellos",
+            "href": "/Browse/Sites/25429/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "Willow Oak",
+            "href": "/Browse/Sites/25429/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "23.23 yd",
+            "href": "/Browse/Trees/154576/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/154576/Details"
+          },
+          {
+            "text": "23.67 yd",
+            "href": "/Browse/Trees/154576/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 16.950, -081 31.165",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Wood"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

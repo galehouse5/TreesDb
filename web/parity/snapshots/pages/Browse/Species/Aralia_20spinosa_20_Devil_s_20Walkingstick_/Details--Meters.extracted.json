@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Aralia spinosa",
+  "commonName": "Devil's Walkingstick",
+  "global": {
+    "maxHeight": {
+      "text": "16.28 m",
+      "href": "/Browse/Trees/229931/Details"
+    },
+    "maxGirth": {
+      "text": "76 cm",
+      "href": "/Browse/Trees/229931/Details"
+    },
+    "maxCrownSpread": {
+      "text": "3.66 m",
+      "href": "/Browse/Trees/127137/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "11.80 m",
+          "46 cm",
+          "3.66 m"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "11.80 m",
+            "href": "/Browse/Trees/128099/Details"
+          },
+          {
+            "text": "46 cm",
+            "href": "/Browse/Trees/128099/Details"
+          },
+          {
+            "text": "3.66 m",
+            "href": "/Browse/Trees/127137/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "9.85 m",
+          "61 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "9.85 m",
+            "href": "/Browse/Trees/139761/Details"
+          },
+          {
+            "text": "61 cm",
+            "href": "/Browse/Trees/255884/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "16.28 m",
+          "76 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "16.28 m",
+            "href": "/Browse/Trees/229931/Details"
+          },
+          {
+            "text": "76 cm",
+            "href": "/Browse/Trees/229931/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "4.72 m",
+          "41 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "4.72 m",
+            "href": "/Browse/Trees/313246/Details"
+          },
+          {
+            "text": "41 cm",
+            "href": "/Browse/Trees/313133/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

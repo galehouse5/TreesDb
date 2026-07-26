@@ -1,0 +1,129 @@
+{
+  "siteId": 42027,
+  "summary": {
+    "Name": "Tabant",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "10/02/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/02/2018",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juglans regia",
+          "English Walnut",
+          "38.3'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans regia",
+            "href": "/Browse/Sites/42027/Species/Juglans%20regia%20(English%20Walnut)/Details"
+          },
+          {
+            "text": "English Walnut",
+            "href": "/Browse/Sites/42027/Species/Juglans%20regia%20(English%20Walnut)/Details"
+          },
+          {
+            "text": "38.3'",
+            "href": "/Browse/Trees/291336/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/291336/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus nigra",
+          "Black Poplar",
+          "99.6'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus nigra",
+            "href": "/Browse/Sites/42027/Species/Populus%20nigra%20(Black%20Poplar)/Details"
+          },
+          {
+            "text": "Black Poplar",
+            "href": "/Browse/Sites/42027/Species/Populus%20nigra%20(Black%20Poplar)/Details"
+          },
+          {
+            "text": "99.6'",
+            "href": "/Browse/Trees/291335/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/291335/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "31 39.515, -006 24.528",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Azilal"
+    },
+    "state": {
+      "text": "Béni Mellal-Khénifra, Morocco (MA)",
+      "href": "/Browse/States/271/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

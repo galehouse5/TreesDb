@@ -1,0 +1,101 @@
+{
+  "siteId": 39182,
+  "summary": {
+    "Name": "Big Darby Cemetery",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "04/10/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "Known as the Little Pennsylvania Cemetery. Burials from 1834 onward."
+  },
+  "visits": [
+    {
+      "visited": "04/10/2015",
+      "visitors": "Randy Brown",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Known as the Little Pennsylvania Cemetery. Burials from 1834 onward."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "72.0'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/39182/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/39182/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/168933/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/168935/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 51.046, -083 12.077",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-county",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

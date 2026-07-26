@@ -1,0 +1,359 @@
+{
+  "siteId": 32716,
+  "summary": {
+    "Name": "Marion Brooks Natural Area",
+    "RHI5": "82.93",
+    "RHI10": "75.88",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.41",
+    "RGI10": "5.43",
+    "RGI20": "(not enough data)",
+    "Trees measured": "27",
+    "Last measurement date": "01/02/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "Four trees were measured on 7/12/2009 Trees measured were away from the area of an almost pure stand of Paper Birch."
+  },
+  "visits": [
+    {
+      "visited": "01/02/2009",
+      "visitors": "Edward Frank",
+      "tripReportUrl": "(none)",
+      "comments": "Four trees were measured on 7/12/2009 Trees measured were away from the area of an almost pure stand of Paper Birch."
+    },
+    {
+      "visited": "01/01/2009",
+      "visitors": "Edward Frank",
+      "tripReportUrl": "(none)",
+      "comments": "975 acres in the Natural Area - All trees measured were in the paper birch stand 0f 10-20 acres."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "85.0'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/32716/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/32716/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/166112/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/166112/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier spp.",
+          "Serviceberry",
+          "54.5'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier spp.",
+            "href": "/Browse/Sites/32716/Species/Amelanchier%20spp.%20(Serviceberry)/Details"
+          },
+          {
+            "text": "Serviceberry",
+            "href": "/Browse/Sites/32716/Species/Amelanchier%20spp.%20(Serviceberry)/Details"
+          },
+          {
+            "text": "54.5'",
+            "href": "/Browse/Trees/139528/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/139528/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "74.8'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/Sites/32716/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/Sites/32716/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "74.8'",
+            "href": "/Browse/Trees/166118/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/139526/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera var. papyrifera",
+          "Paper Birch",
+          "63.0'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera var. papyrifera",
+            "href": "/Browse/Sites/32716/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/Sites/32716/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "63.0'",
+            "href": "/Browse/Trees/166114/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/166114/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "57.0'",
+          "35''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/32716/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/32716/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/166110/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/166110/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "16.0'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/32716/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/32716/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "16.0'",
+            "href": "/Browse/Trees/139529/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/139529/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kalmia latifolia",
+          "Mountain Laurel",
+          "10.0'",
+          "8''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kalmia latifolia",
+            "href": "/Browse/Sites/32716/Species/Kalmia%20latifolia%20(Mountain%20Laurel)/Details"
+          },
+          {
+            "text": "Mountain Laurel",
+            "href": "/Browse/Sites/32716/Species/Kalmia%20latifolia%20(Mountain%20Laurel)/Details"
+          },
+          {
+            "text": "10.0'",
+            "href": "/Browse/Trees/139530/Details"
+          },
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/139530/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "72.2'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/32716/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/32716/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "72.2'",
+            "href": "/Browse/Trees/139517/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/139517/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "72.3'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/32716/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/32716/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "72.3'",
+            "href": "/Browse/Trees/139518/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/139518/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "67.8'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/32716/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/32716/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "67.8'",
+            "href": "/Browse/Trees/139520/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/139525/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 15.803, -078 17.148",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Elk"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

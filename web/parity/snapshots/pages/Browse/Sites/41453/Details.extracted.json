@@ -1,0 +1,104 @@
+{
+  "siteId": 41453,
+  "summary": {
+    "Name": "Baxter Preserve",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "02/28/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "The preserve has two units- Baxter North at 37 acres and Baxter South at 129 acres. One of the units has an abandoned racetrack."
+  },
+  "visits": [
+    {
+      "visited": "02/28/2016",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "The preserve has two units- Baxter North at 37 acres and Baxter South at 129 acres. One of the units has an abandoned racetrack."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "78.8'",
+          "214''",
+          "95.1'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/41453/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/41453/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "78.8'",
+            "href": "/Browse/Trees/260711/Details"
+          },
+          {
+            "text": "214''",
+            "href": "/Browse/Trees/260711/Details"
+          },
+          {
+            "text": "95.1'",
+            "href": "/Browse/Trees/260710/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 20.440, -073 34.772",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Westchester"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

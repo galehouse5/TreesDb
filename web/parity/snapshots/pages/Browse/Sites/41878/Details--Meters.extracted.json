@@ -1,0 +1,185 @@
+{
+  "siteId": 41878,
+  "summary": {
+    "Name": "Coker Arboretum",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "04/02/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/02/2008",
+      "visitors": "John Eichholz",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/north_carolina_trip_april_2008.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "18.93 m",
+          "224 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/41878/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/41878/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "18.93 m",
+            "href": "/Browse/Trees/280384/Details"
+          },
+          {
+            "text": "224 cm",
+            "href": "/Browse/Trees/280384/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "25.94 m",
+          "185 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/41878/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/41878/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "25.94 m",
+            "href": "/Browse/Trees/280383/Details"
+          },
+          {
+            "text": "185 cm",
+            "href": "/Browse/Trees/280383/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus glabra",
+          "Spruce Pine",
+          "29.66 m",
+          "376 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus glabra",
+            "href": "/Browse/Sites/41878/Species/Pinus%20glabra%20(Spruce%20Pine)/Details"
+          },
+          {
+            "text": "Spruce Pine",
+            "href": "/Browse/Sites/41878/Species/Pinus%20glabra%20(Spruce%20Pine)/Details"
+          },
+          {
+            "text": "29.66 m",
+            "href": "/Browse/Trees/280385/Details"
+          },
+          {
+            "text": "376 cm",
+            "href": "/Browse/Trees/280385/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lyrata",
+          "Overcup Oak",
+          "23.10 m",
+          "419 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lyrata",
+            "href": "/Browse/Sites/41878/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "Overcup Oak",
+            "href": "/Browse/Sites/41878/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "23.10 m",
+            "href": "/Browse/Trees/280382/Details"
+          },
+          {
+            "text": "419 cm",
+            "href": "/Browse/Trees/280382/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 54.826, -079 02.919",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Orange"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,153 @@
+{
+  "siteId": 1033,
+  "summary": {
+    "Name": "Rothkugel Plantation",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "23",
+    "Last measurement date": "05/04/2022",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "05/04/2022",
+      "visitors": "Dan Cooley",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/03/2013",
+      "visitors": "Turner Sharp and Susan Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/22/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/15/2010",
+      "visitors": "Gaines Mcmartin",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "119.0'",
+          "67''",
+          "17.0'"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/1033/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/1033/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/280607/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/280607/Details"
+          },
+          {
+            "text": "17.0'",
+            "href": "/Browse/Trees/280580/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "143.1'",
+          "131''",
+          "49.0'"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/1033/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/1033/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "143.1'",
+            "href": "/Browse/Trees/280606/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/58927/Details"
+          },
+          {
+            "text": "49.0'",
+            "href": "/Browse/Trees/58927/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 33.543, -079 43.865",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Pocahontas"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

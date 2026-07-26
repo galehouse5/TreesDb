@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Quercus x saulii",
+  "commonName": "Hybrid Oak",
+  "global": {
+    "maxHeight": {
+      "text": "136.2'",
+      "href": "/Browse/Trees/243531/Details"
+    },
+    "maxGirth": {
+      "text": "132''",
+      "href": "/Browse/Trees/231145/Details"
+    },
+    "maxCrownSpread": {
+      "text": "53.0'",
+      "href": "/Browse/Trees/313106/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "124.2'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "124.2'",
+            "href": "/Browse/Trees/231145/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/231145/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "49.2'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "49.2'",
+            "href": "/Browse/Trees/280941/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/280941/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "136.2'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "136.2'",
+            "href": "/Browse/Trees/243531/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/243531/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "112.7'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "112.7'",
+            "href": "/Browse/Trees/280985/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/280985/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "107.5'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "107.5'",
+            "href": "/Browse/Trees/227146/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/227145/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "79.9'",
+          "90''",
+          "53.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "79.9'",
+            "href": "/Browse/Trees/313106/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/313107/Details"
+          },
+          {
+            "text": "53.0'",
+            "href": "/Browse/Trees/313106/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

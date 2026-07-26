@@ -1,0 +1,356 @@
+{
+  "siteId": 40328,
+  "summary": {
+    "Name": "Savage Gulf",
+    "RHI5": "48.384",
+    "RHI10": "46.762",
+    "RHI20": "43.701",
+    "RGI5": "4.384",
+    "RGI10": "3.754",
+    "RGI20": "3.099",
+    "Trees measured": "100",
+    "Last measurement date": "03/28/2006",
+    "Ownership contact": "South Cumberland State Park 11745 US 41 Monteage, TN",
+    "General comments": "30,800 Acres in 10 units 15,590 aces in the Savage Gulf Unit"
+  },
+  "visits": [
+    {
+      "visited": "03/28/2006",
+      "visitors": "Jess Riddle and Michael Davie",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/tennessee/savage2/savage_gulf_redux.htm",
+      "comments": "30,800 Acres in 10 units 15,590 aces in the Savage Gulf Unit"
+    },
+    {
+      "visited": "07/01/2005",
+      "visitors": "Jess Riddle and Michael Davie",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/tennessee/savage_gulf/savage_gulf05.htm",
+      "comments": "Savage Gulf includes 15,590 acres and is one unit of ten in the South Cumberland State Park system which contains a total of 30,800 Acres."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "37.46 m",
+          "218 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40328/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40328/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "37.46 m",
+            "href": "/Browse/Trees/228466/Details"
+          },
+          {
+            "text": "218 cm",
+            "href": "/Browse/Trees/228466/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "41.45 m",
+          "320 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40328/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40328/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "41.45 m",
+            "href": "/Browse/Trees/228469/Details"
+          },
+          {
+            "text": "320 cm",
+            "href": "/Browse/Trees/228468/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "39.59 m",
+          "429 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/40328/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/40328/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "39.59 m",
+            "href": "/Browse/Trees/228429/Details"
+          },
+          {
+            "text": "429 cm",
+            "href": "/Browse/Trees/228354/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "42.18 m",
+          "206 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40328/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40328/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "42.18 m",
+            "href": "/Browse/Trees/228441/Details"
+          },
+          {
+            "text": "206 cm",
+            "href": "/Browse/Trees/228441/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "49.47 m",
+          "295 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40328/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40328/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "49.47 m",
+            "href": "/Browse/Trees/228358/Details"
+          },
+          {
+            "text": "295 cm",
+            "href": "/Browse/Trees/228447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "47.06 m",
+          "290 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40328/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40328/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "47.06 m",
+            "href": "/Browse/Trees/228458/Details"
+          },
+          {
+            "text": "290 cm",
+            "href": "/Browse/Trees/228452/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "44.96 m",
+          "196 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40328/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40328/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "44.96 m",
+            "href": "/Browse/Trees/228357/Details"
+          },
+          {
+            "text": "196 cm",
+            "href": "/Browse/Trees/228357/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cladrastis kentukea",
+          "Kentucky Yellowwood",
+          "23.53 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cladrastis kentukea",
+            "href": "/Browse/Sites/40328/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "Kentucky Yellowwood",
+            "href": "/Browse/Sites/40328/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "23.53 m",
+            "href": "/Browse/Trees/228486/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "43.65 m",
+          "221 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40328/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40328/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "43.65 m",
+            "href": "/Browse/Trees/228426/Details"
+          },
+          {
+            "text": "221 cm",
+            "href": "/Browse/Trees/228425/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "43.86 m",
+          "310 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/40328/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/40328/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "43.86 m",
+            "href": "/Browse/Trees/228412/Details"
+          },
+          {
+            "text": "310 cm",
+            "href": "/Browse/Trees/228409/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 26 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 26.121, -085 32.561",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Grundy"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

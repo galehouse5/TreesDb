@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Carpinus turczaninowii",
+  "commonName": "Korean Hornbeam",
+  "global": {
+    "maxHeight": {
+      "text": "37.8'",
+      "href": "/Browse/Trees/281887/Details"
+    },
+    "maxGirth": {
+      "text": "46''",
+      "href": "/Browse/Trees/281887/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "37.8'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "37.8'",
+            "href": "/Browse/Trees/281887/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/281887/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "siteId": 40167,
+  "summary": {
+    "Name": "Fleckenstein Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "11/22/2015",
+    "Ownership contact": "3834 Mason-Montgomery Road Mason, Ohio45010",
+    "General comments": "50 Acres"
+  },
+  "visits": [
+    {
+      "visited": "11/22/2015",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "50 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "68.2'",
+          "138''",
+          "58.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40167/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40167/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "68.2'",
+            "href": "/Browse/Trees/224401/Details"
+          },
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/224401/Details"
+          },
+          {
+            "text": "58.0'",
+            "href": "/Browse/Trees/224401/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "74.6'",
+          "173''",
+          "71.5'"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/40167/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/40167/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "74.6'",
+            "href": "/Browse/Trees/224396/Details"
+          },
+          {
+            "text": "173''",
+            "href": "/Browse/Trees/224398/Details"
+          },
+          {
+            "text": "71.5'",
+            "href": "/Browse/Trees/224396/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus muehlenbergii",
+          "Chinkapin Oak",
+          "65.5'",
+          "171''",
+          "83.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus muehlenbergii",
+            "href": "/Browse/Sites/40167/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "Chinkapin Oak",
+            "href": "/Browse/Sites/40167/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "65.5'",
+            "href": "/Browse/Trees/224399/Details"
+          },
+          {
+            "text": "171''",
+            "href": "/Browse/Trees/224399/Details"
+          },
+          {
+            "text": "83.0'",
+            "href": "/Browse/Trees/224399/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 23.037, -084 18.266",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

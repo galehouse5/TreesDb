@@ -1,0 +1,101 @@
+{
+  "siteId": 41186,
+  "summary": {
+    "Name": "Big Pines Natural Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "08/21/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "2106 aces in the Hemenway State Park including 135 acres in the Big Pines Natural Area"
+  },
+  "visits": [
+    {
+      "visited": "08/21/2012",
+      "visitors": "Tom Howard and Jack Howard",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "2106 aces in the Hemenway State Park including 135 acres in the Big Pines Natural Area"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "128.0'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41186/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41186/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "128.0'",
+            "href": "/Browse/Trees/251072/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/251070/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 53.274, -071 17.722",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Carroll"
+    },
+    "state": {
+      "text": "New Hampshire (US)",
+      "href": "/Browse/States/28/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Celtis laevigata",
+  "commonName": "Sugarberry",
+  "global": {
+    "maxHeight": {
+      "text": "36.80 yd",
+      "href": "/Browse/Trees/158510/Details"
+    },
+    "maxGirth": {
+      "text": "160''",
+      "href": "/Browse/Trees/2392/Details"
+    },
+    "maxCrownSpread": {
+      "text": "23.00 yd",
+      "href": "/Browse/Trees/2392/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "36.80 yd",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "36.80 yd",
+            "href": "/Browse/Trees/158510/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/158510/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "31.13 yd",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "31.13 yd",
+            "href": "/Browse/Trees/171784/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/171784/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "31.17 yd",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "31.17 yd",
+            "href": "/Browse/Trees/10102/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/10102/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "36.47 yd",
+          "160''",
+          "23.00 yd"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "36.47 yd",
+            "href": "/Browse/Trees/2392/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/2392/Details"
+          },
+          {
+            "text": "23.00 yd",
+            "href": "/Browse/Trees/2392/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

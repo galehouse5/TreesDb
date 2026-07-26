@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Rhus typhina",
+  "commonName": "Staghorn Sumac",
+  "global": {
+    "maxHeight": {
+      "text": "41.6'",
+      "href": "/Browse/Trees/220871/Details"
+    },
+    "maxGirth": {
+      "text": "35''",
+      "href": "/Browse/Trees/312135/Details"
+    },
+    "maxCrownSpread": {
+      "text": "31.0'",
+      "href": "/Browse/Trees/312135/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "20.4'",
+          "10''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "20.4'",
+            "href": "/Browse/Trees/280953/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/280953/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "41.6'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "41.6'",
+            "href": "/Browse/Trees/220871/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/121996/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "36.9'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "36.9'",
+            "href": "/Browse/Trees/138121/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/163332/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "14.5'",
+          "35''",
+          "31.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "14.5'",
+            "href": "/Browse/Trees/315033/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/312135/Details"
+          },
+          {
+            "text": "31.0'",
+            "href": "/Browse/Trees/312135/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "siteId": 22092,
+  "summary": {
+    "Name": "Washington, D. C. Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "01/01/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2008",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "124.0'",
+          "230''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/22092/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/22092/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "124.0'",
+            "href": "/Browse/Trees/76109/Details"
+          },
+          {
+            "text": "230''",
+            "href": "/Browse/Trees/76109/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "111.6'",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/22092/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/22092/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "111.6'",
+            "href": "/Browse/Trees/76110/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/76110/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus phellos",
+          "Willow Oak",
+          "105.2'",
+          "260''",
+          "109.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus phellos",
+            "href": "/Browse/Sites/22092/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "Willow Oak",
+            "href": "/Browse/Sites/22092/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "105.2'",
+            "href": "/Browse/Trees/76108/Details"
+          },
+          {
+            "text": "260''",
+            "href": "/Browse/Trees/76107/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/76107/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Viburnum prunifolium",
+          "Blackhaw",
+          "-",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Viburnum prunifolium",
+            "href": "/Browse/Sites/22092/Species/Viburnum%20prunifolium%20(Blackhaw)/Details"
+          },
+          {
+            "text": "Blackhaw",
+            "href": "/Browse/Sites/22092/Species/Viburnum%20prunifolium%20(Blackhaw)/Details"
+          },
+          null,
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/76106/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 54.434, -077 02.188",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Various",
+      "County": "District Of Columbia"
+    },
+    "state": {
+      "text": "District of Columbia (US)",
+      "href": "/Browse/States/64/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

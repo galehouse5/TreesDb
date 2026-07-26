@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Quercus pungens",
+  "commonName": "Pungent Oak",
+  "global": {
+    "maxHeight": {
+      "text": "5.88 m",
+      "href": "/Browse/Trees/142276/Details"
+    },
+    "maxGirth": {
+      "text": "43 cm",
+      "href": "/Browse/Trees/142276/Details"
+    },
+    "maxCrownSpread": {
+      "text": "5.49 m",
+      "href": "/Browse/Trees/142276/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pennsylvania",
+          "5.88 m",
+          "43 cm",
+          "5.49 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "5.88 m",
+            "href": "/Browse/Trees/142276/Details"
+          },
+          {
+            "text": "43 cm",
+            "href": "/Browse/Trees/142276/Details"
+          },
+          {
+            "text": "5.49 m",
+            "href": "/Browse/Trees/142276/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

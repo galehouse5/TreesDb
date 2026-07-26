@@ -1,0 +1,93 @@
+{
+  "botanicalName": "Prunus americana",
+  "commonName": "American Plum",
+  "global": {
+    "maxHeight": {
+      "text": "8.14 m",
+      "href": "/Browse/Trees/313176/Details"
+    },
+    "maxGirth": {
+      "text": "140 cm",
+      "href": "/Browse/Trees/313239/Details"
+    },
+    "maxCrownSpread": {
+      "text": "9.91 m",
+      "href": "/Browse/Trees/313239/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "South Dakota",
+          "-",
+          "71 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Dakota",
+            "href": "/Browse/States/39/Details"
+          },
+          null,
+          {
+            "text": "71 cm",
+            "href": "/Browse/Trees/233576/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "8.14 m",
+          "140 cm",
+          "9.91 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "8.14 m",
+            "href": "/Browse/Trees/313176/Details"
+          },
+          {
+            "text": "140 cm",
+            "href": "/Browse/Trees/313239/Details"
+          },
+          {
+            "text": "9.91 m",
+            "href": "/Browse/Trees/313239/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 233876,
+  "botanicalName": {
+    "text": "Quercus alba",
+    "href": "/Browse/Sites/40605/Species/Quercus%20alba%20(White%20Oak)/Details"
+  },
+  "commonName": {
+    "text": "White Oak",
+    "href": "/Browse/Sites/40605/Species/Quercus%20alba%20(White%20Oak)/Details"
+  },
+  "details": {
+    "Height": "38.04 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "371 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "184.74",
+    "ENTSPTS": "1518.40",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.28",
+    "Champion points (abbreviated)": "270.80",
+    "Diameter": "118 cm",
+    "Conical volume": "13.88 m³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/06/2006",
+      "summary": {
+        "Height": "38.04 m",
+        "Girth": "371 cm"
+      },
+      "details": {
+        "Botanical name": "Quercus alba",
+        "Common name": "White Oak",
+        "Height": "38.04 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "371 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "184.74",
+        "ENTSPTS": "1518.40",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.28",
+        "Champion points (abbreviated)": "270.80",
+        "Diameter": "118 cm",
+        "Conical volume": "13.88 m³",
+        "General comments": "(none)"
+      },
+      "measurers": "Jess Riddle and Will Blozan"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "34 22.511, -087 12.234",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "West Flint Creek",
+      "href": "/Browse/Sites/40605/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Lawrence"
+    },
+    "state": {
+      "text": "Alabama (US)",
+      "href": "/Browse/States/1/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

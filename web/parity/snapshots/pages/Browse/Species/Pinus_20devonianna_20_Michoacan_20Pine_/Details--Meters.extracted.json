@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Pinus devonianna",
+  "commonName": "Michoacan Pine",
+  "global": {
+    "maxHeight": {
+      "text": "16.82 m",
+      "href": "/Browse/Trees/285511/Details"
+    },
+    "maxGirth": {
+      "text": "287 cm",
+      "href": "/Browse/Trees/285511/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Oaxaca",
+          "16.82 m",
+          "287 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oaxaca",
+            "href": "/Browse/States/90/Details"
+          },
+          {
+            "text": "16.82 m",
+            "href": "/Browse/Trees/285511/Details"
+          },
+          {
+            "text": "287 cm",
+            "href": "/Browse/Trees/285511/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

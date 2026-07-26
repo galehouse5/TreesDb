@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Salix caroliniana",
+  "commonName": "Coastal Plain Willow",
+  "global": {
+    "maxHeight": {
+      "text": "18.9'",
+      "href": "/Browse/Trees/233707/Details"
+    },
+    "maxGirth": {
+      "text": "8''",
+      "href": "/Browse/Trees/233707/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "18.9'",
+          "8''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "18.9'",
+            "href": "/Browse/Trees/233707/Details"
+          },
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/233707/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

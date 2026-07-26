@@ -1,0 +1,297 @@
+{
+  "siteId": 1008,
+  "summary": {
+    "Name": "Johnson's Woods",
+    "RHI5": "116.12",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.32",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "10/19/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "This is a small patch of old-growth forest on flat, poorly drained soil. This area was known as the Graber Woodlot in the past, and some old articles refer to it as such."
+  },
+  "visits": [
+    {
+      "visited": "10/19/2010",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "(none)",
+      "comments": "This is a small patch of old-growth forest on flat, poorly drained soil. This area was known as the Graber Woodlot in the past, and some old articles refer to it as such."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "116.0'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/1008/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/1008/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "116.0'",
+            "href": "/Browse/Trees/18339/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/18339/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "107.0'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/1008/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/1008/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/18337/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/18337/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "123.3'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/1008/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/1008/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "123.3'",
+            "href": "/Browse/Trees/18340/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/18340/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "105.0'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/1008/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/1008/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/18335/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/18335/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "111.0'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/1008/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/1008/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/18341/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/18341/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "115.6'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/1008/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/1008/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "115.6'",
+            "href": "/Browse/Trees/18343/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/18342/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus palustris",
+          "Pin Oak",
+          "105.5'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus palustris",
+            "href": "/Browse/Sites/1008/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "Pin Oak",
+            "href": "/Browse/Sites/1008/Species/Quercus%20palustris%20(Pin%20Oak)/Details"
+          },
+          {
+            "text": "105.5'",
+            "href": "/Browse/Trees/18338/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/18338/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "114.7'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/1008/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/1008/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "114.7'",
+            "href": "/Browse/Trees/18336/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/18336/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 52.997, -081 44.843",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "State",
+      "County": "Wayne"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

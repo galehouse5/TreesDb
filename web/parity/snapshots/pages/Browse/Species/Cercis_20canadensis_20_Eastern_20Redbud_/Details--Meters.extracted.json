@@ -1,0 +1,178 @@
+{
+  "botanicalName": "Cercis canadensis",
+  "commonName": "Eastern Redbud",
+  "global": {
+    "maxHeight": {
+      "text": "20.18 m",
+      "href": "/Browse/Trees/238171/Details"
+    },
+    "maxGirth": {
+      "text": "116 cm",
+      "href": "/Browse/Trees/9997/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "12.34 m",
+          "84 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "12.34 m",
+            "href": "/Browse/Trees/241817/Details"
+          },
+          {
+            "text": "84 cm",
+            "href": "/Browse/Trees/241817/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "18.56 m",
+          "97 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "18.56 m",
+            "href": "/Browse/Trees/249201/Details"
+          },
+          {
+            "text": "97 cm",
+            "href": "/Browse/Trees/234518/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "12.71 m",
+          "51 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "12.71 m",
+            "href": "/Browse/Trees/226776/Details"
+          },
+          {
+            "text": "51 cm",
+            "href": "/Browse/Trees/226776/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "12.10 m",
+          "116 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "12.10 m",
+            "href": "/Browse/Trees/9997/Details"
+          },
+          {
+            "text": "116 cm",
+            "href": "/Browse/Trees/9997/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "20.18 m",
+          "89 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "20.18 m",
+            "href": "/Browse/Trees/238171/Details"
+          },
+          {
+            "text": "89 cm",
+            "href": "/Browse/Trees/236283/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "-",
+          "102 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          null,
+          {
+            "text": "102 cm",
+            "href": "/Browse/Trees/229806/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

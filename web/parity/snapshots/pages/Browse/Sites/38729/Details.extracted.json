@@ -1,0 +1,368 @@
+{
+  "siteId": 38729,
+  "summary": {
+    "Name": "Mc Grew House",
+    "RHI5": "94.94",
+    "RHI10": "88.87",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.89",
+    "RGI10": "9.20",
+    "RGI20": "(not enough data)",
+    "Trees measured": "33",
+    "Last measurement date": "10/12/2017",
+    "Ownership contact": "Preston County Commission 101 West Main Street Kingwood, WV 26537",
+    "General comments": "House Built 1841."
+  },
+  "visits": [
+    {
+      "visited": "10/12/2017",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "House Built 1841."
+    },
+    {
+      "visited": "01/02/2009",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "House built in 1841."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer platanoides",
+          "Norway Maple",
+          "58.8'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer platanoides",
+            "href": "/Browse/Sites/38729/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "Norway Maple",
+            "href": "/Browse/Sites/38729/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "58.8'",
+            "href": "/Browse/Trees/248849/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/248841/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "85.1'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38729/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38729/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "85.1'",
+            "href": "/Browse/Trees/248857/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/248857/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "62.1'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/38729/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/38729/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "62.1'",
+            "href": "/Browse/Trees/248854/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/248859/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chamaecyparis pisifera",
+          "Sawara False Cypress",
+          "84.5'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis pisifera",
+            "href": "/Browse/Sites/38729/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "Sawara False Cypress",
+            "href": "/Browse/Sites/38729/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "84.5'",
+            "href": "/Browse/Trees/248838/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/248838/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cladrastis kentukea",
+          "Kentucky Yellowwood",
+          "53.3'",
+          "89''",
+          "38.0'"
+        ],
+        "links": [
+          {
+            "text": "Cladrastis kentukea",
+            "href": "/Browse/Sites/38729/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "Kentucky Yellowwood",
+            "href": "/Browse/Sites/38729/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "53.3'",
+            "href": "/Browse/Trees/153327/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/153326/Details"
+          },
+          {
+            "text": "38.0'",
+            "href": "/Browse/Trees/153326/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fagus sylvatica",
+          "European Beech",
+          "94.6'",
+          "154''",
+          "84.5'"
+        ],
+        "links": [
+          {
+            "text": "Fagus sylvatica",
+            "href": "/Browse/Sites/38729/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "European Beech",
+            "href": "/Browse/Sites/38729/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "94.6'",
+            "href": "/Browse/Trees/153324/Details"
+          },
+          {
+            "text": "154''",
+            "href": "/Browse/Trees/153324/Details"
+          },
+          {
+            "text": "84.5'",
+            "href": "/Browse/Trees/153324/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "80.9'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/38729/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/38729/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "80.9'",
+            "href": "/Browse/Trees/248846/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/248846/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca var. opaca",
+          "American Holly",
+          "36.9'",
+          "39''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca var. opaca",
+            "href": "/Browse/Sites/38729/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/38729/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "36.9'",
+            "href": "/Browse/Trees/248855/Details"
+          },
+          {
+            "text": "39''",
+            "href": "/Browse/Trees/248855/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "81.7'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/38729/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/38729/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "81.7'",
+            "href": "/Browse/Trees/248860/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/248860/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "90.5'",
+          "155''",
+          "84.0'"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/38729/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/38729/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "90.5'",
+            "href": "/Browse/Trees/153328/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/153328/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/153328/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 28.340, -079 41.163",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Preston"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

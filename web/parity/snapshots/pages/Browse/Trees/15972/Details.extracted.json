@@ -1,0 +1,71 @@
+{
+  "treeId": 15972,
+  "botanicalName": {
+    "text": "Tsuga canadensis",
+    "href": "/Browse/Sites/890/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+  },
+  "commonName": {
+    "text": "Eastern Hemlock",
+    "href": "/Browse/Sites/890/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+  },
+  "details": {
+    "Height": "117.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "109''",
+    "Crown spread": "36.1'",
+    "ENTSPTS2": "96.53",
+    "ENTSPTS": "1062.75",
+    "TDI3": "1.65",
+    "TDI2": "1.20",
+    "Champion points": "235.03",
+    "Diameter": "35''",
+    "Conical volume": "256.1 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 09/05/2011",
+      "summary": {
+        "Height": "117.0'",
+        "Girth": "109''",
+        "Crown spread": "36.1'"
+      },
+      "details": {
+        "Botanical name": "Tsuga canadensis",
+        "Common name": "Eastern Hemlock",
+        "Height": "117.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "109''",
+        "Crown spread": "36.1'",
+        "ENTSPTS2": "96.53",
+        "ENTSPTS": "1062.75",
+        "TDI3": "1.65",
+        "TDI2": "1.20",
+        "Champion points": "235.03",
+        "Diameter": "35''",
+        "Conical volume": "256.1 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Daniel Reed, Steve Galehouse, and Will Blozan"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 34.621, -081 25.851",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "North Chagrin Reservation (Forest Only)",
+      "href": "/Browse/Sites/890/Details"
+    },
+    "rows": {
+      "Ownership type": "public",
+      "County": "Lake"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

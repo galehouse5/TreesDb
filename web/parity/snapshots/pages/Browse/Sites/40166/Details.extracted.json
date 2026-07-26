@@ -1,0 +1,234 @@
+{
+  "siteId": 40166,
+  "summary": {
+    "Name": "Nursery Bottom",
+    "RHI5": "83.96",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.38",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "07/24/2023",
+    "Ownership contact": "USFS, Box 404, Parsons, West Virginia",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/24/2023",
+      "visitors": "Dan C. Cooley, Jordan Stewart, and Jessica Engstri",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/24/2015",
+      "visitors": "Turner Sharp, Joe Tekel, and Mike Ledden",
+      "tripReportUrl": "(none)",
+      "comments": "This site was formertly used by the USFS for a tree nursery for the production of seedlings for reforestation efforts."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Chamaecyparis obtusa",
+          "Hinoki False Cypress",
+          "57.6'",
+          "78''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis obtusa",
+            "href": "/Browse/Sites/40166/Species/Chamaecyparis%20obtusa%20(Hinoki%20False%20Cypress)/Details"
+          },
+          {
+            "text": "Hinoki False Cypress",
+            "href": "/Browse/Sites/40166/Species/Chamaecyparis%20obtusa%20(Hinoki%20False%20Cypress)/Details"
+          },
+          {
+            "text": "57.6'",
+            "href": "/Browse/Trees/299714/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/299714/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/299714/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "107.0'",
+          "193''",
+          "58.0'"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/40166/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/40166/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/224369/Details"
+          },
+          {
+            "text": "193''",
+            "href": "/Browse/Trees/224369/Details"
+          },
+          {
+            "text": "58.0'",
+            "href": "/Browse/Trees/224369/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "83.1'",
+          "90''",
+          "37.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/40166/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/40166/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "83.1'",
+            "href": "/Browse/Trees/299712/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/299711/Details"
+          },
+          {
+            "text": "37.0'",
+            "href": "/Browse/Trees/299710/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "109.0'",
+          "164''",
+          "68.5'"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40166/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40166/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/299709/Details"
+          },
+          {
+            "text": "164''",
+            "href": "/Browse/Trees/299709/Details"
+          },
+          {
+            "text": "68.5'",
+            "href": "/Browse/Trees/299709/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus sylvestris",
+          "Scots Pine",
+          "63.1'",
+          "98''",
+          "47.5'"
+        ],
+        "links": [
+          {
+            "text": "Pinus sylvestris",
+            "href": "/Browse/Sites/40166/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "Scots Pine",
+            "href": "/Browse/Sites/40166/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "63.1'",
+            "href": "/Browse/Trees/299713/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/299713/Details"
+          },
+          {
+            "text": "47.5'",
+            "href": "/Browse/Trees/299713/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 05.450, -079 39.800",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Tucker"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

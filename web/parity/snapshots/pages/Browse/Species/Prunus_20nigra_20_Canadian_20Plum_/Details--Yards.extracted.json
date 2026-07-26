@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Prunus nigra",
+  "commonName": "Canadian Plum",
+  "global": {
+    "maxGirth": {
+      "text": "89''",
+      "href": "/Browse/Trees/302691/Details"
+    },
+    "maxCrownSpread": {
+      "text": "7.67 yd",
+      "href": "/Browse/Trees/302691/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ohio",
+          "-",
+          "89''",
+          "7.67 yd"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          null,
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/302691/Details"
+          },
+          {
+            "text": "7.67 yd",
+            "href": "/Browse/Trees/302691/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

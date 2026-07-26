@@ -1,0 +1,98 @@
+{
+  "siteId": 40750,
+  "summary": {
+    "Name": "Middle Fork Of Gila River",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "09/19/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/19/2009",
+      "visitors": "Eli Dickerson",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Populus fremontii ssp. fremontii",
+          "Fremont Cottonwood",
+          "-",
+          "276''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus fremontii ssp. fremontii",
+            "href": "/Browse/Sites/40750/Species/Populus%20fremontii%20ssp.%20fremontii%20(Fremont%20Cottonwood)/Details"
+          },
+          {
+            "text": "Fremont Cottonwood",
+            "href": "/Browse/Sites/40750/Species/Populus%20fremontii%20ssp.%20fremontii%20(Fremont%20Cottonwood)/Details"
+          },
+          null,
+          {
+            "text": "276''",
+            "href": "/Browse/Trees/235887/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 10.745, -108 12.438",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Grant"
+    },
+    "state": {
+      "text": "New Mexico (US)",
+      "href": "/Browse/States/30/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

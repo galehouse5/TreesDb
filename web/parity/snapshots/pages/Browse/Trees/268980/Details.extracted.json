@@ -1,0 +1,70 @@
+{
+  "treeId": 268980,
+  "botanicalName": {
+    "text": "Pinus ponderosa var. benthamiana",
+    "href": "/Browse/Sites/41646/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Ponderosa Pine",
+    "href": "/Browse/Sites/41646/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+  },
+  "details": {
+    "Height": "260.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "192''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "666.88",
+    "ENTSPTS": "4168.00",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.55",
+    "Champion points (abbreviated)": "452.50",
+    "Diameter": "61''",
+    "Conical volume": "1769.0 ft³",
+    "General comments": "This is a remeasurement on 10/17/2016. Originally measured on 6/19/2014 at 259' height."
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 06/19/2014",
+      "summary": {
+        "Height": "260.5'",
+        "Girth": "192''"
+      },
+      "details": {
+        "Botanical name": "Pinus ponderosa var. benthamiana",
+        "Common name": "Ponderosa Pine",
+        "Height": "260.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "192''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "666.88",
+        "ENTSPTS": "4168.00",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.55",
+        "Champion points (abbreviated)": "452.50",
+        "Diameter": "61''",
+        "Conical volume": "1769.0 ft³",
+        "General comments": "This is a remeasurement on 10/17/2016. Originally measured on 6/19/2014 at 259' height."
+      },
+      "measurers": "Michael Taylor and John Montague"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 10.035, -122 42.153",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Shasta-Trinity National Forest",
+      "href": "/Browse/Sites/41646/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Siskiyou"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

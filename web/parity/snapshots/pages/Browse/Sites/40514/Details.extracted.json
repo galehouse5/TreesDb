@@ -1,0 +1,129 @@
+{
+  "siteId": 40514,
+  "summary": {
+    "Name": "Swayze Falls",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "05/03/2006",
+    "Ownership contact": "Shorthills Provincial Park Dunnville, Ontario, Canada",
+    "General comments": "1815 acres (735 Hectares)"
+  },
+  "visits": [
+    {
+      "visited": "05/03/2006",
+      "visitors": "Dale Luthringer, Bruce Kershner, and Gerry Horowitz",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/western_ny/western_ny.htm",
+      "comments": "1815 acres (735 Hectares)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "111.1'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40514/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40514/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "111.1'",
+            "href": "/Browse/Trees/232948/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/232948/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "120.1'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/40514/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/40514/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "120.1'",
+            "href": "/Browse/Trees/232947/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/232947/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 05.626, -079 18.054",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Regional Municipality Of Niagara"
+    },
+    "state": {
+      "text": "Ontario (CA)",
+      "href": "/Browse/States/57/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

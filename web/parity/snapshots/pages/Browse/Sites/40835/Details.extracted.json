@@ -1,0 +1,232 @@
+{
+  "siteId": 40835,
+  "summary": {
+    "Name": "Chauga River/Crooked Creek",
+    "RHI5": "49.48",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.53",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "10/25/2002",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/25/2002",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/chauga_river.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "105.0'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40835/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40835/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/238093/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/238093/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "-",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40835/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40835/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/238094/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "122.4'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40835/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40835/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "122.4'",
+            "href": "/Browse/Trees/238089/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/238088/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "-",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/40835/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/40835/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          null,
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/238092/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "-",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/40835/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/40835/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/238087/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Styrax grandifolius",
+          "Bigleaf Snowbell",
+          "20.0'",
+          "7''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Styrax grandifolius",
+            "href": "/Browse/Sites/40835/Species/Styrax%20grandifolius%20(Bigleaf%20Snowbell)/Details"
+          },
+          {
+            "text": "Bigleaf Snowbell",
+            "href": "/Browse/Sites/40835/Species/Styrax%20grandifolius%20(Bigleaf%20Snowbell)/Details"
+          },
+          {
+            "text": "20.0'",
+            "href": "/Browse/Trees/238095/Details"
+          },
+          {
+            "text": "7''",
+            "href": "/Browse/Trees/238095/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 45.989, -083 12.627",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Oconee"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

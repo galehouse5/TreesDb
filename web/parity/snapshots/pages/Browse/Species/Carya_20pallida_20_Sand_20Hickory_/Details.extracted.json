@@ -1,0 +1,181 @@
+{
+  "botanicalName": "Carya pallida",
+  "commonName": "Sand Hickory",
+  "global": {
+    "maxHeight": {
+      "text": "142.9'",
+      "href": "/Browse/Trees/128381/Details"
+    },
+    "maxGirth": {
+      "text": "113''",
+      "href": "/Browse/Trees/238137/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "73.1'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "73.1'",
+            "href": "/Browse/Trees/233699/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/233699/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "98.1'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "98.1'",
+            "href": "/Browse/Trees/322919/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/322919/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "142.9'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "142.9'",
+            "href": "/Browse/Trees/128381/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/128381/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "123.3'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "123.3'",
+            "href": "/Browse/Trees/252888/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/238137/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "140.0'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "140.0'",
+            "href": "/Browse/Trees/320504/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/320504/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "113.8'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "113.8'",
+            "href": "/Browse/Trees/127937/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/127937/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

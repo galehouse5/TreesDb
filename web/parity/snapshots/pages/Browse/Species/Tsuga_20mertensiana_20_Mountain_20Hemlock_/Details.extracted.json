@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Tsuga mertensiana",
+  "commonName": "Mountain Hemlock",
+  "global": {
+    "maxHeight": {
+      "text": "136.1'",
+      "href": "/Browse/Trees/318038/Details"
+    },
+    "maxGirth": {
+      "text": "139''",
+      "href": "/Browse/Trees/318038/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "111.3'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "111.3'",
+            "href": "/Browse/Trees/318120/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/318120/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idaho",
+          "136.1'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "136.1'",
+            "href": "/Browse/Trees/318038/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/318038/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "botanicalName": "Picea mariana",
+  "commonName": "Black Spruce",
+  "global": {
+    "maxHeight": {
+      "text": "100.0'",
+      "href": "/Browse/Trees/240017/Details"
+    },
+    "maxGirth": {
+      "text": "77''",
+      "href": "/Browse/Trees/265932/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "British Columbia",
+          "53.0'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "British Columbia",
+            "href": "/Browse/States/50/Details"
+          },
+          {
+            "text": "53.0'",
+            "href": "/Browse/Trees/74996/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/74996/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maine",
+          "89.0'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maine",
+            "href": "/Browse/States/19/Details"
+          },
+          {
+            "text": "89.0'",
+            "href": "/Browse/Trees/235323/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/235322/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Brunswick",
+          "100.0'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Brunswick",
+            "href": "/Browse/States/52/Details"
+          },
+          {
+            "text": "100.0'",
+            "href": "/Browse/Trees/240017/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/240017/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "92.1'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "92.1'",
+            "href": "/Browse/Trees/265932/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/265932/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "83.7'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "83.7'",
+            "href": "/Browse/Trees/240287/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/240287/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "70.9'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "70.9'",
+            "href": "/Browse/Trees/168967/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/225114/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

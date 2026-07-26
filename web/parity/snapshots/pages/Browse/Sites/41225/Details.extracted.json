@@ -1,0 +1,291 @@
+{
+  "siteId": 41225,
+  "summary": {
+    "Name": "South Carolina Single Tree Sites",
+    "RHI5": "90.84",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.15",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "various",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "105.0'",
+          "217''",
+          "150.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/41225/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/41225/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "105.0'",
+            "href": "/Browse/Trees/252607/Details"
+          },
+          {
+            "text": "217''",
+            "href": "/Browse/Trees/252607/Details"
+          },
+          {
+            "text": "150.0'",
+            "href": "/Browse/Trees/252607/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "45.8'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/41225/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/41225/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "45.8'",
+            "href": "/Browse/Trees/252608/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/252608/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Eucalypyus cinera",
+          "Argyle Apple",
+          "-",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Eucalypyus cinera",
+            "href": "/Browse/Sites/41225/Species/Eucalypyus%20cinera%20(Argyle%20Apple)/Details"
+          },
+          {
+            "text": "Argyle Apple",
+            "href": "/Browse/Sites/41225/Species/Eucalypyus%20cinera%20(Argyle%20Apple)/Details"
+          },
+          null,
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/252606/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "64.7'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/Sites/41225/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/41225/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "64.7'",
+            "href": "/Browse/Trees/252613/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/252613/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus phellos",
+          "Willow Oak",
+          "161.1'",
+          "250''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus phellos",
+            "href": "/Browse/Sites/41225/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "Willow Oak",
+            "href": "/Browse/Sites/41225/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "161.1'",
+            "href": "/Browse/Trees/252611/Details"
+          },
+          {
+            "text": "250''",
+            "href": "/Browse/Trees/252612/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "-",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/41225/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/41225/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          null,
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/252609/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus virginiana",
+          "Live Oak",
+          "65.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus virginiana",
+            "href": "/Browse/Sites/41225/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+          },
+          {
+            "text": "Live Oak",
+            "href": "/Browse/Sites/41225/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+          },
+          {
+            "text": "65.1'",
+            "href": "/Browse/Trees/252604/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus spp.",
+          "Elm",
+          "58.3'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus spp.",
+            "href": "/Browse/Sites/41225/Species/Ulmus%20spp.%20(Elm)/Details"
+          },
+          {
+            "text": "Elm",
+            "href": "/Browse/Sites/41225/Species/Ulmus%20spp.%20(Elm)/Details"
+          },
+          {
+            "text": "58.3'",
+            "href": "/Browse/Trees/252614/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/252614/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 00.043, -081 02.089",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Pulic, Private",
+      "County": "Richland"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

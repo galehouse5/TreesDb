@@ -1,0 +1,213 @@
+{
+  "siteId": 41015,
+  "summary": {
+    "Name": "Weed Hill",
+    "RHI5": "73.00",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.12",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "03/06/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/06/2010",
+      "visitors": "Sam Goodwin",
+      "tripReportUrl": "groups.google.com/group/entstrees/browse_thread/thread/7bf71a5c782f588a",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer spp.",
+          "Maple",
+          "75.0'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spp.",
+            "href": "/Browse/Sites/41015/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "Maple",
+            "href": "/Browse/Sites/41015/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/243161/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/243161/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "80.0'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41015/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41015/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "80.0'",
+            "href": "/Browse/Trees/243158/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/243158/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera",
+          "Paper Birch",
+          "70.0'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera",
+            "href": "/Browse/Sites/41015/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/Sites/41015/Species/Betula%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/243159/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/243159/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "65.0'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/41015/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/41015/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/243157/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/243157/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "75.0'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/41015/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/41015/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/243162/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/243160/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 57.287, -072 51.262",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "private",
+      "County": "Hartford"
+    },
+    "state": {
+      "text": "Connecticut (US)",
+      "href": "/Browse/States/6/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

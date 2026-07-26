@@ -1,0 +1,494 @@
+{
+  "stateId": 12,
+  "summary": {
+    "Name": "Illinois",
+    "Code": "IL",
+    "RHI5": "44.260",
+    "RHI10": "42.240",
+    "RHI20": "37.642",
+    "RGI5": "6.852",
+    "RGI10": "5.785",
+    "RGI20": "4.428",
+    "Trees measured": "45",
+    "Last measurement date": "09/23/2020"
+  },
+  "location": {
+    "Coordinates": "39 44.351, -089 15.989",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "6.67 yd",
+          "6''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/States/12/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/States/12/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "6.67 yd",
+            "href": "/Browse/Trees/273882/Details"
+          },
+          {
+            "text": "6''",
+            "href": "/Browse/Trees/273882/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "33.33 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/States/12/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/States/12/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "33.33 yd",
+            "href": "/Browse/Trees/171017/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "39.67 yd",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/States/12/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/States/12/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "39.67 yd",
+            "href": "/Browse/Trees/273883/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/273883/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. laevigata",
+          "Sugarberry",
+          "21.50 yd",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. laevigata",
+            "href": "/Browse/States/12/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "Sugarberry",
+            "href": "/Browse/States/12/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "21.50 yd",
+            "href": "/Browse/Trees/171012/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/171012/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "-",
+          "210''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/States/12/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/States/12/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          null,
+          {
+            "text": "210''",
+            "href": "/Browse/Trees/171015/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "38.07 yd",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/States/12/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/States/12/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "38.07 yd",
+            "href": "/Browse/Trees/273884/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/273884/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "41.20 yd",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/States/12/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/States/12/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "41.20 yd",
+            "href": "/Browse/Trees/273885/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/273885/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gymnocladus dioicus",
+          "Kentucky Coffeetree",
+          "34.70 yd",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gymnocladus dioicus",
+            "href": "/Browse/States/12/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "Kentucky Coffeetree",
+            "href": "/Browse/States/12/Species/Gymnocladus%20dioicus%20(Kentucky%20Coffeetree)/Details"
+          },
+          {
+            "text": "34.70 yd",
+            "href": "/Browse/Trees/273889/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/273889/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "22.70 yd",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/States/12/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/States/12/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "22.70 yd",
+            "href": "/Browse/Trees/74811/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/74811/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "40.17 yd",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/States/12/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/States/12/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "40.17 yd",
+            "href": "/Browse/Trees/225675/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/273890/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 26 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Beall Woods State Park",
+          "131.48",
+          "122.30",
+          "14.09",
+          "11.32"
+        ],
+        "links": [
+          {
+            "text": "Beall Woods State Park",
+            "href": "/Browse/Sites/39301/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cache River State Natural Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cache River State Natural Area",
+            "href": "/Browse/Sites/39296/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fisherman's Corner",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fisherman's Corner",
+            "href": "/Browse/Sites/35848/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fort Defiance State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fort Defiance State Park",
+            "href": "/Browse/Sites/39293/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Illinois Single Tree Sites",
+          "91.66",
+          "59.20",
+          "17.76",
+          "12.36"
+        ],
+        "links": [
+          {
+            "text": "Illinois Single Tree Sites",
+            "href": "/Browse/Sites/39299/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Jubilee State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Jubilee State Park",
+            "href": "/Browse/Sites/22018/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sielbeck Forest State Natural Area",
+          "115.22",
+          "-",
+          "10.12",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sielbeck Forest State Natural Area",
+            "href": "/Browse/Sites/40186/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

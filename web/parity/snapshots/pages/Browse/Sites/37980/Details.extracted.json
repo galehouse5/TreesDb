@@ -1,0 +1,129 @@
+{
+  "siteId": 37980,
+  "summary": {
+    "Name": "Colter Bay Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "06/19/2016",
+    "Ownership contact": "Grand Teton National Park PO drawer 170 Moose, WY83012",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/19/2016",
+      "visitors": "Turner Sharp and Susan Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies lasiocarpa var. lasiocarpa",
+          "Subalpine Fir",
+          "80.4'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. lasiocarpa",
+            "href": "/Browse/Sites/37980/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/Sites/37980/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "80.4'",
+            "href": "/Browse/Trees/126265/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/126265/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. latifolia",
+          "Lodgepole Pine",
+          "88.5'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. latifolia",
+            "href": "/Browse/Sites/37980/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Lodgepole Pine",
+            "href": "/Browse/Sites/37980/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "88.5'",
+            "href": "/Browse/Trees/126272/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/126273/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 54.202, -110 38.632",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Park",
+      "County": "Teton"
+    },
+    "state": {
+      "text": "Wyoming (US)",
+      "href": "/Browse/States/48/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

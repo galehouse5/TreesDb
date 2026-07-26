@@ -1,0 +1,71 @@
+{
+  "treeId": 70462,
+  "botanicalName": {
+    "text": "Populus deltoides",
+    "href": "/Browse/Sites/20950/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+  },
+  "commonName": {
+    "text": "Eastern Cottonwood",
+    "href": "/Browse/Sites/20950/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+  },
+  "details": {
+    "Height": "107.8'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "348''",
+    "Crown spread": "100.7'",
+    "ENTSPTS2": "906.60",
+    "ENTSPTS": "3126.20",
+    "TDI3": "2.63",
+    "TDI2": "1.70",
+    "Champion points": "480.98",
+    "Diameter": "111''",
+    "Conical volume": "2404.8 ft³",
+    "General comments": "**May be multi-trunked** Tree dead as of 7/6/2014."
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 03/01/2012",
+      "summary": {
+        "Height": "107.8'",
+        "Girth": "348''",
+        "Crown spread": "100.7'"
+      },
+      "details": {
+        "Botanical name": "Populus deltoides",
+        "Common name": "Eastern Cottonwood",
+        "Height": "107.8'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "348''",
+        "Crown spread": "100.7'",
+        "ENTSPTS2": "906.60",
+        "ENTSPTS": "3126.20",
+        "TDI3": "2.63",
+        "TDI2": "1.70",
+        "Champion points": "480.98",
+        "Diameter": "111''",
+        "Conical volume": "2404.8 ft³",
+        "General comments": "**May be multi-trunked** Tree dead as of 7/6/2014."
+      },
+      "measurers": "Elijah Whitcomb"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 42.915, -076 25.232",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "184 Main St., Moravia, NY",
+      "href": "/Browse/Sites/20950/Details"
+    },
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Cayuga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

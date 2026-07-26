@@ -1,0 +1,344 @@
+{
+  "siteId": 35859,
+  "summary": {
+    "Name": "Keystone State Park",
+    "RHI5": "120.92",
+    "RHI10": "109.40",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.35",
+    "RGI10": "6.19",
+    "RGI20": "(not enough data)",
+    "Trees measured": "28",
+    "Last measurement date": "03/07/2008",
+    "Ownership contact": "Keystone State Park, 1150 Keystone Park Rd, Derry Township, PA",
+    "General comments": "Trees were measured in four different areas of the park from 9/16/2005 to 3/7/2008."
+  },
+  "visits": [
+    {
+      "visited": "03/07/2008",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "Trees were measured in four different areas of the park from 9/16/2005 to 3/7/2008."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "108.2'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/35859/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/35859/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "108.2'",
+            "href": "/Browse/Trees/119188/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/119186/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "111.5'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/35859/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/35859/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "111.5'",
+            "href": "/Browse/Trees/119184/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/119184/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "120.2'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/35859/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/35859/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "120.2'",
+            "href": "/Browse/Trees/119195/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/119189/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "120.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/35859/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/35859/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "120.5'",
+            "href": "/Browse/Trees/119204/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "131.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/35859/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/35859/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "131.0'",
+            "href": "/Browse/Trees/119202/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus pungens",
+          "Table Mountain Pine",
+          "81.9'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus pungens",
+            "href": "/Browse/Sites/35859/Species/Pinus%20pungens%20(Table%20Mountain%20Pine)/Details"
+          },
+          {
+            "text": "Table Mountain Pine",
+            "href": "/Browse/Sites/35859/Species/Pinus%20pungens%20(Table%20Mountain%20Pine)/Details"
+          },
+          {
+            "text": "81.9'",
+            "href": "/Browse/Trees/119200/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/119197/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "79.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/35859/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/35859/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "79.7'",
+            "href": "/Browse/Trees/119185/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "112.8'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/35859/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/35859/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "112.8'",
+            "href": "/Browse/Trees/119179/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/119179/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "85.7'",
+          "167''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/35859/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/35859/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "85.7'",
+            "href": "/Browse/Trees/119205/Details"
+          },
+          {
+            "text": "167''",
+            "href": "/Browse/Trees/119205/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "120.1'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/35859/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/35859/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "120.1'",
+            "href": "/Browse/Trees/119183/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/119183/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 22.311, -079 22.958",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Westmoreland"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

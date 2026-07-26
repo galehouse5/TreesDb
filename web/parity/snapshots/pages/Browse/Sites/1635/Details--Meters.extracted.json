@@ -1,0 +1,154 @@
+{
+  "siteId": 1635,
+  "summary": {
+    "Name": "The Angel Oak",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "10/08/2012",
+    "Ownership contact": "Charleston City Parks",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/08/2012",
+      "visitors": "Brian Beduhn",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "28.65 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/1635/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/1635/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "28.65 m",
+            "href": "/Browse/Trees/39761/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus laurifolia",
+          "Laurel Oak",
+          "28.19 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus laurifolia",
+            "href": "/Browse/Sites/1635/Species/Quercus%20laurifolia%20(Laurel%20Oak)/Details"
+          },
+          {
+            "text": "Laurel Oak",
+            "href": "/Browse/Sites/1635/Species/Quercus%20laurifolia%20(Laurel%20Oak)/Details"
+          },
+          {
+            "text": "28.19 m",
+            "href": "/Browse/Trees/39762/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus virginiana",
+          "Live Oak",
+          "19.17 m",
+          "856 cm",
+          "49.93 m"
+        ],
+        "links": [
+          {
+            "text": "Quercus virginiana",
+            "href": "/Browse/Sites/1635/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+          },
+          {
+            "text": "Live Oak",
+            "href": "/Browse/Sites/1635/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+          },
+          {
+            "text": "19.17 m",
+            "href": "/Browse/Trees/39760/Details"
+          },
+          {
+            "text": "856 cm",
+            "href": "/Browse/Trees/39760/Details"
+          },
+          {
+            "text": "49.93 m",
+            "href": "/Browse/Trees/39760/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 43.020, -080 04.758",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Charleston"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

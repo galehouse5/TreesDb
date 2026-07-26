@@ -1,0 +1,560 @@
+{
+  "stateId": 33,
+  "summary": {
+    "Name": "Ohio",
+    "Code": "OH",
+    "RHI5": "160.44",
+    "RHI10": "153.70",
+    "RHI20": "145.11",
+    "RGI5": "24.04",
+    "RGI10": "22.33",
+    "RGI20": "19.86",
+    "Trees measured": "1708",
+    "Last measurement date": "03/19/2023"
+  },
+  "location": {
+    "Coordinates": "40 21.791, -082 40.180",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies amabilis",
+          "Pacific Silver Fir",
+          "103.3'",
+          "103''",
+          "27.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies amabilis",
+            "href": "/Browse/States/33/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "Pacific Silver Fir",
+            "href": "/Browse/States/33/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "103.3'",
+            "href": "/Browse/Trees/96892/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/96892/Details"
+          },
+          {
+            "text": "27.0'",
+            "href": "/Browse/Trees/96892/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "84.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/States/33/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/33/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/160819/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer ×freemanii",
+          "Freeman Maple",
+          "135.7'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer ×freemanii",
+            "href": "/Browse/States/33/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "Freeman Maple",
+            "href": "/Browse/States/33/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "135.7'",
+            "href": "/Browse/Trees/302715/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/10000/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer griseum",
+          "Paperbark Maple",
+          "37.8'",
+          "54''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer griseum",
+            "href": "/Browse/States/33/Species/Acer%20griseum%20(Paperbark%20Maple)/Details"
+          },
+          {
+            "text": "Paperbark Maple",
+            "href": "/Browse/States/33/Species/Acer%20griseum%20(Paperbark%20Maple)/Details"
+          },
+          {
+            "text": "37.8'",
+            "href": "/Browse/Trees/272975/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/282389/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "82.1'",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/33/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/33/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "82.1'",
+            "href": "/Browse/Trees/230776/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/15949/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "118.4'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/States/33/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/States/33/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "118.4'",
+            "href": "/Browse/Trees/63696/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/17336/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer pseudoplatanus",
+          "Sycamore Maple",
+          "57.0'",
+          "109''",
+          "34.5'"
+        ],
+        "links": [
+          {
+            "text": "Acer pseudoplatanus",
+            "href": "/Browse/States/33/Species/Acer%20pseudoplatanus%20(Sycamore%20Maple)/Details"
+          },
+          {
+            "text": "Sycamore Maple",
+            "href": "/Browse/States/33/Species/Acer%20pseudoplatanus%20(Sycamore%20Maple)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/302721/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/302721/Details"
+          },
+          {
+            "text": "34.5'",
+            "href": "/Browse/Trees/302721/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "127.5'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/33/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/33/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "127.5'",
+            "href": "/Browse/Trees/168929/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/9763/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "78.5'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/States/33/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/33/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "78.5'",
+            "href": "/Browse/Trees/272606/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/272607/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. trilobum",
+          "Red Maple",
+          "70.9'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. trilobum",
+            "href": "/Browse/States/33/Species/Acer%20rubrum%20var.%20trilobum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/33/Species/Acer%20rubrum%20var.%20trilobum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "70.9'",
+            "href": "/Browse/Trees/271569/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/271569/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 128 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "\"Great Trees Of Ohio\" Will Blozan Trip.",
+          "119.44",
+          "106.42",
+          "18.50",
+          "14.67"
+        ],
+        "links": [
+          {
+            "text": "\"Great Trees Of Ohio\" Will Blozan Trip.",
+            "href": "/Browse/Sites/727/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "2330 River Road",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "2330 River Road",
+            "href": "/Browse/Sites/888/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Along The Vermillion River",
+          "120.92",
+          "-",
+          "0.00",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Along The Vermillion River",
+            "href": "/Browse/Sites/39141/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Augusta-Anne Olsen State Nature Preserve",
+          "117.44",
+          "109.96",
+          "11.30",
+          "7.97"
+        ],
+        "links": [
+          {
+            "text": "Augusta-Anne Olsen State Nature Preserve",
+            "href": "/Browse/Sites/898/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Avon Center Cemetery",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Avon Center Cemetery",
+            "href": "/Browse/Sites/38909/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bacon Woods",
+          "116.12",
+          "100.26",
+          "12.13",
+          "8.74"
+        ],
+        "links": [
+          {
+            "text": "Bacon Woods",
+            "href": "/Browse/Sites/885/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bedford Reservation",
+          "118.00",
+          "111.29",
+          "10.88",
+          "6.32"
+        ],
+        "links": [
+          {
+            "text": "Bedford Reservation",
+            "href": "/Browse/Sites/863/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big Darby Cemetery",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Big Darby Cemetery",
+            "href": "/Browse/Sites/39182/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big Urban Northern Red Oak, Lorain, Ohio",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Big Urban Northern Red Oak, Lorain, Ohio",
+            "href": "/Browse/Sites/706/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Black River Metro Park",
+          "113.90",
+          "-",
+          "4.13",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Black River Metro Park",
+            "href": "/Browse/Sites/38855/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 127 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "botanicalName": "Tilia americana var. americana",
+  "commonName": "American Basswood",
+  "global": {
+    "maxHeight": {
+      "text": "42.34 m",
+      "href": "/Browse/Trees/222035/Details"
+    },
+    "maxGirth": {
+      "text": "411 cm",
+      "href": "/Browse/Trees/315275/Details"
+    },
+    "maxCrownSpread": {
+      "text": "25.30 m",
+      "href": "/Browse/Trees/313163/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "33.95 m",
+          "361 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "33.95 m",
+            "href": "/Browse/Trees/249598/Details"
+          },
+          {
+            "text": "361 cm",
+            "href": "/Browse/Trees/249598/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nebraska",
+          "26.37 m",
+          "405 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nebraska",
+            "href": "/Browse/States/27/Details"
+          },
+          {
+            "text": "26.37 m",
+            "href": "/Browse/Trees/220432/Details"
+          },
+          {
+            "text": "405 cm",
+            "href": "/Browse/Trees/220432/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "40.63 m",
+          "363 cm",
+          "19.51 m"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "40.63 m",
+            "href": "/Browse/Trees/221123/Details"
+          },
+          {
+            "text": "363 cm",
+            "href": "/Browse/Trees/220851/Details"
+          },
+          {
+            "text": "19.51 m",
+            "href": "/Browse/Trees/220851/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "42.34 m",
+          "282 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "42.34 m",
+            "href": "/Browse/Trees/222035/Details"
+          },
+          {
+            "text": "282 cm",
+            "href": "/Browse/Trees/117439/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "37.95 m",
+          "174 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "37.95 m",
+            "href": "/Browse/Trees/165587/Details"
+          },
+          {
+            "text": "174 cm",
+            "href": "/Browse/Trees/165587/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "36.73 m",
+          "411 cm",
+          "25.30 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "36.73 m",
+            "href": "/Browse/Trees/84373/Details"
+          },
+          {
+            "text": "411 cm",
+            "href": "/Browse/Trees/315275/Details"
+          },
+          {
+            "text": "25.30 m",
+            "href": "/Browse/Trees/313163/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

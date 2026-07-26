@@ -1,0 +1,70 @@
+{
+  "treeId": 2377,
+  "botanicalName": {
+    "text": "Carya ovata",
+    "href": "/Browse/Sites/442/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+  },
+  "commonName": {
+    "text": "Shagbark Hickory",
+    "href": "/Browse/Sites/442/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+  },
+  "details": {
+    "Height": "32.52 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "180 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "37.35",
+    "ENTSPTS": "631.31",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.06",
+    "Champion points (abbreviated)": "177.70",
+    "Diameter": "57 cm",
+    "Conical volume": "2.81 m³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/03/2011",
+      "summary": {
+        "Height": "32.52 m",
+        "Girth": "180 cm"
+      },
+      "details": {
+        "Botanical name": "Carya ovata",
+        "Common name": "Shagbark Hickory",
+        "Height": "32.52 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "180 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "37.35",
+        "ENTSPTS": "631.31",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.06",
+        "Champion points (abbreviated)": "177.70",
+        "Diameter": "57 cm",
+        "Conical volume": "2.81 m³",
+        "General comments": "(none)"
+      },
+      "measurers": "Steve Galehouse"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 13.076, -081 42.254",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Whipp's Ledges",
+      "href": "/Browse/Sites/442/Details"
+    },
+    "rows": {
+      "Ownership type": "Park",
+      "County": "Medina"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

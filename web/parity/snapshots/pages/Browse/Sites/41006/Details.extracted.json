@@ -1,0 +1,129 @@
+{
+  "siteId": 41006,
+  "summary": {
+    "Name": "Tosohatchee Wildlife Management Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "07/30/2018",
+    "Ownership contact": "3365 Taylor Creek Road Christmas, Florida",
+    "General comments": "30,700 Acres"
+  },
+  "visits": [
+    {
+      "visited": "07/30/2018",
+      "visitors": "Keith Addison",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "30,700 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ilex cassine",
+          "Dahoon",
+          "41.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex cassine",
+            "href": "/Browse/Sites/41006/Species/Ilex%20cassine%20(Dahoon)/Details"
+          },
+          {
+            "text": "Dahoon",
+            "href": "/Browse/Sites/41006/Species/Ilex%20cassine%20(Dahoon)/Details"
+          },
+          {
+            "text": "41.0'",
+            "href": "/Browse/Trees/242641/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa biflora",
+          "Swamp Tupelo",
+          "87.0'",
+          "151''",
+          "39.0'"
+        ],
+        "links": [
+          {
+            "text": "Nyssa biflora",
+            "href": "/Browse/Sites/41006/Species/Nyssa%20biflora%20(Swamp%20Tupelo)/Details"
+          },
+          {
+            "text": "Swamp Tupelo",
+            "href": "/Browse/Sites/41006/Species/Nyssa%20biflora%20(Swamp%20Tupelo)/Details"
+          },
+          {
+            "text": "87.0'",
+            "href": "/Browse/Trees/242640/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/242640/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/242640/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "28 30.608, -080 59.953",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Orange"
+    },
+    "state": {
+      "text": "Florida (US)",
+      "href": "/Browse/States/8/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

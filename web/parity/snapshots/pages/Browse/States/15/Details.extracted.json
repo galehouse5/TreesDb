@@ -1,0 +1,557 @@
+{
+  "stateId": 15,
+  "summary": {
+    "Name": "Kentucky",
+    "Code": "KY",
+    "RHI5": "161.00",
+    "RHI10": "153.04",
+    "RHI20": "146.19",
+    "RGI5": "18.27",
+    "RGI10": "16.84",
+    "RGI20": "14.89",
+    "Trees measured": "799",
+    "Last measurement date": "09/20/2025"
+  },
+  "location": {
+    "Coordinates": "37 49.335, -085 46.081",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "69.1'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/15/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/15/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "69.1'",
+            "href": "/Browse/Trees/165563/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/165563/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "101.8'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/States/15/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/15/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "101.8'",
+            "href": "/Browse/Trees/297660/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/297560/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "71.5'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/States/15/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/States/15/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "71.5'",
+            "href": "/Browse/Trees/297769/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/297769/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "129.0'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/15/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/15/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "129.0'",
+            "href": "/Browse/Trees/232325/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/232325/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "123.8'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/States/15/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/15/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "123.8'",
+            "href": "/Browse/Trees/297730/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/322698/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "128.4'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/15/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/15/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "128.4'",
+            "href": "/Browse/Trees/297747/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/76442/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "68.8'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/15/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/15/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "68.8'",
+            "href": "/Browse/Trees/112332/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/76412/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "124.7'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/States/15/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/15/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "124.7'",
+            "href": "/Browse/Trees/297470/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/297470/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. schneckii",
+          "Sugar Maple",
+          "94.1'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. schneckii",
+            "href": "/Browse/States/15/Species/Acer%20saccharum%20var.%20schneckii%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/15/Species/Acer%20saccharum%20var.%20schneckii%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "94.1'",
+            "href": "/Browse/Trees/322686/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/322686/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "121.5'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/States/15/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/States/15/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "121.5'",
+            "href": "/Browse/Trees/297556/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/297555/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 86 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Along The Cumberland River",
+          "0.00",
+          "0.00",
+          "10.57",
+          "9.40"
+        ],
+        "links": [
+          {
+            "text": "Along The Cumberland River",
+            "href": "/Browse/Sites/22107/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Anglins Falls",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Anglins Falls",
+            "href": "/Browse/Sites/22114/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ashland - Henry Clay Estate",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ashland - Henry Clay Estate",
+            "href": "/Browse/Sites/39360/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big Bone Lick State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Big Bone Lick State Park",
+            "href": "/Browse/Sites/39385/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Blanton Forest Nature Preserve",
+          "119.72",
+          "-",
+          "8.78",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Blanton Forest Nature Preserve",
+            "href": "/Browse/Sites/38400/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Booker T. Washington Primary Academy",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Booker T. Washington Primary Academy",
+            "href": "/Browse/Sites/39368/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castlewood Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castlewood Park",
+            "href": "/Browse/Sites/39369/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cave Hill Cemetery",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cave Hill Cemetery",
+            "href": "/Browse/Sites/39384/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Coolavin Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Coolavin Park",
+            "href": "/Browse/Sites/39365/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Dinsmore Nature Preserve - Homestead",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Dinsmore Nature Preserve - Homestead",
+            "href": "/Browse/Sites/22119/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 29 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

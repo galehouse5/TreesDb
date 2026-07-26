@@ -1,0 +1,350 @@
+{
+  "siteId": 42343,
+  "summary": {
+    "Name": "Cumberland Mountain State Park",
+    "RHI5": "138.20",
+    "RHI10": "128.12",
+    "RHI20": "95.96",
+    "RGI5": "9.83",
+    "RGI10": "8.11",
+    "RGI20": "5.16",
+    "Trees measured": "42",
+    "Last measurement date": "11/21/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/21/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "112.3'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/42343/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42343/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "112.3'",
+            "href": "/Browse/Trees/320576/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/320576/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea",
+          "Common Serviceberry",
+          "71.5'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea",
+            "href": "/Browse/Sites/42343/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/42343/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "71.5'",
+            "href": "/Browse/Trees/320571/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/320571/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "139.0'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/42343/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/42343/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "139.0'",
+            "href": "/Browse/Trees/320565/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/320566/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "106.7'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42343/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42343/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "106.7'",
+            "href": "/Browse/Trees/320562/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/320562/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "93.0'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/42343/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/42343/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "93.0'",
+            "href": "/Browse/Trees/320568/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/320568/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca var. opaca",
+          "American Holly",
+          "23.4'",
+          "17''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca var. opaca",
+            "href": "/Browse/Sites/42343/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/42343/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "23.4'",
+            "href": "/Browse/Trees/320573/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/320573/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kalmia latifolia",
+          "Mountain Laurel",
+          "19.5'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kalmia latifolia",
+            "href": "/Browse/Sites/42343/Species/Kalmia%20latifolia%20(Mountain%20Laurel)/Details"
+          },
+          {
+            "text": "Mountain Laurel",
+            "href": "/Browse/Sites/42343/Species/Kalmia%20latifolia%20(Mountain%20Laurel)/Details"
+          },
+          {
+            "text": "19.5'",
+            "href": "/Browse/Trees/320574/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/320574/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "134.4'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/42343/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/42343/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "134.4'",
+            "href": "/Browse/Trees/320547/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/320548/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "85.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/42343/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/42343/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "85.1'",
+            "href": "/Browse/Trees/320569/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oxydendrum arboreum",
+          "Sourwood",
+          "61.4'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oxydendrum arboreum",
+            "href": "/Browse/Sites/42343/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "Sourwood",
+            "href": "/Browse/Sites/42343/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "61.4'",
+            "href": "/Browse/Trees/320575/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/320575/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 20 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 53.544, -085 00.976",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Cumberland"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

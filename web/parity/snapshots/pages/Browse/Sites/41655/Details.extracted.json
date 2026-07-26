@@ -1,0 +1,104 @@
+{
+  "siteId": 41655,
+  "summary": {
+    "Name": "Big Basin Redwoods State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "08/29/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/29/2017",
+      "visitors": "Zane Moore",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "08/07/2012",
+      "visitors": "Michael Taylor, Steve Taylor, and Susan Blake",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "18,000 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Sequoia sempervirens",
+          "Redwood",
+          "330.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sequoia sempervirens",
+            "href": "/Browse/Sites/41655/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+          },
+          {
+            "text": "Redwood",
+            "href": "/Browse/Sites/41655/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+          },
+          {
+            "text": "330.4'",
+            "href": "/Browse/Trees/269028/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "37 09.964, -122 14.792",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Santa Cruz"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 138806,
+  "botanicalName": {
+    "text": "Fagus grandifolia",
+    "href": "/Browse/Sites/38415/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "commonName": {
+    "text": "American Beech",
+    "href": "/Browse/Sites/38415/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "details": {
+    "Height": "117.1'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "103''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "86.61",
+    "ENTSPTS": "1007.06",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.19",
+    "Champion points (abbreviated)": "220.30",
+    "Diameter": "33''",
+    "Conical volume": "229.7 ft³",
+    "General comments": "Height is Not Less Than (NLT)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 10/01/2008",
+      "summary": {
+        "Height": "117.1'",
+        "Girth": "103''"
+      },
+      "details": {
+        "Botanical name": "Fagus grandifolia",
+        "Common name": "American Beech",
+        "Height": "117.1'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "103''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "86.61",
+        "ENTSPTS": "1007.06",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.19",
+        "Champion points (abbreviated)": "220.30",
+        "Diameter": "33''",
+        "Conical volume": "229.7 ft³",
+        "General comments": "Height is Not Less Than (NLT)"
+      },
+      "measurers": "Dale Luthringer"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "42 04.797, -080 13.037",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Lake Shore Country Club",
+      "href": "/Browse/Sites/38415/Details"
+    },
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Erie"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

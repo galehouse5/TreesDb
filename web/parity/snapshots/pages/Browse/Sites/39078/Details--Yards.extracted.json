@@ -1,0 +1,359 @@
+{
+  "siteId": 39078,
+  "summary": {
+    "Name": "Powell Campground",
+    "RHI5": "52.760",
+    "RHI10": "40.130",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.434",
+    "RGI10": "2.498",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "07/24/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/24/2018",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "08/19/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "43.00 yd",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/Sites/39078/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/39078/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "43.00 yd",
+            "href": "/Browse/Trees/226250/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/226250/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. lasiocarpa",
+          "Subalpine Fir",
+          "30.13 yd",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. lasiocarpa",
+            "href": "/Browse/Sites/39078/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "Subalpine Fir",
+            "href": "/Browse/Sites/39078/Species/Abies%20lasiocarpa%20var.%20lasiocarpa%20(Subalpine%20Fir)/Details"
+          },
+          {
+            "text": "30.13 yd",
+            "href": "/Browse/Trees/220367/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/220367/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier alnifolia",
+          "Saskatoon Serviceberry",
+          "8.60 yd",
+          "6''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier alnifolia",
+            "href": "/Browse/Sites/39078/Species/Amelanchier%20alnifolia%20(Saskatoon%20Serviceberry)/Details"
+          },
+          {
+            "text": "Saskatoon Serviceberry",
+            "href": "/Browse/Sites/39078/Species/Amelanchier%20alnifolia%20(Saskatoon%20Serviceberry)/Details"
+          },
+          {
+            "text": "8.60 yd",
+            "href": "/Browse/Trees/220375/Details"
+          },
+          {
+            "text": "6''",
+            "href": "/Browse/Trees/220375/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix occidentalis",
+          "Western Larch",
+          "58.90 yd",
+          "141''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix occidentalis",
+            "href": "/Browse/Sites/39078/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "Western Larch",
+            "href": "/Browse/Sites/39078/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "58.90 yd",
+            "href": "/Browse/Trees/226251/Details"
+          },
+          {
+            "text": "141''",
+            "href": "/Browse/Trees/226251/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii var. engelmannii",
+          "Engelmann Spruce",
+          "53.77 yd",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii var. engelmannii",
+            "href": "/Browse/Sites/39078/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/39078/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "53.77 yd",
+            "href": "/Browse/Trees/220368/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/220371/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. latifolia",
+          "Lodgepole Pine",
+          "19.17 yd",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. latifolia",
+            "href": "/Browse/Sites/39078/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Lodgepole Pine",
+            "href": "/Browse/Sites/39078/Species/Pinus%20contorta%20var.%20latifolia%20(Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "19.17 yd",
+            "href": "/Browse/Trees/226253/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/226253/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus monticola",
+          "Western White Pine",
+          "57.77 yd",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus monticola",
+            "href": "/Browse/Sites/39078/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "Western White Pine",
+            "href": "/Browse/Sites/39078/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "57.77 yd",
+            "href": "/Browse/Trees/164334/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/164334/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. ponderosa",
+          "Ponderosa Pine",
+          "43.70 yd",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. ponderosa",
+            "href": "/Browse/Sites/39078/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/39078/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "43.70 yd",
+            "href": "/Browse/Trees/164329/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/164329/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "49.67 yd",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/39078/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/39078/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "49.67 yd",
+            "href": "/Browse/Trees/220372/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/220372/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja plicata",
+          "Western Redcedar",
+          "36.60 yd",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja plicata",
+            "href": "/Browse/Sites/39078/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "Western Redcedar",
+            "href": "/Browse/Sites/39078/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "36.60 yd",
+            "href": "/Browse/Trees/220373/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/220373/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "46 30.716, -114 43.297",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Idaho"
+    },
+    "state": {
+      "text": "Idaho (US)",
+      "href": "/Browse/States/11/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

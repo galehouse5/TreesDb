@@ -1,0 +1,101 @@
+{
+  "siteId": 41795,
+  "summary": {
+    "Name": "Oak Creek Wildlife Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "07/07/2022",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/07/2022",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus garryana var. garryana",
+          "Oregon White Oak",
+          "44.0'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus garryana var. garryana",
+            "href": "/Browse/Sites/41795/Species/Quercus%20garryana%20var.%20garryana%20(Oregon%20White%20Oak)/Details"
+          },
+          {
+            "text": "Oregon White Oak",
+            "href": "/Browse/Sites/41795/Species/Quercus%20garryana%20var.%20garryana%20(Oregon%20White%20Oak)/Details"
+          },
+          {
+            "text": "44.0'",
+            "href": "/Browse/Trees/274409/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/274409/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "46 43.438, -120 48.962",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Yakima"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 2369,
+  "botanicalName": {
+    "text": "Prunus serotina",
+    "href": "/Browse/Sites/442/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+  },
+  "commonName": {
+    "text": "Black Cherry",
+    "href": "/Browse/Sites/442/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+  },
+  "details": {
+    "Height": "31.24 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "267 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "78.48",
+    "ENTSPTS": "896.88",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.28",
+    "Champion points (abbreviated)": "207.50",
+    "Diameter": "85 cm",
+    "Conical volume": "5.89 m³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/03/2011",
+      "summary": {
+        "Height": "31.24 m",
+        "Girth": "267 cm"
+      },
+      "details": {
+        "Botanical name": "Prunus serotina",
+        "Common name": "Black Cherry",
+        "Height": "31.24 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "267 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "78.48",
+        "ENTSPTS": "896.88",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.28",
+        "Champion points (abbreviated)": "207.50",
+        "Diameter": "85 cm",
+        "Conical volume": "5.89 m³",
+        "General comments": "(none)"
+      },
+      "measurers": "Steve Galehouse"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 13.076, -081 42.254",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Whipp's Ledges",
+      "href": "/Browse/Sites/442/Details"
+    },
+    "rows": {
+      "Ownership type": "Park",
+      "County": "Medina"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

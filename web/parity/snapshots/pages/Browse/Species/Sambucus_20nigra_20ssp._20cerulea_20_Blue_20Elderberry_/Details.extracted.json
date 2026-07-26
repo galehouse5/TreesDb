@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Sambucus nigra ssp. cerulea",
+  "commonName": "Blue Elderberry",
+  "global": {
+    "maxHeight": {
+      "text": "24.8'",
+      "href": "/Browse/Trees/76272/Details"
+    },
+    "maxGirth": {
+      "text": "30''",
+      "href": "/Browse/Trees/78323/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Idaho",
+          "24.8'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "24.8'",
+            "href": "/Browse/Trees/76272/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/78323/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Utah",
+          "13.9'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Utah",
+            "href": "/Browse/States/42/Details"
+          },
+          {
+            "text": "13.9'",
+            "href": "/Browse/Trees/126234/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/126234/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

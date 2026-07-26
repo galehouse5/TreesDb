@@ -1,0 +1,69 @@
+{
+  "treeId": 146736,
+  "botanicalName": {
+    "text": "Fagus grandifolia",
+    "href": "/Browse/Sites/38535/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "commonName": {
+    "text": "American Beech",
+    "href": "/Browse/Sites/38535/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "details": {
+    "Height": "38.80 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "(no data)",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "(not enough data)",
+    "ENTSPTS": "(not enough data)",
+    "TDI3": "(not enough data)",
+    "TDI2": "(not enough data)",
+    "Champion points": "(not enough data)",
+    "Diameter": "(no data)",
+    "Conical volume": "(no data)",
+    "General comments": "Measured by Eicholz along the Hemlock Trail."
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 09/09/2005",
+      "summary": {
+        "Height": "38.80 m"
+      },
+      "details": {
+        "Botanical name": "Fagus grandifolia",
+        "Common name": "American Beech",
+        "Height": "38.80 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "(no data)",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "(not enough data)",
+        "ENTSPTS": "(not enough data)",
+        "TDI3": "(not enough data)",
+        "TDI2": "(not enough data)",
+        "Champion points": "(not enough data)",
+        "Diameter": "(no data)",
+        "Conical volume": "(no data)",
+        "General comments": "Measured by Eicholz along the Hemlock Trail."
+      },
+      "measurers": "Dale Luthringer and John Eichholz"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 19.889, -079 12.874",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "CFSP-Seneca Forest Special Management Area",
+      "href": "/Browse/Sites/38535/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Clarion"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

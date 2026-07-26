@@ -1,0 +1,129 @@
+{
+  "siteId": 40274,
+  "summary": {
+    "Name": "Heridia Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "02/12/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/12/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cecropia obtusifolia",
+          "Guarumo",
+          "72.2'",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cecropia obtusifolia",
+            "href": "/Browse/Sites/40274/Species/Cecropia%20obtusifolia%20(Guarumo)/Details"
+          },
+          {
+            "text": "Guarumo",
+            "href": "/Browse/Sites/40274/Species/Cecropia%20obtusifolia%20(Guarumo)/Details"
+          },
+          {
+            "text": "72.2'",
+            "href": "/Browse/Trees/227249/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/227249/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Luehea speciosa",
+          "Luehea",
+          "76.7'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Luehea speciosa",
+            "href": "/Browse/Sites/40274/Species/Luehea%20speciosa%20(Luehea)/Details"
+          },
+          {
+            "text": "Luehea",
+            "href": "/Browse/Sites/40274/Species/Luehea%20speciosa%20(Luehea)/Details"
+          },
+          {
+            "text": "76.7'",
+            "href": "/Browse/Trees/227250/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/227250/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "10 27.142, -084 01.291",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private , public",
+      "County": "Sarapiqui"
+    },
+    "state": {
+      "text": "Heredia (CR)",
+      "href": "/Browse/States/120/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

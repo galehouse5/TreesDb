@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-hidden="true">
+  <!-- Dark keyline so the chip separates from any tile color (map UX audit:
+       the old white-chip-on-beige-OSM design measured 1.2-1.6:1). -->
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#0F172A" stroke-width="2" opacity="0.42" />
+  <!-- White casing ring. -->
+  <circle cx="32" cy="32" r="26" fill="#ffffff" />
+  <!-- Solid forest-green body: the marker's dominant mass carries the color
+       now (8.4:1 vs the white casing), instead of a hairline ring. -->
+  <circle cx="32" cy="32" r="22" fill="#255648" />
+  <!-- Pine-tree glyph (lucide TreePine outline, FILLED white - solid
+       silhouettes survive the ~19-32px rasterized sizes; 0.7px hairline
+       strokes did not). Trunk drawn as a small rect since the original
+       stroke segment has no fillable area. -->
+  <g transform="translate(17.5,17.5) scale(1.20833)" fill="#ffffff" stroke="none">
+    <path d="m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z" />
+    <rect x="10.9" y="18.6" width="2.2" height="3.4" rx="1" />
+  </g>
+</svg>

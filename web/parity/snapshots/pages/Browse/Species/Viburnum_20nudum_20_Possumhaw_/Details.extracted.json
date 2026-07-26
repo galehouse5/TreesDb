@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Viburnum nudum",
+  "commonName": "Possumhaw",
+  "global": {
+    "maxHeight": {
+      "text": "44.1'",
+      "href": "/Browse/Trees/236770/Details"
+    },
+    "maxGirth": {
+      "text": "23''",
+      "href": "/Browse/Trees/236770/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "South Carolina",
+          "44.1'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "44.1'",
+            "href": "/Browse/Trees/236770/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/236770/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

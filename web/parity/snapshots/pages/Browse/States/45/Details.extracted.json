@@ -1,0 +1,554 @@
+{
+  "stateId": 45,
+  "summary": {
+    "Name": "Washington",
+    "Code": "WA",
+    "RHI5": "260.90",
+    "RHI10": "240.37",
+    "RHI20": "180.78",
+    "RGI5": "32.55",
+    "RGI10": "24.36",
+    "RGI20": "16.29",
+    "Trees measured": "175",
+    "Last measurement date": "06/16/2023"
+  },
+  "location": {
+    "Coordinates": "47 16.385, -120 52.605",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies amabilis",
+          "Pacific Silver Fir",
+          "199.0'",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies amabilis",
+            "href": "/Browse/States/45/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "Pacific Silver Fir",
+            "href": "/Browse/States/45/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "199.0'",
+            "href": "/Browse/Trees/296630/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/296617/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies grandis var. grandis",
+          "Grand Fir",
+          "223.4'",
+          "269''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis var. grandis",
+            "href": "/Browse/States/45/Species/Abies%20grandis%20var.%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/States/45/Species/Abies%20grandis%20var.%20grandis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "223.4'",
+            "href": "/Browse/Trees/296866/Details"
+          },
+          {
+            "text": "269''",
+            "href": "/Browse/Trees/296866/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies grandis var. idahoensis",
+          "Grand Fir",
+          "215.6'",
+          "159''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies grandis var. idahoensis",
+            "href": "/Browse/States/45/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "Grand Fir",
+            "href": "/Browse/States/45/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+          },
+          {
+            "text": "215.6'",
+            "href": "/Browse/Trees/296898/Details"
+          },
+          {
+            "text": "159''",
+            "href": "/Browse/Trees/296946/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies procera",
+          "Noble Fir",
+          "274.3'",
+          "314''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies procera",
+            "href": "/Browse/States/45/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "Noble Fir",
+            "href": "/Browse/States/45/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "274.3'",
+            "href": "/Browse/Trees/296619/Details"
+          },
+          {
+            "text": "314''",
+            "href": "/Browse/Trees/296624/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer circinatum",
+          "Vine Maple",
+          "21.5'",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer circinatum",
+            "href": "/Browse/States/45/Species/Acer%20circinatum%20(Vine%20Maple)/Details"
+          },
+          {
+            "text": "Vine Maple",
+            "href": "/Browse/States/45/Species/Acer%20circinatum%20(Vine%20Maple)/Details"
+          },
+          {
+            "text": "21.5'",
+            "href": "/Browse/Trees/296872/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/296872/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer macrophyllum",
+          "Bigleaf Maple",
+          "142.2'",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer macrophyllum",
+            "href": "/Browse/States/45/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "Bigleaf Maple",
+            "href": "/Browse/States/45/Species/Acer%20macrophyllum%20(Bigleaf%20Maple)/Details"
+          },
+          {
+            "text": "142.2'",
+            "href": "/Browse/Trees/296869/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/296871/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus rubra",
+          "Red Alder",
+          "125.0'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus rubra",
+            "href": "/Browse/States/45/Species/Alnus%20rubra%20(Red%20Alder)/Details"
+          },
+          {
+            "text": "Red Alder",
+            "href": "/Browse/States/45/Species/Alnus%20rubra%20(Red%20Alder)/Details"
+          },
+          {
+            "text": "125.0'",
+            "href": "/Browse/Trees/296870/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/296870/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. reticulata",
+          "Netleaf Hackberry",
+          "31.6'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. reticulata",
+            "href": "/Browse/States/45/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "Netleaf Hackberry",
+            "href": "/Browse/States/45/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "31.6'",
+            "href": "/Browse/Trees/91834/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/91835/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cupressus nootkatensis",
+          "Alaska Cedar",
+          "113.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cupressus nootkatensis",
+            "href": "/Browse/States/45/Species/Cupressus%20nootkatensis%20(Alaska%20Cedar)/Details"
+          },
+          {
+            "text": "Alaska Cedar",
+            "href": "/Browse/States/45/Species/Cupressus%20nootkatensis%20(Alaska%20Cedar)/Details"
+          },
+          {
+            "text": "113.3'",
+            "href": "/Browse/Trees/274362/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix occidentalis",
+          "Western Larch",
+          "213.0'",
+          "165''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix occidentalis",
+            "href": "/Browse/States/45/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "Western Larch",
+            "href": "/Browse/States/45/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+          },
+          {
+            "text": "213.0'",
+            "href": "/Browse/Trees/296925/Details"
+          },
+          {
+            "text": "165''",
+            "href": "/Browse/Trees/296925/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 22 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Bogachiel Rainforest River Trail",
+          "204.10",
+          "-",
+          "7.43",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bogachiel Rainforest River Trail",
+            "href": "/Browse/Sites/42076/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedar Flats Research Natural Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedar Flats Research Natural Area",
+            "href": "/Browse/Sites/39087/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Easy Pass, North Cascades Scenic Highway",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Easy Pass, North Cascades Scenic Highway",
+            "href": "/Browse/Sites/41786/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Goat Marsh RNA",
+          "229.56",
+          "-",
+          "15.29",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Goat Marsh RNA",
+            "href": "/Browse/Sites/42071/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hoh Rainforest Visitor Center",
+          "221.08",
+          "-",
+          "3.15",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hoh Rainforest Visitor Center",
+            "href": "/Browse/Sites/40053/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Icicle Creek Trail",
+          "168.62",
+          "-",
+          "13.53",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Icicle Creek Trail",
+            "href": "/Browse/Sites/42080/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Marymere Falls Trail",
+          "195.86",
+          "-",
+          "5.80",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Marymere Falls Trail",
+            "href": "/Browse/Sites/42075/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Middle Fork Of Snoqualamie River",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Middle Fork Of Snoqualamie River",
+            "href": "/Browse/Sites/40891/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mountain Loop Highway",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mountain Loop Highway",
+            "href": "/Browse/Sites/41793/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Cascades Scenic Highway",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Cascades Scenic Highway",
+            "href": "/Browse/Sites/42078/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 23 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

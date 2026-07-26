@@ -1,0 +1,70 @@
+{
+  "treeId": 146710,
+  "botanicalName": {
+    "text": "Fagus grandifolia",
+    "href": "/Browse/Sites/38535/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "commonName": {
+    "text": "American Beech",
+    "href": "/Browse/Sites/38535/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+  },
+  "details": {
+    "Height": "124.3'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "101''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "87.71",
+    "ENTSPTS": "1044.12",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.23",
+    "Champion points (abbreviated)": "225.10",
+    "Diameter": "32''",
+    "Conical volume": "232.6 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 09/09/2005",
+      "summary": {
+        "Height": "124.3'",
+        "Girth": "101''"
+      },
+      "details": {
+        "Botanical name": "Fagus grandifolia",
+        "Common name": "American Beech",
+        "Height": "124.3'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "101''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "87.71",
+        "ENTSPTS": "1044.12",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.23",
+        "Champion points (abbreviated)": "225.10",
+        "Diameter": "32''",
+        "Conical volume": "232.6 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Dale Luthringer and John Eichholz"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 19.889, -079 12.874",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "CFSP-Seneca Forest Special Management Area",
+      "href": "/Browse/Sites/38535/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Clarion"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,185 @@
+{
+  "siteId": 41098,
+  "summary": {
+    "Name": "Pine Mountain",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "01/04/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/04/2015",
+      "visitors": "Jess Riddle and Doug Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Magnolia virginiana",
+          "Sweetbay",
+          "75.2'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia virginiana",
+            "href": "/Browse/Sites/41098/Species/Magnolia%20virginiana%20(Sweetbay)/Details"
+          },
+          {
+            "text": "Sweetbay",
+            "href": "/Browse/Sites/41098/Species/Magnolia%20virginiana%20(Sweetbay)/Details"
+          },
+          {
+            "text": "75.2'",
+            "href": "/Browse/Trees/249359/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/249358/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus alabamensis",
+          "Alabama Cherry",
+          "47.3'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus alabamensis",
+            "href": "/Browse/Sites/41098/Species/Prunus%20alabamensis%20(Alabama%20Cherry)/Details"
+          },
+          {
+            "text": "Alabama Cherry",
+            "href": "/Browse/Sites/41098/Species/Prunus%20alabamensis%20(Alabama%20Cherry)/Details"
+          },
+          {
+            "text": "47.3'",
+            "href": "/Browse/Trees/249361/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/249360/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus georgiana",
+          "Georgia Oak",
+          "45.7'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus georgiana",
+            "href": "/Browse/Sites/41098/Species/Quercus%20georgiana%20(Georgia%20Oak)/Details"
+          },
+          {
+            "text": "Georgia Oak",
+            "href": "/Browse/Sites/41098/Species/Quercus%20georgiana%20(Georgia%20Oak)/Details"
+          },
+          {
+            "text": "45.7'",
+            "href": "/Browse/Trees/249366/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/249367/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "121.3'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/41098/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/41098/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "121.3'",
+            "href": "/Browse/Trees/249363/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/249362/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 46.750, -084 53.704",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Harris"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

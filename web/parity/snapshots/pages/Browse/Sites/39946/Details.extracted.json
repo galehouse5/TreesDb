@@ -1,0 +1,353 @@
+{
+  "siteId": 39946,
+  "summary": {
+    "Name": "Laurels Preserve",
+    "RHI5": "141.30",
+    "RHI10": "131.79",
+    "RHI20": "122.11",
+    "RGI5": "13.24",
+    "RGI10": "11.45",
+    "RGI20": "9.09",
+    "Trees measured": "63",
+    "Last measurement date": "06/15/2019",
+    "Ownership contact": "Brandywine Conservancy Chadds Ford, Pa",
+    "General comments": "Contains 500 acres of mature hardwood forest."
+  },
+  "visits": [
+    {
+      "visited": "06/15/2019",
+      "visitors": "George Fieo",
+      "tripReportUrl": "ents-bbs.org/viewtopic.php",
+      "comments": "Contains 500 acres of mature hardwood forest."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "102.7'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/Sites/39946/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/39946/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "102.7'",
+            "href": "/Browse/Trees/212109/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/212109/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "113.1'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/39946/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39946/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "113.1'",
+            "href": "/Browse/Trees/212147/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/212145/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "137.9'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/39946/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/39946/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "137.9'",
+            "href": "/Browse/Trees/212144/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/212144/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "124.1'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/39946/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/39946/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "124.1'",
+            "href": "/Browse/Trees/212137/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/212137/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "117.1'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39946/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39946/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "117.1'",
+            "href": "/Browse/Trees/212108/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/212108/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "119.6'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/39946/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/39946/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "119.6'",
+            "href": "/Browse/Trees/212170/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/212170/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "115.7'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/39946/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/39946/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "115.7'",
+            "href": "/Browse/Trees/212136/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/212135/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "118.5'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/39946/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/39946/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "118.5'",
+            "href": "/Browse/Trees/212123/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/212123/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "153.5'",
+          "168''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/39946/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/39946/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "153.5'",
+            "href": "/Browse/Trees/212165/Details"
+          },
+          {
+            "text": "168''",
+            "href": "/Browse/Trees/212153/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "106.5'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/39946/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/39946/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "106.5'",
+            "href": "/Browse/Trees/212115/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/212115/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 23 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 54.684, -075 47.843",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Chester"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,132 @@
+{
+  "siteId": 39385,
+  "summary": {
+    "Name": "Big Bone Lick State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "09/08/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "525 Acres Is on National Register of Historic Places and a Natural Landmark"
+  },
+  "visits": [
+    {
+      "visited": "09/08/2014",
+      "visitors": "Matt Markworth",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "525 Acres Is on National Register of Historic Places and a Natural Landmark"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "80.5'",
+          "147''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/39385/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39385/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "80.5'",
+            "href": "/Browse/Trees/174572/Details"
+          },
+          {
+            "text": "147''",
+            "href": "/Browse/Trees/174572/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus shumardii",
+          "Shumard's Oak",
+          "81.0'",
+          "186''",
+          "76.5'"
+        ],
+        "links": [
+          {
+            "text": "Quercus shumardii",
+            "href": "/Browse/Sites/39385/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+          },
+          {
+            "text": "Shumard's Oak",
+            "href": "/Browse/Sites/39385/Species/Quercus%20shumardii%20(Shumard's%20Oak)/Details"
+          },
+          {
+            "text": "81.0'",
+            "href": "/Browse/Trees/174571/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/174571/Details"
+          },
+          {
+            "text": "76.5'",
+            "href": "/Browse/Trees/174571/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 53.016, -084 44.785",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Boone"
+    },
+    "state": {
+      "text": "Kentucky (US)",
+      "href": "/Browse/States/15/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

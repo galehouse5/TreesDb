@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Populus × jackii",
+  "commonName": "Balm-Of-Gilead",
+  "global": {
+    "maxHeight": {
+      "text": "94.7'",
+      "href": "/Browse/Trees/313148/Details"
+    },
+    "maxGirth": {
+      "text": "84''",
+      "href": "/Browse/Trees/312043/Details"
+    },
+    "maxCrownSpread": {
+      "text": "46.0'",
+      "href": "/Browse/Trees/312043/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "West Virginia",
+          "94.7'",
+          "84''",
+          "46.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "94.7'",
+            "href": "/Browse/Trees/313148/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/312043/Details"
+          },
+          {
+            "text": "46.0'",
+            "href": "/Browse/Trees/312043/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

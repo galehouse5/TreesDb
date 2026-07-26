@@ -1,0 +1,160 @@
+{
+  "siteId": 41193,
+  "summary": {
+    "Name": "Hominy Valley Overlook",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "11/05/2010",
+    "Ownership contact": "Blue Ridge Parkway 199 Hemphill Road Asheville, NC at Mile Poat 384",
+    "General comments": "Hominy Valley Overlook at Mile Post 404. 'Golden Grove\""
+  },
+  "visits": [
+    {
+      "visited": "11/05/2010",
+      "visitors": "James Parton",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Hominy Valley Overlook at Mile Post 404. 'Golden Grove\""
+    },
+    {
+      "visited": "11/08/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "(none)",
+      "comments": "Over look is at Mile Post 404."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "29.5'",
+          "117''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/41193/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/41193/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "29.5'",
+            "href": "/Browse/Trees/252127/Details"
+          },
+          {
+            "text": "117''",
+            "href": "/Browse/Trees/252129/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "139.6'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41193/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41193/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "139.6'",
+            "href": "/Browse/Trees/252131/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/252131/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vitis spp.",
+          "Grape",
+          "-",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vitis spp.",
+            "href": "/Browse/Sites/41193/Species/Vitis%20spp.%20(Grape)/Details"
+          },
+          {
+            "text": "Grape",
+            "href": "/Browse/Sites/41193/Species/Vitis%20spp.%20(Grape)/Details"
+          },
+          null,
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/252145/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 26.867, -082 43.025",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Buncombe"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

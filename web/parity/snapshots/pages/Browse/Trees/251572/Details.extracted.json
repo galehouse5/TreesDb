@@ -1,0 +1,70 @@
+{
+  "treeId": 251572,
+  "botanicalName": {
+    "text": "Taxodium distichum",
+    "href": "/Browse/Sites/41183/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+  },
+  "commonName": {
+    "text": "Bald Cypress",
+    "href": "/Browse/Sites/41183/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+  },
+  "details": {
+    "Height": "108.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "214''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "343.47",
+    "ENTSPTS": "1926.00",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.12",
+    "Champion points (abbreviated)": "322.00",
+    "Diameter": "68''",
+    "Conical volume": "911.1 ft³",
+    "General comments": "Douglas Bluff"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/01/2016",
+      "summary": {
+        "Height": "108.0'",
+        "Girth": "214''"
+      },
+      "details": {
+        "Botanical name": "Taxodium distichum",
+        "Common name": "Bald Cypress",
+        "Height": "108.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "214''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "343.47",
+        "ENTSPTS": "1926.00",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.12",
+        "Champion points (abbreviated)": "322.00",
+        "Diameter": "68''",
+        "Conical volume": "911.1 ft³",
+        "General comments": "Douglas Bluff"
+      },
+      "measurers": "Larry Tucei"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "33 16.228, -088 47.051",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Noxubee National Wildlife Reserve",
+      "href": "/Browse/Sites/41183/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Noxubee"
+    },
+    "state": {
+      "text": "Mississippi (US)",
+      "href": "/Browse/States/23/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

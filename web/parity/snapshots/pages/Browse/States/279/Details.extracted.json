@@ -1,0 +1,206 @@
+{
+  "stateId": 279,
+  "summary": {
+    "Name": "Marrakech-Safi, Morocco",
+    "Code": "07",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "11/07/2014"
+  },
+  "location": {
+    "Coordinates": "31 48.006, -008 25.349",
+    "Country": "Morocco"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Bismarckia nobilis",
+          "Bismarck Palm",
+          "17.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bismarckia nobilis",
+            "href": "/Browse/States/279/Species/Bismarckia%20nobilis%20(Bismarck%20Palm)/Details"
+          },
+          {
+            "text": "Bismarck Palm",
+            "href": "/Browse/States/279/Species/Bismarckia%20nobilis%20(Bismarck%20Palm)/Details"
+          },
+          {
+            "text": "17.5'",
+            "href": "/Browse/Trees/291325/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hedyscepe canterburyana",
+          "Big Mountain Palm",
+          "22.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hedyscepe canterburyana",
+            "href": "/Browse/States/279/Species/Hedyscepe%20canterburyana%20(Big%20Mountain%20Palm)/Details"
+          },
+          {
+            "text": "Big Mountain Palm",
+            "href": "/Browse/States/279/Species/Hedyscepe%20canterburyana%20(Big%20Mountain%20Palm)/Details"
+          },
+          {
+            "text": "22.5'",
+            "href": "/Browse/Trees/291326/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Phoenix dactylifera",
+          "Date Palm",
+          "58.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Phoenix dactylifera",
+            "href": "/Browse/States/279/Species/Phoenix%20dactylifera%20(Date%20Palm)/Details"
+          },
+          {
+            "text": "Date Palm",
+            "href": "/Browse/States/279/Species/Phoenix%20dactylifera%20(Date%20Palm)/Details"
+          },
+          {
+            "text": "58.6'",
+            "href": "/Browse/Trees/291322/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washingtonia robusta",
+          "Washington Fan Palm",
+          "79.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washingtonia robusta",
+            "href": "/Browse/States/279/Species/Washingtonia%20robusta%20(Washington%20Fan%20Palm)/Details"
+          },
+          {
+            "text": "Washington Fan Palm",
+            "href": "/Browse/States/279/Species/Washingtonia%20robusta%20(Washington%20Fan%20Palm)/Details"
+          },
+          {
+            "text": "79.8'",
+            "href": "/Browse/Trees/291324/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Jardine Majorelle-Yves Saint Laurent Mansion",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Jardine Majorelle-Yves Saint Laurent Mansion",
+            "href": "/Browse/Sites/42022/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "siteId": 40649,
+  "summary": {
+    "Name": "Sequoia National Park",
+    "RHI5": "216.48",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.53",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "07/11/2022",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/11/2022",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/02/2007",
+      "visitors": "Brandon Gallagher",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/us_west/california/a_somewhat_ill.htm",
+      "comments": "The National Park Service jointly administers both the Sequoia and Kings Canyon National Parks. Sequoia NP contains 461,901 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. lowiana",
+          "White Fir",
+          "242.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. lowiana",
+            "href": "/Browse/Sites/40649/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/40649/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+          },
+          {
+            "text": "242.1'",
+            "href": "/Browse/Trees/274335/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Calocedrus decurrens",
+          "Incense Cedar",
+          "144.2'",
+          "170''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Calocedrus decurrens",
+            "href": "/Browse/Sites/40649/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "Incense Cedar",
+            "href": "/Browse/Sites/40649/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "144.2'",
+            "href": "/Browse/Trees/274336/Details"
+          },
+          {
+            "text": "170''",
+            "href": "/Browse/Trees/234268/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "234.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/Sites/40649/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/Sites/40649/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "234.0'",
+            "href": "/Browse/Trees/274332/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa",
+          "Ponderosa Pine",
+          "180.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa",
+            "href": "/Browse/Sites/40649/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/40649/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "180.1'",
+            "href": "/Browse/Trees/274333/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus douglasii",
+          "Blue Oak",
+          "-",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus douglasii",
+            "href": "/Browse/Sites/40649/Species/Quercus%20douglasii%20(Blue%20Oak)/Details"
+          },
+          {
+            "text": "Blue Oak",
+            "href": "/Browse/Sites/40649/Species/Quercus%20douglasii%20(Blue%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/234265/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lobata",
+          "Valley Oak",
+          "-",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lobata",
+            "href": "/Browse/Sites/40649/Species/Quercus%20lobata%20(Valley%20Oak)/Details"
+          },
+          {
+            "text": "Valley Oak",
+            "href": "/Browse/Sites/40649/Species/Quercus%20lobata%20(Valley%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/234266/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus wislizeni",
+          "Interior Live Oak",
+          "-",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus wislizeni",
+            "href": "/Browse/Sites/40649/Species/Quercus%20wislizeni%20(Interior%20Live%20Oak)/Details"
+          },
+          {
+            "text": "Interior Live Oak",
+            "href": "/Browse/Sites/40649/Species/Quercus%20wislizeni%20(Interior%20Live%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/234267/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sequoiadendron giganteum",
+          "Giant Sequoia",
+          "282.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sequoiadendron giganteum",
+            "href": "/Browse/Sites/40649/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+          },
+          {
+            "text": "Giant Sequoia",
+            "href": "/Browse/Sites/40649/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+          },
+          {
+            "text": "282.0'",
+            "href": "/Browse/Trees/274331/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 34.914, -118 45.094",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Tulare"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

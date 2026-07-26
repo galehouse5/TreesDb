@@ -1,0 +1,185 @@
+{
+  "botanicalName": "Gleditsia aquatica",
+  "commonName": "Water Locust",
+  "global": {
+    "maxHeight": {
+      "text": "31.27 m",
+      "href": "/Browse/Trees/241850/Details"
+    },
+    "maxGirth": {
+      "text": "605 cm",
+      "href": "/Browse/Trees/233994/Details"
+    },
+    "maxCrownSpread": {
+      "text": "19.20 m",
+      "href": "/Browse/Trees/255921/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "31.27 m",
+          "605 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "31.27 m",
+            "href": "/Browse/Trees/241850/Details"
+          },
+          {
+            "text": "605 cm",
+            "href": "/Browse/Trees/233994/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "20.12 m",
+          "110 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "20.12 m",
+            "href": "/Browse/Trees/320733/Details"
+          },
+          {
+            "text": "110 cm",
+            "href": "/Browse/Trees/320733/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "26.43 m",
+          "272 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "26.43 m",
+            "href": "/Browse/Trees/251019/Details"
+          },
+          {
+            "text": "272 cm",
+            "href": "/Browse/Trees/251019/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "17.10 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "17.10 m",
+            "href": "/Browse/Trees/283690/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "22.56 m",
+          "307 cm",
+          "19.20 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "22.56 m",
+            "href": "/Browse/Trees/255921/Details"
+          },
+          {
+            "text": "307 cm",
+            "href": "/Browse/Trees/255921/Details"
+          },
+          {
+            "text": "19.20 m",
+            "href": "/Browse/Trees/255921/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "26.18 m",
+          "226 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "26.18 m",
+            "href": "/Browse/Trees/252665/Details"
+          },
+          {
+            "text": "226 cm",
+            "href": "/Browse/Trees/236775/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

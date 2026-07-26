@@ -1,0 +1,371 @@
+{
+  "siteId": 32643,
+  "summary": {
+    "Name": "Hearts Content National Scenic Area",
+    "RHI5": "133.18",
+    "RHI10": "119.44",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.04",
+    "RGI10": "9.95",
+    "RGI20": "(not enough data)",
+    "Trees measured": "93",
+    "Last measurement date": "08/21/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/21/2014",
+      "visitors": "Tom Howard and Jack Unknown",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/11/2007",
+      "visitors": "Dale Luthringer and Carl Harting",
+      "tripReportUrl": "(none)",
+      "comments": "3 Hemlocks,1 Red Maple, and one White Ash were measured on 12/3/2007"
+    },
+    {
+      "visited": "10/18/2006",
+      "visitors": "Dale Luthringer, Will Blozan, and Ron Bush",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/31/2002",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "119.0'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/32643/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/32643/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/119436/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/212347/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "87.1'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/32643/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/32643/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "87.1'",
+            "href": "/Browse/Trees/212343/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/212343/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "109.8'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/32643/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/32643/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "109.8'",
+            "href": "/Browse/Trees/119479/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/119480/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "120.4'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/32643/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/32643/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "120.4'",
+            "href": "/Browse/Trees/212348/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/212348/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "114.1'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/32643/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/32643/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "114.1'",
+            "href": "/Browse/Trees/119483/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/119483/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "167.2'",
+          "159''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/32643/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/32643/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "167.2'",
+            "href": "/Browse/Trees/119468/Details"
+          },
+          {
+            "text": "159''",
+            "href": "/Browse/Trees/119438/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "123.1'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/32643/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/32643/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "123.1'",
+            "href": "/Browse/Trees/212329/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/212328/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "108.4'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/32643/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/32643/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "108.4'",
+            "href": "/Browse/Trees/119474/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/119475/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "97.6'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/32643/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/32643/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "97.6'",
+            "href": "/Browse/Trees/119477/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/119477/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "98.6'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/32643/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/32643/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "98.6'",
+            "href": "/Browse/Trees/119473/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/119473/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 41.530, -079 15.204",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

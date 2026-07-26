@@ -1,0 +1,362 @@
+{
+  "siteId": 40691,
+  "summary": {
+    "Name": "Cliff Creek",
+    "RHI5": "152.38",
+    "RHI10": "140.78",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.12",
+    "RGI10": "6.87",
+    "RGI20": "(not enough data)",
+    "Trees measured": "74",
+    "Last measurement date": "01/07/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/07/2011",
+      "visitors": "Jess Riddle and Doug Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "09/06/2005",
+      "visitors": "Jess Riddle and Will Blozan",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/cliffcreek/cliff_creek05.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/02/2004",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/cliff_creek.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "39.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/Sites/40691/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/Sites/40691/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "39.0'",
+            "href": "/Browse/Trees/235195/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "104.2'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40691/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40691/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "104.2'",
+            "href": "/Browse/Trees/234946/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/234946/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana",
+          "American Hornbeam",
+          "67.2'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana",
+            "href": "/Browse/Sites/40691/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/40691/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "67.2'",
+            "href": "/Browse/Trees/235190/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/235190/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "149.3'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40691/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40691/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "149.3'",
+            "href": "/Browse/Trees/249058/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/249058/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "127.3'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40691/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40691/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "127.3'",
+            "href": "/Browse/Trees/235187/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/235187/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus florida",
+          "Flowering Dogwood",
+          "45.1'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus florida",
+            "href": "/Browse/Sites/40691/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "Flowering Dogwood",
+            "href": "/Browse/Sites/40691/Species/Cornus%20florida%20(Flowering%20Dogwood)/Details"
+          },
+          {
+            "text": "45.1'",
+            "href": "/Browse/Trees/235182/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/235182/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "141.1'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40691/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40691/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "141.1'",
+            "href": "/Browse/Trees/235221/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/235221/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Malus angustifolia",
+          "Southern Crab Apple",
+          "54.3'",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Malus angustifolia",
+            "href": "/Browse/Sites/40691/Species/Malus%20angustifolia%20(Southern%20Crab%20Apple)/Details"
+          },
+          {
+            "text": "Southern Crab Apple",
+            "href": "/Browse/Sites/40691/Species/Malus%20angustifolia%20(Southern%20Crab%20Apple)/Details"
+          },
+          {
+            "text": "54.3'",
+            "href": "/Browse/Trees/235181/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/235181/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oxydendrum arboreum",
+          "Sourwood",
+          "103.9'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oxydendrum arboreum",
+            "href": "/Browse/Sites/40691/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "Sourwood",
+            "href": "/Browse/Sites/40691/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "103.9'",
+            "href": "/Browse/Trees/235211/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/235219/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "135.7'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40691/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40691/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "135.7'",
+            "href": "/Browse/Trees/235175/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/249061/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 47.130, -083 21.085",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Rabun"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

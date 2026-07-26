@@ -1,0 +1,157 @@
+{
+  "siteId": 40761,
+  "summary": {
+    "Name": "Sky Lake Wildlife Management Area",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "12/01/2007",
+    "Ownership contact": "1652 Townsend Lake Road Belzoni, Mississippi",
+    "General comments": "3500 acres One of the trees was measured during initial visit on 7/31/2007"
+  },
+  "visits": [
+    {
+      "visited": "12/01/2007",
+      "visitors": "Don Bragg, Gary Smith, and Beth Koebel",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mississippi/sky_lake/sky_lake_wma.htm",
+      "comments": "3500 acres One of the trees was measured during initial visit on 7/31/2007"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Nyssa biflora",
+          "Swamp Tupelo",
+          "84.0'",
+          "206''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa biflora",
+            "href": "/Browse/Sites/40761/Species/Nyssa%20biflora%20(Swamp%20Tupelo)/Details"
+          },
+          {
+            "text": "Swamp Tupelo",
+            "href": "/Browse/Sites/40761/Species/Nyssa%20biflora%20(Swamp%20Tupelo)/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/235973/Details"
+          },
+          {
+            "text": "206''",
+            "href": "/Browse/Trees/235973/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Planera aquatica",
+          "Planertree",
+          "37.5'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Planera aquatica",
+            "href": "/Browse/Sites/40761/Species/Planera%20aquatica%20(Planertree)/Details"
+          },
+          {
+            "text": "Planertree",
+            "href": "/Browse/Sites/40761/Species/Planera%20aquatica%20(Planertree)/Details"
+          },
+          {
+            "text": "37.5'",
+            "href": "/Browse/Trees/235974/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/235974/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "99.0'",
+          "556''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/40761/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/40761/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "99.0'",
+            "href": "/Browse/Trees/235971/Details"
+          },
+          {
+            "text": "556''",
+            "href": "/Browse/Trees/235970/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 17.159, -090 28.944",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Humphreys"
+    },
+    "state": {
+      "text": "Mississippi (US)",
+      "href": "/Browse/States/23/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

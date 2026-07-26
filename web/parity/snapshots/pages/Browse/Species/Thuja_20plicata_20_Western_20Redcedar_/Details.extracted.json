@@ -1,0 +1,158 @@
+{
+  "botanicalName": "Thuja plicata",
+  "commonName": "Western Redcedar",
+  "global": {
+    "maxHeight": {
+      "text": "232.2'",
+      "href": "/Browse/Trees/274361/Details"
+    },
+    "maxGirth": {
+      "text": "490''",
+      "href": "/Browse/Trees/239723/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Idaho",
+          "196.0'",
+          "223''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idaho",
+            "href": "/Browse/States/11/Details"
+          },
+          {
+            "text": "196.0'",
+            "href": "/Browse/Trees/318050/Details"
+          },
+          {
+            "text": "223''",
+            "href": "/Browse/Trees/164258/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "194.3'",
+          "319''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "194.3'",
+            "href": "/Browse/Trees/297923/Details"
+          },
+          {
+            "text": "319''",
+            "href": "/Browse/Trees/297915/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "103.5'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "103.5'",
+            "href": "/Browse/Trees/281819/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/281818/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oregon",
+          "206.0'",
+          "208''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon",
+            "href": "/Browse/States/35/Details"
+          },
+          {
+            "text": "206.0'",
+            "href": "/Browse/Trees/239643/Details"
+          },
+          {
+            "text": "208''",
+            "href": "/Browse/Trees/318024/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "232.2'",
+          "490''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "232.2'",
+            "href": "/Browse/Trees/274361/Details"
+          },
+          {
+            "text": "490''",
+            "href": "/Browse/Trees/239723/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "siteId": 27498,
+  "summary": {
+    "Name": "Salmon River Corridor -Hammer Creek To Confluence With Snake River",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "14",
+    "Last measurement date": "08/22/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/22/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Amelanchier alnifolia",
+          "Saskatoon Serviceberry",
+          "20.5'",
+          "7''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier alnifolia",
+            "href": "/Browse/Sites/27498/Species/Amelanchier%20alnifolia%20(Saskatoon%20Serviceberry)/Details"
+          },
+          {
+            "text": "Saskatoon Serviceberry",
+            "href": "/Browse/Sites/27498/Species/Amelanchier%20alnifolia%20(Saskatoon%20Serviceberry)/Details"
+          },
+          {
+            "text": "20.5'",
+            "href": "/Browse/Trees/98151/Details"
+          },
+          {
+            "text": "7''",
+            "href": "/Browse/Trees/98160/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. reticulata",
+          "Netleaf Hackberry",
+          "33.5'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. reticulata",
+            "href": "/Browse/Sites/27498/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "Netleaf Hackberry",
+            "href": "/Browse/Sites/27498/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "33.5'",
+            "href": "/Browse/Trees/98149/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/98157/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercocarpus ledifolius",
+          "Curl-Leaf Mountain Mahogany",
+          "18.4'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercocarpus ledifolius",
+            "href": "/Browse/Sites/27498/Species/Cercocarpus%20ledifolius%20(Curl-Leaf%20Mountain%20Mahogany)/Details"
+          },
+          {
+            "text": "Curl-Leaf Mountain Mahogany",
+            "href": "/Browse/Sites/27498/Species/Cercocarpus%20ledifolius%20(Curl-Leaf%20Mountain%20Mahogany)/Details"
+          },
+          {
+            "text": "18.4'",
+            "href": "/Browse/Trees/98153/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/98153/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Robinia pseudoacacia",
+          "Black Locust",
+          "47.4'",
+          "33''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Robinia pseudoacacia",
+            "href": "/Browse/Sites/27498/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "Black Locust",
+            "href": "/Browse/Sites/27498/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+          },
+          {
+            "text": "47.4'",
+            "href": "/Browse/Trees/98158/Details"
+          },
+          {
+            "text": "33''",
+            "href": "/Browse/Trees/98156/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 45.893, -116 19.464",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Bureau of land Management",
+      "County": "Idaho"
+    },
+    "state": {
+      "text": "Idaho (US)",
+      "href": "/Browse/States/11/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

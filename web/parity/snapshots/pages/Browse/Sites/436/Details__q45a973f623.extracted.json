@@ -1,0 +1,33 @@
+{
+  "columns": [
+    {
+      "header": "Botanical name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Common name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max height",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max girth",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max crown spread",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [],
+  "pageInfo": "Showing 1 to 1 of 1 entries",
+  "hasPreviousPage": true,
+  "hasNextPage": false
+}

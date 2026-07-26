@@ -1,0 +1,71 @@
+{
+  "treeId": 70462,
+  "botanicalName": {
+    "text": "Populus deltoides",
+    "href": "/Browse/Sites/20950/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+  },
+  "commonName": {
+    "text": "Eastern Cottonwood",
+    "href": "/Browse/Sites/20950/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+  },
+  "details": {
+    "Height": "32.86 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "884 cm",
+    "Crown spread": "30.69 m",
+    "ENTSPTS2": "906.60",
+    "ENTSPTS": "3126.20",
+    "TDI3": "2.63",
+    "TDI2": "1.70",
+    "Champion points": "480.98",
+    "Diameter": "281 cm",
+    "Conical volume": "68.10 m³",
+    "General comments": "**May be multi-trunked** Tree dead as of 7/6/2014."
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 03/01/2012",
+      "summary": {
+        "Height": "32.86 m",
+        "Girth": "884 cm",
+        "Crown spread": "30.69 m"
+      },
+      "details": {
+        "Botanical name": "Populus deltoides",
+        "Common name": "Eastern Cottonwood",
+        "Height": "32.86 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "884 cm",
+        "Crown spread": "30.69 m",
+        "ENTSPTS2": "906.60",
+        "ENTSPTS": "3126.20",
+        "TDI3": "2.63",
+        "TDI2": "1.70",
+        "Champion points": "480.98",
+        "Diameter": "281 cm",
+        "Conical volume": "68.10 m³",
+        "General comments": "**May be multi-trunked** Tree dead as of 7/6/2014."
+      },
+      "measurers": "Elijah Whitcomb"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 42.915, -076 25.232",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "184 Main St., Moravia, NY",
+      "href": "/Browse/Sites/20950/Details"
+    },
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Cayuga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

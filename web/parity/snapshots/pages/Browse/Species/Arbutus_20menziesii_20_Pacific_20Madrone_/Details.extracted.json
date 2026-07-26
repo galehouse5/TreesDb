@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Arbutus menziesii",
+  "commonName": "Pacific Madrone",
+  "global": {
+    "maxHeight": {
+      "text": "62.5'",
+      "href": "/Browse/Trees/274985/Details"
+    },
+    "maxGirth": {
+      "text": "86''",
+      "href": "/Browse/Trees/274985/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "62.5'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "62.5'",
+            "href": "/Browse/Trees/274985/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/274985/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

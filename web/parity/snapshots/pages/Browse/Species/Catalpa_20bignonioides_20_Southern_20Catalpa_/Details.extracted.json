@@ -1,0 +1,125 @@
+{
+  "botanicalName": "Catalpa bignonioides",
+  "commonName": "Southern Catalpa",
+  "global": {
+    "maxHeight": {
+      "text": "86.0'",
+      "href": "/Browse/Trees/229803/Details"
+    },
+    "maxGirth": {
+      "text": "271''",
+      "href": "/Browse/Trees/255920/Details"
+    },
+    "maxCrownSpread": {
+      "text": "85.0'",
+      "href": "/Browse/Trees/229803/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pennsylvania",
+          "71.0'",
+          "271''",
+          "75.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "71.0'",
+            "href": "/Browse/Trees/255920/Details"
+          },
+          {
+            "text": "271''",
+            "href": "/Browse/Trees/255920/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/255920/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "86.0'",
+          "208''",
+          "85.0'"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "86.0'",
+            "href": "/Browse/Trees/229803/Details"
+          },
+          {
+            "text": "208''",
+            "href": "/Browse/Trees/229803/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/229803/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "71.8'",
+          "174''",
+          "66.8'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "71.8'",
+            "href": "/Browse/Trees/313170/Details"
+          },
+          {
+            "text": "174''",
+            "href": "/Browse/Trees/313170/Details"
+          },
+          {
+            "text": "66.8'",
+            "href": "/Browse/Trees/313170/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

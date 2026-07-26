@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Magnolia kobus var. borealis",
+  "commonName": "Kobus Magnolia",
+  "global": {
+    "maxHeight": {
+      "text": "24.69 m",
+      "href": "/Browse/Trees/281870/Details"
+    },
+    "maxGirth": {
+      "text": "218 cm",
+      "href": "/Browse/Trees/166982/Details"
+    },
+    "maxCrownSpread": {
+      "text": "20.12 m",
+      "href": "/Browse/Trees/166982/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "24.69 m",
+          "195 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "24.69 m",
+            "href": "/Browse/Trees/281870/Details"
+          },
+          {
+            "text": "195 cm",
+            "href": "/Browse/Trees/281823/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "13.11 m",
+          "218 cm",
+          "20.12 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "13.11 m",
+            "href": "/Browse/Trees/166982/Details"
+          },
+          {
+            "text": "218 cm",
+            "href": "/Browse/Trees/166982/Details"
+          },
+          {
+            "text": "20.12 m",
+            "href": "/Browse/Trees/166982/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

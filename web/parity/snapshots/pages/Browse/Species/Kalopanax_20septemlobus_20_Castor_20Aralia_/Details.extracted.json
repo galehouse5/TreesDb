@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Kalopanax septemlobus",
+  "commonName": "Castor Aralia",
+  "global": {
+    "maxHeight": {
+      "text": "65.0'",
+      "href": "/Browse/Trees/133819/Details"
+    },
+    "maxGirth": {
+      "text": "167''",
+      "href": "/Browse/Trees/133819/Details"
+    },
+    "maxCrownSpread": {
+      "text": "93.0'",
+      "href": "/Browse/Trees/133819/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "63.6'",
+          "135''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "63.6'",
+            "href": "/Browse/Trees/226061/Details"
+          },
+          {
+            "text": "135''",
+            "href": "/Browse/Trees/226061/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "65.0'",
+          "167''",
+          "93.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/133819/Details"
+          },
+          {
+            "text": "167''",
+            "href": "/Browse/Trees/133819/Details"
+          },
+          {
+            "text": "93.0'",
+            "href": "/Browse/Trees/133819/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

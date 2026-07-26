@@ -1,0 +1,129 @@
+{
+  "siteId": 41016,
+  "summary": {
+    "Name": "Metacomet Trail - East Granby",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "10/20/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured 5/10/2011 - 6/4/2011"
+  },
+  "visits": [
+    {
+      "visited": "10/20/2011",
+      "visitors": "Sam Goodwin",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured 5/10/2011 - 6/4/2011"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fraxinus spp.",
+          "Ash",
+          "65.0'",
+          "200''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus spp.",
+            "href": "/Browse/Sites/41016/Species/Fraxinus%20spp.%20(Ash)/Details"
+          },
+          {
+            "text": "Ash",
+            "href": "/Browse/Sites/41016/Species/Fraxinus%20spp.%20(Ash)/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/243167/Details"
+          },
+          {
+            "text": "200''",
+            "href": "/Browse/Trees/243167/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "85.0'",
+          "175''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/41016/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/41016/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/243163/Details"
+          },
+          {
+            "text": "175''",
+            "href": "/Browse/Trees/243163/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 57.466, -072 44.290",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Land Trust",
+      "County": "Hartford"
+    },
+    "state": {
+      "text": "Connecticut (US)",
+      "href": "/Browse/States/6/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

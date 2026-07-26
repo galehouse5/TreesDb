@@ -1,0 +1,341 @@
+{
+  "siteId": 40305,
+  "summary": {
+    "Name": "Calvary Episcopal Church",
+    "RHI5": "87.28",
+    "RHI10": "43.64",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.60",
+    "RGI10": "10.63",
+    "RGI20": "(not enough data)",
+    "Trees measured": "29",
+    "Last measurement date": "02/12/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/12/2009",
+      "visitors": "James Parton",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/calvary_htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "03/18/2008",
+      "visitors": "James Parton",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/calvary_church/calvary_episcopal_church.htm",
+      "comments": "Also see: http://nativetreesociety.org/fieldtrips/north_carolina/calvary_church/calvary_episcopal_church_trees.htm"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer spp.",
+          "Maple",
+          "-",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spp.",
+            "href": "/Browse/Sites/40305/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          {
+            "text": "Maple",
+            "href": "/Browse/Sites/40305/Species/Acer%20spp.%20(Maple)/Details"
+          },
+          null,
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/235518/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "87.7'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40305/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40305/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "87.7'",
+            "href": "/Browse/Trees/235501/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/235501/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Catalpa spp.",
+          "Catalpa",
+          "-",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Catalpa spp.",
+            "href": "/Browse/Sites/40305/Species/Catalpa%20spp.%20(Catalpa)/Details"
+          },
+          {
+            "text": "Catalpa",
+            "href": "/Browse/Sites/40305/Species/Catalpa%20spp.%20(Catalpa)/Details"
+          },
+          null,
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/235502/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "-",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40305/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40305/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          null,
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/235503/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "80.7'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/40305/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/40305/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "80.7'",
+            "href": "/Browse/Trees/235500/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/235500/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia triacanthos",
+          "Honeylocust",
+          "-",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia triacanthos",
+            "href": "/Browse/Sites/40305/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          {
+            "text": "Honeylocust",
+            "href": "/Browse/Sites/40305/Species/Gleditsia%20triacanthos%20(Honeylocust)/Details"
+          },
+          null,
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/235515/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca",
+          "American Holly",
+          "62.0'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca",
+            "href": "/Browse/Sites/40305/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/40305/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "62.0'",
+            "href": "/Browse/Trees/229681/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/235514/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "-",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/40305/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/40305/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          null,
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/235517/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "-",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40305/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40305/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          null,
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/235516/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "101.8'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/40305/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/40305/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "101.8'",
+            "href": "/Browse/Trees/235499/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/235499/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 26.595, -082 30.301",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Henderson"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,292 @@
+{
+  "botanicalName": "Abies balsamea var. balsamea",
+  "commonName": "Balsam Fir",
+  "global": {
+    "maxHeight": {
+      "text": "108.7'",
+      "href": "/Browse/Trees/228334/Details"
+    },
+    "maxGirth": {
+      "text": "115''",
+      "href": "/Browse/Trees/169009/Details"
+    },
+    "maxCrownSpread": {
+      "text": "38.2'",
+      "href": "/Browse/Trees/169009/Details"
+    }
+  },
+  "state": {
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "91.8'",
+        "href": "/Browse/Trees/169009/Details"
+      },
+      "maxGirth": {
+        "text": "115''",
+        "href": "/Browse/Trees/169009/Details"
+      },
+      "maxCrownSpread": {
+        "text": "38.2'",
+        "href": "/Browse/Trees/169009/Details"
+      }
+    }
+  },
+  "site": {
+    "site": {
+      "text": "Bear Meadows Natural Area",
+      "href": "/Browse/Sites/39185/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - State Forest",
+      "County": "Centre"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "84.8'",
+        "href": "/Browse/Trees/168960/Details"
+      },
+      "maxGirth": {
+        "text": "44''",
+        "href": "/Browse/Trees/168960/Details"
+      }
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "108.7'",
+          "68''",
+          "17.0'"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "108.7'",
+            "href": "/Browse/Trees/228334/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/228334/Details"
+          },
+          {
+            "text": "17.0'",
+            "href": "/Browse/Trees/228334/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "91.8'",
+          "115''",
+          "38.2'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "91.8'",
+            "href": "/Browse/Trees/169009/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/169009/Details"
+          },
+          {
+            "text": "38.2'",
+            "href": "/Browse/Trees/169009/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedSitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Bear Meadows Natural Area",
+          "84.8'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bear Meadows Natural Area",
+            "href": "/Browse/Sites/39185/Details"
+          },
+          {
+            "text": "84.8'",
+            "href": "/Browse/Trees/168960/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/168960/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gettysburg National Military Park",
+          "91.8'",
+          "115''",
+          "38.2'"
+        ],
+        "links": [
+          {
+            "text": "Gettysburg National Military Park",
+            "href": "/Browse/Sites/39186/Details"
+          },
+          {
+            "text": "91.8'",
+            "href": "/Browse/Trees/169009/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/169009/Details"
+          },
+          {
+            "text": "38.2'",
+            "href": "/Browse/Trees/169009/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedTreesGrid": {
+    "columns": [
+      {
+        "header": "Height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "84.8'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "84.8'",
+            "href": "/Browse/Trees/168960/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/168960/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "77.8'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "77.8'",
+            "href": "/Browse/Trees/168959/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/168959/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "73.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "73.5'",
+            "href": "/Browse/Trees/168958/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

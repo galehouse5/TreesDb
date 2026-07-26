@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Salix scouleriana",
+  "commonName": "Scouler's Willow",
+  "global": {
+    "maxHeight": {
+      "text": "35.2'",
+      "href": "/Browse/Trees/75014/Details"
+    },
+    "maxGirth": {
+      "text": "25''",
+      "href": "/Browse/Trees/75014/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "British Columbia",
+          "35.2'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "British Columbia",
+            "href": "/Browse/States/50/Details"
+          },
+          {
+            "text": "35.2'",
+            "href": "/Browse/Trees/75014/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/75014/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Yukon",
+          "32.1'",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yukon",
+            "href": "/Browse/States/61/Details"
+          },
+          {
+            "text": "32.1'",
+            "href": "/Browse/Trees/75006/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/75006/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

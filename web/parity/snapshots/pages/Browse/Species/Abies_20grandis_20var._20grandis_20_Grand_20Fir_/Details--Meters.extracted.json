@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Abies grandis var. grandis",
+  "commonName": "Grand Fir",
+  "global": {
+    "maxHeight": {
+      "text": "68.09 m",
+      "href": "/Browse/Trees/296866/Details"
+    },
+    "maxGirth": {
+      "text": "684 cm",
+      "href": "/Browse/Trees/296866/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Washington",
+          "68.09 m",
+          "684 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "68.09 m",
+            "href": "/Browse/Trees/296866/Details"
+          },
+          {
+            "text": "684 cm",
+            "href": "/Browse/Trees/296866/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

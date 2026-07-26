@@ -1,0 +1,176 @@
+{
+  "siteId": 38884,
+  "summary": {
+    "Name": "Chestnut Hill Memorial Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "11/23/2009",
+    "Ownership contact": "2613 Sackett Avenue, Cuyahoga Falls",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "11/23/2009",
+      "visitors": "Steve Galehouse",
+      "tripReportUrl": "groups.google.com/group/entstrees/browse_thread/thread/6406a60608c8c88f",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "84.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/Sites/38884/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/38884/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/160819/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "84.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/38884/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/38884/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/160821/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea pumila",
+          "Chinkapin",
+          "39.6'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea pumila",
+            "href": "/Browse/Sites/38884/Species/Castanea%20pumila%20(Chinkapin)/Details"
+          },
+          {
+            "text": "Chinkapin",
+            "href": "/Browse/Sites/38884/Species/Castanea%20pumila%20(Chinkapin)/Details"
+          },
+          {
+            "text": "39.6'",
+            "href": "/Browse/Trees/160822/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/160822/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedrus libani",
+          "Cedar Of Lebanon",
+          "63.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus libani",
+            "href": "/Browse/Sites/38884/Species/Cedrus%20libani%20(Cedar%20Of%20Lebanon)/Details"
+          },
+          {
+            "text": "Cedar Of Lebanon",
+            "href": "/Browse/Sites/38884/Species/Cedrus%20libani%20(Cedar%20Of%20Lebanon)/Details"
+          },
+          {
+            "text": "63.0'",
+            "href": "/Browse/Trees/160820/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 07.904, -081 30.935",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Summit"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

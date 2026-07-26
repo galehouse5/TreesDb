@@ -1,0 +1,319 @@
+{
+  "siteId": 40921,
+  "summary": {
+    "Name": "Ontario Single Tree Sites",
+    "RHI5": "35.120",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.639",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "-",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/40921/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/40921/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          null,
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/240296/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "34.73 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/40921/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/40921/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "34.73 yd",
+            "href": "/Browse/Trees/240290/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "34.33 yd",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/40921/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/40921/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "34.33 yd",
+            "href": "/Browse/Trees/240292/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/240292/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea mariana",
+          "Black Spruce",
+          "27.90 yd",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana",
+            "href": "/Browse/Sites/40921/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/Sites/40921/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "27.90 yd",
+            "href": "/Browse/Trees/240287/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/240287/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus banksiana",
+          "Jack Pine",
+          "28.87 yd",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus banksiana",
+            "href": "/Browse/Sites/40921/Species/Pinus%20banksiana%20(Jack%20Pine)/Details"
+          },
+          {
+            "text": "Jack Pine",
+            "href": "/Browse/Sites/40921/Species/Pinus%20banksiana%20(Jack%20Pine)/Details"
+          },
+          {
+            "text": "28.87 yd",
+            "href": "/Browse/Trees/240286/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/240286/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "47.00 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40921/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40921/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "47.00 yd",
+            "href": "/Browse/Trees/240293/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "23.20 yd",
+          "194''",
+          "40.93 yd"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40921/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40921/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "23.20 yd",
+            "href": "/Browse/Trees/240289/Details"
+          },
+          {
+            "text": "194''",
+            "href": "/Browse/Trees/240291/Details"
+          },
+          {
+            "text": "40.93 yd",
+            "href": "/Browse/Trees/240289/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Thuja occidentalis",
+          "Arborvitae",
+          "24.33 yd",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja occidentalis",
+            "href": "/Browse/Sites/40921/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "Arborvitae",
+            "href": "/Browse/Sites/40921/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+          },
+          {
+            "text": "24.33 yd",
+            "href": "/Browse/Trees/240294/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/240294/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus thomasii",
+          "Rock Elm",
+          "30.67 yd",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus thomasii",
+            "href": "/Browse/Sites/40921/Species/Ulmus%20thomasii%20(Rock%20Elm)/Details"
+          },
+          {
+            "text": "Rock Elm",
+            "href": "/Browse/Sites/40921/Species/Ulmus%20thomasii%20(Rock%20Elm)/Details"
+          },
+          {
+            "text": "30.67 yd",
+            "href": "/Browse/Trees/240295/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/240295/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 39.194, -079 22.991",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public/Private",
+      "County": "Toronto Division"
+    },
+    "state": {
+      "text": "Ontario (CA)",
+      "href": "/Browse/States/57/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

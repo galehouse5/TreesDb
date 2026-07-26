@@ -1,0 +1,398 @@
+{
+  "siteId": 39723,
+  "summary": {
+    "Name": "Quincy Hill Park",
+    "RHI5": "28.737",
+    "RHI10": "26.438",
+    "RHI20": "22.365",
+    "RGI5": "3.344",
+    "RGI10": "2.719",
+    "RGI20": "2.045",
+    "Trees measured": "35",
+    "Last measurement date": "07/01/2023",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/01/2023",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/11/2022",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "08/25/2019",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/03/2013",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer platanoides",
+          "Norway Maple",
+          "20.30 m",
+          "222 cm",
+          "22.25 m"
+        ],
+        "links": [
+          {
+            "text": "Acer platanoides",
+            "href": "/Browse/Sites/39723/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "Norway Maple",
+            "href": "/Browse/Sites/39723/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "20.30 m",
+            "href": "/Browse/Trees/274318/Details"
+          },
+          {
+            "text": "222 cm",
+            "href": "/Browse/Trees/274318/Details"
+          },
+          {
+            "text": "22.25 m",
+            "href": "/Browse/Trees/274318/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "27.25 m",
+          "310 cm",
+          "10.36 m"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/39723/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39723/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "27.25 m",
+            "href": "/Browse/Trees/298190/Details"
+          },
+          {
+            "text": "310 cm",
+            "href": "/Browse/Trees/298190/Details"
+          },
+          {
+            "text": "10.36 m",
+            "href": "/Browse/Trees/298190/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "19.48 m",
+          "118 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/39723/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/39723/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "19.48 m",
+            "href": "/Browse/Trees/298193/Details"
+          },
+          {
+            "text": "118 cm",
+            "href": "/Browse/Trees/298193/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "29.54 m",
+          "225 cm",
+          "20.12 m"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/39723/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/39723/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "29.54 m",
+            "href": "/Browse/Trees/274321/Details"
+          },
+          {
+            "text": "225 cm",
+            "href": "/Browse/Trees/274321/Details"
+          },
+          {
+            "text": "20.12 m",
+            "href": "/Browse/Trees/274321/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "22.34 m",
+          "163 cm",
+          "11.89 m"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/39723/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/39723/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "22.34 m",
+            "href": "/Browse/Trees/298203/Details"
+          },
+          {
+            "text": "163 cm",
+            "href": "/Browse/Trees/298203/Details"
+          },
+          {
+            "text": "11.89 m",
+            "href": "/Browse/Trees/298203/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "27.34 m",
+          "348 cm",
+          "23.77 m"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/39723/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/39723/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "27.34 m",
+            "href": "/Browse/Trees/298175/Details"
+          },
+          {
+            "text": "348 cm",
+            "href": "/Browse/Trees/298107/Details"
+          },
+          {
+            "text": "23.77 m",
+            "href": "/Browse/Trees/298107/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Picea abies",
+          "Norway Spruce",
+          "28.10 m",
+          "199 cm",
+          "10.97 m"
+        ],
+        "links": [
+          {
+            "text": "Picea abies",
+            "href": "/Browse/Sites/39723/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "Norway Spruce",
+            "href": "/Browse/Sites/39723/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+          },
+          {
+            "text": "28.10 m",
+            "href": "/Browse/Trees/298192/Details"
+          },
+          {
+            "text": "199 cm",
+            "href": "/Browse/Trees/298192/Details"
+          },
+          {
+            "text": "10.97 m",
+            "href": "/Browse/Trees/298192/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "21.24 m",
+          "148 cm",
+          "11.89 m"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/39723/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/39723/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "21.24 m",
+            "href": "/Browse/Trees/196183/Details"
+          },
+          {
+            "text": "148 cm",
+            "href": "/Browse/Trees/196183/Details"
+          },
+          {
+            "text": "11.89 m",
+            "href": "/Browse/Trees/196184/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Prunus avium",
+          "Sweet Cherry",
+          "19.75 m",
+          "212 cm",
+          "17.83 m"
+        ],
+        "links": [
+          {
+            "text": "Prunus avium",
+            "href": "/Browse/Sites/39723/Species/Prunus%20avium%20(Sweet%20Cherry)/Details"
+          },
+          {
+            "text": "Sweet Cherry",
+            "href": "/Browse/Sites/39723/Species/Prunus%20avium%20(Sweet%20Cherry)/Details"
+          },
+          {
+            "text": "19.75 m",
+            "href": "/Browse/Trees/196162/Details"
+          },
+          {
+            "text": "212 cm",
+            "href": "/Browse/Trees/196162/Details"
+          },
+          {
+            "text": "17.83 m",
+            "href": "/Browse/Trees/196162/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "28.38 m",
+          "338 cm",
+          "25.60 m"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/39723/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/39723/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "28.38 m",
+            "href": "/Browse/Trees/274319/Details"
+          },
+          {
+            "text": "338 cm",
+            "href": "/Browse/Trees/274319/Details"
+          },
+          {
+            "text": "25.60 m",
+            "href": "/Browse/Trees/274320/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 22 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 16.050, -081 33.152",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Wood"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

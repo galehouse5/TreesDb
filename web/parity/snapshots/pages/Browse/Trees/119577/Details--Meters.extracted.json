@@ -1,0 +1,70 @@
+{
+  "treeId": 119577,
+  "botanicalName": {
+    "text": "Pinus strobus",
+    "href": "/Browse/Sites/32605/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Eastern White Pine",
+    "href": "/Browse/Sites/32605/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+  },
+  "details": {
+    "Height": "40.26 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "277 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "109.39",
+    "ENTSPTS": "1202.11",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.28",
+    "Champion points (abbreviated)": "241.30",
+    "Diameter": "88 cm",
+    "Conical volume": "8.22 m³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 11/22/2002",
+      "summary": {
+        "Height": "40.26 m",
+        "Girth": "277 cm"
+      },
+      "details": {
+        "Botanical name": "Pinus strobus",
+        "Common name": "Eastern White Pine",
+        "Height": "40.26 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "277 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "109.39",
+        "ENTSPTS": "1202.11",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.28",
+        "Champion points (abbreviated)": "241.30",
+        "Diameter": "88 cm",
+        "Conical volume": "8.22 m³",
+        "General comments": "(none)"
+      },
+      "measurers": "Dale Luthringer"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 49.344, -079 16.553",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Anders Run Natural Area",
+      "href": "/Browse/Sites/32605/Details"
+    },
+    "rows": {
+      "Ownership type": "State - public",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

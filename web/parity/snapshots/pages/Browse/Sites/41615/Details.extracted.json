@@ -1,0 +1,98 @@
+{
+  "siteId": 41615,
+  "summary": {
+    "Name": "Sequoia National Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "08/14/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "1,193,315 acres with 328,000 acres designated as a National Monument. Located in Tulare, Kern and Fresno counties."
+  },
+  "visits": [
+    {
+      "visited": "08/14/2011",
+      "visitors": "Michael Taylor and Mike Hanuschik",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "1,193,315 acres with 328,000 acres designated as a National Monument. Located in Tulare, Kern and Fresno counties."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Sequoiadendron giganteum",
+          "Giant Sequoia",
+          "-",
+          "999''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sequoiadendron giganteum",
+            "href": "/Browse/Sites/41615/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+          },
+          {
+            "text": "Giant Sequoia",
+            "href": "/Browse/Sites/41615/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+          },
+          null,
+          {
+            "text": "999''",
+            "href": "/Browse/Trees/268678/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 01.423, -118 29.906",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Tulare"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

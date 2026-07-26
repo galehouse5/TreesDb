@@ -1,0 +1,98 @@
+{
+  "siteId": 39320,
+  "summary": {
+    "Name": "Biolife",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "05/11/2016",
+    "Ownership contact": "(private)",
+    "General comments": "This tree was measured less than two years ago, but as of the Summer of 2015 was removed for an access road to a new development.In its time, it was one of the oldest and grandest trees in the Twin Cities (though not overly handsome by most people's standards.)"
+  },
+  "visits": [
+    {
+      "visited": "05/11/2016",
+      "visitors": "Riley Smith",
+      "tripReportUrl": "(none)",
+      "comments": "This tree was measured less than two years ago, but as of the Summer of 2015 was removed for an access road to a new development.In its time, it was one of the oldest and grandest trees in the Twin Cities (though not overly handsome by most people's standards.)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Quercus macrocarpa",
+          "Bur Oak",
+          "-",
+          "181''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa",
+            "href": "/Browse/Sites/39320/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39320/Species/Quercus%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/172268/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 07.711, -093 29.797",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Hennepin"
+    },
+    "state": {
+      "text": "Minnesota (US)",
+      "href": "/Browse/States/21/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

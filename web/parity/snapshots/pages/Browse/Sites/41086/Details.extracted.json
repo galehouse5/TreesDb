@@ -1,0 +1,213 @@
+{
+  "siteId": 41086,
+  "summary": {
+    "Name": "Hampton- Beecher Hills Park",
+    "RHI5": "122.50",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.28",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "07/30/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "200 Acres"
+  },
+  "visits": [
+    {
+      "visited": "07/30/2010",
+      "visitors": "Eli Dickinson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "200 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "141.1'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41086/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41086/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "141.1'",
+            "href": "/Browse/Trees/249156/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/249156/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "155.4'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41086/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41086/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "155.4'",
+            "href": "/Browse/Trees/249160/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/249160/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia tripetala",
+          "Umbrella-Tree",
+          "73.7'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia tripetala",
+            "href": "/Browse/Sites/41086/Species/Magnolia%20tripetala%20(Umbrella-Tree)/Details"
+          },
+          {
+            "text": "Umbrella-Tree",
+            "href": "/Browse/Sites/41086/Species/Magnolia%20tripetala%20(Umbrella-Tree)/Details"
+          },
+          {
+            "text": "73.7'",
+            "href": "/Browse/Trees/249157/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/249157/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "137.2'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/41086/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41086/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "137.2'",
+            "href": "/Browse/Trees/249159/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/249159/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus stellata",
+          "Post Oak",
+          "105.1'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus stellata",
+            "href": "/Browse/Sites/41086/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "Post Oak",
+            "href": "/Browse/Sites/41086/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "105.1'",
+            "href": "/Browse/Trees/249158/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/249158/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 44.341, -084 27.835",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Fulton"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

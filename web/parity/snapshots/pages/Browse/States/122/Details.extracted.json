@@ -1,0 +1,396 @@
+{
+  "stateId": 122,
+  "summary": {
+    "Name": "Puntarenas",
+    "Code": "PU",
+    "RHI5": "114.42",
+    "RHI10": "95.67",
+    "RHI20": "(not enough data)",
+    "RGI5": "5.42",
+    "RGI10": "3.43",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "01/24/2016"
+  },
+  "location": {
+    "Coordinates": "09 11.500, -084 00.000",
+    "Country": "Costa Rica"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alchorpea latifolia",
+          "Achiotillo",
+          "32.6'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alchorpea latifolia",
+            "href": "/Browse/States/122/Species/Alchorpea%20latifolia%20(Achiotillo)/Details"
+          },
+          {
+            "text": "Achiotillo",
+            "href": "/Browse/States/122/Species/Alchorpea%20latifolia%20(Achiotillo)/Details"
+          },
+          {
+            "text": "32.6'",
+            "href": "/Browse/Trees/234122/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/234122/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Anacardium excelsum",
+          "Espave",
+          "160.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Anacardium excelsum",
+            "href": "/Browse/States/122/Species/Anacardium%20excelsum%20(Espave)/Details"
+          },
+          {
+            "text": "Espave",
+            "href": "/Browse/States/122/Species/Anacardium%20excelsum%20(Espave)/Details"
+          },
+          {
+            "text": "160.0'",
+            "href": "/Browse/Trees/213099/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Blschmiedaia brenesii",
+          "Aquacatillo",
+          "69.3'",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Blschmiedaia brenesii",
+            "href": "/Browse/States/122/Species/Blschmiedaia%20brenesii%20(Aquacatillo)/Details"
+          },
+          {
+            "text": "Aquacatillo",
+            "href": "/Browse/States/122/Species/Blschmiedaia%20brenesii%20(Aquacatillo)/Details"
+          },
+          {
+            "text": "69.3'",
+            "href": "/Browse/Trees/234126/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/234126/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cecropia obtusifolia",
+          "Guarumo",
+          "82.1'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cecropia obtusifolia",
+            "href": "/Browse/States/122/Species/Cecropia%20obtusifolia%20(Guarumo)/Details"
+          },
+          {
+            "text": "Guarumo",
+            "href": "/Browse/States/122/Species/Cecropia%20obtusifolia%20(Guarumo)/Details"
+          },
+          {
+            "text": "82.1'",
+            "href": "/Browse/Trees/221883/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/221882/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedrela tonduzii",
+          "Sweet Cedar",
+          "118.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrela tonduzii",
+            "href": "/Browse/States/122/Species/Cedrela%20tonduzii%20(Sweet%20Cedar)/Details"
+          },
+          {
+            "text": "Sweet Cedar",
+            "href": "/Browse/States/122/Species/Cedrela%20tonduzii%20(Sweet%20Cedar)/Details"
+          },
+          {
+            "text": "118.9'",
+            "href": "/Browse/Trees/234130/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus disciflora",
+          "Mata Hombro",
+          "73.5'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus disciflora",
+            "href": "/Browse/States/122/Species/Cornus%20disciflora%20(Mata%20Hombro)/Details"
+          },
+          {
+            "text": "Mata Hombro",
+            "href": "/Browse/States/122/Species/Cornus%20disciflora%20(Mata%20Hombro)/Details"
+          },
+          {
+            "text": "73.5'",
+            "href": "/Browse/Trees/234125/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/234125/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hesperocyparis luistanica",
+          "Mexican Cypress",
+          "79.2'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hesperocyparis luistanica",
+            "href": "/Browse/States/122/Species/Hesperocyparis%20luistanica%20(Mexican%20Cypress)/Details"
+          },
+          {
+            "text": "Mexican Cypress",
+            "href": "/Browse/States/122/Species/Hesperocyparis%20luistanica%20(Mexican%20Cypress)/Details"
+          },
+          {
+            "text": "79.2'",
+            "href": "/Browse/Trees/234129/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/234129/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hieroyma 0blonga",
+          "Trompito",
+          "98.8'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hieroyma 0blonga",
+            "href": "/Browse/States/122/Species/Hieroyma%200blonga%20(Trompito)/Details"
+          },
+          {
+            "text": "Trompito",
+            "href": "/Browse/States/122/Species/Hieroyma%200blonga%20(Trompito)/Details"
+          },
+          {
+            "text": "98.8'",
+            "href": "/Browse/Trees/234131/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/234131/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Laguncularia racemosa",
+          "White Mangrove",
+          "80.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Laguncularia racemosa",
+            "href": "/Browse/States/122/Species/Laguncularia%20racemosa%20(White%20Mangrove)/Details"
+          },
+          {
+            "text": "White Mangrove",
+            "href": "/Browse/States/122/Species/Laguncularia%20racemosa%20(White%20Mangrove)/Details"
+          },
+          {
+            "text": "80.5'",
+            "href": "/Browse/Trees/213100/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus pseudostrobus",
+          "False White Pine",
+          "101.9'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus pseudostrobus",
+            "href": "/Browse/States/122/Species/Pinus%20pseudostrobus%20(False%20White%20Pine)/Details"
+          },
+          {
+            "text": "False White Pine",
+            "href": "/Browse/States/122/Species/Pinus%20pseudostrobus%20(False%20White%20Pine)/Details"
+          },
+          {
+            "text": "101.9'",
+            "href": "/Browse/Trees/234127/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/234128/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carara National Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carara National Park",
+            "href": "/Browse/Sites/39994/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Santa Elena Area",
+          "96.18",
+          "72.34",
+          "5.42",
+          "3.43"
+        ],
+        "links": [
+          {
+            "text": "Santa Elena Area",
+            "href": "/Browse/Sites/39971/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

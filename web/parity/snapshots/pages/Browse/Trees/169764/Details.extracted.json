@@ -1,0 +1,70 @@
+{
+  "treeId": 169764,
+  "botanicalName": {
+    "text": "Ginkgo biloba",
+    "href": "/Browse/Sites/39228/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+  },
+  "commonName": {
+    "text": "Maidenhair Tree",
+    "href": "/Browse/Sites/39228/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+  },
+  "details": {
+    "Height": "79.3'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "161''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "142.75",
+    "ENTSPTS": "1063.94",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.21",
+    "Champion points (abbreviated)": "240.30",
+    "Diameter": "51''",
+    "Conical volume": "378.6 ft³",
+    "General comments": "Tree is on Dunn's Lawn"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 06/10/2010",
+      "summary": {
+        "Height": "79.3'",
+        "Girth": "161''"
+      },
+      "details": {
+        "Botanical name": "Ginkgo biloba",
+        "Common name": "Maidenhair Tree",
+        "Height": "79.3'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "161''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "142.75",
+        "ENTSPTS": "1063.94",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.21",
+        "Champion points (abbreviated)": "240.30",
+        "Diameter": "51''",
+        "Conical volume": "378.6 ft³",
+        "General comments": "Tree is on Dunn's Lawn"
+      },
+      "measurers": "John Eichholz"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "39 09.964, -086 31.504",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Dunn's Woods",
+      "href": "/Browse/Sites/39228/Details"
+    },
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Monroe"
+    },
+    "state": {
+      "text": "Indiana (US)",
+      "href": "/Browse/States/13/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

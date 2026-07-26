@@ -1,0 +1,356 @@
+{
+  "siteId": 41172,
+  "summary": {
+    "Name": "Codman-North Conservation Area",
+    "RHI5": "38.760",
+    "RHI10": "35.903",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.517",
+    "RGI10": "2.656",
+    "RGI20": "(not enough data)",
+    "Trees measured": "48",
+    "Last measurement date": "09/23/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "16 Acres"
+  },
+  "visits": [
+    {
+      "visited": "09/23/2017",
+      "visitors": "Jared Lockwood",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "16 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "33.80 yd",
+          "62''",
+          "1.61 yd"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41172/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41172/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "33.80 yd",
+            "href": "/Browse/Trees/250925/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/250923/Details"
+          },
+          {
+            "text": "1.61 yd",
+            "href": "/Browse/Trees/250925/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "35.73 yd",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41172/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41172/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "35.73 yd",
+            "href": "/Browse/Trees/250927/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/250927/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "35.97 yd",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41172/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41172/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "35.97 yd",
+            "href": "/Browse/Trees/250922/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/250922/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "33.10 yd",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41172/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41172/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "33.10 yd",
+            "href": "/Browse/Trees/250920/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/250920/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex verticillata",
+          "Common Winterberry",
+          "7.23 yd",
+          "-",
+          "0.19 yd"
+        ],
+        "links": [
+          {
+            "text": "Ilex verticillata",
+            "href": "/Browse/Sites/41172/Species/Ilex%20verticillata%20(Common%20Winterberry)/Details"
+          },
+          {
+            "text": "Common Winterberry",
+            "href": "/Browse/Sites/41172/Species/Ilex%20verticillata%20(Common%20Winterberry)/Details"
+          },
+          {
+            "text": "7.23 yd",
+            "href": "/Browse/Trees/250929/Details"
+          },
+          null,
+          {
+            "text": "0.19 yd",
+            "href": "/Browse/Trees/250929/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Juglans cinerea",
+          "Butternut",
+          "32.10 yd",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans cinerea",
+            "href": "/Browse/Sites/41172/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "Butternut",
+            "href": "/Browse/Sites/41172/Species/Juglans%20cinerea%20(Butternut)/Details"
+          },
+          {
+            "text": "32.10 yd",
+            "href": "/Browse/Trees/250928/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/250928/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "42.77 yd",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41172/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41172/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "42.77 yd",
+            "href": "/Browse/Trees/250905/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/250905/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "32.80 yd",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/41172/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/41172/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "32.80 yd",
+            "href": "/Browse/Trees/250915/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/250913/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "37.47 yd",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/41172/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41172/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "37.47 yd",
+            "href": "/Browse/Trees/250912/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/250912/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "29.33 yd",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/41172/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/41172/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "29.33 yd",
+            "href": "/Browse/Trees/250918/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/250916/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 25.218, -071 19.906",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Middlesex"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

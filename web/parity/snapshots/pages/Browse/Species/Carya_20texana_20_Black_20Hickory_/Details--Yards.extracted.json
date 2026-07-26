@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Carya texana",
+  "commonName": "Black Hickory",
+  "global": {
+    "maxHeight": {
+      "text": "32.37 yd",
+      "href": "/Browse/Trees/226044/Details"
+    },
+    "maxGirth": {
+      "text": "77''",
+      "href": "/Browse/Trees/226044/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "32.37 yd",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "32.37 yd",
+            "href": "/Browse/Trees/226044/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/226044/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

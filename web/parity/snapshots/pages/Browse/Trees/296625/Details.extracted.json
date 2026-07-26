@@ -1,0 +1,70 @@
+{
+  "treeId": 296625,
+  "botanicalName": {
+    "text": "Pseudotsuga menziesii var. menziesii",
+    "href": "/Browse/Sites/42071/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "commonName": {
+    "text": "Douglas-Fir",
+    "href": "/Browse/Sites/42071/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "details": {
+    "Height": "276.3'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "219''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "918.24",
+    "ENTSPTS": "5036.95",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.28",
+    "Champion points (abbreviated)": "495.06",
+    "Diameter": "70''",
+    "Conical volume": "2435.7 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 06/15/2023",
+      "summary": {
+        "Height": "276.3'",
+        "Girth": "219''"
+      },
+      "details": {
+        "Botanical name": "Pseudotsuga menziesii var. menziesii",
+        "Common name": "Douglas-Fir",
+        "Height": "276.3'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "219''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "918.24",
+        "ENTSPTS": "5036.95",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.28",
+        "Champion points (abbreviated)": "495.06",
+        "Diameter": "70''",
+        "Conical volume": "2435.7 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Elijah Whitcomb"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "46 10.491, -122 16.488",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Goat Marsh RNA",
+      "href": "/Browse/Sites/42071/Details"
+    },
+    "rows": {
+      "Ownership type": "Public (Forest Service)",
+      "County": "Cowlitz"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

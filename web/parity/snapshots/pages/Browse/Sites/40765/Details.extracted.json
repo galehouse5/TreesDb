@@ -1,0 +1,185 @@
+{
+  "siteId": 40765,
+  "summary": {
+    "Name": "Bullen Creek",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "11/18/2006",
+    "Ownership contact": "2680 Natchez Trace Parkway Tupelo, Mississippi",
+    "General comments": "Parkway stretches from Nashville, Tennessee to Natchez, Mississippi. 250+ miles miles are in Mississippi"
+  },
+  "visits": [
+    {
+      "visited": "11/18/2006",
+      "visitors": "Don Bragg",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mississippi/bullen/bullen_creek.htm",
+      "comments": "Parkway stretches from Nashville, Tennessee to Natchez, Mississippi. 250+ miles miles are in Mississippi"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "137.0'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40765/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40765/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "137.0'",
+            "href": "/Browse/Trees/235998/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/235998/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "133.0'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/40765/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/40765/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/235997/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/235997/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus nigra",
+          "Water Oak",
+          "118.0'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus nigra",
+            "href": "/Browse/Sites/40765/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+          },
+          {
+            "text": "Water Oak",
+            "href": "/Browse/Sites/40765/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+          },
+          {
+            "text": "118.0'",
+            "href": "/Browse/Trees/235999/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/235999/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus pagoda",
+          "Cherrybark Oak",
+          "117.0'",
+          "188''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus pagoda",
+            "href": "/Browse/Sites/40765/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "Cherrybark Oak",
+            "href": "/Browse/Sites/40765/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "117.0'",
+            "href": "/Browse/Trees/236000/Details"
+          },
+          {
+            "text": "188''",
+            "href": "/Browse/Trees/236001/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "31 43.423, -091 10.483",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Jefferson"
+    },
+    "state": {
+      "text": "Mississippi (US)",
+      "href": "/Browse/States/23/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

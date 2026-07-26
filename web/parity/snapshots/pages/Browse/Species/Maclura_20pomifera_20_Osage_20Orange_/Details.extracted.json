@@ -1,0 +1,251 @@
+{
+  "botanicalName": "Maclura pomifera",
+  "commonName": "Osage Orange",
+  "global": {
+    "maxHeight": {
+      "text": "87.5'",
+      "href": "/Browse/Trees/18647/Details"
+    },
+    "maxGirth": {
+      "text": "222''",
+      "href": "/Browse/Trees/168443/Details"
+    },
+    "maxCrownSpread": {
+      "text": "65.7'",
+      "href": "/Browse/Trees/167613/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "57.3'",
+          "33''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "57.3'",
+            "href": "/Browse/Trees/241639/Details"
+          },
+          {
+            "text": "33''",
+            "href": "/Browse/Trees/241639/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "68.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "68.9'",
+            "href": "/Browse/Trees/75455/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "60.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "60.4'",
+            "href": "/Browse/Trees/243220/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "75.2'",
+          "192''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "75.2'",
+            "href": "/Browse/Trees/76445/Details"
+          },
+          {
+            "text": "192''",
+            "href": "/Browse/Trees/76444/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "59.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "59.0'",
+            "href": "/Browse/Trees/260008/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "69.3'",
+          "222''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "69.3'",
+            "href": "/Browse/Trees/312361/Details"
+          },
+          {
+            "text": "222''",
+            "href": "/Browse/Trees/168443/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "87.5'",
+          "125''",
+          "65.7'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "87.5'",
+            "href": "/Browse/Trees/18647/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/167613/Details"
+          },
+          {
+            "text": "65.7'",
+            "href": "/Browse/Trees/167613/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "49.2'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "49.2'",
+            "href": "/Browse/Trees/315864/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/315864/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "72.2'",
+          "167''",
+          "55.5'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "72.2'",
+            "href": "/Browse/Trees/313144/Details"
+          },
+          {
+            "text": "167''",
+            "href": "/Browse/Trees/312066/Details"
+          },
+          {
+            "text": "55.5'",
+            "href": "/Browse/Trees/312066/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

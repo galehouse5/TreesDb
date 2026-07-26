@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Quercus cerris",
+  "commonName": "European Turkey Oak",
+  "global": {
+    "maxHeight": {
+      "text": "94.0'",
+      "href": "/Browse/Trees/281846/Details"
+    },
+    "maxGirth": {
+      "text": "136''",
+      "href": "/Browse/Trees/281846/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "94.0'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "94.0'",
+            "href": "/Browse/Trees/281846/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/281846/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vienna",
+          "54.1'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vienna",
+            "href": "/Browse/States/254/Details"
+          },
+          {
+            "text": "54.1'",
+            "href": "/Browse/Trees/286418/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/286418/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "45.6'",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "45.6'",
+            "href": "/Browse/Trees/222948/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/222948/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

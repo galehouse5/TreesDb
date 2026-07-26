@@ -1,0 +1,374 @@
+{
+  "siteId": 40330,
+  "summary": {
+    "Name": "Elders Grove, Paul Smiths, NY",
+    "RHI5": "107.92",
+    "RHI10": "95.67",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.42",
+    "RGI10": "3.71",
+    "RGI20": "(not enough data)",
+    "Trees measured": "62",
+    "Last measurement date": "07/04/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/04/2016",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "07/04/2016",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "ents-bbs.org/viewtopic.php?f=105&t=4359&sid=c908254de7b41a1baee6e37162e8896b&start=10#p38133",
+      "comments": "(none)"
+    },
+    {
+      "visited": "06/16/2015",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "02/07/2007",
+      "visitors": "Harold Stoner",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/new_york/pine_orchard2.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "05/31/2006",
+      "visitors": "Harold Stoner",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/new_york/old_white_pine.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/19/2005",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/new_york/paul_smith.htm",
+      "comments": "All measurements were made from White Pine Road."
+    },
+    {
+      "visited": "10/12/2003",
+      "visitors": "Harold Stoner",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/adirondack_survey.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "97.5'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/Sites/40330/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/40330/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "97.5'",
+            "href": "/Browse/Trees/258188/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/258188/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies balsamea var. balsamea",
+          "Balsam Fir",
+          "97.5'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea var. balsamea",
+            "href": "/Browse/Sites/40330/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/Sites/40330/Species/Abies%20balsamea%20var.%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "97.5'",
+            "href": "/Browse/Trees/228314/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/228314/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "83.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40330/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40330/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "83.7'",
+            "href": "/Browse/Trees/257551/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "81.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40330/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40330/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "81.4'",
+            "href": "/Browse/Trees/257552/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "79.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/40330/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/40330/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "79.4'",
+            "href": "/Browse/Trees/257553/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "59.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40330/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40330/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "59.5'",
+            "href": "/Browse/Trees/257554/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "83.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/40330/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/40330/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "83.2'",
+            "href": "/Browse/Trees/257032/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea mariana",
+          "Black Spruce",
+          "92.1'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana",
+            "href": "/Browse/Sites/40330/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/Sites/40330/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "92.1'",
+            "href": "/Browse/Trees/265932/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/265932/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "92.1'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/40330/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/40330/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "92.1'",
+            "href": "/Browse/Trees/228312/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/228312/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "160.4'",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40330/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40330/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "160.4'",
+            "href": "/Browse/Trees/257547/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/257021/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 26.292, -074 14.736",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,168 @@
+{
+  "botanicalName": "Castanea mollissima",
+  "commonName": "Chinese Chestnut",
+  "global": {
+    "maxHeight": {
+      "text": "71.2'",
+      "href": "/Browse/Trees/283757/Details"
+    },
+    "maxGirth": {
+      "text": "163''",
+      "href": "/Browse/Trees/224537/Details"
+    },
+    "maxCrownSpread": {
+      "text": "74.1'",
+      "href": "/Browse/Trees/313260/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "45.8'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "45.8'",
+            "href": "/Browse/Trees/226089/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/226089/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "36.9'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "36.9'",
+            "href": "/Browse/Trees/96901/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/96901/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "48.8'",
+          "157''",
+          "69.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "48.8'",
+            "href": "/Browse/Trees/132872/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/132872/Details"
+          },
+          {
+            "text": "69.0'",
+            "href": "/Browse/Trees/132872/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "52.8'",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "52.8'",
+            "href": "/Browse/Trees/224537/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/224537/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "71.2'",
+          "105''",
+          "74.1'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "71.2'",
+            "href": "/Browse/Trees/283757/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/313260/Details"
+          },
+          {
+            "text": "74.1'",
+            "href": "/Browse/Trees/313260/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

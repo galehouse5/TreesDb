@@ -1,0 +1,347 @@
+{
+  "siteId": 1644,
+  "summary": {
+    "Name": "Whitewater River",
+    "RHI5": "143.10",
+    "RHI10": "132.95",
+    "RHI20": "112.37",
+    "RGI5": "7.75",
+    "RGI10": "4.78",
+    "RGI20": "2.39",
+    "Trees measured": "47",
+    "Last measurement date": "02/25/2012",
+    "Ownership contact": "Duke Power",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/25/2012",
+      "visitors": "Brian Beduhn",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "08/24/2005",
+      "visitors": "Jess Riddle and Doug Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/whitewater_river_white_pine.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "01/29/2004",
+      "visitors": "Jess Riddle and Michael Davie",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/whitewater_river.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "107.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/1644/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/1644/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/40132/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "107.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/1644/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/1644/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "107.5'",
+            "href": "/Browse/Trees/40139/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "125.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/1644/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/1644/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "125.9'",
+            "href": "/Browse/Trees/40133/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "130.1'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/1644/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/1644/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "130.1'",
+            "href": "/Browse/Trees/236113/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/236113/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea pumila",
+          "Chinkapin",
+          "30.2'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea pumila",
+            "href": "/Browse/Sites/1644/Species/Castanea%20pumila%20(Chinkapin)/Details"
+          },
+          {
+            "text": "Chinkapin",
+            "href": "/Browse/Sites/1644/Species/Castanea%20pumila%20(Chinkapin)/Details"
+          },
+          {
+            "text": "30.2'",
+            "href": "/Browse/Trees/236125/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/236125/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "104.5'",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/1644/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/1644/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "104.5'",
+            "href": "/Browse/Trees/236123/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/236123/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "119.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/1644/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/1644/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "119.2'",
+            "href": "/Browse/Trees/40138/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "133.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/1644/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/1644/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/40144/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "120.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/1644/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/1644/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "120.8'",
+            "href": "/Browse/Trees/40143/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oxydendrum arboreum",
+          "Sourwood",
+          "89.7'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oxydendrum arboreum",
+            "href": "/Browse/Sites/1644/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "Sourwood",
+            "href": "/Browse/Sites/1644/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "89.7'",
+            "href": "/Browse/Trees/236122/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/236121/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 20 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 01.412, -083 00.218",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Oconee"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

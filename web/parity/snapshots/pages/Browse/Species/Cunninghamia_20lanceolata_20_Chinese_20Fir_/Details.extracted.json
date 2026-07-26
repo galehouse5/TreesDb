@@ -1,0 +1,110 @@
+{
+  "botanicalName": "Cunninghamia lanceolata",
+  "commonName": "Chinese Fir",
+  "global": {
+    "maxHeight": {
+      "text": "81.9'",
+      "href": "/Browse/Trees/39768/Details"
+    },
+    "maxGirth": {
+      "text": "144''",
+      "href": "/Browse/Trees/253896/Details"
+    },
+    "maxCrownSpread": {
+      "text": "57.0'",
+      "href": "/Browse/Trees/253896/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Florida",
+          "-",
+          "144''",
+          "57.0'"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          null,
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/253896/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/253896/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "81.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "81.9'",
+            "href": "/Browse/Trees/39768/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "62.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "62.0'",
+            "href": "/Browse/Trees/112987/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,554 @@
+{
+  "stateId": 43,
+  "summary": {
+    "Name": "Virginia",
+    "Code": "VA",
+    "RHI5": "156.70",
+    "RHI10": "150.23",
+    "RHI20": "144.27",
+    "RGI5": "22.14",
+    "RGI10": "19.61",
+    "RGI20": "17.25",
+    "Trees measured": "336",
+    "Last measurement date": "12/28/2023"
+  },
+  "location": {
+    "Coordinates": "38 00.204, -079 25.256",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "80.6'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/States/43/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/43/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "80.6'",
+            "href": "/Browse/Trees/224555/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/224554/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies pinsapo",
+          "Spanish Fir",
+          "71.7'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies pinsapo",
+            "href": "/Browse/States/43/Species/Abies%20pinsapo%20(Spanish%20Fir)/Details"
+          },
+          {
+            "text": "Spanish Fir",
+            "href": "/Browse/States/43/Species/Abies%20pinsapo%20(Spanish%20Fir)/Details"
+          },
+          {
+            "text": "71.7'",
+            "href": "/Browse/Trees/224552/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/224552/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "87.3'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/43/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/43/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "87.3'",
+            "href": "/Browse/Trees/168557/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/168558/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "110.7'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/States/43/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/States/43/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "110.7'",
+            "href": "/Browse/Trees/168545/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/168546/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "114.5'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/43/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/43/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "114.5'",
+            "href": "/Browse/Trees/168543/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/168544/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "110.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/States/43/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/43/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "110.4'",
+            "href": "/Browse/Trees/314371/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "94.8'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/43/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/43/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "94.8'",
+            "href": "/Browse/Trees/168555/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/168555/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "115.7'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/States/43/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/43/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "115.7'",
+            "href": "/Browse/Trees/168541/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/168542/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "100.4'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/States/43/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/States/43/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "100.4'",
+            "href": "/Browse/Trees/168554/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/168554/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Asimina triloba",
+          "Pawpaw",
+          "67.4'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Asimina triloba",
+            "href": "/Browse/States/43/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "Pawpaw",
+            "href": "/Browse/States/43/Species/Asimina%20triloba%20(Pawpaw)/Details"
+          },
+          {
+            "text": "67.4'",
+            "href": "/Browse/Trees/49606/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/168564/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 81 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Caledon State Park",
+          "147.96",
+          "140.04",
+          "14.52",
+          "12.81"
+        ],
+        "links": [
+          {
+            "text": "Caledon State Park",
+            "href": "/Browse/Sites/38037/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carter Hall",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carter Hall",
+            "href": "/Browse/Sites/4818/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carter's Grove Plantation",
+          "135.44",
+          "122.02",
+          "15.67",
+          "13.45"
+        ],
+        "links": [
+          {
+            "text": "Carter's Grove Plantation",
+            "href": "/Browse/Sites/4737/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hollywood Cemetery",
+          "0.00",
+          "-",
+          "15.52",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hollywood Cemetery",
+            "href": "/Browse/Sites/38045/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hollywood Cemetery",
+          "114.88",
+          "103.88",
+          "18.55",
+          "16.28"
+        ],
+        "links": [
+          {
+            "text": "Hollywood Cemetery",
+            "href": "/Browse/Sites/39759/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Holmes Run",
+          "107.80",
+          "-",
+          "11.01",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Holmes Run",
+            "href": "/Browse/Sites/4788/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maymont Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maymont Park",
+            "href": "/Browse/Sites/39832/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montpelier - Landmark Forest",
+          "144.54",
+          "135.07",
+          "15.49",
+          "12.14"
+        ],
+        "links": [
+          {
+            "text": "Montpelier - Landmark Forest",
+            "href": "/Browse/Sites/4795/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montpelier - Plantation House Trees",
+          "97.86",
+          "89.15",
+          "15.10",
+          "12.84"
+        ],
+        "links": [
+          {
+            "text": "Montpelier - Plantation House Trees",
+            "href": "/Browse/Sites/40170/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montpelier Estate Landmark Forest",
+          "147.06",
+          "134.70",
+          "9.75",
+          "7.28"
+        ],
+        "links": [
+          {
+            "text": "Montpelier Estate Landmark Forest",
+            "href": "/Browse/Sites/39771/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

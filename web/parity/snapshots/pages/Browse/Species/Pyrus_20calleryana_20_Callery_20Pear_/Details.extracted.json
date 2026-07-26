@@ -1,0 +1,119 @@
+{
+  "botanicalName": "Pyrus calleryana",
+  "commonName": "Callery Pear",
+  "global": {
+    "maxHeight": {
+      "text": "45.0'",
+      "href": "/Browse/Trees/281877/Details"
+    },
+    "maxGirth": {
+      "text": "120''",
+      "href": "/Browse/Trees/128437/Details"
+    },
+    "maxCrownSpread": {
+      "text": "51.5'",
+      "href": "/Browse/Trees/272990/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "40.7'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "40.7'",
+            "href": "/Browse/Trees/128437/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/128437/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "45.0'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/281877/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/281877/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "44.2'",
+          "57''",
+          "51.5'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "44.2'",
+            "href": "/Browse/Trees/206794/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/271870/Details"
+          },
+          {
+            "text": "51.5'",
+            "href": "/Browse/Trees/272990/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

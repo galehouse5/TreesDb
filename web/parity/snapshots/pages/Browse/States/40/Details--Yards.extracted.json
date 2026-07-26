@@ -1,0 +1,557 @@
+{
+  "stateId": 40,
+  "summary": {
+    "Name": "Tennessee",
+    "Code": "TN",
+    "RHI5": "57.213",
+    "RHI10": "55.430",
+    "RHI20": "53.575",
+    "RGI5": "7.483",
+    "RGI10": "6.997",
+    "RGI20": "6.473",
+    "Trees measured": "3151",
+    "Last measurement date": "05/16/2026"
+  },
+  "location": {
+    "Coordinates": "35 49.833, -085 58.716",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer barbatum",
+          "Southern Sugar Maple",
+          "36.33 yd",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer barbatum",
+            "href": "/Browse/States/40/Species/Acer%20barbatum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/States/40/Species/Acer%20barbatum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "36.33 yd",
+            "href": "/Browse/Trees/321868/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/321817/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "33.77 yd",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/40/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/40/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "33.77 yd",
+            "href": "/Browse/Trees/228974/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/228968/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "31.27 yd",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/States/40/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/40/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "31.27 yd",
+            "href": "/Browse/Trees/323302/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/315825/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "27.63 yd",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/States/40/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/States/40/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "27.63 yd",
+            "href": "/Browse/Trees/299289/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/299289/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "16.93 yd",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/States/40/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/States/40/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "16.93 yd",
+            "href": "/Browse/Trees/323515/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/257713/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "47.67 yd",
+          "262''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/40/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/40/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "47.67 yd",
+            "href": "/Browse/Trees/204870/Details"
+          },
+          {
+            "text": "262''",
+            "href": "/Browse/Trees/229958/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "51.40 yd",
+          "165''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/States/40/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/40/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "51.40 yd",
+            "href": "/Browse/Trees/322130/Details"
+          },
+          {
+            "text": "165''",
+            "href": "/Browse/Trees/322098/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "41.60 yd",
+          "214''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/States/40/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/States/40/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "41.60 yd",
+            "href": "/Browse/Trees/322732/Details"
+          },
+          {
+            "text": "214''",
+            "href": "/Browse/Trees/229800/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "47.17 yd",
+          "172''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/States/40/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/40/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "47.17 yd",
+            "href": "/Browse/Trees/229216/Details"
+          },
+          {
+            "text": "172''",
+            "href": "/Browse/Trees/229961/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "47.40 yd",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/States/40/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/States/40/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "47.40 yd",
+            "href": "/Browse/Trees/320145/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/323450/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 137 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abrams Creek",
+          "139.52",
+          "69.76",
+          "13.40",
+          "11.03"
+        ],
+        "links": [
+          {
+            "text": "Abrams Creek",
+            "href": "/Browse/Sites/40462/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Albright Grove",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Albright Grove",
+            "href": "/Browse/Sites/40419/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bald Top Ridge",
+          "142.90",
+          "-",
+          "12.62",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bald Top Ridge",
+            "href": "/Browse/Sites/40408/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bearwaller Gap Trail",
+          "127.08",
+          "117.14",
+          "8.36",
+          "6.37"
+        ],
+        "links": [
+          {
+            "text": "Bearwaller Gap Trail",
+            "href": "/Browse/Sites/42391/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bible Creek",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bible Creek",
+            "href": "/Browse/Sites/40371/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big Creek",
+          "143.58",
+          "139.33",
+          "8.64",
+          "7.98"
+        ],
+        "links": [
+          {
+            "text": "Big Creek",
+            "href": "/Browse/Sites/42345/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big Cypress Tree State Park",
+          "131.04",
+          "-",
+          "0.00",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Big Cypress Tree State Park",
+            "href": "/Browse/Sites/42121/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big Hill Pond State Park",
+          "119.80",
+          "114.54",
+          "7.56",
+          "6.79"
+        ],
+        "links": [
+          {
+            "text": "Big Hill Pond State Park",
+            "href": "/Browse/Sites/42250/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Big South Fork",
+          "150.12",
+          "144.20",
+          "10.66",
+          "9.55"
+        ],
+        "links": [
+          {
+            "text": "Big South Fork",
+            "href": "/Browse/Sites/42394/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bledsoe Creek State Park",
+          "116.56",
+          "110.69",
+          "9.20",
+          "7.64"
+        ],
+        "links": [
+          {
+            "text": "Bledsoe Creek State Park",
+            "href": "/Browse/Sites/41910/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 83 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

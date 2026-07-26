@@ -1,0 +1,274 @@
+{
+  "botanicalName": "Acer saccharinum",
+  "commonName": "Silver Maple",
+  "global": {
+    "maxHeight": {
+      "text": "128.9'",
+      "href": "/Browse/Trees/139188/Details"
+    },
+    "maxGirth": {
+      "text": "287''",
+      "href": "/Browse/Trees/313268/Details"
+    },
+    "maxCrownSpread": {
+      "text": "120.1'",
+      "href": "/Browse/Trees/15964/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "99.3'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "99.3'",
+            "href": "/Browse/Trees/142913/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/142913/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "103.0'",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/128211/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/174800/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "111.0'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/19246/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/19246/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "128.4'",
+          "158''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "128.4'",
+            "href": "/Browse/Trees/297747/Details"
+          },
+          {
+            "text": "158''",
+            "href": "/Browse/Trees/76442/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "124.9'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "124.9'",
+            "href": "/Browse/Trees/232022/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/232022/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Michigan",
+          "108.9'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Michigan",
+            "href": "/Browse/States/20/Details"
+          },
+          {
+            "text": "108.9'",
+            "href": "/Browse/Trees/104975/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/104975/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Minnesota",
+          "-",
+          "212''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Minnesota",
+            "href": "/Browse/States/21/Details"
+          },
+          null,
+          {
+            "text": "212''",
+            "href": "/Browse/Trees/239871/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "118.5'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "118.5'",
+            "href": "/Browse/Trees/283655/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/283654/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nebraska",
+          "93.3'",
+          "112''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nebraska",
+            "href": "/Browse/States/27/Details"
+          },
+          {
+            "text": "93.3'",
+            "href": "/Browse/Trees/220650/Details"
+          },
+          {
+            "text": "112''",
+            "href": "/Browse/Trees/220651/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "119.3'",
+          "204''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "119.3'",
+            "href": "/Browse/Trees/221039/Details"
+          },
+          {
+            "text": "204''",
+            "href": "/Browse/Trees/226069/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

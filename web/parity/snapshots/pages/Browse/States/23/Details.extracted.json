@@ -1,0 +1,484 @@
+{
+  "stateId": 23,
+  "summary": {
+    "Name": "Mississippi",
+    "Code": "MS",
+    "RHI5": "151.24",
+    "RHI10": "144.47",
+    "RHI20": "137.16",
+    "RGI5": "23.58",
+    "RGI10": "19.93",
+    "RGI20": "16.03",
+    "Trees measured": "263",
+    "Last measurement date": "01/07/2025"
+  },
+  "location": {
+    "Coordinates": "32 34.315, -089 52.584",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "125.2'",
+          "155''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/23/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/23/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "125.2'",
+            "href": "/Browse/Trees/251049/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/251102/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana",
+          "American Hornbeam",
+          "45.0'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana",
+            "href": "/Browse/States/23/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/States/23/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/251191/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/251191/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "130.5'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/States/23/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/States/23/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "130.5'",
+            "href": "/Browse/Trees/251152/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/251152/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "132.9'",
+          "199''",
+          "64.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/States/23/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/States/23/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "132.9'",
+            "href": "/Browse/Trees/251050/Details"
+          },
+          {
+            "text": "199''",
+            "href": "/Browse/Trees/251166/Details"
+          },
+          {
+            "text": "64.0'",
+            "href": "/Browse/Trees/251166/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "121.0'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/States/23/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/States/23/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "121.0'",
+            "href": "/Browse/Trees/320711/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/251109/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya laciniosa",
+          "Shellbark Hickory",
+          "115.5'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya laciniosa",
+            "href": "/Browse/States/23/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shellbark Hickory",
+            "href": "/Browse/States/23/Species/Carya%20laciniosa%20(Shellbark%20Hickory)/Details"
+          },
+          {
+            "text": "115.5'",
+            "href": "/Browse/Trees/251398/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/251398/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "112.5'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/States/23/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/States/23/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "112.5'",
+            "href": "/Browse/Trees/251419/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/251419/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya spp.",
+          "Hickory",
+          "114.0'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya spp.",
+            "href": "/Browse/States/23/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "Hickory",
+            "href": "/Browse/States/23/Species/Carya%20spp.%20(Hickory)/Details"
+          },
+          {
+            "text": "114.0'",
+            "href": "/Browse/Trees/251624/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/251625/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "135.0'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/States/23/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/States/23/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "135.0'",
+            "href": "/Browse/Trees/251645/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/251394/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus drummondii",
+          "Roughleaf Dogwood",
+          "41.8'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus drummondii",
+            "href": "/Browse/States/23/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "Roughleaf Dogwood",
+            "href": "/Browse/States/23/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "41.8'",
+            "href": "/Browse/Trees/251065/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/251065/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 45 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Bullen Creek",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bullen Creek",
+            "href": "/Browse/Sites/40765/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delta National Forest",
+          "132.70",
+          "123.42",
+          "16.83",
+          "13.03"
+        ],
+        "links": [
+          {
+            "text": "Delta National Forest",
+            "href": "/Browse/Sites/41179/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi Single Tree Sites",
+          "76.02",
+          "-",
+          "8.98",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mississippi Single Tree Sites",
+            "href": "/Browse/Sites/41262/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Noxubee National Wildlife Reserve",
+          "145.14",
+          "141.17",
+          "17.53",
+          "15.51"
+        ],
+        "links": [
+          {
+            "text": "Noxubee National Wildlife Reserve",
+            "href": "/Browse/Sites/41183/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sky Lake Wildlife Management Area",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sky Lake Wildlife Management Area",
+            "href": "/Browse/Sites/40761/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vicksburg National Military Park",
+          "144.16",
+          "-",
+          "10.02",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vicksburg National Military Park",
+            "href": "/Browse/Sites/41185/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

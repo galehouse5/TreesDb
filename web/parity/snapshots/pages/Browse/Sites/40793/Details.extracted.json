@@ -1,0 +1,350 @@
+{
+  "siteId": 40793,
+  "summary": {
+    "Name": "Turkey Creek",
+    "RHI5": "134.68",
+    "RHI10": "130.06",
+    "RHI20": "118.45",
+    "RGI5": "13.48",
+    "RGI10": "11.59",
+    "RGI20": "9.58",
+    "Trees measured": "49",
+    "Last measurement date": "07/06/2008",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees measured were close to Modocd"
+  },
+  "visits": [
+    {
+      "visited": "07/06/2008",
+      "visitors": "James Parton and Earl Parton",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/sumter/sumter_national_forest_sc.htm",
+      "comments": "Trees measured were close to Modocd"
+    },
+    {
+      "visited": "03/05/2005",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/turkey_creek_trail.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "71.2'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/Sites/40793/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/40793/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "71.2'",
+            "href": "/Browse/Trees/236867/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/236867/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "121.1'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40793/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40793/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "121.1'",
+            "href": "/Browse/Trees/236870/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/236870/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "-",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40793/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40793/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          null,
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/236871/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis laevigata var. laevigata",
+          "Sugarberry",
+          "109.2'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. laevigata",
+            "href": "/Browse/Sites/40793/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "Sugarberry",
+            "href": "/Browse/Sites/40793/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+          },
+          {
+            "text": "109.2'",
+            "href": "/Browse/Trees/236895/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/236895/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "93.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40793/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40793/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "93.7'",
+            "href": "/Browse/Trees/236866/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "106.3'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/40793/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/40793/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "106.3'",
+            "href": "/Browse/Trees/236862/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/236862/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "106.0'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/40793/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/40793/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "106.0'",
+            "href": "/Browse/Trees/236902/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/236902/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "-",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/Sites/40793/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/40793/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          null,
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/236869/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "132.9'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/40793/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/40793/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "132.9'",
+            "href": "/Browse/Trees/236897/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/236897/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "136.1'",
+          "149''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40793/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40793/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "136.1'",
+            "href": "/Browse/Trees/236901/Details"
+          },
+          {
+            "text": "149''",
+            "href": "/Browse/Trees/236900/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 24 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 47.758, -082 08.366",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Edgefield"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

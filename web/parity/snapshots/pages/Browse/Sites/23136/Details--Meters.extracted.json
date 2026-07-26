@@ -1,0 +1,356 @@
+{
+  "siteId": 23136,
+  "summary": {
+    "Name": "Ryerson Station State Park",
+    "RHI5": "39.898",
+    "RHI10": "37.673",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.398",
+    "RGI10": "2.379",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "03/27/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "1.164 acres"
+  },
+  "visits": [
+    {
+      "visited": "03/27/2011",
+      "visitors": "Steve Halow",
+      "tripReportUrl": "(none)",
+      "comments": "1.164 acres"
+    },
+    {
+      "visited": "06/13/2007",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/ryerson_station_state_park.htm",
+      "comments": "1,164 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "35.66 m",
+          "221 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/23136/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/23136/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "35.66 m",
+            "href": "/Browse/Trees/167622/Details"
+          },
+          {
+            "text": "221 cm",
+            "href": "/Browse/Trees/167622/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "36.27 m",
+          "282 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/23136/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/23136/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "36.27 m",
+            "href": "/Browse/Trees/167620/Details"
+          },
+          {
+            "text": "282 cm",
+            "href": "/Browse/Trees/167620/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "42.98 m",
+          "246 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/23136/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/23136/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "42.98 m",
+            "href": "/Browse/Trees/167617/Details"
+          },
+          {
+            "text": "246 cm",
+            "href": "/Browse/Trees/167617/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maclura pomifera",
+          "Osage Orange",
+          "22.13 m",
+          "317 cm",
+          "20.03 m"
+        ],
+        "links": [
+          {
+            "text": "Maclura pomifera",
+            "href": "/Browse/Sites/23136/Species/Maclura%20pomifera%20(Osage%20Orange)/Details"
+          },
+          {
+            "text": "Osage Orange",
+            "href": "/Browse/Sites/23136/Species/Maclura%20pomifera%20(Osage%20Orange)/Details"
+          },
+          {
+            "text": "22.13 m",
+            "href": "/Browse/Trees/167613/Details"
+          },
+          {
+            "text": "317 cm",
+            "href": "/Browse/Trees/167613/Details"
+          },
+          {
+            "text": "20.03 m",
+            "href": "/Browse/Trees/167613/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "45.87 m",
+          "312 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/23136/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/23136/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "45.87 m",
+            "href": "/Browse/Trees/167614/Details"
+          },
+          {
+            "text": "312 cm",
+            "href": "/Browse/Trees/167614/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus deltoides",
+          "Eastern Cottonwood",
+          "36.73 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides",
+            "href": "/Browse/Sites/23136/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "Eastern Cottonwood",
+            "href": "/Browse/Sites/23136/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+          },
+          {
+            "text": "36.73 m",
+            "href": "/Browse/Trees/167619/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "35.66 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/23136/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/23136/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "35.66 m",
+            "href": "/Browse/Trees/167623/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "37.64 m",
+          "503 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/23136/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/23136/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "37.64 m",
+            "href": "/Browse/Trees/167618/Details"
+          },
+          {
+            "text": "503 cm",
+            "href": "/Browse/Trees/167611/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus coccinea var. coccinea",
+          "Scarlet Oak",
+          "34.75 m",
+          "213 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus coccinea var. coccinea",
+            "href": "/Browse/Sites/23136/Species/Quercus%20coccinea%20var.%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "Scarlet Oak",
+            "href": "/Browse/Sites/23136/Species/Quercus%20coccinea%20var.%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "34.75 m",
+            "href": "/Browse/Trees/167625/Details"
+          },
+          {
+            "text": "213 cm",
+            "href": "/Browse/Trees/167625/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "34.90 m",
+          "284 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/23136/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/23136/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "34.90 m",
+            "href": "/Browse/Trees/167624/Details"
+          },
+          {
+            "text": "284 cm",
+            "href": "/Browse/Trees/167624/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 52.929, -080 27.024",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Publc - State",
+      "County": "Greene"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

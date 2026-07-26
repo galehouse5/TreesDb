@@ -1,0 +1,113 @@
+{
+  "botanicalName": "Pseudotsuga menziesii",
+  "commonName": "Douglas-Fir",
+  "global": {
+    "maxHeight": {
+      "text": "103.0'",
+      "href": "/Browse/Trees/313201/Details"
+    },
+    "maxGirth": {
+      "text": "124''",
+      "href": "/Browse/Trees/313201/Details"
+    },
+    "maxCrownSpread": {
+      "text": "49.0'",
+      "href": "/Browse/Trees/313201/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "91.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "91.5'",
+            "href": "/Browse/Trees/258156/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "72.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "72.9'",
+            "href": "/Browse/Trees/5892/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "103.0'",
+          "124''",
+          "49.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/313201/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/313201/Details"
+          },
+          {
+            "text": "49.0'",
+            "href": "/Browse/Trees/313201/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

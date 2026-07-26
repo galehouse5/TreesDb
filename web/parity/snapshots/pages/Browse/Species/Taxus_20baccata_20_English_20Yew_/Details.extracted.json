@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Taxus baccata",
+  "commonName": "English Yew",
+  "global": {
+    "maxHeight": {
+      "text": "54.2'",
+      "href": "/Browse/Trees/226066/Details"
+    },
+    "maxGirth": {
+      "text": "132''",
+      "href": "/Browse/Trees/171032/Details"
+    },
+    "maxCrownSpread": {
+      "text": "48.0'",
+      "href": "/Browse/Trees/171032/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Andalusia",
+          "42.1'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Andalusia",
+            "href": "/Browse/States/124/Details"
+          },
+          {
+            "text": "42.1'",
+            "href": "/Browse/Trees/274941/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/274941/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Budapest",
+          "29.8'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Budapest",
+            "href": "/Browse/States/207/Details"
+          },
+          {
+            "text": "29.8'",
+            "href": "/Browse/Trees/283218/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/283218/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "53.8'",
+          "132''",
+          "48.0'"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          {
+            "text": "53.8'",
+            "href": "/Browse/Trees/171032/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/171032/Details"
+          },
+          {
+            "text": "48.0'",
+            "href": "/Browse/Trees/171032/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "54.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "54.2'",
+            "href": "/Browse/Trees/226066/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Bohemian Region",
+          "31.2'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Bohemian Region",
+            "href": "/Browse/States/258/Details"
+          },
+          {
+            "text": "31.2'",
+            "href": "/Browse/Trees/284685/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/284685/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "43.4'",
+          "68''",
+          "30.5'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "43.4'",
+            "href": "/Browse/Trees/203605/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/203605/Details"
+          },
+          {
+            "text": "30.5'",
+            "href": "/Browse/Trees/273099/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

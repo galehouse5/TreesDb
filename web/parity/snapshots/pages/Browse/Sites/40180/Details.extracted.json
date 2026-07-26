@@ -1,0 +1,356 @@
+{
+  "siteId": 40180,
+  "summary": {
+    "Name": "Haverford College Arboretum",
+    "RHI5": "76.26",
+    "RHI10": "65.13",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.88",
+    "RGI10": "8.19",
+    "RGI20": "(not enough data)",
+    "Trees measured": "17",
+    "Last measurement date": "03/02/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/02/2007",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/haverford_college_arboretum.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies chinsiensis",
+          "Shensi Fir",
+          "70.0'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies chinsiensis",
+            "href": "/Browse/Sites/40180/Species/Abies%20chinsiensis%20(Shensi%20Fir)/Details"
+          },
+          {
+            "text": "Shensi Fir",
+            "href": "/Browse/Sites/40180/Species/Abies%20chinsiensis%20(Shensi%20Fir)/Details"
+          },
+          {
+            "text": "70.0'",
+            "href": "/Browse/Trees/225108/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/225108/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies fargesii",
+          "Farges Fir",
+          "57.0'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies fargesii",
+            "href": "/Browse/Sites/40180/Species/Abies%20fargesii%20(Farges%20Fir)/Details"
+          },
+          {
+            "text": "Farges Fir",
+            "href": "/Browse/Sites/40180/Species/Abies%20fargesii%20(Farges%20Fir)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/225106/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/225106/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies firma",
+          "Momi Fir",
+          "70.8'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies firma",
+            "href": "/Browse/Sites/40180/Species/Abies%20firma%20(Momi%20Fir)/Details"
+          },
+          {
+            "text": "Momi Fir",
+            "href": "/Browse/Sites/40180/Species/Abies%20firma%20(Momi%20Fir)/Details"
+          },
+          {
+            "text": "70.8'",
+            "href": "/Browse/Trees/225107/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/225107/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies holophylla",
+          "Manchurian Fir",
+          "24.0'",
+          "24''",
+          "25.2'"
+        ],
+        "links": [
+          {
+            "text": "Abies holophylla",
+            "href": "/Browse/Sites/40180/Species/Abies%20holophylla%20(Manchurian%20Fir)/Details"
+          },
+          {
+            "text": "Manchurian Fir",
+            "href": "/Browse/Sites/40180/Species/Abies%20holophylla%20(Manchurian%20Fir)/Details"
+          },
+          {
+            "text": "24.0'",
+            "href": "/Browse/Trees/225109/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/225109/Details"
+          },
+          {
+            "text": "25.2'",
+            "href": "/Browse/Trees/225109/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Hamamelis virginiana",
+          "American Witchhazel",
+          "19.3'",
+          "26''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hamamelis virginiana",
+            "href": "/Browse/Sites/40180/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "American Witchhazel",
+            "href": "/Browse/Sites/40180/Species/Hamamelis%20virginiana%20(American%20Witchhazel)/Details"
+          },
+          {
+            "text": "19.3'",
+            "href": "/Browse/Trees/225120/Details"
+          },
+          {
+            "text": "26''",
+            "href": "/Browse/Trees/225120/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea asperata",
+          "Dragon Spruce",
+          "45.0'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea asperata",
+            "href": "/Browse/Sites/40180/Species/Picea%20asperata%20(Dragon%20Spruce)/Details"
+          },
+          {
+            "text": "Dragon Spruce",
+            "href": "/Browse/Sites/40180/Species/Picea%20asperata%20(Dragon%20Spruce)/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/225112/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/225112/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea mariana",
+          "Black Spruce",
+          "37.0'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana",
+            "href": "/Browse/Sites/40180/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/Sites/40180/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "37.0'",
+            "href": "/Browse/Trees/225114/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/225114/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea obovata",
+          "Siberian Spruce",
+          "57.0'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea obovata",
+            "href": "/Browse/Sites/40180/Species/Picea%20obovata%20(Siberian%20Spruce)/Details"
+          },
+          {
+            "text": "Siberian Spruce",
+            "href": "/Browse/Sites/40180/Species/Picea%20obovata%20(Siberian%20Spruce)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/225116/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/225116/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea sitchensis",
+          "Sitka Spruce",
+          "38.0'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea sitchensis",
+            "href": "/Browse/Sites/40180/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "Sitka Spruce",
+            "href": "/Browse/Sites/40180/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "38.0'",
+            "href": "/Browse/Trees/225113/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/225113/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea torano",
+          "Tiger-Tail Spruce",
+          "49.0'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea torano",
+            "href": "/Browse/Sites/40180/Species/Picea%20torano%20(Tiger-Tail%20Spruce)/Details"
+          },
+          {
+            "text": "Tiger-Tail Spruce",
+            "href": "/Browse/Sites/40180/Species/Picea%20torano%20(Tiger-Tail%20Spruce)/Details"
+          },
+          {
+            "text": "49.0'",
+            "href": "/Browse/Trees/225115/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/225115/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 17 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 00.627, -075 18.393",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Delaware"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

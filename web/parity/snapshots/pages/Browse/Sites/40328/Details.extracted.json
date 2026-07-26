@@ -1,0 +1,356 @@
+{
+  "siteId": 40328,
+  "summary": {
+    "Name": "Savage Gulf",
+    "RHI5": "158.74",
+    "RHI10": "153.42",
+    "RHI20": "143.38",
+    "RGI5": "14.38",
+    "RGI10": "12.32",
+    "RGI20": "10.17",
+    "Trees measured": "100",
+    "Last measurement date": "03/28/2006",
+    "Ownership contact": "South Cumberland State Park 11745 US 41 Monteage, TN",
+    "General comments": "30,800 Acres in 10 units 15,590 aces in the Savage Gulf Unit"
+  },
+  "visits": [
+    {
+      "visited": "03/28/2006",
+      "visitors": "Jess Riddle and Michael Davie",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/tennessee/savage2/savage_gulf_redux.htm",
+      "comments": "30,800 Acres in 10 units 15,590 aces in the Savage Gulf Unit"
+    },
+    {
+      "visited": "07/01/2005",
+      "visitors": "Jess Riddle and Michael Davie",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/tennessee/savage_gulf/savage_gulf05.htm",
+      "comments": "Savage Gulf includes 15,590 acres and is one unit of ten in the South Cumberland State Park system which contains a total of 30,800 Acres."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "122.9'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40328/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40328/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "122.9'",
+            "href": "/Browse/Trees/228466/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/228466/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "136.0'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40328/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40328/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "136.0'",
+            "href": "/Browse/Trees/228469/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/228468/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "129.9'",
+          "169''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/40328/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/40328/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "129.9'",
+            "href": "/Browse/Trees/228429/Details"
+          },
+          {
+            "text": "169''",
+            "href": "/Browse/Trees/228354/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "138.4'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40328/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40328/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "138.4'",
+            "href": "/Browse/Trees/228441/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/228441/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "162.3'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40328/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40328/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "162.3'",
+            "href": "/Browse/Trees/228358/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/228447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "154.4'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40328/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40328/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "154.4'",
+            "href": "/Browse/Trees/228458/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/228452/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "147.5'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40328/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40328/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "147.5'",
+            "href": "/Browse/Trees/228357/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/228357/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cladrastis kentukea",
+          "Kentucky Yellowwood",
+          "77.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cladrastis kentukea",
+            "href": "/Browse/Sites/40328/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "Kentucky Yellowwood",
+            "href": "/Browse/Sites/40328/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "77.2'",
+            "href": "/Browse/Trees/228486/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "143.2'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40328/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40328/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "143.2'",
+            "href": "/Browse/Trees/228426/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/228425/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "143.9'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/40328/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/40328/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "143.9'",
+            "href": "/Browse/Trees/228412/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/228409/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 26 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 26.121, -085 32.561",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Grundy"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,353 @@
+{
+  "siteId": 2726,
+  "summary": {
+    "Name": "Patuxent Wildlife Research Center",
+    "RHI5": "123.22",
+    "RHI10": "112.09",
+    "RHI20": "(not enough data)",
+    "RGI5": "14.32",
+    "RGI10": "11.05",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "08/23/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/23/2011",
+      "visitors": "Darian Copiz",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carpinus caroliniana",
+          "American Hornbeam",
+          "56.5'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana",
+            "href": "/Browse/Sites/2726/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/2726/Species/Carpinus%20caroliniana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "56.5'",
+            "href": "/Browse/Trees/45415/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/45414/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "110.8'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/2726/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/2726/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "110.8'",
+            "href": "/Browse/Trees/45416/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/45416/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "114.8'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/2726/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/2726/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "114.8'",
+            "href": "/Browse/Trees/45417/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/45417/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "126.4'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/2726/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/2726/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "126.4'",
+            "href": "/Browse/Trees/45419/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/45418/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "137.1'",
+          "180''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/2726/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/2726/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "137.1'",
+            "href": "/Browse/Trees/45420/Details"
+          },
+          {
+            "text": "180''",
+            "href": "/Browse/Trees/45421/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia virginiana",
+          "Sweetbay",
+          "55.7'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia virginiana",
+            "href": "/Browse/Sites/2726/Species/Magnolia%20virginiana%20(Sweetbay)/Details"
+          },
+          {
+            "text": "Sweetbay",
+            "href": "/Browse/Sites/2726/Species/Magnolia%20virginiana%20(Sweetbay)/Details"
+          },
+          {
+            "text": "55.7'",
+            "href": "/Browse/Trees/45424/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/45422/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus virginiana",
+          "Virginia Pine",
+          "112.3'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus virginiana",
+            "href": "/Browse/Sites/2726/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "Virginia Pine",
+            "href": "/Browse/Sites/2726/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "112.3'",
+            "href": "/Browse/Trees/45425/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/45425/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "119.0'",
+          "245''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/2726/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/2726/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "119.0'",
+            "href": "/Browse/Trees/45426/Details"
+          },
+          {
+            "text": "245''",
+            "href": "/Browse/Trees/45426/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lyrata",
+          "Overcup Oak",
+          "113.6'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lyrata",
+            "href": "/Browse/Sites/2726/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "Overcup Oak",
+            "href": "/Browse/Sites/2726/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "113.6'",
+            "href": "/Browse/Trees/45427/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/45427/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus michauxii",
+          "Swamp Chestnut Oak",
+          "118.8'",
+          "164''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus michauxii",
+            "href": "/Browse/Sites/2726/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Swamp Chestnut Oak",
+            "href": "/Browse/Sites/2726/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "118.8'",
+            "href": "/Browse/Trees/45429/Details"
+          },
+          {
+            "text": "164''",
+            "href": "/Browse/Trees/45429/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 01.587, -076 47.940",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Federal, Fish & Wildlife",
+      "County": "Prince George's"
+    },
+    "state": {
+      "text": "Maryland (US)",
+      "href": "/Browse/States/18/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

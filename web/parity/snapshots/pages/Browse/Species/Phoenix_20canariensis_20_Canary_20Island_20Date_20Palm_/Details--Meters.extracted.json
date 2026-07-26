@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Phoenix canariensis",
+  "commonName": "Canary Island Date Palm",
+  "global": {
+    "maxHeight": {
+      "text": "14.90 m",
+      "href": "/Browse/Trees/274857/Details"
+    },
+    "maxGirth": {
+      "text": "188 cm",
+      "href": "/Browse/Trees/253863/Details"
+    },
+    "maxCrownSpread": {
+      "text": "6.55 m",
+      "href": "/Browse/Trees/253863/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "14.90 m",
+          "126 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "14.90 m",
+            "href": "/Browse/Trees/274857/Details"
+          },
+          {
+            "text": "126 cm",
+            "href": "/Browse/Trees/274857/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "11.83 m",
+          "188 cm",
+          "6.55 m"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "11.83 m",
+            "href": "/Browse/Trees/253863/Details"
+          },
+          {
+            "text": "188 cm",
+            "href": "/Browse/Trees/253863/Details"
+          },
+          {
+            "text": "6.55 m",
+            "href": "/Browse/Trees/253863/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

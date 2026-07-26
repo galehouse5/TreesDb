@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Vaccinium fuscatum",
+  "commonName": "Black Highbush Blueberry",
+  "global": {
+    "maxHeight": {
+      "text": "16.8'",
+      "href": "/Browse/Trees/128106/Details"
+    },
+    "maxGirth": {
+      "text": "10''",
+      "href": "/Browse/Trees/128106/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "16.8'",
+          "10''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "16.8'",
+            "href": "/Browse/Trees/128106/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/128106/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

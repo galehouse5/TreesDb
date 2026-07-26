@@ -1,0 +1,207 @@
+{
+  "siteId": 42289,
+  "summary": {
+    "Name": "Hyde Memorial Park",
+    "RHI5": "108.06",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "4.46",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "07/18/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/18/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. concolor",
+          "White Fir",
+          "98.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. concolor",
+            "href": "/Browse/Sites/42289/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/42289/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "98.3'",
+            "href": "/Browse/Trees/318002/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. arizonica",
+          "Corkbark Fir",
+          "114.3'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. arizonica",
+            "href": "/Browse/Sites/42289/Species/Abies%20lasiocarpa%20var.%20arizonica%20(Corkbark%20Fir)/Details"
+          },
+          {
+            "text": "Corkbark Fir",
+            "href": "/Browse/Sites/42289/Species/Abies%20lasiocarpa%20var.%20arizonica%20(Corkbark%20Fir)/Details"
+          },
+          {
+            "text": "114.3'",
+            "href": "/Browse/Trees/318005/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/318005/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii var. engelmannii",
+          "Engelmann Spruce",
+          "135.5'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii var. engelmannii",
+            "href": "/Browse/Sites/42289/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/Sites/42289/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "135.5'",
+            "href": "/Browse/Trees/317999/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/317997/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. brachyptera",
+          "Ponderosa Pine",
+          "93.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. brachyptera",
+            "href": "/Browse/Sites/42289/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/42289/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "93.0'",
+            "href": "/Browse/Trees/318003/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "99.2'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/42289/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/42289/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "99.2'",
+            "href": "/Browse/Trees/318001/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/318000/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 47.496, -105 48.269",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Santa Fe"
+    },
+    "state": {
+      "text": "New Mexico (US)",
+      "href": "/Browse/States/30/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

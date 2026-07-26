@@ -1,0 +1,157 @@
+{
+  "siteId": 41759,
+  "summary": {
+    "Name": "Universalist Society Of Belpre",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "05/05/2022",
+    "Ownership contact": "516 Middle Street Belpre, Ohio",
+    "General comments": "Site of the first Universalist Society Church in Ohio - 1825 Now privately owned with a remanent stand of older trees."
+  },
+  "visits": [
+    {
+      "visited": "05/05/2022",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Site of the first Universalist Society Church in Ohio - 1825 Now privately owned with a remanent stand of older trees."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "66.9'",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/41759/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/41759/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "66.9'",
+            "href": "/Browse/Trees/272722/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/272722/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "97.2'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41759/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41759/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "97.2'",
+            "href": "/Browse/Trees/272721/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/272721/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "87.7'",
+          "166''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/41759/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/41759/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "87.7'",
+            "href": "/Browse/Trees/272725/Details"
+          },
+          {
+            "text": "166''",
+            "href": "/Browse/Trees/272727/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 16.627, -081 36.218",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Washington"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

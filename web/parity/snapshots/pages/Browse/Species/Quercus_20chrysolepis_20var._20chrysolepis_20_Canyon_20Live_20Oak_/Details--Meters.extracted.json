@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Quercus chrysolepis var. chrysolepis",
+  "commonName": "Canyon Live Oak",
+  "global": {
+    "maxHeight": {
+      "text": "10.85 m",
+      "href": "/Browse/Trees/226303/Details"
+    },
+    "maxGirth": {
+      "text": "259 cm",
+      "href": "/Browse/Trees/226303/Details"
+    },
+    "maxCrownSpread": {
+      "text": "18.90 m",
+      "href": "/Browse/Trees/226303/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "10.85 m",
+          "259 cm",
+          "18.90 m"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "10.85 m",
+            "href": "/Browse/Trees/226303/Details"
+          },
+          {
+            "text": "259 cm",
+            "href": "/Browse/Trees/226303/Details"
+          },
+          {
+            "text": "18.90 m",
+            "href": "/Browse/Trees/226303/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "California",
+          "10.09 m",
+          "94 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "10.09 m",
+            "href": "/Browse/Trees/318008/Details"
+          },
+          {
+            "text": "94 cm",
+            "href": "/Browse/Trees/318008/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

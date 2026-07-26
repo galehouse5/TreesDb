@@ -1,0 +1,129 @@
+{
+  "siteId": 39992,
+  "summary": {
+    "Name": "Rincon De Ls Vieja National Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "01/28/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/28/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Guettarda foliacea",
+          "Guayabo De Monte",
+          "36.5'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Guettarda foliacea",
+            "href": "/Browse/Sites/39992/Species/Guettarda%20foliacea%20(Guayabo%20De%20Monte)/Details"
+          },
+          {
+            "text": "Guayabo De Monte",
+            "href": "/Browse/Sites/39992/Species/Guettarda%20foliacea%20(Guayabo%20De%20Monte)/Details"
+          },
+          {
+            "text": "36.5'",
+            "href": "/Browse/Trees/213085/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/213085/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Manilkara zapota",
+          "Sapodilla",
+          "69.1'",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Manilkara zapota",
+            "href": "/Browse/Sites/39992/Species/Manilkara%20zapota%20(Sapodilla)/Details"
+          },
+          {
+            "text": "Sapodilla",
+            "href": "/Browse/Sites/39992/Species/Manilkara%20zapota%20(Sapodilla)/Details"
+          },
+          {
+            "text": "69.1'",
+            "href": "/Browse/Trees/213084/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/213084/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "10 46.386, -085 20.955",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Liberia"
+    },
+    "state": {
+      "text": "Guanacaste (CR)",
+      "href": "/Browse/States/119/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Davidia involucrata",
+  "commonName": "Dove Tree",
+  "global": {
+    "maxHeight": {
+      "text": "53.6'",
+      "href": "/Browse/Trees/134440/Details"
+    },
+    "maxGirth": {
+      "text": "56''",
+      "href": "/Browse/Trees/134440/Details"
+    },
+    "maxCrownSpread": {
+      "text": "54.0'",
+      "href": "/Browse/Trees/134440/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "24.8'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "24.8'",
+            "href": "/Browse/Trees/226109/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/226109/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "53.6'",
+          "56''",
+          "54.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "53.6'",
+            "href": "/Browse/Trees/134440/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/134440/Details"
+          },
+          {
+            "text": "54.0'",
+            "href": "/Browse/Trees/134440/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

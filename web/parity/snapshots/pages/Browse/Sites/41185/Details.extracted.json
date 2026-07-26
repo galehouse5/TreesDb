@@ -1,0 +1,325 @@
+{
+  "siteId": 41185,
+  "summary": {
+    "Name": "Vicksburg National Military Park",
+    "RHI5": "144.16",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.02",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "01/07/2025",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/07/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/28/2015",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "1852 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "121.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/41185/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/41185/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "121.0'",
+            "href": "/Browse/Trees/320711/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus drummondii",
+          "Roughleaf Dogwood",
+          "41.8'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus drummondii",
+            "href": "/Browse/Sites/41185/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "Roughleaf Dogwood",
+            "href": "/Browse/Sites/41185/Species/Cornus%20drummondii%20(Roughleaf%20Dogwood)/Details"
+          },
+          {
+            "text": "41.8'",
+            "href": "/Browse/Trees/251065/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/251065/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "140.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/41185/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/41185/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "140.6'",
+            "href": "/Browse/Trees/320707/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "161.0'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41185/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41185/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "161.0'",
+            "href": "/Browse/Trees/320709/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/251066/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "148.5'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/41185/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/41185/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "148.5'",
+            "href": "/Browse/Trees/320710/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/251067/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "127.4'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/41185/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/41185/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "127.4'",
+            "href": "/Browse/Trees/320716/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/320716/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus nigra",
+          "Water Oak",
+          "130.4'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus nigra",
+            "href": "/Browse/Sites/41185/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+          },
+          {
+            "text": "Water Oak",
+            "href": "/Browse/Sites/41185/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+          },
+          {
+            "text": "130.4'",
+            "href": "/Browse/Trees/320713/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/320713/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus pagoda",
+          "Cherrybark Oak",
+          "140.3'",
+          "168''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus pagoda",
+            "href": "/Browse/Sites/41185/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "Cherrybark Oak",
+            "href": "/Browse/Sites/41185/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "140.3'",
+            "href": "/Browse/Trees/320715/Details"
+          },
+          {
+            "text": "168''",
+            "href": "/Browse/Trees/320714/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus crassifolia",
+          "Cedar Elm",
+          "88.8'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus crassifolia",
+            "href": "/Browse/Sites/41185/Species/Ulmus%20crassifolia%20(Cedar%20Elm)/Details"
+          },
+          {
+            "text": "Cedar Elm",
+            "href": "/Browse/Sites/41185/Species/Ulmus%20crassifolia%20(Cedar%20Elm)/Details"
+          },
+          {
+            "text": "88.8'",
+            "href": "/Browse/Trees/320717/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/320717/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 22.631, -090 50.662",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Mississippi (US)",
+      "href": "/Browse/States/23/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

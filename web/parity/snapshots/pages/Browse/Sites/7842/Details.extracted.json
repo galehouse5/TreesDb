@@ -1,0 +1,148 @@
+{
+  "siteId": 7842,
+  "summary": {
+    "Name": "El Morror National Monument",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "04/02/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/02/2006",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus deppeana",
+          "Alligator Juniper",
+          "-",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus deppeana",
+            "href": "/Browse/Sites/7842/Species/Juniperus%20deppeana%20(Alligator%20Juniper)/Details"
+          },
+          {
+            "text": "Alligator Juniper",
+            "href": "/Browse/Sites/7842/Species/Juniperus%20deppeana%20(Alligator%20Juniper)/Details"
+          },
+          null,
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/55074/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus monosperma",
+          "Oneseed Juniper",
+          "-",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus monosperma",
+            "href": "/Browse/Sites/7842/Species/Juniperus%20monosperma%20(Oneseed%20Juniper)/Details"
+          },
+          {
+            "text": "Oneseed Juniper",
+            "href": "/Browse/Sites/7842/Species/Juniperus%20monosperma%20(Oneseed%20Juniper)/Details"
+          },
+          null,
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/55076/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus edulis",
+          "Twoneedle Pinyon",
+          "-",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus edulis",
+            "href": "/Browse/Sites/7842/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          {
+            "text": "Twoneedle Pinyon",
+            "href": "/Browse/Sites/7842/Species/Pinus%20edulis%20(Twoneedle%20Pinyon)/Details"
+          },
+          null,
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/55078/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 02.299, -108 20.934",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Cibola"
+    },
+    "state": {
+      "text": "New Mexico (US)",
+      "href": "/Browse/States/30/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,380 @@
+{
+  "siteId": 42270,
+  "summary": {
+    "Name": "Wood County Single Tree Sites",
+    "RHI5": "106.58",
+    "RHI10": "102.49",
+    "RHI20": "95.30",
+    "RGI5": "18.83",
+    "RGI10": "16.78",
+    "RGI20": "14.27",
+    "Trees measured": "138",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "includes the incorporated cities of Parkersburg, Vienna, Williamstown and North Hills. Most measurements made before 2010 do not list a height because methods used to determine height prior to 2010 were inaccurate,"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "includes the incorporated cities of Parkersburg, Vienna, Williamstown and North Hills. Most measurements made before 2010 do not list a height because methods used to determine height prior to 2010 were inaccurate,"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies amabilis",
+          "Pacific Silver Fir",
+          "75.8'",
+          "89''",
+          "26.5'"
+        ],
+        "links": [
+          {
+            "text": "Abies amabilis",
+            "href": "/Browse/Sites/42270/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "Pacific Silver Fir",
+            "href": "/Browse/Sites/42270/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "75.8'",
+            "href": "/Browse/Trees/315015/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/315015/Details"
+          },
+          {
+            "text": "26.5'",
+            "href": "/Browse/Trees/315015/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Abies concolor",
+          "White Fir",
+          "45.0'",
+          "33''",
+          "18.0'"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor",
+            "href": "/Browse/Sites/42270/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/42270/Species/Abies%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/314999/Details"
+          },
+          {
+            "text": "33''",
+            "href": "/Browse/Trees/314998/Details"
+          },
+          {
+            "text": "18.0'",
+            "href": "/Browse/Trees/314998/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer floridanum",
+          "Southern Sugar Maple",
+          "58.2'",
+          "102''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer floridanum",
+            "href": "/Browse/Sites/42270/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/Sites/42270/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "58.2'",
+            "href": "/Browse/Trees/315037/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/315037/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/315037/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer griseum",
+          "Paperbark Maple",
+          "32.0'",
+          "27''",
+          "30.6'"
+        ],
+        "links": [
+          {
+            "text": "Acer griseum",
+            "href": "/Browse/Sites/42270/Species/Acer%20griseum%20(Paperbark%20Maple)/Details"
+          },
+          {
+            "text": "Paperbark Maple",
+            "href": "/Browse/Sites/42270/Species/Acer%20griseum%20(Paperbark%20Maple)/Details"
+          },
+          {
+            "text": "32.0'",
+            "href": "/Browse/Trees/315044/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/315044/Details"
+          },
+          {
+            "text": "30.6'",
+            "href": "/Browse/Trees/315044/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer palmatum",
+          "Japanese Maple",
+          "32.5'",
+          "42''",
+          "35.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer palmatum",
+            "href": "/Browse/Sites/42270/Species/Acer%20palmatum%20(Japanese%20Maple)/Details"
+          },
+          {
+            "text": "Japanese Maple",
+            "href": "/Browse/Sites/42270/Species/Acer%20palmatum%20(Japanese%20Maple)/Details"
+          },
+          {
+            "text": "32.5'",
+            "href": "/Browse/Trees/315050/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/315050/Details"
+          },
+          {
+            "text": "35.0'",
+            "href": "/Browse/Trees/315050/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. trilobum",
+          "Red Maple",
+          "67.2'",
+          "124''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. trilobum",
+            "href": "/Browse/Sites/42270/Species/Acer%20rubrum%20var.%20trilobum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/42270/Species/Acer%20rubrum%20var.%20trilobum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "67.2'",
+            "href": "/Browse/Trees/315032/Details"
+          },
+          {
+            "text": "124''",
+            "href": "/Browse/Trees/315032/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "95.9'",
+          "283''",
+          "75.0'"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/42270/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/42270/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "95.9'",
+            "href": "/Browse/Trees/315024/Details"
+          },
+          {
+            "text": "283''",
+            "href": "/Browse/Trees/315024/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/315024/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus hippocastanum",
+          "Horse Chestnut",
+          "69.6'",
+          "92''",
+          "44.0'"
+        ],
+        "links": [
+          {
+            "text": "Aesculus hippocastanum",
+            "href": "/Browse/Sites/42270/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "Horse Chestnut",
+            "href": "/Browse/Sites/42270/Species/Aesculus%20hippocastanum%20(Horse%20Chestnut)/Details"
+          },
+          {
+            "text": "69.6'",
+            "href": "/Browse/Trees/314953/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/314953/Details"
+          },
+          {
+            "text": "44.0'",
+            "href": "/Browse/Trees/314953/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Albizia julibrissin",
+          "Silktree",
+          "34.6'",
+          "61''",
+          "72.8'"
+        ],
+        "links": [
+          {
+            "text": "Albizia julibrissin",
+            "href": "/Browse/Sites/42270/Species/Albizia%20julibrissin%20(Silktree)/Details"
+          },
+          {
+            "text": "Silktree",
+            "href": "/Browse/Sites/42270/Species/Albizia%20julibrissin%20(Silktree)/Details"
+          },
+          {
+            "text": "34.6'",
+            "href": "/Browse/Trees/315052/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/315052/Details"
+          },
+          {
+            "text": "72.8'",
+            "href": "/Browse/Trees/315052/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Alnus glutinosa",
+          "European Alder",
+          "34.6'",
+          "31''",
+          "21.0'"
+        ],
+        "links": [
+          {
+            "text": "Alnus glutinosa",
+            "href": "/Browse/Sites/42270/Species/Alnus%20glutinosa%20(European%20Alder)/Details"
+          },
+          {
+            "text": "European Alder",
+            "href": "/Browse/Sites/42270/Species/Alnus%20glutinosa%20(European%20Alder)/Details"
+          },
+          {
+            "text": "34.6'",
+            "href": "/Browse/Trees/314957/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/314957/Details"
+          },
+          {
+            "text": "21.0'",
+            "href": "/Browse/Trees/314957/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 79 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 15.826, -081 33.774",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public and private",
+      "County": "Wood"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

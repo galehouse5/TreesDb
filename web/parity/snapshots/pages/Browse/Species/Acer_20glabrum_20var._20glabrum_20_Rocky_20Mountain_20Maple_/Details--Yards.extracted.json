@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Acer glabrum var. glabrum",
+  "commonName": "Rocky Mountain Maple",
+  "global": {
+    "maxHeight": {
+      "text": "12.47 yd",
+      "href": "/Browse/Trees/130978/Details"
+    },
+    "maxGirth": {
+      "text": "10''",
+      "href": "/Browse/Trees/126298/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "12.47 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "12.47 yd",
+            "href": "/Browse/Trees/130978/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Colorado",
+          "8.00 yd",
+          "10''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "8.00 yd",
+            "href": "/Browse/Trees/126298/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/126298/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

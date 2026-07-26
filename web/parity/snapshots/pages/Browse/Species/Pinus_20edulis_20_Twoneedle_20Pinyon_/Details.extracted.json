@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Pinus edulis",
+  "commonName": "Twoneedle Pinyon",
+  "global": {
+    "maxHeight": {
+      "text": "50.0'",
+      "href": "/Browse/Trees/320668/Details"
+    },
+    "maxGirth": {
+      "text": "102''",
+      "href": "/Browse/Trees/130980/Details"
+    },
+    "maxCrownSpread": {
+      "text": "62.0'",
+      "href": "/Browse/Trees/130980/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "47.1'",
+          "102''",
+          "62.0'"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "47.1'",
+            "href": "/Browse/Trees/46451/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/130980/Details"
+          },
+          {
+            "text": "62.0'",
+            "href": "/Browse/Trees/130980/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Colorado",
+          "18.8'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "18.8'",
+            "href": "/Browse/Trees/126245/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/126245/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Mexico",
+          "50.0'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Mexico",
+            "href": "/Browse/States/30/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/320668/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/33198/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "30.0'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/229184/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/229184/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

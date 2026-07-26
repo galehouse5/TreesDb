@@ -1,0 +1,510 @@
+{
+  "stateId": 30,
+  "summary": {
+    "Name": "New Mexico",
+    "Code": "NM",
+    "RHI5": "128.64",
+    "RHI10": "111.57",
+    "RHI20": "78.02",
+    "RGI5": "13.99",
+    "RGI10": "11.26",
+    "RGI20": "8.02",
+    "Trees measured": "55",
+    "Last measurement date": "01/22/2025"
+  },
+  "location": {
+    "Coordinates": "34 09.973, -106 01.575",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. concolor",
+          "White Fir",
+          "104.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. concolor",
+            "href": "/Browse/States/30/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/States/30/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "104.0'",
+            "href": "/Browse/Trees/317991/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies lasiocarpa var. arizonica",
+          "Corkbark Fir",
+          "114.3'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies lasiocarpa var. arizonica",
+            "href": "/Browse/States/30/Species/Abies%20lasiocarpa%20var.%20arizonica%20(Corkbark%20Fir)/Details"
+          },
+          {
+            "text": "Corkbark Fir",
+            "href": "/Browse/States/30/Species/Abies%20lasiocarpa%20var.%20arizonica%20(Corkbark%20Fir)/Details"
+          },
+          {
+            "text": "114.3'",
+            "href": "/Browse/Trees/318005/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/318005/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. arizonicum",
+          "Arizona Boxelder",
+          "43.1'",
+          "55''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. arizonicum",
+            "href": "/Browse/States/30/Species/Acer%20negundo%20var.%20arizonicum%20(Arizona%20Boxelder)/Details"
+          },
+          {
+            "text": "Arizona Boxelder",
+            "href": "/Browse/States/30/Species/Acer%20negundo%20var.%20arizonicum%20(Arizona%20Boxelder)/Details"
+          },
+          {
+            "text": "43.1'",
+            "href": "/Browse/Trees/70487/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/70487/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Elaeagnus angustifolia",
+          "Russian Olive",
+          "32.6'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Elaeagnus angustifolia",
+            "href": "/Browse/States/30/Species/Elaeagnus%20angustifolia%20(Russian%20Olive)/Details"
+          },
+          {
+            "text": "Russian Olive",
+            "href": "/Browse/States/30/Species/Elaeagnus%20angustifolia%20(Russian%20Olive)/Details"
+          },
+          {
+            "text": "32.6'",
+            "href": "/Browse/Trees/163896/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/163896/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus deppeana",
+          "Alligator Juniper",
+          "-",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus deppeana",
+            "href": "/Browse/States/30/Species/Juniperus%20deppeana%20(Alligator%20Juniper)/Details"
+          },
+          {
+            "text": "Alligator Juniper",
+            "href": "/Browse/States/30/Species/Juniperus%20deppeana%20(Alligator%20Juniper)/Details"
+          },
+          null,
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/55074/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus monosperma",
+          "Oneseed Juniper",
+          "-",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus monosperma",
+            "href": "/Browse/States/30/Species/Juniperus%20monosperma%20(Oneseed%20Juniper)/Details"
+          },
+          {
+            "text": "Oneseed Juniper",
+            "href": "/Browse/States/30/Species/Juniperus%20monosperma%20(Oneseed%20Juniper)/Details"
+          },
+          null,
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/55076/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus osteosperma",
+          "Utah Juniper",
+          "19.6'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus osteosperma",
+            "href": "/Browse/States/30/Species/Juniperus%20osteosperma%20(Utah%20Juniper)/Details"
+          },
+          {
+            "text": "Utah Juniper",
+            "href": "/Browse/States/30/Species/Juniperus%20osteosperma%20(Utah%20Juniper)/Details"
+          },
+          {
+            "text": "19.6'",
+            "href": "/Browse/Trees/33197/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/33197/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus scopulorum",
+          "Rocky Mountain Juniper",
+          "47.2'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus scopulorum",
+            "href": "/Browse/States/30/Species/Juniperus%20scopulorum%20(Rocky%20Mountain%20Juniper)/Details"
+          },
+          {
+            "text": "Rocky Mountain Juniper",
+            "href": "/Browse/States/30/Species/Juniperus%20scopulorum%20(Rocky%20Mountain%20Juniper)/Details"
+          },
+          {
+            "text": "47.2'",
+            "href": "/Browse/Trees/70485/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/163888/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea engelmannii var. engelmannii",
+          "Engelmann Spruce",
+          "135.5'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea engelmannii var. engelmannii",
+            "href": "/Browse/States/30/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "Engelmann Spruce",
+            "href": "/Browse/States/30/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+          },
+          {
+            "text": "135.5'",
+            "href": "/Browse/Trees/317999/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/317997/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea pungens",
+          "Blue Spruce",
+          "95.6'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea pungens",
+            "href": "/Browse/States/30/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "Blue Spruce",
+            "href": "/Browse/States/30/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+          },
+          {
+            "text": "95.6'",
+            "href": "/Browse/Trees/320674/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/320674/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 22 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Bandelier National Monument",
+          "80.62",
+          "-",
+          "7.93",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bandelier National Monument",
+            "href": "/Browse/Sites/20955/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "El Morror National Monument",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "El Morror National Monument",
+            "href": "/Browse/Sites/7842/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hyde Memorial Park",
+          "108.06",
+          "-",
+          "4.46",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hyde Memorial Park",
+            "href": "/Browse/Sites/42289/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kit Carson Muncipal Park",
+          "66.58",
+          "-",
+          "8.84",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kit Carson Muncipal Park",
+            "href": "/Browse/Sites/39052/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kit Carson National Forest",
+          "107.30",
+          "-",
+          "7.83",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kit Carson National Forest",
+            "href": "/Browse/Sites/42288/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Middle Fork Of Gila River",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Middle Fork Of Gila River",
+            "href": "/Browse/Sites/40750/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Red Rock Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Red Rock Park",
+            "href": "/Browse/Sites/1451/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Valles Caldera National Preserve",
+          "117.06",
+          "-",
+          "2.36",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Valles Caldera National Preserve",
+            "href": "/Browse/Sites/42348/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,47 @@
+<!-- Hand-built fixture mirroring the real DOM shape rendered by
+     components/grids/browse-grid.tsx for app/locations/page.tsx (task P1-03).
+     Trimmed of Tailwind/shadcn utility classes for readability, but keeps
+     every class parity/extractors/legacy/dom-helpers.ts's parseGrid()
+     actually looks at: `dataTablesGrid`, `table.display`, `thead`/`tbody`,
+     `th.sortable`/`.sorting_asc`/`.sorting_desc`, `dataTables_info`,
+     `a.paginate_enabled_previous`/`.paginate_enabled_next`. Same sample data
+     (Old Growth Preserve/Riverside Park/Ohio/134.82) as
+     parity/extractors/legacy/__fixtures__/locations-grid.html for easy
+     side-by-side comparison; a plain "RHI5" header with no sortable class
+     is included to exercise parseGrid's non-sortable-column branch, even
+     though every real column in app/locations/page.tsx is sortable. -->
+<div class="dataTablesGrid space-y-3">
+  <form>
+    <div><label for="filter-Site">Site</label><input id="filter-Site" type="text" value=""/></div>
+  </form>
+  <div class="overflow-x-auto rounded-md border border-border">
+    <table data-slot="table" class="w-full display">
+      <thead data-slot="table-header">
+        <tr data-slot="table-row">
+          <th data-slot="table-head" class="sortable"><a href="/locations?sort=Site&sortAsc=true"><span>Site</span></a></th>
+          <th data-slot="table-head" class="sortable sorting_asc"><a href="/locations?sort=State&sortAsc=false"><span>State</span></a></th>
+          <th data-slot="table-head">RHI5</th>
+        </tr>
+      </thead>
+      <tbody data-slot="table-body">
+        <tr data-slot="table-row">
+          <td data-slot="table-cell"><a href="/sites/17">Old Growth Preserve</a></td>
+          <td data-slot="table-cell"><a href="/states/5">Ohio</a></td>
+          <td data-slot="table-cell">134.82</td>
+        </tr>
+        <tr data-slot="table-row">
+          <td data-slot="table-cell"><a href="/sites/18">Riverside Park</a></td>
+          <td data-slot="table-cell"><a href="/states/5">Ohio</a></td>
+          <td data-slot="table-cell">-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="flex items-center justify-between gap-3 text-sm text-muted-foreground">
+    <div class="dataTables_info">Showing 1 to 2 of 213 entries</div>
+    <div class="dataTables_paginate flex items-center gap-2">
+      <span class="paginate_disabled_previous opacity-50">Previous</span>
+      <a href="/locations?page=1" class="paginate_enabled_next underline">Next</a>
+    </div>
+  </div>
+</div>

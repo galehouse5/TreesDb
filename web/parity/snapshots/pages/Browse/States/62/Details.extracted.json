@@ -1,0 +1,362 @@
+{
+  "stateId": 62,
+  "summary": {
+    "Name": "Alaska",
+    "Code": "AK",
+    "RHI5": "92.12",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.47",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "08/05/2012"
+  },
+  "location": {
+    "Coordinates": "61 18.831, -158 55.761",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus rubra",
+          "Red Alder",
+          "53.0'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus rubra",
+            "href": "/Browse/States/62/Species/Alnus%20rubra%20(Red%20Alder)/Details"
+          },
+          {
+            "text": "Red Alder",
+            "href": "/Browse/States/62/Species/Alnus%20rubra%20(Red%20Alder)/Details"
+          },
+          {
+            "text": "53.0'",
+            "href": "/Browse/Trees/75027/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/75027/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus viridis ssp. sinuata",
+          "Sitka Alder",
+          "26.4'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus viridis ssp. sinuata",
+            "href": "/Browse/States/62/Species/Alnus%20viridis%20ssp.%20sinuata%20(Sitka%20Alder)/Details"
+          },
+          {
+            "text": "Sitka Alder",
+            "href": "/Browse/States/62/Species/Alnus%20viridis%20ssp.%20sinuata%20(Sitka%20Alder)/Details"
+          },
+          {
+            "text": "26.4'",
+            "href": "/Browse/Trees/75032/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/75032/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea sitchensis",
+          "Sitka Spruce",
+          "138.8'",
+          "194''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea sitchensis",
+            "href": "/Browse/States/62/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "Sitka Spruce",
+            "href": "/Browse/States/62/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+          },
+          {
+            "text": "138.8'",
+            "href": "/Browse/Trees/75022/Details"
+          },
+          {
+            "text": "194''",
+            "href": "/Browse/Trees/75023/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. contorta",
+          "Beach Pine",
+          "47.2'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. contorta",
+            "href": "/Browse/States/62/Species/Pinus%20contorta%20var.%20contorta%20(Beach%20Pine)/Details"
+          },
+          {
+            "text": "Beach Pine",
+            "href": "/Browse/States/62/Species/Pinus%20contorta%20var.%20contorta%20(Beach%20Pine)/Details"
+          },
+          {
+            "text": "47.2'",
+            "href": "/Browse/Trees/138307/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/138307/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus balsamifera ssp. trichocarpa",
+          "Black Cottonwood",
+          "92.8'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. trichocarpa",
+            "href": "/Browse/States/62/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "Black Cottonwood",
+            "href": "/Browse/States/62/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+          },
+          {
+            "text": "92.8'",
+            "href": "/Browse/Trees/75030/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/75030/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Salix alaxensis",
+          "Feltleaf Willow",
+          "20.7'",
+          "19''",
+          "27.0'"
+        ],
+        "links": [
+          {
+            "text": "Salix alaxensis",
+            "href": "/Browse/States/62/Species/Salix%20alaxensis%20(Feltleaf%20Willow)/Details"
+          },
+          {
+            "text": "Feltleaf Willow",
+            "href": "/Browse/States/62/Species/Salix%20alaxensis%20(Feltleaf%20Willow)/Details"
+          },
+          {
+            "text": "20.7'",
+            "href": "/Browse/Trees/306147/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/306147/Details"
+          },
+          {
+            "text": "27.0'",
+            "href": "/Browse/Trees/306147/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga heterophylla",
+          "Western Hemlock",
+          "128.8'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga heterophylla",
+            "href": "/Browse/States/62/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "Western Hemlock",
+            "href": "/Browse/States/62/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "128.8'",
+            "href": "/Browse/Trees/75024/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/75026/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alaska Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alaska Single Tree Sites",
+            "href": "/Browse/Sites/38397/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gateway Knob At Alsek Lake - Camp",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gateway Knob At Alsek Lake - Camp",
+            "href": "/Browse/Sites/42180/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Portage Cove State Recreational Site",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Portage Cove State Recreational Site",
+            "href": "/Browse/Sites/22041/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tongass National Forest-Douglas Island-Rain Forest Trail",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tongass National Forest-Douglas Island-Rain Forest Trail",
+            "href": "/Browse/Sites/22040/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

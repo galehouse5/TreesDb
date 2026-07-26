@@ -1,0 +1,462 @@
+{
+  "stateId": 19,
+  "summary": {
+    "Name": "Maine",
+    "Code": "ME",
+    "RHI5": "31.230",
+    "RHI10": "26.451",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.809",
+    "RGI10": "2.045",
+    "RGI20": "(not enough data)",
+    "Trees measured": "71",
+    "Last measurement date": "10/13/2021"
+  },
+  "location": {
+    "Coordinates": "45 11.462, -068 59.087",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies balsamea",
+          "Balsam Fir",
+          "20.82 m",
+          "107 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies balsamea",
+            "href": "/Browse/States/19/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "Balsam Fir",
+            "href": "/Browse/States/19/Species/Abies%20balsamea%20(Balsam%20Fir)/Details"
+          },
+          {
+            "text": "20.82 m",
+            "href": "/Browse/Trees/235316/Details"
+          },
+          {
+            "text": "107 cm",
+            "href": "/Browse/Trees/235315/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "12.50 m",
+          "36 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/States/19/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/States/19/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "12.50 m",
+            "href": "/Browse/Trees/256807/Details"
+          },
+          {
+            "text": "36 cm",
+            "href": "/Browse/Trees/256807/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier laevis",
+          "Allegheny Serviceberry",
+          "17.16 m",
+          "76 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier laevis",
+            "href": "/Browse/States/19/Species/Amelanchier%20laevis%20(Allegheny%20Serviceberry)/Details"
+          },
+          {
+            "text": "Allegheny Serviceberry",
+            "href": "/Browse/States/19/Species/Amelanchier%20laevis%20(Allegheny%20Serviceberry)/Details"
+          },
+          {
+            "text": "17.16 m",
+            "href": "/Browse/Trees/256804/Details"
+          },
+          {
+            "text": "76 cm",
+            "href": "/Browse/Trees/256804/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "24.51 m",
+          "211 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/States/19/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/States/19/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "24.51 m",
+            "href": "/Browse/Trees/256121/Details"
+          },
+          {
+            "text": "211 cm",
+            "href": "/Browse/Trees/256121/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "20.48 m",
+          "86 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/States/19/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/States/19/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "20.48 m",
+            "href": "/Browse/Trees/235319/Details"
+          },
+          {
+            "text": "86 cm",
+            "href": "/Browse/Trees/235319/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea mariana",
+          "Black Spruce",
+          "27.13 m",
+          "132 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea mariana",
+            "href": "/Browse/States/19/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "Black Spruce",
+            "href": "/Browse/States/19/Species/Picea%20mariana%20(Black%20Spruce)/Details"
+          },
+          {
+            "text": "27.13 m",
+            "href": "/Browse/Trees/235323/Details"
+          },
+          {
+            "text": "132 cm",
+            "href": "/Browse/Trees/235322/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "21.03 m",
+          "135 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/States/19/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/States/19/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "21.03 m",
+            "href": "/Browse/Trees/235324/Details"
+          },
+          {
+            "text": "135 cm",
+            "href": "/Browse/Trees/235324/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "29.08 m",
+          "145 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/States/19/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/States/19/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "29.08 m",
+            "href": "/Browse/Trees/235321/Details"
+          },
+          {
+            "text": "145 cm",
+            "href": "/Browse/Trees/235321/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "46.27 m",
+          "384 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/States/19/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/States/19/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "46.27 m",
+            "href": "/Browse/Trees/249826/Details"
+          },
+          {
+            "text": "384 cm",
+            "href": "/Browse/Trees/256135/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "23.80 m",
+          "160 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/States/19/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/States/19/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "23.80 m",
+            "href": "/Browse/Trees/235313/Details"
+          },
+          {
+            "text": "160 cm",
+            "href": "/Browse/Trees/235312/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Blackwoods Campground",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Blackwoods Campground",
+            "href": "/Browse/Sites/41311/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bowdoin Pines",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bowdoin Pines",
+            "href": "/Browse/Sites/41116/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maine Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maine Single Tree Sites",
+            "href": "/Browse/Sites/41289/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ordway White Pine Grove",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ordway White Pine Grove",
+            "href": "/Browse/Sites/41125/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sunkhaze Meadows National Wildlife Refuge",
+          "89.84",
+          "-",
+          "6.38",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sunkhaze Meadows National Wildlife Refuge",
+            "href": "/Browse/Sites/40704/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

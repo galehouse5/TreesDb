@@ -1,0 +1,353 @@
+{
+  "siteId": 42393,
+  "summary": {
+    "Name": "College Of The South",
+    "RHI5": "122.10",
+    "RHI10": "97.99",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.61",
+    "RGI10": "5.94",
+    "RGI20": "(not enough data)",
+    "Trees measured": "13",
+    "Last measurement date": "02/28/2026",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/28/2026",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Amelanchier arborea var. arborea",
+          "Common Serviceberry",
+          "27.6'",
+          "14''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea var. arborea",
+            "href": "/Browse/Sites/42393/Species/Amelanchier%20arborea%20var.%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/42393/Species/Amelanchier%20arborea%20var.%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "27.6'",
+            "href": "/Browse/Trees/323427/Details"
+          },
+          {
+            "text": "14''",
+            "href": "/Browse/Trees/323427/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "120.0'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/42393/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/42393/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "120.0'",
+            "href": "/Browse/Trees/323420/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/323420/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "106.1'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/42393/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/42393/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "106.1'",
+            "href": "/Browse/Trees/323424/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/323424/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "137.1'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/42393/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/42393/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "137.1'",
+            "href": "/Browse/Trees/323426/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/323426/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "110.7'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/42393/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/42393/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "110.7'",
+            "href": "/Browse/Trees/323419/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/323419/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "102.8'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/42393/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/42393/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "102.8'",
+            "href": "/Browse/Trees/323418/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/323418/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus coccinea var. coccinea",
+          "Scarlet Oak",
+          "114.7'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus coccinea var. coccinea",
+            "href": "/Browse/Sites/42393/Species/Quercus%20coccinea%20var.%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "Scarlet Oak",
+            "href": "/Browse/Sites/42393/Species/Quercus%20coccinea%20var.%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "114.7'",
+            "href": "/Browse/Trees/323417/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/323417/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus marilandica var. marilandica",
+          "Blackjack Oak",
+          "22.2'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus marilandica var. marilandica",
+            "href": "/Browse/Sites/42393/Species/Quercus%20marilandica%20var.%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "Blackjack Oak",
+            "href": "/Browse/Sites/42393/Species/Quercus%20marilandica%20var.%20marilandica%20(Blackjack%20Oak)/Details"
+          },
+          {
+            "text": "22.2'",
+            "href": "/Browse/Trees/323422/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/323422/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "124.8'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/42393/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/42393/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "124.8'",
+            "href": "/Browse/Trees/323423/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/323416/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra var. rubra",
+          "Northern Red Oak",
+          "113.9'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra var. rubra",
+            "href": "/Browse/Sites/42393/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/42393/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "113.9'",
+            "href": "/Browse/Trees/323421/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/323421/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 11.251, -085 55.039",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

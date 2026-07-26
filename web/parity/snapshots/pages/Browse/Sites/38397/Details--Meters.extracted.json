@@ -1,0 +1,101 @@
+{
+  "siteId": 38397,
+  "summary": {
+    "Name": "Alaska Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "08/05/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/05/2012",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus contorta var. contorta",
+          "Beach Pine",
+          "14.39 m",
+          "74 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. contorta",
+            "href": "/Browse/Sites/38397/Species/Pinus%20contorta%20var.%20contorta%20(Beach%20Pine)/Details"
+          },
+          {
+            "text": "Beach Pine",
+            "href": "/Browse/Sites/38397/Species/Pinus%20contorta%20var.%20contorta%20(Beach%20Pine)/Details"
+          },
+          {
+            "text": "14.39 m",
+            "href": "/Browse/Trees/138307/Details"
+          },
+          {
+            "text": "74 cm",
+            "href": "/Browse/Trees/138307/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "58 18.070, -134 25.465",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "various",
+      "County": "Juneau"
+    },
+    "state": {
+      "text": "Alaska (US)",
+      "href": "/Browse/States/62/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

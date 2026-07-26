@@ -1,0 +1,283 @@
+{
+  "botanicalName": "Pinus taeda",
+  "commonName": "Loblolly Pine",
+  "global": {
+    "maxHeight": {
+      "text": "56.23 yd",
+      "href": "/Browse/Trees/242678/Details"
+    },
+    "maxGirth": {
+      "text": "189''",
+      "href": "/Browse/Trees/173485/Details"
+    },
+    "maxCrownSpread": {
+      "text": "31.00 yd",
+      "href": "/Browse/Trees/242678/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "47.60 yd",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "47.60 yd",
+            "href": "/Browse/Trees/233878/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/233878/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "46.10 yd",
+          "175''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "46.10 yd",
+            "href": "/Browse/Trees/234004/Details"
+          },
+          {
+            "text": "175''",
+            "href": "/Browse/Trees/234007/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Florida",
+          "38.67 yd",
+          "154''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Florida",
+            "href": "/Browse/States/8/Details"
+          },
+          {
+            "text": "38.67 yd",
+            "href": "/Browse/Trees/242639/Details"
+          },
+          {
+            "text": "154''",
+            "href": "/Browse/Trees/242639/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "45.83 yd",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "45.83 yd",
+            "href": "/Browse/Trees/234732/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/234729/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "43.33 yd",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "43.33 yd",
+            "href": "/Browse/Trees/320738/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/320737/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "28.33 yd",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "28.33 yd",
+            "href": "/Browse/Trees/128093/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/128123/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "50.00 yd",
+          "169''",
+          "22.27 yd"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "50.00 yd",
+            "href": "/Browse/Trees/251598/Details"
+          },
+          {
+            "text": "169''",
+            "href": "/Browse/Trees/251156/Details"
+          },
+          {
+            "text": "22.27 yd",
+            "href": "/Browse/Trees/251573/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "47.60 yd",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "47.60 yd",
+            "href": "/Browse/Trees/252367/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/40703/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "22.17 yd",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "22.17 yd",
+            "href": "/Browse/Trees/225122/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/225122/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "56.23 yd",
+          "189''",
+          "31.00 yd"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "56.23 yd",
+            "href": "/Browse/Trees/242678/Details"
+          },
+          {
+            "text": "189''",
+            "href": "/Browse/Trees/173485/Details"
+          },
+          {
+            "text": "31.00 yd",
+            "href": "/Browse/Trees/242678/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

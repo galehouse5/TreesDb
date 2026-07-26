@@ -1,0 +1,353 @@
+{
+  "siteId": 38106,
+  "summary": {
+    "Name": "Detweiler Run Natural Area",
+    "RHI5": "115.68",
+    "RHI10": "104.65",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.85",
+    "RGI10": "8.13",
+    "RGI20": "(not enough data)",
+    "Trees measured": "42",
+    "Last measurement date": "04/16/2004",
+    "Ownership contact": "Rothrock State Park 181 Rothrock Lane Huntingdon, Pa.",
+    "General comments": "463 Acres"
+  },
+  "visits": [
+    {
+      "visited": "04/16/2004",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/detweiler_run.htm",
+      "comments": "463 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "101.6'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38106/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38106/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "101.6'",
+            "href": "/Browse/Trees/129739/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/129739/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "69.1'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/38106/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/38106/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "69.1'",
+            "href": "/Browse/Trees/129747/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/129747/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "81.1'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/38106/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/38106/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "81.1'",
+            "href": "/Browse/Trees/129707/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/129706/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "116.4'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38106/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38106/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "116.4'",
+            "href": "/Browse/Trees/129744/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/129740/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "100.9'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/38106/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/38106/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "100.9'",
+            "href": "/Browse/Trees/129712/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/129709/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "90.9'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/38106/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/38106/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "90.9'",
+            "href": "/Browse/Trees/129737/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/129737/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "134.6'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/38106/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/38106/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "134.6'",
+            "href": "/Browse/Trees/129733/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/129733/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "102.1'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/38106/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/38106/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "102.1'",
+            "href": "/Browse/Trees/129746/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/129745/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "84.1'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/38106/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/38106/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "84.1'",
+            "href": "/Browse/Trees/129715/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/129715/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "96.1'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38106/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38106/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "96.1'",
+            "href": "/Browse/Trees/129734/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/129734/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 43.665, -077 43.650",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Huntingdon"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

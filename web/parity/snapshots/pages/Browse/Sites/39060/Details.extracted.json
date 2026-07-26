@@ -1,0 +1,101 @@
+{
+  "siteId": 39060,
+  "summary": {
+    "Name": "South Dakota Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Populus deltoides ssp. monilifera",
+          "Plains Cottonwood",
+          "67.9'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides ssp. monilifera",
+            "href": "/Browse/Sites/39060/Species/Populus%20deltoides%20ssp.%20monilifera%20(Plains%20Cottonwood)/Details"
+          },
+          {
+            "text": "Plains Cottonwood",
+            "href": "/Browse/Sites/39060/Species/Populus%20deltoides%20ssp.%20monilifera%20(Plains%20Cottonwood)/Details"
+          },
+          {
+            "text": "67.9'",
+            "href": "/Browse/Trees/164169/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/164169/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "44 22.038, -100 20.802",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public, Private",
+      "County": "Hughes"
+    },
+    "state": {
+      "text": "South Dakota (US)",
+      "href": "/Browse/States/39/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

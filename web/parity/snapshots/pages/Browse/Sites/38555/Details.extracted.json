@@ -1,0 +1,365 @@
+{
+  "siteId": 38555,
+  "summary": {
+    "Name": "CFSP-Forest Cathedral",
+    "RHI5": "140.96",
+    "RHI10": "126.04",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.55",
+    "RGI10": "11.25",
+    "RGI20": "(not enough data)",
+    "Trees measured": "62",
+    "Last measurement date": "12/04/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/04/2009",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "05/05/2005",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna_cook_forest/cook_forest_april05.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "12/31/2003",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "Measurements made between 4/20/2002- 2/10/2004. Includes measurements made on the Bridle Trail"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "126.0'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38555/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38555/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "126.0'",
+            "href": "/Browse/Trees/146978/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/146978/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer spicatum",
+          "Mountain Maple",
+          "19.3'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spicatum",
+            "href": "/Browse/Sites/38555/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "Mountain Maple",
+            "href": "/Browse/Sites/38555/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "19.3'",
+            "href": "/Browse/Trees/146990/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/146990/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier spp.",
+          "Serviceberry",
+          "65.4'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier spp.",
+            "href": "/Browse/Sites/38555/Species/Amelanchier%20spp.%20(Serviceberry)/Details"
+          },
+          {
+            "text": "Serviceberry",
+            "href": "/Browse/Sites/38555/Species/Amelanchier%20spp.%20(Serviceberry)/Details"
+          },
+          {
+            "text": "65.4'",
+            "href": "/Browse/Trees/146989/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/146989/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "93.6'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/38555/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/38555/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "93.6'",
+            "href": "/Browse/Trees/214551/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/214551/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "89.1'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/38555/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/38555/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "89.1'",
+            "href": "/Browse/Trees/146984/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/146982/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "62.0'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/38555/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/38555/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "62.0'",
+            "href": "/Browse/Trees/145727/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/145727/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "124.6'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38555/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38555/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "124.6'",
+            "href": "/Browse/Trees/146996/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/214536/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex verticillata",
+          "Common Winterberry",
+          "12.5'",
+          "7''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex verticillata",
+            "href": "/Browse/Sites/38555/Species/Ilex%20verticillata%20(Common%20Winterberry)/Details"
+          },
+          {
+            "text": "Common Winterberry",
+            "href": "/Browse/Sites/38555/Species/Ilex%20verticillata%20(Common%20Winterberry)/Details"
+          },
+          {
+            "text": "12.5'",
+            "href": "/Browse/Trees/146988/Details"
+          },
+          {
+            "text": "7''",
+            "href": "/Browse/Trees/146987/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "117.3'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/38555/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/38555/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "117.3'",
+            "href": "/Browse/Trees/146981/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/146981/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "100.1'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/38555/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/38555/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "100.1'",
+            "href": "/Browse/Trees/145728/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/145728/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 15 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 20.695, -079 12.480",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Clarion"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

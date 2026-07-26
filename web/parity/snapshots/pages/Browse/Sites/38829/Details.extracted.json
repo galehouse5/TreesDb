@@ -1,0 +1,210 @@
+{
+  "siteId": 38829,
+  "summary": {
+    "Name": "Arizona-Sonora Desert Museum",
+    "RHI5": "24.64",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.69",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "02/07/2017",
+    "Ownership contact": "Arizona-Sonora Desert Museum 2021 North Kinney Road Tuscon, Arizona 85743",
+    "General comments": "Admission fee required. About 2 miles of trails on 98 acres with labelled plant specimens"
+  },
+  "visits": [
+    {
+      "visited": "02/07/2017",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Admission fee required. About 2 miles of trails on 98 acres with labelled plant specimens"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acacia greggii",
+          "Catclaw Acacia",
+          "23.3'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acacia greggii",
+            "href": "/Browse/Sites/38829/Species/Acacia%20greggii%20(Catclaw%20Acacia)/Details"
+          },
+          {
+            "text": "Catclaw Acacia",
+            "href": "/Browse/Sites/38829/Species/Acacia%20greggii%20(Catclaw%20Acacia)/Details"
+          },
+          {
+            "text": "23.3'",
+            "href": "/Browse/Trees/159287/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/159287/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carnegiea gigantea",
+          "Saguaro",
+          "32.6'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carnegiea gigantea",
+            "href": "/Browse/Sites/38829/Species/Carnegiea%20gigantea%20(Saguaro)/Details"
+          },
+          {
+            "text": "Saguaro",
+            "href": "/Browse/Sites/38829/Species/Carnegiea%20gigantea%20(Saguaro)/Details"
+          },
+          {
+            "text": "32.6'",
+            "href": "/Browse/Trees/159288/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/159288/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fourquieria columnaris",
+          "Boojum Tree",
+          "25.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fourquieria columnaris",
+            "href": "/Browse/Sites/38829/Species/Fourquieria%20columnaris%20(Boojum%20Tree)/Details"
+          },
+          {
+            "text": "Boojum Tree",
+            "href": "/Browse/Sites/38829/Species/Fourquieria%20columnaris%20(Boojum%20Tree)/Details"
+          },
+          {
+            "text": "25.0'",
+            "href": "/Browse/Trees/159291/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Olneya tesota",
+          "Desert Ironwood",
+          "27.0'",
+          "39''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Olneya tesota",
+            "href": "/Browse/Sites/38829/Species/Olneya%20tesota%20(Desert%20Ironwood)/Details"
+          },
+          {
+            "text": "Desert Ironwood",
+            "href": "/Browse/Sites/38829/Species/Olneya%20tesota%20(Desert%20Ironwood)/Details"
+          },
+          {
+            "text": "27.0'",
+            "href": "/Browse/Trees/159289/Details"
+          },
+          {
+            "text": "39''",
+            "href": "/Browse/Trees/159289/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus oblongifolia",
+          "Mexican Blue Oak",
+          "15.3'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus oblongifolia",
+            "href": "/Browse/Sites/38829/Species/Quercus%20oblongifolia%20(Mexican%20Blue%20Oak)/Details"
+          },
+          {
+            "text": "Mexican Blue Oak",
+            "href": "/Browse/Sites/38829/Species/Quercus%20oblongifolia%20(Mexican%20Blue%20Oak)/Details"
+          },
+          {
+            "text": "15.3'",
+            "href": "/Browse/Trees/159286/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/159286/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 14.645, -111 10.072",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Pima"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

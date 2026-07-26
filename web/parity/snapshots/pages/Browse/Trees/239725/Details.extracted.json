@@ -1,0 +1,70 @@
+{
+  "treeId": 239725,
+  "botanicalName": {
+    "text": "Pseudotsuga menziesii var. menziesii",
+    "href": "/Browse/Sites/39088/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "commonName": {
+    "text": "Douglas-Fir",
+    "href": "/Browse/Sites/39088/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "details": {
+    "Height": "216.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "502''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "3780.06",
+    "ENTSPTS": "9036.00",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.64",
+    "Champion points (abbreviated)": "718.00",
+    "Diameter": "160''",
+    "Conical volume": "10026.9 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 05/08/2015",
+      "summary": {
+        "Height": "216.0'",
+        "Girth": "502''"
+      },
+      "details": {
+        "Botanical name": "Pseudotsuga menziesii var. menziesii",
+        "Common name": "Douglas-Fir",
+        "Height": "216.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "502''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "3780.06",
+        "ENTSPTS": "9036.00",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.64",
+        "Champion points (abbreviated)": "718.00",
+        "Diameter": "160''",
+        "Conical volume": "10026.9 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Stefan Radivoyevitch"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "47 34.573, -123 38.890",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Quinault River Valley",
+      "href": "/Browse/Sites/39088/Details"
+    },
+    "rows": {
+      "Ownership type": "public",
+      "County": "Jefferson"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

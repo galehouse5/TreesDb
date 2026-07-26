@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Larix spp.",
+  "commonName": "Larch",
+  "global": {
+    "maxHeight": {
+      "text": "50.9'",
+      "href": "/Browse/Trees/227878/Details"
+    },
+    "maxGirth": {
+      "text": "66''",
+      "href": "/Browse/Trees/227878/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "North Carolina",
+          "50.9'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "50.9'",
+            "href": "/Browse/Trees/227878/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/227878/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

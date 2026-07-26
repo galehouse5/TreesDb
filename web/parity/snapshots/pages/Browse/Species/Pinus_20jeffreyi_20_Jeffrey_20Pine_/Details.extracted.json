@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Pinus jeffreyi",
+  "commonName": "Jeffrey Pine",
+  "global": {
+    "maxHeight": {
+      "text": "152.4'",
+      "href": "/Browse/Trees/320676/Details"
+    },
+    "maxGirth": {
+      "text": "267''",
+      "href": "/Browse/Trees/268992/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "152.4'",
+          "267''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "152.4'",
+            "href": "/Browse/Trees/320676/Details"
+          },
+          {
+            "text": "267''",
+            "href": "/Browse/Trees/268992/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "110.0'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/226002/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/226002/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

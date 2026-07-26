@@ -1,0 +1,194 @@
+{
+  "botanicalName": "Magnolia tripetala",
+  "commonName": "Umbrella-Tree",
+  "global": {
+    "maxHeight": {
+      "text": "24.57 yd",
+      "href": "/Browse/Trees/249157/Details"
+    },
+    "maxGirth": {
+      "text": "67''",
+      "href": "/Browse/Trees/291286/Details"
+    },
+    "maxCrownSpread": {
+      "text": "17.67 yd",
+      "href": "/Browse/Trees/291286/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "24.57 yd",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "24.57 yd",
+            "href": "/Browse/Trees/249157/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/249157/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "11.00 yd",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "11.00 yd",
+            "href": "/Browse/Trees/165581/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/165581/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "12.23 yd",
+          "52''",
+          "14.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "12.23 yd",
+            "href": "/Browse/Trees/302696/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/302696/Details"
+          },
+          {
+            "text": "14.00 yd",
+            "href": "/Browse/Trees/302696/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "24.03 yd",
+          "66''",
+          "15.00 yd"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "24.03 yd",
+            "href": "/Browse/Trees/173724/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/133206/Details"
+          },
+          {
+            "text": "15.00 yd",
+            "href": "/Browse/Trees/133206/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "22.17 yd",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "22.17 yd",
+            "href": "/Browse/Trees/227984/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/243330/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "23.27 yd",
+          "67''",
+          "17.67 yd"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "23.27 yd",
+            "href": "/Browse/Trees/296178/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/291286/Details"
+          },
+          {
+            "text": "17.67 yd",
+            "href": "/Browse/Trees/291286/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

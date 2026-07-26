@@ -1,0 +1,1169 @@
+{
+  "columns": [
+    {
+      "header": "Site",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "County",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "State",
+      "sortable": true,
+      "sortState": "desc"
+    },
+    {
+      "header": "RHI5",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RHI10",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RGI5",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "RGI10",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Last measurement",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Teslin Lake Campground",
+        "None",
+        "Yukon",
+        "-",
+        "-",
+        "-",
+        "-",
+        "08/05/2012"
+      ],
+      "links": [
+        {
+          "text": "Teslin Lake Campground",
+          "href": "/Browse/Sites/22034/Details"
+        },
+        null,
+        {
+          "text": "Yukon",
+          "href": "/Browse/States/61/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Watson Lake Campground",
+        "None",
+        "Yukon",
+        "77.46",
+        "-",
+        "4.07",
+        "-",
+        "08/05/2012"
+      ],
+      "links": [
+        {
+          "text": "Watson Lake Campground",
+          "href": "/Browse/Sites/22036/Details"
+        },
+        null,
+        {
+          "text": "Yukon",
+          "href": "/Browse/States/61/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "String Lake Trailhead",
+        "Teton",
+        "Wyoming",
+        "-",
+        "-",
+        "-",
+        "-",
+        "08/20/2010"
+      ],
+      "links": [
+        {
+          "text": "String Lake Trailhead",
+          "href": "/Browse/Sites/10860/Details"
+        },
+        null,
+        {
+          "text": "Wyoming",
+          "href": "/Browse/States/48/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Gros Ventre Campground",
+        "Teton",
+        "Wyoming",
+        "-",
+        "-",
+        "-",
+        "-",
+        "08/20/2010"
+      ],
+      "links": [
+        {
+          "text": "Gros Ventre Campground",
+          "href": "/Browse/Sites/10861/Details"
+        },
+        null,
+        {
+          "text": "Wyoming",
+          "href": "/Browse/States/48/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pacific Creek",
+        "Teton",
+        "Wyoming",
+        "73.10",
+        "-",
+        "4.64",
+        "-",
+        "06/21/2016"
+      ],
+      "links": [
+        {
+          "text": "Pacific Creek",
+          "href": "/Browse/Sites/37975/Details"
+        },
+        null,
+        {
+          "text": "Wyoming",
+          "href": "/Browse/States/48/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Colter Bay Area",
+        "Teton",
+        "Wyoming",
+        "-",
+        "-",
+        "-",
+        "-",
+        "06/19/2016"
+      ],
+      "links": [
+        {
+          "text": "Colter Bay Area",
+          "href": "/Browse/Sites/37980/Details"
+        },
+        null,
+        {
+          "text": "Wyoming",
+          "href": "/Browse/States/48/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Devils Tower National Monument",
+        "Crook",
+        "Wyoming",
+        "49.62",
+        "-",
+        "5.86",
+        "-",
+        "06/24/2016"
+      ],
+      "links": [
+        {
+          "text": "Devils Tower National Monument",
+          "href": "/Browse/Sites/37983/Details"
+        },
+        null,
+        {
+          "text": "Wyoming",
+          "href": "/Browse/States/48/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Cascade Canyon",
+        "Teton",
+        "Wyoming",
+        "-",
+        "-",
+        "-",
+        "-",
+        "07/03/2010"
+      ],
+      "links": [
+        {
+          "text": "Cascade Canyon",
+          "href": "/Browse/Sites/38396/Details"
+        },
+        null,
+        {
+          "text": "Wyoming",
+          "href": "/Browse/States/48/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Purgatory Gulch",
+        "Carbon",
+        "Wyoming",
+        "-",
+        "-",
+        "-",
+        "-",
+        "10/10/2016"
+      ],
+      "links": [
+        {
+          "text": "Purgatory Gulch",
+          "href": "/Browse/Sites/41249/Details"
+        },
+        null,
+        {
+          "text": "Wyoming",
+          "href": "/Browse/States/48/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Wyoming Single Tree Sites",
+        "Various",
+        "Wyoming",
+        "-",
+        "-",
+        "-",
+        "-",
+        "08/18/2010"
+      ],
+      "links": [
+        {
+          "text": "Wyoming Single Tree Sites",
+          "href": "/Browse/Sites/41250/Details"
+        },
+        null,
+        {
+          "text": "Wyoming",
+          "href": "/Browse/States/48/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Superior Municipl Forest",
+        "UA",
+        "Wisconsin",
+        "-",
+        "-",
+        "-",
+        "-",
+        "11/25/2013"
+      ],
+      "links": [
+        {
+          "text": "Superior Municipl Forest",
+          "href": "/Browse/Sites/38517/Details"
+        },
+        null,
+        {
+          "text": "Wisconsin",
+          "href": "/Browse/States/46/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Rhinelander",
+        "Oneida",
+        "Wisconsin",
+        "-",
+        "-",
+        "-",
+        "-",
+        "06/06/2005"
+      ],
+      "links": [
+        {
+          "text": "Rhinelander",
+          "href": "/Browse/Sites/40554/Details"
+        },
+        null,
+        {
+          "text": "Wisconsin",
+          "href": "/Browse/States/46/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Holmboe Conifer Forest",
+        "Oneida",
+        "Wisconsin",
+        "83.40",
+        "-",
+        "5.92",
+        "-",
+        "06/06/2005"
+      ],
+      "links": [
+        {
+          "text": "Holmboe Conifer Forest",
+          "href": "/Browse/Sites/40555/Details"
+        },
+        null,
+        {
+          "text": "Wisconsin",
+          "href": "/Browse/States/46/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Highway 8 Pines",
+        "Forest",
+        "Wisconsin",
+        "-",
+        "-",
+        "-",
+        "-",
+        "06/07/2005"
+      ],
+      "links": [
+        {
+          "text": "Highway 8 Pines",
+          "href": "/Browse/Sites/40556/Details"
+        },
+        null,
+        {
+          "text": "Wisconsin",
+          "href": "/Browse/States/46/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Cathedral Of The Pines",
+        "Oconto",
+        "Wisconsin",
+        "-",
+        "-",
+        "-",
+        "-",
+        "06/08/2005"
+      ],
+      "links": [
+        {
+          "text": "Cathedral Of The Pines",
+          "href": "/Browse/Sites/40557/Details"
+        },
+        null,
+        {
+          "text": "Wisconsin",
+          "href": "/Browse/States/46/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Douglas County",
+        "Douglas",
+        "Wisconsin",
+        "74.56",
+        "68.07",
+        "9.10",
+        "7.15",
+        "11/01/2007"
+      ],
+      "links": [
+        {
+          "text": "Douglas County",
+          "href": "/Browse/Sites/40558/Details"
+        },
+        null,
+        {
+          "text": "Wisconsin",
+          "href": "/Browse/States/46/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Wisconsin Single Tree Sites",
+        "Dane",
+        "Wisconsin",
+        "-",
+        "-",
+        "-",
+        "-",
+        "01/01/2000"
+      ],
+      "links": [
+        {
+          "text": "Wisconsin Single Tree Sites",
+          "href": "/Browse/Sites/40565/Details"
+        },
+        null,
+        {
+          "text": "Wisconsin",
+          "href": "/Browse/States/46/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Timberlane Road",
+        "Oneida",
+        "Wisconsin",
+        "90.90",
+        "-",
+        "5.11",
+        "-",
+        "06/22/2006"
+      ],
+      "links": [
+        {
+          "text": "Timberlane Road",
+          "href": "/Browse/Sites/40569/Details"
+        },
+        null,
+        {
+          "text": "Wisconsin",
+          "href": "/Browse/States/46/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Rothkugel Plantation",
+        "Pocahontas",
+        "West Virginia",
+        "-",
+        "-",
+        "-",
+        "-",
+        "05/04/2022"
+      ],
+      "links": [
+        {
+          "text": "Rothkugel Plantation",
+          "href": "/Browse/Sites/1033/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Neola White Pine Botonical Area",
+        "Greenbrier",
+        "West Virginia",
+        "-",
+        "-",
+        "-",
+        "-",
+        "10/08/2011"
+      ],
+      "links": [
+        {
+          "text": "Neola White Pine Botonical Area",
+          "href": "/Browse/Sites/1054/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Roane-Jackson Vo-Tech School Wood Lot",
+        "Jackson",
+        "West Virginia",
+        "115.90",
+        "108.93",
+        "7.24",
+        "6.73",
+        "04/03/2012"
+      ],
+      "links": [
+        {
+          "text": "Roane-Jackson Vo-Tech School Wood Lot",
+          "href": "/Browse/Sites/1179/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Dorsey Farm",
+        "Nicholas",
+        "West Virginia",
+        "-",
+        "-",
+        "-",
+        "-",
+        "11/10/2011"
+      ],
+      "links": [
+        {
+          "text": "Dorsey Farm",
+          "href": "/Browse/Sites/1726/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Fanny Bennet Hemlock Grove",
+        "Pendleton",
+        "West Virginia",
+        "98.34",
+        "-",
+        "8.64",
+        "-",
+        "10/23/2011"
+      ],
+      "links": [
+        {
+          "text": "Fanny Bennet Hemlock Grove",
+          "href": "/Browse/Sites/1727/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Shavers Mountain Old Growth",
+        "Randolph",
+        "West Virginia",
+        "85.14",
+        "-",
+        "8.12",
+        "-",
+        "10/01/2008"
+      ],
+      "links": [
+        {
+          "text": "Shavers Mountain Old Growth",
+          "href": "/Browse/Sites/11900/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Widen",
+        "Nicholas",
+        "West Virginia",
+        "134.18",
+        "122.50",
+        "9.87",
+        "7.64",
+        "03/15/2012"
+      ],
+      "links": [
+        {
+          "text": "Widen",
+          "href": "/Browse/Sites/24220/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Edison Arboretum",
+        "Wood County - City Of Parkersburg",
+        "West Virginia",
+        "97.64",
+        "92.69",
+        "6.93",
+        "5.79",
+        "02/01/2015"
+      ],
+      "links": [
+        {
+          "text": "Edison Arboretum",
+          "href": "/Browse/Sites/25422/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Worthington Golf Course",
+        "Wood",
+        "West Virginia",
+        "90.98",
+        "79.26",
+        "9.40",
+        "7.34",
+        "12/13/2017"
+      ],
+      "links": [
+        {
+          "text": "Worthington Golf Course",
+          "href": "/Browse/Sites/25429/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Giant Tree Trail",
+        "Ritchie",
+        "West Virginia",
+        "132.64",
+        "124.66",
+        "10.56",
+        "9.21",
+        "04/01/2015"
+      ],
+      "links": [
+        {
+          "text": "Giant Tree Trail",
+          "href": "/Browse/Sites/27496/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Hemlock Trail",
+        "Preston",
+        "West Virginia",
+        "125.80",
+        "109.52",
+        "9.71",
+        "7.04",
+        "04/12/2016"
+      ],
+      "links": [
+        {
+          "text": "Hemlock Trail",
+          "href": "/Browse/Sites/38024/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Alum Bridge",
+        "Lewis",
+        "West Virginia",
+        "130.14",
+        "119.89",
+        "13.16",
+        "10.96",
+        "03/25/2006"
+      ],
+      "links": [
+        {
+          "text": "Alum Bridge",
+          "href": "/Browse/Sites/38358/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Cathedral State Park",
+        "Preston",
+        "West Virginia",
+        "110.34",
+        "-",
+        "11.28",
+        "-",
+        "09/26/2003"
+      ],
+      "links": [
+        {
+          "text": "Cathedral State Park",
+          "href": "/Browse/Sites/38359/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "J. T. J Preserve - Upland Site",
+        "Wood",
+        "West Virginia",
+        "108.92",
+        "102.96",
+        "10.43",
+        "9.25",
+        "10/14/2019"
+      ],
+      "links": [
+        {
+          "text": "J. T. J Preserve - Upland Site",
+          "href": "/Browse/Sites/38368/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "J. T. J. Preserve - Bottomland",
+        "Wood",
+        "West Virginia",
+        "109.14",
+        "102.59",
+        "9.11",
+        "7.55",
+        "11/20/2016"
+      ],
+      "links": [
+        {
+          "text": "J. T. J. Preserve - Bottomland",
+          "href": "/Browse/Sites/38385/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Ansted Rail Trail",
+        "Fayette",
+        "West Virginia",
+        "118.42",
+        "107.34",
+        "0.00",
+        "0.00",
+        "03/25/2012"
+      ],
+      "links": [
+        {
+          "text": "Ansted Rail Trail",
+          "href": "/Browse/Sites/38469/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Sunrise Carriage Trail",
+        "Kanawha",
+        "West Virginia",
+        "122.30",
+        "110.84",
+        "11.01",
+        "7.93",
+        "03/13/2014"
+      ],
+      "links": [
+        {
+          "text": "Sunrise Carriage Trail",
+          "href": "/Browse/Sites/38474/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Granville Island Floodplain Forest",
+        "Monongalia",
+        "West Virginia",
+        "106.58",
+        "-",
+        "8.77",
+        "-",
+        "12/07/2016"
+      ],
+      "links": [
+        {
+          "text": "Granville Island Floodplain Forest",
+          "href": "/Browse/Sites/38658/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Mc Grew House",
+        "Preston",
+        "West Virginia",
+        "94.94",
+        "88.87",
+        "10.89",
+        "9.20",
+        "10/12/2017"
+      ],
+      "links": [
+        {
+          "text": "Mc Grew House",
+          "href": "/Browse/Sites/38729/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Bavarian Inn",
+        "Jefferson",
+        "West Virginia",
+        "89.58",
+        "-",
+        "10.52",
+        "-",
+        "11/19/2013"
+      ],
+      "links": [
+        {
+          "text": "Bavarian Inn",
+          "href": "/Browse/Sites/38832/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Cranesville - Plantations",
+        "Preston",
+        "West Virginia",
+        "88.40",
+        "-",
+        "4.93",
+        "-",
+        "08/15/2019"
+      ],
+      "links": [
+        {
+          "text": "Cranesville - Plantations",
+          "href": "/Browse/Sites/38844/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Martin Tract",
+        "Wood",
+        "West Virginia",
+        "108.30",
+        "-",
+        "9.99",
+        "-",
+        "03/15/2018"
+      ],
+      "links": [
+        {
+          "text": "Martin Tract",
+          "href": "/Browse/Sites/38889/Details"
+        },
+        null,
+        {
+          "text": "West Virginia",
+          "href": "/Browse/States/47/Details"
+        },
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "pageInfo": "Showing 1 to 40 of 1370 entries",
+  "hasPreviousPage": false,
+  "hasNextPage": true
+}

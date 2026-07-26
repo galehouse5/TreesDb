@@ -1,0 +1,104 @@
+{
+  "siteId": 38449,
+  "summary": {
+    "Name": "Gas Company Laurel Fields",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "06/14/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/14/2006",
+      "visitors": "Edward Frank",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/laurelfields/laurel_pole.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Kalmia latifolia",
+          "Mountain Laurel",
+          "5.61 m",
+          "38 cm",
+          "6.34 m"
+        ],
+        "links": [
+          {
+            "text": "Kalmia latifolia",
+            "href": "/Browse/Sites/38449/Species/Kalmia%20latifolia%20(Mountain%20Laurel)/Details"
+          },
+          {
+            "text": "Mountain Laurel",
+            "href": "/Browse/Sites/38449/Species/Kalmia%20latifolia%20(Mountain%20Laurel)/Details"
+          },
+          {
+            "text": "5.61 m",
+            "href": "/Browse/Trees/139960/Details"
+          },
+          {
+            "text": "38 cm",
+            "href": "/Browse/Trees/139959/Details"
+          },
+          {
+            "text": "6.34 m",
+            "href": "/Browse/Trees/139959/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 16.757, -079 06.989",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Jefferson"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

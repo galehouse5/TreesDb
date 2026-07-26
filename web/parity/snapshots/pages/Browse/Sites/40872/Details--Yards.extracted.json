@@ -1,0 +1,101 @@
+{
+  "siteId": 40872,
+  "summary": {
+    "Name": "Grapevine Mesa",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "03/09/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "This is a National Natural Landmark"
+  },
+  "visits": [
+    {
+      "visited": "03/09/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "This is a National Natural Landmark"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Yucca brevifolia var. jaegeriana",
+          "Jaeger's Joshua Tree",
+          "9.60 yd",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yucca brevifolia var. jaegeriana",
+            "href": "/Browse/Sites/40872/Species/Yucca%20brevifolia%20var.%20jaegeriana%20(Jaeger's%20Joshua%20Tree)/Details"
+          },
+          {
+            "text": "Jaeger's Joshua Tree",
+            "href": "/Browse/Sites/40872/Species/Yucca%20brevifolia%20var.%20jaegeriana%20(Jaeger's%20Joshua%20Tree)/Details"
+          },
+          {
+            "text": "9.60 yd",
+            "href": "/Browse/Trees/239528/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/239530/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 03.135, -114 03.962",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public(BLM)",
+      "County": "Mohave"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

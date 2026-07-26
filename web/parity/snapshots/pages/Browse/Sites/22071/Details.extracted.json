@@ -1,0 +1,350 @@
+{
+  "siteId": 22071,
+  "summary": {
+    "Name": "Rockwood Park",
+    "RHI5": "90.48",
+    "RHI10": "73.61",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.03",
+    "RGI10": "8.86",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "02/21/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/21/2007",
+      "visitors": "Scott Wade and Meg Varnes",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/delaware/rockwood/delaware_trees.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cedrus atlantica",
+          "Atlas Cedar",
+          "61.9'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus atlantica",
+            "href": "/Browse/Sites/22071/Species/Cedrus%20atlantica%20(Atlas%20Cedar)/Details"
+          },
+          {
+            "text": "Atlas Cedar",
+            "href": "/Browse/Sites/22071/Species/Cedrus%20atlantica%20(Atlas%20Cedar)/Details"
+          },
+          {
+            "text": "61.9'",
+            "href": "/Browse/Trees/75465/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/75465/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus sylvatica",
+          "European Beech",
+          "59.9'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus sylvatica",
+            "href": "/Browse/Sites/22071/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "European Beech",
+            "href": "/Browse/Sites/22071/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "59.9'",
+            "href": "/Browse/Trees/75461/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/75461/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "78.0'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/22071/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/22071/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "78.0'",
+            "href": "/Browse/Trees/75464/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/75464/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "128.3'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/22071/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/22071/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "128.3'",
+            "href": "/Browse/Trees/75463/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/75463/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia macrophylla",
+          "Bigleaf Magnolia",
+          "60.3'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia macrophylla",
+            "href": "/Browse/Sites/22071/Species/Magnolia%20macrophylla%20(Bigleaf%20Magnolia)/Details"
+          },
+          {
+            "text": "Bigleaf Magnolia",
+            "href": "/Browse/Sites/22071/Species/Magnolia%20macrophylla%20(Bigleaf%20Magnolia)/Details"
+          },
+          {
+            "text": "60.3'",
+            "href": "/Browse/Trees/75459/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/75459/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "80.4'",
+          "155''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/22071/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/22071/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "80.4'",
+            "href": "/Browse/Trees/75458/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/75458/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana",
+          "American Basswood",
+          "72.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana",
+            "href": "/Browse/Sites/22071/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/22071/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "72.2'",
+            "href": "/Browse/Trees/75462/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "83.1'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/22071/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/22071/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "83.1'",
+            "href": "/Browse/Trees/75456/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/75456/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus americana",
+          "American Elm",
+          "82.6'",
+          "155''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus americana",
+            "href": "/Browse/Sites/22071/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "American Elm",
+            "href": "/Browse/Sites/22071/Species/Ulmus%20americana%20(American%20Elm)/Details"
+          },
+          {
+            "text": "82.6'",
+            "href": "/Browse/Trees/75457/Details"
+          },
+          {
+            "text": "155''",
+            "href": "/Browse/Trees/75457/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Viburnum prunifolium",
+          "Blackhaw",
+          "29.4'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Viburnum prunifolium",
+            "href": "/Browse/Sites/22071/Species/Viburnum%20prunifolium%20(Blackhaw)/Details"
+          },
+          {
+            "text": "Blackhaw",
+            "href": "/Browse/Sites/22071/Species/Viburnum%20prunifolium%20(Blackhaw)/Details"
+          },
+          {
+            "text": "29.4'",
+            "href": "/Browse/Trees/75460/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/75460/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 46.191, -075 31.118",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - County Park",
+      "County": "New Castle"
+    },
+    "state": {
+      "text": "Delaware (US)",
+      "href": "/Browse/States/7/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

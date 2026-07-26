@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Abies pinsapo",
+  "commonName": "Spanish Fir",
+  "global": {
+    "maxHeight": {
+      "text": "71.7'",
+      "href": "/Browse/Trees/224552/Details"
+    },
+    "maxGirth": {
+      "text": "126''",
+      "href": "/Browse/Trees/224552/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Andalusia",
+          "41.4'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Andalusia",
+            "href": "/Browse/States/124/Details"
+          },
+          {
+            "text": "41.4'",
+            "href": "/Browse/Trees/283182/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/283181/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "71.7'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "71.7'",
+            "href": "/Browse/Trees/224552/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/224552/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

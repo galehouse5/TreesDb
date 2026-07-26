@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Ilex decidua",
+  "commonName": "Possumhaw",
+  "global": {
+    "maxHeight": {
+      "text": "15.00 m",
+      "href": "/Browse/Trees/252768/Details"
+    },
+    "maxGirth": {
+      "text": "107 cm",
+      "href": "/Browse/Trees/252767/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "12.56 m",
+          "61 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "12.56 m",
+            "href": "/Browse/Trees/241502/Details"
+          },
+          {
+            "text": "61 cm",
+            "href": "/Browse/Trees/241502/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "6.52 m",
+          "46 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "6.52 m",
+            "href": "/Browse/Trees/164193/Details"
+          },
+          {
+            "text": "46 cm",
+            "href": "/Browse/Trees/164193/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "15.00 m",
+          "107 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "15.00 m",
+            "href": "/Browse/Trees/252768/Details"
+          },
+          {
+            "text": "107 cm",
+            "href": "/Browse/Trees/252767/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

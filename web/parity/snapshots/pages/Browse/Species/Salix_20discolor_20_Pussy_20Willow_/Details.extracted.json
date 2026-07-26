@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Salix discolor",
+  "commonName": "Pussy Willow",
+  "global": {
+    "maxHeight": {
+      "text": "33.1'",
+      "href": "/Browse/Trees/233049/Details"
+    },
+    "maxGirth": {
+      "text": "16''",
+      "href": "/Browse/Trees/233049/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ontario",
+          "33.1'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "33.1'",
+            "href": "/Browse/Trees/233049/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/233049/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

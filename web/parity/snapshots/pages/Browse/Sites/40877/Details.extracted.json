@@ -1,0 +1,129 @@
+{
+  "siteId": 40877,
+  "summary": {
+    "Name": "Indian Hill",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "07/02/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/02/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Yucca brevifolia var. brevifolia",
+          "Joshua Tree",
+          "19.8'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yucca brevifolia var. brevifolia",
+            "href": "/Browse/Sites/40877/Species/Yucca%20brevifolia%20var.%20brevifolia%20(Joshua%20Tree)/Details"
+          },
+          {
+            "text": "Joshua Tree",
+            "href": "/Browse/Sites/40877/Species/Yucca%20brevifolia%20var.%20brevifolia%20(Joshua%20Tree)/Details"
+          },
+          {
+            "text": "19.8'",
+            "href": "/Browse/Trees/239617/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/239617/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Yucca brevifolia var. jaegeriana",
+          "Jaeger's Joshua Tree",
+          "23.5'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Yucca brevifolia var. jaegeriana",
+            "href": "/Browse/Sites/40877/Species/Yucca%20brevifolia%20var.%20jaegeriana%20(Jaeger's%20Joshua%20Tree)/Details"
+          },
+          {
+            "text": "Jaeger's Joshua Tree",
+            "href": "/Browse/Sites/40877/Species/Yucca%20brevifolia%20var.%20jaegeriana%20(Jaeger's%20Joshua%20Tree)/Details"
+          },
+          {
+            "text": "23.5'",
+            "href": "/Browse/Trees/239619/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/239619/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 03.135, -114 03.962",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Mohave"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 268683,
+  "botanicalName": {
+    "text": "Sequoia sempervirens",
+    "href": "/Browse/Sites/41618/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+  },
+  "commonName": {
+    "text": "Redwood",
+    "href": "/Browse/Sites/41618/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+  },
+  "details": {
+    "Height": "259.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "1101''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "21794.86",
+    "ENTSPTS": "23758.93",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.73",
+    "Champion points (abbreviated)": "1359.80",
+    "Diameter": "350''",
+    "Conical volume": "57812.7 ft³",
+    "General comments": "Height is an initial measurement with handheld laser. Circumference is a calculated functional number due to steep slope. 27,959 cubic feet"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 05/26/2015",
+      "summary": {
+        "Height": "259.0'",
+        "Girth": "1101''"
+      },
+      "details": {
+        "Botanical name": "Sequoia sempervirens",
+        "Common name": "Redwood",
+        "Height": "259.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "1101''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "21794.86",
+        "ENTSPTS": "23758.93",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.73",
+        "Champion points (abbreviated)": "1359.80",
+        "Diameter": "350''",
+        "Conical volume": "57812.7 ft³",
+        "General comments": "Height is an initial measurement with handheld laser. Circumference is a calculated functional number due to steep slope. 27,959 cubic feet"
+      },
+      "measurers": "John Montague"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "40 10.170, -123 59.744",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Redwood National Park",
+      "href": "/Browse/Sites/41618/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Humboldt"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

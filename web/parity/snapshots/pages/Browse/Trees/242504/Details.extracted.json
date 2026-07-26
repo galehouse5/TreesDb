@@ -1,0 +1,70 @@
+{
+  "treeId": 242504,
+  "botanicalName": {
+    "text": "Pseudotsuga menziesii var. glauca",
+    "href": "/Browse/Sites/25455/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+  },
+  "commonName": {
+    "text": "Rocky Mountain Douglas-Fir",
+    "href": "/Browse/Sites/25455/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+  },
+  "details": {
+    "Height": "154.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "129''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "178.54",
+    "ENTSPTS": "1660.88",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.43",
+    "Champion points (abbreviated)": "283.50",
+    "Diameter": "41''",
+    "Conical volume": "473.6 ft³",
+    "General comments": "Wolf Creek"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 08/15/2014",
+      "summary": {
+        "Height": "154.5'",
+        "Girth": "129''"
+      },
+      "details": {
+        "Botanical name": "Pseudotsuga menziesii var. glauca",
+        "Common name": "Rocky Mountain Douglas-Fir",
+        "Height": "154.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "129''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "178.54",
+        "ENTSPTS": "1660.88",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.43",
+        "Champion points (abbreviated)": "283.50",
+        "Diameter": "41''",
+        "Conical volume": "473.6 ft³",
+        "General comments": "Wolf Creek"
+      },
+      "measurers": "Matt Markworth, Will Blozan, and Chris Morris"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "37 27.416, -107 51.535",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Hermosa Creek",
+      "href": "/Browse/Sites/25455/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "La Plata"
+    },
+    "state": {
+      "text": "Colorado (US)",
+      "href": "/Browse/States/5/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

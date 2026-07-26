@@ -1,0 +1,70 @@
+{
+  "treeId": 96555,
+  "botanicalName": {
+    "text": "Pinus ponderosa var. brachyptera",
+    "href": "/Browse/Sites/27486/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Ponderosa Pine",
+    "href": "/Browse/Sites/27486/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+  },
+  "details": {
+    "Height": "101.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "109''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "83.74",
+    "ENTSPTS": "921.96",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.35",
+    "Champion points (abbreviated)": "210.50",
+    "Diameter": "35''",
+    "Conical volume": "222.1 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 06/02/2015",
+      "summary": {
+        "Height": "101.5'",
+        "Girth": "109''"
+      },
+      "details": {
+        "Botanical name": "Pinus ponderosa var. brachyptera",
+        "Common name": "Ponderosa Pine",
+        "Height": "101.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "109''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "83.74",
+        "ENTSPTS": "921.96",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.35",
+        "Champion points (abbreviated)": "210.50",
+        "Diameter": "35''",
+        "Conical volume": "222.1 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Turner Sharp"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "36 17.530, -112 05.068",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Grand Canyon - North Rim",
+      "href": "/Browse/Sites/27486/Details"
+    },
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,374 @@
+{
+  "siteId": 40455,
+  "summary": {
+    "Name": "Long Branch Park",
+    "RHI5": "131.24",
+    "RHI10": "126.76",
+    "RHI20": "119.87",
+    "RGI5": "12.70",
+    "RGI10": "10.69",
+    "RGI20": "8.94",
+    "Trees measured": "86",
+    "Last measurement date": "01/17/2021",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/17/2021",
+      "visitors": "Elijah Whitcomb, Tom Howard, and Robert Henry",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "01/28/2020",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "//www.ents-bbs.org/viewtopic.php?f=105&t=6583&sid=aceb1ce07ef88ff10f8f051fb5729753&start=10#p44115",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/08/2019",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php?f=105&t=6583&sid=aceb1ce07ef88ff10f8f051fb5729753&start=10#p43617",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/26/2015",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "09/07/2014",
+      "visitors": "Tom Howard and Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer ×freemanii",
+          "Freeman Maple",
+          "117.3'",
+          "105''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer ×freemanii",
+            "href": "/Browse/Sites/40455/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "Freeman Maple",
+            "href": "/Browse/Sites/40455/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "117.3'",
+            "href": "/Browse/Trees/230463/Details"
+          },
+          {
+            "text": "105''",
+            "href": "/Browse/Trees/230447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer platanoides",
+          "Norway Maple",
+          "71.7'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer platanoides",
+            "href": "/Browse/Sites/40455/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "Norway Maple",
+            "href": "/Browse/Sites/40455/Species/Acer%20platanoides%20(Norway%20Maple)/Details"
+          },
+          {
+            "text": "71.7'",
+            "href": "/Browse/Trees/230443/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/230443/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "120.3'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40455/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40455/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "120.3'",
+            "href": "/Browse/Trees/263368/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/263368/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "120.3'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/40455/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40455/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "120.3'",
+            "href": "/Browse/Trees/230462/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/230444/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "93.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40455/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40455/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "93.9'",
+            "href": "/Browse/Trees/263384/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "93.9'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40455/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40455/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "93.9'",
+            "href": "/Browse/Trees/230445/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/230446/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea",
+          "Common Serviceberry",
+          "63.3'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea",
+            "href": "/Browse/Sites/40455/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/40455/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "63.3'",
+            "href": "/Browse/Trees/230458/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/230458/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "121.5'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40455/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40455/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "121.5'",
+            "href": "/Browse/Trees/230461/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/230437/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "125.6'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40455/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40455/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "125.6'",
+            "href": "/Browse/Trees/230436/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/230436/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "124.6'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/40455/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/40455/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "124.6'",
+            "href": "/Browse/Trees/230460/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/230460/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 32 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "43 07.028, -076 15.071",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Onondaga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

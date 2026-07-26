@@ -1,0 +1,70 @@
+{
+  "treeId": 320601,
+  "botanicalName": {
+    "text": "Quercus velutina",
+    "href": "/Browse/Sites/42345/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+  },
+  "commonName": {
+    "text": "Black Oak",
+    "href": "/Browse/Sites/42345/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+  },
+  "details": {
+    "Height": "35.87 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "233 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "68.52",
+    "ENTSPTS": "898.05",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.09",
+    "Champion points (abbreviated)": "209.26",
+    "Diameter": "74 cm",
+    "Conical volume": "5.15 m³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/04/2025",
+      "summary": {
+        "Height": "35.87 m",
+        "Girth": "233 cm"
+      },
+      "details": {
+        "Botanical name": "Quercus velutina",
+        "Common name": "Black Oak",
+        "Height": "35.87 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "233 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "68.52",
+        "ENTSPTS": "898.05",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.09",
+        "Champion points (abbreviated)": "209.26",
+        "Diameter": "74 cm",
+        "Conical volume": "5.15 m³",
+        "General comments": "(none)"
+      },
+      "measurers": "Elijah Whitcomb"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 26.256, -085 38.866",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Big Creek",
+      "href": "/Browse/Sites/42345/Details"
+    },
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Grundy"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

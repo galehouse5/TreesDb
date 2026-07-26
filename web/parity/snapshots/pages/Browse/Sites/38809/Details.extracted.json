@@ -1,0 +1,269 @@
+{
+  "siteId": 38809,
+  "summary": {
+    "Name": "Swan Point Creek",
+    "RHI5": "133.32",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.14",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "01/14/2017",
+    "Ownership contact": "Patuxent River Park 26000 Croom Airport Road Upper Marlboro, Md 20772",
+    "General comments": "site is within the Jug Bay Natural Area."
+  },
+  "visits": [
+    {
+      "visited": "01/14/2017",
+      "visitors": "Darian Copiz",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "site is within the Jug Bay Natural Area."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "112.4'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38809/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38809/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "112.4'",
+            "href": "/Browse/Trees/158460/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/158460/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "116.2'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/38809/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/38809/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "116.2'",
+            "href": "/Browse/Trees/158459/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/158459/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "123.3'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/38809/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/38809/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "123.3'",
+            "href": "/Browse/Trees/158456/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/158457/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "127.3'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/38809/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/38809/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "127.3'",
+            "href": "/Browse/Trees/158453/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/158454/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "158.1'",
+          "185''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38809/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38809/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "158.1'",
+            "href": "/Browse/Trees/158449/Details"
+          },
+          {
+            "text": "185''",
+            "href": "/Browse/Trees/158449/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "124.9'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/38809/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/38809/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "124.9'",
+            "href": "/Browse/Trees/158458/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/158458/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "133.0'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38809/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38809/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "133.0'",
+            "href": "/Browse/Trees/158450/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/158452/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 45.663, -076 43.286",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Prince George's"
+    },
+    "state": {
+      "text": "Maryland (US)",
+      "href": "/Browse/States/18/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

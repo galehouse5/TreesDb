@@ -1,0 +1,330 @@
+{
+  "stateId": 258,
+  "summary": {
+    "Name": "South Bohemian Region",
+    "Code": "31",
+    "RHI5": "99.74",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.64",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "03/18/2016"
+  },
+  "location": {
+    "Coordinates": "49 05.188, 014 34.205",
+    "Country": "Czechia"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies alba",
+          "Silver Fir",
+          "85.2'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies alba",
+            "href": "/Browse/States/258/Species/Abies%20alba%20(Silver%20Fir)/Details"
+          },
+          {
+            "text": "Silver Fir",
+            "href": "/Browse/States/258/Species/Abies%20alba%20(Silver%20Fir)/Details"
+          },
+          {
+            "text": "85.2'",
+            "href": "/Browse/Trees/284682/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/284682/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus betulus",
+          "European Hornbeam",
+          "72.6'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus betulus",
+            "href": "/Browse/States/258/Species/Carpinus%20betulus%20(European%20Hornbeam)/Details"
+          },
+          {
+            "text": "European Hornbeam",
+            "href": "/Browse/States/258/Species/Carpinus%20betulus%20(European%20Hornbeam)/Details"
+          },
+          {
+            "text": "72.6'",
+            "href": "/Browse/Trees/284683/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/284683/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus sylvatica",
+          "European Beech",
+          "93.5'",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus sylvatica",
+            "href": "/Browse/States/258/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "European Beech",
+            "href": "/Browse/States/258/Species/Fagus%20sylvatica%20(European%20Beech)/Details"
+          },
+          {
+            "text": "93.5'",
+            "href": "/Browse/Trees/284681/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/284681/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "116.5'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/States/258/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/States/258/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "116.5'",
+            "href": "/Browse/Trees/284680/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/284680/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus petraea",
+          "Sessile Oak",
+          "98.7'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus petraea",
+            "href": "/Browse/States/258/Species/Quercus%20petraea%20(Sessile%20Oak)/Details"
+          },
+          {
+            "text": "Sessile Oak",
+            "href": "/Browse/States/258/Species/Quercus%20petraea%20(Sessile%20Oak)/Details"
+          },
+          {
+            "text": "98.7'",
+            "href": "/Browse/Trees/284684/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/284684/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus robur",
+          "English Oak",
+          "104.8'",
+          "141''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus robur",
+            "href": "/Browse/States/258/Species/Quercus%20robur%20(English%20Oak)/Details"
+          },
+          {
+            "text": "English Oak",
+            "href": "/Browse/States/258/Species/Quercus%20robur%20(English%20Oak)/Details"
+          },
+          {
+            "text": "104.8'",
+            "href": "/Browse/Trees/284687/Details"
+          },
+          {
+            "text": "141''",
+            "href": "/Browse/Trees/284687/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxus baccata",
+          "English Yew",
+          "31.2'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxus baccata",
+            "href": "/Browse/States/258/Species/Taxus%20baccata%20(English%20Yew)/Details"
+          },
+          {
+            "text": "English Yew",
+            "href": "/Browse/States/258/Species/Taxus%20baccata%20(English%20Yew)/Details"
+          },
+          {
+            "text": "31.2'",
+            "href": "/Browse/Trees/284685/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/284685/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia cordata",
+          "Littleleaf Linden",
+          "39.4'",
+          "161''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia cordata",
+            "href": "/Browse/States/258/Species/Tilia%20cordata%20(Littleleaf%20Linden)/Details"
+          },
+          {
+            "text": "Littleleaf Linden",
+            "href": "/Browse/States/258/Species/Tilia%20cordata%20(Littleleaf%20Linden)/Details"
+          },
+          {
+            "text": "39.4'",
+            "href": "/Browse/Trees/284686/Details"
+          },
+          {
+            "text": "161''",
+            "href": "/Browse/Trees/284686/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cesky Kumlov Castle Garden",
+          "99.74",
+          "-",
+          "12.64",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cesky Kumlov Castle Garden",
+            "href": "/Browse/Sites/41976/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

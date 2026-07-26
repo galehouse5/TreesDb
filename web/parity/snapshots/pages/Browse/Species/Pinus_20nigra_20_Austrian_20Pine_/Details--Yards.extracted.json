@@ -1,0 +1,205 @@
+{
+  "botanicalName": "Pinus nigra",
+  "commonName": "Austrian Pine",
+  "global": {
+    "maxHeight": {
+      "text": "41.13 yd",
+      "href": "/Browse/Trees/274982/Details"
+    },
+    "maxGirth": {
+      "text": "120''",
+      "href": "/Browse/Trees/226115/Details"
+    },
+    "maxCrownSpread": {
+      "text": "14.17 yd",
+      "href": "/Browse/Trees/315042/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "41.13 yd",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "41.13 yd",
+            "href": "/Browse/Trees/274982/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/274982/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "22.07 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "22.07 yd",
+            "href": "/Browse/Trees/75582/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "13.50 yd",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "13.50 yd",
+            "href": "/Browse/Trees/102902/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/102902/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "33.57 yd",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "33.57 yd",
+            "href": "/Browse/Trees/261815/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/226115/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "11.67 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "11.67 yd",
+            "href": "/Browse/Trees/161089/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vienna",
+          "20.43 yd",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vienna",
+            "href": "/Browse/States/254/Details"
+          },
+          {
+            "text": "20.43 yd",
+            "href": "/Browse/Trees/286416/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/286416/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "18.13 yd",
+          "73''",
+          "14.17 yd"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "18.13 yd",
+            "href": "/Browse/Trees/315042/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/315042/Details"
+          },
+          {
+            "text": "14.17 yd",
+            "href": "/Browse/Trees/315042/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

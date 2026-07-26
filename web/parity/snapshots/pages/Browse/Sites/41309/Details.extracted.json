@@ -1,0 +1,294 @@
+{
+  "siteId": 41309,
+  "summary": {
+    "Name": "Connecticut Single Tree Sites",
+    "RHI5": "102.70",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "20.65",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "06/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Larix kaempferi",
+          "Japanese Larch",
+          "90.3'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix kaempferi",
+            "href": "/Browse/Sites/41309/Species/Larix%20kaempferi%20(Japanese%20Larch)/Details"
+          },
+          {
+            "text": "Japanese Larch",
+            "href": "/Browse/Sites/41309/Species/Larix%20kaempferi%20(Japanese%20Larch)/Details"
+          },
+          {
+            "text": "90.3'",
+            "href": "/Browse/Trees/256802/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/256802/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "135.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41309/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41309/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "135.2'",
+            "href": "/Browse/Trees/256801/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "104.0'",
+          "334''",
+          "143.4'"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/41309/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/41309/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "104.0'",
+            "href": "/Browse/Trees/256795/Details"
+          },
+          {
+            "text": "334''",
+            "href": "/Browse/Trees/256795/Details"
+          },
+          {
+            "text": "143.4'",
+            "href": "/Browse/Trees/256795/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "75.1'",
+          "240''",
+          "135.6'"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/41309/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/41309/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "75.1'",
+            "href": "/Browse/Trees/256797/Details"
+          },
+          {
+            "text": "240''",
+            "href": "/Browse/Trees/256797/Details"
+          },
+          {
+            "text": "135.6'",
+            "href": "/Browse/Trees/256797/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "106.0'",
+          "169''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/41309/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/41309/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "106.0'",
+            "href": "/Browse/Trees/256800/Details"
+          },
+          {
+            "text": "169''",
+            "href": "/Browse/Trees/256800/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus spp.",
+          "Oak",
+          "-",
+          "168''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus spp.",
+            "href": "/Browse/Sites/41309/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          {
+            "text": "Oak",
+            "href": "/Browse/Sites/41309/Species/Quercus%20spp.%20(Oak)/Details"
+          },
+          null,
+          {
+            "text": "168''",
+            "href": "/Browse/Trees/256799/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "78.0'",
+          "328''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/41309/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/41309/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "78.0'",
+            "href": "/Browse/Trees/256798/Details"
+          },
+          {
+            "text": "328''",
+            "href": "/Browse/Trees/256798/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "-",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/41309/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/41309/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          null,
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/256794/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 32.842, -073 04.521",
+    "coordinatesKind": "calculated",
+    "rows": {
+      "Ownership type": "public - private",
+      "County": "Various"
+    },
+    "state": {
+      "text": "Connecticut (US)",
+      "href": "/Browse/States/6/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

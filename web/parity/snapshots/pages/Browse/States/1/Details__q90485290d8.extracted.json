@@ -1,0 +1,314 @@
+{
+  "columns": [
+    {
+      "header": "Botanical name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Common name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max height",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max girth",
+      "sortable": true,
+      "sortState": "desc"
+    },
+    {
+      "header": "Max crown spread",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Magnolia grandiflora",
+        "Southern Magnolia",
+        "83.8'",
+        "226''",
+        "87.9'"
+      ],
+      "links": [
+        {
+          "text": "Magnolia grandiflora",
+          "href": "/Browse/States/1/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+        },
+        {
+          "text": "Southern Magnolia",
+          "href": "/Browse/States/1/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+        },
+        {
+          "text": "83.8'",
+          "href": "/Browse/Trees/233716/Details"
+        },
+        {
+          "text": "226''",
+          "href": "/Browse/Trees/253885/Details"
+        },
+        {
+          "text": "87.9'",
+          "href": "/Browse/Trees/253885/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Quercus pagoda",
+        "Cherrybark Oak",
+        "-",
+        "211''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus pagoda",
+          "href": "/Browse/States/1/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+        },
+        {
+          "text": "Cherrybark Oak",
+          "href": "/Browse/States/1/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+        },
+        null,
+        {
+          "text": "211''",
+          "href": "/Browse/Trees/233708/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Carya illinoinensis",
+        "Pecan",
+        "127.3'",
+        "197''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Carya illinoinensis",
+          "href": "/Browse/States/1/Species/Carya%20illinoinensis%20(Pecan)/Details"
+        },
+        {
+          "text": "Pecan",
+          "href": "/Browse/States/1/Species/Carya%20illinoinensis%20(Pecan)/Details"
+        },
+        {
+          "text": "127.3'",
+          "href": "/Browse/Trees/253883/Details"
+        },
+        {
+          "text": "197''",
+          "href": "/Browse/Trees/253883/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus falcata",
+        "Southern Red Oak",
+        "-",
+        "193''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus falcata",
+          "href": "/Browse/States/1/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+        },
+        {
+          "text": "Southern Red Oak",
+          "href": "/Browse/States/1/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+        },
+        null,
+        {
+          "text": "193''",
+          "href": "/Browse/Trees/253881/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Platanus occidentalis",
+        "American Sycamore",
+        "136.3'",
+        "193''",
+        "88.0'"
+      ],
+      "links": [
+        {
+          "text": "Platanus occidentalis",
+          "href": "/Browse/States/1/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+        },
+        {
+          "text": "American Sycamore",
+          "href": "/Browse/States/1/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+        },
+        {
+          "text": "136.3'",
+          "href": "/Browse/Trees/315711/Details"
+        },
+        {
+          "text": "193''",
+          "href": "/Browse/Trees/253882/Details"
+        },
+        {
+          "text": "88.0'",
+          "href": "/Browse/Trees/253882/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Populus deltoides",
+        "Eastern Cottonwood",
+        "136.7'",
+        "170''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Populus deltoides",
+          "href": "/Browse/States/1/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+        },
+        {
+          "text": "Eastern Cottonwood",
+          "href": "/Browse/States/1/Species/Populus%20deltoides%20(Eastern%20Cottonwood)/Details"
+        },
+        {
+          "text": "136.7'",
+          "href": "/Browse/Trees/233848/Details"
+        },
+        {
+          "text": "170''",
+          "href": "/Browse/Trees/233845/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Celtis laevigata var. laevigata",
+        "Sugarberry",
+        "117.4'",
+        "153''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Celtis laevigata var. laevigata",
+          "href": "/Browse/States/1/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+        },
+        {
+          "text": "Sugarberry",
+          "href": "/Browse/States/1/Species/Celtis%20laevigata%20var.%20laevigata%20(Sugarberry)/Details"
+        },
+        {
+          "text": "117.4'",
+          "href": "/Browse/Trees/233882/Details"
+        },
+        {
+          "text": "153''",
+          "href": "/Browse/Trees/233881/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus alba",
+        "White Oak",
+        "129.9'",
+        "146''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus alba",
+          "href": "/Browse/States/1/Species/Quercus%20alba%20(White%20Oak)/Details"
+        },
+        {
+          "text": "White Oak",
+          "href": "/Browse/States/1/Species/Quercus%20alba%20(White%20Oak)/Details"
+        },
+        {
+          "text": "129.9'",
+          "href": "/Browse/Trees/233721/Details"
+        },
+        {
+          "text": "146''",
+          "href": "/Browse/Trees/233876/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus rubra",
+        "Northern Red Oak",
+        "137.6'",
+        "124''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus rubra",
+          "href": "/Browse/States/1/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+        },
+        {
+          "text": "Northern Red Oak",
+          "href": "/Browse/States/1/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+        },
+        {
+          "text": "137.6'",
+          "href": "/Browse/Trees/233869/Details"
+        },
+        {
+          "text": "124''",
+          "href": "/Browse/Trees/233869/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Liquidambar styraciflua",
+        "Sweetgum",
+        "136.7'",
+        "122''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Liquidambar styraciflua",
+          "href": "/Browse/States/1/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+        },
+        {
+          "text": "Sweetgum",
+          "href": "/Browse/States/1/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+        },
+        {
+          "text": "136.7'",
+          "href": "/Browse/Trees/233883/Details"
+        },
+        {
+          "text": "122''",
+          "href": "/Browse/Trees/252492/Details"
+        },
+        null
+      ]
+    }
+  ],
+  "pageInfo": "Showing 1 to 10 of 58 entries",
+  "hasPreviousPage": false,
+  "hasNextPage": true
+}

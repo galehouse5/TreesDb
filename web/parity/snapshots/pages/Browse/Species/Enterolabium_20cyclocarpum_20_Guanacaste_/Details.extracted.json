@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Enterolabium cyclocarpum",
+  "commonName": "Guanacaste",
+  "global": {
+    "maxHeight": {
+      "text": "73.1'",
+      "href": "/Browse/Trees/243473/Details"
+    },
+    "maxGirth": {
+      "text": "255''",
+      "href": "/Browse/Trees/243473/Details"
+    },
+    "maxCrownSpread": {
+      "text": "145.4'",
+      "href": "/Browse/Trees/243473/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Guanacaste",
+          "73.1'",
+          "255''",
+          "145.4'"
+        ],
+        "links": [
+          {
+            "text": "Guanacaste",
+            "href": "/Browse/States/119/Details"
+          },
+          {
+            "text": "73.1'",
+            "href": "/Browse/Trees/243473/Details"
+          },
+          {
+            "text": "255''",
+            "href": "/Browse/Trees/243473/Details"
+          },
+          {
+            "text": "145.4'",
+            "href": "/Browse/Trees/243473/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

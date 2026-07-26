@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Elaegnus umbellata",
+  "commonName": "Autumn-Olive",
+  "global": {
+    "maxHeight": {
+      "text": "17.5'",
+      "href": "/Browse/Trees/312052/Details"
+    },
+    "maxGirth": {
+      "text": "33''",
+      "href": "/Browse/Trees/312052/Details"
+    },
+    "maxCrownSpread": {
+      "text": "23.0'",
+      "href": "/Browse/Trees/312052/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "West Virginia",
+          "17.5'",
+          "33''",
+          "23.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "17.5'",
+            "href": "/Browse/Trees/312052/Details"
+          },
+          {
+            "text": "33''",
+            "href": "/Browse/Trees/312052/Details"
+          },
+          {
+            "text": "23.0'",
+            "href": "/Browse/Trees/312052/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

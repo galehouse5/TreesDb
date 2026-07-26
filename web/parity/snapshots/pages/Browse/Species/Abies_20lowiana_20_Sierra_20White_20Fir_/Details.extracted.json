@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Abies lowiana",
+  "commonName": "Sierra White Fir",
+  "global": {
+    "maxHeight": {
+      "text": "173.6'",
+      "href": "/Browse/Trees/241858/Details"
+    },
+    "maxGirth": {
+      "text": "211''",
+      "href": "/Browse/Trees/241858/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "173.6'",
+          "211''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "173.6'",
+            "href": "/Browse/Trees/241858/Details"
+          },
+          {
+            "text": "211''",
+            "href": "/Browse/Trees/241858/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

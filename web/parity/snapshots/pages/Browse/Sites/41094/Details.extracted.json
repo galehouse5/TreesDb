@@ -1,0 +1,344 @@
+{
+  "siteId": 41094,
+  "summary": {
+    "Name": "Spoilcane Creek",
+    "RHI5": "148.26",
+    "RHI10": "140.53",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.14",
+    "RGI10": "7.37",
+    "RGI20": "(not enough data)",
+    "Trees measured": "25",
+    "Last measurement date": "01/06/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/06/2012",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "113.4'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41094/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41094/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "113.4'",
+            "href": "/Browse/Trees/249290/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/249290/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "134.6'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/41094/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/41094/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "134.6'",
+            "href": "/Browse/Trees/249292/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/249292/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "136.2'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/41094/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/41094/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "136.2'",
+            "href": "/Browse/Trees/249293/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/249293/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "130.2'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41094/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41094/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "130.2'",
+            "href": "/Browse/Trees/249294/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/249294/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "150.5'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41094/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41094/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "150.5'",
+            "href": "/Browse/Trees/249296/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/249296/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia fraseri",
+          "Mountain Magnolia",
+          "111.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia fraseri",
+            "href": "/Browse/Sites/41094/Species/Magnolia%20fraseri%20(Mountain%20Magnolia)/Details"
+          },
+          {
+            "text": "Mountain Magnolia",
+            "href": "/Browse/Sites/41094/Species/Magnolia%20fraseri%20(Mountain%20Magnolia)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/249297/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "108.8'",
+          "67''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/41094/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/41094/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "108.8'",
+            "href": "/Browse/Trees/249298/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/249298/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "171.2'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41094/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41094/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "171.2'",
+            "href": "/Browse/Trees/249299/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/249299/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus virginiana",
+          "Virginia Pine",
+          "111.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus virginiana",
+            "href": "/Browse/Sites/41094/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "Virginia Pine",
+            "href": "/Browse/Sites/41094/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "111.2'",
+            "href": "/Browse/Trees/249304/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "144.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/41094/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/41094/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "144.0'",
+            "href": "/Browse/Trees/249305/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 45.691, -083 44.962",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "White"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

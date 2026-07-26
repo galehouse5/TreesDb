@@ -1,0 +1,353 @@
+{
+  "siteId": 40255,
+  "summary": {
+    "Name": "Santeetlah Creek",
+    "RHI5": "147.12",
+    "RHI10": "138.00",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.19",
+    "RGI10": "12.18",
+    "RGI20": "(not enough data)",
+    "Trees measured": "29",
+    "Last measurement date": "09/08/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/08/2009",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/santeetlah_creek.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "127.3'",
+          "141''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40255/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40255/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "127.3'",
+            "href": "/Browse/Trees/227022/Details"
+          },
+          {
+            "text": "141''",
+            "href": "/Browse/Trees/227011/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "120.1'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40255/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40255/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "120.1'",
+            "href": "/Browse/Trees/227023/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/227023/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "139.3'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40255/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40255/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "139.3'",
+            "href": "/Browse/Trees/227020/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/227020/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "139.7'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40255/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40255/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "139.7'",
+            "href": "/Browse/Trees/227014/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/227013/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "154.5'",
+          "204''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40255/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40255/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "154.5'",
+            "href": "/Browse/Trees/227029/Details"
+          },
+          {
+            "text": "204''",
+            "href": "/Browse/Trees/227029/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "147.3'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/40255/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/40255/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "147.3'",
+            "href": "/Browse/Trees/227021/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/227021/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oxydendrum arboreum",
+          "Sourwood",
+          "89.0'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oxydendrum arboreum",
+            "href": "/Browse/Sites/40255/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "Sourwood",
+            "href": "/Browse/Sites/40255/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+          },
+          {
+            "text": "89.0'",
+            "href": "/Browse/Trees/227026/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/227026/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "136.8'",
+          "203''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/40255/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/40255/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "136.8'",
+            "href": "/Browse/Trees/227027/Details"
+          },
+          {
+            "text": "203''",
+            "href": "/Browse/Trees/227027/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus pensylvanica",
+          "Pin Cherry",
+          "83.0'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus pensylvanica",
+            "href": "/Browse/Sites/40255/Species/Prunus%20pensylvanica%20(Pin%20Cherry)/Details"
+          },
+          {
+            "text": "Pin Cherry",
+            "href": "/Browse/Sites/40255/Species/Prunus%20pensylvanica%20(Pin%20Cherry)/Details"
+          },
+          {
+            "text": "83.0'",
+            "href": "/Browse/Trees/227004/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/227004/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "127.7'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/40255/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/40255/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "127.7'",
+            "href": "/Browse/Trees/227017/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/227016/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 13 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 20.696, -083 57.961",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Graham"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

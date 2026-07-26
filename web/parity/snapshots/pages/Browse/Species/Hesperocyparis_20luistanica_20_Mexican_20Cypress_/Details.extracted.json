@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Hesperocyparis luistanica",
+  "commonName": "Mexican Cypress",
+  "global": {
+    "maxHeight": {
+      "text": "115.9'",
+      "href": "/Browse/Trees/274981/Details"
+    },
+    "maxGirth": {
+      "text": "65''",
+      "href": "/Browse/Trees/274980/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "California",
+          "115.9'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "115.9'",
+            "href": "/Browse/Trees/274981/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/274980/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Puntarenas",
+          "79.2'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Puntarenas",
+            "href": "/Browse/States/122/Details"
+          },
+          {
+            "text": "79.2'",
+            "href": "/Browse/Trees/234129/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/234129/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

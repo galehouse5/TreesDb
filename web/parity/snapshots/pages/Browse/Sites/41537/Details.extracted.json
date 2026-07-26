@@ -1,0 +1,269 @@
+{
+  "siteId": 41537,
+  "summary": {
+    "Name": "Canadaway Creek - Ancient Hemlock Ravines",
+    "RHI5": "112.76",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.92",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "39",
+    "Last measurement date": "09/10/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees measured on 8/21/2018, 9/10/2018"
+  },
+  "visits": [
+    {
+      "visited": "09/10/2018",
+      "visitors": "Erik Danielson",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees measured on 8/21/2018, 9/10/2018"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "106.0'",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/41537/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/41537/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "106.0'",
+            "href": "/Browse/Trees/264324/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/264324/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "112.0'",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/41537/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41537/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "112.0'",
+            "href": "/Browse/Trees/264329/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/264329/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "85.0'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/41537/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/41537/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "85.0'",
+            "href": "/Browse/Trees/264348/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/264348/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "111.5'",
+          "96''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41537/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41537/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "111.5'",
+            "href": "/Browse/Trees/264318/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/264319/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "107.0'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/41537/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/41537/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/264321/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/264321/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana",
+          "American Basswood",
+          "109.0'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana",
+            "href": "/Browse/Sites/41537/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/41537/Species/Tilia%20americana%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "109.0'",
+            "href": "/Browse/Trees/264345/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/264347/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "124.3'",
+          "143''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/41537/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/41537/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "124.3'",
+            "href": "/Browse/Trees/264333/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/264338/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 23.892, -079 16.172",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Chautauqua"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

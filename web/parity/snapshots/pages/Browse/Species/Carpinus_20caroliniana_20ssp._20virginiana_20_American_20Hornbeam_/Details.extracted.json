@@ -1,0 +1,191 @@
+{
+  "botanicalName": "Carpinus caroliniana ssp. virginiana",
+  "commonName": "American Hornbeam",
+  "global": {
+    "maxHeight": {
+      "text": "72.9'",
+      "href": "/Browse/Trees/166278/Details"
+    },
+    "maxGirth": {
+      "text": "103''",
+      "href": "/Browse/Trees/166278/Details"
+    },
+    "maxCrownSpread": {
+      "text": "55.0'",
+      "href": "/Browse/Trees/166232/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Kentucky",
+          "54.6'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "54.6'",
+            "href": "/Browse/Trees/297583/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/297583/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "49.8'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "49.8'",
+            "href": "/Browse/Trees/231978/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/231978/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "45.3'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "45.3'",
+            "href": "/Browse/Trees/220903/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/323158/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "31.9'",
+          "33''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "31.9'",
+            "href": "/Browse/Trees/272998/Details"
+          },
+          {
+            "text": "33''",
+            "href": "/Browse/Trees/272998/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "72.9'",
+          "103''",
+          "55.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "72.9'",
+            "href": "/Browse/Trees/166278/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/166278/Details"
+          },
+          {
+            "text": "55.0'",
+            "href": "/Browse/Trees/166232/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "49.9'",
+          "54''",
+          "51.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "49.9'",
+            "href": "/Browse/Trees/297284/Details"
+          },
+          {
+            "text": "54''",
+            "href": "/Browse/Trees/312087/Details"
+          },
+          {
+            "text": "51.0'",
+            "href": "/Browse/Trees/312045/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

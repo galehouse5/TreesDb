@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Cornus kousa",
+  "commonName": "Kousa Dogwood",
+  "global": {
+    "maxHeight": {
+      "text": "28.3'",
+      "href": "/Browse/Trees/226111/Details"
+    },
+    "maxGirth": {
+      "text": "34''",
+      "href": "/Browse/Trees/226111/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "28.3'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "28.3'",
+            "href": "/Browse/Trees/226111/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/226111/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "18.6'",
+          "23''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "18.6'",
+            "href": "/Browse/Trees/255994/Details"
+          },
+          {
+            "text": "23''",
+            "href": "/Browse/Trees/255994/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

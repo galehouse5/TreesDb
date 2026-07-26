@@ -1,0 +1,101 @@
+{
+  "siteId": 40737,
+  "summary": {
+    "Name": "Lowell Holly Reservation",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "02/12/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "135 Acres Wilfred Wheeler planted many varieties of American Hollies on the Reservation."
+  },
+  "visits": [
+    {
+      "visited": "02/12/2009",
+      "visitors": "Doug Bidlack",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/mass/americanhollies/american_hollies_in_ma.htm",
+      "comments": "135 Acres Wilfred Wheeler planted many varieties of American Hollies on the Reservation."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ilex opaca",
+          "American Holly",
+          "60.2'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca",
+            "href": "/Browse/Sites/40737/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/40737/Species/Ilex%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "60.2'",
+            "href": "/Browse/Trees/235790/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/235785/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 40.243, -070 29.103",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Barnstable"
+    },
+    "state": {
+      "text": "Massachusetts (US)",
+      "href": "/Browse/States/17/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

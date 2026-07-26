@@ -1,0 +1,288 @@
+{
+  "siteId": 40377,
+  "summary": {
+    "Name": "Sugarland Mountain",
+    "RHI5": "133.92",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.25",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "10/20/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "Access is off of US 441 South which parallels the West Prong of Little Pigeon River."
+  },
+  "visits": [
+    {
+      "visited": "10/20/2006",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/gsmnp/sugarland/sugarland_mountain.htm",
+      "comments": "Access is off of US 441 South which parallels the West Prong of Little Pigeon River."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "-",
+          "185''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40377/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40377/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "185''",
+            "href": "/Browse/Trees/229214/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "141.5'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40377/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40377/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "141.5'",
+            "href": "/Browse/Trees/229216/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/229215/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "146.5'",
+          "207''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/40377/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/40377/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "146.5'",
+            "href": "/Browse/Trees/229208/Details"
+          },
+          {
+            "text": "207''",
+            "href": "/Browse/Trees/229204/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "147.5'",
+          "125''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40377/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40377/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "147.5'",
+            "href": "/Browse/Trees/229213/Details"
+          },
+          {
+            "text": "125''",
+            "href": "/Browse/Trees/229211/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "148.1'",
+          "241''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40377/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40377/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "148.1'",
+            "href": "/Browse/Trees/229217/Details"
+          },
+          {
+            "text": "241''",
+            "href": "/Browse/Trees/229217/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus pensylvanica",
+          "Pin Cherry",
+          "86.0'",
+          "53''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus pensylvanica",
+            "href": "/Browse/Sites/40377/Species/Prunus%20pensylvanica%20(Pin%20Cherry)/Details"
+          },
+          {
+            "text": "Pin Cherry",
+            "href": "/Browse/Sites/40377/Species/Prunus%20pensylvanica%20(Pin%20Cherry)/Details"
+          },
+          {
+            "text": "86.0'",
+            "href": "/Browse/Trees/229210/Details"
+          },
+          {
+            "text": "53''",
+            "href": "/Browse/Trees/229210/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "-",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/40377/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/40377/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          null,
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/229209/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia americana var. heterophylla",
+          "American Basswood",
+          "-",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia americana var. heterophylla",
+            "href": "/Browse/Sites/40377/Species/Tilia%20americana%20var.%20heterophylla%20(American%20Basswood)/Details"
+          },
+          {
+            "text": "American Basswood",
+            "href": "/Browse/Sites/40377/Species/Tilia%20americana%20var.%20heterophylla%20(American%20Basswood)/Details"
+          },
+          null,
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/229200/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 37.866, -083 29.790",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Sevier"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Washingtonia robusta",
+  "commonName": "Washington Fan Palm",
+  "global": {
+    "maxHeight": {
+      "text": "79.8'",
+      "href": "/Browse/Trees/291324/Details"
+    },
+    "maxGirth": {
+      "text": "51''",
+      "href": "/Browse/Trees/274863/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arizona",
+          "73.1'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arizona",
+            "href": "/Browse/States/3/Details"
+          },
+          {
+            "text": "73.1'",
+            "href": "/Browse/Trees/274863/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/274863/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Marrakech-Safi, Morocco",
+          "79.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Marrakech-Safi, Morocco",
+            "href": "/Browse/States/279/Details"
+          },
+          {
+            "text": "79.8'",
+            "href": "/Browse/Trees/291324/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

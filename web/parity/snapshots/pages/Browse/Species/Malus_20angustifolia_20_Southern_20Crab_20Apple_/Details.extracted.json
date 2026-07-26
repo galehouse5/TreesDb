@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Malus angustifolia",
+  "commonName": "Southern Crab Apple",
+  "global": {
+    "maxHeight": {
+      "text": "54.3'",
+      "href": "/Browse/Trees/235181/Details"
+    },
+    "maxGirth": {
+      "text": "21''",
+      "href": "/Browse/Trees/235181/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "54.3'",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "54.3'",
+            "href": "/Browse/Trees/235181/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/235181/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

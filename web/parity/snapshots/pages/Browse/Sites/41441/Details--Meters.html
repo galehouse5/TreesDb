@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Site Details</title>
+    <style type="text/css">.ShowIfJavascriptEnabled { display: block; } .ShowIfJavascriptDisabled { display: none; }</style>
+    <noscript><style type="text/css">.ShowIfJavascriptEnabled { display: none; } .ShowIfJavascriptDisabled { display: block; }</style></noscript>
+    <link href="/images/icon.ico?v=20171205155525" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="/css/jquery/jquery-ui-1.8.7.custom.css?v=20171205155525" rel="Stylesheet" type="text/css" />
+    <link href="/css/Shared.css?v=DXLFO8k7beDFNgs6xCunY3nTuR1AWd7usZmysfNXy1g1" rel="stylesheet"/>
+
+    
+  <style type="text/css">
+    .Map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+
+</head>
+<body>
+    <div id="wrapper" class="clearfix">
+        <div id="top">
+            <div id="header">
+                <h1><a href="/Main">Trees Database</a></h1>
+<div id="info">
+    <p>
+                You are not logged on
+            <br />
+            <a href="/Account/Logon">Logon</a> or <a href="/Account/Register">Register</a>
+    </p>
+</div> <!-- #info -->
+            </div>
+            <!-- #header -->
+            <div id="nav">
+                <ul class="mega-container mega-grey">
+<li class="mega">
+    <a class="mega-link" href="/Map">Map</a>
+</li>
+<li class="mega mega-current">
+  <span class="mega-tab">Browse</span>
+  <div class="mega-content mega-menu ">
+    <ul>
+      <li><a href="/Browse/41441/Activity">Activity</a></li>
+      <li><a href="/Browse/Locations">Locations</a></li>
+      <li><a href="/Browse/Species">Species</a></li>
+    </ul>
+  </div> 
+</li><li class="mega">
+  <span class="mega-tab">Import</span>
+  <div class="mega-content mega-menu">
+    <ul>
+      <li>
+        
+        <a href="/Import/Trip">New</a>
+      </li>
+          </ul>
+  </div>
+</li>
+<li id="search" class="mega">
+<form action="/Search?id=41441" class="form" method="get">        <div class="field">
+            <input type="text" name="term" placeholder="Search species and locations" size="50" />
+        </div>
+</form></li>
+                </ul>
+            </div>
+            <!-- #nav -->
+        </div>
+        <!-- #top -->
+        <div id="content" class="content xfluid">
+            
+
+
+
+<div class="x6 xColumn">
+  <div class="portlet x12">
+    <div class="portlet-header">
+      <h4>Site</h4>
+      <ul class="portlet-tab-nav">
+        <li class="portlet-tab-nav-ignore"><a href="/Export/Sites/41441">Export tree data</a></li>
+        <li class="portlet-tab-nav-active"><a href="#SiteSummary">Summary</a></li>
+        <li><a href="#TripHistory">Trip history</a></li>
+      </ul>
+    </div>
+    <div class="portlet-content">
+      <div id="SiteSummary" class="portlet-tab-content portlet-tab-content-active">
+        <table class="reports_table">
+          <tr><td class="description">Name</td><td class="value"><span>Inwood Hill Park</span></td></tr>
+          <tr><td class="description">RHI5</td><td class="value"><span>41.118</span></td></tr>
+          <tr><td class="description">RHI10</td><td class="value"><span>38.865</span></td></tr>
+          <tr><td class="description">RHI20</td><td class="value"><span>35.645</span></td></tr>
+          <tr><td class="description">RGI5</td><td class="value"><span>4.750</span></td></tr>
+          <tr><td class="description">RGI10</td><td class="value"><span>4.176</span></td></tr>
+          <tr><td class="description">RGI20</td><td class="value"><span>3.548</span></td></tr>
+          <tr><td class="description">Trees measured</td><td class="value"><span>132</span></td></tr>
+          <tr><td class="description">Last measurement date</td><td class="value"><span>04/08/2016</span></td></tr>
+<tr><td class="description">Ownership contact</td><td class="value">(no data)</td></tr>          <tr><td class="description">General comments</td><td class="Comment value">Trees were measured during a series of visits between 12/20/2015 and 4/08/2016</td></tr>
+        </table>
+      </div>
+      <div id="TripHistory" class="portlet-tab-content ShowIfJavascriptEnabled">
+        <table class="support_table">
+            <tr>
+              <td><span class="ticket open">04/08/2016</span></td>
+              <td>
+                <table class="reports_table">
+                  <tr><td class="description">Visitors</td><td class="value">Erik Danielson</td></tr>
+                  <tr><td class="description">Trip report url</td><td class="value">
+
+<a href="http://www.ents-bbs.org/viewtopic.php?f=105&amp;t=7396&amp;sid=82c231524f625f1e32dd5d64e14763f8" target="_blank" rel="nofollow">
+  www.ents-bbs.org/viewtopic.php
+</a>
+</td></tr>
+                  <tr><td class="description">General comments</td><td class="Comment value">Trees were measured during a series of visits between 12/20/2015 and 4/08/2016</td></tr>
+                </table>
+              </td>
+            </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Species</h4></div>
+    <div class="portlet-content">
+      <div class='dataTablesGrid'><table cellspacing='0' cellpadding='0' border='0' class='display'><thead><tr><th class='sortable '><a href='/Browse/Sites/41441/Details?Sort=BotanicalName&amp;SortAsc=True'><span>Botanical name</span></a></th><th class='sortable '><a href='/Browse/Sites/41441/Details?Sort=CommonName&amp;SortAsc=True'><span>Common name</span></a></th><th class='sortable '><a href='/Browse/Sites/41441/Details?Sort=MaxHeight&amp;SortAsc=False'><span>Max height</span></a></th><th class='sortable '><a href='/Browse/Sites/41441/Details?Sort=MaxGirth&amp;SortAsc=False'><span>Max girth</span></a></th><th class='sortable '><a href='/Browse/Sites/41441/Details?Sort=MaxCrownSpread&amp;SortAsc=False'><span>Max crown spread</span></a></th></tr></thead><tbody><tr class='odd'><td><a href="/Browse/Sites/41441/Species/Acer%20rubrum%20(Red%20Maple)/Details">Acer rubrum</a></td><td><a href="/Browse/Sites/41441/Species/Acer%20rubrum%20(Red%20Maple)/Details">Red Maple</a></td><td><a href="/Browse/Trees/260002/Details">24.87 m</a></td><td><a href="/Browse/Trees/260002/Details">197 cm</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Sites/41441/Species/Acer%20saccharum%20(Sugar%20Maple)/Details">Acer saccharum</a></td><td><a href="/Browse/Sites/41441/Species/Acer%20saccharum%20(Sugar%20Maple)/Details">Sugar Maple</a></td><td><a href="/Browse/Trees/260013/Details">34.90 m</a></td><td><a href="/Browse/Trees/260003/Details">218 cm</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Sites/41441/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details">Ailanthus altissima</a></td><td><a href="/Browse/Sites/41441/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details">Tree Of Heaven</a></td><td><a href="/Browse/Trees/260042/Details">32.00 m</a></td><td><a href="/Browse/Trees/260042/Details">201 cm</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Sites/41441/Species/Betula%20lenta%20(Sweet%20Birch)/Details">Betula lenta</a></td><td><a href="/Browse/Sites/41441/Species/Betula%20lenta%20(Sweet%20Birch)/Details">Sweet Birch</a></td><td><a href="/Browse/Trees/259979/Details">32.22 m</a></td><td><a href="/Browse/Trees/259979/Details">163 cm</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Sites/41441/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details">Carya cordiformis</a></td><td><a href="/Browse/Sites/41441/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details">Bitternut Hickory</a></td><td><a href="/Browse/Trees/260047/Details">39.96 m</a></td><td><a href="/Browse/Trees/260019/Details">254 cm</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Sites/41441/Species/Carya%20glabra%20(Pignut%20Hickory)/Details">Carya glabra</a></td><td><a href="/Browse/Sites/41441/Species/Carya%20glabra%20(Pignut%20Hickory)/Details">Pignut Hickory</a></td><td><a href="/Browse/Trees/260020/Details">39.04 m</a></td><td><a href="/Browse/Trees/260021/Details">292 cm</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Sites/41441/Species/Carya%20spp.%20(Hickory)/Details">Carya spp.</a></td><td><a href="/Browse/Sites/41441/Species/Carya%20spp.%20(Hickory)/Details">Hickory</a></td><td><a href="/Browse/Trees/259938/Details">36.27 m</a></td><td><a href="/Browse/Trees/259939/Details">254 cm</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Sites/41441/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details">Carya tomentosa</a></td><td><a href="/Browse/Sites/41441/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details">Mockernut Hickory</a></td><td><a href="/Browse/Trees/260023/Details">27.46 m</a></td><td><a href="/Browse/Trees/260023/Details">132 cm</a></td><td>-</td></tr><tr class='odd'><td><a href="/Browse/Sites/41441/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details">Celtis occidentalis</a></td><td><a href="/Browse/Sites/41441/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details">Common Hackberry</a></td><td><a href="/Browse/Trees/260044/Details">28.62 m</a></td><td><a href="/Browse/Trees/260044/Details">378 cm</a></td><td>-</td></tr><tr class='even'><td><a href="/Browse/Sites/41441/Species/Fagus%20grandifolia%20(American%20Beech)/Details">Fagus grandifolia</a></td><td><a href="/Browse/Sites/41441/Species/Fagus%20grandifolia%20(American%20Beech)/Details">American Beech</a></td><td><a href="/Browse/Trees/259941/Details">27.98 m</a></td><td><a href="/Browse/Trees/259941/Details">356 cm</a></td><td>-</td></tr></tbody></table><div class='dataTables_info'>Showing 1 to 10 of 31 entries</div><div class='dataTables_paginate paging_two_button'><div class='paginate_disabled_previous' title='Previous'></div><a href='/Browse/Sites/41441/Details?Page=1' class='paginate_enabled_next' title='Next'></a></div></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="x6 xColumn">
+
+  <div class="portlet x12">
+    <div class="portlet-header">
+      <h4>Location</h4>
+
+        <ul class="portlet-tab-nav">
+          <li class="portlet-tab-nav-active"><a href="#LocationSummary">Summary</a></li>
+          <li><a href="#LocationMap">Map</a></li>
+        </ul>
+    </div>
+    <div class="portlet-content">
+      <div id="LocationSummary" class="portlet-tab-content portlet-tab-content-active">
+        <table class="reports_table">
+<tr><td class="description">Coordinates</td><td class="value"><span>40 52.350, -073 55.433</span></td></tr>          <tr><td class="description">Ownership type</td><td class="value"><span>Public - city</span></td></tr>
+          <tr><td class="description">County</td><td class="value"><span>Manhattan</span></td></tr>
+          <tr>
+            <td class="description">State</td>
+            <td class="value"><a href="/Browse/States/32/Details">New York (US)</a></td>
+          </tr>
+        </table>
+      </div>
+
+        <div id="LocationMap" class="portlet-tab-content ShowIfJavascriptEnabled">
+          
+<div class="Map"
+             data-center-latitude="40.8725" data-center-longitude="-73.92388"
+         data-zoom="13" 
+    data-markerloaderurl="/Map/SiteMarker?id=41441"
+>
+</div>
+
+        </div>
+    </div>
+  </div>
+
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Photos</h4></div>
+    <div class="portlet-content">
+          (no photos)
+
+
+    </div>
+  </div>
+</div>
+
+        </div>
+        <!-- #content -->
+            <div id="footer">
+                <p style="float: left; width: 200px;">
+                    <a href="/Main">
+                        <img id="footer-logo" src="/images/theme/icon.png?v=20171205155525" alt="Trees Database"/>
+                    </a>
+                    <a href="http://ents-bbs.org/viewforum.php?f=15" target="nts-forum">Community Forum</a>
+                    <br />
+                    <a href="/cdn-cgi/l/email-protection#aedadccbcbddcacc80c1dcc9eec9c3cfc7c280cdc1c3" target="email">Website Technical Help</a>
+                    <br />
+                    &copy;2026 Trees Database
+                </p>
+<form action="/Main/SetUnits" method="post" style="float: right;">                    <span>Units:</span>
+<input id="returnUrl" name="returnUrl" type="hidden" value="https://www.treesdb.org/Browse/Sites/41441/Details" /><button class="btn btn-small btn-orange" name="units" type="submit" value="Feet">ft</button><button class="btn btn-small" name="units" type="submit" value="Meters">m</button><button class="btn btn-small btn-orange" name="units" type="submit" value="Yards">yd</button></form>            </div>
+            <!-- #footer -->
+    </div>
+    <!-- #wrapper -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery/jquery-1.4.4.min.js?v=20171205155525" type="text/javascript"></script>
+    <script src="/js/jquery/jquery-ui-1.8.7.custom.min.js?v=20171205155525" type="text/javascript"></script>
+    <script type="text/javascript">
+      var applicationRootUrl = '';
+    </script>
+    <script src="/js/Plugins.js?v=kyjB9GguvFZZCqb7IJbphBfiiLwq9eE1bmd-hxUcq0I1"></script>
+
+    <script src="/js/Shared.js?v=tGEPhu9JLOnTY3_EN8GPp06bJHnm5mSXgdmPtGv4sIw1"></script>
+
+    <script type="text/javascript">
+      $(function () { $('body').InitializeUi(); });
+    </script>
+    
+  <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyCIQ7mw5tbGM3gzCg7x9fgraabDksSjDco"></script>
+  <script src="/js/Map.js?v=JbdQ8neKrRapWZKL3ee4La0jh4XYfSowUH65c1_r1Yg1"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      slate.portlet.init();
+      $('div.dataTablesGrid').AjaxDataTablesGrid();
+      $('#LocationMap').bind('PortletTabActivated', function () {
+        $('.Map').Mapify();
+      });
+    });
+  </script>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28174143-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    $(document).ajaxComplete(function (event, xhr, options) {
+        _gaq.push(['_trackPageview', options.url]);
+    });
+</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1cc22e9cc8f3a0f',t:'MTc4NDMyMTYwOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

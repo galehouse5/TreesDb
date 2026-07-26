@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Abies firma",
+  "commonName": "Momi Fir",
+  "global": {
+    "maxHeight": {
+      "text": "70.8'",
+      "href": "/Browse/Trees/225107/Details"
+    },
+    "maxGirth": {
+      "text": "79''",
+      "href": "/Browse/Trees/225107/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "57.5'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "57.5'",
+            "href": "/Browse/Trees/102905/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/102905/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "35.6'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "35.6'",
+            "href": "/Browse/Trees/282346/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/282346/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "70.8'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "70.8'",
+            "href": "/Browse/Trees/225107/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/225107/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

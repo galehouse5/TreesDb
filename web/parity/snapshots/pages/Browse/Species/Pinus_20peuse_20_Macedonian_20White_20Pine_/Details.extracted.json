@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Pinus peuse",
+  "commonName": "Macedonian White Pine",
+  "global": {
+    "maxHeight": {
+      "text": "77.8'",
+      "href": "/Browse/Trees/226035/Details"
+    },
+    "maxGirth": {
+      "text": "68''",
+      "href": "/Browse/Trees/226036/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "77.8'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "77.8'",
+            "href": "/Browse/Trees/226035/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/226036/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

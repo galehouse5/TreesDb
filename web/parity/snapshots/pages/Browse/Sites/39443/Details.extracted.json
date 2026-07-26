@@ -1,0 +1,138 @@
+{
+  "siteId": 39443,
+  "summary": {
+    "Name": "Craig - Douglas Cemetery",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "01/26/2019",
+    "Ownership contact": "Paul Craig Box 292 Buffalo, WV 26033",
+    "General comments": "Easily accessible from WV 62 near Buffalo"
+  },
+  "visits": [
+    {
+      "visited": "01/26/2019",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Easily accessible from WV 62 near Buffalo"
+    },
+    {
+      "visited": "11/12/2011",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Family cemetery accessible to public along WV 62 near Buffalo, WV."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "72.3'",
+          "94''",
+          "32.5'"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/39443/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/39443/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "72.3'",
+            "href": "/Browse/Trees/177010/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/177008/Details"
+          },
+          {
+            "text": "32.5'",
+            "href": "/Browse/Trees/177008/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "86.7'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/39443/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/39443/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "86.7'",
+            "href": "/Browse/Trees/177011/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/177011/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 41.654, -081 57.057",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Mason"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

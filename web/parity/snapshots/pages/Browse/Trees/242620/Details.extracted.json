@@ -1,0 +1,70 @@
+{
+  "treeId": 242620,
+  "botanicalName": {
+    "text": "Pinus strobus",
+    "href": "/Browse/Sites/41001/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Eastern White Pine",
+    "href": "/Browse/Sites/41001/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+  },
+  "details": {
+    "Height": "151.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "112''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "131.54",
+    "ENTSPTS": "1409.33",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.39",
+    "Champion points (abbreviated)": "263.00",
+    "Diameter": "36''",
+    "Conical volume": "348.9 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 07/09/2020",
+      "summary": {
+        "Height": "151.0'",
+        "Girth": "112''"
+      },
+      "details": {
+        "Botanical name": "Pinus strobus",
+        "Common name": "Eastern White Pine",
+        "Height": "151.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "112''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "131.54",
+        "ENTSPTS": "1409.33",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.39",
+        "Champion points (abbreviated)": "263.00",
+        "Diameter": "36''",
+        "Conical volume": "348.9 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Jared Lockwood and Ray Asselin"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 50.203, -073 19.590",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Cathedral Pines",
+      "href": "/Browse/Sites/41001/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - Nature Conservancy",
+      "County": "Litchfield"
+    },
+    "state": {
+      "text": "Connecticut (US)",
+      "href": "/Browse/States/6/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

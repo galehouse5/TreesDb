@@ -1,0 +1,211 @@
+{
+  "botanicalName": "Cladrastis kentukea",
+  "commonName": "Kentucky Yellowwood",
+  "global": {
+    "maxHeight": {
+      "text": "99.8'",
+      "href": "/Browse/Trees/315509/Details"
+    },
+    "maxGirth": {
+      "text": "110''",
+      "href": "/Browse/Trees/229817/Details"
+    },
+    "maxCrownSpread": {
+      "text": "38.0'",
+      "href": "/Browse/Trees/153326/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "64.4'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "64.4'",
+            "href": "/Browse/Trees/315720/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/315720/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "74.4'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "74.4'",
+            "href": "/Browse/Trees/234426/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/234425/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "82.0'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "82.0'",
+            "href": "/Browse/Trees/192577/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/192577/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "81.5'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "81.5'",
+            "href": "/Browse/Trees/230502/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/227741/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "78.3'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "78.3'",
+            "href": "/Browse/Trees/236300/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/236300/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "99.8'",
+          "110''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "99.8'",
+            "href": "/Browse/Trees/315509/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/229817/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "56.9'",
+          "89''",
+          "38.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "56.9'",
+            "href": "/Browse/Trees/222955/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/153326/Details"
+          },
+          {
+            "text": "38.0'",
+            "href": "/Browse/Trees/153326/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

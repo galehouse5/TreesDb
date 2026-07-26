@@ -1,0 +1,70 @@
+{
+  "treeId": 2385,
+  "botanicalName": {
+    "text": "Liriodendron tulipifera",
+    "href": "/Browse/Sites/442/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+  },
+  "commonName": {
+    "text": "Tuliptree",
+    "href": "/Browse/Sites/442/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+  },
+  "details": {
+    "Height": "136.1'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "156''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "230.01",
+    "ENTSPTS": "1769.30",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.19",
+    "Champion points (abbreviated)": "292.10",
+    "Diameter": "50''",
+    "Conical volume": "610.1 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/03/2011",
+      "summary": {
+        "Height": "136.1'",
+        "Girth": "156''"
+      },
+      "details": {
+        "Botanical name": "Liriodendron tulipifera",
+        "Common name": "Tuliptree",
+        "Height": "136.1'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "156''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "230.01",
+        "ENTSPTS": "1769.30",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.19",
+        "Champion points (abbreviated)": "292.10",
+        "Diameter": "50''",
+        "Conical volume": "610.1 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Steve Galehouse"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 13.076, -081 42.254",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Whipp's Ledges",
+      "href": "/Browse/Sites/442/Details"
+    },
+    "rows": {
+      "Ownership type": "Park",
+      "County": "Medina"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

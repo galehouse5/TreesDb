@@ -1,0 +1,119 @@
+{
+  "botanicalName": "Crataegus viridis",
+  "commonName": "Green Hawthorn",
+  "global": {
+    "maxHeight": {
+      "text": "65.6'",
+      "href": "/Browse/Trees/252653/Details"
+    },
+    "maxGirth": {
+      "text": "43''",
+      "href": "/Browse/Trees/236759/Details"
+    },
+    "maxCrownSpread": {
+      "text": "28.0'",
+      "href": "/Browse/Trees/236758/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "45.0'",
+          "27''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/241847/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/241501/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "42.0'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/234448/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/234448/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "65.6'",
+          "43''",
+          "28.0'"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "65.6'",
+            "href": "/Browse/Trees/252653/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/236759/Details"
+          },
+          {
+            "text": "28.0'",
+            "href": "/Browse/Trees/236758/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "siteId": 38024,
+  "summary": {
+    "Name": "Hemlock Trail",
+    "RHI5": "38.344",
+    "RHI10": "33.382",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.960",
+    "RGI10": "2.144",
+    "RGI20": "(not enough data)",
+    "Trees measured": "35",
+    "Last measurement date": "04/12/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "Measurements were from a post made by Steve Halow at: http://www.ents-bbs.org/viewtopic.php?f=131&t=7579 and by personal communication from S. Halow to T. Sharp."
+  },
+  "visits": [
+    {
+      "visited": "04/12/2016",
+      "visitors": "Steve Halow and Randi Halow",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Measurements were from a post made by Steve Halow at: http://www.ents-bbs.org/viewtopic.php?f=131&t=7579 and by personal communication from S. Halow to T. Sharp."
+    },
+    {
+      "visited": "11/21/2010",
+      "visitors": "Turner Sharp, Carl Harting, and John Fichtner",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Coordinates are for the trail head along the public road."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "28.35 m",
+          "158 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/38024/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/38024/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "28.35 m",
+            "href": "/Browse/Trees/127636/Details"
+          },
+          {
+            "text": "158 cm",
+            "href": "/Browse/Trees/127636/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "22.16 m",
+          "107 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/38024/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/38024/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "22.16 m",
+            "href": "/Browse/Trees/127637/Details"
+          },
+          {
+            "text": "107 cm",
+            "href": "/Browse/Trees/127637/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "27.95 m",
+          "128 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/38024/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/38024/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "27.95 m",
+            "href": "/Browse/Trees/127651/Details"
+          },
+          {
+            "text": "128 cm",
+            "href": "/Browse/Trees/127638/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "30.91 m",
+          "119 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/38024/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/38024/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "30.91 m",
+            "href": "/Browse/Trees/127650/Details"
+          },
+          {
+            "text": "119 cm",
+            "href": "/Browse/Trees/127650/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "44.68 m",
+          "347 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/38024/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/38024/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "44.68 m",
+            "href": "/Browse/Trees/127652/Details"
+          },
+          {
+            "text": "347 cm",
+            "href": "/Browse/Trees/127652/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "32.74 m",
+          "204 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/38024/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/38024/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "32.74 m",
+            "href": "/Browse/Trees/127649/Details"
+          },
+          {
+            "text": "204 cm",
+            "href": "/Browse/Trees/127649/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "34.14 m",
+          "253 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/38024/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/38024/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "34.14 m",
+            "href": "/Browse/Trees/127635/Details"
+          },
+          {
+            "text": "253 cm",
+            "href": "/Browse/Trees/127635/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "34.17 m",
+          "152 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/38024/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/38024/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "34.17 m",
+            "href": "/Browse/Trees/127646/Details"
+          },
+          {
+            "text": "152 cm",
+            "href": "/Browse/Trees/127646/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "35.14 m",
+          "332 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38024/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38024/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "35.14 m",
+            "href": "/Browse/Trees/127645/Details"
+          },
+          {
+            "text": "332 cm",
+            "href": "/Browse/Trees/127645/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "43.59 m",
+          "343 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/38024/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/38024/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "43.59 m",
+            "href": "/Browse/Trees/127665/Details"
+          },
+          {
+            "text": "343 cm",
+            "href": "/Browse/Trees/127659/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 39.297, -079 44.230",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - State Forest",
+      "County": "Preston"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

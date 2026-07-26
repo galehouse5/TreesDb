@@ -1,0 +1,297 @@
+{
+  "siteId": 41021,
+  "summary": {
+    "Name": "Taylor Arboretum",
+    "RHI5": "71.32",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.50",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "03/03/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Owned by Widener University"
+  },
+  "visits": [
+    {
+      "visited": "03/03/2007",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/haverford_college_arboretum.htm",
+      "comments": "Owned by Widener University"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies spp.",
+          "Fir",
+          "81.4'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies spp.",
+            "href": "/Browse/Sites/41021/Species/Abies%20spp.%20(Fir)/Details"
+          },
+          {
+            "text": "Fir",
+            "href": "/Browse/Sites/41021/Species/Abies%20spp.%20(Fir)/Details"
+          },
+          {
+            "text": "81.4'",
+            "href": "/Browse/Trees/243243/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/243243/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer davidii",
+          "Father David's Maple",
+          "58.7'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer davidii",
+            "href": "/Browse/Sites/41021/Species/Acer%20davidii%20(Father%20David's%20Maple)/Details"
+          },
+          {
+            "text": "Father David's Maple",
+            "href": "/Browse/Sites/41021/Species/Acer%20davidii%20(Father%20David's%20Maple)/Details"
+          },
+          {
+            "text": "58.7'",
+            "href": "/Browse/Trees/243241/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/243241/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus controversa",
+          "Giant Dogwood",
+          "40.3'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus controversa",
+            "href": "/Browse/Sites/41021/Species/Cornus%20controversa%20(Giant%20Dogwood)/Details"
+          },
+          {
+            "text": "Giant Dogwood",
+            "href": "/Browse/Sites/41021/Species/Cornus%20controversa%20(Giant%20Dogwood)/Details"
+          },
+          {
+            "text": "40.3'",
+            "href": "/Browse/Trees/243237/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/243237/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hovenia dulcis",
+          "Japanese Raisintree",
+          "62.2'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hovenia dulcis",
+            "href": "/Browse/Sites/41021/Species/Hovenia%20dulcis%20(Japanese%20Raisintree)/Details"
+          },
+          {
+            "text": "Japanese Raisintree",
+            "href": "/Browse/Sites/41021/Species/Hovenia%20dulcis%20(Japanese%20Raisintree)/Details"
+          },
+          {
+            "text": "62.2'",
+            "href": "/Browse/Trees/243239/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/243239/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Idesia polycarpa",
+          "Idesia",
+          "63.2'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Idesia polycarpa",
+            "href": "/Browse/Sites/41021/Species/Idesia%20polycarpa%20(Idesia)/Details"
+          },
+          {
+            "text": "Idesia",
+            "href": "/Browse/Sites/41021/Species/Idesia%20polycarpa%20(Idesia)/Details"
+          },
+          {
+            "text": "63.2'",
+            "href": "/Browse/Trees/243242/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/243242/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus rigidia",
+          "Temple Juniper",
+          "40.8'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus rigidia",
+            "href": "/Browse/Sites/41021/Species/Juniperus%20rigidia%20(Temple%20Juniper)/Details"
+          },
+          {
+            "text": "Temple Juniper",
+            "href": "/Browse/Sites/41021/Species/Juniperus%20rigidia%20(Temple%20Juniper)/Details"
+          },
+          {
+            "text": "40.8'",
+            "href": "/Browse/Trees/243238/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/243238/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus sylvestris",
+          "Scots Pine",
+          "59.7'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus sylvestris",
+            "href": "/Browse/Sites/41021/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "Scots Pine",
+            "href": "/Browse/Sites/41021/Species/Pinus%20sylvestris%20(Scots%20Pine)/Details"
+          },
+          {
+            "text": "59.7'",
+            "href": "/Browse/Trees/243236/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/243236/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus acutissima",
+          "Sawtooth Oak",
+          "90.1'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus acutissima",
+            "href": "/Browse/Sites/41021/Species/Quercus%20acutissima%20(Sawtooth%20Oak)/Details"
+          },
+          {
+            "text": "Sawtooth Oak",
+            "href": "/Browse/Sites/41021/Species/Quercus%20acutissima%20(Sawtooth%20Oak)/Details"
+          },
+          {
+            "text": "90.1'",
+            "href": "/Browse/Trees/243240/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/243240/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 52.359, -075 22.145",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Delaware"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

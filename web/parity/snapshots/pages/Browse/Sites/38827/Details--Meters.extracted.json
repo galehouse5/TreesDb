@@ -1,0 +1,179 @@
+{
+  "siteId": 38827,
+  "summary": {
+    "Name": "Tohono Ghul Botanical Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "02/05/2017",
+    "Ownership contact": "Tohono Ghul Botanical Garden 7366 North Paseo del Norte Tuscon, AZ, 85704",
+    "General comments": "Must pay admission fee."
+  },
+  "visits": [
+    {
+      "visited": "02/05/2017",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Must pay admission fee."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carnegiea gigantea",
+          "Saguaro",
+          "5.88 m",
+          "143 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carnegiea gigantea",
+            "href": "/Browse/Sites/38827/Species/Carnegiea%20gigantea%20(Saguaro)/Details"
+          },
+          {
+            "text": "Saguaro",
+            "href": "/Browse/Sites/38827/Species/Carnegiea%20gigantea%20(Saguaro)/Details"
+          },
+          {
+            "text": "5.88 m",
+            "href": "/Browse/Trees/159265/Details"
+          },
+          {
+            "text": "143 cm",
+            "href": "/Browse/Trees/159265/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Parkinsonia microphylla",
+          "Yellow Paloverde",
+          "8.23 m",
+          "76 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Parkinsonia microphylla",
+            "href": "/Browse/Sites/38827/Species/Parkinsonia%20microphylla%20(Yellow%20Paloverde)/Details"
+          },
+          {
+            "text": "Yellow Paloverde",
+            "href": "/Browse/Sites/38827/Species/Parkinsonia%20microphylla%20(Yellow%20Paloverde)/Details"
+          },
+          {
+            "text": "8.23 m",
+            "href": "/Browse/Trees/159266/Details"
+          },
+          {
+            "text": "76 cm",
+            "href": "/Browse/Trees/159266/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sabal uresma",
+          "Sonoran Palmetto",
+          "10.15 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sabal uresma",
+            "href": "/Browse/Sites/38827/Species/Sabal%20uresma%20(Sonoran%20Palmetto)/Details"
+          },
+          {
+            "text": "Sonoran Palmetto",
+            "href": "/Browse/Sites/38827/Species/Sabal%20uresma%20(Sonoran%20Palmetto)/Details"
+          },
+          {
+            "text": "10.15 m",
+            "href": "/Browse/Trees/159267/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vitis arizonica",
+          "Canyon Grape",
+          "-",
+          "30 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vitis arizonica",
+            "href": "/Browse/Sites/38827/Species/Vitis%20arizonica%20(Canyon%20Grape)/Details"
+          },
+          {
+            "text": "Canyon Grape",
+            "href": "/Browse/Sites/38827/Species/Vitis%20arizonica%20(Canyon%20Grape)/Details"
+          },
+          null,
+          {
+            "text": "30 cm",
+            "href": "/Browse/Trees/159268/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 20.404, -110 58.899",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Pima"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

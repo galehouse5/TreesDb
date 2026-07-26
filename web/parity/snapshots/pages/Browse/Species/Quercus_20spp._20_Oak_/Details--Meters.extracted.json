@@ -1,0 +1,228 @@
+{
+  "botanicalName": "Quercus spp.",
+  "commonName": "Oak",
+  "global": {
+    "maxHeight": {
+      "text": "41.61 m",
+      "href": "/Browse/Trees/251106/Details"
+    },
+    "maxGirth": {
+      "text": "483 cm",
+      "href": "/Browse/Trees/243216/Details"
+    },
+    "maxCrownSpread": {
+      "text": "33.16 m",
+      "href": "/Browse/Trees/251106/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Connecticut",
+          "32.61 m",
+          "445 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "32.61 m",
+            "href": "/Browse/Trees/243317/Details"
+          },
+          {
+            "text": "445 cm",
+            "href": "/Browse/Trees/243163/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "36.94 m",
+          "483 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "36.94 m",
+            "href": "/Browse/Trees/243269/Details"
+          },
+          {
+            "text": "483 cm",
+            "href": "/Browse/Trees/243216/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana",
+          "38.34 m",
+          "302 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana",
+            "href": "/Browse/States/13/Details"
+          },
+          {
+            "text": "38.34 m",
+            "href": "/Browse/Trees/169945/Details"
+          },
+          {
+            "text": "302 cm",
+            "href": "/Browse/Trees/169854/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "41.61 m",
+          "460 cm",
+          "33.16 m"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "41.61 m",
+            "href": "/Browse/Trees/251106/Details"
+          },
+          {
+            "text": "460 cm",
+            "href": "/Browse/Trees/251106/Details"
+          },
+          {
+            "text": "33.16 m",
+            "href": "/Browse/Trees/251106/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "-",
+          "295 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          null,
+          {
+            "text": "295 cm",
+            "href": "/Browse/Trees/171901/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "-",
+          "470 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          null,
+          {
+            "text": "470 cm",
+            "href": "/Browse/Trees/171543/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "24.08 m",
+          "361 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "24.08 m",
+            "href": "/Browse/Trees/227910/Details"
+          },
+          {
+            "text": "361 cm",
+            "href": "/Browse/Trees/243396/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "30.54 m",
+          "351 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "30.54 m",
+            "href": "/Browse/Trees/238168/Details"
+          },
+          {
+            "text": "351 cm",
+            "href": "/Browse/Trees/237128/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

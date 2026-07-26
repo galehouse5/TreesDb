@@ -1,0 +1,70 @@
+{
+  "treeId": 216273,
+  "botanicalName": {
+    "text": "Pseudotsuga menziesii var. menziesii",
+    "href": "/Browse/Sites/40052/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "commonName": {
+    "text": "Douglas-Fir",
+    "href": "/Browse/Sites/40052/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "details": {
+    "Height": "298.6'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "252''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "1316.83",
+    "ENTSPTS": "6270.60",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.41",
+    "Champion points (abbreviated)": "550.60",
+    "Diameter": "80''",
+    "Conical volume": "3493.0 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 09/17/2020",
+      "summary": {
+        "Height": "298.6'",
+        "Girth": "252''"
+      },
+      "details": {
+        "Botanical name": "Pseudotsuga menziesii var. menziesii",
+        "Common name": "Douglas-Fir",
+        "Height": "298.6'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "252''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "1316.83",
+        "ENTSPTS": "6270.60",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.41",
+        "Champion points (abbreviated)": "550.60",
+        "Diameter": "80''",
+        "Conical volume": "3493.0 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Elijah Whitcomb"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "47 27.531, -123 51.623",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Quinault Rainforest Loop",
+      "href": "/Browse/Sites/40052/Details"
+    },
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Grays Harbor"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

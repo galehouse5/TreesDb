@@ -1,0 +1,89 @@
+{
+  "botanicalName": "Fraxinus caroliniana",
+  "commonName": "Carolina Ash",
+  "global": {
+    "maxHeight": {
+      "text": "48.6'",
+      "href": "/Browse/Trees/241587/Details"
+    },
+    "maxGirth": {
+      "text": "38''",
+      "href": "/Browse/Trees/168098/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "48.6'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "48.6'",
+            "href": "/Browse/Trees/241587/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/241587/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "36.5'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "36.5'",
+            "href": "/Browse/Trees/168098/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/168098/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

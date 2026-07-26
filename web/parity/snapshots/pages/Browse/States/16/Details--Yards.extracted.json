@@ -1,0 +1,440 @@
+{
+  "stateId": 16,
+  "summary": {
+    "Name": "Louisiana",
+    "Code": "LA",
+    "RHI5": "39.913",
+    "RHI10": "36.557",
+    "RHI20": "(not enough data)",
+    "RGI5": "4.444",
+    "RGI10": "3.359",
+    "RGI20": "(not enough data)",
+    "Trees measured": "36",
+    "Last measurement date": "01/08/2025"
+  },
+  "location": {
+    "Coordinates": "30 56.237, -091 24.045",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "30.00 yd",
+          "146''",
+          "40.50 yd"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/States/16/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/States/16/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "30.00 yd",
+            "href": "/Browse/Trees/253891/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/253891/Details"
+          },
+          {
+            "text": "40.50 yd",
+            "href": "/Browse/Trees/253891/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "34.77 yd",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/States/16/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/States/16/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "34.77 yd",
+            "href": "/Browse/Trees/320732/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/320732/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Gleditsia aquatica",
+          "Water Locust",
+          "22.00 yd",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Gleditsia aquatica",
+            "href": "/Browse/States/16/Species/Gleditsia%20aquatica%20(Water%20Locust)/Details"
+          },
+          {
+            "text": "Water Locust",
+            "href": "/Browse/States/16/Species/Gleditsia%20aquatica%20(Water%20Locust)/Details"
+          },
+          {
+            "text": "22.00 yd",
+            "href": "/Browse/Trees/320733/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/320733/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "31.07 yd",
+          "78''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/States/16/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/States/16/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "31.07 yd",
+            "href": "/Browse/Trees/320734/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/320734/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "37.67 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/States/16/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/States/16/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "37.67 yd",
+            "href": "/Browse/Trees/320739/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "43.33 yd",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/States/16/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/States/16/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "43.33 yd",
+            "href": "/Browse/Trees/320738/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/320737/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "39.80 yd",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/States/16/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/States/16/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "39.80 yd",
+            "href": "/Browse/Trees/320726/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/320726/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus falcata",
+          "Southern Red Oak",
+          "39.10 yd",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus falcata",
+            "href": "/Browse/States/16/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Southern Red Oak",
+            "href": "/Browse/States/16/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "39.10 yd",
+            "href": "/Browse/Trees/320730/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/320730/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lyrata",
+          "Overcup Oak",
+          "20.17 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lyrata",
+            "href": "/Browse/States/16/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "Overcup Oak",
+            "href": "/Browse/States/16/Species/Quercus%20lyrata%20(Overcup%20Oak)/Details"
+          },
+          {
+            "text": "20.17 yd",
+            "href": "/Browse/Trees/320724/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus phellos",
+          "Willow Oak",
+          "39.67 yd",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus phellos",
+            "href": "/Browse/States/16/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "Willow Oak",
+            "href": "/Browse/States/16/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "39.67 yd",
+            "href": "/Browse/Trees/320727/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/320727/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 17 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "City Park - New Orleans",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "City Park - New Orleans",
+            "href": "/Browse/Sites/39036/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Jean Lafitte Barataria Preserve",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Jean Lafitte Barataria Preserve",
+            "href": "/Browse/Sites/39042/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lake Bistineau State Park",
+          "119.74",
+          "108.83",
+          "7.55",
+          "6.73"
+        ],
+        "links": [
+          {
+            "text": "Lake Bistineau State Park",
+            "href": "/Browse/Sites/42354/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Louisiana Single Tree Sites",
+            "href": "/Browse/Sites/41266/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

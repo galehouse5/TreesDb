@@ -1,0 +1,210 @@
+{
+  "siteId": 42071,
+  "summary": {
+    "Name": "Goat Marsh RNA",
+    "RHI5": "229.56",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.29",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "31",
+    "Last measurement date": "06/15/2023",
+    "Ownership contact": "US Forest Service",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "06/15/2023",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies amabilis",
+          "Pacific Silver Fir",
+          "199.0'",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies amabilis",
+            "href": "/Browse/Sites/42071/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "Pacific Silver Fir",
+            "href": "/Browse/Sites/42071/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+          },
+          {
+            "text": "199.0'",
+            "href": "/Browse/Trees/296630/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/296617/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies procera",
+          "Noble Fir",
+          "274.3'",
+          "314''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies procera",
+            "href": "/Browse/Sites/42071/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "Noble Fir",
+            "href": "/Browse/Sites/42071/Species/Abies%20procera%20(Noble%20Fir)/Details"
+          },
+          {
+            "text": "274.3'",
+            "href": "/Browse/Trees/296619/Details"
+          },
+          {
+            "text": "314''",
+            "href": "/Browse/Trees/296624/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. menziesii",
+          "Douglas-Fir",
+          "276.3'",
+          "248''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. menziesii",
+            "href": "/Browse/Sites/42071/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "Douglas-Fir",
+            "href": "/Browse/Sites/42071/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+          },
+          {
+            "text": "276.3'",
+            "href": "/Browse/Trees/296625/Details"
+          },
+          {
+            "text": "248''",
+            "href": "/Browse/Trees/296612/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Thuja plicata",
+          "Western Redcedar",
+          "191.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Thuja plicata",
+            "href": "/Browse/Sites/42071/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "Western Redcedar",
+            "href": "/Browse/Sites/42071/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+          },
+          {
+            "text": "191.6'",
+            "href": "/Browse/Trees/296623/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga heterophylla",
+          "Western Hemlock",
+          "206.6'",
+          "196''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga heterophylla",
+            "href": "/Browse/Sites/42071/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "Western Hemlock",
+            "href": "/Browse/Sites/42071/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+          },
+          {
+            "text": "206.6'",
+            "href": "/Browse/Trees/296627/Details"
+          },
+          {
+            "text": "196''",
+            "href": "/Browse/Trees/296611/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "46 09.756, -122 16.858",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public (Forest Service)",
+      "County": "Cowlitz"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

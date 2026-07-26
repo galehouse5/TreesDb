@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Aesculus pavia",
+  "commonName": "Red Buckeye",
+  "global": {
+    "maxHeight": {
+      "text": "9.54 m",
+      "href": "/Browse/Trees/234760/Details"
+    },
+    "maxGirth": {
+      "text": "49 cm",
+      "href": "/Browse/Trees/222952/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "9.54 m",
+          "43 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "9.54 m",
+            "href": "/Browse/Trees/234760/Details"
+          },
+          {
+            "text": "43 cm",
+            "href": "/Browse/Trees/234760/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "9.36 m",
+          "33 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "9.36 m",
+            "href": "/Browse/Trees/238588/Details"
+          },
+          {
+            "text": "33 cm",
+            "href": "/Browse/Trees/238588/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "5.94 m",
+          "49 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "5.94 m",
+            "href": "/Browse/Trees/222952/Details"
+          },
+          {
+            "text": "49 cm",
+            "href": "/Browse/Trees/222952/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

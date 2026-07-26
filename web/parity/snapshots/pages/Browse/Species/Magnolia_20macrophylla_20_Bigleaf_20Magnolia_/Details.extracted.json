@@ -1,0 +1,205 @@
+{
+  "botanicalName": "Magnolia macrophylla",
+  "commonName": "Bigleaf Magnolia",
+  "global": {
+    "maxHeight": {
+      "text": "99.4'",
+      "href": "/Browse/Trees/76438/Details"
+    },
+    "maxGirth": {
+      "text": "90''",
+      "href": "/Browse/Trees/75459/Details"
+    },
+    "maxCrownSpread": {
+      "text": "34.0'",
+      "href": "/Browse/Trees/314969/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "-",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          null,
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/233690/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "60.3'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "60.3'",
+            "href": "/Browse/Trees/75459/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/75459/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "77.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "77.5'",
+            "href": "/Browse/Trees/249283/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "99.4'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "99.4'",
+            "href": "/Browse/Trees/76438/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/297400/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "53.3'",
+          "51''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "53.3'",
+            "href": "/Browse/Trees/189037/Details"
+          },
+          {
+            "text": "51''",
+            "href": "/Browse/Trees/226028/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "91.9'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "91.9'",
+            "href": "/Browse/Trees/323569/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/320091/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "41.9'",
+          "64''",
+          "34.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "41.9'",
+            "href": "/Browse/Trees/314969/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/153329/Details"
+          },
+          {
+            "text": "34.0'",
+            "href": "/Browse/Trees/314969/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

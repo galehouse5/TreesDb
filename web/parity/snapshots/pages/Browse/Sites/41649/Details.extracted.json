@@ -1,0 +1,160 @@
+{
+  "siteId": 41649,
+  "summary": {
+    "Name": "Stanislaus National Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "10/17/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/17/2016",
+      "visitors": "Michael Taylor, Maria Michera, and Brian Fetzer",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "09/28/2012",
+      "visitors": "Michael Taylor",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "898, 099 acres in four counties. Toulumne, Alpine, Calaveras, and Mariposa."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus jeffreyi",
+          "Jeffrey Pine",
+          "-",
+          "267''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus jeffreyi",
+            "href": "/Browse/Sites/41649/Species/Pinus%20jeffreyi%20(Jeffrey%20Pine)/Details"
+          },
+          {
+            "text": "Jeffrey Pine",
+            "href": "/Browse/Sites/41649/Species/Pinus%20jeffreyi%20(Jeffrey%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "267''",
+            "href": "/Browse/Trees/268992/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "233.0'",
+          "358''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/Sites/41649/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/Sites/41649/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "233.0'",
+            "href": "/Browse/Trees/268994/Details"
+          },
+          {
+            "text": "358''",
+            "href": "/Browse/Trees/268994/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. benthamiana",
+          "Ponderosa Pine",
+          "189.0'",
+          "283''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. benthamiana",
+            "href": "/Browse/Sites/41649/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/41649/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "189.0'",
+            "href": "/Browse/Trees/268991/Details"
+          },
+          {
+            "text": "283''",
+            "href": "/Browse/Trees/268991/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 09.500, -119 55.668",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Tuolumne"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

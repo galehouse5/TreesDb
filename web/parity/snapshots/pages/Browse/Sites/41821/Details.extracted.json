@@ -1,0 +1,347 @@
+{
+  "siteId": 41821,
+  "summary": {
+    "Name": "University Of Arizona Arboretum",
+    "RHI5": "81.08",
+    "RHI10": "70.66",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.61",
+    "RGI10": "6.63",
+    "RGI20": "(not enough data)",
+    "Trees measured": "17",
+    "Last measurement date": "02/06/2017",
+    "Ownership contact": "University of Arisona Box 216036 Tuscon, AZ., 85721",
+    "General comments": "Offices located in Herring Hall"
+  },
+  "visits": [
+    {
+      "visited": "02/06/2017",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Offices located in Herring Hall"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cupressus sempervirens",
+          "Italian Cypress",
+          "86.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cupressus sempervirens",
+            "href": "/Browse/Sites/41821/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "Italian Cypress",
+            "href": "/Browse/Sites/41821/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "86.8'",
+            "href": "/Browse/Trees/274864/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Eucalyptus camaldulensis",
+          "River Redgum",
+          "84.0'",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Eucalyptus camaldulensis",
+            "href": "/Browse/Sites/41821/Species/Eucalyptus%20camaldulensis%20(River%20Redgum)/Details"
+          },
+          {
+            "text": "River Redgum",
+            "href": "/Browse/Sites/41821/Species/Eucalyptus%20camaldulensis%20(River%20Redgum)/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/274858/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/274858/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hesperocyparis arizonica",
+          "Arizona Cypress",
+          "81.6'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hesperocyparis arizonica",
+            "href": "/Browse/Sites/41821/Species/Hesperocyparis%20arizonica%20(Arizona%20Cypress)/Details"
+          },
+          {
+            "text": "Arizona Cypress",
+            "href": "/Browse/Sites/41821/Species/Hesperocyparis%20arizonica%20(Arizona%20Cypress)/Details"
+          },
+          {
+            "text": "81.6'",
+            "href": "/Browse/Trees/274859/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/274859/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Phoenix canariensis",
+          "Canary Island Date Palm",
+          "48.9'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Phoenix canariensis",
+            "href": "/Browse/Sites/41821/Species/Phoenix%20canariensis%20(Canary%20Island%20Date%20Palm)/Details"
+          },
+          {
+            "text": "Canary Island Date Palm",
+            "href": "/Browse/Sites/41821/Species/Phoenix%20canariensis%20(Canary%20Island%20Date%20Palm)/Details"
+          },
+          {
+            "text": "48.9'",
+            "href": "/Browse/Trees/274857/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/274857/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus brutia var. eldarica",
+          "Afgan Pine",
+          "69.2'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus brutia var. eldarica",
+            "href": "/Browse/Sites/41821/Species/Pinus%20brutia%20var.%20eldarica%20(Afgan%20Pine)/Details"
+          },
+          {
+            "text": "Afgan Pine",
+            "href": "/Browse/Sites/41821/Species/Pinus%20brutia%20var.%20eldarica%20(Afgan%20Pine)/Details"
+          },
+          {
+            "text": "69.2'",
+            "href": "/Browse/Trees/274862/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/274862/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus halepensis",
+          "Aleppo Pine",
+          "54.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus halepensis",
+            "href": "/Browse/Sites/41821/Species/Pinus%20halepensis%20(Aleppo%20Pine)/Details"
+          },
+          {
+            "text": "Aleppo Pine",
+            "href": "/Browse/Sites/41821/Species/Pinus%20halepensis%20(Aleppo%20Pine)/Details"
+          },
+          {
+            "text": "54.8'",
+            "href": "/Browse/Trees/274851/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platycladus orientalis",
+          "Oriental Arborvitae",
+          "56.4'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platycladus orientalis",
+            "href": "/Browse/Sites/41821/Species/Platycladus%20orientalis%20(Oriental%20Arborvitae)/Details"
+          },
+          {
+            "text": "Oriental Arborvitae",
+            "href": "/Browse/Sites/41821/Species/Platycladus%20orientalis%20(Oriental%20Arborvitae)/Details"
+          },
+          {
+            "text": "56.4'",
+            "href": "/Browse/Trees/274867/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/274867/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus brandegeei",
+          "Mountain Cottonwood",
+          "57.9'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus brandegeei",
+            "href": "/Browse/Sites/41821/Species/Populus%20brandegeei%20(Mountain%20Cottonwood)/Details"
+          },
+          {
+            "text": "Mountain Cottonwood",
+            "href": "/Browse/Sites/41821/Species/Populus%20brandegeei%20(Mountain%20Cottonwood)/Details"
+          },
+          {
+            "text": "57.9'",
+            "href": "/Browse/Trees/274854/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/274854/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus fremontii ssp. mesetae",
+          "Fremont Cottonwood",
+          "79.9'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus fremontii ssp. mesetae",
+            "href": "/Browse/Sites/41821/Species/Populus%20fremontii%20ssp.%20mesetae%20(Fremont%20Cottonwood)/Details"
+          },
+          {
+            "text": "Fremont Cottonwood",
+            "href": "/Browse/Sites/41821/Species/Populus%20fremontii%20ssp.%20mesetae%20(Fremont%20Cottonwood)/Details"
+          },
+          {
+            "text": "79.9'",
+            "href": "/Browse/Trees/274855/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/274855/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus durifolia",
+          "Durango Emory Oak",
+          "34.9'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus durifolia",
+            "href": "/Browse/Sites/41821/Species/Quercus%20durifolia%20(Durango%20Emory%20Oak)/Details"
+          },
+          {
+            "text": "Durango Emory Oak",
+            "href": "/Browse/Sites/41821/Species/Quercus%20durifolia%20(Durango%20Emory%20Oak)/Details"
+          },
+          {
+            "text": "34.9'",
+            "href": "/Browse/Trees/274853/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/274853/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 13.843, -110 57.223",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Pima"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

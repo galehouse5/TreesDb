@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Morella cerifera",
+  "commonName": "Wax Myrtle",
+  "global": {
+    "maxHeight": {
+      "text": "8.84 m",
+      "href": "/Browse/Trees/163346/Details"
+    },
+    "maxGirth": {
+      "text": "15 cm",
+      "href": "/Browse/Trees/163346/Details"
+    },
+    "maxCrownSpread": {
+      "text": "3.96 m",
+      "href": "/Browse/Trees/163346/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "8.84 m",
+          "15 cm",
+          "3.96 m"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "8.84 m",
+            "href": "/Browse/Trees/163346/Details"
+          },
+          {
+            "text": "15 cm",
+            "href": "/Browse/Trees/163346/Details"
+          },
+          {
+            "text": "3.96 m",
+            "href": "/Browse/Trees/163346/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

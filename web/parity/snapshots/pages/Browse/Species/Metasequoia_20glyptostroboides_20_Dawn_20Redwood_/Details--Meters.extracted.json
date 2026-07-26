@@ -1,0 +1,263 @@
+{
+  "botanicalName": "Metasequoia glyptostroboides",
+  "commonName": "Dawn Redwood",
+  "global": {
+    "maxHeight": {
+      "text": "43.01 m",
+      "href": "/Browse/Trees/134478/Details"
+    },
+    "maxGirth": {
+      "text": "511 cm",
+      "href": "/Browse/Trees/174155/Details"
+    },
+    "maxCrownSpread": {
+      "text": "17.68 m",
+      "href": "/Browse/Trees/224369/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "32.28 m",
+          "505 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "32.28 m",
+            "href": "/Browse/Trees/140156/Details"
+          },
+          {
+            "text": "505 cm",
+            "href": "/Browse/Trees/140156/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "24.29 m",
+          "276 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "24.29 m",
+            "href": "/Browse/Trees/125468/Details"
+          },
+          {
+            "text": "276 cm",
+            "href": "/Browse/Trees/125468/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "24.08 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "24.08 m",
+            "href": "/Browse/Trees/235852/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "33.10 m",
+          "483 cm",
+          "15.54 m"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          {
+            "text": "33.10 m",
+            "href": "/Browse/Trees/171028/Details"
+          },
+          {
+            "text": "483 cm",
+            "href": "/Browse/Trees/171028/Details"
+          },
+          {
+            "text": "15.54 m",
+            "href": "/Browse/Trees/171028/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "38.92 m",
+          "384 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "38.92 m",
+            "href": "/Browse/Trees/258144/Details"
+          },
+          {
+            "text": "384 cm",
+            "href": "/Browse/Trees/258127/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "36.48 m",
+          "269 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "36.48 m",
+            "href": "/Browse/Trees/39501/Details"
+          },
+          {
+            "text": "269 cm",
+            "href": "/Browse/Trees/235499/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "34.59 m",
+          "511 cm",
+          "15.24 m"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "34.59 m",
+            "href": "/Browse/Trees/162195/Details"
+          },
+          {
+            "text": "511 cm",
+            "href": "/Browse/Trees/174155/Details"
+          },
+          {
+            "text": "15.24 m",
+            "href": "/Browse/Trees/174155/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "43.01 m",
+          "498 cm",
+          "10.06 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "43.01 m",
+            "href": "/Browse/Trees/134478/Details"
+          },
+          {
+            "text": "498 cm",
+            "href": "/Browse/Trees/134479/Details"
+          },
+          {
+            "text": "10.06 m",
+            "href": "/Browse/Trees/134441/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "34.02 m",
+          "490 cm",
+          "17.68 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "34.02 m",
+            "href": "/Browse/Trees/313199/Details"
+          },
+          {
+            "text": "490 cm",
+            "href": "/Browse/Trees/224369/Details"
+          },
+          {
+            "text": "17.68 m",
+            "href": "/Browse/Trees/224369/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

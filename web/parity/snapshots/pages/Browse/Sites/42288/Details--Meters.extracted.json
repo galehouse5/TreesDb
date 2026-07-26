@@ -1,0 +1,210 @@
+{
+  "siteId": 42288,
+  "summary": {
+    "Name": "Kit Carson National Forest",
+    "RHI5": "32.705",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.386",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "07/18/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "All trees are located along NM-518 between Taos, NM & Mora, NM"
+  },
+  "visits": [
+    {
+      "visited": "07/18/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "All trees are located along NM-518 between Taos, NM & Mora, NM"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. concolor",
+          "White Fir",
+          "31.70 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. concolor",
+            "href": "/Browse/Sites/42288/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/42288/Species/Abies%20concolor%20var.%20concolor%20(White%20Fir)/Details"
+          },
+          {
+            "text": "31.70 m",
+            "href": "/Browse/Trees/317991/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. brachyptera",
+          "Ponderosa Pine",
+          "36.79 m",
+          "329 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. brachyptera",
+            "href": "/Browse/Sites/42288/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/42288/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "36.79 m",
+            "href": "/Browse/Trees/317994/Details"
+          },
+          {
+            "text": "329 cm",
+            "href": "/Browse/Trees/317994/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobiformis",
+          "Southwestern White Pine",
+          "30.45 m",
+          "270 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobiformis",
+            "href": "/Browse/Sites/42288/Species/Pinus%20strobiformis%20(Southwestern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Southwestern White Pine",
+            "href": "/Browse/Sites/42288/Species/Pinus%20strobiformis%20(Southwestern%20White%20Pine)/Details"
+          },
+          {
+            "text": "30.45 m",
+            "href": "/Browse/Trees/317993/Details"
+          },
+          {
+            "text": "270 cm",
+            "href": "/Browse/Trees/317993/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus angustifolia",
+          "Narrowleaf Cottonwood",
+          "23.53 m",
+          "268 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus angustifolia",
+            "href": "/Browse/Sites/42288/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "Narrowleaf Cottonwood",
+            "href": "/Browse/Sites/42288/Species/Populus%20angustifolia%20(Narrowleaf%20Cottonwood)/Details"
+          },
+          {
+            "text": "23.53 m",
+            "href": "/Browse/Trees/317995/Details"
+          },
+          {
+            "text": "268 cm",
+            "href": "/Browse/Trees/317995/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudotsuga menziesii var. glauca",
+          "Rocky Mountain Douglas-Fir",
+          "41.06 m",
+          "326 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudotsuga menziesii var. glauca",
+            "href": "/Browse/Sites/42288/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "Rocky Mountain Douglas-Fir",
+            "href": "/Browse/Sites/42288/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+          },
+          {
+            "text": "41.06 m",
+            "href": "/Browse/Trees/317992/Details"
+          },
+          {
+            "text": "326 cm",
+            "href": "/Browse/Trees/317992/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 08.981, -105 32.722",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Taos"
+    },
+    "state": {
+      "text": "New Mexico (US)",
+      "href": "/Browse/States/30/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

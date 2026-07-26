@@ -1,0 +1,325 @@
+{
+  "siteId": 40503,
+  "summary": {
+    "Name": "Flint Woods {Reserve",
+    "RHI5": "140.58",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "12.08",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "28",
+    "Last measurement date": "11/19/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "37 Acres with additional acreage under conservation easement."
+  },
+  "visits": [
+    {
+      "visited": "11/19/2014",
+      "visitors": "George Fieo",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "37 Acres with additional acreage under conservation easement."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "131.2'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40503/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40503/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "131.2'",
+            "href": "/Browse/Trees/232223/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/232223/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "131.7'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40503/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40503/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "131.7'",
+            "href": "/Browse/Trees/232217/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/232216/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "124.7'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40503/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40503/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "124.7'",
+            "href": "/Browse/Trees/232212/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/232211/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "152.2'",
+          "156''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40503/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40503/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "152.2'",
+            "href": "/Browse/Trees/232230/Details"
+          },
+          {
+            "text": "156''",
+            "href": "/Browse/Trees/232238/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "116.9'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/40503/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/40503/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "116.9'",
+            "href": "/Browse/Trees/232214/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/232213/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "133.3'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40503/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40503/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "133.3'",
+            "href": "/Browse/Trees/232235/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/232234/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus coccinea var. coccinea",
+          "Scarlet Oak",
+          "128.2'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus coccinea var. coccinea",
+            "href": "/Browse/Sites/40503/Species/Quercus%20coccinea%20var.%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "Scarlet Oak",
+            "href": "/Browse/Sites/40503/Species/Quercus%20coccinea%20var.%20coccinea%20(Scarlet%20Oak)/Details"
+          },
+          {
+            "text": "128.2'",
+            "href": "/Browse/Trees/232236/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/232236/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "150.1'",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/40503/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/40503/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "150.1'",
+            "href": "/Browse/Trees/232219/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/232220/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "135.6'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/40503/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/40503/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "135.6'",
+            "href": "/Browse/Trees/232215/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/232215/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 49.851, -075 36.519",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "New Castle"
+    },
+    "state": {
+      "text": "Delaware (US)",
+      "href": "/Browse/States/7/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

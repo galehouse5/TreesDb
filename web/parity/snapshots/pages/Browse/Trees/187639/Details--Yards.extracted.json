@@ -1,0 +1,70 @@
+{
+  "treeId": 187639,
+  "botanicalName": {
+    "text": "Quercus alba",
+    "href": "/Browse/Sites/39600/Species/Quercus%20alba%20(White%20Oak)/Details"
+  },
+  "commonName": {
+    "text": "White Oak",
+    "href": "/Browse/Sites/39600/Species/Quercus%20alba%20(White%20Oak)/Details"
+  },
+  "details": {
+    "Height": "24.67 yd",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "105''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "56.76",
+    "ENTSPTS": "648.12",
+    "TDI3": "(not enough data)",
+    "TDI2": "0.81",
+    "Champion points (abbreviated)": "179.10",
+    "Diameter": "33''",
+    "Conical volume": "5.58 yd³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 08/18/2018",
+      "summary": {
+        "Height": "24.67 yd",
+        "Girth": "105''"
+      },
+      "details": {
+        "Botanical name": "Quercus alba",
+        "Common name": "White Oak",
+        "Height": "24.67 yd",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "105''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "56.76",
+        "ENTSPTS": "648.12",
+        "TDI3": "(not enough data)",
+        "TDI2": "0.81",
+        "Champion points (abbreviated)": "179.10",
+        "Diameter": "33''",
+        "Conical volume": "5.58 yd³",
+        "General comments": "(none)"
+      },
+      "measurers": "Matt Markworth"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "39 18.557, -084 18.406",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Schappacher Park",
+      "href": "/Browse/Sites/39600/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

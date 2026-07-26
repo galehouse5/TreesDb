@@ -1,0 +1,147 @@
+{
+  "siteId": 41964,
+  "summary": {
+    "Name": "Canaan Valley Resort State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "11/18/2022",
+    "Ownership contact": "(no data)",
+    "General comments": "6.015 acres"
+  },
+  "visits": [
+    {
+      "visited": "11/18/2022",
+      "visitors": "Turner Sharp and Susan Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "6.015 acres"
+    },
+    {
+      "visited": "11/02/2013",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "6,000 acres"
+    },
+    {
+      "visited": "05/06/2010",
+      "visitors": "Bob Hannah and Liz Snider",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Picea rubens",
+          "Red Spruce",
+          "78.5'",
+          "96''",
+          "28.0'"
+        ],
+        "links": [
+          {
+            "text": "Picea rubens",
+            "href": "/Browse/Sites/41964/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "Red Spruce",
+            "href": "/Browse/Sites/41964/Species/Picea%20rubens%20(Red%20Spruce)/Details"
+          },
+          {
+            "text": "78.5'",
+            "href": "/Browse/Trees/284689/Details"
+          },
+          {
+            "text": "96''",
+            "href": "/Browse/Trees/284689/Details"
+          },
+          {
+            "text": "28.0'",
+            "href": "/Browse/Trees/284689/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "86.0'",
+          "66''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/41964/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/41964/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "86.0'",
+            "href": "/Browse/Trees/284688/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/284688/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/284503/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 02.123, -079 27.445",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Tucker"
+    },
+    "state": {
+      "text": "West Virginia (US)",
+      "href": "/Browse/States/47/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

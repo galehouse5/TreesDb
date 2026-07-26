@@ -1,0 +1,219 @@
+{
+  "siteId": 38238,
+  "summary": {
+    "Name": "Fort Hunter Mansion And Park",
+    "RHI5": "86.56",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.46",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "03/03/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/03/2010",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "02/04/2008",
+      "visitors": "Scott Wade",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "94.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/38238/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/38238/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "94.7'",
+            "href": "/Browse/Trees/133358/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ginkgo biloba",
+          "Maidenhair Tree",
+          "86.1'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ginkgo biloba",
+            "href": "/Browse/Sites/38238/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "Maidenhair Tree",
+            "href": "/Browse/Sites/38238/Species/Ginkgo%20biloba%20(Maidenhair%20Tree)/Details"
+          },
+          {
+            "text": "86.1'",
+            "href": "/Browse/Trees/133356/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/133356/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "89.6'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/38238/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/38238/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "89.6'",
+            "href": "/Browse/Trees/133359/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/133359/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "125.0'",
+          "274''",
+          "146.1'"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/38238/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/38238/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "125.0'",
+            "href": "/Browse/Trees/133355/Details"
+          },
+          {
+            "text": "274''",
+            "href": "/Browse/Trees/133345/Details"
+          },
+          {
+            "text": "146.1'",
+            "href": "/Browse/Trees/133345/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pyrus communis",
+          "Common Pear",
+          "37.4'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pyrus communis",
+            "href": "/Browse/Sites/38238/Species/Pyrus%20communis%20(Common%20Pear)/Details"
+          },
+          {
+            "text": "Common Pear",
+            "href": "/Browse/Sites/38238/Species/Pyrus%20communis%20(Common%20Pear)/Details"
+          },
+          {
+            "text": "37.4'",
+            "href": "/Browse/Trees/133357/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/133357/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 20.618, -076 54.508",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - County",
+      "County": "Dauphin"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

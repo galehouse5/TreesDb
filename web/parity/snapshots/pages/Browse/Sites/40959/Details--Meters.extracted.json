@@ -1,0 +1,210 @@
+{
+  "siteId": 40959,
+  "summary": {
+    "Name": "Bois D'arc Creek Wildlife Management Area",
+    "RHI5": "16.087",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.032",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "07/07/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "5843 Acres"
+  },
+  "visits": [
+    {
+      "visited": "07/07/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "5843 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya myristiciformis",
+          "Nutmeg Hickory",
+          "30.39 m",
+          "216 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya myristiciformis",
+            "href": "/Browse/Sites/40959/Species/Carya%20myristiciformis%20(Nutmeg%20Hickory)/Details"
+          },
+          {
+            "text": "Nutmeg Hickory",
+            "href": "/Browse/Sites/40959/Species/Carya%20myristiciformis%20(Nutmeg%20Hickory)/Details"
+          },
+          {
+            "text": "30.39 m",
+            "href": "/Browse/Trees/241638/Details"
+          },
+          {
+            "text": "216 cm",
+            "href": "/Browse/Trees/241638/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maclura pomifera",
+          "Osage Orange",
+          "17.47 m",
+          "84 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maclura pomifera",
+            "href": "/Browse/Sites/40959/Species/Maclura%20pomifera%20(Osage%20Orange)/Details"
+          },
+          {
+            "text": "Osage Orange",
+            "href": "/Browse/Sites/40959/Species/Maclura%20pomifera%20(Osage%20Orange)/Details"
+          },
+          {
+            "text": "17.47 m",
+            "href": "/Browse/Trees/241639/Details"
+          },
+          {
+            "text": "84 cm",
+            "href": "/Browse/Trees/241639/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus pagoda",
+          "Cherrybark Oak",
+          "-",
+          "348 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus pagoda",
+            "href": "/Browse/Sites/40959/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "Cherrybark Oak",
+            "href": "/Browse/Sites/40959/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "348 cm",
+            "href": "/Browse/Trees/241637/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus similis",
+          "Bottomland Post Oak",
+          "22.98 m",
+          "312 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus similis",
+            "href": "/Browse/Sites/40959/Species/Quercus%20similis%20(Bottomland%20Post%20Oak)/Details"
+          },
+          {
+            "text": "Bottomland Post Oak",
+            "href": "/Browse/Sites/40959/Species/Quercus%20similis%20(Bottomland%20Post%20Oak)/Details"
+          },
+          {
+            "text": "22.98 m",
+            "href": "/Browse/Trees/241640/Details"
+          },
+          {
+            "text": "312 cm",
+            "href": "/Browse/Trees/241640/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Styphnolobium affine",
+          "Eve's Necklacepod",
+          "9.60 m",
+          "56 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Styphnolobium affine",
+            "href": "/Browse/Sites/40959/Species/Styphnolobium%20affine%20(Eve's%20Necklacepod)/Details"
+          },
+          {
+            "text": "Eve's Necklacepod",
+            "href": "/Browse/Sites/40959/Species/Styphnolobium%20affine%20(Eve's%20Necklacepod)/Details"
+          },
+          {
+            "text": "9.60 m",
+            "href": "/Browse/Trees/241641/Details"
+          },
+          {
+            "text": "56 cm",
+            "href": "/Browse/Trees/241641/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 34.124, -093 42.847",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Hempstead"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

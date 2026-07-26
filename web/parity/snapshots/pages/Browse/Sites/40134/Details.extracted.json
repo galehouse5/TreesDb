@@ -1,0 +1,365 @@
+{
+  "siteId": 40134,
+  "summary": {
+    "Name": "Zoar Valley",
+    "RHI5": "154.30",
+    "RHI10": "146.19",
+    "RHI20": "137.48",
+    "RGI5": "12.78",
+    "RGI10": "11.33",
+    "RGI20": "9.91",
+    "Trees measured": "178",
+    "Last measurement date": "07/01/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/01/2017",
+      "visitors": "Elijah Whitcomb and Erik Danielsen",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    },
+    {
+      "visited": "05/29/2005",
+      "visitors": "Tom Diggins",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/zoar_valley_05.htm",
+      "comments": "(none)"
+    },
+    {
+      "visited": "11/05/2003",
+      "visitors": "Tom Diggins, Bruce Kershner, and Bob Leverett",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/zoar_valley.htm",
+      "comments": "Tress were measured between 6/10/2003 and 11/05/2003. Additional measurers include H. Stoner, D. Luthringer."
+    },
+    {
+      "visited": "11/19/2002",
+      "visitors": "Tom Diggins",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/some_zoar_valley.htm",
+      "comments": "3,014 Acres. Measurments were made between 6/2/2002 and 6/19/2002."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer ×freemanii",
+          "Freeman Maple",
+          "99.0'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer ×freemanii",
+            "href": "/Browse/Sites/40134/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "Freeman Maple",
+            "href": "/Browse/Sites/40134/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "99.0'",
+            "href": "/Browse/Trees/221870/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/221870/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "45.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/Sites/40134/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/Sites/40134/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "45.5'",
+            "href": "/Browse/Trees/221868/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer nigrum",
+          "Black Maple",
+          "126.2'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer nigrum",
+            "href": "/Browse/Sites/40134/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "Black Maple",
+            "href": "/Browse/Sites/40134/Species/Acer%20nigrum%20(Black%20Maple)/Details"
+          },
+          {
+            "text": "126.2'",
+            "href": "/Browse/Trees/221847/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/221847/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "55.5'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/Sites/40134/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/Sites/40134/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "55.5'",
+            "href": "/Browse/Trees/221854/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/221854/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "119.1'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40134/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40134/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "119.1'",
+            "href": "/Browse/Trees/257507/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/265454/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "128.6'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/40134/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40134/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "128.6'",
+            "href": "/Browse/Trees/221844/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/221844/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "103.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/40134/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/40134/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "103.0'",
+            "href": "/Browse/Trees/221869/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "127.6'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/40134/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40134/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "127.6'",
+            "href": "/Browse/Trees/257490/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/257514/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "130.2'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40134/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40134/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "130.2'",
+            "href": "/Browse/Trees/221817/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/221805/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea",
+          "Common Serviceberry",
+          "73.4'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea",
+            "href": "/Browse/Sites/40134/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/40134/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "73.4'",
+            "href": "/Browse/Trees/280019/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/280019/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 46 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 26.137, -078 52.333",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Cattaraugus"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

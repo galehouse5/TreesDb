@@ -1,0 +1,241 @@
+{
+  "siteId": 42234,
+  "summary": {
+    "Name": "Washington County Single Tree Sites",
+    "RHI5": "78.42",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.88",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "Cities in Washington County are Marietta, Belpre plus the villages of Beverly, Lower Salem, Lowell, Macksburg, and Matamorus."
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "Cities in Washington County are Marietta, Belpre plus the villages of Beverly, Lower Salem, Lowell, Macksburg, and Matamorus."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "92.1'",
+          "97''",
+          "58.5'"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/42234/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/42234/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "92.1'",
+            "href": "/Browse/Trees/312359/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/312359/Details"
+          },
+          {
+            "text": "58.5'",
+            "href": "/Browse/Trees/312359/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "62.7'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/42234/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/42234/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "62.7'",
+            "href": "/Browse/Trees/312360/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/312360/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maclura pomifera",
+          "Osage Orange",
+          "69.3'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maclura pomifera",
+            "href": "/Browse/Sites/42234/Species/Maclura%20pomifera%20(Osage%20Orange)/Details"
+          },
+          {
+            "text": "Osage Orange",
+            "href": "/Browse/Sites/42234/Species/Maclura%20pomifera%20(Osage%20Orange)/Details"
+          },
+          {
+            "text": "69.3'",
+            "href": "/Browse/Trees/312361/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/312361/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "90.2'",
+          "117''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/42234/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/42234/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "90.2'",
+            "href": "/Browse/Trees/312362/Details"
+          },
+          {
+            "text": "117''",
+            "href": "/Browse/Trees/312362/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus x mutabilis",
+          "Hybrid Oak",
+          "62.6'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus x mutabilis",
+            "href": "/Browse/Sites/42234/Species/Quercus%20%20x%20mutabilis%20(Hybrid%20Oak)/Details"
+          },
+          {
+            "text": "Hybrid Oak",
+            "href": "/Browse/Sites/42234/Species/Quercus%20%20x%20mutabilis%20(Hybrid%20Oak)/Details"
+          },
+          {
+            "text": "62.6'",
+            "href": "/Browse/Trees/312364/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/312364/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus muehlenbergii",
+          "Chinkapin Oak",
+          "77.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus muehlenbergii",
+            "href": "/Browse/Sites/42234/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "Chinkapin Oak",
+            "href": "/Browse/Sites/42234/Species/Quercus%20muehlenbergii%20(Chinkapin%20Oak)/Details"
+          },
+          {
+            "text": "77.8'",
+            "href": "/Browse/Trees/312363/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 24.953, -081 27.273",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private , public",
+      "County": "Washington"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,362 @@
+{
+  "siteId": 31571,
+  "summary": {
+    "Name": "Crull's Island",
+    "RHI5": "120.06",
+    "RHI10": "110.68",
+    "RHI20": "88.63",
+    "RGI5": "12.32",
+    "RGI10": "10.62",
+    "RGI20": "7.92",
+    "Trees measured": "86",
+    "Last measurement date": "04/02/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/02/2009",
+      "visitors": "Dale Luthringer, Edward Frank, and Carl Harting",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "09/07/2004",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "One of seven islands in the Allegheny Islands Wilderness, - 96 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "9.0'",
+          "4''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/Sites/31571/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/Sites/31571/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "9.0'",
+            "href": "/Browse/Trees/139147/Details"
+          },
+          {
+            "text": "4''",
+            "href": "/Browse/Trees/139147/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "99.1'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/31571/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/31571/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "99.1'",
+            "href": "/Browse/Trees/120889/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/120889/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "110.8'",
+          "190''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/31571/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/31571/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "110.8'",
+            "href": "/Browse/Trees/139142/Details"
+          },
+          {
+            "text": "190''",
+            "href": "/Browse/Trees/139139/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "111.1'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/31571/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/31571/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "111.1'",
+            "href": "/Browse/Trees/116270/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/120882/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "29.5'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/31571/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/31571/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "29.5'",
+            "href": "/Browse/Trees/139110/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/139110/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "104.2'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/31571/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/31571/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "104.2'",
+            "href": "/Browse/Trees/120888/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/139114/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "100.5'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/31571/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/31571/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "100.5'",
+            "href": "/Browse/Trees/105898/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/139122/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus spp.",
+          "Hawthorn",
+          "44.4'",
+          "44''",
+          "43.0'"
+        ],
+        "links": [
+          {
+            "text": "Crataegus spp.",
+            "href": "/Browse/Sites/31571/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/31571/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "44.4'",
+            "href": "/Browse/Trees/139135/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/139132/Details"
+          },
+          {
+            "text": "43.0'",
+            "href": "/Browse/Trees/139132/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "131.7'",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/31571/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/31571/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "131.7'",
+            "href": "/Browse/Trees/139170/Details"
+          },
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/139166/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "96.4'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/31571/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/31571/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "96.4'",
+            "href": "/Browse/Trees/139129/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/139129/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 23 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 49.212, -079 16.180",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Forest",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

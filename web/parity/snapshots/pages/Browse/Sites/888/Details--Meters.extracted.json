@@ -1,0 +1,104 @@
+{
+  "siteId": 888,
+  "summary": {
+    "Name": "2330 River Road",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "09/05/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "A small 4 acre farm tract from the early 1900's on the west edge of the Chagrin River. About 2 miles north of North Chagrin Reservation."
+  },
+  "visits": [
+    {
+      "visited": "09/05/2011",
+      "visitors": "Daniel Reed, Steve Galehouse, and Will Blozan",
+      "tripReportUrl": "(none)",
+      "comments": "A small 4 acre farm tract from the early 1900's on the west edge of the Chagrin River. About 2 miles north of North Chagrin Reservation."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "30.97 m",
+          "584 cm",
+          "36.61 m"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/888/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/888/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "30.97 m",
+            "href": "/Browse/Trees/15964/Details"
+          },
+          {
+            "text": "584 cm",
+            "href": "/Browse/Trees/15964/Details"
+          },
+          {
+            "text": "36.61 m",
+            "href": "/Browse/Trees/15964/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 36.759, -081 24.809",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Lake"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

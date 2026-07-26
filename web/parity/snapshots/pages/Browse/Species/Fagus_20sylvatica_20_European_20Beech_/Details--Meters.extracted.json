@@ -1,0 +1,240 @@
+{
+  "botanicalName": "Fagus sylvatica",
+  "commonName": "European Beech",
+  "global": {
+    "maxHeight": {
+      "text": "31.42 m",
+      "href": "/Browse/Trees/258150/Details"
+    },
+    "maxGirth": {
+      "text": "653 cm",
+      "href": "/Browse/Trees/214528/Details"
+    },
+    "maxCrownSpread": {
+      "text": "30.78 m",
+      "href": "/Browse/Trees/283514/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "18.26 m",
+          "299 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "18.26 m",
+            "href": "/Browse/Trees/75461/Details"
+          },
+          {
+            "text": "299 cm",
+            "href": "/Browse/Trees/75461/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Lesser Poland Voivodeship",
+          "24.69 m",
+          "436 cm",
+          "30.78 m"
+        ],
+        "links": [
+          {
+            "text": "Lesser Poland Voivodeship",
+            "href": "/Browse/States/225/Details"
+          },
+          {
+            "text": "24.69 m",
+            "href": "/Browse/Trees/283514/Details"
+          },
+          {
+            "text": "436 cm",
+            "href": "/Browse/Trees/283514/Details"
+          },
+          {
+            "text": "30.78 m",
+            "href": "/Browse/Trees/283514/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "31.42 m",
+          "411 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "31.42 m",
+            "href": "/Browse/Trees/258150/Details"
+          },
+          {
+            "text": "411 cm",
+            "href": "/Browse/Trees/214927/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "23.59 m",
+          "55 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "23.59 m",
+            "href": "/Browse/Trees/5909/Details"
+          },
+          {
+            "text": "55 cm",
+            "href": "/Browse/Trees/272967/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "31.24 m",
+          "653 cm",
+          "28.99 m"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "31.24 m",
+            "href": "/Browse/Trees/214528/Details"
+          },
+          {
+            "text": "653 cm",
+            "href": "/Browse/Trees/214528/Details"
+          },
+          {
+            "text": "28.99 m",
+            "href": "/Browse/Trees/255899/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Rhode Island",
+          "20.12 m",
+          "398 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhode Island",
+            "href": "/Browse/States/37/Details"
+          },
+          {
+            "text": "20.12 m",
+            "href": "/Browse/Trees/256815/Details"
+          },
+          {
+            "text": "398 cm",
+            "href": "/Browse/Trees/256815/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Bohemian Region",
+          "28.50 m",
+          "472 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Bohemian Region",
+            "href": "/Browse/States/258/Details"
+          },
+          {
+            "text": "28.50 m",
+            "href": "/Browse/Trees/284681/Details"
+          },
+          {
+            "text": "472 cm",
+            "href": "/Browse/Trees/284681/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "31.39 m",
+          "427 cm",
+          "26.82 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "31.39 m",
+            "href": "/Browse/Trees/313233/Details"
+          },
+          {
+            "text": "427 cm",
+            "href": "/Browse/Trees/313234/Details"
+          },
+          {
+            "text": "26.82 m",
+            "href": "/Browse/Trees/313197/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "columns": [
+    {
+      "header": "Botanical name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Common name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max height",
+      "sortable": true,
+      "sortState": "asc"
+    },
+    {
+      "header": "Max girth",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max crown spread",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Ilex opaca",
+        "American Holly",
+        "-",
+        "26''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Ilex opaca",
+          "href": "/Browse/States/1/Species/Ilex%20opaca%20(American%20Holly)/Details"
+        },
+        {
+          "text": "American Holly",
+          "href": "/Browse/States/1/Species/Ilex%20opaca%20(American%20Holly)/Details"
+        },
+        null,
+        {
+          "text": "26''",
+          "href": "/Browse/Trees/233694/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Magnolia macrophylla",
+        "Bigleaf Magnolia",
+        "-",
+        "48''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Magnolia macrophylla",
+          "href": "/Browse/States/1/Species/Magnolia%20macrophylla%20(Bigleaf%20Magnolia)/Details"
+        },
+        {
+          "text": "Bigleaf Magnolia",
+          "href": "/Browse/States/1/Species/Magnolia%20macrophylla%20(Bigleaf%20Magnolia)/Details"
+        },
+        null,
+        {
+          "text": "48''",
+          "href": "/Browse/Trees/233690/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Oxydendrum arboreum",
+        "Sourwood",
+        "-",
+        "49''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Oxydendrum arboreum",
+          "href": "/Browse/States/1/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+        },
+        {
+          "text": "Sourwood",
+          "href": "/Browse/States/1/Species/Oxydendrum%20arboreum%20(Sourwood)/Details"
+        },
+        null,
+        {
+          "text": "49''",
+          "href": "/Browse/Trees/233695/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus falcata",
+        "Southern Red Oak",
+        "-",
+        "193''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus falcata",
+          "href": "/Browse/States/1/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+        },
+        {
+          "text": "Southern Red Oak",
+          "href": "/Browse/States/1/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+        },
+        null,
+        {
+          "text": "193''",
+          "href": "/Browse/Trees/253881/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus pagoda",
+        "Cherrybark Oak",
+        "-",
+        "211''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus pagoda",
+          "href": "/Browse/States/1/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+        },
+        {
+          "text": "Cherrybark Oak",
+          "href": "/Browse/States/1/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+        },
+        null,
+        {
+          "text": "211''",
+          "href": "/Browse/Trees/233708/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Salix caroliniana",
+        "Coastal Plain Willow",
+        "18.9'",
+        "8''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Salix caroliniana",
+          "href": "/Browse/States/1/Species/Salix%20caroliniana%20(Coastal%20Plain%20Willow)/Details"
+        },
+        {
+          "text": "Coastal Plain Willow",
+          "href": "/Browse/States/1/Species/Salix%20caroliniana%20(Coastal%20Plain%20Willow)/Details"
+        },
+        {
+          "text": "18.9'",
+          "href": "/Browse/Trees/233707/Details"
+        },
+        {
+          "text": "8''",
+          "href": "/Browse/Trees/233707/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Vaccinium arboreum",
+        "Farkleberry",
+        "28.7'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Vaccinium arboreum",
+          "href": "/Browse/States/1/Species/Vaccinium%20arboreum%20(Farkleberry)/Details"
+        },
+        {
+          "text": "Farkleberry",
+          "href": "/Browse/States/1/Species/Vaccinium%20arboreum%20(Farkleberry)/Details"
+        },
+        {
+          "text": "28.7'",
+          "href": "/Browse/Trees/253889/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Firmiana simplex",
+        "Chinese Parasoltree",
+        "30.0'",
+        "19''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Firmiana simplex",
+          "href": "/Browse/States/1/Species/Firmiana%20simplex%20(Chinese%20Parasoltree)/Details"
+        },
+        {
+          "text": "Chinese Parasoltree",
+          "href": "/Browse/States/1/Species/Firmiana%20simplex%20(Chinese%20Parasoltree)/Details"
+        },
+        {
+          "text": "30.0'",
+          "href": "/Browse/Trees/253886/Details"
+        },
+        {
+          "text": "19''",
+          "href": "/Browse/Trees/253886/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Rhus copallinum",
+        "Winged Sumac",
+        "31.1'",
+        "11''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Rhus copallinum",
+          "href": "/Browse/States/1/Species/Rhus%20copallinum%20(Winged%20Sumac)/Details"
+        },
+        {
+          "text": "Winged Sumac",
+          "href": "/Browse/States/1/Species/Rhus%20copallinum%20(Winged%20Sumac)/Details"
+        },
+        {
+          "text": "31.1'",
+          "href": "/Browse/Trees/233705/Details"
+        },
+        {
+          "text": "11''",
+          "href": "/Browse/Trees/233705/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Quercus marilandica",
+        "Blackjack Oak",
+        "46.8'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Quercus marilandica",
+          "href": "/Browse/States/1/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+        },
+        {
+          "text": "Blackjack Oak",
+          "href": "/Browse/States/1/Species/Quercus%20marilandica%20(Blackjack%20Oak)/Details"
+        },
+        {
+          "text": "46.8'",
+          "href": "/Browse/Trees/233700/Details"
+        },
+        null,
+        null
+      ]
+    }
+  ],
+  "pageInfo": "Showing 1 to 10 of 58 entries",
+  "hasPreviousPage": false,
+  "hasNextPage": true
+}

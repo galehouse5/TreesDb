@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Picea mariana var. mariana",
+  "commonName": "Black Spruce",
+  "global": {
+    "maxHeight": {
+      "text": "101.0'",
+      "href": "/Browse/Trees/143244/Details"
+    },
+    "maxGirth": {
+      "text": "72''",
+      "href": "/Browse/Trees/143244/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "62.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "62.0'",
+            "href": "/Browse/Trees/221774/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Wisconsin",
+          "101.0'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Wisconsin",
+            "href": "/Browse/States/46/Details"
+          },
+          {
+            "text": "101.0'",
+            "href": "/Browse/Trees/143244/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/143244/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

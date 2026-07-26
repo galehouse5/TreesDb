@@ -1,0 +1,62 @@
+{
+  "columns": [
+    {
+      "header": "Botanical name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Common name",
+      "sortable": true,
+      "sortState": "asc"
+    },
+    {
+      "header": "Max height",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max girth",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max crown spread",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Thuja occidentalis",
+        "Arborvitae",
+        "47.0'",
+        "95''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Thuja occidentalis",
+          "href": "/Browse/Sites/436/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+        },
+        {
+          "text": "Arborvitae",
+          "href": "/Browse/Sites/436/Species/Thuja%20occidentalis%20(Arborvitae)/Details"
+        },
+        {
+          "text": "47.0'",
+          "href": "/Browse/Trees/2304/Details"
+        },
+        {
+          "text": "95''",
+          "href": "/Browse/Trees/2304/Details"
+        },
+        null
+      ]
+    }
+  ],
+  "pageInfo": "Showing 1 to 1 of 1 entries",
+  "hasPreviousPage": false,
+  "hasNextPage": false
+}

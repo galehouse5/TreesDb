@@ -1,0 +1,129 @@
+{
+  "siteId": 40016,
+  "summary": {
+    "Name": "Poas Volcano National Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "02/11/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/11/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alnus acuminata",
+          "Mexican Alder",
+          "63.7'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus acuminata",
+            "href": "/Browse/Sites/40016/Species/Alnus%20acuminata%20(Mexican%20Alder)/Details"
+          },
+          {
+            "text": "Mexican Alder",
+            "href": "/Browse/Sites/40016/Species/Alnus%20acuminata%20(Mexican%20Alder)/Details"
+          },
+          {
+            "text": "63.7'",
+            "href": "/Browse/Trees/214115/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/214115/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Escalonia myrilloides var. putens",
+          "Escalonia",
+          "39.7'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Escalonia myrilloides var. putens",
+            "href": "/Browse/Sites/40016/Species/Escalonia%20myrilloides%20var.%20putens%20(Escalonia)/Details"
+          },
+          {
+            "text": "Escalonia",
+            "href": "/Browse/Sites/40016/Species/Escalonia%20myrilloides%20var.%20putens%20(Escalonia)/Details"
+          },
+          {
+            "text": "39.7'",
+            "href": "/Browse/Trees/214114/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/214113/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "10 11.277, -084 14.036",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Poás"
+    },
+    "state": {
+      "text": "Alajuela (CR)",
+      "href": "/Browse/States/117/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

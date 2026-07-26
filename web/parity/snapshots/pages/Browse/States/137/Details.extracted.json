@@ -1,0 +1,265 @@
+{
+  "stateId": 137,
+  "summary": {
+    "Name": "Community of Madrid",
+    "Code": "MD",
+    "RHI5": "76.06",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.91",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "10/24/2014"
+  },
+  "location": {
+    "Coordinates": "40 31.510, -003 48.960",
+    "Country": "Spain"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cedrus deodara",
+          "Deodar Cedar",
+          "96.2'",
+          "173''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus deodara",
+            "href": "/Browse/States/137/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "Deodar Cedar",
+            "href": "/Browse/States/137/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "96.2'",
+            "href": "/Browse/Trees/275148/Details"
+          },
+          {
+            "text": "173''",
+            "href": "/Browse/Trees/275148/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis australis",
+          "European Hackberry",
+          "55.1'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis australis",
+            "href": "/Browse/States/137/Species/Celtis%20australis%20(European%20Hackberry)/Details"
+          },
+          {
+            "text": "European Hackberry",
+            "href": "/Browse/States/137/Species/Celtis%20australis%20(European%20Hackberry)/Details"
+          },
+          {
+            "text": "55.1'",
+            "href": "/Browse/Trees/274934/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/274934/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cupressus sempervirens",
+          "Italian Cypress",
+          "67.8'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cupressus sempervirens",
+            "href": "/Browse/States/137/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "Italian Cypress",
+            "href": "/Browse/States/137/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "67.8'",
+            "href": "/Browse/Trees/274936/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/274936/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus halepensis",
+          "Aleppo Pine",
+          "83.6'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus halepensis",
+            "href": "/Browse/States/137/Species/Pinus%20halepensis%20(Aleppo%20Pine)/Details"
+          },
+          {
+            "text": "Aleppo Pine",
+            "href": "/Browse/States/137/Species/Pinus%20halepensis%20(Aleppo%20Pine)/Details"
+          },
+          {
+            "text": "83.6'",
+            "href": "/Browse/Trees/274938/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/274938/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus procera",
+          "English Elm",
+          "77.6'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus procera",
+            "href": "/Browse/States/137/Species/Ulmus%20procera%20(English%20Elm)/Details"
+          },
+          {
+            "text": "English Elm",
+            "href": "/Browse/States/137/Species/Ulmus%20procera%20(English%20Elm)/Details"
+          },
+          {
+            "text": "77.6'",
+            "href": "/Browse/Trees/274935/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/274935/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Prado Museum Grounds",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prado Museum Grounds",
+            "href": "/Browse/Sites/41840/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Royal Botanical Garden",
+          "71.54",
+          "-",
+          "8.49",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Royal Botanical Garden",
+            "href": "/Browse/Sites/41832/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

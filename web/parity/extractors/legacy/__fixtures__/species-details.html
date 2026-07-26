@@ -1,0 +1,138 @@
+<!-- Hand-built from TMD/Views/Browse/SpeciesDetails.cshtml (site-scoped case, which also renders the
+     state-scoped section per BrowseController.SpeciesDetails) + SpeciesByStateGridPartial.cshtml +
+     SiteSpeciesGridPartial.cshtml + TreesGridPartial.cshtml -->
+<div class="x6 xColumn">
+  <div class="portlet x12">
+    <div class="portlet-header">
+      <h4>Species</h4>
+      <ul class="portlet-tab-nav">
+        <li class="portlet-tab-nav-ignore"><a href="/Export/Species/Quercus alba (White Oak)">Export tree data</a></li>
+      </ul>
+    </div>
+    <div class="portlet-content">
+      <table class="reports_table">
+        <tr><td class="description">Botanical name</td><td class="value"><span>Quercus alba</span></td></tr>
+        <tr><td class="description">Common name</td><td class="value"><span>White Oak</span></td></tr>
+        <tr>
+          <td class="description">Max height</td>
+          <td class="value"><a href="/Browse/Trees/4242/Details">123.5'</a></td>
+        </tr>
+        <tr>
+          <td class="description">Max girth</td>
+          <td class="value"><a href="/Browse/Trees/4300/Details">17' 4''</a></td>
+        </tr>
+        <tr>
+          <td class="description">Max crown spread</td>
+          <td class="value"><a href="/Browse/Trees/4242/Details">88.0'</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="portlet x12">
+    <div class="portlet-header">
+      <h4>Species within Ohio (US)</h4>
+      <ul class="portlet-tab-nav">
+        <li class="portlet-tab-nav-ignore"><a href="/Export/States/5/Species/Quercus alba (White Oak)">Export tree data</a></li>
+      </ul>
+    </div>
+    <div class="portlet-content">
+      <table class="reports_table">
+        <tr>
+          <td class="description">State</td>
+          <td class="value"><a href="/Browse/States/5/Details">Ohio (US)</a></td>
+        </tr>
+        <tr>
+          <td class="description">Max height</td>
+          <td class="value"><a href="/Browse/Trees/4242/Details">123.5'</a></td>
+        </tr>
+        <tr>
+          <td class="description">Max girth</td>
+          <td class="value"><a href="/Browse/Trees/4300/Details">17' 4''</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="portlet x12">
+    <div class="portlet-header">
+      <h4>Species within Old Growth Preserve</h4>
+      <ul class="portlet-tab-nav">
+        <li class="portlet-tab-nav-ignore"><a href="/Export/Sites/17/Species/Quercus alba (White Oak)">Export tree data</a></li>
+      </ul>
+    </div>
+    <div class="portlet-content">
+      <table class="reports_table">
+        <tr>
+          <td class="description">Site</td>
+          <td class="value"><a href="/Browse/Sites/17/Details">Old Growth Preserve</a></td>
+        </tr>
+        <tr><td class="description">Ownership type</td><td class="value"><span>Public</span></td></tr>
+        <tr><td class="description">County</td><td class="value"><span>Hamilton</span></td></tr>
+        <tr>
+          <td class="description">Max height</td>
+          <td class="value"><a href="/Browse/Trees/4242/Details">123.5'</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="x6 xColumn">
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Recorded states</h4></div>
+    <div class="portlet-content">
+      <div class='dataTablesGrid'>
+        <table cellspacing='0' cellpadding='0' border='0' class='display'>
+          <thead><tr><th class='sortable '><a href='?stateSpeciesSort=State'><span>State</span></a></th></tr></thead>
+          <tbody>
+            <tr class='odd'><td><a href="/Browse/States/5/Details">Ohio</a></td></tr>
+          </tbody>
+        </table>
+        <div class='dataTables_info'>Showing 1 to 1 of 1 entries</div>
+        <div class='dataTables_paginate paging_two_button'>
+          <div class='paginate_disabled_previous' title='Previous'></div>
+          <div class='paginate_disabled_next' title='Next' title='Next'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Recorded sites within Ohio (US)</h4></div>
+    <div class="portlet-content">
+      <div class='dataTablesGrid'>
+        <table cellspacing='0' cellpadding='0' border='0' class='display'>
+          <thead><tr><th class='sortable '><a href='?siteSpeciesSort=BotanicalName'><span>Botanical name</span></a></th></tr></thead>
+          <tbody>
+            <tr class='odd'><td><a href="/Browse/Species/Quercus alba (White Oak)/Details?siteId=17">Quercus alba</a></td></tr>
+          </tbody>
+        </table>
+        <div class='dataTables_info'>Showing 1 to 1 of 1 entries</div>
+        <div class='dataTables_paginate paging_two_button'>
+          <div class='paginate_disabled_previous' title='Previous'></div>
+          <div class='paginate_disabled_next' title='Next' title='Next'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Recorded trees within Old Growth Preserve</h4></div>
+    <div class="portlet-content">
+      <div class='dataTablesGrid'>
+        <table cellspacing='0' cellpadding='0' border='0' class='display'>
+          <thead><tr><th class='sortable '><a href='?treesSort=Height'><span>Height</span></a></th></tr></thead>
+          <tbody>
+            <tr class='odd'><td><a href="/Browse/Trees/4242/Details">123.5'</a></td></tr>
+          </tbody>
+        </table>
+        <div class='dataTables_info'>Showing 1 to 1 of 1 entries</div>
+        <div class='dataTables_paginate paging_two_button'>
+          <div class='paginate_disabled_previous' title='Previous'></div>
+          <div class='paginate_disabled_next' title='Next' title='Next'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

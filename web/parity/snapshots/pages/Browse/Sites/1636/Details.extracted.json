@@ -1,0 +1,323 @@
+{
+  "siteId": 1636,
+  "summary": {
+    "Name": "Kenilworth Pinetum",
+    "RHI5": "94.72",
+    "RHI10": "82.91",
+    "RHI20": "(not enough data)",
+    "RGI5": "0.00",
+    "RGI10": "0.00",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "12/16/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/16/2012",
+      "visitors": "Brian Beduhn",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies alba",
+          "Silver Fir",
+          "67.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies alba",
+            "href": "/Browse/Sites/1636/Species/Abies%20alba%20(Silver%20Fir)/Details"
+          },
+          {
+            "text": "Silver Fir",
+            "href": "/Browse/Sites/1636/Species/Abies%20alba%20(Silver%20Fir)/Details"
+          },
+          {
+            "text": "67.8'",
+            "href": "/Browse/Trees/39771/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Calocedrus decurrens",
+          "Incense Cedar",
+          "89.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Calocedrus decurrens",
+            "href": "/Browse/Sites/1636/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "Incense Cedar",
+            "href": "/Browse/Sites/1636/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "89.8'",
+            "href": "/Browse/Trees/39767/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedrus deodara",
+          "Deodar Cedar",
+          "68.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus deodara",
+            "href": "/Browse/Sites/1636/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "Deodar Cedar",
+            "href": "/Browse/Sites/1636/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "68.3'",
+            "href": "/Browse/Trees/39764/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cryptomeria japonica",
+          "Japanese Cedar",
+          "71.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cryptomeria japonica",
+            "href": "/Browse/Sites/1636/Species/Cryptomeria%20japonica%20(Japanese%20Cedar)/Details"
+          },
+          {
+            "text": "Japanese Cedar",
+            "href": "/Browse/Sites/1636/Species/Cryptomeria%20japonica%20(Japanese%20Cedar)/Details"
+          },
+          {
+            "text": "71.7'",
+            "href": "/Browse/Trees/39769/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cunninghamia lanceolata",
+          "Chinese Fir",
+          "81.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cunninghamia lanceolata",
+            "href": "/Browse/Sites/1636/Species/Cunninghamia%20lanceolata%20(Chinese%20Fir)/Details"
+          },
+          {
+            "text": "Chinese Fir",
+            "href": "/Browse/Sites/1636/Species/Cunninghamia%20lanceolata%20(Chinese%20Fir)/Details"
+          },
+          {
+            "text": "81.9'",
+            "href": "/Browse/Trees/39768/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "81.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/1636/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/1636/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "81.4'",
+            "href": "/Browse/Trees/39770/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Metasequoia glyptostroboides",
+          "Dawn Redwood",
+          "92.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Metasequoia glyptostroboides",
+            "href": "/Browse/Sites/1636/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "Dawn Redwood",
+            "href": "/Browse/Sites/1636/Species/Metasequoia%20glyptostroboides%20(Dawn%20Redwood)/Details"
+          },
+          {
+            "text": "92.5'",
+            "href": "/Browse/Trees/39766/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "67.4'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/1636/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/1636/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "67.4'",
+            "href": "/Browse/Trees/39772/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "128.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/1636/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/1636/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "128.0'",
+            "href": "/Browse/Trees/39763/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "80.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/1636/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/1636/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "80.3'",
+            "href": "/Browse/Trees/39765/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 34.663, -082 31.984",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private Home",
+      "County": "Buncombe"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

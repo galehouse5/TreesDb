@@ -1,0 +1,151 @@
+{
+  "siteId": 39772,
+  "summary": {
+    "Name": "Port Byron, NY, Woodlot",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "02/26/2012",
+    "Ownership contact": "Elijah Whitcomb [email protected]",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "02/26/2012",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "-",
+          "150''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/39772/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/39772/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "150''",
+            "href": "/Browse/Trees/199216/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus racemosa",
+          "Gray Dogwood",
+          "16.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus racemosa",
+            "href": "/Browse/Sites/39772/Species/Cornus%20racemosa%20(Gray%20Dogwood)/Details"
+          },
+          {
+            "text": "Gray Dogwood",
+            "href": "/Browse/Sites/39772/Species/Cornus%20racemosa%20(Gray%20Dogwood)/Details"
+          },
+          {
+            "text": "16.3'",
+            "href": "/Browse/Trees/199219/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus macrocarpa var. macrocarpa",
+          "Bur Oak",
+          "102.4'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus macrocarpa var. macrocarpa",
+            "href": "/Browse/Sites/39772/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "Bur Oak",
+            "href": "/Browse/Sites/39772/Species/Quercus%20macrocarpa%20var.%20macrocarpa%20(Bur%20Oak)/Details"
+          },
+          {
+            "text": "102.4'",
+            "href": "/Browse/Trees/199218/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/199218/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 45.931, -076 32.929",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Cayuga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

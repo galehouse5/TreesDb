@@ -1,0 +1,86 @@
+{
+  "botanicalName": "Abies alba",
+  "commonName": "Silver Fir",
+  "global": {
+    "maxHeight": {
+      "text": "25.97 m",
+      "href": "/Browse/Trees/284682/Details"
+    },
+    "maxGirth": {
+      "text": "192 cm",
+      "href": "/Browse/Trees/284682/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "North Carolina",
+          "20.67 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "20.67 m",
+            "href": "/Browse/Trees/39771/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Bohemian Region",
+          "25.97 m",
+          "192 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Bohemian Region",
+            "href": "/Browse/States/258/Details"
+          },
+          {
+            "text": "25.97 m",
+            "href": "/Browse/Trees/284682/Details"
+          },
+          {
+            "text": "192 cm",
+            "href": "/Browse/Trees/284682/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

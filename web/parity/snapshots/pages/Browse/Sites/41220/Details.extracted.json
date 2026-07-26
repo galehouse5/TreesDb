@@ -1,0 +1,126 @@
+{
+  "siteId": 41220,
+  "summary": {
+    "Name": "Dismals Canyon",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "04/25/2010",
+    "Ownership contact": "901 Highway 8 Phil Campbell, Alabama",
+    "General comments": "85 Acres Registered Natural Landmark"
+  },
+  "visits": [
+    {
+      "visited": "04/25/2010",
+      "visitors": "Zack Stewart",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "85 Acres Registered Natural Landmark"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "-",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/41220/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/41220/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          null,
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/252492/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "108.0'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/41220/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/41220/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "108.0'",
+            "href": "/Browse/Trees/252494/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/252496/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 19.441, -087 46.906",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "Alabama (US)",
+      "href": "/Browse/States/1/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

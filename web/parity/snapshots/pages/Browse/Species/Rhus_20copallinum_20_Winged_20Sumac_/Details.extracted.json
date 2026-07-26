@@ -1,0 +1,142 @@
+{
+  "botanicalName": "Rhus copallinum",
+  "commonName": "Winged Sumac",
+  "global": {
+    "maxHeight": {
+      "text": "39.7'",
+      "href": "/Browse/Trees/229820/Details"
+    },
+    "maxGirth": {
+      "text": "26''",
+      "href": "/Browse/Trees/229820/Details"
+    },
+    "maxCrownSpread": {
+      "text": "13.0'",
+      "href": "/Browse/Trees/312104/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "31.1'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "31.1'",
+            "href": "/Browse/Trees/233705/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/233705/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "38.7'",
+          "16''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "38.7'",
+            "href": "/Browse/Trees/229303/Details"
+          },
+          {
+            "text": "16''",
+            "href": "/Browse/Trees/229303/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "39.7'",
+          "26''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "39.7'",
+            "href": "/Browse/Trees/229820/Details"
+          },
+          {
+            "text": "26''",
+            "href": "/Browse/Trees/229820/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "19.6'",
+          "20''",
+          "13.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "19.6'",
+            "href": "/Browse/Trees/313154/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/312104/Details"
+          },
+          {
+            "text": "13.0'",
+            "href": "/Browse/Trees/312104/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

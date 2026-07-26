@@ -1,0 +1,350 @@
+{
+  "siteId": 39607,
+  "summary": {
+    "Name": "Old Maids Woods",
+    "RHI5": "39.840",
+    "RHI10": "36.733",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.881",
+    "RGI10": "2.152",
+    "RGI20": "(not enough data)",
+    "Trees measured": "31",
+    "Last measurement date": "09/26/2015",
+    "Ownership contact": "Nature Conservancy property",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/26/2015",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum var. rubrum",
+          "Red Maple",
+          "35.90 yd",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. rubrum",
+            "href": "/Browse/Sites/39607/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39607/Species/Acer%20rubrum%20var.%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "35.90 yd",
+            "href": "/Browse/Trees/188047/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/188047/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "28.00 yd",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/39607/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/39607/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "28.00 yd",
+            "href": "/Browse/Trees/188028/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/188036/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "19.77 yd",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/39607/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/39607/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "19.77 yd",
+            "href": "/Browse/Trees/188048/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/188048/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "35.23 yd",
+          "63''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/39607/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/39607/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "35.23 yd",
+            "href": "/Browse/Trees/188033/Details"
+          },
+          {
+            "text": "63''",
+            "href": "/Browse/Trees/188033/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus rigida",
+          "Pitch Pine",
+          "34.53 yd",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus rigida",
+            "href": "/Browse/Sites/39607/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "Pitch Pine",
+            "href": "/Browse/Sites/39607/Species/Pinus%20rigida%20(Pitch%20Pine)/Details"
+          },
+          {
+            "text": "34.53 yd",
+            "href": "/Browse/Trees/188031/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/188032/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "47.17 yd",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/39607/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/39607/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "47.17 yd",
+            "href": "/Browse/Trees/188030/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/188029/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "35.03 yd",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/39607/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/39607/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "35.03 yd",
+            "href": "/Browse/Trees/188041/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/188041/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus bicolor",
+          "Swamp White Oak",
+          "25.03 yd",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus bicolor",
+            "href": "/Browse/Sites/39607/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "Swamp White Oak",
+            "href": "/Browse/Sites/39607/Species/Quercus%20bicolor%20(Swamp%20White%20Oak)/Details"
+          },
+          {
+            "text": "25.03 yd",
+            "href": "/Browse/Trees/188042/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra var. rubra",
+          "Northern Red Oak",
+          "36.37 yd",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra var. rubra",
+            "href": "/Browse/Sites/39607/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/39607/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "36.37 yd",
+            "href": "/Browse/Trees/188037/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/188037/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "35.33 yd",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/39607/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/39607/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "35.33 yd",
+            "href": "/Browse/Trees/188040/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/188038/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 12 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 49.379, -073 59.575",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Schenectady"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

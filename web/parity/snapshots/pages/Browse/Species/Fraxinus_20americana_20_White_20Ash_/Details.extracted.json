@@ -1,0 +1,274 @@
+{
+  "botanicalName": "Fraxinus americana",
+  "commonName": "White Ash",
+  "global": {
+    "maxHeight": {
+      "text": "163.9'",
+      "href": "/Browse/Trees/230028/Details"
+    },
+    "maxGirth": {
+      "text": "259''",
+      "href": "/Browse/Trees/255951/Details"
+    },
+    "maxCrownSpread": {
+      "text": "103.5'",
+      "href": "/Browse/Trees/312064/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "128.2'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "128.2'",
+            "href": "/Browse/Trees/241647/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/241647/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Delaware",
+          "148.7'",
+          "166''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "148.7'",
+            "href": "/Browse/Trees/142951/Details"
+          },
+          {
+            "text": "166''",
+            "href": "/Browse/Trees/75449/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "126.3'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "126.3'",
+            "href": "/Browse/Trees/126761/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/126761/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "138.3'",
+          "144''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "138.3'",
+            "href": "/Browse/Trees/249204/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/234409/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana",
+          "135.0'",
+          "131''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana",
+            "href": "/Browse/States/13/Details"
+          },
+          {
+            "text": "135.0'",
+            "href": "/Browse/Trees/169940/Details"
+          },
+          {
+            "text": "131''",
+            "href": "/Browse/Trees/169940/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Iowa",
+          "113.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Iowa",
+            "href": "/Browse/States/10/Details"
+          },
+          {
+            "text": "113.0'",
+            "href": "/Browse/Trees/233677/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "-",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          null,
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/76415/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maine",
+          "80.4'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maine",
+            "href": "/Browse/States/19/Details"
+          },
+          {
+            "text": "80.4'",
+            "href": "/Browse/Trees/256121/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/256121/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "147.6'",
+          "152''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "147.6'",
+            "href": "/Browse/Trees/231047/Details"
+          },
+          {
+            "text": "152''",
+            "href": "/Browse/Trees/230935/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "135.0'",
+          "237''",
+          "40.0'"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "135.0'",
+            "href": "/Browse/Trees/236054/Details"
+          },
+          {
+            "text": "237''",
+            "href": "/Browse/Trees/256007/Details"
+          },
+          {
+            "text": "40.0'",
+            "href": "/Browse/Trees/19220/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 25 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

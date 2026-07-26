@@ -1,0 +1,126 @@
+{
+  "siteId": 39991,
+  "summary": {
+    "Name": "Diria National Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "01/26/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/26/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Anacardium excelsum",
+          "Espave",
+          "128.6'",
+          "225''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Anacardium excelsum",
+            "href": "/Browse/Sites/39991/Species/Anacardium%20excelsum%20(Espave)/Details"
+          },
+          {
+            "text": "Espave",
+            "href": "/Browse/Sites/39991/Species/Anacardium%20excelsum%20(Espave)/Details"
+          },
+          {
+            "text": "128.6'",
+            "href": "/Browse/Trees/213082/Details"
+          },
+          {
+            "text": "225''",
+            "href": "/Browse/Trees/213082/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Terminalia amazonia",
+          "Armarllo",
+          "90.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Terminalia amazonia",
+            "href": "/Browse/Sites/39991/Species/Terminalia%20amazonia%20(Armarllo)/Details"
+          },
+          {
+            "text": "Armarllo",
+            "href": "/Browse/Sites/39991/Species/Terminalia%20amazonia%20(Armarllo)/Details"
+          },
+          {
+            "text": "90.1'",
+            "href": "/Browse/Trees/213083/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "10 10.385, -085 35.669",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - national",
+      "County": "Santa Cruz"
+    },
+    "state": {
+      "text": "Guanacaste (CR)",
+      "href": "/Browse/States/119/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

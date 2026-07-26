@@ -1,0 +1,344 @@
+{
+  "siteId": 40665,
+  "summary": {
+    "Name": "Pigeon Mountain",
+    "RHI5": "118.98",
+    "RHI10": "109.64",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.88",
+    "RGI10": "5.11",
+    "RGI20": "(not enough data)",
+    "Trees measured": "26",
+    "Last measurement date": "07/20/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees measured in \"The Pocket\""
+  },
+  "visits": [
+    {
+      "visited": "07/20/2005",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/pocket.htm",
+      "comments": "Trees measured in \"The Pocket\""
+    },
+    {
+      "visited": "09/08/2004",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/pigeon_mountain.htm",
+      "comments": "On Cumberland Plateau"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer floridanum",
+          "Southern Sugar Maple",
+          "94.4'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer floridanum",
+            "href": "/Browse/Sites/40665/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/Sites/40665/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "94.4'",
+            "href": "/Browse/Trees/243322/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/243322/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "-",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/40665/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/40665/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          null,
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/234475/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea var. austromontana",
+          "Downy Serviceberry",
+          "45.6'",
+          "27''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea var. austromontana",
+            "href": "/Browse/Sites/40665/Species/Amelanchier%20arborea%20var.%20austromontana%20(Downy%20Serviceberry)/Details"
+          },
+          {
+            "text": "Downy Serviceberry",
+            "href": "/Browse/Sites/40665/Species/Amelanchier%20arborea%20var.%20austromontana%20(Downy%20Serviceberry)/Details"
+          },
+          {
+            "text": "45.6'",
+            "href": "/Browse/Trees/243320/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/243320/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "104.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40665/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40665/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "104.1'",
+            "href": "/Browse/Trees/234476/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cotinus obovatus",
+          "American Smoketree",
+          "62.9'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cotinus obovatus",
+            "href": "/Browse/Sites/40665/Species/Cotinus%20obovatus%20(American%20Smoketree)/Details"
+          },
+          {
+            "text": "American Smoketree",
+            "href": "/Browse/Sites/40665/Species/Cotinus%20obovatus%20(American%20Smoketree)/Details"
+          },
+          {
+            "text": "62.9'",
+            "href": "/Browse/Trees/234489/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/234486/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus quadrangulata",
+          "Blue Ash",
+          "64.2'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus quadrangulata",
+            "href": "/Browse/Sites/40665/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "Blue Ash",
+            "href": "/Browse/Sites/40665/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "64.2'",
+            "href": "/Browse/Trees/234473/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/234473/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "109.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/40665/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/40665/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "109.5'",
+            "href": "/Browse/Trees/234491/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana",
+          "Eastern Redcedar",
+          "84.3'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana",
+            "href": "/Browse/Sites/40665/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/40665/Species/Juniperus%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "84.3'",
+            "href": "/Browse/Trees/243319/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/243319/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "113.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/40665/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/40665/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "113.5'",
+            "href": "/Browse/Trees/234490/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "128.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/40665/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/40665/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "128.1'",
+            "href": "/Browse/Trees/234482/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 18 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 40.921, -085 23.112",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Walker"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

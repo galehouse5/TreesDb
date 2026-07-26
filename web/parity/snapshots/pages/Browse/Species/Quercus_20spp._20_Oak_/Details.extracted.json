@@ -1,0 +1,228 @@
+{
+  "botanicalName": "Quercus spp.",
+  "commonName": "Oak",
+  "global": {
+    "maxHeight": {
+      "text": "136.5'",
+      "href": "/Browse/Trees/251106/Details"
+    },
+    "maxGirth": {
+      "text": "190''",
+      "href": "/Browse/Trees/243216/Details"
+    },
+    "maxCrownSpread": {
+      "text": "108.8'",
+      "href": "/Browse/Trees/251106/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Connecticut",
+          "107.0'",
+          "175''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "107.0'",
+            "href": "/Browse/Trees/243317/Details"
+          },
+          {
+            "text": "175''",
+            "href": "/Browse/Trees/243163/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "121.2'",
+          "190''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "121.2'",
+            "href": "/Browse/Trees/243269/Details"
+          },
+          {
+            "text": "190''",
+            "href": "/Browse/Trees/243216/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Indiana",
+          "125.8'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Indiana",
+            "href": "/Browse/States/13/Details"
+          },
+          {
+            "text": "125.8'",
+            "href": "/Browse/Trees/169945/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/169854/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "136.5'",
+          "181''",
+          "108.8'"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "136.5'",
+            "href": "/Browse/Trees/251106/Details"
+          },
+          {
+            "text": "181''",
+            "href": "/Browse/Trees/251106/Details"
+          },
+          {
+            "text": "108.8'",
+            "href": "/Browse/Trees/251106/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "-",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          null,
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/171901/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "-",
+          "185''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          null,
+          {
+            "text": "185''",
+            "href": "/Browse/Trees/171543/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "79.0'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "79.0'",
+            "href": "/Browse/Trees/227910/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/243396/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "100.2'",
+          "138''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "100.2'",
+            "href": "/Browse/Trees/238168/Details"
+          },
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/237128/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "treeId": 269312,
+  "botanicalName": {
+    "text": "Pinus lambertiana",
+    "href": "/Browse/Sites/41667/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Sugar Pine",
+    "href": "/Browse/Sites/41667/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+  },
+  "details": {
+    "Height": "255.6'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "260''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "1199.90",
+    "ENTSPTS": "5538.00",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.56",
+    "Champion points (abbreviated)": "515.60",
+    "Diameter": "83''",
+    "Conical volume": "3182.8 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 04/23/2019",
+      "summary": {
+        "Height": "255.6'",
+        "Girth": "260''"
+      },
+      "details": {
+        "Botanical name": "Pinus lambertiana",
+        "Common name": "Sugar Pine",
+        "Height": "255.6'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "260''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "1199.90",
+        "ENTSPTS": "5538.00",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.56",
+        "Champion points (abbreviated)": "515.60",
+        "Diameter": "83''",
+        "Conical volume": "3182.8 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Michael Taylor and Zane Moore"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "39 23.674, -120 32.436",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Tahoe National Forest",
+      "href": "/Browse/Sites/41667/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Nevada"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,329 @@
+{
+  "startedAt": "2026-07-17T23:57:13.123Z",
+  "finishedAt": "2026-07-17T23:57:35.153Z",
+  "dumpsDir": "C:\\dev\\treesdb\\web\\parity\\dumps",
+  "reset": false,
+  "tablesLoaded": [
+    "countries",
+    "users",
+    "known_species",
+    "states",
+    "sites",
+    "import_trips",
+    "import_trip_measurers",
+    "import_sites",
+    "import_trees",
+    "import_trunks",
+    "site_visits",
+    "site_visitors",
+    "trees",
+    "tree_measurements",
+    "tree_measurers",
+    "photos",
+    "photo_references"
+  ],
+  "loadResults": [
+    {
+      "table": "countries",
+      "stagingRowCount": 11,
+      "insertedRowCount": 11,
+      "expectedRowCount": 11,
+      "rowCountMatches": true
+    },
+    {
+      "table": "users",
+      "stagingRowCount": 1032,
+      "insertedRowCount": 1032,
+      "expectedRowCount": 1032,
+      "rowCountMatches": true
+    },
+    {
+      "table": "known_species",
+      "stagingRowCount": 1825,
+      "insertedRowCount": 1825,
+      "expectedRowCount": 1825,
+      "rowCountMatches": true
+    },
+    {
+      "table": "states",
+      "stagingRowCount": 216,
+      "insertedRowCount": 216,
+      "expectedRowCount": 216,
+      "rowCountMatches": true
+    },
+    {
+      "table": "sites",
+      "stagingRowCount": 1370,
+      "insertedRowCount": 1370,
+      "expectedRowCount": 1370,
+      "rowCountMatches": true
+    },
+    {
+      "table": "import_trips",
+      "stagingRowCount": 1712,
+      "insertedRowCount": 1712,
+      "expectedRowCount": 1712,
+      "rowCountMatches": true
+    },
+    {
+      "table": "import_trip_measurers",
+      "stagingRowCount": 2110,
+      "insertedRowCount": 2110,
+      "expectedRowCount": 2110,
+      "rowCountMatches": true
+    },
+    {
+      "table": "import_sites",
+      "stagingRowCount": 1739,
+      "insertedRowCount": 1739,
+      "expectedRowCount": 1739,
+      "rowCountMatches": true
+    },
+    {
+      "table": "import_trees",
+      "stagingRowCount": 27344,
+      "insertedRowCount": 27344,
+      "expectedRowCount": 27344,
+      "rowCountMatches": true
+    },
+    {
+      "table": "import_trunks",
+      "stagingRowCount": 0,
+      "insertedRowCount": 0,
+      "expectedRowCount": 0,
+      "rowCountMatches": true
+    },
+    {
+      "table": "site_visits",
+      "stagingRowCount": 1719,
+      "insertedRowCount": 1719,
+      "expectedRowCount": 1719,
+      "rowCountMatches": true
+    },
+    {
+      "table": "site_visitors",
+      "stagingRowCount": 3969,
+      "insertedRowCount": 3969,
+      "expectedRowCount": 3969,
+      "rowCountMatches": true
+    },
+    {
+      "table": "trees",
+      "stagingRowCount": 27024,
+      "insertedRowCount": 27024,
+      "expectedRowCount": 27024,
+      "rowCountMatches": true
+    },
+    {
+      "table": "tree_measurements",
+      "stagingRowCount": 27314,
+      "insertedRowCount": 27314,
+      "expectedRowCount": 27314,
+      "rowCountMatches": true
+    },
+    {
+      "table": "tree_measurers",
+      "stagingRowCount": 68206,
+      "insertedRowCount": 68206,
+      "expectedRowCount": 68206,
+      "rowCountMatches": true
+    },
+    {
+      "table": "photos",
+      "stagingRowCount": 0,
+      "insertedRowCount": 0,
+      "expectedRowCount": 0,
+      "rowCountMatches": true
+    },
+    {
+      "table": "photo_references",
+      "stagingRowCount": 0,
+      "insertedRowCount": 0,
+      "expectedRowCount": 0,
+      "rowCountMatches": true
+    }
+  ],
+  "orphanChecks": [
+    {
+      "table": "import_sites",
+      "column": "creator_user_id",
+      "refTable": "users",
+      "orphans": 0
+    },
+    {
+      "table": "import_sites",
+      "column": "trip_id",
+      "refTable": "import_trips",
+      "orphans": 0
+    },
+    {
+      "table": "import_sites",
+      "column": "state_id",
+      "refTable": "states",
+      "orphans": 0
+    },
+    {
+      "table": "import_trees",
+      "column": "creator_user_id",
+      "refTable": "users",
+      "orphans": 0
+    },
+    {
+      "table": "import_trees",
+      "column": "site_id",
+      "refTable": "import_sites",
+      "orphans": 0
+    },
+    {
+      "table": "import_trip_measurers",
+      "column": "trip_id",
+      "refTable": "import_trips",
+      "orphans": 0
+    },
+    {
+      "table": "import_trips",
+      "column": "creator_user_id",
+      "refTable": "users",
+      "orphans": 0
+    },
+    {
+      "table": "import_trips",
+      "column": "default_state_id",
+      "refTable": "states",
+      "orphans": 0
+    },
+    {
+      "table": "import_trunks",
+      "column": "creator_user_id",
+      "refTable": "users",
+      "orphans": 0
+    },
+    {
+      "table": "import_trunks",
+      "column": "tree_id",
+      "refTable": "import_trees",
+      "orphans": 0
+    },
+    {
+      "table": "photo_references",
+      "column": "import_site_id",
+      "refTable": "import_sites",
+      "orphans": 0
+    },
+    {
+      "table": "photo_references",
+      "column": "import_tree_id",
+      "refTable": "import_trees",
+      "orphans": 0
+    },
+    {
+      "table": "photo_references",
+      "column": "site_id",
+      "refTable": "sites",
+      "orphans": 0
+    },
+    {
+      "table": "photo_references",
+      "column": "site_visit_id",
+      "refTable": "site_visits",
+      "orphans": 0
+    },
+    {
+      "table": "photo_references",
+      "column": "tree_id",
+      "refTable": "trees",
+      "orphans": 0
+    },
+    {
+      "table": "photo_references",
+      "column": "tree_measurement_id",
+      "refTable": "tree_measurements",
+      "orphans": 0
+    },
+    {
+      "table": "photo_references",
+      "column": "photo_id",
+      "refTable": "photos",
+      "orphans": 0
+    },
+    {
+      "table": "photos",
+      "column": "creator_user_id",
+      "refTable": "users",
+      "orphans": 0
+    },
+    {
+      "table": "site_visitors",
+      "column": "site_id",
+      "refTable": "sites",
+      "orphans": 0
+    },
+    {
+      "table": "site_visitors",
+      "column": "site_visit_id",
+      "refTable": "site_visits",
+      "orphans": 0
+    },
+    {
+      "table": "site_visits",
+      "column": "site_id",
+      "refTable": "sites",
+      "orphans": 0
+    },
+    {
+      "table": "site_visits",
+      "column": "importing_trip_id",
+      "refTable": "import_trips",
+      "orphans": 0
+    },
+    {
+      "table": "site_visits",
+      "column": "state_id",
+      "refTable": "states",
+      "orphans": 0
+    },
+    {
+      "table": "sites",
+      "column": "state_id",
+      "refTable": "states",
+      "orphans": 0
+    },
+    {
+      "table": "states",
+      "column": "country_id",
+      "refTable": "countries",
+      "orphans": 0
+    },
+    {
+      "table": "tree_measurements",
+      "column": "tree_id",
+      "refTable": "trees",
+      "orphans": 0
+    },
+    {
+      "table": "tree_measurements",
+      "column": "importing_trip_id",
+      "refTable": "import_trips",
+      "orphans": 0
+    },
+    {
+      "table": "tree_measurers",
+      "column": "tree_id",
+      "refTable": "trees",
+      "orphans": 0
+    },
+    {
+      "table": "tree_measurers",
+      "column": "measurement_id",
+      "refTable": "tree_measurements",
+      "orphans": 0
+    },
+    {
+      "table": "trees",
+      "column": "site_id",
+      "refTable": "sites",
+      "orphans": 0
+    }
+  ],
+  "errors": []
+}

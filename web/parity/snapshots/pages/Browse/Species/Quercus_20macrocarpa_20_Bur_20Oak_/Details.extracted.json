@@ -1,0 +1,228 @@
+{
+  "botanicalName": "Quercus macrocarpa",
+  "commonName": "Bur Oak",
+  "global": {
+    "maxHeight": {
+      "text": "119.5'",
+      "href": "/Browse/Trees/17333/Details"
+    },
+    "maxGirth": {
+      "text": "270''",
+      "href": "/Browse/Trees/301394/Details"
+    },
+    "maxCrownSpread": {
+      "text": "104.6'",
+      "href": "/Browse/Trees/301394/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Michigan",
+          "73.2'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Michigan",
+            "href": "/Browse/States/20/Details"
+          },
+          {
+            "text": "73.2'",
+            "href": "/Browse/Trees/104966/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/104966/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Minnesota",
+          "-",
+          "239''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Minnesota",
+            "href": "/Browse/States/21/Details"
+          },
+          null,
+          {
+            "text": "239''",
+            "href": "/Browse/Trees/239942/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nebraska",
+          "87.2'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nebraska",
+            "href": "/Browse/States/27/Details"
+          },
+          {
+            "text": "87.2'",
+            "href": "/Browse/Trees/220684/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/220684/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "106.0'",
+          "270''",
+          "104.6'"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "106.0'",
+            "href": "/Browse/Trees/281037/Details"
+          },
+          {
+            "text": "270''",
+            "href": "/Browse/Trees/301394/Details"
+          },
+          {
+            "text": "104.6'",
+            "href": "/Browse/Trees/301394/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "96.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "96.0'",
+            "href": "/Browse/Trees/40714/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "119.5'",
+          "199''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "119.5'",
+            "href": "/Browse/Trees/17333/Details"
+          },
+          {
+            "text": "199''",
+            "href": "/Browse/Trees/9631/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "100.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "100.0'",
+            "href": "/Browse/Trees/18616/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Texas",
+          "73.5'",
+          "224''",
+          "87.0'"
+        ],
+        "links": [
+          {
+            "text": "Texas",
+            "href": "/Browse/States/41/Details"
+          },
+          {
+            "text": "73.5'",
+            "href": "/Browse/Trees/241214/Details"
+          },
+          {
+            "text": "224''",
+            "href": "/Browse/Trees/241214/Details"
+          },
+          {
+            "text": "87.0'",
+            "href": "/Browse/Trees/241214/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

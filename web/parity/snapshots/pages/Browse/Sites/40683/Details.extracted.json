@@ -1,0 +1,210 @@
+{
+  "siteId": 40683,
+  "summary": {
+    "Name": "Lewis Island",
+    "RHI5": "43.06",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "6.55",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "25",
+    "Last measurement date": "03/09/2002",
+    "Ownership contact": "(no data)",
+    "General comments": "5,633 Acres Most trees were measured in two \"Old Growth\" stands hereby labelled North or South."
+  },
+  "visits": [
+    {
+      "visited": "03/09/2002",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/georgia/lewis_island.htm",
+      "comments": "5,633 Acres Most trees were measured in two \"Old Growth\" stands hereby labelled North or South."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Aesculus pavia",
+          "Red Buckeye",
+          "31.3'",
+          "17''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus pavia",
+            "href": "/Browse/Sites/40683/Species/Aesculus%20pavia%20(Red%20Buckeye)/Details"
+          },
+          {
+            "text": "Red Buckeye",
+            "href": "/Browse/Sites/40683/Species/Aesculus%20pavia%20(Red%20Buckeye)/Details"
+          },
+          {
+            "text": "31.3'",
+            "href": "/Browse/Trees/234760/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/234760/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cephalanthus occidentalis",
+          "Common Buttonbush",
+          "-",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cephalanthus occidentalis",
+            "href": "/Browse/Sites/40683/Species/Cephalanthus%20occidentalis%20(Common%20Buttonbush)/Details"
+          },
+          {
+            "text": "Common Buttonbush",
+            "href": "/Browse/Sites/40683/Species/Cephalanthus%20occidentalis%20(Common%20Buttonbush)/Details"
+          },
+          null,
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/234761/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus foemina",
+          "Stiff Dogwood",
+          "25.8'",
+          "12''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus foemina",
+            "href": "/Browse/Sites/40683/Species/Cornus%20foemina%20(Stiff%20Dogwood)/Details"
+          },
+          {
+            "text": "Stiff Dogwood",
+            "href": "/Browse/Sites/40683/Species/Cornus%20foemina%20(Stiff%20Dogwood)/Details"
+          },
+          {
+            "text": "25.8'",
+            "href": "/Browse/Trees/234762/Details"
+          },
+          {
+            "text": "12''",
+            "href": "/Browse/Trees/234763/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Persea palustris",
+          "Swamp Bay",
+          "53.4'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Persea palustris",
+            "href": "/Browse/Sites/40683/Species/Persea%20palustris%20(Swamp%20Bay)/Details"
+          },
+          {
+            "text": "Swamp Bay",
+            "href": "/Browse/Sites/40683/Species/Persea%20palustris%20(Swamp%20Bay)/Details"
+          },
+          {
+            "text": "53.4'",
+            "href": "/Browse/Trees/234764/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/234766/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxodium distichum",
+          "Bald Cypress",
+          "104.8'",
+          "304''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxodium distichum",
+            "href": "/Browse/Sites/40683/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "Bald Cypress",
+            "href": "/Browse/Sites/40683/Species/Taxodium%20distichum%20(Bald%20Cypress)/Details"
+          },
+          {
+            "text": "104.8'",
+            "href": "/Browse/Trees/234782/Details"
+          },
+          {
+            "text": "304''",
+            "href": "/Browse/Trees/234784/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "31 23.121, -081 31.255",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Mcintosh"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

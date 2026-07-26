@@ -1,0 +1,129 @@
+{
+  "siteId": 38156,
+  "summary": {
+    "Name": "Long Valley Experimental Forest",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "09/22/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/22/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pinus ponderosa var. brachyptera",
+          "Ponderosa Pine",
+          "104.0'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. brachyptera",
+            "href": "/Browse/Sites/38156/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/38156/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "104.0'",
+            "href": "/Browse/Trees/131009/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/131012/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus gambelii var. gambelii",
+          "Gambel Oak",
+          "51.5'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus gambelii var. gambelii",
+            "href": "/Browse/Sites/38156/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "Gambel Oak",
+            "href": "/Browse/Sites/38156/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "51.5'",
+            "href": "/Browse/Trees/131013/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/131013/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 33.380, -111 19.406",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National",
+      "County": "Coconino"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

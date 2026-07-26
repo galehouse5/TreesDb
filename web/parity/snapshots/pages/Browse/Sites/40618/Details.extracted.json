@@ -1,0 +1,353 @@
+{
+  "siteId": 40618,
+  "summary": {
+    "Name": "University Of Arkansas-Monticello",
+    "RHI5": "107.96",
+    "RHI10": "96.92",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.38",
+    "RGI10": "8.70",
+    "RGI20": "(not enough data)",
+    "Trees measured": "27",
+    "Last measurement date": "03/03/2005",
+    "Ownership contact": "346 University Drive Monticello, Arkansas",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/03/2005",
+      "visitors": "Don Bragg",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/arkansas/uam_campus_trees.htm",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "77.4'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/40618/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/40618/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "77.4'",
+            "href": "/Browse/Trees/233951/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/233951/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "97.4'",
+          "62''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/40618/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/40618/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "97.4'",
+            "href": "/Browse/Trees/233968/Details"
+          },
+          {
+            "text": "62''",
+            "href": "/Browse/Trees/233968/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "101.6'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40618/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40618/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "101.6'",
+            "href": "/Browse/Trees/233958/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/233958/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "115.5'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/40618/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/40618/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "115.5'",
+            "href": "/Browse/Trees/233964/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/233961/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "105.3'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40618/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40618/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "105.3'",
+            "href": "/Browse/Trees/233966/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/233966/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus falcata",
+          "Southern Red Oak",
+          "89.6'",
+          "122''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus falcata",
+            "href": "/Browse/Sites/40618/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Southern Red Oak",
+            "href": "/Browse/Sites/40618/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "89.6'",
+            "href": "/Browse/Trees/233945/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/233945/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus nigra",
+          "Water Oak",
+          "79.7'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus nigra",
+            "href": "/Browse/Sites/40618/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+          },
+          {
+            "text": "Water Oak",
+            "href": "/Browse/Sites/40618/Species/Quercus%20nigra%20(Water%20Oak)/Details"
+          },
+          {
+            "text": "79.7'",
+            "href": "/Browse/Trees/233942/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/233942/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus pagoda",
+          "Cherrybark Oak",
+          "109.8'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus pagoda",
+            "href": "/Browse/Sites/40618/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "Cherrybark Oak",
+            "href": "/Browse/Sites/40618/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "109.8'",
+            "href": "/Browse/Trees/233953/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/233957/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus phellos",
+          "Willow Oak",
+          "107.6'",
+          "192''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus phellos",
+            "href": "/Browse/Sites/40618/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "Willow Oak",
+            "href": "/Browse/Sites/40618/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "107.6'",
+            "href": "/Browse/Trees/233959/Details"
+          },
+          {
+            "text": "192''",
+            "href": "/Browse/Trees/233959/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus stellata",
+          "Post Oak",
+          "85.3'",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus stellata",
+            "href": "/Browse/Sites/40618/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "Post Oak",
+            "href": "/Browse/Sites/40618/Species/Quercus%20stellata%20(Post%20Oak)/Details"
+          },
+          {
+            "text": "85.3'",
+            "href": "/Browse/Trees/233944/Details"
+          },
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/233943/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 35.450, -091 48.736",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Drew"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

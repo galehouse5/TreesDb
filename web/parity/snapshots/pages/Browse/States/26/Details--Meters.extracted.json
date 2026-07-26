@@ -1,0 +1,134 @@
+{
+  "stateId": 26,
+  "summary": {
+    "Name": "North Dakota",
+    "Code": "ND",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "08/05/2012"
+  },
+  "location": {
+    "Coordinates": "47 28.066, -100 18.111",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Populus deltoides ssp. monilifera",
+          "Plains Cottonwood",
+          "23.01 m",
+          "333 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides ssp. monilifera",
+            "href": "/Browse/States/26/Species/Populus%20deltoides%20ssp.%20monilifera%20(Plains%20Cottonwood)/Details"
+          },
+          {
+            "text": "Plains Cottonwood",
+            "href": "/Browse/States/26/Species/Populus%20deltoides%20ssp.%20monilifera%20(Plains%20Cottonwood)/Details"
+          },
+          {
+            "text": "23.01 m",
+            "href": "/Browse/Trees/47477/Details"
+          },
+          {
+            "text": "333 cm",
+            "href": "/Browse/Trees/47477/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "I-94 Near Valley City",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "I-94 Near Valley City",
+            "href": "/Browse/Sites/4736/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

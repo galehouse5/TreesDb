@@ -1,0 +1,182 @@
+{
+  "botanicalName": "Viburnum prunifolium",
+  "commonName": "Blackhaw",
+  "global": {
+    "maxHeight": {
+      "text": "35.3'",
+      "href": "/Browse/Trees/48686/Details"
+    },
+    "maxGirth": {
+      "text": "58''",
+      "href": "/Browse/Trees/76106/Details"
+    },
+    "maxCrownSpread": {
+      "text": "13.0'",
+      "href": "/Browse/Trees/312095/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "30.3'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "30.3'",
+            "href": "/Browse/Trees/142891/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/75460/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "-",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          null,
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/76106/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "33.6'",
+          "17''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "33.6'",
+            "href": "/Browse/Trees/168104/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/168104/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "32.5'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "32.5'",
+            "href": "/Browse/Trees/212127/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/166279/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "35.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "35.3'",
+            "href": "/Browse/Trees/48686/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "21.0'",
+          "10''",
+          "13.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "21.0'",
+            "href": "/Browse/Trees/312095/Details"
+          },
+          {
+            "text": "10''",
+            "href": "/Browse/Trees/313175/Details"
+          },
+          {
+            "text": "13.0'",
+            "href": "/Browse/Trees/312095/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

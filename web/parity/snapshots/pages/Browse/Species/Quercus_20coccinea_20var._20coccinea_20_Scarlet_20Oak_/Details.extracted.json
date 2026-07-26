@@ -1,0 +1,234 @@
+{
+  "botanicalName": "Quercus coccinea var. coccinea",
+  "commonName": "Scarlet Oak",
+  "global": {
+    "maxHeight": {
+      "text": "142.7'",
+      "href": "/Browse/Trees/297353/Details"
+    },
+    "maxGirth": {
+      "text": "211''",
+      "href": "/Browse/Trees/312041/Details"
+    },
+    "maxCrownSpread": {
+      "text": "102.0'",
+      "href": "/Browse/Trees/313113/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "128.2'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "128.2'",
+            "href": "/Browse/Trees/232236/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/232236/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "142.7'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "142.7'",
+            "href": "/Browse/Trees/297353/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/297353/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "130.7'",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "130.7'",
+            "href": "/Browse/Trees/231390/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/231050/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "119.9'",
+          "167''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "119.9'",
+            "href": "/Browse/Trees/202586/Details"
+          },
+          {
+            "text": "167''",
+            "href": "/Browse/Trees/281882/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "132.5'",
+          "191''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "132.5'",
+            "href": "/Browse/Trees/168338/Details"
+          },
+          {
+            "text": "191''",
+            "href": "/Browse/Trees/167759/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "141.2'",
+          "128''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "141.2'",
+            "href": "/Browse/Trees/323807/Details"
+          },
+          {
+            "text": "128''",
+            "href": "/Browse/Trees/314559/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "135.8'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "135.8'",
+            "href": "/Browse/Trees/168523/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/168524/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "122.2'",
+          "211''",
+          "102.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "122.2'",
+            "href": "/Browse/Trees/313157/Details"
+          },
+          {
+            "text": "211''",
+            "href": "/Browse/Trees/312041/Details"
+          },
+          {
+            "text": "102.0'",
+            "href": "/Browse/Trees/313113/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 8 of 8 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

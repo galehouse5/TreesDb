@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Persea palustris",
+  "commonName": "Swamp Bay",
+  "global": {
+    "maxHeight": {
+      "text": "16.28 m",
+      "href": "/Browse/Trees/234764/Details"
+    },
+    "maxGirth": {
+      "text": "91 cm",
+      "href": "/Browse/Trees/234766/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "16.28 m",
+          "91 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "16.28 m",
+            "href": "/Browse/Trees/234764/Details"
+          },
+          {
+            "text": "91 cm",
+            "href": "/Browse/Trees/234766/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

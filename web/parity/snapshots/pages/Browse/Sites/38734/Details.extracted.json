@@ -1,0 +1,101 @@
+{
+  "siteId": 38734,
+  "summary": {
+    "Name": "Clark Reservation State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "1",
+    "Last measurement date": "10/19/2017",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/19/2017",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Rhamnus cathartica",
+          "Common Buckthorn",
+          "41.8'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhamnus cathartica",
+            "href": "/Browse/Sites/38734/Species/Rhamnus%20cathartica%20(Common%20Buckthorn)/Details"
+          },
+          {
+            "text": "Common Buckthorn",
+            "href": "/Browse/Sites/38734/Species/Rhamnus%20cathartica%20(Common%20Buckthorn)/Details"
+          },
+          {
+            "text": "41.8'",
+            "href": "/Browse/Trees/153529/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/153529/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 59.834, -076 05.643",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Onondaga"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

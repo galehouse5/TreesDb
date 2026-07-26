@@ -1,0 +1,353 @@
+{
+  "siteId": 40964,
+  "summary": {
+    "Name": "Site 2 Southeastern Arkansas",
+    "RHI5": "130.70",
+    "RHI10": "124.99",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.33",
+    "RGI10": "8.69",
+    "RGI20": "(not enough data)",
+    "Trees measured": "32",
+    "Last measurement date": "11/09/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "Location not disclosed. Map shows a random location in southeastern Arkansas"
+  },
+  "visits": [
+    {
+      "visited": "11/09/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Location not disclosed. Map shows a random location in southeastern Arkansas"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "126.7'",
+          "93''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40964/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40964/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "126.7'",
+            "href": "/Browse/Trees/241679/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/241679/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "121.2'",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40964/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40964/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "121.2'",
+            "href": "/Browse/Trees/241680/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/241681/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Frangula caroliniana",
+          "Carolina Buckthorn",
+          "23.3'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Frangula caroliniana",
+            "href": "/Browse/Sites/40964/Species/Frangula%20caroliniana%20(Carolina%20Buckthorn)/Details"
+          },
+          {
+            "text": "Carolina Buckthorn",
+            "href": "/Browse/Sites/40964/Species/Frangula%20caroliniana%20(Carolina%20Buckthorn)/Details"
+          },
+          {
+            "text": "23.3'",
+            "href": "/Browse/Trees/241682/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/241682/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "111.8'",
+          "73''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/40964/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/40964/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "111.8'",
+            "href": "/Browse/Trees/241683/Details"
+          },
+          {
+            "text": "73''",
+            "href": "/Browse/Trees/241683/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "111.9'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/40964/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/40964/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "111.9'",
+            "href": "/Browse/Trees/241684/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/241684/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus taeda",
+          "Loblolly Pine",
+          "122.9'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus taeda",
+            "href": "/Browse/Sites/40964/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "Loblolly Pine",
+            "href": "/Browse/Sites/40964/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+          },
+          {
+            "text": "122.9'",
+            "href": "/Browse/Trees/241686/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/241686/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "131.4'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40964/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40964/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "131.4'",
+            "href": "/Browse/Trees/241687/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/241687/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus falcata",
+          "Southern Red Oak",
+          "127.5'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus falcata",
+            "href": "/Browse/Sites/40964/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Southern Red Oak",
+            "href": "/Browse/Sites/40964/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "127.5'",
+            "href": "/Browse/Trees/241691/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/241693/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus michauxii",
+          "Swamp Chestnut Oak",
+          "118.8'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus michauxii",
+            "href": "/Browse/Sites/40964/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Swamp Chestnut Oak",
+            "href": "/Browse/Sites/40964/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "118.8'",
+            "href": "/Browse/Trees/241694/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/241694/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus pagoda",
+          "Cherrybark Oak",
+          "139.2'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus pagoda",
+            "href": "/Browse/Sites/40964/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "Cherrybark Oak",
+            "href": "/Browse/Sites/40964/Species/Quercus%20pagoda%20(Cherrybark%20Oak)/Details"
+          },
+          {
+            "text": "139.2'",
+            "href": "/Browse/Trees/241695/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/241696/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 17 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 50.533, -091 32.909",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Desha"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

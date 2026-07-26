@@ -1,0 +1,263 @@
+{
+  "botanicalName": "Metasequoia glyptostroboides",
+  "commonName": "Dawn Redwood",
+  "global": {
+    "maxHeight": {
+      "text": "141.1'",
+      "href": "/Browse/Trees/134478/Details"
+    },
+    "maxGirth": {
+      "text": "201''",
+      "href": "/Browse/Trees/174155/Details"
+    },
+    "maxCrownSpread": {
+      "text": "58.0'",
+      "href": "/Browse/Trees/224369/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Delaware",
+          "105.9'",
+          "199''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Delaware",
+            "href": "/Browse/States/7/Details"
+          },
+          {
+            "text": "105.9'",
+            "href": "/Browse/Trees/140156/Details"
+          },
+          {
+            "text": "199''",
+            "href": "/Browse/Trees/140156/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "79.7'",
+          "109''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "79.7'",
+            "href": "/Browse/Trees/125468/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/125468/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "79.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "79.0'",
+            "href": "/Browse/Trees/235852/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "108.6'",
+          "190''",
+          "51.0'"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          {
+            "text": "108.6'",
+            "href": "/Browse/Trees/171028/Details"
+          },
+          {
+            "text": "190''",
+            "href": "/Browse/Trees/171028/Details"
+          },
+          {
+            "text": "51.0'",
+            "href": "/Browse/Trees/171028/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "127.7'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "127.7'",
+            "href": "/Browse/Trees/258144/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/258127/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "119.7'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "119.7'",
+            "href": "/Browse/Trees/39501/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/235499/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "113.5'",
+          "201''",
+          "50.0'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "113.5'",
+            "href": "/Browse/Trees/162195/Details"
+          },
+          {
+            "text": "201''",
+            "href": "/Browse/Trees/174155/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/174155/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "141.1'",
+          "196''",
+          "33.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "141.1'",
+            "href": "/Browse/Trees/134478/Details"
+          },
+          {
+            "text": "196''",
+            "href": "/Browse/Trees/134479/Details"
+          },
+          {
+            "text": "33.0'",
+            "href": "/Browse/Trees/134441/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "111.6'",
+          "193''",
+          "58.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "111.6'",
+            "href": "/Browse/Trees/313199/Details"
+          },
+          {
+            "text": "193''",
+            "href": "/Browse/Trees/224369/Details"
+          },
+          {
+            "text": "58.0'",
+            "href": "/Browse/Trees/224369/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

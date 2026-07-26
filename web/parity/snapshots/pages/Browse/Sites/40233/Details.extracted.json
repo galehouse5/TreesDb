@@ -1,0 +1,353 @@
+{
+  "siteId": 40233,
+  "summary": {
+    "Name": "Tanglewood Park",
+    "RHI5": "146.08",
+    "RHI10": "139.59",
+    "RHI20": "128.84",
+    "RGI5": "11.17",
+    "RGI10": "10.18",
+    "RGI20": "8.09",
+    "Trees measured": "59",
+    "Last measurement date": "01/06/2007",
+    "Ownership contact": "(no data)",
+    "General comments": "Owned by Forsyth County."
+  },
+  "visits": [
+    {
+      "visited": "01/06/2007",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "nativetreesociety.org/fieldtrips/north_carolina/tanglewood_park2",
+      "comments": "Owned by Forsyth County."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "108.5'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40233/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40233/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "108.5'",
+            "href": "/Browse/Trees/226746/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/226746/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "110.7'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40233/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40233/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "110.7'",
+            "href": "/Browse/Trees/226734/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/226734/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "142.1'",
+          "108''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40233/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40233/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "142.1'",
+            "href": "/Browse/Trees/226743/Details"
+          },
+          {
+            "text": "108''",
+            "href": "/Browse/Trees/226742/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "135.7'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/40233/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/40233/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "135.7'",
+            "href": "/Browse/Trees/226744/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/226744/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "127.0'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40233/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40233/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "127.0'",
+            "href": "/Browse/Trees/226739/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/226736/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis",
+          "Eastern Redbud",
+          "41.7'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis",
+            "href": "/Browse/Sites/40233/Species/Cercis%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/Sites/40233/Species/Cercis%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "41.7'",
+            "href": "/Browse/Trees/226776/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/226776/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "102.6'",
+          "49''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/40233/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/40233/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "102.6'",
+            "href": "/Browse/Trees/226775/Details"
+          },
+          {
+            "text": "49''",
+            "href": "/Browse/Trees/226775/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "118.1'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/40233/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/40233/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "118.1'",
+            "href": "/Browse/Trees/226732/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/226732/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "137.5'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/40233/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/40233/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "137.5'",
+            "href": "/Browse/Trees/226730/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/226729/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "126.2'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/40233/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/40233/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "126.2'",
+            "href": "/Browse/Trees/226784/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/226784/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 22 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 00.531, -080 24.425",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - county",
+      "County": "Forsyth"
+    },
+    "state": {
+      "text": "North Carolina (US)",
+      "href": "/Browse/States/25/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

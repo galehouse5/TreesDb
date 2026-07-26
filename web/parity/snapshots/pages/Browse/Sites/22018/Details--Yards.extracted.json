@@ -1,0 +1,157 @@
+{
+  "siteId": 22018,
+  "summary": {
+    "Name": "Jubilee State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "08/01/2014",
+    "Ownership contact": "Jubilee College State Park, 13921 U.S. 150, Brimfield, IL 61517",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/01/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "22.70 yd",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/22018/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/22018/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "22.70 yd",
+            "href": "/Browse/Trees/74811/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/74811/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina var. serotina",
+          "Black Cherry",
+          "19.87 yd",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina var. serotina",
+            "href": "/Browse/Sites/22018/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/22018/Species/Prunus%20serotina%20var.%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "19.87 yd",
+            "href": "/Browse/Trees/74813/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/74813/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus imbricaria",
+          "Shingle Oak",
+          "22.23 yd",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus imbricaria",
+            "href": "/Browse/Sites/22018/Species/Quercus%20imbricaria%20(Shingle%20Oak)/Details"
+          },
+          {
+            "text": "Shingle Oak",
+            "href": "/Browse/Sites/22018/Species/Quercus%20imbricaria%20(Shingle%20Oak)/Details"
+          },
+          {
+            "text": "22.23 yd",
+            "href": "/Browse/Trees/74812/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/74812/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 48.626, -089 48.835",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - State Park",
+      "County": "Peoria"
+    },
+    "state": {
+      "text": "Illinois (US)",
+      "href": "/Browse/States/12/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,278 @@
+{
+  "siteId": 4788,
+  "summary": {
+    "Name": "Holmes Run",
+    "RHI5": "107.80",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.01",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "01/14/2010",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/14/2010",
+      "visitors": "Will Blozan",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "02/21/2005",
+      "visitors": "Howard Stoner",
+      "tripReportUrl": "(none)",
+      "comments": "Trees are located below the Dora Kelly Nature Center"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula nigra",
+          "River Birch",
+          "72.0'",
+          "79''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula nigra",
+            "href": "/Browse/Sites/4788/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "River Birch",
+            "href": "/Browse/Sites/4788/Species/Betula%20nigra%20(River%20Birch)/Details"
+          },
+          {
+            "text": "72.0'",
+            "href": "/Browse/Trees/48272/Details"
+          },
+          {
+            "text": "79''",
+            "href": "/Browse/Trees/48272/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "90.0'",
+          "77''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/4788/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/4788/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "90.0'",
+            "href": "/Browse/Trees/48271/Details"
+          },
+          {
+            "text": "77''",
+            "href": "/Browse/Trees/48271/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "117.0'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/4788/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/4788/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "117.0'",
+            "href": "/Browse/Trees/48263/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/48264/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "110.0'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/4788/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/4788/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/48269/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/48269/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "110.0'",
+          "130''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/4788/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/4788/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/48267/Details"
+          },
+          {
+            "text": "130''",
+            "href": "/Browse/Trees/48268/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus phellos",
+          "Willow Oak",
+          "73.0'",
+          "195''",
+          "89.0'"
+        ],
+        "links": [
+          {
+            "text": "Quercus phellos",
+            "href": "/Browse/Sites/4788/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "Willow Oak",
+            "href": "/Browse/Sites/4788/Species/Quercus%20phellos%20(Willow%20Oak)/Details"
+          },
+          {
+            "text": "73.0'",
+            "href": "/Browse/Trees/48273/Details"
+          },
+          {
+            "text": "195''",
+            "href": "/Browse/Trees/48273/Details"
+          },
+          {
+            "text": "89.0'",
+            "href": "/Browse/Trees/48273/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "112.0'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/4788/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/4788/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "112.0'",
+            "href": "/Browse/Trees/48266/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/48266/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 49.819, -077 07.960",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - City Park",
+      "County": "Alexandria"
+    },
+    "state": {
+      "text": "Virginia (US)",
+      "href": "/Browse/States/43/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

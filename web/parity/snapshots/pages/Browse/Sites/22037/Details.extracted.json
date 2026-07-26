@@ -1,0 +1,129 @@
+{
+  "siteId": 22037,
+  "summary": {
+    "Name": "Fort Nelson",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "07/30/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/30/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Populus balsamifera ssp. balsamifera",
+          "Balsam Poplar",
+          "67.9'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus balsamifera ssp. balsamifera",
+            "href": "/Browse/Sites/22037/Species/Populus%20balsamifera%20ssp.%20balsamifera%20(Balsam%20Poplar)/Details"
+          },
+          {
+            "text": "Balsam Poplar",
+            "href": "/Browse/Sites/22037/Species/Populus%20balsamifera%20ssp.%20balsamifera%20(Balsam%20Poplar)/Details"
+          },
+          {
+            "text": "67.9'",
+            "href": "/Browse/Trees/75008/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/75010/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus tremuloides",
+          "Quaking Aspen",
+          "89.5'",
+          "36''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus tremuloides",
+            "href": "/Browse/Sites/22037/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "Quaking Aspen",
+            "href": "/Browse/Sites/22037/Species/Populus%20tremuloides%20(Quaking%20Aspen)/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/75007/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/75007/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "58 48.275, -122 41.824",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - Provincial Park",
+      "County": "Northern Rockies"
+    },
+    "state": {
+      "text": "British Columbia (CA)",
+      "href": "/Browse/States/50/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

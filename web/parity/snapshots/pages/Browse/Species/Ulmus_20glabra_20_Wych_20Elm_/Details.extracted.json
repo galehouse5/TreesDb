@@ -1,0 +1,96 @@
+{
+  "botanicalName": "Ulmus glabra",
+  "commonName": "Wych Elm",
+  "global": {
+    "maxHeight": {
+      "text": "126.0'",
+      "href": "/Browse/Trees/283476/Details"
+    },
+    "maxGirth": {
+      "text": "173''",
+      "href": "/Browse/Trees/283477/Details"
+    },
+    "maxCrownSpread": {
+      "text": "38.5'",
+      "href": "/Browse/Trees/233415/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Podlaskie Voivodeship",
+          "126.0'",
+          "173''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Podlaskie Voivodeship",
+            "href": "/Browse/States/232/Details"
+          },
+          {
+            "text": "126.0'",
+            "href": "/Browse/Trees/283476/Details"
+          },
+          {
+            "text": "173''",
+            "href": "/Browse/Trees/283477/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Wisconsin",
+          "34.0'",
+          "111''",
+          "38.5'"
+        ],
+        "links": [
+          {
+            "text": "Wisconsin",
+            "href": "/Browse/States/46/Details"
+          },
+          {
+            "text": "34.0'",
+            "href": "/Browse/Trees/233415/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/233415/Details"
+          },
+          {
+            "text": "38.5'",
+            "href": "/Browse/Trees/233415/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Pinus pinea",
+  "commonName": "Italian Stone Pine",
+  "global": {
+    "maxHeight": {
+      "text": "23.37 yd",
+      "href": "/Browse/Trees/283115/Details"
+    },
+    "maxGirth": {
+      "text": "168''",
+      "href": "/Browse/Trees/283184/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Andalusia",
+          "20.00 yd",
+          "168''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Andalusia",
+            "href": "/Browse/States/124/Details"
+          },
+          {
+            "text": "20.00 yd",
+            "href": "/Browse/Trees/283184/Details"
+          },
+          {
+            "text": "168''",
+            "href": "/Browse/Trees/283184/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liguria",
+          "15.33 yd",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liguria",
+            "href": "/Browse/States/152/Details"
+          },
+          {
+            "text": "15.33 yd",
+            "href": "/Browse/Trees/286433/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/286433/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tuscany",
+          "23.37 yd",
+          "146''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tuscany",
+            "href": "/Browse/States/160/Details"
+          },
+          {
+            "text": "23.37 yd",
+            "href": "/Browse/Trees/283115/Details"
+          },
+          {
+            "text": "146''",
+            "href": "/Browse/Trees/283115/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

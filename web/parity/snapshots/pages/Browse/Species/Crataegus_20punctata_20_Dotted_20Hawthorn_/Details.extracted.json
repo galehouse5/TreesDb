@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Crataegus punctata",
+  "commonName": "Dotted Hawthorn",
+  "global": {
+    "maxHeight": {
+      "text": "45.0'",
+      "href": "/Browse/Trees/139971/Details"
+    },
+    "maxGirth": {
+      "text": "66''",
+      "href": "/Browse/Trees/139416/Details"
+    },
+    "maxCrownSpread": {
+      "text": "45.9'",
+      "href": "/Browse/Trees/140004/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pennsylvania",
+          "45.0'",
+          "66''",
+          "45.9'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/139971/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/139416/Details"
+          },
+          {
+            "text": "45.9'",
+            "href": "/Browse/Trees/140004/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

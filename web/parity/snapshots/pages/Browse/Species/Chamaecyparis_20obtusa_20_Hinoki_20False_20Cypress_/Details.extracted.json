@@ -1,0 +1,122 @@
+{
+  "botanicalName": "Chamaecyparis obtusa",
+  "commonName": "Hinoki False Cypress",
+  "global": {
+    "maxHeight": {
+      "text": "84.6'",
+      "href": "/Browse/Trees/226067/Details"
+    },
+    "maxGirth": {
+      "text": "100''",
+      "href": "/Browse/Trees/224404/Details"
+    },
+    "maxCrownSpread": {
+      "text": "36.0'",
+      "href": "/Browse/Trees/299714/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "84.6'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "84.6'",
+            "href": "/Browse/Trees/226067/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/226067/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "58.7'",
+          "100''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "58.7'",
+            "href": "/Browse/Trees/224404/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/224404/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/224404/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "57.6'",
+          "78''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "57.6'",
+            "href": "/Browse/Trees/299714/Details"
+          },
+          {
+            "text": "78''",
+            "href": "/Browse/Trees/299714/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/299714/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

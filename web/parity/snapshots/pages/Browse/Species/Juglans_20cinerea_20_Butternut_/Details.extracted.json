@@ -1,0 +1,274 @@
+{
+  "botanicalName": "Juglans cinerea",
+  "commonName": "Butternut",
+  "global": {
+    "maxHeight": {
+      "text": "119.2'",
+      "href": "/Browse/Trees/320597/Details"
+    },
+    "maxGirth": {
+      "text": "200''",
+      "href": "/Browse/Trees/255888/Details"
+    },
+    "maxCrownSpread": {
+      "text": "87.0'",
+      "href": "/Browse/Trees/255888/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "-",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          null,
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/234521/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "104.5'",
+          "60''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "104.5'",
+            "href": "/Browse/Trees/76440/Details"
+          },
+          {
+            "text": "60''",
+            "href": "/Browse/Trees/76440/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "96.3'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "96.3'",
+            "href": "/Browse/Trees/250928/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/250928/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "118.1'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "118.1'",
+            "href": "/Browse/Trees/280004/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/262231/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "99.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "99.6'",
+            "href": "/Browse/Trees/230482/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "95.0'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "95.0'",
+            "href": "/Browse/Trees/18746/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/15984/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ontario",
+          "68.8'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ontario",
+            "href": "/Browse/States/57/Details"
+          },
+          {
+            "text": "68.8'",
+            "href": "/Browse/Trees/233004/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/240296/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "106.0'",
+          "200''",
+          "87.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "106.0'",
+            "href": "/Browse/Trees/255927/Details"
+          },
+          {
+            "text": "200''",
+            "href": "/Browse/Trees/255888/Details"
+          },
+          {
+            "text": "87.0'",
+            "href": "/Browse/Trees/255888/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "102.2'",
+          "64''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "102.2'",
+            "href": "/Browse/Trees/236268/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/236268/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "119.2'",
+          "83''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "119.2'",
+            "href": "/Browse/Trees/320597/Details"
+          },
+          {
+            "text": "83''",
+            "href": "/Browse/Trees/320597/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 11 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

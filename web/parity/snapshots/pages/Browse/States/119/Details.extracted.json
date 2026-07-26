@@ -1,0 +1,440 @@
+{
+  "stateId": 119,
+  "summary": {
+    "Name": "Guanacaste",
+    "Code": "GU",
+    "RHI5": "95.06",
+    "RHI10": "75.51",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.14",
+    "RGI10": "9.68",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "01/28/2016"
+  },
+  "location": {
+    "Coordinates": "10 23.000, -085 21.500",
+    "Country": "Costa Rica"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acrocamia aculenta",
+          "Coyol Palm",
+          "51.2'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acrocamia aculenta",
+            "href": "/Browse/States/119/Species/Acrocamia%20aculenta%20(Coyol%20Palm)/Details"
+          },
+          {
+            "text": "Coyol Palm",
+            "href": "/Browse/States/119/Species/Acrocamia%20aculenta%20(Coyol%20Palm)/Details"
+          },
+          {
+            "text": "51.2'",
+            "href": "/Browse/Trees/213138/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/213138/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Anacardium excelsum",
+          "Espave",
+          "128.6'",
+          "225''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Anacardium excelsum",
+            "href": "/Browse/States/119/Species/Anacardium%20excelsum%20(Espave)/Details"
+          },
+          {
+            "text": "Espave",
+            "href": "/Browse/States/119/Species/Anacardium%20excelsum%20(Espave)/Details"
+          },
+          {
+            "text": "128.6'",
+            "href": "/Browse/Trees/213082/Details"
+          },
+          {
+            "text": "225''",
+            "href": "/Browse/Trees/213082/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Byrsonima crossifolia",
+          "Nance",
+          "24.5'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Byrsonima crossifolia",
+            "href": "/Browse/States/119/Species/Byrsonima%20crossifolia%20(Nance)/Details"
+          },
+          {
+            "text": "Nance",
+            "href": "/Browse/States/119/Species/Byrsonima%20crossifolia%20(Nance)/Details"
+          },
+          {
+            "text": "24.5'",
+            "href": "/Browse/Trees/213142/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/213142/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Clusia rosea",
+          "Scotch Attorney",
+          "30.1'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Clusia rosea",
+            "href": "/Browse/States/119/Species/Clusia%20rosea%20(Scotch%20Attorney)/Details"
+          },
+          {
+            "text": "Scotch Attorney",
+            "href": "/Browse/States/119/Species/Clusia%20rosea%20(Scotch%20Attorney)/Details"
+          },
+          {
+            "text": "30.1'",
+            "href": "/Browse/Trees/213136/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/213136/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Enterolabium cyclocarpum",
+          "Guanacaste",
+          "73.1'",
+          "255''",
+          "145.4'"
+        ],
+        "links": [
+          {
+            "text": "Enterolabium cyclocarpum",
+            "href": "/Browse/States/119/Species/Enterolabium%20cyclocarpum%20(Guanacaste)/Details"
+          },
+          {
+            "text": "Guanacaste",
+            "href": "/Browse/States/119/Species/Enterolabium%20cyclocarpum%20(Guanacaste)/Details"
+          },
+          {
+            "text": "73.1'",
+            "href": "/Browse/Trees/243473/Details"
+          },
+          {
+            "text": "255''",
+            "href": "/Browse/Trees/243473/Details"
+          },
+          {
+            "text": "145.4'",
+            "href": "/Browse/Trees/243473/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Guettarda foliacea",
+          "Guayabo De Monte",
+          "36.5'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Guettarda foliacea",
+            "href": "/Browse/States/119/Species/Guettarda%20foliacea%20(Guayabo%20De%20Monte)/Details"
+          },
+          {
+            "text": "Guayabo De Monte",
+            "href": "/Browse/States/119/Species/Guettarda%20foliacea%20(Guayabo%20De%20Monte)/Details"
+          },
+          {
+            "text": "36.5'",
+            "href": "/Browse/Trees/213085/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/213085/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hibiscus rosa-sinensis",
+          "Shoeblackplant",
+          "31.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hibiscus rosa-sinensis",
+            "href": "/Browse/States/119/Species/Hibiscus%20rosa-sinensis%20(Shoeblackplant)/Details"
+          },
+          {
+            "text": "Shoeblackplant",
+            "href": "/Browse/States/119/Species/Hibiscus%20rosa-sinensis%20(Shoeblackplant)/Details"
+          },
+          {
+            "text": "31.3'",
+            "href": "/Browse/Trees/213144/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Manilkara zapota",
+          "Sapodilla",
+          "69.1'",
+          "145''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Manilkara zapota",
+            "href": "/Browse/States/119/Species/Manilkara%20zapota%20(Sapodilla)/Details"
+          },
+          {
+            "text": "Sapodilla",
+            "href": "/Browse/States/119/Species/Manilkara%20zapota%20(Sapodilla)/Details"
+          },
+          {
+            "text": "69.1'",
+            "href": "/Browse/Trees/213084/Details"
+          },
+          {
+            "text": "145''",
+            "href": "/Browse/Trees/213084/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pseudobombax septenatum",
+          "Barrigan",
+          "84.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pseudobombax septenatum",
+            "href": "/Browse/States/119/Species/Pseudobombax%20septenatum%20(Barrigan)/Details"
+          },
+          {
+            "text": "Barrigan",
+            "href": "/Browse/States/119/Species/Pseudobombax%20septenatum%20(Barrigan)/Details"
+          },
+          {
+            "text": "84.7'",
+            "href": "/Browse/Trees/243475/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Psidium guajava",
+          "Guava",
+          "29.3'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Psidium guajava",
+            "href": "/Browse/States/119/Species/Psidium%20guajava%20(Guava)/Details"
+          },
+          {
+            "text": "Guava",
+            "href": "/Browse/States/119/Species/Psidium%20guajava%20(Guava)/Details"
+          },
+          {
+            "text": "29.3'",
+            "href": "/Browse/Trees/213145/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/213145/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Diria National Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diria National Park",
+            "href": "/Browse/Sites/39991/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Guanacaste Single Tree Sites",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Guanacaste Single Tree Sites",
+            "href": "/Browse/Sites/41038/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Rincon De Ls Vieja National Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rincon De Ls Vieja National Park",
+            "href": "/Browse/Sites/39992/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Rinconcito Lodge Woodland",
+          "63.20",
+          "45.86",
+          "7.34",
+          "4.98"
+        ],
+        "links": [
+          {
+            "text": "Rinconcito Lodge Woodland",
+            "href": "/Browse/Sites/39999/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

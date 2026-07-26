@@ -1,0 +1,266 @@
+{
+  "siteId": 40600,
+  "summary": {
+    "Name": "Indian Tomb Hollow",
+    "RHI5": "120.56",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.60",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "9",
+    "Last measurement date": "01/06/2006",
+    "Ownership contact": "Bankhead National Forest 2946 Chestnut Street Montgomery, Alabama",
+    "General comments": "181,230 acres in the Bankhead National Forest"
+  },
+  "visits": [
+    {
+      "visited": "01/06/2006",
+      "visitors": "Jess Riddle and Will Blozan",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/alabama/bankhead/bankhead_national_forest.htm",
+      "comments": "181,230 acres in the Bankhead National Forest"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer floridanum",
+          "Southern Sugar Maple",
+          "96.4'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer floridanum",
+            "href": "/Browse/Sites/40600/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/Sites/40600/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "96.4'",
+            "href": "/Browse/Trees/233717/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/233717/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "115.2'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/40600/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/40600/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "115.2'",
+            "href": "/Browse/Trees/233714/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/233714/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "83.8'",
+          "48''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/40600/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/40600/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "83.8'",
+            "href": "/Browse/Trees/233716/Details"
+          },
+          {
+            "text": "48''",
+            "href": "/Browse/Trees/233715/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "129.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/40600/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/40600/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "129.9'",
+            "href": "/Browse/Trees/233721/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus michauxii",
+          "Swamp Chestnut Oak",
+          "119.5'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus michauxii",
+            "href": "/Browse/Sites/40600/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Swamp Chestnut Oak",
+            "href": "/Browse/Sites/40600/Species/Quercus%20michauxii%20(Swamp%20Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "119.5'",
+            "href": "/Browse/Trees/233720/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/233720/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "141.8'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/40600/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/40600/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "141.8'",
+            "href": "/Browse/Trees/233719/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/233718/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Sassafras albidum",
+          "Sassafras",
+          "87.5'",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Sassafras albidum",
+            "href": "/Browse/Sites/40600/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "Sassafras",
+            "href": "/Browse/Sites/40600/Species/Sassafras%20albidum%20(Sassafras)/Details"
+          },
+          {
+            "text": "87.5'",
+            "href": "/Browse/Trees/233722/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/233722/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 22.903, -087 13.871",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Lawrence"
+    },
+    "state": {
+      "text": "Alabama (US)",
+      "href": "/Browse/States/1/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

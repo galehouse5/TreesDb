@@ -1,0 +1,178 @@
+{
+  "botanicalName": "Cedrus deodara",
+  "commonName": "Deodar Cedar",
+  "global": {
+    "maxHeight": {
+      "text": "98.4'",
+      "href": "/Browse/Trees/283183/Details"
+    },
+    "maxGirth": {
+      "text": "173''",
+      "href": "/Browse/Trees/275148/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Andalusia",
+          "98.4'",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Andalusia",
+            "href": "/Browse/States/124/Details"
+          },
+          {
+            "text": "98.4'",
+            "href": "/Browse/Trees/283183/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/283183/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Community of Madrid",
+          "96.2'",
+          "173''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Community of Madrid",
+            "href": "/Browse/States/137/Details"
+          },
+          {
+            "text": "96.2'",
+            "href": "/Browse/Trees/275148/Details"
+          },
+          {
+            "text": "173''",
+            "href": "/Browse/Trees/275148/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "District of Columbia",
+          "60.2'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "60.2'",
+            "href": "/Browse/Trees/125465/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/125465/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Georgia",
+          "87.9'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "87.9'",
+            "href": "/Browse/Trees/235286/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/235286/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "68.3'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          {
+            "text": "68.3'",
+            "href": "/Browse/Trees/39764/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tuscany",
+          "65.0'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tuscany",
+            "href": "/Browse/States/160/Details"
+          },
+          {
+            "text": "65.0'",
+            "href": "/Browse/Trees/283116/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/283116/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

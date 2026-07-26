@@ -1,0 +1,356 @@
+{
+  "siteId": 39181,
+  "summary": {
+    "Name": "Fort Hil Earthworks And Nature Preserve",
+    "RHI5": "142.18",
+    "RHI10": "136.69",
+    "RHI20": "(not enough data)",
+    "RGI5": "10.31",
+    "RGI10": "9.71",
+    "RGI20": "(not enough data)",
+    "Trees measured": "40",
+    "Last measurement date": "11/02/2014",
+    "Ownership contact": "13614 Fort Hill Road Hillsboro, Ohio",
+    "General comments": "1300 Acres Based on three trip reports on the NTS BBS board dated: 2/23/2014, 6/27/2014 ,8/28/2014,11/23/2014"
+  },
+  "visits": [
+    {
+      "visited": "11/02/2014",
+      "visitors": "Robert Leverett, Matt Markworth, and Rand Brown",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "1300 Acres Based on three trip reports on the NTS BBS board dated: 2/23/2014, 6/27/2014 ,8/28/2014,11/23/2014"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "127.5'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/39181/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39181/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "127.5'",
+            "href": "/Browse/Trees/168929/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/168895/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ailanthus altissima",
+          "Tree Of Heaven",
+          "64.0'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ailanthus altissima",
+            "href": "/Browse/Sites/39181/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "Tree Of Heaven",
+            "href": "/Browse/Sites/39181/Species/Ailanthus%20altissima%20(Tree%20Of%20Heaven)/Details"
+          },
+          {
+            "text": "64.0'",
+            "href": "/Browse/Trees/168909/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/168909/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "126.0'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/39181/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/39181/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "126.0'",
+            "href": "/Browse/Trees/168923/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/168924/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "141.5'",
+          "97''",
+          "58.0'"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/39181/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/39181/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "141.5'",
+            "href": "/Browse/Trees/168930/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/168930/Details"
+          },
+          {
+            "text": "58.0'",
+            "href": "/Browse/Trees/168930/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "117.5'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/39181/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/39181/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "117.5'",
+            "href": "/Browse/Trees/168893/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/168892/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis occidentalis",
+          "Common Hackberry",
+          "110.0'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis occidentalis",
+            "href": "/Browse/Sites/39181/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "Common Hackberry",
+            "href": "/Browse/Sites/39181/Species/Celtis%20occidentalis%20(Common%20Hackberry)/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/168916/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/168921/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "130.5'",
+          "114''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39181/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39181/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "130.5'",
+            "href": "/Browse/Trees/168927/Details"
+          },
+          {
+            "text": "114''",
+            "href": "/Browse/Trees/168927/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "138.0'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/39181/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/39181/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "138.0'",
+            "href": "/Browse/Trees/168902/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/168902/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "127.0'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/39181/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/39181/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "127.0'",
+            "href": "/Browse/Trees/168908/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/168915/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus quadrangulata",
+          "Blue Ash",
+          "111.0'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus quadrangulata",
+            "href": "/Browse/Sites/39181/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "Blue Ash",
+            "href": "/Browse/Sites/39181/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/168917/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/168917/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 19 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 07.350, -083 23.872",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-state",
+      "County": "Highland"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

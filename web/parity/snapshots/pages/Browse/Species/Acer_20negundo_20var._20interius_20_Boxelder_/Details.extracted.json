@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Acer negundo var. interius",
+  "commonName": "Boxelder",
+  "global": {
+    "maxHeight": {
+      "text": "49.7'",
+      "href": "/Browse/Trees/281431/Details"
+    },
+    "maxGirth": {
+      "text": "69''",
+      "href": "/Browse/Trees/281431/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Oregon",
+          "49.7'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon",
+            "href": "/Browse/States/35/Details"
+          },
+          {
+            "text": "49.7'",
+            "href": "/Browse/Trees/281431/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/281431/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

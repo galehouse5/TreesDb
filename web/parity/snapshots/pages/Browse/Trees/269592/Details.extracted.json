@@ -1,0 +1,70 @@
+{
+  "treeId": 269592,
+  "botanicalName": {
+    "text": "Pinus lambertiana",
+    "href": "/Browse/Sites/41706/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Sugar Pine",
+    "href": "/Browse/Sites/41706/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+  },
+  "details": {
+    "Height": "255.0'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "290''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "1489.27",
+    "ENTSPTS": "6162.50",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.63",
+    "Champion points (abbreviated)": "545.00",
+    "Diameter": "92''",
+    "Conical volume": "3950.4 ft³",
+    "General comments": "Tree located on Black Canyon Creek, Jackson, County"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 06/16/2011",
+      "summary": {
+        "Height": "255.0'",
+        "Girth": "290''"
+      },
+      "details": {
+        "Botanical name": "Pinus lambertiana",
+        "Common name": "Sugar Pine",
+        "Height": "255.0'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "290''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "1489.27",
+        "ENTSPTS": "6162.50",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.63",
+        "Champion points (abbreviated)": "545.00",
+        "Diameter": "92''",
+        "Conical volume": "3950.4 ft³",
+        "General comments": "Tree located on Black Canyon Creek, Jackson, County"
+      },
+      "measurers": "Michael Taylor and Steve Colburn"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "43 13.715, -122 34.647",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Umpqua National Forest",
+      "href": "/Browse/Sites/41706/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Douglas"
+    },
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

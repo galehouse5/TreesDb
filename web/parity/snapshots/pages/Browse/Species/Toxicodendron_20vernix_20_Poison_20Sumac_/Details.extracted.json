@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Toxicodendron vernix",
+  "commonName": "Poison Sumac",
+  "global": {
+    "maxHeight": {
+      "text": "29.5'",
+      "href": "/Browse/Trees/280950/Details"
+    },
+    "maxGirth": {
+      "text": "18''",
+      "href": "/Browse/Trees/280950/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Maryland",
+          "29.5'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "29.5'",
+            "href": "/Browse/Trees/280950/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/280950/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

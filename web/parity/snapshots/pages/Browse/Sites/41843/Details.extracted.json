@@ -1,0 +1,350 @@
+{
+  "siteId": 41843,
+  "summary": {
+    "Name": "Balsam Mountain",
+    "RHI5": "113.14",
+    "RHI10": "83.84",
+    "RHI20": "(not enough data)",
+    "RGI5": "9.47",
+    "RGI10": "6.83",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "11/03/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured on the Western slopes of Balsam mountain which includes much of Rider Hollow."
+  },
+  "visits": [
+    {
+      "visited": "11/03/2006",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/new_york/balsam_mountain.htm",
+      "comments": "Trees were measured on the Western slopes of Balsam mountain which includes much of Rider Hollow."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "54.2'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/Sites/41843/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/Sites/41843/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "54.2'",
+            "href": "/Browse/Trees/275201/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/275201/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum",
+          "Sugar Maple",
+          "-",
+          "136''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum",
+            "href": "/Browse/Sites/41843/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/41843/Species/Acer%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "136''",
+            "href": "/Browse/Trees/275203/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier spp.",
+          "Serviceberry",
+          "72.7'",
+          "40''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier spp.",
+            "href": "/Browse/Sites/41843/Species/Amelanchier%20spp.%20(Serviceberry)/Details"
+          },
+          {
+            "text": "Serviceberry",
+            "href": "/Browse/Sites/41843/Species/Amelanchier%20spp.%20(Serviceberry)/Details"
+          },
+          {
+            "text": "72.7'",
+            "href": "/Browse/Trees/275205/Details"
+          },
+          {
+            "text": "40''",
+            "href": "/Browse/Trees/275206/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "79.8'",
+          "129''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/41843/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/41843/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "79.8'",
+            "href": "/Browse/Trees/275196/Details"
+          },
+          {
+            "text": "129''",
+            "href": "/Browse/Trees/275196/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "115.1'",
+          "126''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/41843/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/41843/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "115.1'",
+            "href": "/Browse/Trees/275194/Details"
+          },
+          {
+            "text": "126''",
+            "href": "/Browse/Trees/275194/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "128.8'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/41843/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/41843/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "128.8'",
+            "href": "/Browse/Trees/275192/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/275192/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana var. virginiana",
+          "Hophornbeam",
+          "66.0'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana var. virginiana",
+            "href": "/Browse/Sites/41843/Species/Ostrya%20virginiana%20var.%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/41843/Species/Ostrya%20virginiana%20var.%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/275198/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/275198/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "115.9'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/41843/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/41843/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "115.9'",
+            "href": "/Browse/Trees/275193/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/275193/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus grandidentata",
+          "Bigtooth Aspen",
+          "101.3'",
+          "74''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus grandidentata",
+            "href": "/Browse/Sites/41843/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "Bigtooth Aspen",
+            "href": "/Browse/Sites/41843/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "101.3'",
+            "href": "/Browse/Trees/275195/Details"
+          },
+          {
+            "text": "74''",
+            "href": "/Browse/Trees/275195/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prunus serotina",
+          "Black Cherry",
+          "104.6'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Prunus serotina",
+            "href": "/Browse/Sites/41843/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "Black Cherry",
+            "href": "/Browse/Sites/41843/Species/Prunus%20serotina%20(Black%20Cherry)/Details"
+          },
+          {
+            "text": "104.6'",
+            "href": "/Browse/Trees/275197/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/275197/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 05.702, -074 29.382",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Ulster"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

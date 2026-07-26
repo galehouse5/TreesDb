@@ -1,0 +1,157 @@
+{
+  "siteId": 40887,
+  "summary": {
+    "Name": "Utah Single Tree Sites",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "7",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Elaeagnus angustifolia",
+          "Russian Olive",
+          "41.7'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Elaeagnus angustifolia",
+            "href": "/Browse/Sites/40887/Species/Elaeagnus%20angustifolia%20(Russian%20Olive)/Details"
+          },
+          {
+            "text": "Russian Olive",
+            "href": "/Browse/Sites/40887/Species/Elaeagnus%20angustifolia%20(Russian%20Olive)/Details"
+          },
+          {
+            "text": "41.7'",
+            "href": "/Browse/Trees/239650/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/239650/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus fremontii ssp. fremontii",
+          "Fremont Cottonwood",
+          "62.5'",
+          "167''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus fremontii ssp. fremontii",
+            "href": "/Browse/Sites/40887/Species/Populus%20fremontii%20ssp.%20fremontii%20(Fremont%20Cottonwood)/Details"
+          },
+          {
+            "text": "Fremont Cottonwood",
+            "href": "/Browse/Sites/40887/Species/Populus%20fremontii%20ssp.%20fremontii%20(Fremont%20Cottonwood)/Details"
+          },
+          {
+            "text": "62.5'",
+            "href": "/Browse/Trees/239656/Details"
+          },
+          {
+            "text": "167''",
+            "href": "/Browse/Trees/239653/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus pumila",
+          "Siberian Elm",
+          "63.2'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus pumila",
+            "href": "/Browse/Sites/40887/Species/Ulmus%20pumila%20(Siberian%20Elm)/Details"
+          },
+          {
+            "text": "Siberian Elm",
+            "href": "/Browse/Sites/40887/Species/Ulmus%20pumila%20(Siberian%20Elm)/Details"
+          },
+          {
+            "text": "63.2'",
+            "href": "/Browse/Trees/239655/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/239654/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 46.703, -111 53.370",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public, Private",
+      "County": "Salt Lake"
+    },
+    "state": {
+      "text": "Utah (US)",
+      "href": "/Browse/States/42/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

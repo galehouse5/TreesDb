@@ -1,0 +1,129 @@
+{
+  "siteId": 1670,
+  "summary": {
+    "Name": "Grand Canyon - Colorado River Corridor",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "11",
+    "Last measurement date": "03/01/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/01/2013",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Fouquieria splendens",
+          "Ocotillo",
+          "23.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fouquieria splendens",
+            "href": "/Browse/Sites/1670/Species/Fouquieria%20splendens%20(Ocotillo)/Details"
+          },
+          {
+            "text": "Ocotillo",
+            "href": "/Browse/Sites/1670/Species/Fouquieria%20splendens%20(Ocotillo)/Details"
+          },
+          {
+            "text": "23.1'",
+            "href": "/Browse/Trees/40594/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Prosopis glandulosa var. torreyana",
+          "Western Honey Mesquite",
+          "27.2'",
+          "55''",
+          "58.0'"
+        ],
+        "links": [
+          {
+            "text": "Prosopis glandulosa var. torreyana",
+            "href": "/Browse/Sites/1670/Species/Prosopis%20glandulosa%20var.%20torreyana%20(Western%20Honey%20Mesquite)/Details"
+          },
+          {
+            "text": "Western Honey Mesquite",
+            "href": "/Browse/Sites/1670/Species/Prosopis%20glandulosa%20var.%20torreyana%20(Western%20Honey%20Mesquite)/Details"
+          },
+          {
+            "text": "27.2'",
+            "href": "/Browse/Trees/40591/Details"
+          },
+          {
+            "text": "55''",
+            "href": "/Browse/Trees/40585/Details"
+          },
+          {
+            "text": "58.0'",
+            "href": "/Browse/Trees/40587/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 03.112, -112 07.382",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - National Park",
+      "County": "Coconino, Mohave"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,213 @@
+{
+  "siteId": 40947,
+  "summary": {
+    "Name": "Felsenthal Nationalwildlife Refuge",
+    "RHI5": "43.98",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "3.67",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "04/26/2014",
+    "Ownership contact": "5531 Highway 82 West Crossett, Arkansas",
+    "General comments": "64,902 Acres"
+  },
+  "visits": [
+    {
+      "visited": "04/26/2014",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "64,902 Acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Crataegus brachyacantha",
+          "Blueberry Hawthorn",
+          "37.6'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus brachyacantha",
+            "href": "/Browse/Sites/40947/Species/Crataegus%20brachyacantha%20(Blueberry%20Hawthorn)/Details"
+          },
+          {
+            "text": "Blueberry Hawthorn",
+            "href": "/Browse/Sites/40947/Species/Crataegus%20brachyacantha%20(Blueberry%20Hawthorn)/Details"
+          },
+          {
+            "text": "37.6'",
+            "href": "/Browse/Trees/241496/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/241497/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus opaca",
+          "Riverflat Hawthorn",
+          "22.5'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus opaca",
+            "href": "/Browse/Sites/40947/Species/Crataegus%20opaca%20(Riverflat%20Hawthorn)/Details"
+          },
+          {
+            "text": "Riverflat Hawthorn",
+            "href": "/Browse/Sites/40947/Species/Crataegus%20opaca%20(Riverflat%20Hawthorn)/Details"
+          },
+          {
+            "text": "22.5'",
+            "href": "/Browse/Trees/241499/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/241499/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus viridis",
+          "Green Hawthorn",
+          "36.2'",
+          "27''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Crataegus viridis",
+            "href": "/Browse/Sites/40947/Species/Crataegus%20viridis%20(Green%20Hawthorn)/Details"
+          },
+          {
+            "text": "Green Hawthorn",
+            "href": "/Browse/Sites/40947/Species/Crataegus%20viridis%20(Green%20Hawthorn)/Details"
+          },
+          {
+            "text": "36.2'",
+            "href": "/Browse/Trees/241500/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/241501/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex decidua",
+          "Possumhaw",
+          "41.2'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex decidua",
+            "href": "/Browse/Sites/40947/Species/Ilex%20decidua%20(Possumhaw)/Details"
+          },
+          {
+            "text": "Possumhaw",
+            "href": "/Browse/Sites/40947/Species/Ilex%20decidua%20(Possumhaw)/Details"
+          },
+          {
+            "text": "41.2'",
+            "href": "/Browse/Trees/241502/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/241502/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus similis",
+          "Bottomland Post Oak",
+          "82.4'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus similis",
+            "href": "/Browse/Sites/40947/Species/Quercus%20similis%20(Bottomland%20Post%20Oak)/Details"
+          },
+          {
+            "text": "Bottomland Post Oak",
+            "href": "/Browse/Sites/40947/Species/Quercus%20similis%20(Bottomland%20Post%20Oak)/Details"
+          },
+          {
+            "text": "82.4'",
+            "href": "/Browse/Trees/241503/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/241503/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 05.358, -092 10.708",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Union"
+    },
+    "state": {
+      "text": "Arkansas (US)",
+      "href": "/Browse/States/2/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

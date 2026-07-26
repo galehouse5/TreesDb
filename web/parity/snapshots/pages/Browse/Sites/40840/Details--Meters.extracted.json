@@ -1,0 +1,101 @@
+{
+  "siteId": 40840,
+  "summary": {
+    "Name": "Caesars Head State Park",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "11/29/2004",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured along the Naturaland Trust Trail"
+  },
+  "visits": [
+    {
+      "visited": "11/29/2004",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/pale_hickory.htm",
+      "comments": "Trees were measured along the Naturaland Trust Trail"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya pallida",
+          "Sand Hickory",
+          "31.09 m",
+          "287 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya pallida",
+            "href": "/Browse/Sites/40840/Species/Carya%20pallida%20(Sand%20Hickory)/Details"
+          },
+          {
+            "text": "Sand Hickory",
+            "href": "/Browse/Sites/40840/Species/Carya%20pallida%20(Sand%20Hickory)/Details"
+          },
+          {
+            "text": "31.09 m",
+            "href": "/Browse/Trees/238138/Details"
+          },
+          {
+            "text": "287 cm",
+            "href": "/Browse/Trees/238137/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 06.752, -082 38.473",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Greenville"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

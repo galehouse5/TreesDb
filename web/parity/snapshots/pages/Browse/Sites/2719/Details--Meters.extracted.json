@@ -1,0 +1,157 @@
+{
+  "siteId": 2719,
+  "summary": {
+    "Name": "Broadneck Hill",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "09/30/2001",
+    "Ownership contact": "(no data)",
+    "General comments": "School address is 470 Shore Acres Road, Arnold. MD"
+  },
+  "visits": [
+    {
+      "visited": "09/30/2001",
+      "visitors": "Colby Rucker",
+      "tripReportUrl": "(none)",
+      "comments": "School address is 470 Shore Acres Road, Arnold. MD"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "14.97 m",
+          "46 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/2719/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/2719/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "14.97 m",
+            "href": "/Browse/Trees/45354/Details"
+          },
+          {
+            "text": "46 cm",
+            "href": "/Browse/Trees/45354/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus virginiana",
+          "Virginia Pine",
+          "28.62 m",
+          "110 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus virginiana",
+            "href": "/Browse/Sites/2719/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "Virginia Pine",
+            "href": "/Browse/Sites/2719/Species/Pinus%20virginiana%20(Virginia%20Pine)/Details"
+          },
+          {
+            "text": "28.62 m",
+            "href": "/Browse/Trees/45356/Details"
+          },
+          {
+            "text": "110 cm",
+            "href": "/Browse/Trees/45356/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus grandidentata",
+          "Bigtooth Aspen",
+          "30.33 m",
+          "116 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus grandidentata",
+            "href": "/Browse/Sites/2719/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "Bigtooth Aspen",
+            "href": "/Browse/Sites/2719/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "30.33 m",
+            "href": "/Browse/Trees/45355/Details"
+          },
+          {
+            "text": "116 cm",
+            "href": "/Browse/Trees/45355/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 02.839, -076 29.039",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - County school",
+      "County": "Anne Arundel"
+    },
+    "state": {
+      "text": "Maryland (US)",
+      "href": "/Browse/States/18/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,213 @@
+{
+  "siteId": 40555,
+  "summary": {
+    "Name": "Holmboe Conifer Forest",
+    "RHI5": "83.40",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "5.92",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "15",
+    "Last measurement date": "06/06/2005",
+    "Ownership contact": "Northwoods Land Trust 519 East Wall Street Eagle River, Wisconsin",
+    "General comments": "32 Acres State Natural Area"
+  },
+  "visits": [
+    {
+      "visited": "06/06/2005",
+      "visitors": "Don Bragg",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/wisconsin/northern_adv/great_northern_adventure.htm",
+      "comments": "32 Acres State Natural Area"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "68.4'",
+          "42''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/40555/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/40555/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "68.4'",
+            "href": "/Browse/Trees/233356/Details"
+          },
+          {
+            "text": "42''",
+            "href": "/Browse/Trees/233356/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "51.9'",
+          "59''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/40555/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/40555/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "51.9'",
+            "href": "/Browse/Trees/233355/Details"
+          },
+          {
+            "text": "59''",
+            "href": "/Browse/Trees/233355/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus resinosa",
+          "Red Pine",
+          "98.5'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus resinosa",
+            "href": "/Browse/Sites/40555/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "Red Pine",
+            "href": "/Browse/Sites/40555/Species/Pinus%20resinosa%20(Red%20Pine)/Details"
+          },
+          {
+            "text": "98.5'",
+            "href": "/Browse/Trees/233347/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/233346/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "105.1'",
+          "90''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/40555/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/40555/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "105.1'",
+            "href": "/Browse/Trees/233349/Details"
+          },
+          {
+            "text": "90''",
+            "href": "/Browse/Trees/233353/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga canadensis",
+          "Eastern Hemlock",
+          "93.1'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga canadensis",
+            "href": "/Browse/Sites/40555/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "Eastern Hemlock",
+            "href": "/Browse/Sites/40555/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+          },
+          {
+            "text": "93.1'",
+            "href": "/Browse/Trees/233343/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/233344/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 37.682, -089 25.170",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private-Land Trust",
+      "County": "Oneida"
+    },
+    "state": {
+      "text": "Wisconsin (US)",
+      "href": "/Browse/States/46/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

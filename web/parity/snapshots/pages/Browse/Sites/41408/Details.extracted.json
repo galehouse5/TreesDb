@@ -1,0 +1,204 @@
+{
+  "siteId": 41408,
+  "summary": {
+    "Name": "Glimmerglass State Park",
+    "RHI5": "91.00",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.20",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "22",
+    "Last measurement date": "09/21/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "593 acres"
+  },
+  "visits": [
+    {
+      "visited": "09/21/2016",
+      "visitors": "Tom Howard and Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "593 acres"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Betula populifolia",
+          "Gray Birch",
+          "68.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula populifolia",
+            "href": "/Browse/Sites/41408/Species/Betula%20populifolia%20(Gray%20Birch)/Details"
+          },
+          {
+            "text": "Gray Birch",
+            "href": "/Browse/Sites/41408/Species/Betula%20populifolia%20(Gray%20Birch)/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/258475/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "74.0'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/41408/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/41408/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "74.0'",
+            "href": "/Browse/Trees/258472/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/258472/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "123.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41408/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41408/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "123.7'",
+            "href": "/Browse/Trees/258471/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Populus grandidentata",
+          "Bigtooth Aspen",
+          "91.5'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus grandidentata",
+            "href": "/Browse/Sites/41408/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "Bigtooth Aspen",
+            "href": "/Browse/Sites/41408/Species/Populus%20grandidentata%20(Bigtooth%20Aspen)/Details"
+          },
+          {
+            "text": "91.5'",
+            "href": "/Browse/Trees/258482/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/258482/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "97.8'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/41408/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/41408/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "97.8'",
+            "href": "/Browse/Trees/258473/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 47.374, -074 51.870",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Otsego"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

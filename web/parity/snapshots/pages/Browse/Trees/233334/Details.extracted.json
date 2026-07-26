@@ -1,0 +1,70 @@
+{
+  "treeId": 233334,
+  "botanicalName": {
+    "text": "Pinus strobus",
+    "href": "/Browse/Sites/40554/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+  },
+  "commonName": {
+    "text": "Eastern White Pine",
+    "href": "/Browse/Sites/40554/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+  },
+  "details": {
+    "Height": "91.2'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "61''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "23.57",
+    "ENTSPTS": "463.60",
+    "TDI3": "(not enough data)",
+    "TDI2": "0.81",
+    "Champion points (abbreviated)": "152.20",
+    "Diameter": "19''",
+    "Conical volume": "62.5 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 06/06/2005",
+      "summary": {
+        "Height": "91.2'",
+        "Girth": "61''"
+      },
+      "details": {
+        "Botanical name": "Pinus strobus",
+        "Common name": "Eastern White Pine",
+        "Height": "91.2'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "61''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "23.57",
+        "ENTSPTS": "463.60",
+        "TDI3": "(not enough data)",
+        "TDI2": "0.81",
+        "Champion points (abbreviated)": "152.20",
+        "Diameter": "19''",
+        "Conical volume": "62.5 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Don Bragg"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "45 39.294, -089 28.461",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Rhinelander",
+      "href": "/Browse/Sites/40554/Details"
+    },
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Oneida"
+    },
+    "state": {
+      "text": "Wisconsin (US)",
+      "href": "/Browse/States/46/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,347 @@
+{
+  "siteId": 41482,
+  "summary": {
+    "Name": "Staatsburgh State Historical Site",
+    "RHI5": "39.051",
+    "RHI10": "36.168",
+    "RHI20": "(not enough data)",
+    "RGI5": "2.946",
+    "RGI10": "2.619",
+    "RGI20": "(not enough data)",
+    "Trees measured": "16",
+    "Last measurement date": "08/10/2018",
+    "Ownership contact": "(no data)",
+    "General comments": "192 acres. It is part of the Mills-Norrie State Park complex with an additional 988 acres."
+  },
+  "visits": [
+    {
+      "visited": "08/10/2018",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "192 acres. It is part of the Mills-Norrie State Park complex with an additional 988 acres."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "32.67 m",
+          "356 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/41482/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/41482/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "32.67 m",
+            "href": "/Browse/Trees/261814/Details"
+          },
+          {
+            "text": "356 cm",
+            "href": "/Browse/Trees/261814/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "30.85 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/41482/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/41482/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "30.85 m",
+            "href": "/Browse/Trees/261826/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "36.45 m",
+          "254 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/41482/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/41482/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "36.45 m",
+            "href": "/Browse/Trees/261820/Details"
+          },
+          {
+            "text": "254 cm",
+            "href": "/Browse/Trees/261820/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "33.01 m",
+          "249 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/41482/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/41482/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "33.01 m",
+            "href": "/Browse/Trees/261822/Details"
+          },
+          {
+            "text": "249 cm",
+            "href": "/Browse/Trees/261822/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "35.75 m",
+          "211 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/41482/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/41482/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "35.75 m",
+            "href": "/Browse/Trees/261821/Details"
+          },
+          {
+            "text": "211 cm",
+            "href": "/Browse/Trees/261821/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "39.87 m",
+          "315 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/41482/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/41482/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "39.87 m",
+            "href": "/Browse/Trees/261818/Details"
+          },
+          {
+            "text": "315 cm",
+            "href": "/Browse/Trees/261818/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus nigra",
+          "Austrian Pine",
+          "30.69 m",
+          "218 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus nigra",
+            "href": "/Browse/Sites/41482/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "Austrian Pine",
+            "href": "/Browse/Sites/41482/Species/Pinus%20nigra%20(Austrian%20Pine)/Details"
+          },
+          {
+            "text": "30.69 m",
+            "href": "/Browse/Trees/261815/Details"
+          },
+          {
+            "text": "218 cm",
+            "href": "/Browse/Trees/261815/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "43.80 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41482/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41482/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "43.80 m",
+            "href": "/Browse/Trees/261816/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "33.04 m",
+          "249 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/41482/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/41482/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "33.04 m",
+            "href": "/Browse/Trees/261823/Details"
+          },
+          {
+            "text": "249 cm",
+            "href": "/Browse/Trees/261823/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus montana",
+          "Chestnut Oak",
+          "31.94 m",
+          "218 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus montana",
+            "href": "/Browse/Sites/41482/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "Chestnut Oak",
+            "href": "/Browse/Sites/41482/Species/Quercus%20montana%20(Chestnut%20Oak)/Details"
+          },
+          {
+            "text": "31.94 m",
+            "href": "/Browse/Trees/261824/Details"
+          },
+          {
+            "text": "218 cm",
+            "href": "/Browse/Trees/261824/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 14 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 51.402, -073 55.802",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - state",
+      "County": "Dutchess"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

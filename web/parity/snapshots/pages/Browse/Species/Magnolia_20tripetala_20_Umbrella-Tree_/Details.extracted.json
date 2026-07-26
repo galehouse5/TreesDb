@@ -1,0 +1,194 @@
+{
+  "botanicalName": "Magnolia tripetala",
+  "commonName": "Umbrella-Tree",
+  "global": {
+    "maxHeight": {
+      "text": "73.7'",
+      "href": "/Browse/Trees/249157/Details"
+    },
+    "maxGirth": {
+      "text": "67''",
+      "href": "/Browse/Trees/291286/Details"
+    },
+    "maxCrownSpread": {
+      "text": "53.0'",
+      "href": "/Browse/Trees/291286/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "73.7'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "73.7'",
+            "href": "/Browse/Trees/249157/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/249157/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "33.0'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "33.0'",
+            "href": "/Browse/Trees/165581/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/165581/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ohio",
+          "36.7'",
+          "52''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "Ohio",
+            "href": "/Browse/States/33/Details"
+          },
+          {
+            "text": "36.7'",
+            "href": "/Browse/Trees/302696/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/302696/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/302696/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "72.1'",
+          "66''",
+          "45.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "72.1'",
+            "href": "/Browse/Trees/173724/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/133206/Details"
+          },
+          {
+            "text": "45.0'",
+            "href": "/Browse/Trees/133206/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "66.5'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "66.5'",
+            "href": "/Browse/Trees/227984/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/243330/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "69.8'",
+          "67''",
+          "53.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "69.8'",
+            "href": "/Browse/Trees/296178/Details"
+          },
+          {
+            "text": "67''",
+            "href": "/Browse/Trees/291286/Details"
+          },
+          {
+            "text": "53.0'",
+            "href": "/Browse/Trees/291286/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

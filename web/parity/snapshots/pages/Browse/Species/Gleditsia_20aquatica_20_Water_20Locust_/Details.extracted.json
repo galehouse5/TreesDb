@@ -1,0 +1,185 @@
+{
+  "botanicalName": "Gleditsia aquatica",
+  "commonName": "Water Locust",
+  "global": {
+    "maxHeight": {
+      "text": "102.6'",
+      "href": "/Browse/Trees/241850/Details"
+    },
+    "maxGirth": {
+      "text": "238''",
+      "href": "/Browse/Trees/233994/Details"
+    },
+    "maxCrownSpread": {
+      "text": "63.0'",
+      "href": "/Browse/Trees/255921/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Arkansas",
+          "102.6'",
+          "238''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "102.6'",
+            "href": "/Browse/Trees/241850/Details"
+          },
+          {
+            "text": "238''",
+            "href": "/Browse/Trees/233994/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Louisiana",
+          "66.0'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Louisiana",
+            "href": "/Browse/States/16/Details"
+          },
+          {
+            "text": "66.0'",
+            "href": "/Browse/Trees/320733/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/320733/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "86.7'",
+          "107''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "86.7'",
+            "href": "/Browse/Trees/251019/Details"
+          },
+          {
+            "text": "107''",
+            "href": "/Browse/Trees/251019/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "56.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "56.1'",
+            "href": "/Browse/Trees/283690/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "74.0'",
+          "121''",
+          "63.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "74.0'",
+            "href": "/Browse/Trees/255921/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/255921/Details"
+          },
+          {
+            "text": "63.0'",
+            "href": "/Browse/Trees/255921/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "85.9'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "85.9'",
+            "href": "/Browse/Trees/252665/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/236775/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

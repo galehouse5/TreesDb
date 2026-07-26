@@ -1,0 +1,213 @@
+{
+  "siteId": 1305,
+  "summary": {
+    "Name": "Mingus Mountain",
+    "RHI5": "43.08",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "5.41",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "03/08/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "03/08/2012",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juglans major",
+          "Arizona Walnut",
+          "28.9'",
+          "35''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans major",
+            "href": "/Browse/Sites/1305/Species/Juglans%20major%20(Arizona%20Walnut)/Details"
+          },
+          {
+            "text": "Arizona Walnut",
+            "href": "/Browse/Sites/1305/Species/Juglans%20major%20(Arizona%20Walnut)/Details"
+          },
+          {
+            "text": "28.9'",
+            "href": "/Browse/Trees/23969/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/23969/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus deppeana",
+          "Alligator Juniper",
+          "50.0'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus deppeana",
+            "href": "/Browse/Sites/1305/Species/Juniperus%20deppeana%20(Alligator%20Juniper)/Details"
+          },
+          {
+            "text": "Alligator Juniper",
+            "href": "/Browse/Sites/1305/Species/Juniperus%20deppeana%20(Alligator%20Juniper)/Details"
+          },
+          {
+            "text": "50.0'",
+            "href": "/Browse/Trees/23966/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/23964/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. brachyptera",
+          "Ponderosa Pine",
+          "81.4'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. brachyptera",
+            "href": "/Browse/Sites/1305/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/1305/Species/Pinus%20ponderosa%20var.%20brachyptera%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "81.4'",
+            "href": "/Browse/Trees/23968/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/23968/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus arizonica",
+          "Arizona White Oak",
+          "29.1'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus arizonica",
+            "href": "/Browse/Sites/1305/Species/Quercus%20arizonica%20(Arizona%20White%20Oak)/Details"
+          },
+          {
+            "text": "Arizona White Oak",
+            "href": "/Browse/Sites/1305/Species/Quercus%20arizonica%20(Arizona%20White%20Oak)/Details"
+          },
+          {
+            "text": "29.1'",
+            "href": "/Browse/Trees/23967/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/23967/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus gambelii var. gambelii",
+          "Gambel Oak",
+          "26.0'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus gambelii var. gambelii",
+            "href": "/Browse/Sites/1305/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "Gambel Oak",
+            "href": "/Browse/Sites/1305/Species/Quercus%20gambelii%20var.%20gambelii%20(Gambel%20Oak)/Details"
+          },
+          {
+            "text": "26.0'",
+            "href": "/Browse/Trees/23970/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/23970/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 44.477, -112 07.483",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public National Forest",
+      "County": "Yavapai"
+    },
+    "state": {
+      "text": "Arizona (US)",
+      "href": "/Browse/States/3/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

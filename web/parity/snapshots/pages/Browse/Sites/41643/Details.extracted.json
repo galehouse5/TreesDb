@@ -1,0 +1,260 @@
+{
+  "siteId": 41643,
+  "summary": {
+    "Name": "California Single Tree Sites",
+    "RHI5": "164.08",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "14.92",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "8",
+    "Last measurement date": "01/02/2001",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/02/2001",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cercocarpus ledifolius",
+          "Curl-Leaf Mountain Mahogany",
+          "22.0'",
+          "144''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "Cercocarpus ledifolius",
+            "href": "/Browse/Sites/41643/Species/Cercocarpus%20ledifolius%20(Curl-Leaf%20Mountain%20Mahogany)/Details"
+          },
+          {
+            "text": "Curl-Leaf Mountain Mahogany",
+            "href": "/Browse/Sites/41643/Species/Cercocarpus%20ledifolius%20(Curl-Leaf%20Mountain%20Mahogany)/Details"
+          },
+          {
+            "text": "22.0'",
+            "href": "/Browse/Trees/268822/Details"
+          },
+          {
+            "text": "144''",
+            "href": "/Browse/Trees/268822/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/268822/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Eucalyptus globulus",
+          "Tasmanian Bluegum",
+          "153.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Eucalyptus globulus",
+            "href": "/Browse/Sites/41643/Species/Eucalyptus%20globulus%20(Tasmanian%20Bluegum)/Details"
+          },
+          {
+            "text": "Tasmanian Bluegum",
+            "href": "/Browse/Sites/41643/Species/Eucalyptus%20globulus%20(Tasmanian%20Bluegum)/Details"
+          },
+          {
+            "text": "153.0'",
+            "href": "/Browse/Trees/268815/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Notholithocarpus densiflorus",
+          "Tanoak",
+          "143.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Notholithocarpus densiflorus",
+            "href": "/Browse/Sites/41643/Species/Notholithocarpus%20densiflorus%20(Tanoak)/Details"
+          },
+          {
+            "text": "Tanoak",
+            "href": "/Browse/Sites/41643/Species/Notholithocarpus%20densiflorus%20(Tanoak)/Details"
+          },
+          {
+            "text": "143.0'",
+            "href": "/Browse/Trees/268819/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "216.8'",
+          "435''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/Sites/41643/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/Sites/41643/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "216.8'",
+            "href": "/Browse/Trees/268816/Details"
+          },
+          {
+            "text": "435''",
+            "href": "/Browse/Trees/268816/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. benthamiana",
+          "Ponderosa Pine",
+          "147.0'",
+          "316''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. benthamiana",
+            "href": "/Browse/Sites/41643/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/41643/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "147.0'",
+            "href": "/Browse/Trees/268821/Details"
+          },
+          {
+            "text": "316''",
+            "href": "/Browse/Trees/268821/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Platanus racemosa",
+          "California Sycamore",
+          "152.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Platanus racemosa",
+            "href": "/Browse/Sites/41643/Species/Platanus%20racemosa%20(California%20Sycamore)/Details"
+          },
+          {
+            "text": "California Sycamore",
+            "href": "/Browse/Sites/41643/Species/Platanus%20racemosa%20(California%20Sycamore)/Details"
+          },
+          {
+            "text": "152.6'",
+            "href": "/Browse/Trees/268820/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus lobata",
+          "Valley Oak",
+          "151.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus lobata",
+            "href": "/Browse/Sites/41643/Species/Quercus%20lobata%20(Valley%20Oak)/Details"
+          },
+          {
+            "text": "Valley Oak",
+            "href": "/Browse/Sites/41643/Species/Quercus%20lobata%20(Valley%20Oak)/Details"
+          },
+          {
+            "text": "151.0'",
+            "href": "/Browse/Trees/268818/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 34.603, -121 29.606",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Sacramento"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

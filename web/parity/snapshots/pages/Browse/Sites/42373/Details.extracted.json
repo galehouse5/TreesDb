@@ -1,0 +1,350 @@
+{
+  "siteId": 42373,
+  "summary": {
+    "Name": "Nathan Bedford Forrest State Park",
+    "RHI5": "132.28",
+    "RHI10": "125.70",
+    "RHI20": "105.43",
+    "RGI5": "7.81",
+    "RGI10": "7.22",
+    "RGI20": "5.37",
+    "Trees measured": "27",
+    "Last measurement date": "04/19/2025",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/19/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer saccharum var. schneckii",
+          "Sugar Maple",
+          "111.3'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. schneckii",
+            "href": "/Browse/Sites/42373/Species/Acer%20saccharum%20var.%20schneckii%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/42373/Species/Acer%20saccharum%20var.%20schneckii%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "111.3'",
+            "href": "/Browse/Trees/322160/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/322160/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "129.6'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/42373/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/42373/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "129.6'",
+            "href": "/Browse/Trees/322137/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/322136/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "113.1'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/42373/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/42373/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "113.1'",
+            "href": "/Browse/Trees/322135/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/322135/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Diospyros virginiana",
+          "Common Persimmon",
+          "100.8'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Diospyros virginiana",
+            "href": "/Browse/Sites/42373/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "Common Persimmon",
+            "href": "/Browse/Sites/42373/Species/Diospyros%20virginiana%20(Common%20Persimmon)/Details"
+          },
+          {
+            "text": "100.8'",
+            "href": "/Browse/Trees/322149/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/322149/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "106.1'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/42373/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/42373/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "106.1'",
+            "href": "/Browse/Trees/322157/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Frangula caroliniana",
+          "Carolina Buckthorn",
+          "11.3'",
+          "3''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Frangula caroliniana",
+            "href": "/Browse/Sites/42373/Species/Frangula%20caroliniana%20(Carolina%20Buckthorn)/Details"
+          },
+          {
+            "text": "Carolina Buckthorn",
+            "href": "/Browse/Sites/42373/Species/Frangula%20caroliniana%20(Carolina%20Buckthorn)/Details"
+          },
+          {
+            "text": "11.3'",
+            "href": "/Browse/Trees/322155/Details"
+          },
+          {
+            "text": "3''",
+            "href": "/Browse/Trees/322155/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ilex opaca var. opaca",
+          "American Holly",
+          "51.8'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ilex opaca var. opaca",
+            "href": "/Browse/Sites/42373/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "American Holly",
+            "href": "/Browse/Sites/42373/Species/Ilex%20opaca%20var.%20opaca%20(American%20Holly)/Details"
+          },
+          {
+            "text": "51.8'",
+            "href": "/Browse/Trees/322159/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/322159/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liquidambar styraciflua",
+          "Sweetgum",
+          "129.3'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liquidambar styraciflua",
+            "href": "/Browse/Sites/42373/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "Sweetgum",
+            "href": "/Browse/Sites/42373/Species/Liquidambar%20styraciflua%20(Sweetgum)/Details"
+          },
+          {
+            "text": "129.3'",
+            "href": "/Browse/Trees/322151/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/322151/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Liriodendron tulipifera",
+          "Tuliptree",
+          "144.6'",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Liriodendron tulipifera",
+            "href": "/Browse/Sites/42373/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "Tuliptree",
+            "href": "/Browse/Sites/42373/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+          },
+          {
+            "text": "144.6'",
+            "href": "/Browse/Trees/322152/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/322152/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "94.3'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/42373/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/42373/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "94.3'",
+            "href": "/Browse/Trees/322158/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/322158/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 20 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "36 05.941, -087 58.633",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Benton"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

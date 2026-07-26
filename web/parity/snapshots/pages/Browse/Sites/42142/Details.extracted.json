@@ -1,0 +1,350 @@
+{
+  "siteId": 42142,
+  "summary": {
+    "Name": "Ohio Single Tree Sites",
+    "RHI5": "121.74",
+    "RHI10": "110.11",
+    "RHI20": "90.33",
+    "RGI5": "20.52",
+    "RGI10": "17.63",
+    "RGI20": "12.99",
+    "Trees measured": "45",
+    "Last measurement date": "01/01/2000",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2000",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer ×freemanii",
+          "Freeman Maple",
+          "135.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer ×freemanii",
+            "href": "/Browse/Sites/42142/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "Freeman Maple",
+            "href": "/Browse/Sites/42142/Species/Acer%20%C3%97freemanii%20(Freeman%20Maple)/Details"
+          },
+          {
+            "text": "135.7'",
+            "href": "/Browse/Trees/302715/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer pseudoplatanus",
+          "Sycamore Maple",
+          "57.0'",
+          "109''",
+          "34.5'"
+        ],
+        "links": [
+          {
+            "text": "Acer pseudoplatanus",
+            "href": "/Browse/Sites/42142/Species/Acer%20pseudoplatanus%20(Sycamore%20Maple)/Details"
+          },
+          {
+            "text": "Sycamore Maple",
+            "href": "/Browse/Sites/42142/Species/Acer%20pseudoplatanus%20(Sycamore%20Maple)/Details"
+          },
+          {
+            "text": "57.0'",
+            "href": "/Browse/Trees/302721/Details"
+          },
+          {
+            "text": "109''",
+            "href": "/Browse/Trees/302721/Details"
+          },
+          {
+            "text": "34.5'",
+            "href": "/Browse/Trees/302721/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "75.0'",
+          "133''",
+          "48.0'"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/42142/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/42142/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "75.0'",
+            "href": "/Browse/Trees/302686/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/302686/Details"
+          },
+          {
+            "text": "48.0'",
+            "href": "/Browse/Trees/302686/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Castanea dentata",
+          "American Chestnut",
+          "88.5'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Castanea dentata",
+            "href": "/Browse/Sites/42142/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "American Chestnut",
+            "href": "/Browse/Sites/42142/Species/Castanea%20dentata%20(American%20Chestnut)/Details"
+          },
+          {
+            "text": "88.5'",
+            "href": "/Browse/Trees/302710/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/302710/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chamaecyparis pisifera",
+          "Sawara False Cypress",
+          "60.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chamaecyparis pisifera",
+            "href": "/Browse/Sites/42142/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "Sawara False Cypress",
+            "href": "/Browse/Sites/42142/Species/Chamaecyparis%20pisifera%20(Sawara%20False%20Cypress)/Details"
+          },
+          {
+            "text": "60.0'",
+            "href": "/Browse/Trees/302703/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chionanthus virginicus",
+          "White Fringetree",
+          "18.7'",
+          "-",
+          "2.6'"
+        ],
+        "links": [
+          {
+            "text": "Chionanthus virginicus",
+            "href": "/Browse/Sites/42142/Species/Chionanthus%20virginicus%20(White%20Fringetree)/Details"
+          },
+          {
+            "text": "White Fringetree",
+            "href": "/Browse/Sites/42142/Species/Chionanthus%20virginicus%20(White%20Fringetree)/Details"
+          },
+          {
+            "text": "18.7'",
+            "href": "/Browse/Trees/302694/Details"
+          },
+          null,
+          {
+            "text": "2.6'",
+            "href": "/Browse/Trees/302694/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Crataegus spp.",
+          "Hawthorn",
+          "30.6'",
+          "64''",
+          "42.0'"
+        ],
+        "links": [
+          {
+            "text": "Crataegus spp.",
+            "href": "/Browse/Sites/42142/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "Hawthorn",
+            "href": "/Browse/Sites/42142/Species/Crataegus%20spp.%20(Hawthorn)/Details"
+          },
+          {
+            "text": "30.6'",
+            "href": "/Browse/Trees/302709/Details"
+          },
+          {
+            "text": "64''",
+            "href": "/Browse/Trees/302709/Details"
+          },
+          {
+            "text": "42.0'",
+            "href": "/Browse/Trees/302709/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Euonymus alatus",
+          "Burning Bush",
+          "-",
+          "-",
+          "26.0'"
+        ],
+        "links": [
+          {
+            "text": "Euonymus alatus",
+            "href": "/Browse/Sites/42142/Species/Euonymus%20alatus%20(Burning%20Bush)/Details"
+          },
+          {
+            "text": "Burning Bush",
+            "href": "/Browse/Sites/42142/Species/Euonymus%20alatus%20(Burning%20Bush)/Details"
+          },
+          null,
+          null,
+          {
+            "text": "26.0'",
+            "href": "/Browse/Trees/302697/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "132.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/42142/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/42142/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "132.0'",
+            "href": "/Browse/Trees/302701/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus quadrangulata",
+          "Blue Ash",
+          "84.0'",
+          "179''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus quadrangulata",
+            "href": "/Browse/Sites/42142/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "Blue Ash",
+            "href": "/Browse/Sites/42142/Species/Fraxinus%20quadrangulata%20(Blue%20Ash)/Details"
+          },
+          {
+            "text": "84.0'",
+            "href": "/Browse/Trees/302689/Details"
+          },
+          {
+            "text": "179''",
+            "href": "/Browse/Trees/302689/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 30 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 57.671, -082 59.928",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public, Private",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,551 @@
+{
+  "stateId": 38,
+  "summary": {
+    "Name": "South Carolina",
+    "Code": "SC",
+    "RHI5": "168.52",
+    "RHI10": "163.09",
+    "RHI20": "154.70",
+    "RGI5": "25.06",
+    "RGI10": "21.81",
+    "RGI20": "18.20",
+    "Trees measured": "1251",
+    "Last measurement date": "03/13/2017"
+  },
+  "location": {
+    "Coordinates": "33 37.466, -080 55.599",
+    "Country": "United States"
+  },
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer floridanum",
+          "Southern Sugar Maple",
+          "84.9'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer floridanum",
+            "href": "/Browse/States/38/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Southern Sugar Maple",
+            "href": "/Browse/States/38/Species/Acer%20floridanum%20(Southern%20Sugar%20Maple)/Details"
+          },
+          {
+            "text": "84.9'",
+            "href": "/Browse/Trees/237851/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/237903/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer leucoderme",
+          "Chalk Maple",
+          "55.4'",
+          "27''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer leucoderme",
+            "href": "/Browse/States/38/Species/Acer%20leucoderme%20(Chalk%20Maple)/Details"
+          },
+          {
+            "text": "Chalk Maple",
+            "href": "/Browse/States/38/Species/Acer%20leucoderme%20(Chalk%20Maple)/Details"
+          },
+          {
+            "text": "55.4'",
+            "href": "/Browse/Trees/236260/Details"
+          },
+          {
+            "text": "27''",
+            "href": "/Browse/Trees/238096/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo",
+          "Boxelder",
+          "94.5'",
+          "103''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo",
+            "href": "/Browse/States/38/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/38/Species/Acer%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "94.5'",
+            "href": "/Browse/Trees/252703/Details"
+          },
+          {
+            "text": "103''",
+            "href": "/Browse/Trees/237887/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer negundo var. negundo",
+          "Boxelder",
+          "71.2'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer negundo var. negundo",
+            "href": "/Browse/States/38/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "Boxelder",
+            "href": "/Browse/States/38/Species/Acer%20negundo%20var.%20negundo%20(Boxelder)/Details"
+          },
+          {
+            "text": "71.2'",
+            "href": "/Browse/Trees/236867/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/236867/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "-",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/States/38/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/States/38/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          null,
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/281318/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "133.3'",
+          "121''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/States/38/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/38/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "133.3'",
+            "href": "/Browse/Trees/236556/Details"
+          },
+          {
+            "text": "121''",
+            "href": "/Browse/Trees/237844/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum var. trilobum",
+          "Red Maple",
+          "106.9'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum var. trilobum",
+            "href": "/Browse/States/38/Species/Acer%20rubrum%20var.%20trilobum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/States/38/Species/Acer%20rubrum%20var.%20trilobum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "106.9'",
+            "href": "/Browse/Trees/252661/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/252661/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "114.0'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/States/38/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/States/38/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "114.0'",
+            "href": "/Browse/Trees/281305/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/281304/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus pavia",
+          "Red Buckeye",
+          "30.7'",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus pavia",
+            "href": "/Browse/States/38/Species/Aesculus%20pavia%20(Red%20Buckeye)/Details"
+          },
+          {
+            "text": "Red Buckeye",
+            "href": "/Browse/States/38/Species/Aesculus%20pavia%20(Red%20Buckeye)/Details"
+          },
+          {
+            "text": "30.7'",
+            "href": "/Browse/Trees/238588/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/238588/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus sylvatica",
+          "Painted Buckeye",
+          "-",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus sylvatica",
+            "href": "/Browse/States/38/Species/Aesculus%20sylvatica%20(Painted%20Buckeye)/Details"
+          },
+          {
+            "text": "Painted Buckeye",
+            "href": "/Browse/States/38/Species/Aesculus%20sylvatica%20(Painted%20Buckeye)/Details"
+          },
+          null,
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/237730/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 127 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "sitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RHI10",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI5",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "RGI10",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alexander Creek",
+          "134.32",
+          "125.93",
+          "9.90",
+          "8.33"
+        ],
+        "links": [
+          {
+            "text": "Alexander Creek",
+            "href": "/Browse/Sites/40853/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "All Saints Church Cemetery",
+          "69.04",
+          "-",
+          "6.66",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "All Saints Church Cemetery",
+            "href": "/Browse/Sites/33759/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Bennett Homestead",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Bennett Homestead",
+            "href": "/Browse/Sites/40851/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Brasstown Creek",
+          "134.02",
+          "104.30",
+          "8.62",
+          "6.65"
+        ],
+        "links": [
+          {
+            "text": "Brasstown Creek",
+            "href": "/Browse/Sites/40846/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Brookgreen Gardens",
+          "62.22",
+          "-",
+          "6.96",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Brookgreen Gardens",
+            "href": "/Browse/Sites/17929/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Caesars Head State Park",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Caesars Head State Park",
+            "href": "/Browse/Sites/40840/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Camp Branch",
+          "143.20",
+          "132.23",
+          "8.03",
+          "6.89"
+        ],
+        "links": [
+          {
+            "text": "Camp Branch",
+            "href": "/Browse/Sites/40838/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cane Creek, Issaqueena Falls",
+          "134.24",
+          "-",
+          "10.62",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cane Creek, Issaqueena Falls",
+            "href": "/Browse/Sites/40811/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedar Creek",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedar Creek",
+            "href": "/Browse/Sites/40836/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Chattooga River",
+          "137.50",
+          "-",
+          "0.00",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Chattooga River",
+            "href": "/Browse/Sites/39342/Details"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 47 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  }
+}

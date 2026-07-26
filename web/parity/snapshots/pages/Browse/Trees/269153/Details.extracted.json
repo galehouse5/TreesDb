@@ -1,0 +1,70 @@
+{
+  "treeId": 269153,
+  "botanicalName": {
+    "text": "Sequoia sempervirens",
+    "href": "/Browse/Sites/41621/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+  },
+  "commonName": {
+    "text": "Redwood",
+    "href": "/Browse/Sites/41621/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+  },
+  "details": {
+    "Height": "350.1'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "517''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "6498.46",
+    "ENTSPTS": "15083.47",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.46",
+    "Champion points (abbreviated)": "867.10",
+    "Diameter": "165''",
+    "Conical volume": "17237.7 ft³",
+    "General comments": "Tree known as \"Steed\""
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 10/13/2018",
+      "summary": {
+        "Height": "350.1'",
+        "Girth": "517''"
+      },
+      "details": {
+        "Botanical name": "Sequoia sempervirens",
+        "Common name": "Redwood",
+        "Height": "350.1'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "517''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "6498.46",
+        "ENTSPTS": "15083.47",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.46",
+        "Champion points (abbreviated)": "867.10",
+        "Diameter": "165''",
+        "Conical volume": "17237.7 ft³",
+        "General comments": "Tree known as \"Steed\""
+      },
+      "measurers": "Michael Taylor and John Montague"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "40 19.182, -123 58.911",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Humboldt Redwoods State Park",
+      "href": "/Browse/Sites/41621/Details"
+    },
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Humboldt"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

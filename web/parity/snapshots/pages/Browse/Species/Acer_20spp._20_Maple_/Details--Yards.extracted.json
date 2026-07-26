@@ -1,0 +1,152 @@
+{
+  "botanicalName": "Acer spp.",
+  "commonName": "Maple",
+  "global": {
+    "maxHeight": {
+      "text": "36.00 yd",
+      "href": "/Browse/Trees/253255/Details"
+    },
+    "maxGirth": {
+      "text": "151''",
+      "href": "/Browse/Trees/253224/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Connecticut",
+          "25.00 yd",
+          "115''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Connecticut",
+            "href": "/Browse/States/6/Details"
+          },
+          {
+            "text": "25.00 yd",
+            "href": "/Browse/Trees/243161/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/243161/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "20.00 yd",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "20.00 yd",
+            "href": "/Browse/Trees/250227/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/250227/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "-",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          null,
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/170431/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "North Carolina",
+          "-",
+          "134''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "North Carolina",
+            "href": "/Browse/States/25/Details"
+          },
+          null,
+          {
+            "text": "134''",
+            "href": "/Browse/Trees/243395/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vermont",
+          "36.00 yd",
+          "151''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vermont",
+            "href": "/Browse/States/44/Details"
+          },
+          {
+            "text": "36.00 yd",
+            "href": "/Browse/Trees/253255/Details"
+          },
+          {
+            "text": "151''",
+            "href": "/Browse/Trees/253224/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "siteId": 4736,
+  "summary": {
+    "Name": "I-94 Near Valley City",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "2",
+    "Last measurement date": "08/05/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees measured were at rest stop on I-94 east of Valley City. Next to east bound pull through."
+  },
+  "visits": [
+    {
+      "visited": "08/05/2012",
+      "visitors": "Turner Sharp and John Fichtner",
+      "tripReportUrl": "(none)",
+      "comments": "Trees measured were at rest stop on I-94 east of Valley City. Next to east bound pull through."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Populus deltoides ssp. monilifera",
+          "Plains Cottonwood",
+          "23.01 m",
+          "333 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Populus deltoides ssp. monilifera",
+            "href": "/Browse/Sites/4736/Species/Populus%20deltoides%20ssp.%20monilifera%20(Plains%20Cottonwood)/Details"
+          },
+          {
+            "text": "Plains Cottonwood",
+            "href": "/Browse/Sites/4736/Species/Populus%20deltoides%20ssp.%20monilifera%20(Plains%20Cottonwood)/Details"
+          },
+          {
+            "text": "23.01 m",
+            "href": "/Browse/Trees/47477/Details"
+          },
+          {
+            "text": "333 cm",
+            "href": "/Browse/Trees/47477/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "46 55.159, -097 45.032",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Federal",
+      "County": "Barnes"
+    },
+    "state": {
+      "text": "North Dakota (US)",
+      "href": "/Browse/States/26/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,191 @@
+{
+  "botanicalName": "Tilia americana var. americana",
+  "commonName": "American Basswood",
+  "global": {
+    "maxHeight": {
+      "text": "138.9'",
+      "href": "/Browse/Trees/222035/Details"
+    },
+    "maxGirth": {
+      "text": "162''",
+      "href": "/Browse/Trees/315275/Details"
+    },
+    "maxCrownSpread": {
+      "text": "83.0'",
+      "href": "/Browse/Trees/313163/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "111.4'",
+          "142''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "111.4'",
+            "href": "/Browse/Trees/249598/Details"
+          },
+          {
+            "text": "142''",
+            "href": "/Browse/Trees/249598/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nebraska",
+          "86.5'",
+          "160''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nebraska",
+            "href": "/Browse/States/27/Details"
+          },
+          {
+            "text": "86.5'",
+            "href": "/Browse/Trees/220432/Details"
+          },
+          {
+            "text": "160''",
+            "href": "/Browse/Trees/220432/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "133.3'",
+          "143''",
+          "64.0'"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "133.3'",
+            "href": "/Browse/Trees/221123/Details"
+          },
+          {
+            "text": "143''",
+            "href": "/Browse/Trees/220851/Details"
+          },
+          {
+            "text": "64.0'",
+            "href": "/Browse/Trees/220851/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "138.9'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "138.9'",
+            "href": "/Browse/Trees/222035/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/117439/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Virginia",
+          "124.5'",
+          "69''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Virginia",
+            "href": "/Browse/States/43/Details"
+          },
+          {
+            "text": "124.5'",
+            "href": "/Browse/Trees/165587/Details"
+          },
+          {
+            "text": "69''",
+            "href": "/Browse/Trees/165587/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "120.5'",
+          "162''",
+          "83.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "120.5'",
+            "href": "/Browse/Trees/84373/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/315275/Details"
+          },
+          {
+            "text": "83.0'",
+            "href": "/Browse/Trees/313163/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

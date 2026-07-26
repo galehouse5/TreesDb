@@ -1,0 +1,1208 @@
+{
+  "columns": [
+    {
+      "header": "Botanical name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Common name",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max height",
+      "sortable": true,
+      "sortState": "desc"
+    },
+    {
+      "header": "Max girth",
+      "sortable": true,
+      "sortState": "none"
+    },
+    {
+      "header": "Max crown spread",
+      "sortable": true,
+      "sortState": "none"
+    }
+  ],
+  "rows": [
+    {
+      "cells": [
+        "Sequoia sempervirens",
+        "Redwood",
+        "354.4'",
+        "1101''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Sequoia sempervirens",
+          "href": "/Browse/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+        },
+        {
+          "text": "Redwood",
+          "href": "/Browse/Species/Sequoia%20sempervirens%20(Redwood)/Details"
+        },
+        {
+          "text": "354.4'",
+          "href": "/Browse/Trees/269322/Details"
+        },
+        {
+          "text": "1101''",
+          "href": "/Browse/Trees/268683/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pseudotsuga menziesii var. menziesii",
+        "Douglas-Fir",
+        "322.8'",
+        "516''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Pseudotsuga menziesii var. menziesii",
+          "href": "/Browse/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+        },
+        {
+          "text": "Douglas-Fir",
+          "href": "/Browse/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+        },
+        {
+          "text": "322.8'",
+          "href": "/Browse/Trees/269534/Details"
+        },
+        {
+          "text": "516''",
+          "href": "/Browse/Trees/297896/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Sequoiadendron giganteum",
+        "Giant Sequoia",
+        "284.8'",
+        "999''",
+        "33.0'"
+      ],
+      "links": [
+        {
+          "text": "Sequoiadendron giganteum",
+          "href": "/Browse/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+        },
+        {
+          "text": "Giant Sequoia",
+          "href": "/Browse/Species/Sequoiadendron%20giganteum%20(Giant%20Sequoia)/Details"
+        },
+        {
+          "text": "284.8'",
+          "href": "/Browse/Trees/318133/Details"
+        },
+        {
+          "text": "999''",
+          "href": "/Browse/Trees/268678/Details"
+        },
+        {
+          "text": "33.0'",
+          "href": "/Browse/Trees/255969/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Picea sitchensis",
+        "Sitka Spruce",
+        "277.0'",
+        "504''",
+        "88.0'"
+      ],
+      "links": [
+        {
+          "text": "Picea sitchensis",
+          "href": "/Browse/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+        },
+        {
+          "text": "Sitka Spruce",
+          "href": "/Browse/Species/Picea%20sitchensis%20(Sitka%20Spruce)/Details"
+        },
+        {
+          "text": "277.0'",
+          "href": "/Browse/Trees/239641/Details"
+        },
+        {
+          "text": "504''",
+          "href": "/Browse/Trees/269584/Details"
+        },
+        {
+          "text": "88.0'",
+          "href": "/Browse/Trees/269584/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Abies procera",
+        "Noble Fir",
+        "274.3'",
+        "314''",
+        "30.0'"
+      ],
+      "links": [
+        {
+          "text": "Abies procera",
+          "href": "/Browse/Species/Abies%20procera%20(Noble%20Fir)/Details"
+        },
+        {
+          "text": "Noble Fir",
+          "href": "/Browse/Species/Abies%20procera%20(Noble%20Fir)/Details"
+        },
+        {
+          "text": "274.3'",
+          "href": "/Browse/Trees/296619/Details"
+        },
+        {
+          "text": "314''",
+          "href": "/Browse/Trees/296624/Details"
+        },
+        {
+          "text": "30.0'",
+          "href": "/Browse/Trees/313205/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Tsuga heterophylla",
+        "Western Hemlock",
+        "272.0'",
+        "196''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Tsuga heterophylla",
+          "href": "/Browse/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+        },
+        {
+          "text": "Western Hemlock",
+          "href": "/Browse/Species/Tsuga%20heterophylla%20(Western%20Hemlock)/Details"
+        },
+        {
+          "text": "272.0'",
+          "href": "/Browse/Trees/269319/Details"
+        },
+        {
+          "text": "196''",
+          "href": "/Browse/Trees/296611/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pinus ponderosa var. benthamiana",
+        "Ponderosa Pine",
+        "268.7'",
+        "328''",
+        "70.0'"
+      ],
+      "links": [
+        {
+          "text": "Pinus ponderosa var. benthamiana",
+          "href": "/Browse/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+        },
+        {
+          "text": "Ponderosa Pine",
+          "href": "/Browse/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+        },
+        {
+          "text": "268.7'",
+          "href": "/Browse/Trees/269562/Details"
+        },
+        {
+          "text": "328''",
+          "href": "/Browse/Trees/268390/Details"
+        },
+        {
+          "text": "70.0'",
+          "href": "/Browse/Trees/268762/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Pinus lambertiana",
+        "Sugar Pine",
+        "266.0'",
+        "435''",
+        "77.0'"
+      ],
+      "links": [
+        {
+          "text": "Pinus lambertiana",
+          "href": "/Browse/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+        },
+        {
+          "text": "Sugar Pine",
+          "href": "/Browse/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+        },
+        {
+          "text": "266.0'",
+          "href": "/Browse/Trees/268995/Details"
+        },
+        {
+          "text": "435''",
+          "href": "/Browse/Trees/268816/Details"
+        },
+        {
+          "text": "77.0'",
+          "href": "/Browse/Trees/134986/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Abies concolor var. lowiana",
+        "White Fir",
+        "242.1'",
+        "219''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Abies concolor var. lowiana",
+          "href": "/Browse/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+        },
+        {
+          "text": "White Fir",
+          "href": "/Browse/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+        },
+        {
+          "text": "242.1'",
+          "href": "/Browse/Trees/274335/Details"
+        },
+        {
+          "text": "219''",
+          "href": "/Browse/Trees/320699/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Thuja plicata",
+        "Western Redcedar",
+        "232.2'",
+        "490''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Thuja plicata",
+          "href": "/Browse/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+        },
+        {
+          "text": "Western Redcedar",
+          "href": "/Browse/Species/Thuja%20plicata%20(Western%20Redcedar)/Details"
+        },
+        {
+          "text": "232.2'",
+          "href": "/Browse/Trees/274361/Details"
+        },
+        {
+          "text": "490''",
+          "href": "/Browse/Trees/239723/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pinus ponderosa var. ponderosa",
+        "Ponderosa Pine",
+        "229.0'",
+        "347''",
+        "48.0'"
+      ],
+      "links": [
+        {
+          "text": "Pinus ponderosa var. ponderosa",
+          "href": "/Browse/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+        },
+        {
+          "text": "Ponderosa Pine",
+          "href": "/Browse/Species/Pinus%20ponderosa%20var.%20ponderosa%20(Ponderosa%20Pine)/Details"
+        },
+        {
+          "text": "229.0'",
+          "href": "/Browse/Trees/296896/Details"
+        },
+        {
+          "text": "347''",
+          "href": "/Browse/Trees/239640/Details"
+        },
+        {
+          "text": "48.0'",
+          "href": "/Browse/Trees/78329/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Pinus monticola",
+        "Western White Pine",
+        "225.3'",
+        "311''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Pinus monticola",
+          "href": "/Browse/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+        },
+        {
+          "text": "Western White Pine",
+          "href": "/Browse/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+        },
+        {
+          "text": "225.3'",
+          "href": "/Browse/Trees/318047/Details"
+        },
+        {
+          "text": "311''",
+          "href": "/Browse/Trees/268757/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pinus ponderosa",
+        "Ponderosa Pine",
+        "224.0'",
+        "199''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Pinus ponderosa",
+          "href": "/Browse/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details"
+        },
+        {
+          "text": "Ponderosa Pine",
+          "href": "/Browse/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details"
+        },
+        {
+          "text": "224.0'",
+          "href": "/Browse/Trees/318121/Details"
+        },
+        {
+          "text": "199''",
+          "href": "/Browse/Trees/318115/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Abies grandis var. grandis",
+        "Grand Fir",
+        "223.4'",
+        "269''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Abies grandis var. grandis",
+          "href": "/Browse/Species/Abies%20grandis%20var.%20grandis%20(Grand%20Fir)/Details"
+        },
+        {
+          "text": "Grand Fir",
+          "href": "/Browse/Species/Abies%20grandis%20var.%20grandis%20(Grand%20Fir)/Details"
+        },
+        {
+          "text": "223.4'",
+          "href": "/Browse/Trees/296866/Details"
+        },
+        {
+          "text": "269''",
+          "href": "/Browse/Trees/296866/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Picea engelmannii var. engelmannii",
+        "Engelmann Spruce",
+        "223.0'",
+        "202''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Picea engelmannii var. engelmannii",
+          "href": "/Browse/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+        },
+        {
+          "text": "Engelmann Spruce",
+          "href": "/Browse/Species/Picea%20engelmannii%20var.%20engelmannii%20(Engelmann%20Spruce)/Details"
+        },
+        {
+          "text": "223.0'",
+          "href": "/Browse/Trees/274363/Details"
+        },
+        {
+          "text": "202''",
+          "href": "/Browse/Trees/274363/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Abies magnifica",
+        "California Red Fir",
+        "220.2'",
+        "304''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Abies magnifica",
+          "href": "/Browse/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+        },
+        {
+          "text": "California Red Fir",
+          "href": "/Browse/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+        },
+        {
+          "text": "220.2'",
+          "href": "/Browse/Trees/318128/Details"
+        },
+        {
+          "text": "304''",
+          "href": "/Browse/Trees/268388/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Abies grandis var. idahoensis",
+        "Grand Fir",
+        "215.6'",
+        "159''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Abies grandis var. idahoensis",
+          "href": "/Browse/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+        },
+        {
+          "text": "Grand Fir",
+          "href": "/Browse/Species/Abies%20grandis%20var.%20idahoensis%20(Grand%20Fir)/Details"
+        },
+        {
+          "text": "215.6'",
+          "href": "/Browse/Trees/296898/Details"
+        },
+        {
+          "text": "159''",
+          "href": "/Browse/Trees/296946/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Larix occidentalis",
+        "Western Larch",
+        "213.0'",
+        "280''",
+        "38.0'"
+      ],
+      "links": [
+        {
+          "text": "Larix occidentalis",
+          "href": "/Browse/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+        },
+        {
+          "text": "Western Larch",
+          "href": "/Browse/Species/Larix%20occidentalis%20(Western%20Larch)/Details"
+        },
+        {
+          "text": "213.0'",
+          "href": "/Browse/Trees/296925/Details"
+        },
+        {
+          "text": "280''",
+          "href": "/Browse/Trees/164460/Details"
+        },
+        {
+          "text": "38.0'",
+          "href": "/Browse/Trees/164460/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Abies concolor var. lowiana x abies grandis",
+        "Hybrid Fir",
+        "206.9'",
+        "129''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Abies concolor var. lowiana x abies grandis",
+          "href": "/Browse/Species/Abies%20concolor%20var.%20lowiana%20x%20abies%20grandis%20(Hybrid%20Fir)/Details"
+        },
+        {
+          "text": "Hybrid Fir",
+          "href": "/Browse/Species/Abies%20concolor%20var.%20lowiana%20x%20abies%20grandis%20(Hybrid%20Fir)/Details"
+        },
+        {
+          "text": "206.9'",
+          "href": "/Browse/Trees/297902/Details"
+        },
+        {
+          "text": "129''",
+          "href": "/Browse/Trees/297899/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Abies amabilis",
+        "Pacific Silver Fir",
+        "199.0'",
+        "160''",
+        "27.0'"
+      ],
+      "links": [
+        {
+          "text": "Abies amabilis",
+          "href": "/Browse/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+        },
+        {
+          "text": "Pacific Silver Fir",
+          "href": "/Browse/Species/Abies%20amabilis%20(Pacific%20Silver%20Fir)/Details"
+        },
+        {
+          "text": "199.0'",
+          "href": "/Browse/Trees/296630/Details"
+        },
+        {
+          "text": "160''",
+          "href": "/Browse/Trees/296617/Details"
+        },
+        {
+          "text": "27.0'",
+          "href": "/Browse/Trees/96892/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Pseudotsuga menziesii var. glauca",
+        "Rocky Mountain Douglas-Fir",
+        "192.6'",
+        "204''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Pseudotsuga menziesii var. glauca",
+          "href": "/Browse/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+        },
+        {
+          "text": "Rocky Mountain Douglas-Fir",
+          "href": "/Browse/Species/Pseudotsuga%20menziesii%20var.%20glauca%20(Rocky%20Mountain%20Douglas-Fir)/Details"
+        },
+        {
+          "text": "192.6'",
+          "href": "/Browse/Trees/318065/Details"
+        },
+        {
+          "text": "204''",
+          "href": "/Browse/Trees/242476/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Ulmus mexicana",
+        "Mexican Elm",
+        "191.9'",
+        "202''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Ulmus mexicana",
+          "href": "/Browse/Species/Ulmus%20mexicana%20(Mexican%20Elm)/Details"
+        },
+        {
+          "text": "Mexican Elm",
+          "href": "/Browse/Species/Ulmus%20mexicana%20(Mexican%20Elm)/Details"
+        },
+        {
+          "text": "191.9'",
+          "href": "/Browse/Trees/253281/Details"
+        },
+        {
+          "text": "202''",
+          "href": "/Browse/Trees/253281/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Liriodendron tulipifera",
+        "Tuliptree",
+        "191.2'",
+        "324''",
+        "143.5'"
+      ],
+      "links": [
+        {
+          "text": "Liriodendron tulipifera",
+          "href": "/Browse/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+        },
+        {
+          "text": "Tuliptree",
+          "href": "/Browse/Species/Liriodendron%20tulipifera%20(Tuliptree)/Details"
+        },
+        {
+          "text": "191.2'",
+          "href": "/Browse/Trees/252473/Details"
+        },
+        {
+          "text": "324''",
+          "href": "/Browse/Trees/252309/Details"
+        },
+        {
+          "text": "143.5'",
+          "href": "/Browse/Trees/252353/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Pinus canariensis",
+        "Canary Island Pine",
+        "187.0'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Pinus canariensis",
+          "href": "/Browse/Species/Pinus%20canariensis%20(Canary%20Island%20Pine)/Details"
+        },
+        {
+          "text": "Canary Island Pine",
+          "href": "/Browse/Species/Pinus%20canariensis%20(Canary%20Island%20Pine)/Details"
+        },
+        {
+          "text": "187.0'",
+          "href": "/Browse/Trees/283178/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Chamaecyparis lawsoniana",
+        "Port Orford Cedar",
+        "186.1'",
+        "252''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Chamaecyparis lawsoniana",
+          "href": "/Browse/Species/Chamaecyparis%20lawsoniana%20(Port%20Orford%20Cedar)/Details"
+        },
+        {
+          "text": "Port Orford Cedar",
+          "href": "/Browse/Species/Chamaecyparis%20lawsoniana%20(Port%20Orford%20Cedar)/Details"
+        },
+        {
+          "text": "186.1'",
+          "href": "/Browse/Trees/297898/Details"
+        },
+        {
+          "text": "252''",
+          "href": "/Browse/Trees/297897/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pinus strobus",
+        "Eastern White Pine",
+        "185.8'",
+        "193''",
+        "77.0'"
+      ],
+      "links": [
+        {
+          "text": "Pinus strobus",
+          "href": "/Browse/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+        },
+        {
+          "text": "Eastern White Pine",
+          "href": "/Browse/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+        },
+        {
+          "text": "185.8'",
+          "href": "/Browse/Trees/235208/Details"
+        },
+        {
+          "text": "193''",
+          "href": "/Browse/Trees/263778/Details"
+        },
+        {
+          "text": "77.0'",
+          "href": "/Browse/Trees/163347/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Picea pungens",
+        "Blue Spruce",
+        "180.6'",
+        "158''",
+        "33.5'"
+      ],
+      "links": [
+        {
+          "text": "Picea pungens",
+          "href": "/Browse/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+        },
+        {
+          "text": "Blue Spruce",
+          "href": "/Browse/Species/Picea%20pungens%20(Blue%20Spruce)/Details"
+        },
+        {
+          "text": "180.6'",
+          "href": "/Browse/Trees/242247/Details"
+        },
+        {
+          "text": "158''",
+          "href": "/Browse/Trees/242478/Details"
+        },
+        {
+          "text": "33.5'",
+          "href": "/Browse/Trees/242479/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Populus balsamifera ssp. trichocarpa",
+        "Black Cottonwood",
+        "180.3'",
+        "189''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Populus balsamifera ssp. trichocarpa",
+          "href": "/Browse/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+        },
+        {
+          "text": "Black Cottonwood",
+          "href": "/Browse/Species/Populus%20balsamifera%20ssp.%20trichocarpa%20(Black%20Cottonwood)/Details"
+        },
+        {
+          "text": "180.3'",
+          "href": "/Browse/Trees/269597/Details"
+        },
+        {
+          "text": "189''",
+          "href": "/Browse/Trees/216297/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Aesculus flava",
+        "Yellow Buckeye",
+        "177.7'",
+        "217''",
+        "74.0'"
+      ],
+      "links": [
+        {
+          "text": "Aesculus flava",
+          "href": "/Browse/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+        },
+        {
+          "text": "Yellow Buckeye",
+          "href": "/Browse/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+        },
+        {
+          "text": "177.7'",
+          "href": "/Browse/Trees/312032/Details"
+        },
+        {
+          "text": "217''",
+          "href": "/Browse/Trees/229963/Details"
+        },
+        {
+          "text": "74.0'",
+          "href": "/Browse/Trees/313247/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Abies lowiana",
+        "Sierra White Fir",
+        "173.6'",
+        "211''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Abies lowiana",
+          "href": "/Browse/Species/Abies%20lowiana%20(Sierra%20White%20Fir)/Details"
+        },
+        {
+          "text": "Sierra White Fir",
+          "href": "/Browse/Species/Abies%20lowiana%20(Sierra%20White%20Fir)/Details"
+        },
+        {
+          "text": "173.6'",
+          "href": "/Browse/Trees/241858/Details"
+        },
+        {
+          "text": "211''",
+          "href": "/Browse/Trees/241858/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Tsuga canadensis",
+        "Eastern Hemlock",
+        "173.1'",
+        "209''",
+        "80.0'"
+      ],
+      "links": [
+        {
+          "text": "Tsuga canadensis",
+          "href": "/Browse/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+        },
+        {
+          "text": "Eastern Hemlock",
+          "href": "/Browse/Species/Tsuga%20canadensis%20(Eastern%20Hemlock)/Details"
+        },
+        {
+          "text": "173.1'",
+          "href": "/Browse/Trees/230379/Details"
+        },
+        {
+          "text": "209''",
+          "href": "/Browse/Trees/229933/Details"
+        },
+        {
+          "text": "80.0'",
+          "href": "/Browse/Trees/274322/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Robinia pseudoacacia",
+        "Black Locust",
+        "171.8'",
+        "173''",
+        "91.5'"
+      ],
+      "links": [
+        {
+          "text": "Robinia pseudoacacia",
+          "href": "/Browse/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+        },
+        {
+          "text": "Black Locust",
+          "href": "/Browse/Species/Robinia%20pseudoacacia%20(Black%20Locust)/Details"
+        },
+        {
+          "text": "171.8'",
+          "href": "/Browse/Trees/229092/Details"
+        },
+        {
+          "text": "173''",
+          "href": "/Browse/Trees/312145/Details"
+        },
+        {
+          "text": "91.5'",
+          "href": "/Browse/Trees/313119/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Carya ovata",
+        "Shagbark Hickory",
+        "170.3'",
+        "163''",
+        "101.0'"
+      ],
+      "links": [
+        {
+          "text": "Carya ovata",
+          "href": "/Browse/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+        },
+        {
+          "text": "Shagbark Hickory",
+          "href": "/Browse/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+        },
+        {
+          "text": "170.3'",
+          "href": "/Browse/Trees/323638/Details"
+        },
+        {
+          "text": "163''",
+          "href": "/Browse/Trees/257950/Details"
+        },
+        {
+          "text": "101.0'",
+          "href": "/Browse/Trees/243222/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Abies grandis",
+        "Grand Fir",
+        "170.1'",
+        "132''",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Abies grandis",
+          "href": "/Browse/Species/Abies%20grandis%20(Grand%20Fir)/Details"
+        },
+        {
+          "text": "Grand Fir",
+          "href": "/Browse/Species/Abies%20grandis%20(Grand%20Fir)/Details"
+        },
+        {
+          "text": "170.1'",
+          "href": "/Browse/Trees/164257/Details"
+        },
+        {
+          "text": "132''",
+          "href": "/Browse/Trees/164257/Details"
+        },
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Eucalyptus globulus",
+        "Tasmanian Bluegum",
+        "169.0'",
+        "-",
+        "-"
+      ],
+      "links": [
+        {
+          "text": "Eucalyptus globulus",
+          "href": "/Browse/Species/Eucalyptus%20globulus%20(Tasmanian%20Bluegum)/Details"
+        },
+        {
+          "text": "Tasmanian Bluegum",
+          "href": "/Browse/Species/Eucalyptus%20globulus%20(Tasmanian%20Bluegum)/Details"
+        },
+        {
+          "text": "169.0'",
+          "href": "/Browse/Trees/234072/Details"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "cells": [
+        "Pinus taeda",
+        "Loblolly Pine",
+        "168.7'",
+        "189''",
+        "93.0'"
+      ],
+      "links": [
+        {
+          "text": "Pinus taeda",
+          "href": "/Browse/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+        },
+        {
+          "text": "Loblolly Pine",
+          "href": "/Browse/Species/Pinus%20taeda%20(Loblolly%20Pine)/Details"
+        },
+        {
+          "text": "168.7'",
+          "href": "/Browse/Trees/242678/Details"
+        },
+        {
+          "text": "189''",
+          "href": "/Browse/Trees/173485/Details"
+        },
+        {
+          "text": "93.0'",
+          "href": "/Browse/Trees/242678/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Carya glabra",
+        "Pignut Hickory",
+        "167.0'",
+        "199''",
+        "90.0'"
+      ],
+      "links": [
+        {
+          "text": "Carya glabra",
+          "href": "/Browse/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+        },
+        {
+          "text": "Pignut Hickory",
+          "href": "/Browse/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+        },
+        {
+          "text": "167.0'",
+          "href": "/Browse/Trees/252341/Details"
+        },
+        {
+          "text": "199''",
+          "href": "/Browse/Trees/251166/Details"
+        },
+        {
+          "text": "90.0'",
+          "href": "/Browse/Trees/166955/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Quercus rubra var. rubra",
+        "Northern Red Oak",
+        "167.0'",
+        "287''",
+        "106.8'"
+      ],
+      "links": [
+        {
+          "text": "Quercus rubra var. rubra",
+          "href": "/Browse/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+        },
+        {
+          "text": "Northern Red Oak",
+          "href": "/Browse/Species/Quercus%20rubra%20var.%20rubra%20(Northern%20Red%20Oak)/Details"
+        },
+        {
+          "text": "167.0'",
+          "href": "/Browse/Trees/323704/Details"
+        },
+        {
+          "text": "287''",
+          "href": "/Browse/Trees/312035/Details"
+        },
+        {
+          "text": "106.8'",
+          "href": "/Browse/Trees/312062/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Carya cordiformis",
+        "Bitternut Hickory",
+        "166.6'",
+        "208''",
+        "98.3'"
+      ],
+      "links": [
+        {
+          "text": "Carya cordiformis",
+          "href": "/Browse/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+        },
+        {
+          "text": "Bitternut Hickory",
+          "href": "/Browse/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+        },
+        {
+          "text": "166.6'",
+          "href": "/Browse/Trees/322129/Details"
+        },
+        {
+          "text": "208''",
+          "href": "/Browse/Trees/313209/Details"
+        },
+        {
+          "text": "98.3'",
+          "href": "/Browse/Trees/313209/Details"
+        }
+      ]
+    },
+    {
+      "cells": [
+        "Picea abies",
+        "Norway Spruce",
+        "164.7'",
+        "174''",
+        "67.5'"
+      ],
+      "links": [
+        {
+          "text": "Picea abies",
+          "href": "/Browse/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+        },
+        {
+          "text": "Norway Spruce",
+          "href": "/Browse/Species/Picea%20abies%20(Norway%20Spruce)/Details"
+        },
+        {
+          "text": "164.7'",
+          "href": "/Browse/Trees/283478/Details"
+        },
+        {
+          "text": "174''",
+          "href": "/Browse/Trees/283479/Details"
+        },
+        {
+          "text": "67.5'",
+          "href": "/Browse/Trees/313138/Details"
+        }
+      ]
+    }
+  ],
+  "pageInfo": "Showing 1 to 40 of 764 entries",
+  "hasPreviousPage": false,
+  "hasNextPage": true
+}

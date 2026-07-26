@@ -1,0 +1,168 @@
+{
+  "botanicalName": "Symplocos tinctoria",
+  "commonName": "Common Sweetleaf",
+  "global": {
+    "maxHeight": {
+      "text": "56.9'",
+      "href": "/Browse/Trees/251060/Details"
+    },
+    "maxGirth": {
+      "text": "36''",
+      "href": "/Browse/Trees/142270/Details"
+    },
+    "maxCrownSpread": {
+      "text": "36.0'",
+      "href": "/Browse/Trees/142270/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alabama",
+          "46.9'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alabama",
+            "href": "/Browse/States/1/Details"
+          },
+          {
+            "text": "46.9'",
+            "href": "/Browse/Trees/253884/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/253884/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Arkansas",
+          "56.0'",
+          "33''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Arkansas",
+            "href": "/Browse/States/2/Details"
+          },
+          {
+            "text": "56.0'",
+            "href": "/Browse/Trees/241705/Details"
+          },
+          {
+            "text": "33''",
+            "href": "/Browse/Trees/241707/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Mississippi",
+          "56.9'",
+          "30''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "56.9'",
+            "href": "/Browse/Trees/251060/Details"
+          },
+          {
+            "text": "30''",
+            "href": "/Browse/Trees/251060/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "32.0'",
+          "36''",
+          "36.0'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "32.0'",
+            "href": "/Browse/Trees/142270/Details"
+          },
+          {
+            "text": "36''",
+            "href": "/Browse/Trees/142270/Details"
+          },
+          {
+            "text": "36.0'",
+            "href": "/Browse/Trees/142270/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "49.5'",
+          "29''",
+          "26.0'"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "49.5'",
+            "href": "/Browse/Trees/238591/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/236773/Details"
+          },
+          {
+            "text": "26.0'",
+            "href": "/Browse/Trees/236773/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

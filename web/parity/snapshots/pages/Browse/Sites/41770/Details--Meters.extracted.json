@@ -1,0 +1,185 @@
+{
+  "siteId": 41770,
+  "summary": {
+    "Name": "Marietta Street Trees",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "01/01/2009",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2009",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carpinus caroliniana ssp. virginiana",
+          "American Hornbeam",
+          "9.72 m",
+          "84 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carpinus caroliniana ssp. virginiana",
+            "href": "/Browse/Sites/41770/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "American Hornbeam",
+            "href": "/Browse/Sites/41770/Species/Carpinus%20caroliniana%20ssp.%20virginiana%20(American%20Hornbeam)/Details"
+          },
+          {
+            "text": "9.72 m",
+            "href": "/Browse/Trees/272998/Details"
+          },
+          {
+            "text": "84 cm",
+            "href": "/Browse/Trees/272998/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus acutissima",
+          "Sawtooth Oak",
+          "12.22 m",
+          "147 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus acutissima",
+            "href": "/Browse/Sites/41770/Species/Quercus%20acutissima%20(Sawtooth%20Oak)/Details"
+          },
+          {
+            "text": "Sawtooth Oak",
+            "href": "/Browse/Sites/41770/Species/Quercus%20acutissima%20(Sawtooth%20Oak)/Details"
+          },
+          {
+            "text": "12.22 m",
+            "href": "/Browse/Trees/273000/Details"
+          },
+          {
+            "text": "147 cm",
+            "href": "/Browse/Trees/273000/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus imbricaria",
+          "Shingle Oak",
+          "16.22 m",
+          "147 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus imbricaria",
+            "href": "/Browse/Sites/41770/Species/Quercus%20imbricaria%20(Shingle%20Oak)/Details"
+          },
+          {
+            "text": "Shingle Oak",
+            "href": "/Browse/Sites/41770/Species/Quercus%20imbricaria%20(Shingle%20Oak)/Details"
+          },
+          {
+            "text": "16.22 m",
+            "href": "/Browse/Trees/273001/Details"
+          },
+          {
+            "text": "147 cm",
+            "href": "/Browse/Trees/273001/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Styphnolobium japonicum",
+          "Japanese Pagoda Tree",
+          "11.31 m",
+          "155 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Styphnolobium japonicum",
+            "href": "/Browse/Sites/41770/Species/Styphnolobium%20japonicum%20(Japanese%20Pagoda%20Tree)/Details"
+          },
+          {
+            "text": "Japanese Pagoda Tree",
+            "href": "/Browse/Sites/41770/Species/Styphnolobium%20japonicum%20(Japanese%20Pagoda%20Tree)/Details"
+          },
+          {
+            "text": "11.31 m",
+            "href": "/Browse/Trees/272999/Details"
+          },
+          {
+            "text": "155 cm",
+            "href": "/Browse/Trees/272999/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 24.939, -081 27.260",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Washington"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

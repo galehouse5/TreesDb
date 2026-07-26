@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Cercidiphyllum japonicum",
+  "commonName": "Katsura Tree",
+  "global": {
+    "maxHeight": {
+      "text": "121.4'",
+      "href": "/Browse/Trees/281901/Details"
+    },
+    "maxGirth": {
+      "text": "111''",
+      "href": "/Browse/Trees/281901/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "121.4'",
+          "111''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "121.4'",
+            "href": "/Browse/Trees/281901/Details"
+          },
+          {
+            "text": "111''",
+            "href": "/Browse/Trees/281901/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

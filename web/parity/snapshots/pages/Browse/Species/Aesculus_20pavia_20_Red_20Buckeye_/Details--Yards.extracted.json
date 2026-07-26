@@ -1,0 +1,112 @@
+{
+  "botanicalName": "Aesculus pavia",
+  "commonName": "Red Buckeye",
+  "global": {
+    "maxHeight": {
+      "text": "10.43 yd",
+      "href": "/Browse/Trees/234760/Details"
+    },
+    "maxGirth": {
+      "text": "19''",
+      "href": "/Browse/Trees/222952/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Georgia",
+          "10.43 yd",
+          "17''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Georgia",
+            "href": "/Browse/States/9/Details"
+          },
+          {
+            "text": "10.43 yd",
+            "href": "/Browse/Trees/234760/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/234760/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "10.23 yd",
+          "13''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "10.23 yd",
+            "href": "/Browse/Trees/238588/Details"
+          },
+          {
+            "text": "13''",
+            "href": "/Browse/Trees/238588/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "6.50 yd",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "6.50 yd",
+            "href": "/Browse/Trees/222952/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/222952/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

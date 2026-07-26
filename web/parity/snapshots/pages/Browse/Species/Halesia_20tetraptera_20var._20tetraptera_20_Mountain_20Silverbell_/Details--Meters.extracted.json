@@ -1,0 +1,73 @@
+{
+  "botanicalName": "Halesia tetraptera var. tetraptera",
+  "commonName": "Mountain Silverbell",
+  "global": {
+    "maxHeight": {
+      "text": "23.04 m",
+      "href": "/Browse/Trees/297272/Details"
+    },
+    "maxGirth": {
+      "text": "114 cm",
+      "href": "/Browse/Trees/313070/Details"
+    },
+    "maxCrownSpread": {
+      "text": "9.14 m",
+      "href": "/Browse/Trees/313070/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "West Virginia",
+          "23.04 m",
+          "114 cm",
+          "9.14 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "23.04 m",
+            "href": "/Browse/Trees/297272/Details"
+          },
+          {
+            "text": "114 cm",
+            "href": "/Browse/Trees/313070/Details"
+          },
+          {
+            "text": "9.14 m",
+            "href": "/Browse/Trees/313070/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

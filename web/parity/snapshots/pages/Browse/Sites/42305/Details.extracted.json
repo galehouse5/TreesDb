@@ -1,0 +1,241 @@
+{
+  "siteId": 42305,
+  "summary": {
+    "Name": "Tioga Pass Rd.",
+    "RHI5": "174.38",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.61",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "07/15/2024",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "07/15/2024",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. lowiana",
+          "White Fir",
+          "209.2'",
+          "194''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. lowiana",
+            "href": "/Browse/Sites/42305/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/42305/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+          },
+          {
+            "text": "209.2'",
+            "href": "/Browse/Trees/318119/Details"
+          },
+          {
+            "text": "194''",
+            "href": "/Browse/Trees/318119/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Abies magnifica",
+          "California Red Fir",
+          "198.3'",
+          "231''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies magnifica",
+            "href": "/Browse/Sites/42305/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+          },
+          {
+            "text": "California Red Fir",
+            "href": "/Browse/Sites/42305/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+          },
+          {
+            "text": "198.3'",
+            "href": "/Browse/Trees/318118/Details"
+          },
+          {
+            "text": "231''",
+            "href": "/Browse/Trees/318118/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. murrayana",
+          "Sierra Lodgepole Pine",
+          "124.2'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. murrayana",
+            "href": "/Browse/Sites/42305/Species/Pinus%20contorta%20var.%20murrayana%20(Sierra%20Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Sierra Lodgepole Pine",
+            "href": "/Browse/Sites/42305/Species/Pinus%20contorta%20var.%20murrayana%20(Sierra%20Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "124.2'",
+            "href": "/Browse/Trees/318114/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/318113/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus monticola",
+          "Western White Pine",
+          "135.1'",
+          "179''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus monticola",
+            "href": "/Browse/Sites/42305/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "Western White Pine",
+            "href": "/Browse/Sites/42305/Species/Pinus%20monticola%20(Western%20White%20Pine)/Details"
+          },
+          {
+            "text": "135.1'",
+            "href": "/Browse/Trees/318112/Details"
+          },
+          {
+            "text": "179''",
+            "href": "/Browse/Trees/318112/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa",
+          "Ponderosa Pine",
+          "205.1'",
+          "199''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa",
+            "href": "/Browse/Sites/42305/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/42305/Species/Pinus%20ponderosa%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "205.1'",
+            "href": "/Browse/Trees/318115/Details"
+          },
+          {
+            "text": "199''",
+            "href": "/Browse/Trees/318115/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tsuga mertensiana",
+          "Mountain Hemlock",
+          "111.3'",
+          "133''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tsuga mertensiana",
+            "href": "/Browse/Sites/42305/Species/Tsuga%20mertensiana%20(Mountain%20Hemlock)/Details"
+          },
+          {
+            "text": "Mountain Hemlock",
+            "href": "/Browse/Sites/42305/Species/Tsuga%20mertensiana%20(Mountain%20Hemlock)/Details"
+          },
+          {
+            "text": "111.3'",
+            "href": "/Browse/Trees/318120/Details"
+          },
+          {
+            "text": "133''",
+            "href": "/Browse/Trees/318120/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "37 50.935, -119 37.019",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Mariposa"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

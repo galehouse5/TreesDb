@@ -1,0 +1,70 @@
+{
+  "treeId": 320546,
+  "botanicalName": {
+    "text": "Quercus alba",
+    "href": "/Browse/Sites/42343/Species/Quercus%20alba%20(White%20Oak)/Details"
+  },
+  "commonName": {
+    "text": "White Oak",
+    "href": "/Browse/Sites/42343/Species/Quercus%20alba%20(White%20Oak)/Details"
+  },
+  "details": {
+    "Height": "37.06 m",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "198 cm",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "51.38",
+    "ENTSPTS": "790.40",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.06",
+    "Champion points (abbreviated)": "199.60",
+    "Diameter": "63 cm",
+    "Conical volume": "3.86 m³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 11/21/2024",
+      "summary": {
+        "Height": "37.06 m",
+        "Girth": "198 cm"
+      },
+      "details": {
+        "Botanical name": "Quercus alba",
+        "Common name": "White Oak",
+        "Height": "37.06 m",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "198 cm",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "51.38",
+        "ENTSPTS": "790.40",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.06",
+        "Champion points (abbreviated)": "199.60",
+        "Diameter": "63 cm",
+        "Conical volume": "3.86 m³",
+        "General comments": "(none)"
+      },
+      "measurers": "Elijah Whitcomb"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "35 54.069, -084 59.989",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "Cumberland Mountain State Park",
+      "href": "/Browse/Sites/42343/Details"
+    },
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Cumberland"
+    },
+    "state": {
+      "text": "Tennessee (US)",
+      "href": "/Browse/States/40/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

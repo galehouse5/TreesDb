@@ -1,0 +1,325 @@
+{
+  "siteId": 41265,
+  "summary": {
+    "Name": "Alabama Single Tree Sites",
+    "RHI5": "91.26",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "15.03",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "10",
+    "Last measurement date": "01/01/2001",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/01/2001",
+      "visitors": "Various Various",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya illinoinensis",
+          "Pecan",
+          "127.3'",
+          "197''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya illinoinensis",
+            "href": "/Browse/Sites/41265/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "Pecan",
+            "href": "/Browse/Sites/41265/Species/Carya%20illinoinensis%20(Pecan)/Details"
+          },
+          {
+            "text": "127.3'",
+            "href": "/Browse/Trees/253883/Details"
+          },
+          {
+            "text": "197''",
+            "href": "/Browse/Trees/253883/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Firmiana simplex",
+          "Chinese Parasoltree",
+          "30.0'",
+          "19''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Firmiana simplex",
+            "href": "/Browse/Sites/41265/Species/Firmiana%20simplex%20(Chinese%20Parasoltree)/Details"
+          },
+          {
+            "text": "Chinese Parasoltree",
+            "href": "/Browse/Sites/41265/Species/Firmiana%20simplex%20(Chinese%20Parasoltree)/Details"
+          },
+          {
+            "text": "30.0'",
+            "href": "/Browse/Trees/253886/Details"
+          },
+          {
+            "text": "19''",
+            "href": "/Browse/Trees/253886/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia grandiflora",
+          "Southern Magnolia",
+          "69.5'",
+          "226''",
+          "87.9'"
+        ],
+        "links": [
+          {
+            "text": "Magnolia grandiflora",
+            "href": "/Browse/Sites/41265/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "Southern Magnolia",
+            "href": "/Browse/Sites/41265/Species/Magnolia%20grandiflora%20(Southern%20Magnolia)/Details"
+          },
+          {
+            "text": "69.5'",
+            "href": "/Browse/Trees/253890/Details"
+          },
+          {
+            "text": "226''",
+            "href": "/Browse/Trees/253885/Details"
+          },
+          {
+            "text": "87.9'",
+            "href": "/Browse/Trees/253885/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pinus palustris",
+          "Longleaf Pine",
+          "82.5'",
+          "93''",
+          "51.0'"
+        ],
+        "links": [
+          {
+            "text": "Pinus palustris",
+            "href": "/Browse/Sites/41265/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "Longleaf Pine",
+            "href": "/Browse/Sites/41265/Species/Pinus%20palustris%20(Longleaf%20Pine)/Details"
+          },
+          {
+            "text": "82.5'",
+            "href": "/Browse/Trees/253888/Details"
+          },
+          {
+            "text": "93''",
+            "href": "/Browse/Trees/253888/Details"
+          },
+          {
+            "text": "51.0'",
+            "href": "/Browse/Trees/253888/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Platanus occidentalis",
+          "American Sycamore",
+          "121.5'",
+          "193''",
+          "88.0'"
+        ],
+        "links": [
+          {
+            "text": "Platanus occidentalis",
+            "href": "/Browse/Sites/41265/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "American Sycamore",
+            "href": "/Browse/Sites/41265/Species/Platanus%20occidentalis%20(American%20Sycamore)/Details"
+          },
+          {
+            "text": "121.5'",
+            "href": "/Browse/Trees/253882/Details"
+          },
+          {
+            "text": "193''",
+            "href": "/Browse/Trees/253882/Details"
+          },
+          {
+            "text": "88.0'",
+            "href": "/Browse/Trees/253882/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus falcata",
+          "Southern Red Oak",
+          "-",
+          "193''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus falcata",
+            "href": "/Browse/Sites/41265/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Southern Red Oak",
+            "href": "/Browse/Sites/41265/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          null,
+          {
+            "text": "193''",
+            "href": "/Browse/Trees/253881/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Symplocos tinctoria",
+          "Common Sweetleaf",
+          "46.9'",
+          "34''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Symplocos tinctoria",
+            "href": "/Browse/Sites/41265/Species/Symplocos%20tinctoria%20(Common%20Sweetleaf)/Details"
+          },
+          {
+            "text": "Common Sweetleaf",
+            "href": "/Browse/Sites/41265/Species/Symplocos%20tinctoria%20(Common%20Sweetleaf)/Details"
+          },
+          {
+            "text": "46.9'",
+            "href": "/Browse/Trees/253884/Details"
+          },
+          {
+            "text": "34''",
+            "href": "/Browse/Trees/253884/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Taxus spp.",
+          "Yew",
+          "55.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Taxus spp.",
+            "href": "/Browse/Sites/41265/Species/Taxus%20spp.%20(Yew)/Details"
+          },
+          {
+            "text": "Yew",
+            "href": "/Browse/Sites/41265/Species/Taxus%20spp.%20(Yew)/Details"
+          },
+          {
+            "text": "55.5'",
+            "href": "/Browse/Trees/253887/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Vaccinium arboreum",
+          "Farkleberry",
+          "28.7'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Vaccinium arboreum",
+            "href": "/Browse/Sites/41265/Species/Vaccinium%20arboreum%20(Farkleberry)/Details"
+          },
+          {
+            "text": "Farkleberry",
+            "href": "/Browse/Sites/41265/Species/Vaccinium%20arboreum%20(Farkleberry)/Details"
+          },
+          {
+            "text": "28.7'",
+            "href": "/Browse/Trees/253889/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "32 22.647, -086 18.019",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Montgomery"
+    },
+    "state": {
+      "text": "Alabama (US)",
+      "href": "/Browse/States/1/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,269 @@
+{
+  "siteId": 41115,
+  "summary": {
+    "Name": "Cooper Creek",
+    "RHI5": "133.18",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "7.97",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "18",
+    "Last measurement date": "03/18/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were measured at three different sites near Cooper Creek. See the trip report for a description of each site. Each tree listed hereon will be designated by site under comments."
+  },
+  "visits": [
+    {
+      "visited": "03/18/2013",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees were measured at three different sites near Cooper Creek. See the trip report for a description of each site. Each tree listed hereon will be designated by site under comments."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "132.5'",
+          "86''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/41115/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/41115/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "132.5'",
+            "href": "/Browse/Trees/249667/Details"
+          },
+          {
+            "text": "86''",
+            "href": "/Browse/Trees/249667/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus strobus",
+          "Eastern White Pine",
+          "168.9'",
+          "139''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus strobus",
+            "href": "/Browse/Sites/41115/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "Eastern White Pine",
+            "href": "/Browse/Sites/41115/Species/Pinus%20strobus%20(Eastern%20White%20Pine)/Details"
+          },
+          {
+            "text": "168.9'",
+            "href": "/Browse/Trees/249678/Details"
+          },
+          {
+            "text": "139''",
+            "href": "/Browse/Trees/249677/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "125.4'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/41115/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/41115/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "125.4'",
+            "href": "/Browse/Trees/249680/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/249679/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus falcata",
+          "Southern Red Oak",
+          "114.0'",
+          "72''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus falcata",
+            "href": "/Browse/Sites/41115/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Southern Red Oak",
+            "href": "/Browse/Sites/41115/Species/Quercus%20falcata%20(Southern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "114.0'",
+            "href": "/Browse/Trees/249682/Details"
+          },
+          {
+            "text": "72''",
+            "href": "/Browse/Trees/249682/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus velutina",
+          "Black Oak",
+          "125.1'",
+          "97''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus velutina",
+            "href": "/Browse/Sites/41115/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "Black Oak",
+            "href": "/Browse/Sites/41115/Species/Quercus%20velutina%20(Black%20Oak)/Details"
+          },
+          {
+            "text": "125.1'",
+            "href": "/Browse/Trees/249681/Details"
+          },
+          {
+            "text": "97''",
+            "href": "/Browse/Trees/249681/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Rhododendron maximum",
+          "Great Laurel",
+          "28.5'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Rhododendron maximum",
+            "href": "/Browse/Sites/41115/Species/Rhododendron%20maximum%20(Great%20Laurel)/Details"
+          },
+          {
+            "text": "Great Laurel",
+            "href": "/Browse/Sites/41115/Species/Rhododendron%20maximum%20(Great%20Laurel)/Details"
+          },
+          {
+            "text": "28.5'",
+            "href": "/Browse/Trees/249684/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/249684/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Stewartia ovata",
+          "Mountain Camellia",
+          "25.3'",
+          "7''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Stewartia ovata",
+            "href": "/Browse/Sites/41115/Species/Stewartia%20ovata%20(Mountain%20Camellia)/Details"
+          },
+          {
+            "text": "Mountain Camellia",
+            "href": "/Browse/Sites/41115/Species/Stewartia%20ovata%20(Mountain%20Camellia)/Details"
+          },
+          {
+            "text": "25.3'",
+            "href": "/Browse/Trees/249683/Details"
+          },
+          {
+            "text": "7''",
+            "href": "/Browse/Trees/249683/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 7 of 7 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 45.761, -084 04.382",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Union"
+    },
+    "state": {
+      "text": "Georgia (US)",
+      "href": "/Browse/States/9/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

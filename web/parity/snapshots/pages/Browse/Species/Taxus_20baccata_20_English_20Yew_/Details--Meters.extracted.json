@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Taxus baccata",
+  "commonName": "English Yew",
+  "global": {
+    "maxHeight": {
+      "text": "16.52 m",
+      "href": "/Browse/Trees/226066/Details"
+    },
+    "maxGirth": {
+      "text": "335 cm",
+      "href": "/Browse/Trees/171032/Details"
+    },
+    "maxCrownSpread": {
+      "text": "14.63 m",
+      "href": "/Browse/Trees/171032/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Andalusia",
+          "12.83 m",
+          "135 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Andalusia",
+            "href": "/Browse/States/124/Details"
+          },
+          {
+            "text": "12.83 m",
+            "href": "/Browse/Trees/274941/Details"
+          },
+          {
+            "text": "135 cm",
+            "href": "/Browse/Trees/274941/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Budapest",
+          "9.08 m",
+          "45 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Budapest",
+            "href": "/Browse/States/207/Details"
+          },
+          {
+            "text": "9.08 m",
+            "href": "/Browse/Trees/283218/Details"
+          },
+          {
+            "text": "45 cm",
+            "href": "/Browse/Trees/283218/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New Jersey",
+          "16.40 m",
+          "335 cm",
+          "14.63 m"
+        ],
+        "links": [
+          {
+            "text": "New Jersey",
+            "href": "/Browse/States/29/Details"
+          },
+          {
+            "text": "16.40 m",
+            "href": "/Browse/Trees/171032/Details"
+          },
+          {
+            "text": "335 cm",
+            "href": "/Browse/Trees/171032/Details"
+          },
+          {
+            "text": "14.63 m",
+            "href": "/Browse/Trees/171032/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "16.52 m",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "16.52 m",
+            "href": "/Browse/Trees/226066/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Bohemian Region",
+          "9.51 m",
+          "231 cm",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Bohemian Region",
+            "href": "/Browse/States/258/Details"
+          },
+          {
+            "text": "9.51 m",
+            "href": "/Browse/Trees/284685/Details"
+          },
+          {
+            "text": "231 cm",
+            "href": "/Browse/Trees/284685/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "13.23 m",
+          "173 cm",
+          "9.30 m"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "13.23 m",
+            "href": "/Browse/Trees/203605/Details"
+          },
+          {
+            "text": "173 cm",
+            "href": "/Browse/Trees/203605/Details"
+          },
+          {
+            "text": "9.30 m",
+            "href": "/Browse/Trees/273099/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

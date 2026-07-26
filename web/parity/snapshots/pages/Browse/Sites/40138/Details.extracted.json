@@ -1,0 +1,353 @@
+{
+  "siteId": 40138,
+  "summary": {
+    "Name": "Ricketts Glen State Park",
+    "RHI5": "148.64",
+    "RHI10": "139.57",
+    "RHI20": "121.49",
+    "RGI5": "10.23",
+    "RGI10": "9.02",
+    "RGI20": "7.40",
+    "Trees measured": "49",
+    "Last measurement date": "12/31/2013",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees measured were probably made throughout the park and represent maximum heights of 50 species."
+  },
+  "visits": [
+    {
+      "visited": "12/31/2013",
+      "visitors": "Rick Koval",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees measured were probably made throughout the park and represent maximum heights of 50 species."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer pensylvanicum",
+          "Striped Maple",
+          "56.8'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer pensylvanicum",
+            "href": "/Browse/Sites/40138/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "Striped Maple",
+            "href": "/Browse/Sites/40138/Species/Acer%20pensylvanicum%20(Striped%20Maple)/Details"
+          },
+          {
+            "text": "56.8'",
+            "href": "/Browse/Trees/222058/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/222058/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "116.7'",
+          "84''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40138/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40138/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "116.7'",
+            "href": "/Browse/Trees/222042/Details"
+          },
+          {
+            "text": "84''",
+            "href": "/Browse/Trees/222042/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharum var. saccharum",
+          "Sugar Maple",
+          "127.6'",
+          "101''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharum var. saccharum",
+            "href": "/Browse/Sites/40138/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "Sugar Maple",
+            "href": "/Browse/Sites/40138/Species/Acer%20saccharum%20var.%20saccharum%20(Sugar%20Maple)/Details"
+          },
+          {
+            "text": "127.6'",
+            "href": "/Browse/Trees/222039/Details"
+          },
+          {
+            "text": "101''",
+            "href": "/Browse/Trees/222039/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer spicatum",
+          "Mountain Maple",
+          "35.6'",
+          "18''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer spicatum",
+            "href": "/Browse/Sites/40138/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "Mountain Maple",
+            "href": "/Browse/Sites/40138/Species/Acer%20spicatum%20(Mountain%20Maple)/Details"
+          },
+          {
+            "text": "35.6'",
+            "href": "/Browse/Trees/222068/Details"
+          },
+          {
+            "text": "18''",
+            "href": "/Browse/Trees/222068/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Alnus incana ssp. rugosa",
+          "Speckled Alder",
+          "18.4'",
+          "8''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alnus incana ssp. rugosa",
+            "href": "/Browse/Sites/40138/Species/Alnus%20incana%20ssp.%20rugosa%20(Speckled%20Alder)/Details"
+          },
+          {
+            "text": "Speckled Alder",
+            "href": "/Browse/Sites/40138/Species/Alnus%20incana%20ssp.%20rugosa%20(Speckled%20Alder)/Details"
+          },
+          {
+            "text": "18.4'",
+            "href": "/Browse/Trees/222076/Details"
+          },
+          {
+            "text": "8''",
+            "href": "/Browse/Trees/222076/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea var. arborea",
+          "Common Serviceberry",
+          "44.0'",
+          "17''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea var. arborea",
+            "href": "/Browse/Sites/40138/Species/Amelanchier%20arborea%20var.%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/40138/Species/Amelanchier%20arborea%20var.%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "44.0'",
+            "href": "/Browse/Trees/222065/Details"
+          },
+          {
+            "text": "17''",
+            "href": "/Browse/Trees/222065/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier laevis",
+          "Allegheny Serviceberry",
+          "51.9'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier laevis",
+            "href": "/Browse/Sites/40138/Species/Amelanchier%20laevis%20(Allegheny%20Serviceberry)/Details"
+          },
+          {
+            "text": "Allegheny Serviceberry",
+            "href": "/Browse/Sites/40138/Species/Amelanchier%20laevis%20(Allegheny%20Serviceberry)/Details"
+          },
+          {
+            "text": "51.9'",
+            "href": "/Browse/Trees/222062/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/222062/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "101.9'",
+          "99''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/40138/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/40138/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "101.9'",
+            "href": "/Browse/Trees/222047/Details"
+          },
+          {
+            "text": "99''",
+            "href": "/Browse/Trees/222047/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "109.5'",
+          "81''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/40138/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/40138/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "109.5'",
+            "href": "/Browse/Trees/222044/Details"
+          },
+          {
+            "text": "81''",
+            "href": "/Browse/Trees/222044/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula papyrifera var. papyrifera",
+          "Paper Birch",
+          "51.4'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula papyrifera var. papyrifera",
+            "href": "/Browse/Sites/40138/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "Paper Birch",
+            "href": "/Browse/Sites/40138/Species/Betula%20papyrifera%20var.%20papyrifera%20(Paper%20Birch)/Details"
+          },
+          {
+            "text": "51.4'",
+            "href": "/Browse/Trees/222063/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/222063/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 49 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 20.116, -076 18.093",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public State Park",
+      "County": "Sullivan"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,129 @@
+{
+  "siteId": 25410,
+  "summary": {
+    "Name": "Snake River Corrider - Washington (River Left)",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "08/27/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "08/27/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Celtis laevigata var. reticulata",
+          "Netleaf Hackberry",
+          "31.6'",
+          "28''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis laevigata var. reticulata",
+            "href": "/Browse/Sites/25410/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "Netleaf Hackberry",
+            "href": "/Browse/Sites/25410/Species/Celtis%20laevigata%20var.%20reticulata%20(Netleaf%20Hackberry)/Details"
+          },
+          {
+            "text": "31.6'",
+            "href": "/Browse/Trees/91834/Details"
+          },
+          {
+            "text": "28''",
+            "href": "/Browse/Trees/91835/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Morus alba",
+          "White Mulberry",
+          "16.2'",
+          "22''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Morus alba",
+            "href": "/Browse/Sites/25410/Species/Morus%20alba%20(White%20Mulberry)/Details"
+          },
+          {
+            "text": "White Mulberry",
+            "href": "/Browse/Sites/25410/Species/Morus%20alba%20(White%20Mulberry)/Details"
+          },
+          {
+            "text": "16.2'",
+            "href": "/Browse/Trees/91836/Details"
+          },
+          {
+            "text": "22''",
+            "href": "/Browse/Trees/91836/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "45 59.732, -116 55.073",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Asortin"
+    },
+    "state": {
+      "text": "Washington (US)",
+      "href": "/Browse/States/45/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

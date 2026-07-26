@@ -1,0 +1,188 @@
+{
+  "botanicalName": "Acer platanoides",
+  "commonName": "Norway Maple",
+  "global": {
+    "maxHeight": {
+      "text": "122.0'",
+      "href": "/Browse/Trees/185975/Details"
+    },
+    "maxGirth": {
+      "text": "186''",
+      "href": "/Browse/Trees/221001/Details"
+    },
+    "maxCrownSpread": {
+      "text": "73.0'",
+      "href": "/Browse/Trees/274318/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Lesser Poland Voivodeship",
+          "93.3'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Lesser Poland Voivodeship",
+            "href": "/Browse/States/225/Details"
+          },
+          {
+            "text": "93.3'",
+            "href": "/Browse/Trees/283512/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/283512/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "59.3'",
+          "24''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "59.3'",
+            "href": "/Browse/Trees/128447/Details"
+          },
+          {
+            "text": "24''",
+            "href": "/Browse/Trees/128447/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "122.0'",
+          "186''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "122.0'",
+            "href": "/Browse/Trees/185975/Details"
+          },
+          {
+            "text": "186''",
+            "href": "/Browse/Trees/221001/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "94.9'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "94.9'",
+            "href": "/Browse/Trees/142977/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/139759/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Podlaskie Voivodeship",
+          "122.0'",
+          "162''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Podlaskie Voivodeship",
+            "href": "/Browse/States/232/Details"
+          },
+          {
+            "text": "122.0'",
+            "href": "/Browse/Trees/283487/Details"
+          },
+          {
+            "text": "162''",
+            "href": "/Browse/Trees/283486/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "73.1'",
+          "122''",
+          "73.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "73.1'",
+            "href": "/Browse/Trees/283776/Details"
+          },
+          {
+            "text": "122''",
+            "href": "/Browse/Trees/162606/Details"
+          },
+          {
+            "text": "73.0'",
+            "href": "/Browse/Trees/274318/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

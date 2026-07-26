@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Forestiera segregata",
+  "commonName": "Florida Swampprivet",
+  "global": {
+    "maxHeight": {
+      "text": "50.1'",
+      "href": "/Browse/Trees/251020/Details"
+    },
+    "maxGirth": {
+      "text": "20''",
+      "href": "/Browse/Trees/251020/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Mississippi",
+          "50.1'",
+          "20''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Mississippi",
+            "href": "/Browse/States/23/Details"
+          },
+          {
+            "text": "50.1'",
+            "href": "/Browse/Trees/251020/Details"
+          },
+          {
+            "text": "20''",
+            "href": "/Browse/Trees/251020/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

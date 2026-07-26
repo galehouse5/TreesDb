@@ -1,0 +1,71 @@
+{
+  "treeId": 163205,
+  "botanicalName": {
+    "text": "Quercus virginiana",
+    "href": "/Browse/Sites/39036/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+  },
+  "commonName": {
+    "text": "Live Oak",
+    "href": "/Browse/Sites/39036/Species/Quercus%20virginiana%20(Live%20Oak)/Details"
+  },
+  "details": {
+    "Height": "48.9'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "331''",
+    "Crown spread": "154.5'",
+    "ENTSPTS2": "372.05",
+    "ENTSPTS": "1348.83",
+    "TDI3": "2.40",
+    "TDI2": "1.45",
+    "Champion points": "418.53",
+    "Diameter": "105''",
+    "Conical volume": "986.9 ft³",
+    "General comments": "McDonogh Oak"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 09/10/2008",
+      "summary": {
+        "Height": "48.9'",
+        "Girth": "331''",
+        "Crown spread": "154.5'"
+      },
+      "details": {
+        "Botanical name": "Quercus virginiana",
+        "Common name": "Live Oak",
+        "Height": "48.9'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "331''",
+        "Crown spread": "154.5'",
+        "ENTSPTS2": "372.05",
+        "ENTSPTS": "1348.83",
+        "TDI3": "2.40",
+        "TDI2": "1.45",
+        "Champion points": "418.53",
+        "Diameter": "105''",
+        "Conical volume": "986.9 ft³",
+        "General comments": "McDonogh Oak"
+      },
+      "measurers": "Larry Tucei"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "29 59.039, -090 05.709",
+    "coordinatesKind": "specified",
+    "site": {
+      "text": "City Park - New Orleans",
+      "href": "/Browse/Sites/39036/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - city",
+      "County": "Orleans Parish"
+    },
+    "state": {
+      "text": "Louisiana (US)",
+      "href": "/Browse/States/16/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

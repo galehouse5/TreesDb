@@ -1,0 +1,254 @@
+{
+  "botanicalName": "Acer negundo var. negundo",
+  "commonName": "Boxelder",
+  "global": {
+    "maxHeight": {
+      "text": "101.8'",
+      "href": "/Browse/Trees/297660/Details"
+    },
+    "maxGirth": {
+      "text": "154''",
+      "href": "/Browse/Trees/313208/Details"
+    },
+    "maxCrownSpread": {
+      "text": "110.0'",
+      "href": "/Browse/Trees/312049/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "District of Columbia",
+          "89.4'",
+          "127''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "District of Columbia",
+            "href": "/Browse/States/64/Details"
+          },
+          {
+            "text": "89.4'",
+            "href": "/Browse/Trees/128210/Details"
+          },
+          {
+            "text": "127''",
+            "href": "/Browse/Trees/128210/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Kentucky",
+          "101.8'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Kentucky",
+            "href": "/Browse/States/15/Details"
+          },
+          {
+            "text": "101.8'",
+            "href": "/Browse/Trees/297660/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/297560/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Maryland",
+          "59.5'",
+          "94''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Maryland",
+            "href": "/Browse/States/18/Details"
+          },
+          {
+            "text": "59.5'",
+            "href": "/Browse/Trees/280936/Details"
+          },
+          {
+            "text": "94''",
+            "href": "/Browse/Trees/230926/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Missouri",
+          "57.3'",
+          "68''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Missouri",
+            "href": "/Browse/States/22/Details"
+          },
+          {
+            "text": "57.3'",
+            "href": "/Browse/Trees/283691/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/283691/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "New York",
+          "45.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "45.5'",
+            "href": "/Browse/Trees/221868/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "82.0'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "82.0'",
+            "href": "/Browse/Trees/224751/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/139760/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "South Carolina",
+          "71.2'",
+          "47''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "South Carolina",
+            "href": "/Browse/States/38/Details"
+          },
+          {
+            "text": "71.2'",
+            "href": "/Browse/Trees/236867/Details"
+          },
+          {
+            "text": "47''",
+            "href": "/Browse/Trees/236867/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tennessee",
+          "93.8'",
+          "98''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tennessee",
+            "href": "/Browse/States/40/Details"
+          },
+          {
+            "text": "93.8'",
+            "href": "/Browse/Trees/323302/Details"
+          },
+          {
+            "text": "98''",
+            "href": "/Browse/Trees/315825/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "West Virginia",
+          "78.1'",
+          "154''",
+          "110.0'"
+        ],
+        "links": [
+          {
+            "text": "West Virginia",
+            "href": "/Browse/States/47/Details"
+          },
+          {
+            "text": "78.1'",
+            "href": "/Browse/Trees/273009/Details"
+          },
+          {
+            "text": "154''",
+            "href": "/Browse/Trees/313208/Details"
+          },
+          {
+            "text": "110.0'",
+            "href": "/Browse/Trees/312049/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 9 of 9 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

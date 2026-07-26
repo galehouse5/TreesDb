@@ -1,0 +1,178 @@
+{
+  "botanicalName": "Tsuga heterophylla",
+  "commonName": "Western Hemlock",
+  "global": {
+    "maxHeight": {
+      "text": "272.0'",
+      "href": "/Browse/Trees/269319/Details"
+    },
+    "maxGirth": {
+      "text": "196''",
+      "href": "/Browse/Trees/296611/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alaska",
+          "128.8'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alaska",
+            "href": "/Browse/States/62/Details"
+          },
+          {
+            "text": "128.8'",
+            "href": "/Browse/Trees/75024/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/75026/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "California",
+          "272.0'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "California",
+            "href": "/Browse/States/4/Details"
+          },
+          {
+            "text": "272.0'",
+            "href": "/Browse/Trees/269319/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Massachusetts",
+          "99.5'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Massachusetts",
+            "href": "/Browse/States/17/Details"
+          },
+          {
+            "text": "99.5'",
+            "href": "/Browse/Trees/281506/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/281506/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Montana",
+          "158.3'",
+          "113''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Montana",
+            "href": "/Browse/States/24/Details"
+          },
+          {
+            "text": "158.3'",
+            "href": "/Browse/Trees/297913/Details"
+          },
+          {
+            "text": "113''",
+            "href": "/Browse/Trees/297913/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Oregon",
+          "190.0'",
+          "140''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Oregon",
+            "href": "/Browse/States/35/Details"
+          },
+          {
+            "text": "190.0'",
+            "href": "/Browse/Trees/318023/Details"
+          },
+          {
+            "text": "140''",
+            "href": "/Browse/Trees/318023/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Washington",
+          "224.2'",
+          "196''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Washington",
+            "href": "/Browse/States/45/Details"
+          },
+          {
+            "text": "224.2'",
+            "href": "/Browse/Trees/216291/Details"
+          },
+          {
+            "text": "196''",
+            "href": "/Browse/Trees/296611/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 6 of 6 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

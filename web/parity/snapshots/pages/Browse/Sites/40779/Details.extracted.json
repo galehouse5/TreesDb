@@ -1,0 +1,356 @@
+{
+  "siteId": 40779,
+  "summary": {
+    "Name": "Wadakoe Mountain",
+    "RHI5": "153.62",
+    "RHI10": "144.23",
+    "RHI20": "134.09",
+    "RGI5": "10.35",
+    "RGI10": "9.68",
+    "RGI20": "8.57",
+    "Trees measured": "97",
+    "Last measurement date": "02/03/2005",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees were also measured on 11/1/2004. See link: http://www.nativetreesociety.org/fieldtrips/south_carolina/wadakoe_mountain.htm"
+  },
+  "visits": [
+    {
+      "visited": "02/03/2005",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/wadakoe_northend.htm",
+      "comments": "Trees were also measured on 11/1/2004. See link: http://www.nativetreesociety.org/fieldtrips/south_carolina/wadakoe_mountain.htm"
+    },
+    {
+      "visited": "09/28/2003",
+      "visitors": "Jess Riddle",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/south_carolina/wadakoe_mountain.htm",
+      "comments": "Trees measured on 12/9/2002, 2/27/2003, 9/28/2003 in different drainages as indicated under comments."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer leucoderme",
+          "Chalk Maple",
+          "55.4'",
+          "25''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer leucoderme",
+            "href": "/Browse/Sites/40779/Species/Acer%20leucoderme%20(Chalk%20Maple)/Details"
+          },
+          {
+            "text": "Chalk Maple",
+            "href": "/Browse/Sites/40779/Species/Acer%20leucoderme%20(Chalk%20Maple)/Details"
+          },
+          {
+            "text": "55.4'",
+            "href": "/Browse/Trees/236260/Details"
+          },
+          {
+            "text": "25''",
+            "href": "/Browse/Trees/236259/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "133.3'",
+          "91''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/40779/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/40779/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "133.3'",
+            "href": "/Browse/Trees/236556/Details"
+          },
+          {
+            "text": "91''",
+            "href": "/Browse/Trees/236556/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Aesculus flava",
+          "Yellow Buckeye",
+          "112.2'",
+          "87''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Aesculus flava",
+            "href": "/Browse/Sites/40779/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "Yellow Buckeye",
+            "href": "/Browse/Sites/40779/Species/Aesculus%20flava%20(Yellow%20Buckeye)/Details"
+          },
+          {
+            "text": "112.2'",
+            "href": "/Browse/Trees/236289/Details"
+          },
+          {
+            "text": "87''",
+            "href": "/Browse/Trees/236288/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Amelanchier arborea",
+          "Common Serviceberry",
+          "19.4'",
+          "11''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea",
+            "href": "/Browse/Sites/40779/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/40779/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "19.4'",
+            "href": "/Browse/Trees/236545/Details"
+          },
+          {
+            "text": "11''",
+            "href": "/Browse/Trees/236545/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "131.0'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/40779/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/40779/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "131.0'",
+            "href": "/Browse/Trees/236256/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/236256/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya glabra",
+          "Pignut Hickory",
+          "152.6'",
+          "120''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya glabra",
+            "href": "/Browse/Sites/40779/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "Pignut Hickory",
+            "href": "/Browse/Sites/40779/Species/Carya%20glabra%20(Pignut%20Hickory)/Details"
+          },
+          {
+            "text": "152.6'",
+            "href": "/Browse/Trees/236271/Details"
+          },
+          {
+            "text": "120''",
+            "href": "/Browse/Trees/236308/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovalis",
+          "Red Hickory",
+          "-",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovalis",
+            "href": "/Browse/Sites/40779/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          {
+            "text": "Red Hickory",
+            "href": "/Browse/Sites/40779/Species/Carya%20ovalis%20(Red%20Hickory)/Details"
+          },
+          null,
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/236309/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya tomentosa",
+          "Mockernut Hickory",
+          "136.6'",
+          "92''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya tomentosa",
+            "href": "/Browse/Sites/40779/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "Mockernut Hickory",
+            "href": "/Browse/Sites/40779/Species/Carya%20tomentosa%20(Mockernut%20Hickory)/Details"
+          },
+          {
+            "text": "136.6'",
+            "href": "/Browse/Trees/236257/Details"
+          },
+          {
+            "text": "92''",
+            "href": "/Browse/Trees/236292/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cercis canadensis",
+          "Eastern Redbud",
+          "52.4'",
+          "35''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cercis canadensis",
+            "href": "/Browse/Sites/40779/Species/Cercis%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "Eastern Redbud",
+            "href": "/Browse/Sites/40779/Species/Cercis%20canadensis%20(Eastern%20Redbud)/Details"
+          },
+          {
+            "text": "52.4'",
+            "href": "/Browse/Trees/236282/Details"
+          },
+          {
+            "text": "35''",
+            "href": "/Browse/Trees/236283/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cladrastis kentukea",
+          "Kentucky Yellowwood",
+          "78.3'",
+          "50''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cladrastis kentukea",
+            "href": "/Browse/Sites/40779/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "Kentucky Yellowwood",
+            "href": "/Browse/Sites/40779/Species/Cladrastis%20kentukea%20(Kentucky%20Yellowwood)/Details"
+          },
+          {
+            "text": "78.3'",
+            "href": "/Browse/Trees/236300/Details"
+          },
+          {
+            "text": "50''",
+            "href": "/Browse/Trees/236300/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 37 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "34 58.967, -082 50.217",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "Pickens"
+    },
+    "state": {
+      "text": "South Carolina (US)",
+      "href": "/Browse/States/38/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

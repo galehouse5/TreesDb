@@ -1,0 +1,350 @@
+{
+  "siteId": 39162,
+  "summary": {
+    "Name": "Conneaut Marsh",
+    "RHI5": "97.24",
+    "RHI10": "90.37",
+    "RHI20": "(not enough data)",
+    "RGI5": "11.45",
+    "RGI10": "9.44",
+    "RGI20": "(not enough data)",
+    "Trees measured": "45",
+    "Last measurement date": "12/05/2006",
+    "Ownership contact": "(no data)",
+    "General comments": "State Game Lands 213?"
+  },
+  "visits": [
+    {
+      "visited": "12/05/2006",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "www.nativetreesociety.org/fieldtrips/penna/conneaut/conneaut_marsh1.htm",
+      "comments": "State Game Lands 213?"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "84.1'",
+          "38''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/39162/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/39162/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "84.1'",
+            "href": "/Browse/Trees/167727/Details"
+          },
+          {
+            "text": "38''",
+            "href": "/Browse/Trees/167727/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "72.1'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/39162/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/39162/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "72.1'",
+            "href": "/Browse/Trees/167735/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/167735/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya cordiformis",
+          "Bitternut Hickory",
+          "68.1'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya cordiformis",
+            "href": "/Browse/Sites/39162/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "Bitternut Hickory",
+            "href": "/Browse/Sites/39162/Species/Carya%20cordiformis%20(Bitternut%20Hickory)/Details"
+          },
+          {
+            "text": "68.1'",
+            "href": "/Browse/Trees/167700/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/167700/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "89.7'",
+          "100''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/39162/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/39162/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "89.7'",
+            "href": "/Browse/Trees/167734/Details"
+          },
+          {
+            "text": "100''",
+            "href": "/Browse/Trees/167734/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "78.1'",
+          "119''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/39162/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/39162/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "78.1'",
+            "href": "/Browse/Trees/167699/Details"
+          },
+          {
+            "text": "119''",
+            "href": "/Browse/Trees/167699/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus pennsylvanica",
+          "Green Ash",
+          "78.1'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus pennsylvanica",
+            "href": "/Browse/Sites/39162/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "Green Ash",
+            "href": "/Browse/Sites/39162/Species/Fraxinus%20pennsylvanica%20(Green%20Ash)/Details"
+          },
+          {
+            "text": "78.1'",
+            "href": "/Browse/Trees/167711/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/167711/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "84.1'",
+          "80''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/39162/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/39162/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "84.1'",
+            "href": "/Browse/Trees/167707/Details"
+          },
+          {
+            "text": "80''",
+            "href": "/Browse/Trees/167707/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Magnolia acuminata",
+          "Cucumber-Tree",
+          "66.6'",
+          "32''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Magnolia acuminata",
+            "href": "/Browse/Sites/39162/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "Cucumber-Tree",
+            "href": "/Browse/Sites/39162/Species/Magnolia%20acuminata%20(Cucumber-Tree)/Details"
+          },
+          {
+            "text": "66.6'",
+            "href": "/Browse/Trees/167708/Details"
+          },
+          {
+            "text": "32''",
+            "href": "/Browse/Trees/167708/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Nyssa sylvatica",
+          "Blackgum",
+          "69.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Nyssa sylvatica",
+            "href": "/Browse/Sites/39162/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "Blackgum",
+            "href": "/Browse/Sites/39162/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+          },
+          {
+            "text": "69.2'",
+            "href": "/Browse/Trees/167701/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ostrya virginiana",
+          "Hophornbeam",
+          "46.0'",
+          "31''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ostrya virginiana",
+            "href": "/Browse/Sites/39162/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "Hophornbeam",
+            "href": "/Browse/Sites/39162/Species/Ostrya%20virginiana%20(Hophornbeam)/Details"
+          },
+          {
+            "text": "46.0'",
+            "href": "/Browse/Trees/167709/Details"
+          },
+          {
+            "text": "31''",
+            "href": "/Browse/Trees/167709/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 16 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 33.057, -080 11.141",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public?",
+      "County": "Crawford"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

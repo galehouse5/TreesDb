@@ -1,0 +1,157 @@
+{
+  "siteId": 39929,
+  "summary": {
+    "Name": "Rider Hollow",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "12/26/2015",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "12/26/2015",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Amelanchier arborea",
+          "Common Serviceberry",
+          "64.5'",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Amelanchier arborea",
+            "href": "/Browse/Sites/39929/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "Common Serviceberry",
+            "href": "/Browse/Sites/39929/Species/Amelanchier%20arborea%20(Common%20Serviceberry)/Details"
+          },
+          {
+            "text": "64.5'",
+            "href": "/Browse/Trees/211377/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/211377/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix x marschlinsii",
+          "Dunkeld Larch",
+          "130.6'",
+          "70''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix x marschlinsii",
+            "href": "/Browse/Sites/39929/Species/Larix%20x%20marschlinsii%20(Dunkeld%20Larch)/Details"
+          },
+          {
+            "text": "Dunkeld Larch",
+            "href": "/Browse/Sites/39929/Species/Larix%20x%20marschlinsii%20(Dunkeld%20Larch)/Details"
+          },
+          {
+            "text": "130.6'",
+            "href": "/Browse/Trees/211376/Details"
+          },
+          {
+            "text": "70''",
+            "href": "/Browse/Trees/211376/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Picea glauca",
+          "White Spruce",
+          "127.6'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Picea glauca",
+            "href": "/Browse/Sites/39929/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "White Spruce",
+            "href": "/Browse/Sites/39929/Species/Picea%20glauca%20(White%20Spruce)/Details"
+          },
+          {
+            "text": "127.6'",
+            "href": "/Browse/Trees/211375/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/211375/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "42 05.821, -074 30.624",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Ulster"
+    },
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

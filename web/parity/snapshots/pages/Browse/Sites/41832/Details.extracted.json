@@ -1,0 +1,213 @@
+{
+  "siteId": 41832,
+  "summary": {
+    "Name": "Royal Botanical Garden",
+    "RHI5": "71.54",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "8.49",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "5",
+    "Last measurement date": "10/24/2014",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "10/24/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Cedrus deodara",
+          "Deodar Cedar",
+          "73.6'",
+          "148''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrus deodara",
+            "href": "/Browse/Sites/41832/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "Deodar Cedar",
+            "href": "/Browse/Sites/41832/Species/Cedrus%20deodara%20(Deodar%20Cedar)/Details"
+          },
+          {
+            "text": "73.6'",
+            "href": "/Browse/Trees/274937/Details"
+          },
+          {
+            "text": "148''",
+            "href": "/Browse/Trees/274937/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Celtis australis",
+          "European Hackberry",
+          "55.1'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Celtis australis",
+            "href": "/Browse/Sites/41832/Species/Celtis%20australis%20(European%20Hackberry)/Details"
+          },
+          {
+            "text": "European Hackberry",
+            "href": "/Browse/Sites/41832/Species/Celtis%20australis%20(European%20Hackberry)/Details"
+          },
+          {
+            "text": "55.1'",
+            "href": "/Browse/Trees/274934/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/274934/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cupressus sempervirens",
+          "Italian Cypress",
+          "67.8'",
+          "76''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cupressus sempervirens",
+            "href": "/Browse/Sites/41832/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "Italian Cypress",
+            "href": "/Browse/Sites/41832/Species/Cupressus%20sempervirens%20(Italian%20Cypress)/Details"
+          },
+          {
+            "text": "67.8'",
+            "href": "/Browse/Trees/274936/Details"
+          },
+          {
+            "text": "76''",
+            "href": "/Browse/Trees/274936/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus halepensis",
+          "Aleppo Pine",
+          "83.6'",
+          "116''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus halepensis",
+            "href": "/Browse/Sites/41832/Species/Pinus%20halepensis%20(Aleppo%20Pine)/Details"
+          },
+          {
+            "text": "Aleppo Pine",
+            "href": "/Browse/Sites/41832/Species/Pinus%20halepensis%20(Aleppo%20Pine)/Details"
+          },
+          {
+            "text": "83.6'",
+            "href": "/Browse/Trees/274938/Details"
+          },
+          {
+            "text": "116''",
+            "href": "/Browse/Trees/274938/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Ulmus procera",
+          "English Elm",
+          "77.6'",
+          "88''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ulmus procera",
+            "href": "/Browse/Sites/41832/Species/Ulmus%20procera%20(English%20Elm)/Details"
+          },
+          {
+            "text": "English Elm",
+            "href": "/Browse/Sites/41832/Species/Ulmus%20procera%20(English%20Elm)/Details"
+          },
+          {
+            "text": "77.6'",
+            "href": "/Browse/Trees/274935/Details"
+          },
+          {
+            "text": "88''",
+            "href": "/Browse/Trees/274935/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "40 24.687, -003 41.470",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Madrid"
+    },
+    "state": {
+      "text": "Community of Madrid (ES)",
+      "href": "/Browse/States/137/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Sambucus racemosa var. racemosa",
+  "commonName": "Red Elderberry",
+  "global": {
+    "maxHeight": {
+      "text": "16.1'",
+      "href": "/Browse/Trees/222077/Details"
+    },
+    "maxGirth": {
+      "text": "9''",
+      "href": "/Browse/Trees/222077/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Pennsylvania",
+          "16.1'",
+          "9''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "16.1'",
+            "href": "/Browse/Trees/222077/Details"
+          },
+          {
+            "text": "9''",
+            "href": "/Browse/Trees/222077/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

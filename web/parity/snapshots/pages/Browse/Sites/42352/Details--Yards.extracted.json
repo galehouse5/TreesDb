@@ -1,0 +1,213 @@
+{
+  "siteId": 42352,
+  "summary": {
+    "Name": "Mt. San Jacinto Deer Springs Trail",
+    "RHI5": "42.100",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "5.657",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "13",
+    "Last measurement date": "01/17/2025",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/17/2025",
+      "visitors": "Elijah Whitcomb",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies concolor var. lowiana",
+          "White Fir",
+          "49.43 yd",
+          "219''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies concolor var. lowiana",
+            "href": "/Browse/Sites/42352/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+          },
+          {
+            "text": "White Fir",
+            "href": "/Browse/Sites/42352/Species/Abies%20concolor%20var.%20lowiana%20(White%20Fir)/Details"
+          },
+          {
+            "text": "49.43 yd",
+            "href": "/Browse/Trees/320699/Details"
+          },
+          {
+            "text": "219''",
+            "href": "/Browse/Trees/320699/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Calocedrus decurrens",
+          "Incense Cedar",
+          "31.67 yd",
+          "265''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Calocedrus decurrens",
+            "href": "/Browse/Sites/42352/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "Incense Cedar",
+            "href": "/Browse/Sites/42352/Species/Calocedrus%20decurrens%20(Incense%20Cedar)/Details"
+          },
+          {
+            "text": "31.67 yd",
+            "href": "/Browse/Trees/320690/Details"
+          },
+          {
+            "text": "265''",
+            "href": "/Browse/Trees/320690/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus contorta var. murrayana",
+          "Sierra Lodgepole Pine",
+          "41.60 yd",
+          "163''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus contorta var. murrayana",
+            "href": "/Browse/Sites/42352/Species/Pinus%20contorta%20var.%20murrayana%20(Sierra%20Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "Sierra Lodgepole Pine",
+            "href": "/Browse/Sites/42352/Species/Pinus%20contorta%20var.%20murrayana%20(Sierra%20Lodgepole%20Pine)/Details"
+          },
+          {
+            "text": "41.60 yd",
+            "href": "/Browse/Trees/320697/Details"
+          },
+          {
+            "text": "163''",
+            "href": "/Browse/Trees/320698/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus jeffreyi",
+          "Jeffrey Pine",
+          "46.03 yd",
+          "195''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus jeffreyi",
+            "href": "/Browse/Sites/42352/Species/Pinus%20jeffreyi%20(Jeffrey%20Pine)/Details"
+          },
+          {
+            "text": "Jeffrey Pine",
+            "href": "/Browse/Sites/42352/Species/Pinus%20jeffreyi%20(Jeffrey%20Pine)/Details"
+          },
+          {
+            "text": "46.03 yd",
+            "href": "/Browse/Trees/320694/Details"
+          },
+          {
+            "text": "195''",
+            "href": "/Browse/Trees/320693/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "41.77 yd",
+          "176''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/Sites/42352/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/Sites/42352/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "41.77 yd",
+            "href": "/Browse/Trees/320695/Details"
+          },
+          {
+            "text": "176''",
+            "href": "/Browse/Trees/320695/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 5 of 5 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "33 46.980, -116 42.237",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public",
+      "County": "Riverside"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

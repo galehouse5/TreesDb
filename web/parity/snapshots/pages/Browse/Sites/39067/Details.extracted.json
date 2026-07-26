@@ -1,0 +1,157 @@
+{
+  "siteId": 39067,
+  "summary": {
+    "Name": "Shaw Nature Preserve",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "6",
+    "Last measurement date": "05/21/2018",
+    "Ownership contact": "Shaw Nature Reserve 307 Pinetum Loop Road Gray Summit, Missouri.",
+    "General comments": "This is an extension of the Missouri Botanical Garden in St. Louis."
+  },
+  "visits": [
+    {
+      "visited": "05/21/2018",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "This is an extension of the Missouri Botanical Garden in St. Louis."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "61.3'",
+          "85''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/39067/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/39067/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "61.3'",
+            "href": "/Browse/Trees/164199/Details"
+          },
+          {
+            "text": "85''",
+            "href": "/Browse/Trees/164199/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus echinata",
+          "Shortleaf Pine",
+          "80.7'",
+          "95''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus echinata",
+            "href": "/Browse/Sites/39067/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "Shortleaf Pine",
+            "href": "/Browse/Sites/39067/Species/Pinus%20echinata%20(Shortleaf%20Pine)/Details"
+          },
+          {
+            "text": "80.7'",
+            "href": "/Browse/Trees/164200/Details"
+          },
+          {
+            "text": "95''",
+            "href": "/Browse/Trees/164201/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Quercus alba",
+          "White Oak",
+          "68.0'",
+          "132''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus alba",
+            "href": "/Browse/Sites/39067/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "White Oak",
+            "href": "/Browse/Sites/39067/Species/Quercus%20alba%20(White%20Oak)/Details"
+          },
+          {
+            "text": "68.0'",
+            "href": "/Browse/Trees/164198/Details"
+          },
+          {
+            "text": "132''",
+            "href": "/Browse/Trees/164197/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 28.926, -090 49.451",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Franklin"
+    },
+    "state": {
+      "text": "Missouri (US)",
+      "href": "/Browse/States/22/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

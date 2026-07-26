@@ -1,0 +1,362 @@
+{
+  "siteId": 32605,
+  "summary": {
+    "Name": "Anders Run Natural Area",
+    "RHI5": "132.74",
+    "RHI10": "124.05",
+    "RHI20": "114.35",
+    "RGI5": "14.33",
+    "RGI10": "12.43",
+    "RGI20": "9.29",
+    "Trees measured": "73",
+    "Last measurement date": "04/22/2011",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "04/22/2011",
+      "visitors": "Dale Luthringer, Carl Harting, and Steve Halow",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "04/14/2004",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "Trees measured were located in flat marshy area along Allegheny River."
+    },
+    {
+      "visited": "11/22/2002",
+      "visitors": "Dale Luthringer",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies nordmanniana",
+          "Nordmann Fir",
+          "91.8'",
+          "82''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies nordmanniana",
+            "href": "/Browse/Sites/32605/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "Nordmann Fir",
+            "href": "/Browse/Sites/32605/Species/Abies%20nordmanniana%20(Nordmann%20Fir)/Details"
+          },
+          {
+            "text": "91.8'",
+            "href": "/Browse/Trees/119541/Details"
+          },
+          {
+            "text": "82''",
+            "href": "/Browse/Trees/119541/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer rubrum",
+          "Red Maple",
+          "116.0'",
+          "65''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer rubrum",
+            "href": "/Browse/Sites/32605/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "Red Maple",
+            "href": "/Browse/Sites/32605/Species/Acer%20rubrum%20(Red%20Maple)/Details"
+          },
+          {
+            "text": "116.0'",
+            "href": "/Browse/Trees/119584/Details"
+          },
+          {
+            "text": "65''",
+            "href": "/Browse/Trees/119585/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Acer saccharinum",
+          "Silver Maple",
+          "116.1'",
+          "104''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Acer saccharinum",
+            "href": "/Browse/Sites/32605/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "Silver Maple",
+            "href": "/Browse/Sites/32605/Species/Acer%20saccharinum%20(Silver%20Maple)/Details"
+          },
+          {
+            "text": "116.1'",
+            "href": "/Browse/Trees/119561/Details"
+          },
+          {
+            "text": "104''",
+            "href": "/Browse/Trees/119561/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula alleghaniensis",
+          "Yellow Birch",
+          "88.8'",
+          "41''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula alleghaniensis",
+            "href": "/Browse/Sites/32605/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "Yellow Birch",
+            "href": "/Browse/Sites/32605/Species/Betula%20alleghaniensis%20(Yellow%20Birch)/Details"
+          },
+          {
+            "text": "88.8'",
+            "href": "/Browse/Trees/119598/Details"
+          },
+          {
+            "text": "41''",
+            "href": "/Browse/Trees/119598/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Betula lenta",
+          "Sweet Birch",
+          "99.1'",
+          "71''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Betula lenta",
+            "href": "/Browse/Sites/32605/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "Sweet Birch",
+            "href": "/Browse/Sites/32605/Species/Betula%20lenta%20(Sweet%20Birch)/Details"
+          },
+          {
+            "text": "99.1'",
+            "href": "/Browse/Trees/119597/Details"
+          },
+          {
+            "text": "71''",
+            "href": "/Browse/Trees/119597/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Carya ovata",
+          "Shagbark Hickory",
+          "111.0'",
+          "66''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Carya ovata",
+            "href": "/Browse/Sites/32605/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "Shagbark Hickory",
+            "href": "/Browse/Sites/32605/Species/Carya%20ovata%20(Shagbark%20Hickory)/Details"
+          },
+          {
+            "text": "111.0'",
+            "href": "/Browse/Trees/119582/Details"
+          },
+          {
+            "text": "66''",
+            "href": "/Browse/Trees/119548/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fagus grandifolia",
+          "American Beech",
+          "100.4'",
+          "56''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fagus grandifolia",
+            "href": "/Browse/Sites/32605/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "American Beech",
+            "href": "/Browse/Sites/32605/Species/Fagus%20grandifolia%20(American%20Beech)/Details"
+          },
+          {
+            "text": "100.4'",
+            "href": "/Browse/Trees/119599/Details"
+          },
+          {
+            "text": "56''",
+            "href": "/Browse/Trees/119600/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Fraxinus americana",
+          "White Ash",
+          "118.4'",
+          "138''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Fraxinus americana",
+            "href": "/Browse/Sites/32605/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "White Ash",
+            "href": "/Browse/Sites/32605/Species/Fraxinus%20americana%20(White%20Ash)/Details"
+          },
+          {
+            "text": "118.4'",
+            "href": "/Browse/Trees/119562/Details"
+          },
+          {
+            "text": "138''",
+            "href": "/Browse/Trees/119562/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix decidua",
+          "European Larch",
+          "110.5'",
+          "89''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix decidua",
+            "href": "/Browse/Sites/32605/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "European Larch",
+            "href": "/Browse/Sites/32605/Species/Larix%20decidua%20(European%20Larch)/Details"
+          },
+          {
+            "text": "110.5'",
+            "href": "/Browse/Trees/119563/Details"
+          },
+          {
+            "text": "89''",
+            "href": "/Browse/Trees/119563/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Larix laricina",
+          "Tamarack",
+          "115.2'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Larix laricina",
+            "href": "/Browse/Sites/32605/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "Tamarack",
+            "href": "/Browse/Sites/32605/Species/Larix%20laricina%20(Tamarack)/Details"
+          },
+          {
+            "text": "115.2'",
+            "href": "/Browse/Trees/119533/Details"
+          },
+          null,
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 22 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "41 49.344, -079 16.553",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "State - public",
+      "County": "Warren"
+    },
+    "state": {
+      "text": "Pennsylvania (US)",
+      "href": "/Browse/States/36/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

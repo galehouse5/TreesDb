@@ -1,0 +1,353 @@
+{
+  "siteId": 39971,
+  "summary": {
+    "Name": "Santa Elena Area",
+    "RHI5": "96.18",
+    "RHI10": "72.34",
+    "RHI20": "(not enough data)",
+    "RGI5": "5.42",
+    "RGI10": "3.43",
+    "RGI20": "(not enough data)",
+    "Trees measured": "12",
+    "Last measurement date": "01/24/2016",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "01/24/2016",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "02/16/2014",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "The town of Santa Elena is close to three cloud forest preserves. They are: Santa Elena Cloud Forest Reserve Monteverde Cloud Forest Reserve Childrens Eternal Rain Forest. Palus serveral other preserves"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Alchorpea latifolia",
+          "Achiotillo",
+          "32.6'",
+          "29''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Alchorpea latifolia",
+            "href": "/Browse/Sites/39971/Species/Alchorpea%20latifolia%20(Achiotillo)/Details"
+          },
+          {
+            "text": "Achiotillo",
+            "href": "/Browse/Sites/39971/Species/Alchorpea%20latifolia%20(Achiotillo)/Details"
+          },
+          {
+            "text": "32.6'",
+            "href": "/Browse/Trees/234122/Details"
+          },
+          {
+            "text": "29''",
+            "href": "/Browse/Trees/234122/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Blschmiedaia brenesii",
+          "Aquacatillo",
+          "69.3'",
+          "45''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Blschmiedaia brenesii",
+            "href": "/Browse/Sites/39971/Species/Blschmiedaia%20brenesii%20(Aquacatillo)/Details"
+          },
+          {
+            "text": "Aquacatillo",
+            "href": "/Browse/Sites/39971/Species/Blschmiedaia%20brenesii%20(Aquacatillo)/Details"
+          },
+          {
+            "text": "69.3'",
+            "href": "/Browse/Trees/234126/Details"
+          },
+          {
+            "text": "45''",
+            "href": "/Browse/Trees/234126/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cecropia obtusifolia",
+          "Guarumo",
+          "82.1'",
+          "37''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cecropia obtusifolia",
+            "href": "/Browse/Sites/39971/Species/Cecropia%20obtusifolia%20(Guarumo)/Details"
+          },
+          {
+            "text": "Guarumo",
+            "href": "/Browse/Sites/39971/Species/Cecropia%20obtusifolia%20(Guarumo)/Details"
+          },
+          {
+            "text": "82.1'",
+            "href": "/Browse/Trees/221883/Details"
+          },
+          {
+            "text": "37''",
+            "href": "/Browse/Trees/221882/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cedrela tonduzii",
+          "Sweet Cedar",
+          "118.9'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cedrela tonduzii",
+            "href": "/Browse/Sites/39971/Species/Cedrela%20tonduzii%20(Sweet%20Cedar)/Details"
+          },
+          {
+            "text": "Sweet Cedar",
+            "href": "/Browse/Sites/39971/Species/Cedrela%20tonduzii%20(Sweet%20Cedar)/Details"
+          },
+          {
+            "text": "118.9'",
+            "href": "/Browse/Trees/234130/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cornus disciflora",
+          "Mata Hombro",
+          "73.5'",
+          "102''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Cornus disciflora",
+            "href": "/Browse/Sites/39971/Species/Cornus%20disciflora%20(Mata%20Hombro)/Details"
+          },
+          {
+            "text": "Mata Hombro",
+            "href": "/Browse/Sites/39971/Species/Cornus%20disciflora%20(Mata%20Hombro)/Details"
+          },
+          {
+            "text": "73.5'",
+            "href": "/Browse/Trees/234125/Details"
+          },
+          {
+            "text": "102''",
+            "href": "/Browse/Trees/234125/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hesperocyparis luistanica",
+          "Mexican Cypress",
+          "79.2'",
+          "57''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hesperocyparis luistanica",
+            "href": "/Browse/Sites/39971/Species/Hesperocyparis%20luistanica%20(Mexican%20Cypress)/Details"
+          },
+          {
+            "text": "Mexican Cypress",
+            "href": "/Browse/Sites/39971/Species/Hesperocyparis%20luistanica%20(Mexican%20Cypress)/Details"
+          },
+          {
+            "text": "79.2'",
+            "href": "/Browse/Trees/234129/Details"
+          },
+          {
+            "text": "57''",
+            "href": "/Browse/Trees/234129/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Hieroyma 0blonga",
+          "Trompito",
+          "98.8'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Hieroyma 0blonga",
+            "href": "/Browse/Sites/39971/Species/Hieroyma%200blonga%20(Trompito)/Details"
+          },
+          {
+            "text": "Trompito",
+            "href": "/Browse/Sites/39971/Species/Hieroyma%200blonga%20(Trompito)/Details"
+          },
+          {
+            "text": "98.8'",
+            "href": "/Browse/Trees/234131/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/234131/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus pseudostrobus",
+          "False White Pine",
+          "101.9'",
+          "75''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus pseudostrobus",
+            "href": "/Browse/Sites/39971/Species/Pinus%20pseudostrobus%20(False%20White%20Pine)/Details"
+          },
+          {
+            "text": "False White Pine",
+            "href": "/Browse/Sites/39971/Species/Pinus%20pseudostrobus%20(False%20White%20Pine)/Details"
+          },
+          {
+            "text": "101.9'",
+            "href": "/Browse/Trees/234127/Details"
+          },
+          {
+            "text": "75''",
+            "href": "/Browse/Trees/234128/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Viburnum costariccanum",
+          "Viburnum",
+          "32.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Viburnum costariccanum",
+            "href": "/Browse/Sites/39971/Species/Viburnum%20costariccanum%20(Viburnum)/Details"
+          },
+          {
+            "text": "Viburnum",
+            "href": "/Browse/Sites/39971/Species/Viburnum%20costariccanum%20(Viburnum)/Details"
+          },
+          {
+            "text": "32.6'",
+            "href": "/Browse/Trees/234123/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Xylosma chlorantha",
+          "Cachos De Venado",
+          "34.5'",
+          "21''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Xylosma chlorantha",
+            "href": "/Browse/Sites/39971/Species/Xylosma%20chlorantha%20(Cachos%20De%20Venado)/Details"
+          },
+          {
+            "text": "Cachos De Venado",
+            "href": "/Browse/Sites/39971/Species/Xylosma%20chlorantha%20(Cachos%20De%20Venado)/Details"
+          },
+          {
+            "text": "34.5'",
+            "href": "/Browse/Trees/234124/Details"
+          },
+          {
+            "text": "21''",
+            "href": "/Browse/Trees/234124/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "10 18.737, -084 49.158",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Zarcero"
+    },
+    "state": {
+      "text": "Puntarenas (CR)",
+      "href": "/Browse/States/122/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

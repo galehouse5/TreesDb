@@ -1,0 +1,70 @@
+{
+  "treeId": 2371,
+  "botanicalName": {
+    "text": "Nyssa sylvatica",
+    "href": "/Browse/Sites/442/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+  },
+  "commonName": {
+    "text": "Blackgum",
+    "href": "/Browse/Sites/442/Species/Nyssa%20sylvatica%20(Blackgum)/Details"
+  },
+  "details": {
+    "Height": "102.5'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "111''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "87.70",
+    "ENTSPTS": "948.13",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.37",
+    "Champion points (abbreviated)": "213.50",
+    "Diameter": "35''",
+    "Conical volume": "232.6 ft³",
+    "General comments": "(none)"
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 01/03/2011",
+      "summary": {
+        "Height": "102.5'",
+        "Girth": "111''"
+      },
+      "details": {
+        "Botanical name": "Nyssa sylvatica",
+        "Common name": "Blackgum",
+        "Height": "102.5'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "111''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "87.70",
+        "ENTSPTS": "948.13",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.37",
+        "Champion points (abbreviated)": "213.50",
+        "Diameter": "35''",
+        "Conical volume": "232.6 ft³",
+        "General comments": "(none)"
+      },
+      "measurers": "Steve Galehouse"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "41 13.076, -081 42.254",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Whipp's Ledges",
+      "href": "/Browse/Sites/442/Details"
+    },
+    "rows": {
+      "Ownership type": "Park",
+      "County": "Medina"
+    },
+    "state": {
+      "text": "Ohio (US)",
+      "href": "/Browse/States/33/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

@@ -1,0 +1,148 @@
+{
+  "siteId": 41603,
+  "summary": {
+    "Name": "Lake Tahoe",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "3",
+    "Last measurement date": "10/28/2012",
+    "Ownership contact": "(no data)",
+    "General comments": "Trees along Highway 89 on west side of Lake Tahoe."
+  },
+  "visits": [
+    {
+      "visited": "10/28/2012",
+      "visitors": "Mark Collins",
+      "tripReportUrl": "www.ents-bbs.org/viewtopic.php",
+      "comments": "Trees along Highway 89 on west side of Lake Tahoe."
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Abies magnifica",
+          "California Red Fir",
+          "-",
+          "304''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Abies magnifica",
+            "href": "/Browse/Sites/41603/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+          },
+          {
+            "text": "California Red Fir",
+            "href": "/Browse/Sites/41603/Species/Abies%20magnifica%20(California%20Red%20Fir)/Details"
+          },
+          null,
+          {
+            "text": "304''",
+            "href": "/Browse/Trees/268388/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus lambertiana",
+          "Sugar Pine",
+          "-",
+          "245''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus lambertiana",
+            "href": "/Browse/Sites/41603/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          {
+            "text": "Sugar Pine",
+            "href": "/Browse/Sites/41603/Species/Pinus%20lambertiana%20(Sugar%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "245''",
+            "href": "/Browse/Trees/268387/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pinus ponderosa var. benthamiana",
+          "Ponderosa Pine",
+          "-",
+          "273''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pinus ponderosa var. benthamiana",
+            "href": "/Browse/Sites/41603/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          {
+            "text": "Ponderosa Pine",
+            "href": "/Browse/Sites/41603/Species/Pinus%20ponderosa%20var.%20benthamiana%20(Ponderosa%20Pine)/Details"
+          },
+          null,
+          {
+            "text": "273''",
+            "href": "/Browse/Trees/268386/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 3 of 3 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "38 56.396, -120 06.463",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Public-Private",
+      "County": "El Dorado"
+    },
+    "state": {
+      "text": "California (US)",
+      "href": "/Browse/States/4/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

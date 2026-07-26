@@ -1,0 +1,375 @@
+{
+  "botanicalName": "Abies balsamea var. balsamea",
+  "commonName": "Balsam Fir",
+  "global": {
+    "maxHeight": {
+      "text": "108.7'",
+      "href": "/Browse/Trees/228334/Details"
+    },
+    "maxGirth": {
+      "text": "115''",
+      "href": "/Browse/Trees/169009/Details"
+    },
+    "maxCrownSpread": {
+      "text": "38.2'",
+      "href": "/Browse/Trees/169009/Details"
+    }
+  },
+  "state": {
+    "state": {
+      "text": "New York (US)",
+      "href": "/Browse/States/32/Details"
+    },
+    "maxima": {
+      "maxHeight": {
+        "text": "108.7'",
+        "href": "/Browse/Trees/228334/Details"
+      },
+      "maxGirth": {
+        "text": "68''",
+        "href": "/Browse/Trees/228334/Details"
+      },
+      "maxCrownSpread": {
+        "text": "17.0'",
+        "href": "/Browse/Trees/228334/Details"
+      }
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "New York",
+          "108.7'",
+          "68''",
+          "17.0'"
+        ],
+        "links": [
+          {
+            "text": "New York",
+            "href": "/Browse/States/32/Details"
+          },
+          {
+            "text": "108.7'",
+            "href": "/Browse/Trees/228334/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/228334/Details"
+          },
+          {
+            "text": "17.0'",
+            "href": "/Browse/Trees/228334/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Pennsylvania",
+          "91.8'",
+          "115''",
+          "38.2'"
+        ],
+        "links": [
+          {
+            "text": "Pennsylvania",
+            "href": "/Browse/States/36/Details"
+          },
+          {
+            "text": "91.8'",
+            "href": "/Browse/Trees/169009/Details"
+          },
+          {
+            "text": "115''",
+            "href": "/Browse/Trees/169009/Details"
+          },
+          {
+            "text": "38.2'",
+            "href": "/Browse/Trees/169009/Details"
+          }
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 2 of 2 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "recordedSitesGrid": {
+    "columns": [
+      {
+        "header": "Site",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Ampersand Mountain",
+          "94.5'",
+          "43''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Ampersand Mountain",
+            "href": "/Browse/Sites/39859/Details"
+          },
+          {
+            "text": "94.5'",
+            "href": "/Browse/Trees/205080/Details"
+          },
+          {
+            "text": "43''",
+            "href": "/Browse/Trees/205080/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Cherry Patch Pond",
+          "108.7'",
+          "68''",
+          "17.0'"
+        ],
+        "links": [
+          {
+            "text": "Cherry Patch Pond",
+            "href": "/Browse/Sites/40331/Details"
+          },
+          {
+            "text": "108.7'",
+            "href": "/Browse/Trees/228334/Details"
+          },
+          {
+            "text": "68''",
+            "href": "/Browse/Trees/228334/Details"
+          },
+          {
+            "text": "17.0'",
+            "href": "/Browse/Trees/228334/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Elders Grove, Paul Smiths, NY",
+          "97.5'",
+          "52''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Elders Grove, Paul Smiths, NY",
+            "href": "/Browse/Sites/40330/Details"
+          },
+          {
+            "text": "97.5'",
+            "href": "/Browse/Trees/228314/Details"
+          },
+          {
+            "text": "52''",
+            "href": "/Browse/Trees/228314/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Forest Preserve",
+          "103.9'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Forest Preserve",
+            "href": "/Browse/Sites/39919/Details"
+          },
+          {
+            "text": "103.9'",
+            "href": "/Browse/Trees/210543/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/210543/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Howland's Island",
+          "65.6'",
+          "44''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Howland's Island",
+            "href": "/Browse/Sites/40114/Details"
+          },
+          {
+            "text": "65.6'",
+            "href": "/Browse/Trees/220777/Details"
+          },
+          {
+            "text": "44''",
+            "href": "/Browse/Trees/220777/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Huntington Forest, Newcomb, NY",
+          "85.5'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Huntington Forest, Newcomb, NY",
+            "href": "/Browse/Sites/39934/Details"
+          },
+          {
+            "text": "85.5'",
+            "href": "/Browse/Trees/211740/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Morgan Hill State Forest",
+          "97.6'",
+          "-",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Morgan Hill State Forest",
+            "href": "/Browse/Sites/39857/Details"
+          },
+          {
+            "text": "97.6'",
+            "href": "/Browse/Trees/204962/Details"
+          },
+          null,
+          null
+        ]
+      },
+      {
+        "cells": [
+          "NY Rt. 28N",
+          "104.6'",
+          "61''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "NY Rt. 28N",
+            "href": "/Browse/Sites/39854/Details"
+          },
+          {
+            "text": "104.6'",
+            "href": "/Browse/Trees/204929/Details"
+          },
+          {
+            "text": "61''",
+            "href": "/Browse/Trees/204929/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Pine Orchard",
+          "90.3'",
+          "46''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Pine Orchard",
+            "href": "/Browse/Sites/39893/Details"
+          },
+          {
+            "text": "90.3'",
+            "href": "/Browse/Trees/207812/Details"
+          },
+          {
+            "text": "46''",
+            "href": "/Browse/Trees/207812/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Powley Road",
+          "100.6'",
+          "58''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Powley Road",
+            "href": "/Browse/Sites/40006/Details"
+          },
+          {
+            "text": "100.6'",
+            "href": "/Browse/Trees/213670/Details"
+          },
+          {
+            "text": "58''",
+            "href": "/Browse/Trees/213670/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 10 of 10 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

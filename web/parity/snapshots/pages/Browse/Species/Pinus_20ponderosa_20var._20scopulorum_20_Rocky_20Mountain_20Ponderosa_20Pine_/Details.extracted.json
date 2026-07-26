@@ -1,0 +1,66 @@
+{
+  "botanicalName": "Pinus ponderosa var. scopulorum",
+  "commonName": "Rocky Mountain Ponderosa Pine",
+  "global": {
+    "maxHeight": {
+      "text": "162.3'",
+      "href": "/Browse/Trees/93946/Details"
+    },
+    "maxGirth": {
+      "text": "123''",
+      "href": "/Browse/Trees/93950/Details"
+    }
+  },
+  "recordedStatesGrid": {
+    "columns": [
+      {
+        "header": "State",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Colorado",
+          "162.3'",
+          "123''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Colorado",
+            "href": "/Browse/States/5/Details"
+          },
+          {
+            "text": "162.3'",
+            "href": "/Browse/Trees/93946/Details"
+          },
+          {
+            "text": "123''",
+            "href": "/Browse/Trees/93950/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 1 of 1 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  }
+}

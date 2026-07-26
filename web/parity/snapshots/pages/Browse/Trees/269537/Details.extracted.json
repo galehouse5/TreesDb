@@ -1,0 +1,70 @@
+{
+  "treeId": 269537,
+  "botanicalName": {
+    "text": "Pseudotsuga menziesii var. menziesii",
+    "href": "/Browse/Sites/41696/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "commonName": {
+    "text": "Douglas-Fir",
+    "href": "/Browse/Sites/41696/Species/Pseudotsuga%20menziesii%20var.%20menziesii%20(Douglas-Fir)/Details"
+  },
+  "details": {
+    "Height": "317.2'",
+    "Height measurement method": "Clinometer/laser rangefinder/sine",
+    "Girth": "301''",
+    "Crown spread": "(no data)",
+    "ENTSPTS2": "1995.74",
+    "ENTSPTS": "7956.43",
+    "TDI3": "(not enough data)",
+    "TDI2": "1.57",
+    "Champion points (abbreviated)": "618.20",
+    "Diameter": "96''",
+    "Conical volume": "5293.9 ft³",
+    "General comments": "North Fork Cherry Creek."
+  },
+  "measurements": [
+    {
+      "heading": "Measured on 08/13/2011",
+      "summary": {
+        "Height": "317.2'",
+        "Girth": "301''"
+      },
+      "details": {
+        "Botanical name": "Pseudotsuga menziesii var. menziesii",
+        "Common name": "Douglas-Fir",
+        "Height": "317.2'",
+        "Height measurement method": "Clinometer/laser rangefinder/sine",
+        "Girth": "301''",
+        "Crown spread": "(no data)",
+        "ENTSPTS2": "1995.74",
+        "ENTSPTS": "7956.43",
+        "TDI3": "(not enough data)",
+        "TDI2": "1.57",
+        "Champion points (abbreviated)": "618.20",
+        "Diameter": "96''",
+        "Conical volume": "5293.9 ft³",
+        "General comments": "North Fork Cherry Creek."
+      },
+      "measurers": "Michael Taylor, Mario Vaden, and Chris Atkins"
+    }
+  ],
+  "location": {
+    "coordinatesLabel": "Coordinates (calculated)",
+    "coordinatesValue": "43 14.756, -123 50.040",
+    "coordinatesKind": "calculated",
+    "site": {
+      "text": "Bureau Of Land Management-Coos County",
+      "href": "/Browse/Sites/41696/Details"
+    },
+    "rows": {
+      "Ownership type": "Public - federal",
+      "County": "Coos"
+    },
+    "state": {
+      "text": "Oregon (US)",
+      "href": "/Browse/States/35/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}

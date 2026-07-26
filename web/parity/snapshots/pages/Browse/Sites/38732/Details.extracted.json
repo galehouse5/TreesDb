@@ -1,0 +1,200 @@
+{
+  "siteId": 38732,
+  "summary": {
+    "Name": "Waterford Farm",
+    "RHI5": "(not enough data)",
+    "RHI10": "(not enough data)",
+    "RHI20": "(not enough data)",
+    "RGI5": "(not enough data)",
+    "RGI10": "(not enough data)",
+    "RGI20": "(not enough data)",
+    "Trees measured": "4",
+    "Last measurement date": "09/08/2022",
+    "Ownership contact": "(no data)",
+    "General comments": "(none)"
+  },
+  "visits": [
+    {
+      "visited": "09/08/2022",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "10/21/2017",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    },
+    {
+      "visited": "05/19/2011",
+      "visitors": "Turner Sharp",
+      "tripReportUrl": "(none)",
+      "comments": "(none)"
+    }
+  ],
+  "speciesGrid": {
+    "columns": [
+      {
+        "header": "Botanical name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Common name",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max height",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max girth",
+        "sortable": true,
+        "sortState": "none"
+      },
+      {
+        "header": "Max crown spread",
+        "sortable": true,
+        "sortState": "none"
+      }
+    ],
+    "rows": [
+      {
+        "cells": [
+          "Juglans nigra",
+          "Black Walnut",
+          "83.9'",
+          "157''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Juglans nigra",
+            "href": "/Browse/Sites/38732/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "Black Walnut",
+            "href": "/Browse/Sites/38732/Species/Juglans%20nigra%20(Black%20Walnut)/Details"
+          },
+          {
+            "text": "83.9'",
+            "href": "/Browse/Trees/153512/Details"
+          },
+          {
+            "text": "157''",
+            "href": "/Browse/Trees/153512/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Juniperus virginiana var. virginiana",
+          "Eastern Redcedar",
+          "58.0'",
+          "110''",
+          "35.0'"
+        ],
+        "links": [
+          {
+            "text": "Juniperus virginiana var. virginiana",
+            "href": "/Browse/Sites/38732/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "Eastern Redcedar",
+            "href": "/Browse/Sites/38732/Species/Juniperus%20virginiana%20var.%20virginiana%20(Eastern%20Redcedar)/Details"
+          },
+          {
+            "text": "58.0'",
+            "href": "/Browse/Trees/153511/Details"
+          },
+          {
+            "text": "110''",
+            "href": "/Browse/Trees/153511/Details"
+          },
+          {
+            "text": "35.0'",
+            "href": "/Browse/Trees/153511/Details"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "Quercus rubra",
+          "Northern Red Oak",
+          "91.6'",
+          "118''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Quercus rubra",
+            "href": "/Browse/Sites/38732/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "Northern Red Oak",
+            "href": "/Browse/Sites/38732/Species/Quercus%20rubra%20(Northern%20Red%20Oak)/Details"
+          },
+          {
+            "text": "91.6'",
+            "href": "/Browse/Trees/158829/Details"
+          },
+          {
+            "text": "118''",
+            "href": "/Browse/Trees/158829/Details"
+          },
+          null
+        ]
+      },
+      {
+        "cells": [
+          "Tilia cordata",
+          "Littleleaf Linden",
+          "89.5'",
+          "106''",
+          "-"
+        ],
+        "links": [
+          {
+            "text": "Tilia cordata",
+            "href": "/Browse/Sites/38732/Species/Tilia%20cordata%20(Littleleaf%20Linden)/Details"
+          },
+          {
+            "text": "Littleleaf Linden",
+            "href": "/Browse/Sites/38732/Species/Tilia%20cordata%20(Littleleaf%20Linden)/Details"
+          },
+          {
+            "text": "89.5'",
+            "href": "/Browse/Trees/158828/Details"
+          },
+          {
+            "text": "106''",
+            "href": "/Browse/Trees/158828/Details"
+          },
+          null
+        ]
+      }
+    ],
+    "pageInfo": "Showing 1 to 4 of 4 entries",
+    "hasPreviousPage": false,
+    "hasNextPage": false
+  },
+  "location": {
+    "coordinatesLabel": "Coordinates",
+    "coordinatesValue": "39 16.128, -077 03.798",
+    "coordinatesKind": "specified",
+    "rows": {
+      "Ownership type": "Private",
+      "County": "Howard"
+    },
+    "state": {
+      "text": "Maryland (US)",
+      "href": "/Browse/States/18/Details"
+    }
+  },
+  "photos": [],
+  "hasPhotos": false
+}
