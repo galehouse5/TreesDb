@@ -162,6 +162,26 @@ export async function saveSiteAction(formData: FormData): Promise<void> {
     new Date(),
   );
 
+  // Save-first intents (UX audit 2026-07 P0): the page-level Add site/
+  // Continue buttons submit the open site's form with a compound intent, so
+  // typed fields are persisted (or redisplayed with errors above) before
+  // the follow-up runs -- the old standalone forms discarded them.
+  const intent = String(formData.get("intent") ?? "save");
+  if (intent === "saveAndAddSite") {
+    const trip = await getTrip(tripId);
+    if (trip) {
+      const newSiteId = await createImportSite(
+        tripId,
+        { stateId: trip.defaultStateId, county: trip.defaultCounty },
+        new Date(),
+      );
+      redirect(`/import/${tripId}/sites?edit=${newSiteId}`);
+    }
+  }
+  if (intent === "saveAndContinue") {
+    await continuePastSites(tripId, ignoreOptionalErrors);
+  }
+
   redirect(`/import/${tripId}/sites`);
 }
 
@@ -202,11 +222,7 @@ export async function removeSiteAction(formData: FormData): Promise<void> {
  * exist yet, so this 404s for now, same as every other not-yet-built
  * forward redirect in this wizard.
  */
-export async function continueSitesAction(formData: FormData): Promise<void> {
-  const tripIdRaw = String(formData.get("tripId") ?? "");
-  const ignoreOptionalErrors = formData.get("ignoreOptionalErrors") === "true";
-  const tripId = await requireEditableTrip(tripIdRaw, `/import/${tripIdRaw}/sites`);
-
+async function continuePastSites(tripId: number, ignoreOptionalErrors: boolean): Promise<never> {
   const sites = await listImportSites(tripId);
   const states = await listStates();
 
@@ -236,4 +252,12 @@ export async function continueSitesAction(formData: FormData): Promise<void> {
   }
 
   redirect(`/import/${tripId}/trees`);
+}
+
+export async function continueSitesAction(formData: FormData): Promise<void> {
+  const tripIdRaw = String(formData.get("tripId") ?? "");
+  const ignoreOptionalErrors = formData.get("ignoreOptionalErrors") === "true";
+  const tripId = await requireEditableTrip(tripIdRaw, `/import/${tripIdRaw}/sites`);
+
+  await continuePastSites(tripId, ignoreOptionalErrors);
 }

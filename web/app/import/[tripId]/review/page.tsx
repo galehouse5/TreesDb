@@ -26,6 +26,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { concatenateNames, formatDateMMDDYYYY, formatDistanceField, isSpecifiedFormat } from "@/components/details/legacy-format";
 import { DataBadge, SECTION_HEADER_CLASS, SECTION_TITLE_CLASS } from "@/components/import/wizard-ui";
+import { SubmitButton } from "@/components/import/submit-button";
 import { readUnitsPreference } from "@/lib/units/cookie";
 import { describeFinishError, validateTripForFinish, type FinishError } from "@/lib/import-finish";
 import { ImportTreeType } from "@/lib/import-trees";
@@ -255,9 +256,9 @@ export default async function ReviewStepPage({ params, searchParams }: ReviewSte
           </Link>
           <form action={finishAction}>
             <input type="hidden" name="tripId" value={tripId} />
-            <Button type="submit" size="lg" disabled={requiredMessages.length > 0}>
+            <SubmitButton size="lg" disabled={requiredMessages.length > 0}>
               {graph.trip.isImported ? "Reimport" : "Finish"}
-            </Button>
+            </SubmitButton>
           </form>
         </CardContent>
       </Card>

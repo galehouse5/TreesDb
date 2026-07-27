@@ -30,7 +30,8 @@ import {
   type TrunkInput,
 } from "@/lib/import-trees";
 import type { TreeRedisplayState } from "./actions";
-import { addTrunkAction, removeTrunkAction, saveTreeAction } from "./actions";
+import { ConfirmSubmitButton } from "@/components/import/confirm-submit-button";
+import { saveTreeAction } from "./actions";
 
 // Code-audit finding: this used to be a local literal duplicating
 // `app/import/[tripId]/sites/page.tsx`'s state-select class string --
@@ -99,9 +100,13 @@ interface TreeFormProps {
   tree: TreeRecord;
   trunks: TrunkRecord[];
   redisplay: TreeRedisplayState | null;
+  /** Parent site's parsed coordinates, if it has any -- seeds the picker's
+   * starting viewport (legacy tier 2) so each tree doesn't start from a
+   * continental-US view. */
+  siteView?: { lat: number; lng: number } | null;
 }
 
-export function TreeForm({ tripId, tree, trunks, redisplay }: TreeFormProps) {
+export function TreeForm({ tripId, tree, trunks, redisplay, siteView }: TreeFormProps) {
   const isRedisplayForThisTree = redisplay !== null;
   const input = isRedisplayForThisTree ? redisplay!.input : defaultInputFor(tree);
   const requiredErrors = redisplay?.requiredErrors ?? [];
@@ -111,7 +116,10 @@ export function TreeForm({ tripId, tree, trunks, redisplay }: TreeFormProps) {
 
   return (
     <div className="rounded-lg border bg-card p-4 shadow-sm">
-      <form action={saveTreeAction} className="space-y-4">
+      {/* The form carries an id so page-level controls (Add tree, Continue)
+          can join it via the `form` attribute and save-then-act instead of
+          discarding the open form's fields (UX audit 2026-07 P0). */}
+      <form action={saveTreeAction} id={`tree-form-${tree.id}`} className="space-y-4">
         <input type="hidden" name="tripId" value={tripId} />
         <input type="hidden" name="treeId" value={tree.id} />
         <input type="hidden" name="trunkIds" value={trunks.map((t) => t.id).join(",")} />
@@ -311,8 +319,14 @@ export function TreeForm({ tripId, tree, trunks, redisplay }: TreeFormProps) {
 
         <div className="space-y-1">
           <label htmlFor={`coordinates-${tree.id}`} className="text-sm font-medium">
-            Coordinates <span className="text-muted-foreground">(e.g. 41.49932, -81.69437)</span>
+            Coordinates
           </label>
+          {/* Same three accepted formats as the Sites step's hint -- the old
+              hint advertised only decimal degrees, which the picker never
+              even wrote (UX audit 2026-07). */}
+          <p className="text-xs text-muted-foreground">
+            E.g. 41 29.959, -81 41.662 or 41.49932, -81.69437 or 41 29 57, -81 41 39.
+          </p>
           <div className="flex gap-2">
             <Input
               id={`coordinates-${tree.id}`}
@@ -320,7 +334,7 @@ export function TreeForm({ tripId, tree, trunks, redisplay }: TreeFormProps) {
               defaultValue={input.coordinates}
               aria-invalid={!!fieldError(requiredErrors, "coordinates")}
             />
-            <CoordinatePicker targetInputId={`coordinates-${tree.id}`} />
+            <CoordinatePicker targetInputId={`coordinates-${tree.id}`} initialView={siteView} />
           </div>
           <ErrorText message={fieldError(requiredErrors, "coordinates")} />
           <ErrorText message={fieldError(optionalErrors, "coordinates")} />
@@ -343,7 +357,7 @@ export function TreeForm({ tripId, tree, trunks, redisplay }: TreeFormProps) {
           <div className="space-y-2 rounded-r-md border-l-4 border-primary/30 bg-muted/30 p-3">
             <h5 className="text-sm font-medium text-primary">Trunks</h5>
             {trunks.length === 0 ? <p className="text-sm text-muted-foreground">No trunks added yet.</p> : null}
-            {trunks.map((trunk) => {
+            {trunks.map((trunk, trunkIndex) => {
               const trunkInput = redisplay?.trunkInputs[trunk.id] ?? defaultTrunkInputFor(trunk);
               const errors = trunkErrorsById[trunk.id];
               return (
@@ -395,9 +409,32 @@ export function TreeForm({ tripId, tree, trunks, redisplay }: TreeFormProps) {
                       defaultValue={trunkInput.trunkComments}
                     />
                   </div>
+                  {/* Ordinal label (raw DB ids leaked before), confirm like
+                      every other destructive control, and save-first: this
+                      submits the whole tree form with a remove intent, so
+                      typed values survive the removal round-trip. */}
+                  <div className="flex items-end justify-end sm:col-span-2 lg:col-span-4">
+                    <ConfirmSubmitButton
+                      name="intent"
+                      value={`saveAndRemoveTrunk:${trunk.id}`}
+                      variant="outline"
+                      size="sm"
+                      className="text-destructive hover:text-destructive"
+                      message={`Remove trunk ${trunkIndex + 1}? Its measurements will be deleted.`}
+                    >
+                      Remove trunk {trunkIndex + 1}
+                    </ConfirmSubmitButton>
+                  </div>
                 </div>
               );
             })}
+            {/* Save-first Add trunk (UX audit 2026-07 P0): submits the open
+                tree form with an add intent -- the server saves the typed
+                fields, then inserts the trunk. The old standalone form threw
+                away everything typed since the last save. */}
+            <Button type="submit" name="intent" value="saveAndAddTrunk" variant="secondary" size="sm">
+              Add trunk
+            </Button>
           </div>
         ) : null}
 
@@ -416,28 +453,6 @@ export function TreeForm({ tripId, tree, trunks, redisplay }: TreeFormProps) {
           </Button>
         </div>
       </form>
-
-      {isMulti ? (
-        <form action={addTrunkAction} className="mt-2 inline-block">
-          <input type="hidden" name="tripId" value={tripId} />
-          <input type="hidden" name="treeId" value={tree.id} />
-          <Button type="submit" variant="secondary" size="sm">
-            Add trunk
-          </Button>
-        </form>
-      ) : null}
-      {isMulti && trunks.length > 0
-        ? trunks.map((trunk) => (
-            <form key={trunk.id} action={removeTrunkAction} className="mt-1 ml-1 inline-block">
-              <input type="hidden" name="tripId" value={tripId} />
-              <input type="hidden" name="treeId" value={tree.id} />
-              <input type="hidden" name="trunkId" value={trunk.id} />
-              <Button type="submit" variant="destructive" size="sm">
-                Remove trunk #{trunk.id}
-              </Button>
-            </form>
-          ))
-        : null}
     </div>
   );
 }

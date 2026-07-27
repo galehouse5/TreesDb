@@ -9,6 +9,7 @@
 // intercepts the click to ask for confirmation first.
 import type { ComponentProps } from "react";
 import { Button } from "@/components/ui/button";
+import { SubmitButton } from "./submit-button";
 
 interface ConfirmSubmitButtonProps extends ComponentProps<typeof Button> {
   message: string;
@@ -16,8 +17,7 @@ interface ConfirmSubmitButtonProps extends ComponentProps<typeof Button> {
 
 export function ConfirmSubmitButton({ message, onClick, children, ...props }: ConfirmSubmitButtonProps) {
   return (
-    <Button
-      type="submit"
+    <SubmitButton
       onClick={(e) => {
         if (!confirm(message)) {
           e.preventDefault();
@@ -28,6 +28,6 @@ export function ConfirmSubmitButton({ message, onClick, children, ...props }: Co
       {...props}
     >
       {children}
-    </Button>
+    </SubmitButton>
   );
 }

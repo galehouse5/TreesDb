@@ -111,44 +111,20 @@ export async function removeTreeAction(formData: FormData): Promise<void> {
 }
 
 // ---------------------------------------------------------------------------
-// Add / remove trunk -- immediate persisted mutations (matching legacy's
-// "Add tree"/"Remove tree" pattern of saving right away, not deferring to
-// the tree's own Save button -- ImportController.cs:275-291,293-308). Field
-// VALUES on a trunk row are edited and saved via saveTreeAction below, same
-// two-phase split as tree creation vs tree field editing.
-// ---------------------------------------------------------------------------
-
-export async function addTrunkAction(formData: FormData): Promise<void> {
-  const tripIdRaw = String(formData.get("tripId") ?? "");
-  const treeId = Number(formData.get("treeId") ?? "");
-  const { tripId, userId } = await requireEditableTrip(tripIdRaw);
-
-  try {
-    await addTrunk(tripId, treeId, userId, new Date());
-  } catch (err) {
-    if (!(err instanceof TreeAccessError)) throw err;
-  }
-  redirect(editUrl(tripId, treeId));
-}
-
-export async function removeTrunkAction(formData: FormData): Promise<void> {
-  const tripIdRaw = String(formData.get("tripId") ?? "");
-  const treeId = Number(formData.get("treeId") ?? "");
-  const trunkId = Number(formData.get("trunkId") ?? "");
-  const { tripId } = await requireEditableTrip(tripIdRaw);
-
-  try {
-    await removeTrunk(tripId, trunkId, new Date());
-  } catch (err) {
-    if (!(err instanceof TreeAccessError)) throw err;
-  }
-  redirect(editUrl(tripId, treeId));
-}
-
-// ---------------------------------------------------------------------------
 // Save tree -- `SaveTree` (ImportController.cs:236-264): Required tag always
 // blocks; Optional tag blocks unless the "ignoring optional errors" button
 // was used (`saveUnlessOptionalErrors` param -> here, `intent` form field).
+//
+// Save-first intents (UX audit 2026-07 P0): the old standalone Add-trunk/
+// Remove-trunk/Add-tree/Continue forms silently discarded everything typed
+// into the open tree form. Every one of those controls now submits THIS
+// action with a compound `intent` -- the typed fields are validated and
+// saved (or redisplayed with errors, values intact) before the follow-up
+// mutation/navigation runs:
+//   saveAndAddTrunk            save, then addTrunk, back to edit
+//   saveAndRemoveTrunk:{id}    save (excluding that trunk), remove it
+//   saveAndAddTree:{siteId}    save, then create a tree in that site
+//   saveAndContinue            save, then run the Continue gate below
 // ---------------------------------------------------------------------------
 
 function readTreeInput(formData: FormData): TreeStepInput {
@@ -187,16 +163,24 @@ function readTrunkInput(formData: FormData, trunkId: number): TrunkInput {
 export async function saveTreeAction(formData: FormData): Promise<void> {
   const tripIdRaw = String(formData.get("tripId") ?? "");
   const treeId = Number(formData.get("treeId") ?? "");
-  const { tripId } = await requireEditableTrip(tripIdRaw);
+  const { tripId, userId } = await requireEditableTrip(tripIdRaw);
 
   const existing = await getTree(tripId, treeId);
   if (!existing) redirect(`/import/${tripId}/trees`);
+
+  const intent = String(formData.get("intent") ?? "save");
+  // A trunk being removed is excluded from validation AND the update loop:
+  // requiring a trunk's values to validate before it can be deleted would
+  // trap users behind errors on a row they're discarding.
+  const removingTrunkId = intent.startsWith("saveAndRemoveTrunk:")
+    ? Number(intent.slice("saveAndRemoveTrunk:".length))
+    : null;
 
   const trunkIdsRaw = String(formData.get("trunkIds") ?? "");
   const trunkIds = trunkIdsRaw
     .split(",")
     .map((s) => Number(s.trim()))
-    .filter((n) => Number.isInteger(n) && n > 0);
+    .filter((n) => Number.isInteger(n) && n > 0 && n !== removingTrunkId);
 
   const input = readTreeInput(formData);
   const trunkInputs: Record<number, TrunkInput> = {};
@@ -227,7 +211,6 @@ export async function saveTreeAction(formData: FormData): Promise<void> {
   }
 
   const hasRequiredErrors = requiredErrors.length > 0 || Object.keys(trunkErrors).length > 0;
-  const intent = String(formData.get("intent") ?? "save");
   const hasOptionalErrors = optionalErrors.length > 0;
 
   if (hasRequiredErrors || (hasOptionalErrors && intent !== "saveIgnoringOptional")) {
@@ -282,6 +265,33 @@ export async function saveTreeAction(formData: FormData): Promise<void> {
     }, new Date());
   }
 
+  // Follow-up mutation/navigation for the compound intents (fields are
+  // safely persisted by this point).
+  if (intent === "saveAndAddTrunk") {
+    try {
+      await addTrunk(tripId, treeId, userId, new Date());
+    } catch (err) {
+      if (!(err instanceof TreeAccessError)) throw err;
+    }
+    redirect(editUrl(tripId, treeId));
+  }
+  if (removingTrunkId !== null) {
+    try {
+      await removeTrunk(tripId, removingTrunkId, new Date());
+    } catch (err) {
+      if (!(err instanceof TreeAccessError)) throw err;
+    }
+    redirect(editUrl(tripId, treeId));
+  }
+  if (intent.startsWith("saveAndAddTree:")) {
+    const targetSiteId = Number(intent.slice("saveAndAddTree:".length));
+    const newTreeId = await createSingleTrunkTree(tripId, targetSiteId, userId, new Date());
+    redirect(editUrl(tripId, newTreeId));
+  }
+  if (intent === "saveAndContinue") {
+    await redirectPastTreesGate(tripId);
+  }
+
   redirect(`/import/${tripId}/trees`);
 }
 
@@ -298,12 +308,7 @@ export async function saveTreeAction(formData: FormData): Promise<void> {
 // for re-running full per-field validation across every tree in the trip.
 // ---------------------------------------------------------------------------
 
-export async function continueAction(formData: FormData): Promise<void> {
-  const tripIdRaw = String(formData.get("tripId") ?? "");
-  const { tripId } = await requireEditableTrip(tripIdRaw);
-
-  await initializeTreesForTrip(tripId, new Date());
-
+async function redirectPastTreesGate(tripId: number): Promise<never> {
   const incomplete = await defaultSql()<{ count: string }>`
     select count(*)::text as count from import_trees t
     join import_sites s on s.id = t.site_id
@@ -312,8 +317,13 @@ export async function continueAction(formData: FormData): Promise<void> {
   if (Number(incomplete[0]?.count ?? "0") > 0) {
     redirect(`/import/${tripId}/trees?error=${encodeURIComponent("Every tree needs at least a common name before continuing.")}`);
   }
-
-  // Review step (P3-06) not built by this task -- 404s until that task
-  // lands, same as every other forward wizard link.
   redirect(`/import/${tripId}/review`);
+}
+
+export async function continueAction(formData: FormData): Promise<void> {
+  const tripIdRaw = String(formData.get("tripId") ?? "");
+  const { tripId } = await requireEditableTrip(tripIdRaw);
+
+  await initializeTreesForTrip(tripId, new Date());
+  await redirectPastTreesGate(tripId);
 }

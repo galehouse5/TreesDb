@@ -61,11 +61,15 @@ export function StepNav({ tripId }: { tripId: number }) {
                   ) : (
                     <>
                       <StepIcon className="hidden size-3.5 sm:block" aria-hidden />
-                      <span className="sm:hidden">{index + 1}</span>
+                      <span aria-hidden className="sm:hidden">{index + 1}</span>
                     </>
                   )}
                 </span>
-                <span className="hidden sm:inline">{step.label}</span>
+                {/* sr-only, not hidden, below sm: `hidden` removed the label
+                    from the accessibility tree too, leaving the wizard's only
+                    navigation as four nameless links on phones (WCAG 2.4.4 /
+                    4.1.2 -- UX audit 2026-07). */}
+                <span className="sr-only sm:not-sr-only">{step.label}</span>
               </Link>
               {index < STEPS.length - 1 ? (
                 <span

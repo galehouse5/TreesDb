@@ -27,6 +27,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { CoordinatePicker } from "@/components/import/coordinate-picker";
 import { ConfirmSubmitButton } from "@/components/import/confirm-submit-button";
+import { SubmitButton } from "@/components/import/submit-button";
 import { NATIVE_SELECT_CLASS_NAME, SECTION_HEADER_CLASS, SECTION_TITLE_CLASS } from "@/components/import/wizard-ui";
 import { cn } from "@/lib/utils";
 import {
@@ -111,6 +112,12 @@ export default async function SitesStepPage({ params, searchParams }: SitesStepP
   }
   if (forcedEditId !== null) editingIds.add(forcedEditId);
   const anyEditing = editingIds.size > 0;
+  // With exactly one site form open (the overwhelmingly common case), the
+  // page-level Add site/Continue buttons submit THAT form with a compound
+  // intent so its typed fields save first (UX audit 2026-07 P0). With
+  // several forms open at once (multiple invalid sites) there's no single
+  // form to join -- those keep the plain actions and the hint below.
+  const soleOpenFormId = editingIds.size === 1 ? `site-form-${[...editingIds][0]}` : null;
 
   return (
     <div className="space-y-4">
@@ -145,12 +152,25 @@ export default async function SitesStepPage({ params, searchParams }: SitesStepP
       {/* Full-width dashed "add" affordance so the control reads as part of
           the site list rather than a stray button on the page background
           (design-review finding). */}
-      <form action={addSiteAction}>
-        <input type="hidden" name="tripId" value={tripId} />
-        <Button type="submit" variant="outline" className="w-full border-dashed">
+      {soleOpenFormId ? (
+        <Button
+          type="submit"
+          form={soleOpenFormId}
+          name="intent"
+          value="saveAndAddSite"
+          variant="outline"
+          className="w-full border-dashed"
+        >
           Add site
         </Button>
-      </form>
+      ) : (
+        <form action={addSiteAction}>
+          <input type="hidden" name="tripId" value={tripId} />
+          <Button type="submit" variant="outline" className="w-full border-dashed">
+            Add site
+          </Button>
+        </form>
+      )}
 
       {showOptionalBanner ? (
         <p
@@ -168,19 +188,29 @@ export default async function SitesStepPage({ params, searchParams }: SitesStepP
             Back
           </Link>
           <div className="flex items-center gap-3">
-            {anyEditing ? <span className="text-sm text-muted-foreground">Save your open site first.</span> : null}
-            <form action={continueSitesAction}>
-              <input type="hidden" name="tripId" value={tripId} />
-              <input type="hidden" name="ignoreOptionalErrors" value={showOptionalBanner ? "true" : "false"} />
-              <Button
-                type="submit"
-                size="lg"
-                variant={anyEditing ? "outline" : "default"}
-                className={cn(!anyEditing && showOptionalBanner && "bg-amber-600 text-white hover:bg-amber-600/90")}
-              >
-                {showOptionalBanner ? "Continue, ignoring optional errors" : "Continue"}
+            {soleOpenFormId ? (
+              <Button type="submit" form={soleOpenFormId} name="intent" value="saveAndContinue" size="lg">
+                Continue
               </Button>
-            </form>
+            ) : (
+              <>
+                {anyEditing ? (
+                  <span className="text-sm text-muted-foreground">Save your open sites first.</span>
+                ) : null}
+                <form action={continueSitesAction}>
+                  <input type="hidden" name="tripId" value={tripId} />
+                  <input type="hidden" name="ignoreOptionalErrors" value={showOptionalBanner ? "true" : "false"} />
+                  <Button
+                    type="submit"
+                    size="lg"
+                    variant={anyEditing ? "outline" : "default"}
+                    className={cn(!anyEditing && showOptionalBanner && "bg-amber-600 text-white hover:bg-amber-600/90")}
+                  >
+                    {showOptionalBanner ? "Continue, ignoring optional errors" : "Continue"}
+                  </Button>
+                </form>
+              </>
+            )}
           </div>
         </CardContent>
       </Card>
@@ -262,7 +292,10 @@ function SiteEditCard({
         <CardTitle className={cn("text-base", SECTION_TITLE_CLASS)}>{site.name || "New site"}</CardTitle>
       </CardHeader>
       <CardContent className="pt-4">
-        <form action={saveSiteAction} className="space-y-4">
+        {/* The id lets page-level Add site/Continue join this form via the
+            `form` attribute and save-then-act instead of discarding typed
+            fields (UX audit 2026-07 P0). */}
+        <form action={saveSiteAction} id={`site-form-${site.id}`} className="space-y-4">
           <input type="hidden" name="tripId" value={tripId} />
           <input type="hidden" name="siteId" value={site.id} />
           <input type="hidden" name="ignoreOptionalErrors" value={hasOnlyOptionalErrors ? "true" : "false"} />
@@ -421,12 +454,11 @@ function SiteEditCard({
           </div>
 
           <div className="flex justify-between gap-2">
-            <Button
-              type="submit"
+            <SubmitButton
               className={cn(hasOnlyOptionalErrors && "bg-amber-600 text-white hover:bg-amber-600/90")}
             >
               {hasOnlyOptionalErrors ? "Save anyway" : "Save site"}
-            </Button>
+            </SubmitButton>
             {isRemovable ? (
               <ConfirmSubmitButton
                 formAction={removeSiteAction}

@@ -26,6 +26,7 @@ import {
   type TrunkRecord,
 } from "@/db/queries/import-trees.sql";
 import { ImportTreeType, distanceToEditableText } from "@/lib/import-trees";
+import { CoordinatesFormat } from "@/lib/units/parse-coordinates";
 import type { TreeRedisplayState } from "./actions";
 import { TreeForm } from "./tree-form";
 import { addTreeAction, continueAction, removeTreeAction } from "./actions";
@@ -48,6 +49,16 @@ function treeSummaryLabel(tree: TreeRecord): string {
   return tree.scientificName.trim() !== "" ? tree.scientificName : "(Unidentified)";
 }
 
+/** Parent site's stored coordinates, when both axes are specified -- seeds
+ * each tree's coordinate-picker viewport (legacy CoordinatePicker.js tier 2)
+ * instead of a continental-US default. */
+function siteViewFor(site: { latitude: number; latitudeInputFormat: number; longitude: number; longitudeInputFormat: number }): { lat: number; lng: number } | null {
+  const specified = (f: number) =>
+    f !== CoordinatesFormat.Invalid && f !== CoordinatesFormat.Unspecified;
+  if (!specified(site.latitudeInputFormat) || !specified(site.longitudeInputFormat)) return null;
+  return { lat: site.latitude, lng: site.longitude };
+}
+
 export default async function TreesStepPage({ params, searchParams }: TreesStepPageProps) {
   const { tripId: tripIdParam } = await params;
   const tripId = Number(tripIdParam);
@@ -67,6 +78,14 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
 
   const editIdRaw = firstParam(sp.edit);
   const editId = editIdRaw ? Number(editIdRaw) : null;
+  // When a tree form is open, page-level Add tree/Continue submit THAT form
+  // (via the `form` attribute) with a compound intent, so its typed fields
+  // save instead of being discarded (UX audit 2026-07 P0). Only an editId
+  // that resolves to a real tree renders a form to join.
+  const openFormId =
+    editId !== null && Object.values(treesBySite).some((list) => list.some((t) => t.id === editId))
+      ? `tree-form-${editId}`
+      : null;
   const errorBanner = firstParam(sp.error);
 
   let redisplay: TreeRedisplayState | null = null;
@@ -110,6 +129,7 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
 
       {sites.map((site) => {
         const trees = treesBySite[site.id] ?? [];
+        const siteView = siteViewFor(site);
         return (
           <Card key={site.id}>
             <CardHeader className={SECTION_HEADER_CLASS}>
@@ -124,6 +144,7 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
                     tree={tree}
                     trunks={editingTrunks}
                     redisplay={redisplay}
+                    siteView={siteView}
                   />
                 ) : (
                   <div key={tree.id} className="rounded-lg border bg-card p-3 shadow-sm">
@@ -165,13 +186,26 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
                   card also NESTS a per-site tree list) read consistently
                   instead of one being a small plain button (code-audit
                   finding). */}
-              <form action={addTreeAction}>
-                <input type="hidden" name="tripId" value={tripId} />
-                <input type="hidden" name="siteId" value={site.id} />
-                <Button type="submit" variant="outline" className="w-full border-dashed">
+              {openFormId ? (
+                <Button
+                  type="submit"
+                  form={openFormId}
+                  name="intent"
+                  value={`saveAndAddTree:${site.id}`}
+                  variant="outline"
+                  className="w-full border-dashed"
+                >
                   Add tree
                 </Button>
-              </form>
+              ) : (
+                <form action={addTreeAction}>
+                  <input type="hidden" name="tripId" value={tripId} />
+                  <input type="hidden" name="siteId" value={site.id} />
+                  <Button type="submit" variant="outline" className="w-full border-dashed">
+                    Add tree
+                  </Button>
+                </form>
+              )}
             </CardContent>
           </Card>
         );
@@ -182,10 +216,16 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
           <Link href={`/import/${tripId}/sites`} className={cn(buttonVariants({ variant: "outline" }))}>
             Back
           </Link>
-          <form action={continueAction}>
-            <input type="hidden" name="tripId" value={tripId} />
-            <Button type="submit" size="lg">Continue</Button>
-          </form>
+          {openFormId ? (
+            <Button type="submit" form={openFormId} name="intent" value="saveAndContinue" size="lg">
+              Continue
+            </Button>
+          ) : (
+            <form action={continueAction}>
+              <input type="hidden" name="tripId" value={tripId} />
+              <Button type="submit" size="lg">Continue</Button>
+            </form>
+          )}
         </CardContent>
       </Card>
     </div>
