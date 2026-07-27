@@ -6,7 +6,7 @@
 // rationale as app/locations/loading.tsx.
 export default function ImportLoading() {
   return (
-    <div className="mx-auto w-full max-w-3xl flex-1 space-y-4 p-4">
+    <div className="mx-auto w-full max-w-4xl flex-1 space-y-4 p-4">
       <div className="h-9 w-48 animate-pulse rounded-lg bg-secondary" />
       <div className="overflow-hidden rounded-xl border border-border bg-card">
         <div className="h-11 border-b border-border bg-secondary" />

@@ -83,9 +83,9 @@ export async function finishAction(formData: FormData): Promise<void> {
   }
 
   // ImportController.cs:387 `RedirectToAction(MVC.Import.History())`.
-  // History (P3-07, doc 05 checklist) is not built by this task -- this
-  // 404s until that task lands, same as every other forward wizard link in
-  // this repo (e.g. app/import/[tripId]/sites/actions.ts's
-  // `continueSitesAction` redirecting to /trees before P3-05 existed).
-  redirect(`/import/history`);
+  // History's tables now live on the import index (app/import/page.tsx --
+  // /import/history is just a permanent redirect there), so land the user
+  // on /import directly, where the freshly finished trip tops the
+  // "Finished imports" table.
+  redirect(`/import`);
 }

@@ -127,7 +127,7 @@ test.describe("import wizard walkthrough (oracle trip 906)", () => {
       // -----------------------------------------------------------------
       await expect(page.getByText("Fix these before finishing")).toHaveCount(0);
       await page.getByRole("button", { name: "Finish" }).click();
-      await page.waitForURL(/\/import\/history$/, { timeout: 20_000 });
+      await page.waitForURL(/\/import$/, { timeout: 20_000 });
 
       // -----------------------------------------------------------------
       // 7. Assert: this new trip's own canonical rows equal oracle trip
