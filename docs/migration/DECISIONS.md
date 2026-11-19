@@ -114,3 +114,31 @@ made in this plan; the executor appends from D-016 onward.
   shows one merged species each. Divergence is deliberate and waived as
   W-010 (parity/waivers.md), scoped to exactly these name pairs plus
   whitespace-collapse-equal text cells.
+
+## D-018: Measurements under a retired species name fall back to the tree's species for TDI
+- Date / phase: 2026-11-19, post-Phase 1.
+- Context: legacy production has thrown `NHibernate.ObjectNotFoundException`
+  on `/Browse/Trees/{id}/Details` since 2016 for at least six trees.
+  `Measurement.Species` resolves through
+  `Measurements.ComputedMeasuredSpeciesId` (hash of the measurement's own
+  names, CreateSchema.sql:683) into the view `Trees.MeasuredSpecies`, which
+  only has rows for name pairs some tree currently carries
+  (CreateObjectsAndTypes.sql:28). After a taxonomic rename the tree takes
+  the new name from its latest measurement (`Tree.RecalculateProperties`),
+  older measurements keep the old one, and once no tree carries the old
+  name, mapping `TDI3` for those measurements throws. Two of the three
+  missing ids are the W-107 renames: 1790989718 = Carya alba / Mockernut
+  Hickory, 1344794096 = Quercus prinus / Chestnut Oak (555512959 is not yet
+  identified). The port's `treeDetails` left-joined `global_species` on the
+  measurement's own names, so these rows got maxima of 0 and rendered TDI
+  as "(not enough data)".
+- Decision: when the measurement's own name pair has no `global_species`
+  row, use the maxima of the tree's current species. When it does have a
+  row, it is used exactly as legacy did.
+- Legacy behavior: HTTP 500 on these tree pages (ELMAH alert per request),
+  BrowseController.cs:39 → Measurement.cs:134.
+- Parity impact: none on compared artifacts. Only pages that legacy fails
+  on change, and those sit in the W-006 legacy-error bucket. Open for the
+  repo owner: whether old measurements should always use the tree's current
+  species (a visible change wherever the old name is still carried by other
+  trees), and whether renames should become a species/synonym table.

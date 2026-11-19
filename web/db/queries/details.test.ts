@@ -182,6 +182,38 @@ describe("details.sql", () => {
       expect(data!.height / data!.maxHeight + data!.girth / data!.maxGirth).toBeCloseTo(1, 5);
     });
 
+    it("D-018: a measurement under a retired species name gets the maxima of its tree's current species", async () => {
+      // Legacy Carya alba -> Carya tomentosa rename: the tree now carries the
+      // new name, its older measurement still the old one, and no tree is
+      // left under the old name. Legacy 500s on this page.
+      const treeId = await insertTree(db, siteId, { scientificName: "Carya tomentosa", commonName: "Mockernut Hickory", height: 110, girth: 9 });
+      await insertTreeMeasurement(db, treeId, { scientificName: "Carya tomentosa", commonName: "Mockernut Hickory", measured: "2020-01-01", height: 110, heightInputFormat: 2, girth: 9, girthInputFormat: 2 });
+      await insertTreeMeasurement(db, treeId, { scientificName: "Carya alba", commonName: "Mockernut Hickory", measured: "2010-01-01", height: 100, heightInputFormat: 2, girth: 8, girthInputFormat: 2 });
+
+      const data = await treeDetails(treeId, sql);
+      const old = data!.measurements.find((m) => m.scientificName === "Carya alba")!;
+      expect(old.maxHeight).toBe(110);
+      expect(old.maxGirth).toBe(9);
+      expect(old.height / old.maxHeight + old.girth / old.maxGirth).toBeCloseTo(100 / 110 + 8 / 9, 5);
+    });
+
+    it("D-018: a measurement whose own species still exists keeps its own maxima, as in legacy", async () => {
+      // Another tree still carries the measurement's old name, so legacy
+      // resolved it to that species' maxima; that must not change.
+      const otherId = await insertTree(db, siteId, { scientificName: "Quercus prinus", commonName: "Chestnut Oak", height: 150, girth: 15 });
+      await insertTreeMeasurement(db, otherId, { scientificName: "Quercus prinus", commonName: "Chestnut Oak", height: 150, heightInputFormat: 2, girth: 15, girthInputFormat: 2 });
+      const treeId = await insertTree(db, siteId, { scientificName: "Quercus montana", commonName: "Chestnut Oak", height: 90, girth: 7 });
+      await insertTreeMeasurement(db, treeId, { scientificName: "Quercus montana", commonName: "Chestnut Oak", measured: "2020-01-01", height: 90, heightInputFormat: 2, girth: 7, girthInputFormat: 2 });
+      await insertTreeMeasurement(db, treeId, { scientificName: "Quercus prinus", commonName: "Chestnut Oak", measured: "2010-01-01", height: 80, heightInputFormat: 2, girth: 6, girthInputFormat: 2 });
+
+      const data = await treeDetails(treeId, sql);
+      const old = data!.measurements.find((m) => m.scientificName === "Quercus prinus")!;
+      expect(old.maxHeight).toBe(150);
+      expect(old.maxGirth).toBe(15);
+      const current = data!.measurements.find((m) => m.scientificName === "Quercus montana")!;
+      expect(current.maxHeight).toBe(90);
+    });
+
     it("passes each measurement's own raw input-format codes through untouched, for the page to gate NullDisplayText", async () => {
       const treeId = await insertTree(db, siteId, { scientificName: "Acer rubrum", commonName: "Red Maple", height: 0, girth: 0 });
       await insertTreeMeasurement(db, treeId, {

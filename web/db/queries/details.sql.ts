@@ -302,7 +302,15 @@ export async function treeDetails(id: number, sql: SqlTag = defaultSql()): Promi
       tm.diameter, tm.diameter_input_format,
       tm.conical_volume, tm.conical_volume_input_format,
       tm.general_comments,
-      gs.max_height, gs.max_girth, gs.max_crown_spread,
+      -- D-018: a measurement recorded under a species name that no tree
+      -- carries any more (e.g. Carya alba after the rename to Carya
+      -- tomentosa) has no global_species row of its own. Legacy threw
+      -- ObjectNotFoundException there (the page 500s); fall back to the
+      -- maxima of the tree's current species. Where the measurement's own
+      -- name pair still has a row, it wins, exactly as in legacy.
+      case when gs_own.scientific_name is not null then gs_own.max_height else gs_tree.max_height end as max_height,
+      case when gs_own.scientific_name is not null then gs_own.max_girth else gs_tree.max_girth end as max_girth,
+      case when gs_own.scientific_name is not null then gs_own.max_crown_spread else gs_tree.max_crown_spread end as max_crown_spread,
       (select count(*)::int from photo_references pr where pr.type = 7 and pr.tree_measurement_id = tm.id) as photo_count,
       (
         select coalesce(
@@ -313,7 +321,9 @@ export async function treeDetails(id: number, sql: SqlTag = defaultSql()): Promi
         where mm.measurement_id = tm.id
       ) as measurers
     from tree_measurements tm
-    left join global_species gs on gs.scientific_name = tm.scientific_name and gs.common_name = tm.common_name
+    join trees t on t.id = tm.tree_id
+    left join global_species gs_own on gs_own.scientific_name = tm.scientific_name and gs_own.common_name = tm.common_name
+    left join global_species gs_tree on gs_tree.scientific_name = t.scientific_name and gs_tree.common_name = t.common_name
     where tm.tree_id = ${id}
     order by tm.measured desc, tm.id asc
   `;
