@@ -1,5 +1,6 @@
 import type { PGlite } from "@electric-sql/pglite";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
+import { syncSpecies } from "../species";
 import { siteDetails, siteSpeciesGrid, treeDetails } from "./details.sql";
 import type { SqlTag } from "./sql-tag";
 import { createTestDb, insertCountry, insertSite, insertState, insertTree, insertTreeMeasurer, pgliteSqlTag } from "./test-helpers";
@@ -212,6 +213,28 @@ describe("details.sql", () => {
       expect(old.maxGirth).toBe(15);
       const current = data!.measurements.find((m) => m.scientificName === "Quercus montana")!;
       expect(current.maxHeight).toBe(90);
+    });
+
+    it("D-019: a measurement under a recorded synonym gets the maxima of the species it became, ahead of the tree fallback", async () => {
+      // A synonym's target need not be the tree's current species (a tree
+      // later re-identified), so the synonym wins over the D-018 fallback.
+      const targetId = await insertTree(db, siteId, { scientificName: "Betula nigra", commonName: "River Birch", height: 120, girth: 11 });
+      await insertTreeMeasurement(db, targetId, { scientificName: "Betula nigra", commonName: "River Birch", height: 120, heightInputFormat: 2, girth: 11, girthInputFormat: 2 });
+      const treeId = await insertTree(db, siteId, { scientificName: "Betula lenta", commonName: "Sweet Birch", height: 60, girth: 5 });
+      await insertTreeMeasurement(db, treeId, { scientificName: "Betula lenta", commonName: "Sweet Birch", measured: "2020-01-01", height: 60, heightInputFormat: 2, girth: 5, girthInputFormat: 2 });
+      await insertTreeMeasurement(db, treeId, { scientificName: "Betula rubra", commonName: "Red Birch", measured: "2010-01-01", height: 50, heightInputFormat: 2, girth: 4, girthInputFormat: 2 });
+      await syncSpecies(sql, [
+        {
+          from: { scientificName: "Betula rubra", commonName: "Red Birch" },
+          to: { scientificName: "Betula nigra", commonName: "River Birch" },
+          note: "test",
+        },
+      ]);
+
+      const data = await treeDetails(treeId, sql);
+      const old = data!.measurements.find((m) => m.scientificName === "Betula rubra")!;
+      expect(old.maxHeight).toBe(120);
+      expect(old.maxGirth).toBe(11);
     });
 
     it("passes each measurement's own raw input-format codes through untouched, for the page to gate NullDisplayText", async () => {

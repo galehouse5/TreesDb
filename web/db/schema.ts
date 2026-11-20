@@ -83,9 +83,11 @@ import {
   check,
   customType,
   date,
+  foreignKey,
   index,
   integer,
   pgTable,
+  primaryKey,
   real,
   smallint,
   text,
@@ -357,6 +359,46 @@ export const knownSpecies = pgTable("known_species", {
   scientificName: varchar("scientific_name", { length: 100 }).notNull(),
   commonName: varchar("common_name", { length: 50 }).notNull(),
 });
+
+// ---------------------------------------------------------------------------
+// species + species_synonyms  (new; no legacy table -- D-019)
+//
+// Legacy has no species table: Trees.MeasuredSpecies is a view grouping
+// Trees.Trees by name pair, keyed by an MD5-XOR hash. `species` gives each
+// (scientific_name, common_name) pair that a tree carries a stable id and
+// its D-011 slug; db/species.ts `syncSpecies` keeps it in step with
+// `trees`. `species_synonyms` maps a retired name pair (a taxonomic
+// rename, e.g. Carya alba -> Carya tomentosa) to the species it became,
+// so measurements recorded under the old name still resolve (D-018).
+// ---------------------------------------------------------------------------
+export const species = pgTable(
+  "species",
+  {
+    id: integer("id").generatedAlwaysAsIdentity().primaryKey(),
+    scientificName: varchar("scientific_name", { length: 100 }).notNull(),
+    commonName: varchar("common_name", { length: 100 }).notNull(),
+    slug: varchar("slug", { length: 210 }).notNull(),
+  },
+  (t) => [
+    uniqueIndex("ux_species_names").on(t.scientificName, t.commonName),
+    uniqueIndex("ux_species_slug").on(t.slug),
+  ],
+);
+
+export const speciesSynonyms = pgTable(
+  "species_synonyms",
+  {
+    scientificName: varchar("scientific_name", { length: 100 }).notNull(),
+    commonName: varchar("common_name", { length: 100 }).notNull(),
+    speciesId: integer("species_id").notNull(),
+    note: varchar("note", { length: 200 }).notNull().default(""),
+  },
+  (t) => [
+    primaryKey({ name: "pk_species_synonyms", columns: [t.scientificName, t.commonName] }),
+    foreignKey({ name: "fk_species_synonyms_species", columns: [t.speciesId], foreignColumns: [species.id] }),
+    index("ix_species_synonyms_species_id").on(t.speciesId),
+  ],
+);
 
 // ---------------------------------------------------------------------------
 // trees  (legacy: Trees.Trees; + M001 CalculatedLat/LongInputFormat.

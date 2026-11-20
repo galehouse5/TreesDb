@@ -36,6 +36,7 @@ import { CoordinatesFormat } from "../../lib/units/parse-coordinates";
 // rather than duplicating `RemoveMeasurementsByTrip`/`RemoveVisitsByTrip`.
 import { removeMeasurementsByTrip, removeVisitsByTrip } from "../../lib/merge/reimport";
 import { recomputeStaleMetrics } from "../recompute";
+import { syncSpecies } from "../species";
 
 // ---------------------------------------------------------------------------
 // Authorization
@@ -800,5 +801,6 @@ export async function removeTrip(
     await trx`delete from import_trips where id = ${tripId}`;
 
     await recomputeStaleMetrics(trx);
+    await syncSpecies(trx); // D-019
   });
 }

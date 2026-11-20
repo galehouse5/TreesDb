@@ -7,7 +7,7 @@
  * and asserts:
  *  1. The migration runs clean against an empty database.
  *  2. information_schema.columns matches a hand-verified expected snapshot
- *     for every one of the 17 migrated tables (column name, data_type,
+ *     for every one of the 19 migrated tables (column name, data_type,
  *     is_nullable, in declaration order) - this is the "schema snapshot
  *     test committed" acceptance criterion for P0-02.
  *  3. The `photo_references` CHECK constraint (exactly one owner FK set for
@@ -278,6 +278,18 @@ const EXPECTED_COLUMNS: Record<string, [string, string, string][]> = {
     ["last_metrics_update_timestamp", "timestamp with time zone", "YES"],
     ["visit_count", "integer", "NO"],
   ],
+  species: [
+    ["id", "integer", "NO"],
+    ["scientific_name", "character varying", "NO"],
+    ["common_name", "character varying", "NO"],
+    ["slug", "character varying", "NO"],
+  ],
+  species_synonyms: [
+    ["scientific_name", "character varying", "NO"],
+    ["common_name", "character varying", "NO"],
+    ["species_id", "integer", "NO"],
+    ["note", "character varying", "NO"],
+  ],
   states: [
     ["id", "integer", "NO"],
     ["country_id", "integer", "NO"],
@@ -432,7 +444,7 @@ describe("schema migration (PGlite)", () => {
     await db.close();
   });
 
-  it("creates exactly the 17 expected tables", async () => {
+  it("creates exactly the 19 expected tables", async () => {
     const res = await db.query<{ table_name: string }>(`
       select table_name
       from information_schema.tables

@@ -64,6 +64,7 @@
 // this file already operates on normalized text.
 
 import { markSiteStaleForTree, markStatesStaleForSite, recomputeStaleMetrics } from "../../db/recompute";
+import { syncSpecies } from "../../db/species";
 import { defaultSql, type SqlTag, withTransaction } from "../../db/queries/sql-tag";
 import { speciesHash } from "../species-hash";
 import { buildSiteGraph } from "./graph";
@@ -901,6 +902,7 @@ export async function finishTrip(
     const result = await runImport(trx, tripId);
     await trx`update import_trips set imported = now() where id = ${tripId}`;
     await recomputeStaleMetrics(trx);
+    await syncSpecies(trx); // D-019
     return result;
   });
 }

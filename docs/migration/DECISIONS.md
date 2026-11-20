@@ -142,3 +142,36 @@ made in this plan; the executor appends from D-016 onward.
   repo owner: whether old measurements should always use the tree's current
   species (a visible change wherever the old name is still carried by other
   trees), and whether renames should become a species/synonym table.
+
+## D-019: A species table with synonyms for renamed species
+- Date / phase: 2026-11-20, post-Phase 1. Follows D-018; the repo owner
+  asked for the species/synonym table D-018 left open.
+- Context: legacy has no species table. A species exists only while some
+  tree carries its (scientific, common) name pair, so a taxonomic rename
+  silently orphans older measurements (D-018). Nothing records that
+  Carya alba became Carya tomentosa, so the next rename fails the same way
+  and nobody hears about it until a page 500s.
+- Decision:
+  - `species` holds one row per name pair a tree carries, with its D-011
+    slug. `syncSpecies` (db/species.ts) keeps it in step with `trees`, in
+    app code per D-004, inside every transaction that writes trees: import
+    Finish, reimport, import removal, and the ETL full load and delta.
+  - `species_synonyms` maps a retired name pair to the species it became
+    (FK to `species`). The known renames are the `SPECIES_SYNONYMS` seed in
+    db/species.ts (the two W-107 renames), so adding one is a reviewed
+    one-line change.
+  - The tree page resolves a measurement's maxima by its own species, then
+    its synonym's species, then the tree's species (the D-018 fallback,
+    now a last resort).
+  - The ETL fails on any measurement name pair that resolves to neither a
+    species nor a synonym, listing the pair and its tree ids.
+    `--allow-unresolved-species` reports them instead of failing, for loads
+    that must go ahead while a rename is being identified (legacy id
+    555512959 is still unknown).
+- Deferred: `species_id` FK columns on `trees` and `tree_measurements`.
+  The name pairs stay the source of truth for now because the full ETL
+  load is not transactional and the delta loader is still changing; adding
+  the columns is a follow-up once both settle.
+- Legacy behavior: unchanged where legacy works. Pages legacy 500s on now
+  render with the renamed species' maxima.
+- Parity impact: none on compared artifacts (same W-006 bucket as D-018).

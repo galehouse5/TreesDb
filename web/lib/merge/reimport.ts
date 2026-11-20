@@ -45,6 +45,7 @@
 //     that has no equivalent need in a plain-SQL port) re-import.
 
 import { markSiteStaleForTree, markStatesStaleForSite, recomputeStaleMetrics } from "../../db/recompute";
+import { syncSpecies } from "../../db/species";
 import { defaultSql, type SqlTag, withTransaction } from "../../db/queries/sql-tag";
 import { type FinishTripResult, runImport } from "./engine";
 
@@ -185,6 +186,7 @@ export async function reimportTrip(
     const result = await runImport(trx, tripId);
     await trx`update import_trips set imported = now() where id = ${tripId}`;
     await recomputeStaleMetrics(trx);
+    await syncSpecies(trx); // D-019
     return result;
   });
 }

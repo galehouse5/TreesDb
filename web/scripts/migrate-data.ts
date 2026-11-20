@@ -73,6 +73,8 @@ import path from "node:path";
 import { pipeline } from "node:stream/promises";
 import "dotenv/config";
 import { getSql } from "../db/index";
+import type { SqlTag } from "../db/queries/sql-tag";
+import { findUnresolvedMeasurements, syncSpecies } from "../db/species";
 import {
   readCsvHeaderFromFile,
   streamCsvRows,
@@ -110,6 +112,7 @@ interface CliArgs {
   table?: string;
   dryRun: boolean;
   dumpsDir?: string;
+  allowUnresolvedSpecies: boolean;
   help: boolean;
 }
 
@@ -128,6 +131,9 @@ Options:
   --apply-deletes     With --delta: also delete those rows (children first)
   --preview           With --delta: compute and report the changes, then
                       roll the transaction back (nothing is written)
+  --allow-unresolved-species
+                      Report measurement species names that match no
+                      species or synonym (D-019) instead of failing on them
   --help              Show this message
 
 See the header comment in this file for the dump CSV format this assumes.`);
@@ -140,6 +146,7 @@ function parseArgs(argv: string[]): CliArgs {
     applyDeletes: false,
     preview: false,
     dryRun: false,
+    allowUnresolvedSpecies: false,
     help: false,
   };
   for (let i = 0; i < argv.length; i++) {
@@ -162,6 +169,9 @@ function parseArgs(argv: string[]): CliArgs {
         break;
       case "--preview":
         args.preview = true;
+        break;
+      case "--allow-unresolved-species":
+        args.allowUnresolvedSpecies = true;
         break;
       case "--dumps-dir":
         args.dumpsDir = argv[++i];
@@ -264,6 +274,53 @@ interface OrphanCheckResult {
   column: string;
   refTable: string;
   orphans: number;
+}
+
+/**
+ * D-019: rebuild `species` from the loaded trees, apply SPECIES_SYNONYMS,
+ * and fail on any measurement whose species name resolves to neither a
+ * species nor a synonym (the rows legacy's tree page 500s on). Returns the
+ * errors to record; with --allow-unresolved-species they are only logged.
+ */
+async function runSpeciesStep(
+  sql: SqlTag,
+  tables: string[],
+  allowUnresolved: boolean,
+): Promise<string[]> {
+  if (!tables.includes("trees")) return [];
+  const sync = await syncSpecies(sql);
+  console.log(
+    `[migrate-data] species: ${sync.inserted} added, ${sync.deleted} removed, ` +
+      `${sync.synonymsApplied} synonym(s) applied`,
+  );
+  const errors: string[] = [];
+  for (const seed of sync.synonymsWithoutTarget) {
+    errors.push(
+      `species synonym target missing: (${seed.to.scientificName}, ${seed.to.commonName}) ` +
+        `for (${seed.from.scientificName}, ${seed.from.commonName})`,
+    );
+  }
+  for (const seed of sync.synonymsStillInUse) {
+    console.warn(
+      `[migrate-data]   species synonym (${seed.from.scientificName}, ${seed.from.commonName}) ` +
+        `is still carried by some trees: rename only partly applied`,
+    );
+  }
+  if (tables.includes("tree_measurements")) {
+    for (const u of await findUnresolvedMeasurements(sql)) {
+      errors.push(
+        `unresolved measurement species (${u.scientificName}, ${u.commonName}): ` +
+          `${u.measurements} measurement(s) on tree(s) ${u.treeIds}; ` +
+          `add it to SPECIES_SYNONYMS in db/species.ts`,
+      );
+    }
+  }
+  if (allowUnresolved) {
+    for (const e of errors) console.warn(`[migrate-data]   (allowed) ${e}`);
+    return [];
+  }
+  for (const e of errors) console.error(`[migrate-data]   ${e}`);
+  return errors;
 }
 
 async function runOrphanChecks(
@@ -424,6 +481,14 @@ async function main(): Promise<void> {
     console.log(`[migrate-data]   all ${orphanChecks.length} FK constraint(s) clean`);
   }
 
+  errors.push(
+    ...(await runSpeciesStep(
+      sql as unknown as SqlTag,
+      successfullyLoaded,
+      args.allowUnresolvedSpecies,
+    )),
+  );
+
   console.log(`[migrate-data] setval-ing identity sequences...`);
   await setvalSequences(executor, successfullyLoaded);
 
@@ -556,6 +621,10 @@ async function runDelta(
           `FK orphan(s): ${check.table}.${check.column} -> ${check.refTable}: ${check.orphans} row(s)`,
         );
       }
+
+      errors.push(
+        ...(await runSpeciesStep(tx as unknown as SqlTag, tables, args.allowUnresolvedSpecies)),
+      );
 
       await setvalSequences(executor, tables);
       for (const tableName of tables) await dropIncoming(executor, tableName);
