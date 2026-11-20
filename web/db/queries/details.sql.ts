@@ -556,14 +556,17 @@ const SITE_SPECIES_SORT_KEYS: Record<string, (r: MeasuredSpeciesBySiteRow) => st
  * callers, e.g. exports).
  */
 function sortSiteSpecies(rows: MeasuredSpeciesBySiteRow[], sort: string | undefined, sortAscending: boolean | undefined) {
-  const keyFn = (sort && SITE_SPECIES_SORT_KEYS[sort]) || SITE_SPECIES_SORT_KEYS.BotanicalName!;
+  // Own-key lookup only (see `sortAndPage` in species-state-details.sql.ts):
+  // inherited Object.prototype names like `valueOf` must not resolve.
+  const matched = sort && Object.hasOwn(SITE_SPECIES_SORT_KEYS, sort) ? SITE_SPECIES_SORT_KEYS[sort] : undefined;
+  const keyFn = matched || SITE_SPECIES_SORT_KEYS.BotanicalName!;
   const sorted = [...rows].sort((a, b) => {
     const ka = keyFn(a);
     const kb = keyFn(b);
     if (typeof ka === "number" && typeof kb === "number") return ka - kb;
     return String(ka).localeCompare(String(kb));
   });
-  if (sort && SITE_SPECIES_SORT_KEYS[sort] && sortAscending === false) sorted.reverse();
+  if (matched && sortAscending === false) sorted.reverse();
   return sorted;
 }
 

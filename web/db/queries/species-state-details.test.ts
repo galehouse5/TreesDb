@@ -157,6 +157,13 @@ describe("species-state-details.sql", () => {
       expect(result.rows.map((r) => r.id)).toEqual([1, 2, 3]);
     });
 
+    it("inherited Object.prototype names (bot-fuzzed sort params) fall back to unsorted, not an error", () => {
+      for (const sort of ["__proto__", "valueOf", "hasOwnProperty", "toString", "constructor", "isPrototypeOf"]) {
+        const result = sortAndPage(rows, keyFns, { sort, sortAscending: false });
+        expect(result.rows.map((r) => r.id)).toEqual([1, 2, 3]);
+      }
+    });
+
     it("without a naturalKeyFn, omits it entirely (no 4th arg) and stays query-natural even when sortAscending=false is (nonsensically) passed alongside a blank sort", () => {
       const result = sortAndPage(rows, keyFns, { sortAscending: false });
       expect(result.rows.map((r) => r.id)).toEqual([1, 2, 3]); // untouched -- sortAscending only applies to a MATCHED sort key

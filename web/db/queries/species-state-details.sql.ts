@@ -521,7 +521,13 @@ export function sortAndPage<T>(
   params: GridPageParams,
   naturalKeyFn?: (r: T) => string | number | null,
 ): GridPageResult<T> {
-  const matchedKeyFn = params.sort ? keyFns[params.sort] : undefined;
+  // Own-key lookup only: `sort` comes straight from the query string, and a
+  // plain `keyFns[sort]` would also resolve inherited Object.prototype names
+  // (`valueOf`, `hasOwnProperty`, `__proto__`, ...) to non-key functions that
+  // throw when called -- a 500 for the same bot-fuzzed sort params behind
+  // legacy's `NotImplementedException` alerts. Unknown names must degrade to
+  // the natural order like any other unmatched column.
+  const matchedKeyFn = params.sort && Object.hasOwn(keyFns, params.sort) ? keyFns[params.sort] : undefined;
   let ordered = rows;
   if (matchedKeyFn) {
     ordered = [...rows].sort((a, b) => compareValues(matchedKeyFn(a), matchedKeyFn(b)));

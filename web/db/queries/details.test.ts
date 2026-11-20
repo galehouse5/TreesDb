@@ -294,6 +294,13 @@ describe("details.sql", () => {
       expect(result.rows.map((r) => r.scientificName)).toEqual(["Acer rubrum", "Fagus grandifolia", "Quercus alba"]);
     });
 
+    it("inherited Object.prototype names (bot-fuzzed sort params) fall back to the default order, not an error", async () => {
+      for (const sort of ["__proto__", "valueOf", "hasOwnProperty"]) {
+        const result = await siteSpeciesGrid(gridSiteId, { sort, sortAscending: false }, sql);
+        expect(result.rows.map((r) => r.scientificName)).toEqual(["Acer rubrum", "Fagus grandifolia", "Quercus alba"]);
+      }
+    });
+
     it("pages at size 10 (page index 0-based, `page ?? 0`)", async () => {
       const result = await siteSpeciesGrid(gridSiteId, { page: 0 }, sql);
       expect(result.pageIndex).toBe(0);
