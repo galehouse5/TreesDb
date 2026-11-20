@@ -508,6 +508,6 @@ now exists because a LATER trip created it, so the merge cross-check
 runs where original import's Site.Create path had none — doc 07 §8's
 anticipated case). Full SQL evidence in the replay round-2 report.
 
-- Approved by: pending repo-owner review (replay gate: "100% of trips
-  replay clean or carry an investigated, named waiver" — this section is
-  that ledger).
+- Approved by: repo owner (galehouse5) on 2026-11-20, all ten (W-101..W-110)
+  (replay gate: "100% of trips replay clean or carry an investigated,
+  named waiver" — this section is that ledger).
