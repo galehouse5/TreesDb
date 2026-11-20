@@ -44,6 +44,18 @@
  *   pnpm exec tsx scripts/migrate-data.ts --reset              # TRUNCATE ... CASCADE first, then reload
  *   pnpm exec tsx scripts/migrate-data.ts --dry-run             # parse CSVs + report counts, no DB writes/connection
  *   pnpm exec tsx scripts/migrate-data.ts --dumps-dir <path>     # override web/parity/dumps
+ *   pnpm exec tsx scripts/migrate-data.ts --delta                # sync a fresh dump into a loaded DB (no truncate)
+ *   pnpm exec tsx scripts/migrate-data.ts --delta --apply-deletes  # ...and delete rows the dump no longer has
+ *   pnpm exec tsx scripts/migrate-data.ts --delta --preview        # report what a delta would change, then roll back
+ *
+ * DELTA MODE (doc 06 P4-02; scripts/etl/delta.ts has the details): inserts
+ * rows whose id is new, updates rows whose dumped columns changed, and lists
+ * rows Postgres has that the dump doesn't (deleted only with
+ * --apply-deletes). The whole run is one transaction: any failure (bad
+ * dump, FK orphan, species slug collision) rolls everything back, so the
+ * database is never left half-synced. Re-running it on the same dump is a
+ * no-op, so it can be run after every fresh dump to keep the new app
+ * comparable with live. Report: web/parity/reports/etl-delta-<timestamp>.json.
  *
  * After a real (non-dry-run) load, this also: validates every FK (orphan
  * check, doc 07 §7.1 #6), `setval`s every identity sequence past its max
@@ -55,6 +67,7 @@
  */
 
 import { createReadStream, existsSync } from "node:fs";
+import type postgres from "postgres";
 import { promises as fsp } from "node:fs";
 import path from "node:path";
 import { pipeline } from "node:stream/promises";
@@ -65,6 +78,12 @@ import {
   streamCsvRows,
   type CsvRow,
 } from "./etl/csv";
+import {
+  dropIncoming,
+  reconcileMissing,
+  syncTableDelta,
+  type DeltaTableResult,
+} from "./etl/delta";
 import { makePostgresExecutor, type SqlExecutor } from "./etl/executor";
 import {
   buildAnalyzeSql,
@@ -85,6 +104,9 @@ import { FOREIGN_KEYS, LOAD_ORDER, TABLES } from "./etl/tables";
 
 interface CliArgs {
   reset: boolean;
+  delta: boolean;
+  applyDeletes: boolean;
+  preview: boolean;
   table?: string;
   dryRun: boolean;
   dumpsDir?: string;
@@ -100,13 +122,26 @@ Options:
   --reset             TRUNCATE ... CASCADE the table(s) in scope before loading
   --dry-run           Parse CSVs and report row counts only; no DB connection
   --dumps-dir <path>   Override the dumps directory (default web/parity/dumps)
+  --delta             Sync the dump into an already-loaded DB in one
+                      transaction: insert new ids, update changed rows,
+                      report rows the dump no longer has
+  --apply-deletes     With --delta: also delete those rows (children first)
+  --preview           With --delta: compute and report the changes, then
+                      roll the transaction back (nothing is written)
   --help              Show this message
 
 See the header comment in this file for the dump CSV format this assumes.`);
 }
 
 function parseArgs(argv: string[]): CliArgs {
-  const args: CliArgs = { reset: false, dryRun: false, help: false };
+  const args: CliArgs = {
+    reset: false,
+    delta: false,
+    applyDeletes: false,
+    preview: false,
+    dryRun: false,
+    help: false,
+  };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
     switch (arg) {
@@ -119,6 +154,15 @@ function parseArgs(argv: string[]): CliArgs {
       case "--dry-run":
         args.dryRun = true;
         break;
+      case "--delta":
+        args.delta = true;
+        break;
+      case "--apply-deletes":
+        args.applyDeletes = true;
+        break;
+      case "--preview":
+        args.preview = true;
+        break;
       case "--dumps-dir":
         args.dumpsDir = argv[++i];
         break;
@@ -129,6 +173,12 @@ function parseArgs(argv: string[]): CliArgs {
       default:
         throw new Error(`Unknown argument: ${arg} (--help for usage)`);
     }
+  }
+  if (args.delta && args.reset) {
+    throw new Error("--delta and --reset can't be combined (--reset is a full reload)");
+  }
+  if ((args.applyDeletes || args.preview) && !args.delta) {
+    throw new Error("--apply-deletes and --preview only apply with --delta");
   }
   if (args.table && !TABLES[args.table]) {
     throw new Error(
@@ -194,7 +244,7 @@ async function dryRun(
 // ---------------------------------------------------------------------------
 
 function makeCopyFillStrategy(
-  sql: ReturnType<typeof getSql>,
+  sql: postgres.Sql | postgres.TransactionSql,
   csvPath: string,
 ): (staging: string, columns: ResolvedColumn[]) => Promise<void> {
   return async (staging, columns) => {
@@ -286,6 +336,11 @@ async function main(): Promise<void> {
 
   if (args.dryRun) {
     await dryRun(dumpsDir, tablesToLoad, manifest);
+    return;
+  }
+
+  if (args.delta) {
+    await runDelta(args, dumpsDir, tablesToLoad, manifest);
     return;
   }
 
@@ -404,6 +459,167 @@ async function main(): Promise<void> {
   if (errors.length > 0) {
     process.exitCode = 1;
   }
+}
+
+// ---------------------------------------------------------------------------
+// Delta mode
+// ---------------------------------------------------------------------------
+
+interface DeltaReport {
+  mode: "delta";
+  startedAt: string;
+  finishedAt: string;
+  dumpsDir: string;
+  dumpStartedUtc: string | null;
+  applyDeletes: boolean;
+  preview: boolean;
+  committed: boolean;
+  tables: DeltaTableResult[];
+  totals: { inserted: number; updated: number; missingFromDump: number; deleted: number };
+  orphanChecks: OrphanCheckResult[];
+  errors: string[];
+}
+
+class PreviewRollback extends Error {}
+class DeltaFailed extends Error {}
+
+async function runDelta(
+  args: CliArgs,
+  dumpsDir: string,
+  tables: string[],
+  manifest: DumpManifest | null,
+): Promise<void> {
+  const startedAt = new Date().toISOString();
+  const sql = getSql();
+  const errors: string[] = [];
+  const results: DeltaTableResult[] = [];
+  let orphanChecks: OrphanCheckResult[] = [];
+  let committed = false;
+
+  for (const tableName of tables) {
+    const csvPath = path.join(dumpsDir, `${tableName}.csv`);
+    if (!existsSync(csvPath)) errors.push(`Missing dump CSV for table "${tableName}": ${csvPath}`);
+  }
+  if (errors.length > 0) {
+    for (const e of errors) console.error(`[migrate-data]   ${e}`);
+    console.error(`[migrate-data] delta not started: every table's dump must be present.`);
+    await sql.end({ timeout: 5 });
+    process.exitCode = 1;
+    return;
+  }
+
+  console.log(
+    `[migrate-data] delta sync of ${tables.length} table(s) from ${dumpsDir} ` +
+      `(applyDeletes=${args.applyDeletes}, preview=${args.preview})`,
+  );
+
+  try {
+    await sql.begin(async (tx) => {
+      const executor = makePostgresExecutor(tx);
+      // The staging/incoming DROP IF EXISTS calls raise NOTICEs that
+      // postgres.js would print in full for every table.
+      await executor.query(`SET LOCAL client_min_messages = warning`);
+      for (const tableName of tables) {
+        const table = TABLES[tableName]!;
+        const csvPath = path.join(dumpsDir, `${tableName}.csv`);
+        const header = await readCsvHeaderFromFile(csvPath);
+        const result = await syncTableDelta({
+          executor,
+          table,
+          header,
+          fill: makeCopyFillStrategy(tx, csvPath),
+          expectedRowCount: expectedRowCount(manifest, tableName),
+        });
+        results.push(result);
+        console.log(
+          `[migrate-data]   ${tableName}: ${result.inserted} new, ${result.updated} changed, ` +
+            `${result.unchanged} unchanged`,
+        );
+        if (result.rowCountMatches === false) {
+          errors.push(
+            `${tableName}: dump has ${result.incomingRowCount} row(s), manifest says ${result.expectedRowCount}`,
+          );
+        }
+      }
+
+      await reconcileMissing(executor, results, { applyDeletes: args.applyDeletes });
+      for (const r of results.filter((x) => x.missingFromDump > 0)) {
+        console.log(
+          `[migrate-data]   ${r.table}: ${r.missingFromDump} row(s) not in the dump` +
+            (args.applyDeletes ? `, ${r.deleted} deleted` : " (kept; --apply-deletes removes them)"),
+        );
+      }
+
+      orphanChecks = await runOrphanChecks(executor, tables);
+      for (const check of orphanChecks.filter((c) => c.orphans > 0)) {
+        errors.push(
+          `FK orphan(s): ${check.table}.${check.column} -> ${check.refTable}: ${check.orphans} row(s)`,
+        );
+      }
+
+      await setvalSequences(executor, tables);
+      for (const tableName of tables) await dropIncoming(executor, tableName);
+
+      if (errors.length > 0) throw new DeltaFailed(errors.join("; "));
+      if (args.preview) throw new PreviewRollback();
+    });
+    committed = true;
+  } catch (err) {
+    if (err instanceof PreviewRollback) {
+      console.log(`[migrate-data] preview: rolled back, nothing written`);
+    } else if (err instanceof DeltaFailed) {
+      console.error(`[migrate-data] delta rolled back: ${err.message}`);
+    } else {
+      const msg = `Delta failed and was rolled back: ${err instanceof Error ? err.message : String(err)}`;
+      errors.push(msg);
+      console.error(`[migrate-data]   ${msg}`);
+    }
+  }
+
+  if (committed) {
+    console.log(`[migrate-data] ANALYZE...`);
+    await analyzeTables(makePostgresExecutor(sql), tables);
+  }
+
+  const totals = {
+    inserted: results.reduce((n, r) => n + r.inserted, 0),
+    updated: results.reduce((n, r) => n + r.updated, 0),
+    missingFromDump: results.reduce((n, r) => n + r.missingFromDump, 0),
+    deleted: committed ? results.reduce((n, r) => n + r.deleted, 0) : 0,
+  };
+  const report: DeltaReport = {
+    mode: "delta",
+    startedAt,
+    finishedAt: new Date().toISOString(),
+    dumpsDir,
+    dumpStartedUtc: manifest?.dumpStartedUtc ?? null,
+    applyDeletes: args.applyDeletes,
+    preview: args.preview,
+    committed,
+    tables: results,
+    totals,
+    orphanChecks,
+    errors,
+  };
+
+  const reportsDir = path.join(__dirname, "..", "parity", "reports");
+  await fsp.mkdir(reportsDir, { recursive: true });
+  const stamp = startedAt.replace(/[:.]/g, "-");
+  const reportPath = path.join(reportsDir, `etl-delta-${stamp}.json`);
+  await fsp.writeFile(reportPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  console.log(`[migrate-data] report written to ${reportPath}`);
+  const counts =
+    `${totals.inserted} new, ${totals.updated} changed, ${totals.missingFromDump} not in dump, ` +
+    `${committed ? totals.deleted : results.reduce((n, r) => n + r.deleted, 0)} deleted`;
+  console.log(
+    committed
+      ? `[migrate-data] SUMMARY: committed; ${counts}, ${errors.length} error(s)`
+      : `[migrate-data] SUMMARY: ${args.preview && errors.length === 0 ? "preview" : "rolled back"}, nothing written; ` +
+          `tables processed before stopping: ${counts}; ${errors.length} error(s)`,
+  );
+
+  await sql.end({ timeout: 5 });
+  if (errors.length > 0) process.exitCode = 1;
 }
 
 main().catch((err) => {
