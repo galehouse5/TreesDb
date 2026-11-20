@@ -2,7 +2,8 @@
 
 Gate defined in `docs/migration/05-phase3-import-photos.md` (doc 07 §10
 row "Phase 3"). Status as of 2026-07-18: **every machine-verifiable
-requirement MET; two items pending** (§3).
+requirement MET; two items pending** (§3). Update 2026-11-20: the
+W-101..W-110 waiver review is done; one item (P3-08 photos) remains.
 
 ## 1. Requirements
 
@@ -42,6 +43,7 @@ throwaway-row cleanup. 1,582-test suite green, typecheck/build clean.
    repo owner (bucket + access key/secret + endpoint). Note: production
    currently has zero photo rows, so no data migration accompanies this —
    it is new-upload capability only.
-2. **Repo-owner review** of the W-101..W-110 replay drift ledger
-   (`parity/waivers.md`) — each entry carries its evidence; sign-off
-   formally closes the replay gate's "investigated, named waiver" clause.
+2. ~~**Repo-owner review** of the W-101..W-110 replay drift ledger~~
+   DONE 2026-11-20: the repo owner (galehouse5) approved all ten waivers
+   (`parity/waivers.md`), closing the replay gate's "investigated, named
+   waiver" clause.
