@@ -87,7 +87,6 @@ import {
   index,
   integer,
   pgTable,
-  primaryKey,
   real,
   smallint,
   text,
@@ -380,7 +379,8 @@ export const species = pgTable(
     slug: varchar("slug", { length: 210 }).notNull(),
   },
   (t) => [
-    uniqueIndex("ux_species_names").on(t.scientificName, t.commonName),
+    // D-021: one species per name pair, case-insensitively (legacy identity).
+    uniqueIndex("ux_species_names").on(sql`lower(${t.scientificName})`, sql`lower(${t.commonName})`),
     uniqueIndex("ux_species_slug").on(t.slug),
   ],
 );
@@ -394,7 +394,8 @@ export const speciesSynonyms = pgTable(
     note: varchar("note", { length: 200 }).notNull().default(""),
   },
   (t) => [
-    primaryKey({ name: "pk_species_synonyms", columns: [t.scientificName, t.commonName] }),
+    // D-021: a retired name pair is matched case-insensitively.
+    uniqueIndex("ux_species_synonyms_names").on(sql`lower(${t.scientificName})`, sql`lower(${t.commonName})`),
     foreignKey({ name: "fk_species_synonyms_species", columns: [t.speciesId], foreignColumns: [species.id] }),
     index("ix_species_synonyms_species_id").on(t.speciesId),
   ],

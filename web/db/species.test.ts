@@ -81,7 +81,7 @@ describe("species (D-019)", () => {
 
     await syncSpecies(sql, []);
     expect(await findUnresolvedMeasurements(sql)).toEqual([
-      { scientificName: "Carya alba", commonName: "Mockernut Hickory", measurements: 1, treeIds: String(treeId) },
+      { scientificName: "Carya alba", commonName: "Mockernut Hickory", measurements: 1, treeIds: String(treeId), legacySpeciesId: 1790989718 },
     ]);
 
     const result = await syncSpecies(sql, [RENAME]);
@@ -117,6 +117,25 @@ describe("species (D-019)", () => {
     await insertTree(db, siteId, { scientificName: "Carya alba", commonName: "Mockernut Hickory" });
     const result = await syncSpecies(sql, [RENAME]);
     expect(result.synonymsStillInUse).toEqual([RENAME]);
+  });
+
+  it("D-021: matches names case-insensitively, like legacy's identity hash", async () => {
+    const treeId = await insertTree(db, siteId, { scientificName: "Carya tomentosa", commonName: "Mockernut Hickory" });
+    await insertMeasurement(db, treeId, "carya tomentosa", "mockernut hickory");
+    await insertMeasurement(db, treeId, "CARYA ALBA", "Mockernut hickory");
+
+    await syncSpecies(sql, [RENAME]);
+    expect(await findUnresolvedMeasurements(sql)).toEqual([]);
+
+    // A case variant of an existing species is the same species, not a new row.
+    await expect(
+      db.query(`insert into species (scientific_name, common_name, slug) values ('CARYA TOMENTOSA', 'Mockernut Hickory', 'x')`),
+    ).rejects.toThrow(/ux_species_names/);
+    // And a synonym seed differing only in case updates the existing synonym.
+    const again = await syncSpecies(sql, [{ ...RENAME, from: { scientificName: "carya alba", commonName: "mockernut hickory" } }]);
+    expect(again.synonymsApplied).toBe(1);
+    const n = (await db.query<{ n: number }>(`select count(*)::int as n from species_synonyms`)).rows[0]!.n;
+    expect(n).toBe(1);
   });
 
   it("seeds the two known W-107 renames", () => {

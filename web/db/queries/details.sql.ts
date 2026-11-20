@@ -99,6 +99,7 @@ import { fround } from "@/lib/units/float32";
 import { type SqlTag, defaultSql } from "./sql-tag";
 import { measuredSpeciesBySite, type MeasuredSpeciesBySiteRow } from "./measured-species.sql";
 import { resolveBrowsePageIndex } from "./browse-grids.sql";
+import { sentryServerOptions } from "@/lib/sentry";
 
 export const SITE_SPECIES_GRID_PAGE_SIZE = 10;
 
@@ -235,6 +236,8 @@ interface RawMeasurementRow {
   max_height: number;
   max_girth: number;
   max_crown_spread: number;
+  /** D-019: how the TDI maxima were found -- 'own', 'synonym' or 'tree'. */
+  species_resolution: "own" | "synonym" | "tree";
   photo_count: number;
   measurers: { firstName: string; lastName: string }[] | null;
 }
@@ -242,6 +245,38 @@ interface RawMeasurementRow {
 /** `real` columns come back from postgres.js text-parsed as float64; `fround` narrows to the true float32 (see export-trees.sql.ts's header for the tree 2299 worked example). */
 function froundOrNull(v: number | null): number | null {
   return v === null ? null : fround(v);
+}
+
+/**
+ * D-019: a measurement whose species name matches no species and no synonym
+ * renders through the D-018 fallback (the tree's own species), where legacy
+ * returned a 500 and an alert per request. Log one line per page instead, so
+ * a new rename shows up in the logs, grouped by name pair, without breaking
+ * the page. The fix is a SPECIES_SYNONYMS entry in db/species.ts.
+ */
+function warnUnresolvedSpecies(treeId: number, rows: RawMeasurementRow[]): void {
+  const pairs = new Set(
+    rows.filter((m) => m.species_resolution === "tree").map((m) => `(${m.scientific_name}, ${m.common_name})`),
+  );
+  if (pairs.size === 0) return;
+  console.warn(
+    `[species] unresolved measurement species ${[...pairs].join(", ")} on tree ${treeId}: ` +
+      `using the tree's species (D-018). Add a synonym in db/species.ts (D-019).`,
+  );
+  // With Sentry on (D-020), one warning issue per name pair, however many
+  // requests hit it: legacy mailed an alert per request.
+  if (!sentryServerOptions(process.env)) return;
+  void import("@sentry/nextjs")
+    .then((Sentry) => {
+      for (const pair of pairs) {
+        Sentry.captureMessage(`Unresolved measurement species ${pair}`, {
+          level: "warning",
+          fingerprint: ["unresolved-measurement-species", pair],
+          extra: { treeId },
+        });
+      }
+    })
+    .catch(() => {});
 }
 
 export async function treeDetails(id: number, sql: SqlTag = defaultSql()): Promise<TreeDetailsRow | null> {
@@ -318,6 +353,9 @@ export async function treeDetails(id: number, sql: SqlTag = defaultSql()): Promi
       case when gs_own.scientific_name is not null then gs_own.max_crown_spread
            when gs_syn.scientific_name is not null then gs_syn.max_crown_spread
            else gs_tree.max_crown_spread end as max_crown_spread,
+      case when gs_own.scientific_name is not null then 'own'
+           when gs_syn.scientific_name is not null then 'synonym'
+           else 'tree' end as species_resolution,
       (select count(*)::int from photo_references pr where pr.type = 7 and pr.tree_measurement_id = tm.id) as photo_count,
       (
         select coalesce(
@@ -329,9 +367,10 @@ export async function treeDetails(id: number, sql: SqlTag = defaultSql()): Promi
       ) as measurers
     from tree_measurements tm
     join trees t on t.id = tm.tree_id
-    left join global_species gs_own on gs_own.scientific_name = tm.scientific_name and gs_own.common_name = tm.common_name
+    -- D-021: matched case-insensitively, like legacy's lower+trim identity hash.
+    left join global_species gs_own on lower(gs_own.scientific_name) = lower(tm.scientific_name) and lower(gs_own.common_name) = lower(tm.common_name)
     left join global_species gs_tree on gs_tree.scientific_name = t.scientific_name and gs_tree.common_name = t.common_name
-    left join species_synonyms syn on syn.scientific_name = tm.scientific_name and syn.common_name = tm.common_name
+    left join species_synonyms syn on lower(syn.scientific_name) = lower(tm.scientific_name) and lower(syn.common_name) = lower(tm.common_name)
     left join species syn_species on syn_species.id = syn.species_id
     left join global_species gs_syn on gs_syn.scientific_name = syn_species.scientific_name and gs_syn.common_name = syn_species.common_name
     where tm.tree_id = ${id}
@@ -340,6 +379,8 @@ export async function treeDetails(id: number, sql: SqlTag = defaultSql()): Promi
   const [rows, measurementRows] = await Promise.all([rowsPromise, measurementRowsPromise]);
   const r = rows[0];
   if (!r) return null;
+
+  warnUnresolvedSpecies(id, measurementRows);
 
   const measurements: TreeMeasurementRow[] = measurementRows.map((m) => ({
     id: m.id,

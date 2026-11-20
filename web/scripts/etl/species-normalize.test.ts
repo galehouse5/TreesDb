@@ -237,6 +237,43 @@ describe("D-016/D-011 ETL post-load steps (PGlite)", () => {
     );
   });
 
+  it("(a) D-021: trims leading/trailing whitespace and turns a lone tab into a space, keeping the legacy hash", async () => {
+    await loadTable({
+      executor,
+      table: TABLES.trees!,
+      header: header(TABLES.trees!),
+      fill: makeInsertFillStrategy(executor, [
+        row(TABLES.trees!, {
+          Id: "1",
+          SiteId: "1",
+          ScientificName: " Acer rubrum ",
+          CommonName: "Red\tMaple",
+          ComputedMeasuredSpeciesId: "0",
+        }),
+        row(TABLES.trees!, {
+          Id: "2",
+          SiteId: "1",
+          ScientificName: "Acer saccharum",
+          CommonName: "Sugar Maple",
+          ComputedMeasuredSpeciesId: "0",
+        }),
+      ]),
+    });
+
+    const { rows } = await executor.query<{
+      id: number;
+      scientific_name: string;
+      common_name: string;
+      computed_measured_species_id: number;
+    }>(`SELECT id, scientific_name, common_name, computed_measured_species_id FROM trees ORDER BY id`);
+    expect(rows[0]).toMatchObject({ scientific_name: "Acer rubrum", common_name: "Red Maple" });
+    // Legacy's hash trims, so the trimmed pair keeps the id legacy computed.
+    expect(rows[0]!.computed_measured_species_id).toBe(speciesHash(" Acer rubrum ", "Red Maple"));
+    // A clean row is not touched (its dump value stays).
+    expect(rows[1]!.computed_measured_species_id).toBe(0);
+    expect(await normalizeSpeciesWhitespace(executor, "trees")).toBe(0);
+  });
+
   it("(b) does NOT normalize import_trees -- the historical import log stays exactly as captured", async () => {
     await loadTable({
       executor,

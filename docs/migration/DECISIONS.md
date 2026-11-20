@@ -189,3 +189,33 @@ made in this plan; the executor appends from D-016 onward.
   map upload, so the build needs no Sentry token.
 - Owner action: create the Sentry project and set `SENTRY_DSN` in Vercel.
 - Parity impact: none.
+## D-021: Species names match case-insensitively and are trimmed on load
+- Date / phase: 2026-11-20, post-Phase 1. Follows D-016 and D-019.
+- Context: legacy's species identity is a hash of `lower(trim(name))`
+  (D-018), so a measurement typed "quercus alba" belongs to Quercus alba.
+  The port matched names exactly, so a case-only difference would have sent
+  that measurement to the D-018 fallback, and after D-019 failed the ETL as
+  an "unresolved" name. The ETL's D-016 step also collapsed whitespace runs
+  without trimming, while the import path trims.
+- Decision:
+  - Every species name match in the new app (`species`,
+    `species_synonyms`, the tree page's TDI maxima, the ETL's unresolved
+    check) compares `lower()` of both names. `ux_species_names` and
+    `ux_species_synonyms_names` are unique on `lower()` of the pair, so a
+    case variant can't become a second species (migration 0003).
+  - Stored case is never rewritten: pages show names as entered, and the
+    import path already applies legacy's sentence/title casing.
+  - The ETL's D-016 step now also trims and turns lone tabs/newlines into a
+    space (`computed_measured_species_id` is unaffected, since legacy's hash
+    trims too).
+- Also, per the D-018 plan: the ETL's unresolved-species error now gives
+  each pair's legacy species id, so legacy alert ids map to names (the
+  next full load will name 555512959 if it is still in the data); the tree
+  page logs one `[species] unresolved measurement species` warning when it
+  has to use the D-018 fallback, and with Sentry on (D-020) reports it as a
+  warning fingerprinted by name pair, so a rename is one Sentry issue
+  rather than legacy's alert per request; and e2e/legacy-error-trees.e2e.ts covers
+  the six trees whose legacy page 500s.
+- Parity impact: none on compared artifacts. Whitespace-only differences
+  are already waived (W-010); case-variant measurement names resolve to the
+  same species legacy resolved them to.

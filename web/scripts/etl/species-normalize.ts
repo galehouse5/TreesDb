@@ -26,8 +26,11 @@ import { quoteIdent } from "./load-table";
 export const SPECIES_NORMALIZED_TABLES = ["trees", "tree_measurements"] as const;
 export type SpeciesNormalizedTable = (typeof SPECIES_NORMALIZED_TABLES)[number];
 
+/** D-016 + D-021: whitespace runs to one space, then trimmed. Legacy's
+ * identity hash trims too, so `computed_measured_species_id` is unchanged
+ * by the trim; the import path (lib/merge/engine.ts) already trims. */
 function collapseWhitespace(s: string): string {
-  return s.replace(/\s+/g, " ");
+  return s.replace(/\s+/g, " ").trim();
 }
 
 /**
@@ -59,7 +62,11 @@ export async function normalizeSpeciesWhitespaceInTable(
     common_name: string;
   }>(
     `SELECT id, scientific_name, common_name FROM ${t} ` +
-      `WHERE scientific_name ~ '\\s\\s' OR common_name ~ '\\s\\s'`,
+      // D-021: also rows with leading/trailing whitespace or a lone
+      // non-space whitespace character (tab, newline), which `\s+` -> " "
+      // plus trim would change.
+      `WHERE scientific_name ~ '\\s\\s|^\\s|\\s$|[\\t\\n\\r\\f\\v]' ` +
+      `OR common_name ~ '\\s\\s|^\\s|\\s$|[\\t\\n\\r\\f\\v]'`,
   );
 
   for (const row of rows) {

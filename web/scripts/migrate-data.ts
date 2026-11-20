@@ -309,7 +309,8 @@ async function runSpeciesStep(
   if (tables.includes("tree_measurements")) {
     for (const u of await findUnresolvedMeasurements(sql)) {
       errors.push(
-        `unresolved measurement species (${u.scientificName}, ${u.commonName}): ` +
+        `unresolved measurement species (${u.scientificName}, ${u.commonName}), ` +
+          `legacy species id ${u.legacySpeciesId}: ` +
           `${u.measurements} measurement(s) on tree(s) ${u.treeIds}; ` +
           `add it to SPECIES_SYNONYMS in db/species.ts`,
       );

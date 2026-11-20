@@ -1,6 +1,9 @@
 import type { PGlite } from "@electric-sql/pglite";
-import { afterAll, beforeAll, describe, expect, it } from "vitest";
+import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
 import { syncSpecies } from "../species";
+
+const sentryCaptureMessage = vi.hoisted(() => vi.fn());
+vi.mock("@sentry/nextjs", () => ({ captureMessage: sentryCaptureMessage }));
 import { siteDetails, siteSpeciesGrid, treeDetails } from "./details.sql";
 import type { SqlTag } from "./sql-tag";
 import { createTestDb, insertCountry, insertSite, insertState, insertTree, insertTreeMeasurer, pgliteSqlTag } from "./test-helpers";
@@ -191,7 +194,11 @@ describe("details.sql", () => {
       await insertTreeMeasurement(db, treeId, { scientificName: "Carya tomentosa", commonName: "Mockernut Hickory", measured: "2020-01-01", height: 110, heightInputFormat: 2, girth: 9, girthInputFormat: 2 });
       await insertTreeMeasurement(db, treeId, { scientificName: "Carya alba", commonName: "Mockernut Hickory", measured: "2010-01-01", height: 100, heightInputFormat: 2, girth: 8, girthInputFormat: 2 });
 
+      const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
       const data = await treeDetails(treeId, sql);
+      expect(warn).toHaveBeenCalledTimes(1);
+      expect(warn.mock.calls[0]![0]).toContain(`(Carya alba, Mockernut Hickory) on tree ${treeId}`);
+      warn.mockRestore();
       const old = data!.measurements.find((m) => m.scientificName === "Carya alba")!;
       expect(old.maxHeight).toBe(110);
       expect(old.maxGirth).toBe(9);
@@ -231,10 +238,48 @@ describe("details.sql", () => {
         },
       ]);
 
+      const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
       const data = await treeDetails(treeId, sql);
+      expect(warn).not.toHaveBeenCalled();
+      warn.mockRestore();
       const old = data!.measurements.find((m) => m.scientificName === "Betula rubra")!;
       expect(old.maxHeight).toBe(120);
       expect(old.maxGirth).toBe(11);
+    });
+
+    it("D-021: a measurement whose names differ from a species only in case gets that species' maxima, as legacy's case-insensitive hash did", async () => {
+      const elmId = await insertTree(db, siteId, { scientificName: "Ulmus americana", commonName: "American Elm", height: 130, girth: 14 });
+      await insertTreeMeasurement(db, elmId, { scientificName: "Ulmus americana", commonName: "American Elm", height: 130, heightInputFormat: 2, girth: 14, girthInputFormat: 2 });
+      const treeId = await insertTree(db, siteId, { scientificName: "Ulmus rubra", commonName: "Slippery Elm", height: 40, girth: 3 });
+      await insertTreeMeasurement(db, treeId, { scientificName: "Ulmus rubra", commonName: "Slippery Elm", measured: "2020-01-01", height: 40, heightInputFormat: 2, girth: 3, girthInputFormat: 2 });
+      await insertTreeMeasurement(db, treeId, { scientificName: "ulmus americana", commonName: "american elm", measured: "2010-01-01", height: 30, heightInputFormat: 2, girth: 2, girthInputFormat: 2 });
+
+      const data = await treeDetails(treeId, sql);
+      const old = data!.measurements.find((m) => m.scientificName === "ulmus americana")!;
+      expect(old.maxHeight).toBe(130);
+      expect(old.maxGirth).toBe(14);
+    });
+
+    it("D-020/D-019: with Sentry on, an unresolved measurement species is one warning issue per name pair", async () => {
+      const treeId = await insertTree(db, siteId, { scientificName: "Fraxinus americana", commonName: "White Ash", height: 70, girth: 6 });
+      await insertTreeMeasurement(db, treeId, { scientificName: "Fraxinus americana", commonName: "White Ash", measured: "2020-01-01" });
+      await insertTreeMeasurement(db, treeId, { scientificName: "Fraxinus alba", commonName: "White Ash", measured: "2010-01-01" });
+      await insertTreeMeasurement(db, treeId, { scientificName: "Fraxinus alba", commonName: "White Ash", measured: "2005-01-01" });
+
+      const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+      process.env.SENTRY_DSN = "https://public@example.invalid/1";
+      try {
+        await treeDetails(treeId, sql);
+        await vi.waitFor(() => expect(sentryCaptureMessage).toHaveBeenCalledTimes(1));
+      } finally {
+        delete process.env.SENTRY_DSN;
+        warn.mockRestore();
+      }
+      expect(sentryCaptureMessage).toHaveBeenCalledWith("Unresolved measurement species (Fraxinus alba, White Ash)", {
+        level: "warning",
+        fingerprint: ["unresolved-measurement-species", "(Fraxinus alba, White Ash)"],
+        extra: { treeId },
+      });
     });
 
     it("passes each measurement's own raw input-format codes through untouched, for the page to gate NullDisplayText", async () => {

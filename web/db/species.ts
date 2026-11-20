@@ -19,9 +19,16 @@
  *   - `findUnresolvedMeasurements` lists measurement name pairs that resolve
  *     to neither a species nor a synonym. The ETL fails loudly on any.
  *
+ * Name matching (D-021) is case-insensitive, like legacy's identity hash
+ * (lower + trim of each name). Stored names are already whitespace-clean
+ * (D-016; trimmed by the ETL and the import path), so `lower(a) = lower(b)`
+ * is the legacy identity. Case is never rewritten in stored data, because
+ * the pages show names as entered.
+ *
  * SQL follows db/queries/sql-tag.ts: flat, single-level bindings only.
  */
 import { speciesSlug } from "../lib/slug";
+import { speciesHash } from "../lib/species-hash";
 import type { SqlTag } from "./queries/sql-tag";
 
 export interface SpeciesSynonymSeed {
@@ -76,7 +83,8 @@ export async function syncSpecies(
     from trees t
     where not exists (
       select 1 from species s
-      where s.scientific_name = t.scientific_name and s.common_name = t.common_name)
+      where lower(s.scientific_name) = lower(t.scientific_name)
+        and lower(s.common_name) = lower(t.common_name))
     order by t.scientific_name, t.common_name
   `;
   for (const p of missing) {
@@ -97,7 +105,8 @@ export async function syncSpecies(
   for (const seed of synonyms) {
     const target = await sql<{ id: number }>`
       select id from species
-      where scientific_name = ${seed.to.scientificName} and common_name = ${seed.to.commonName}
+      where lower(scientific_name) = lower(${seed.to.scientificName})
+        and lower(common_name) = lower(${seed.to.commonName})
     `;
     if (target.length === 0) {
       result.synonymsWithoutTarget.push(seed);
@@ -106,13 +115,14 @@ export async function syncSpecies(
     await sql`
       insert into species_synonyms (scientific_name, common_name, species_id, note)
       values (${seed.from.scientificName}, ${seed.from.commonName}, ${target[0]!.id}, ${seed.note})
-      on conflict (scientific_name, common_name)
+      on conflict ((lower(scientific_name)), (lower(common_name)))
       do update set species_id = excluded.species_id, note = excluded.note
     `;
     result.synonymsApplied++;
     const inUse = await sql<{ n: number }>`
       select count(*)::int as n from trees
-      where scientific_name = ${seed.from.scientificName} and common_name = ${seed.from.commonName}
+      where lower(scientific_name) = lower(${seed.from.scientificName})
+        and lower(common_name) = lower(${seed.from.commonName})
     `;
     if ((inUse[0]?.n ?? 0) > 0) result.synonymsStillInUse.push(seed);
   }
@@ -121,7 +131,8 @@ export async function syncSpecies(
     delete from species s
     where not exists (
         select 1 from trees t
-        where t.scientific_name = s.scientific_name and t.common_name = s.common_name)
+        where lower(t.scientific_name) = lower(s.scientific_name)
+          and lower(t.common_name) = lower(s.common_name))
       and not exists (select 1 from species_synonyms y where y.species_id = s.id)
     returning s.id
   `;
@@ -135,6 +146,9 @@ export interface UnresolvedMeasurementPair {
   measurements: number;
   /** Comma-separated tree ids, ascending. */
   treeIds: string;
+  /** Legacy `GlobalMeasuredSpecies` id of the pair (the id in legacy's
+   * ObjectNotFoundException alerts), so an alert id maps to a name. */
+  legacySpeciesId: number;
 }
 
 /**
@@ -158,10 +172,12 @@ export async function findUnresolvedMeasurements(
     from tree_measurements tm
     where not exists (
         select 1 from species s
-        where s.scientific_name = tm.scientific_name and s.common_name = tm.common_name)
+        where lower(s.scientific_name) = lower(tm.scientific_name)
+          and lower(s.common_name) = lower(tm.common_name))
       and not exists (
         select 1 from species_synonyms y
-        where y.scientific_name = tm.scientific_name and y.common_name = tm.common_name)
+        where lower(y.scientific_name) = lower(tm.scientific_name)
+          and lower(y.common_name) = lower(tm.common_name))
     group by tm.scientific_name, tm.common_name
     order by tm.scientific_name, tm.common_name
   `;
@@ -175,5 +191,6 @@ export async function findUnresolvedMeasurements(
       .map(Number)
       .sort((a, b) => a - b)
       .join(","),
+    legacySpeciesId: speciesHash(r.scientific_name, r.common_name),
   }));
 }
