@@ -37,7 +37,7 @@ Checklist (update in-place as tasks land):
 
 - `web/`: `create-next-app` (App Router, TS, Tailwind, ESLint) + shadcn/ui
   init + Drizzle + drizzle-kit + vitest + playwright + tsx.
-- `web/.env.example`: `DATABASE_URL`, `R2_ACCOUNT_ID/ACCESS_KEY_ID/SECRET/BUCKET`,
+- `web/.env.example`: `DATABASE_URL`, `R2_ACCOUNT_ID/ACCESS_KEY_ID/SECRET/BUCKET` (now `BLOB_READ_WRITE_TOKEN`, D-022),
   `RESEND_API_KEY`, `AUTH_SECRET`, `LEGACY_BASE_URL`, `SENTRY_DSN`.
 - Add `web/parity/dumps/` to `.gitignore` **in this task**.
 - Vercel project + Neon project created by repo owner; document setup steps

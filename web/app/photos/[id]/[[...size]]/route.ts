@@ -25,11 +25,15 @@
  * (`_lib/store.ts`) -- unreachable with today's data, but implemented here
  * for forward correctness once real photos exist.
  *
+ * VARIANT CACHE (D-008, D-022) -- a variant is generated with sharp the
+ * first time it is requested and written back to the store at
+ * `photos/{id}/{size}`; later requests serve the cached bytes. Variants
+ * rendered from the fallback icon are never cached, and a failed
+ * write-back only costs a regeneration next time (it never fails the
+ * response).
+ *
  * CACHE-CONTROL -- doc 03 P1-12 calls for a long `Cache-Control` on
- * successful image responses (variants are otherwise regenerated with
- * sharp on every request -- no R2 write-back variant cache is implemented
- * in this phase, see `_lib/store.ts`'s header; that's a TODO for a later
- * phase's upload flow). The 403 response is explicitly NOT cached.
+ * successful image responses. The 403 response is explicitly NOT cached.
  */
 import { NextResponse } from "next/server";
 import {
@@ -91,10 +95,19 @@ export async function GET(
   }
 
   const store = createPhotoStoreProvider();
-  const original = await store.fetchOriginal(id);
-  const sourceBytes = original ?? (await getFallbackIconBytes());
-
-  const outputBytes = await normalizePhotoBuffer(sourceBytes, sizeName, formatInfo.sharpFormat);
+  let outputBytes = await store.fetchVariant(id, sizeName);
+  if (!outputBytes) {
+    const original = await store.fetchOriginal(id);
+    const sourceBytes = original ?? (await getFallbackIconBytes());
+    outputBytes = await normalizePhotoBuffer(sourceBytes, sizeName, formatInfo.sharpFormat);
+    if (original) {
+      try {
+        await store.putVariant(id, sizeName, outputBytes, formatInfo.contentType);
+      } catch (err) {
+        console.error(`photo ${id}: caching the ${sizeName} variant failed`, err);
+      }
+    }
+  }
 
   return new NextResponse(new Uint8Array(outputBytes), {
     status: 200,

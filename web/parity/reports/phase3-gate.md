@@ -3,7 +3,8 @@
 Gate defined in `docs/migration/05-phase3-import-photos.md` (doc 07 §10
 row "Phase 3"). Status as of 2026-07-18: **every machine-verifiable
 requirement MET; two items pending** (§3). Update 2026-11-20: the
-W-101..W-110 waiver review is done; one item (P3-08 photos) remains.
+W-101..W-110 waiver review is done; one item (P3-08 photos) remains,
+now unblocked by the switch to Vercel Blob (D-022).
 
 ## 1. Requirements
 
@@ -39,10 +40,11 @@ throwaway-row cleanup. 1,582-test suite green, typecheck/build clean.
 
 ## 3. Pending
 
-1. **P3-08 photo upload** — blocked on Cloudflare R2 credentials from the
-   repo owner (bucket + access key/secret + endpoint). Note: production
-   currently has zero photo rows, so no data migration accompanies this —
-   it is new-upload capability only.
+1. **P3-08 photo upload** — no longer blocked: 2026-11-20 the repo owner
+   chose Vercel Blob over Cloudflare R2 (D-022), and the store is connected
+   to the Vercel project, so no credentials are outstanding. Note:
+   production currently has zero photo rows, so no data migration
+   accompanies this — it is new-upload capability only.
 2. ~~**Repo-owner review** of the W-101..W-110 replay drift ledger~~
    DONE 2026-11-20: the repo owner (galehouse5) approved all ten waivers
    (`parity/waivers.md`), closing the replay gate's "investigated, named

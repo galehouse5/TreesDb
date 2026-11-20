@@ -1,99 +1,188 @@
 /**
- * Photo blob store provider for the P1-12 `/photos/{id}/{size}` route
- * (doc 01 §11, doc 03 P1-12), mirroring legacy's pluggable
+ * Photo blob store for the `/photos/{id}/{size}` route (doc 01 §11, doc 03
+ * P1-12) and photo upload (doc 05 P3-08), mirroring legacy's pluggable
  * `IPhotoStoreProvider` (`TMD.Model/Photos/PhotoStoreProvider.cs`) --
  * `DefaultPhotoStoreProvider` (local disk) in dev/self-hosted legacy, or
  * `BlobStoragePhotoStoreProvider` (Azure) in production (the dump
  * manifest's `"photoProvider": "PhotoStore"` confirms the actual legacy
  * production deployment used the local/default provider, not Azure Blob).
  *
- * New app (D-008, doc 01 §11): originals live in R2 at key `photos/{id}`
- * (same key convention as `scripts/migrate-photos.ts`, which is the
- * migration-time bulk uploader for this same bucket/key scheme). This
- * module only READS `photos/{id}` on demand -- no write-back variant
- * caching (`photos/{id}/{size}`) is implemented here; that belongs to a
- * later phase's upload flow (doc 01 §11 mentions it, but P1 is read-only
- * per doc 03's ground rules) and is left as a TODO.
+ * New app (D-008, D-022): photos live in Vercel Blob (the public store
+ * connected to the Vercel project, which injects `BLOB_READ_WRITE_TOKEN`).
+ * Keys:
+ *   - `photos/{id}`          the original, as uploaded
+ *   - `photos/{id}/{size}`   a cached variant, `size` the canonical
+ *                            `PhotoSize` name (e.g. `Medium`), written back
+ *                            by the route the first time it is requested
+ * Same key convention as `scripts/migrate-photos.ts` (the migration-time
+ * bulk uploader).
  *
- * The R2 branch is only active when all four `R2_*` env vars are present
- * (matching `scripts/migrate-photos.ts`'s `Env` contract); otherwise every
- * fetch is treated as "missing", which drives the same fallback-icon path
- * legacy takes for a missing on-disk blob (`DefaultPhotoStoreProvider.
- * GetReadStream`) -- appropriate for this task's environment, since
- * `photos`/`photo_references` have zero rows in the current production
- * dump (see this task's report) and R2 is not wired up yet.
+ * With no `BLOB_READ_WRITE_TOKEN` (local dev, CI) every read reports
+ * "missing", which drives the same fallback-icon path legacy takes for a
+ * missing on-disk blob (`DefaultPhotoStoreProvider.GetReadStream`), and
+ * writes throw `PhotoStoreNotConfiguredError`. Tests swap in
+ * `InMemoryPhotoStore` via `setPhotoStoreForTests`.
+ *
+ * The store is public: a blob's URL works without a token. The app never
+ * hands those URLs out (every read goes through `/photos/{id}/{size}`, which
+ * enforces legacy's view authorization), so an import-draft photo's
+ * original is only reachable by someone who already knows the store's
+ * host name and the photo id. Accepted in D-022.
  */
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { del, get, list, put } from "@vercel/blob";
 
 export interface PhotoStoreProvider {
+  /** False when no store is configured: reads report missing, writes throw. */
+  readonly configured: boolean;
   /** Returns the original photo's bytes, or `null` if missing / the store isn't configured. */
   fetchOriginal(photoId: number): Promise<Buffer | null>;
+  /** Returns a cached variant's bytes, or `null` if not cached yet. */
+  fetchVariant(photoId: number, size: string): Promise<Buffer | null>;
+  putOriginal(photoId: number, bytes: Buffer, contentType: string): Promise<void>;
+  putVariant(photoId: number, size: string, bytes: Buffer, contentType: string): Promise<void>;
+  /** Deletes the original and every cached variant. Missing blobs are not an error. */
+  deletePhoto(photoId: number): Promise<void>;
 }
 
-function r2Key(id: number): string {
+export class PhotoStoreNotConfiguredError extends Error {
+  constructor() {
+    super("Photo storage is not configured (BLOB_READ_WRITE_TOKEN is not set).");
+    this.name = "PhotoStoreNotConfiguredError";
+  }
+}
+
+export function originalKey(id: number): string {
   return `photos/${id}`;
 }
 
-interface R2Env {
-  accountId: string;
-  accessKeyId: string;
-  secretAccessKey: string;
-  bucket: string;
+export function variantKey(id: number, size: string): string {
+  return `photos/${id}/${size}`;
 }
 
-function readR2Env(): R2Env | null {
-  const accountId = process.env.R2_ACCOUNT_ID;
-  const accessKeyId = process.env.R2_ACCESS_KEY_ID;
-  const secretAccessKey = process.env.R2_SECRET_ACCESS_KEY;
-  const bucket = process.env.R2_BUCKET;
-  if (!accountId || !accessKeyId || !secretAccessKey || !bucket) return null;
-  return { accountId, accessKeyId, secretAccessKey, bucket };
+/** One year: keys are immutable per photo id (a removed photo's id is never reused). */
+const BLOB_CACHE_MAX_AGE_SECONDS = 365 * 24 * 60 * 60;
+
+async function streamToBuffer(stream: ReadableStream<Uint8Array>): Promise<Buffer> {
+  const chunks: Uint8Array[] = [];
+  const reader = stream.getReader();
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    if (value) chunks.push(value);
+  }
+  return Buffer.concat(chunks);
 }
 
-function isNotFoundError(err: unknown): boolean {
-  const e = err as { name?: string; $metadata?: { httpStatusCode?: number } } | undefined;
-  return e?.name === "NotFound" || e?.name === "NoSuchKey" || e?.$metadata?.httpStatusCode === 404;
-}
+export class VercelBlobPhotoStore implements PhotoStoreProvider {
+  readonly configured = true;
 
-class R2PhotoStoreProvider implements PhotoStoreProvider {
-  private client: S3Client;
-  private bucket: string;
+  constructor(private readonly token: string) {}
 
-  constructor(env: R2Env) {
-    this.client = new S3Client({
-      region: "auto",
-      endpoint: `https://${env.accountId}.r2.cloudflarestorage.com`,
-      credentials: { accessKeyId: env.accessKeyId, secretAccessKey: env.secretAccessKey },
-    });
-    this.bucket = env.bucket;
+  private async read(pathname: string): Promise<Buffer | null> {
+    const res = await get(pathname, { access: "public", token: this.token });
+    if (!res || res.statusCode !== 200) return null;
+    return streamToBuffer(res.stream);
   }
 
+  private async write(pathname: string, bytes: Buffer, contentType: string): Promise<void> {
+    await put(pathname, bytes, {
+      access: "public",
+      token: this.token,
+      contentType,
+      addRandomSuffix: false,
+      allowOverwrite: true,
+      cacheControlMaxAge: BLOB_CACHE_MAX_AGE_SECONDS,
+    });
+  }
+
+  fetchOriginal(photoId: number): Promise<Buffer | null> {
+    return this.read(originalKey(photoId));
+  }
+
+  fetchVariant(photoId: number, size: string): Promise<Buffer | null> {
+    return this.read(variantKey(photoId, size));
+  }
+
+  putOriginal(photoId: number, bytes: Buffer, contentType: string): Promise<void> {
+    return this.write(originalKey(photoId), bytes, contentType);
+  }
+
+  putVariant(photoId: number, size: string, bytes: Buffer, contentType: string): Promise<void> {
+    return this.write(variantKey(photoId, size), bytes, contentType);
+  }
+
+  async deletePhoto(photoId: number): Promise<void> {
+    const urls: string[] = [];
+    let cursor: string | undefined;
+    do {
+      const page = await list({ prefix: `${variantKey(photoId, "")}`, cursor, token: this.token });
+      urls.push(...page.blobs.map((b) => b.url));
+      cursor = page.hasMore ? page.cursor : undefined;
+    } while (cursor);
+    // `del` accepts pathnames too; the original is deleted by pathname so a
+    // missing listing entry (eventual consistency) can't leave it behind.
+    await del([originalKey(photoId), ...urls], { token: this.token });
+  }
+}
+
+/** No store configured: reads miss (fallback icon), writes fail loudly. */
+class UnconfiguredPhotoStore implements PhotoStoreProvider {
+  readonly configured = false;
+  async fetchOriginal(): Promise<Buffer | null> {
+    return null;
+  }
+  async fetchVariant(): Promise<Buffer | null> {
+    return null;
+  }
+  async putOriginal(): Promise<void> {
+    throw new PhotoStoreNotConfiguredError();
+  }
+  async putVariant(): Promise<void> {
+    throw new PhotoStoreNotConfiguredError();
+  }
+  async deletePhoto(): Promise<void> {
+    throw new PhotoStoreNotConfiguredError();
+  }
+}
+
+/** Test double: a Map keyed exactly like the real store. */
+export class InMemoryPhotoStore implements PhotoStoreProvider {
+  readonly configured = true;
+  readonly objects = new Map<string, { bytes: Buffer; contentType: string }>();
+
   async fetchOriginal(photoId: number): Promise<Buffer | null> {
-    try {
-      const res = await this.client.send(
-        new GetObjectCommand({ Bucket: this.bucket, Key: r2Key(photoId) }),
-      );
-      const bytes = await res.Body?.transformToByteArray();
-      return bytes ? Buffer.from(bytes) : null;
-    } catch (err) {
-      if (isNotFoundError(err)) return null;
-      throw err;
+    return this.objects.get(originalKey(photoId))?.bytes ?? null;
+  }
+  async fetchVariant(photoId: number, size: string): Promise<Buffer | null> {
+    return this.objects.get(variantKey(photoId, size))?.bytes ?? null;
+  }
+  async putOriginal(photoId: number, bytes: Buffer, contentType: string): Promise<void> {
+    this.objects.set(originalKey(photoId), { bytes, contentType });
+  }
+  async putVariant(photoId: number, size: string, bytes: Buffer, contentType: string): Promise<void> {
+    this.objects.set(variantKey(photoId, size), { bytes, contentType });
+  }
+  async deletePhoto(photoId: number): Promise<void> {
+    const prefix = variantKey(photoId, "");
+    for (const key of [...this.objects.keys()]) {
+      if (key === originalKey(photoId) || key.startsWith(prefix)) this.objects.delete(key);
     }
   }
 }
 
-/** Always reports "missing" -- drives the same fallback-icon path as a missing legacy on-disk blob. */
-class AlwaysMissingPhotoStoreProvider implements PhotoStoreProvider {
-  async fetchOriginal(): Promise<Buffer | null> {
-    return null;
-  }
+let testOverride: PhotoStoreProvider | null = null;
+
+/** Tests only: route every `createPhotoStoreProvider()` call to `store` (null restores env-based selection). */
+export function setPhotoStoreForTests(store: PhotoStoreProvider | null): void {
+  testOverride = store;
 }
 
 export function createPhotoStoreProvider(): PhotoStoreProvider {
-  const env = readR2Env();
-  return env ? new R2PhotoStoreProvider(env) : new AlwaysMissingPhotoStoreProvider();
+  if (testOverride) return testOverride;
+  const token = process.env.BLOB_READ_WRITE_TOKEN;
+  return token ? new VercelBlobPhotoStore(token) : new UnconfiguredPhotoStore();
 }
 
 // ---------------------------------------------------------------------------

@@ -41,7 +41,7 @@ Checklist:
       ImportRepository.Remove — a true import undo; ported by reusing
       reimport.ts's cleanup exports); View renders from draft rows with no
       IsImported gate, like legacy.*
-- [ ] P3-08 photo upload (R2 + sharp) on import trees/sites
+- [ ] P3-08 photo upload (Vercel Blob + sharp, D-022; was R2) on import trees/sites
 - [x] P3-09 import map endpoints — */api/import/[tripId]/markers?site=|tree=
       with legacy's exact payload (MapMarkerModel field set + top-level
       CalculatedCoordinates via graph.ts's cascade, computed fresh — draft

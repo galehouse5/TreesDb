@@ -33,7 +33,7 @@ as the factual reference for how the legacy system behaves.**
 | Database | Azure SQL (SQL Server) | **Postgres on Neon** (free tier, scale-to-zero) |
 | ORM | NHibernate 3.3.3 + hbm.xml | **Drizzle ORM** |
 | Auth | Forms Auth, custom salted-SHA-256 passwords | **Auth.js (NextAuth)** credentials provider, legacy-hash compatible with upgrade-on-login |
-| Photo storage | Disk (`PhotoStore/`) or Azure Blob; resized on demand | **Cloudflare R2** originals + **sharp** variants |
+| Photo storage | Disk (`PhotoStore/`) or Azure Blob; resized on demand | **Vercel Blob** originals + cached **sharp** variants (was Cloudflare R2, see D-022) |
 | Maps | Google Maps JS (v2-era) | **MapLibre GL** + OpenStreetMap raster tiles |
 | CSV | Hand-rolled `TreeCsvExporter` | **csv-stringify / csv-parse** (byte-compatible output — see parity doc) |
 | Email | System.Net.Mail + SMTP | **Resend** |
@@ -44,8 +44,9 @@ as the factual reference for how the legacy system behaves.**
 Estimated cost: **$0/month** + domain. Free-tier fit (verified mid-2026):
 Vercel Hobby (100 GB bandwidth, 1M function invocations/month, non-commercial
 only — a free hobby site qualifies); Neon free (0.5 GB storage — ample, photos
-live in R2; auto-resume ≈0.5 s, no manual unpause unlike Supabase free);
-R2 free (10 GB, zero egress); Resend free (~3k emails/month).
+live in Vercel Blob; auto-resume ≈0.5 s, no manual unpause unlike Supabase free);
+Vercel Blob on Hobby (1 GB storage, 10 GB transfer/month; going over pauses
+Blob for 30 days rather than billing, D-022); Resend free (~3k emails/month).
 
 ## Phase summary
 

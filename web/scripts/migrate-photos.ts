@@ -2,8 +2,8 @@
  * migrate-photos.ts — P0-09 photo blob migration.
  *
  * Copies every photo blob referenced by the (already-migrated) Postgres
- * `photos` table from its legacy store into Cloudflare R2, one object per
- * photo at key `photos/{id}`, with Content-Type derived from the `format`
+ * `photos` table from its legacy store into Vercel Blob (D-022), one object
+ * per photo at key `photos/{id}`, with Content-Type derived from the `format`
  * column. The `photos` table is the source of truth for *which* ids should
  * exist — this script never trusts directory/container listings for that.
  *
@@ -13,8 +13,9 @@
  * PREREQUISITES
  *   - The `photos` table must already be loaded into Postgres (P0-04 ETL).
  *   - DATABASE_URL must point at that (migrated) database.
- *   - R2 credentials must be set: R2_ACCOUNT_ID, R2_ACCESS_KEY_ID,
- *     R2_SECRET_ACCESS_KEY, R2_BUCKET (see web/.env.example).
+ *   - BLOB_READ_WRITE_TOKEN must be set to the store's read-write token
+ *     (Vercel injects it into the project; locally, `vercel env pull`
+ *     writes it to .env.local -- see web/.env.example).
  *   - For `--source azure-blob` only, also set (these are migration-only,
  *     legacy-side credentials and intentionally NOT in .env.example):
  *       AZURE_BLOB_CONTAINER_URL=https://<account>.blob.core.windows.net/photo-store
@@ -29,16 +30,16 @@
  *     pnpm exec tsx scripts/migrate-photos.ts --source azure-blob
  *
  *   Useful flags (either source):
- *     --skip-existing   HEAD each R2 key first; skip upload if already present
- *                        (upload is otherwise idempotent anyway — PutObject
- *                        overwrites the same key — this just saves time/cost
- *                        on a re-run).
- *     --dry-run          Do everything except the actual R2 PutObject call.
+ *     --skip-existing   HEAD each Blob key first; skip upload if already present
+ *                        (upload is otherwise idempotent anyway — put with
+ *                        allowOverwrite replaces the same key — this just
+ *                        saves time/cost on a re-run).
+ *     --dry-run          Do everything except the actual Blob put call.
  *     --concurrency N     Promise-pool size (default 4).
  *     --verify            After migrating, also run the verification pass
- *                          (R2 vs DB counts, byte-length sample check).
+ *                          (Blob vs DB counts, byte-length sample check).
  *     --verify-only        Skip the migrate step; only run verification
- *                           against whatever is already in R2.
+ *                           against whatever is already in Blob.
  *     --sample-size N      Verification sample size (default 50).
  *     --seed N              Seed for the verification sample's PRNG, so a
  *                            re-run against the same DB samples the same ids
@@ -78,12 +79,7 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import "dotenv/config";
-import {
-  S3Client,
-  PutObjectCommand,
-  HeadObjectCommand,
-  ListObjectsV2Command,
-} from "@aws-sdk/client-s3";
+import { BlobNotFoundError, head, list, put } from "@vercel/blob";
 import { getSql } from "../db/index";
 
 // ---------------------------------------------------------------------------
@@ -132,8 +128,8 @@ function printHelp(): void {
   tsx scripts/migrate-photos.ts --source azure-blob [options]
 
 Options:
-  --skip-existing     HEAD R2 before upload; skip if the key already exists
-  --dry-run           Do everything except the R2 PutObject call
+  --skip-existing     HEAD Blob before upload; skip if the key already exists
+  --dry-run           Do everything except the Blob put call
   --concurrency N     Promise-pool size (default 4)
   --verify            Also run the verification pass after migrating
   --verify-only       Skip migration; only run the verification pass
@@ -224,10 +220,7 @@ function parseArgs(argv: string[]): CliArgs {
 
 interface Env {
   DATABASE_URL: string;
-  R2_ACCOUNT_ID: string;
-  R2_ACCESS_KEY_ID: string;
-  R2_SECRET_ACCESS_KEY: string;
-  R2_BUCKET: string;
+  BLOB_READ_WRITE_TOKEN: string;
   AZURE_BLOB_CONTAINER_URL?: string;
   AZURE_BLOB_SAS?: string;
 }
@@ -241,10 +234,7 @@ function loadEnv(source: CliArgs["source"]): Env {
   };
 
   const DATABASE_URL = need("DATABASE_URL");
-  const R2_ACCOUNT_ID = need("R2_ACCOUNT_ID");
-  const R2_ACCESS_KEY_ID = need("R2_ACCESS_KEY_ID");
-  const R2_SECRET_ACCESS_KEY = need("R2_SECRET_ACCESS_KEY");
-  const R2_BUCKET = need("R2_BUCKET");
+  const BLOB_READ_WRITE_TOKEN = need("BLOB_READ_WRITE_TOKEN");
 
   let AZURE_BLOB_CONTAINER_URL: string | undefined;
   let AZURE_BLOB_SAS: string | undefined;
@@ -256,7 +246,7 @@ function loadEnv(source: CliArgs["source"]): Env {
   if (missing.length > 0) {
     const lines = [
       `Missing required environment variable(s): ${missing.join(", ")}.`,
-      `Set DATABASE_URL and the R2_* vars in web/.env.local (see web/.env.example).`,
+      `Set DATABASE_URL and BLOB_READ_WRITE_TOKEN in web/.env.local (see web/.env.example).`,
     ];
     if (source === "azure-blob" && (missing.includes("AZURE_BLOB_CONTAINER_URL") || missing.includes("AZURE_BLOB_SAS"))) {
       lines.push(
@@ -272,10 +262,7 @@ function loadEnv(source: CliArgs["source"]): Env {
 
   return {
     DATABASE_URL,
-    R2_ACCOUNT_ID,
-    R2_ACCESS_KEY_ID,
-    R2_SECRET_ACCESS_KEY,
-    R2_BUCKET,
+    BLOB_READ_WRITE_TOKEN,
     AZURE_BLOB_CONTAINER_URL,
     AZURE_BLOB_SAS,
   };
@@ -405,66 +392,56 @@ class AzureBlobPhotoSource implements PhotoSource {
 }
 
 // ---------------------------------------------------------------------------
-// R2 (S3-compatible) destination
+// Vercel Blob destination (same keys as app/photos/_lib/store.ts)
 // ---------------------------------------------------------------------------
 
-function r2Key(id: number): string {
+function blobKey(id: number): string {
   return `photos/${id}`;
 }
 
-function createR2Client(env: Env): S3Client {
-  return new S3Client({
-    region: "auto",
-    endpoint: `https://${env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
-    credentials: {
-      accessKeyId: env.R2_ACCESS_KEY_ID,
-      secretAccessKey: env.R2_SECRET_ACCESS_KEY,
-    },
-  });
+interface BlobDest {
+  token: string;
 }
 
-function isNotFoundError(err: unknown): boolean {
-  const e = err as { name?: string; $metadata?: { httpStatusCode?: number } } | undefined;
-  return e?.name === "NotFound" || e?.$metadata?.httpStatusCode === 404;
-}
-
-async function r2Head(client: S3Client, bucket: string, key: string): Promise<{ exists: boolean; contentLength?: number }> {
+async function blobHead(dest: BlobDest, key: string): Promise<{ exists: boolean; contentLength?: number }> {
   try {
-    const res = await client.send(new HeadObjectCommand({ Bucket: bucket, Key: key }));
-    return { exists: true, contentLength: res.ContentLength };
+    const res = await head(key, { token: dest.token });
+    return { exists: true, contentLength: res.size };
   } catch (err) {
-    if (isNotFoundError(err)) return { exists: false };
+    if (err instanceof BlobNotFoundError) return { exists: false };
     throw err;
   }
 }
 
-async function r2Put(client: S3Client, bucket: string, key: string, body: Buffer, contentType: string): Promise<void> {
-  await client.send(new PutObjectCommand({ Bucket: bucket, Key: key, Body: body, ContentType: contentType }));
+async function blobPut(dest: BlobDest, key: string, body: Buffer, contentType: string): Promise<void> {
+  await put(key, body, {
+    access: "public",
+    token: dest.token,
+    contentType,
+    addRandomSuffix: false,
+    allowOverwrite: true,
+    cacheControlMaxAge: 365 * 24 * 60 * 60,
+  });
 }
 
 /**
- * Lists objects under the `photos/` prefix, restricted to top-level
+ * Lists blobs under the `photos/` prefix, restricted to top-level
  * `photos/{id}` keys (a plain integer id, no further path segments). This
- * intentionally excludes any future per-size variant keys the app may write
- * later (doc 01 §11 D-008: `photos/{id}/{size}`), so a count comparison
- * against the DB stays meaningful regardless of when this script is run
- * relative to that feature landing.
+ * excludes the per-size variant keys the app writes back (D-008/D-022:
+ * `photos/{id}/{size}`), so a count comparison against the DB stays
+ * meaningful whenever this script runs.
  */
-async function r2ListPhotoKeys(client: S3Client, bucket: string): Promise<Map<string, number>> {
+async function blobListPhotoKeys(dest: BlobDest): Promise<Map<string, number>> {
   const result = new Map<string, number>();
   const topLevelKey = /^photos\/\d+$/;
-  let token: string | undefined;
+  let cursor: string | undefined;
   do {
-    const res = await client.send(
-      new ListObjectsV2Command({ Bucket: bucket, Prefix: "photos/", ContinuationToken: token }),
-    );
-    for (const obj of res.Contents ?? []) {
-      if (obj.Key && topLevelKey.test(obj.Key) && obj.Size != null) {
-        result.set(obj.Key, obj.Size);
-      }
+    const page = await list({ prefix: "photos/", cursor, token: dest.token });
+    for (const blob of page.blobs) {
+      if (topLevelKey.test(blob.pathname)) result.set(blob.pathname, blob.size);
     }
-    token = res.IsTruncated ? res.NextContinuationToken : undefined;
-  } while (token);
+    cursor = page.hasMore ? page.cursor : undefined;
+  } while (cursor);
   return result;
 }
 
@@ -534,8 +511,7 @@ interface MigrationStats {
 async function migrate(
   rows: readonly PhotoRow[],
   source: PhotoSource,
-  r2: S3Client,
-  bucket: string,
+  dest: BlobDest,
   args: CliArgs,
 ): Promise<MigrationStats> {
   const stats: MigrationStats = {
@@ -560,11 +536,11 @@ async function migrate(
 
   await runPool(rows, args.concurrency, async (row) => {
     try {
-      const key = r2Key(row.id);
+      const key = blobKey(row.id);
 
       if (args.skipExisting) {
-        const head = await r2Head(r2, bucket, key);
-        if (head.exists) {
+        const existing = await blobHead(dest, key);
+        if (existing.exists) {
           stats.skippedExisting++;
           return;
         }
@@ -577,7 +553,7 @@ async function migrate(
       }
 
       if (!args.dryRun) {
-        await r2Put(r2, bucket, key, blob, contentTypeForFormat(row.format));
+        await blobPut(dest, key, blob, contentTypeForFormat(row.format));
       }
       stats.uploaded++;
     } catch (err) {
@@ -598,13 +574,13 @@ async function migrate(
 interface SampleCheck {
   id: number;
   dbBytes: number;
-  r2Bytes: number | null;
+  blobBytes: number | null;
   match: boolean;
 }
 
 interface VerifyResult {
   dbCount: number;
-  r2Count: number;
+  blobCount: number;
   countsMatch: boolean;
   sampleChecks: SampleCheck[];
   missingFromSource: number[];
@@ -613,14 +589,13 @@ interface VerifyResult {
 async function verify(
   rows: readonly PhotoRow[],
   source: PhotoSource,
-  r2: S3Client,
-  bucket: string,
+  dest: BlobDest,
   args: CliArgs,
 ): Promise<VerifyResult> {
-  console.log(`[migrate-photos] verify: listing R2 objects under photos/ ...`);
-  const r2Keys = await r2ListPhotoKeys(r2, bucket);
+  console.log(`[migrate-photos] verify: listing Blob objects under photos/ ...`);
+  const blobKeys = await blobListPhotoKeys(dest);
   const dbCount = rows.length;
-  const r2Count = r2Keys.size;
+  const blobCount = blobKeys.size;
 
   const rowsById = new Map(rows.map((r) => [r.id, r] as const));
   const sampledIds = sampleIds(
@@ -630,8 +605,8 @@ async function verify(
   );
   const sampleChecks: SampleCheck[] = sampledIds.map((id) => {
     const row = rowsById.get(id)!;
-    const r2Bytes = r2Keys.get(r2Key(id)) ?? null;
-    return { id, dbBytes: row.bytes, r2Bytes, match: r2Bytes === row.bytes };
+    const blobBytes = blobKeys.get(blobKey(id)) ?? null;
+    return { id, dbBytes: row.bytes, blobBytes, match: blobBytes === row.bytes };
   });
 
   console.log(`[migrate-photos] verify: checking source-store presence for ${rows.length} id(s)...`);
@@ -649,8 +624,8 @@ async function verify(
 
   return {
     dbCount,
-    r2Count,
-    countsMatch: dbCount === r2Count,
+    blobCount,
+    countsMatch: dbCount === blobCount,
     sampleChecks,
     missingFromSource,
   };
@@ -672,7 +647,7 @@ interface Report {
     uploaded: number | null;
     skippedExisting: number | null;
     errors: number | null;
-    r2Total: number | null;
+    blobTotal: number | null;
     countsMatch: boolean | null;
   };
   missingIds: number[];
@@ -692,7 +667,7 @@ async function main(): Promise<void> {
   }
 
   const env = loadEnv(args.source);
-  const r2 = createR2Client(env);
+  const dest: BlobDest = { token: env.BLOB_READ_WRITE_TOKEN };
   const source: PhotoSource =
     args.source === "dir" ? new DirPhotoSource(args.dir!) : new AzureBlobPhotoSource(env.AZURE_BLOB_CONTAINER_URL!, env.AZURE_BLOB_SAS!);
 
@@ -700,7 +675,7 @@ async function main(): Promise<void> {
   const startedAt = new Date().toISOString();
 
   console.log(
-    `[migrate-photos] source=${source.describe()} bucket=${env.R2_BUCKET} ` +
+    `[migrate-photos] source=${source.describe()} dest=vercel-blob ` +
       `dryRun=${args.dryRun} skipExisting=${args.skipExisting} verify=${args.verify} verifyOnly=${args.verifyOnly}`,
   );
 
@@ -717,7 +692,7 @@ async function main(): Promise<void> {
 
   let migrationStats: MigrationStats | null = null;
   if (!args.verifyOnly) {
-    migrationStats = await migrate(rows, source, r2, env.R2_BUCKET, args);
+    migrationStats = await migrate(rows, source, dest, args);
     console.log(
       `[migrate-photos] migration complete: uploaded=${migrationStats.uploaded} ` +
         `skippedExisting=${migrationStats.skippedExisting} ` +
@@ -727,10 +702,10 @@ async function main(): Promise<void> {
 
   let verifyResult: VerifyResult | null = null;
   if (args.verify) {
-    verifyResult = await verify(rows, source, r2, env.R2_BUCKET, args);
+    verifyResult = await verify(rows, source, dest, args);
     const sampleMismatches = verifyResult.sampleChecks.filter((c) => !c.match).length;
     console.log(
-      `[migrate-photos] verify: dbCount=${verifyResult.dbCount} r2Count=${verifyResult.r2Count} ` +
+      `[migrate-photos] verify: dbCount=${verifyResult.dbCount} blobCount=${verifyResult.blobCount} ` +
         `countsMatch=${verifyResult.countsMatch} sampleChecked=${verifyResult.sampleChecks.length} ` +
         `sampleMismatches=${sampleMismatches} missingFromSource=${verifyResult.missingFromSource.length}`,
     );
@@ -756,7 +731,7 @@ async function main(): Promise<void> {
       uploaded: migrationStats?.uploaded ?? null,
       skippedExisting: migrationStats?.skippedExisting ?? null,
       errors: migrationStats?.errors.length ?? null,
-      r2Total: verifyResult?.r2Count ?? null,
+      blobTotal: verifyResult?.blobCount ?? null,
       countsMatch: verifyResult?.countsMatch ?? null,
     },
     missingIds,
@@ -774,7 +749,7 @@ async function main(): Promise<void> {
   console.log(
     `[migrate-photos] SUMMARY: dbTotal=${rows.length} uploaded=${report.counts.uploaded ?? "-"} ` +
       `skipped=${report.counts.skippedExisting ?? "-"} missingFromSource=${missingIds.length} ` +
-      `errors=${report.counts.errors ?? "-"} r2Total=${report.counts.r2Total ?? "-"} ` +
+      `errors=${report.counts.errors ?? "-"} blobTotal=${report.counts.blobTotal ?? "-"} ` +
       `countsMatch=${report.counts.countsMatch ?? "-"}`,
   );
   if (missingIds.length > 0) {

@@ -6,7 +6,7 @@ made in this plan; the executor appends from D-016 onward.
 ## D-001: Target stack
 - Phase: planning. Decision: Next.js App Router + TS / Vercel Hobby /
   Neon Postgres / Drizzle / Auth.js / R2 / sharp / MapLibre+OSM / Resend /
-  Sentry. Rationale in MODERNIZATION.md.
+  Sentry. Rationale in MODERNIZATION.md. (R2 replaced by Vercel Blob, D-022.)
 
 ## D-002: Legacy datetime interpretation
 - Context: legacy code uses `DateTime.Now`; Azure App Service default TZ
@@ -47,6 +47,8 @@ made in this plan; the executor appends from D-016 onward.
 ## D-008: Photos — originals in R2, variants generated at upload + cached
 - Legacy resized on every request. New app precomputes/caches variants in
   R2 under `photos/{id}/{size}`. Same size table and crop/fit math.
+- Amended by D-022: the store is Vercel Blob, and variants are cached on
+  first request rather than all at upload.
 - Parity impact: W-002 (pixel-level encoder differences; dimensions and
   content-type parity enforced).
 
@@ -219,3 +221,35 @@ made in this plan; the executor appends from D-016 onward.
 - Parity impact: none on compared artifacts. Whitespace-only differences
   are already waived (W-010); case-variant measurement names resolve to the
   same species legacy resolved them to.
+
+## D-022: Photos in Vercel Blob instead of Cloudflare R2
+- Date / phase: 2026-11-20, Phase 3 (P3-08). Amends D-001 and D-008.
+- Context: P3-08 was blocked on R2 credentials. Production has zero photo
+  rows, so nothing has to move, and a store inside the Vercel project keeps
+  the infrastructure to Vercel + Neon with no Cloudflare account or keys to
+  manage.
+- Decision (repo owner, 2026-11-20):
+  - Photos live in the public Vercel Blob store `treesdb-photos` (iad1),
+    connected to the `treesdb` project for every environment. Vercel injects
+    `BLOB_READ_WRITE_TOKEN`; the `R2_*` variables and `@aws-sdk/client-s3`
+    are gone.
+  - Keys are unchanged: the original at `photos/{id}`, variants at
+    `photos/{id}/{size}` (canonical `PhotoSize` name). `scripts/
+    migrate-photos.ts` writes the same keys.
+  - Variants are generated on first request and written back, instead of
+    all eleven at upload. Most sizes are never requested for a given photo,
+    and Blob's Hobby allowance counts operations as well as bytes. Variants
+    made from the fallback icon are never cached.
+  - With no token (local dev, CI) reads miss and fall back to the legacy
+    icon, and writes fail with a clear "not configured" error. Tests use an
+    in-memory store.
+- Trade-offs: on Hobby, going over the 1 GB storage or 10 GB monthly
+  transfer limit pauses Blob for 30 days instead of billing (R2 allowed 10 GB
+  with free egress). The long `Cache-Control` on `/photos/...` keeps
+  repeat views off Blob. The store is public, so a blob's URL works without
+  a token; the app never exposes those URLs and serves every photo through
+  `/photos/{id}/{size}`, which keeps legacy's view authorization, so an
+  import-draft photo is only reachable by someone who knows the store's
+  host name and the photo id.
+- Parity impact: none (storage location only; W-002 still covers encoder
+  differences).
