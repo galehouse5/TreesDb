@@ -185,6 +185,24 @@ export function createPhotoStoreProvider(): PhotoStoreProvider {
   return token ? new VercelBlobPhotoStore(token) : new UnconfiguredPhotoStore();
 }
 
+/**
+ * Deletes the blobs of photos whose rows were just deleted. Best effort: a
+ * failure is logged and leaves an unreferenced blob behind, never an error
+ * for the user (the rows are already gone).
+ */
+export async function deletePhotoBlobs(photoIds: readonly number[]): Promise<void> {
+  if (photoIds.length === 0) return;
+  const store = createPhotoStoreProvider();
+  if (!store.configured) return;
+  for (const id of photoIds) {
+    try {
+      await store.deletePhoto(id);
+    } catch (err) {
+      console.error(`photo ${id}: deleting its blobs failed`, err);
+    }
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Fallback icon (legacy: `TMD.Model/Photos/icon.png`, served as an embedded
 // assembly resource by `DefaultPhotoStoreProvider.GetReadStream` whenever

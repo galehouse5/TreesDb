@@ -33,28 +33,58 @@
  *   5 SiteVisit            (Sites.SiteVisitPhotoReference)     -> true
  *   6 Tree                  (Trees.TreePhotoReference)           -> true
  *   7 TreeMeasurement        (Trees.TreeMeasurementPhotoReference) -> true
- * So for this route (always anonymous in Phase 1): a photo is viewable iff
- * it has at least one `photo_references` row with `type IN (4,5,6,7)`.
+ * So for an anonymous user: a photo is viewable iff it has at least one
+ * `photo_references` row with `type IN (4,5,6,7)`.
+ *
+ * P3-08 adds the signed-in case for import-draft photos (types 2/3): the
+ * trip's editor (role Import AND trip creator, `user.IsAuthorizedToEdit
+ * (trip)`, the same rule as `assertTripEditable`) can view them, so the
+ * wizard can show its own thumbnails. Such a photo is reported as not
+ * public, and the route caches it privately.
  */
-import { getSql } from "@/db/index";
+import { defaultSql, type SqlTag } from "@/db/queries/sql-tag";
 
 export interface PhotoLookup {
   /** `Photos.Photos.Format` (tinyint 0 NotSpecified / 1 Jpeg / 2 Gif / 3 Png -- TMD.Model/Photos/IPhoto.cs:6-12). */
   format: number;
+  /** True when anyone may view it (a type 4-7 reference); false when only the import trip's editor may. */
+  isPublic: boolean;
 }
 
-/** Returns the photo's format if viewable by an anonymous user, else `null` (matches legacy's 403, not a 404). */
-export async function findViewablePhoto(photoId: number): Promise<PhotoLookup | null> {
-  const sql = getSql();
-  const rows = await sql<{ format: number }[]>`
-    select p.format
-    from photos p
-    where p.id = ${photoId}
-      and exists (
+/** The signed-in user, when there is one. */
+export interface PhotoViewer {
+  userId: number;
+  roles: string[];
+}
+
+/** Returns the photo's format if `viewer` (or anyone) may view it, else `null` (matches legacy's 403, not a 404). */
+export async function findViewablePhoto(
+  photoId: number,
+  viewer: PhotoViewer | null = null,
+  sql: SqlTag = defaultSql(),
+): Promise<PhotoLookup | null> {
+  const editorId = viewer && viewer.roles.includes("import") ? viewer.userId : null;
+  const rows = await sql<{ format: number; is_public: boolean; is_editor: boolean }>`
+    select
+      p.format,
+      exists (
         select 1 from photo_references r
         where r.photo_id = p.id and r.type in (4, 5, 6, 7)
-      )
+      ) as is_public,
+      exists (
+        select 1
+        from photo_references r
+        left join import_sites s on s.id = r.import_site_id
+        left join import_trees t on t.id = r.import_tree_id
+        left join import_sites ts on ts.id = t.site_id
+        join import_trips tr on tr.id = coalesce(s.trip_id, ts.trip_id)
+        where r.photo_id = p.id and r.type in (2, 3) and tr.creator_user_id = ${editorId}::int
+      ) as is_editor
+    from photos p
+    where p.id = ${photoId}
     limit 1
   `;
-  return rows[0] ? { format: rows[0].format } : null;
+  const row = rows[0];
+  if (!row || (!row.is_public && !row.is_editor)) return null;
+  return { format: row.format, isPublic: row.is_public };
 }

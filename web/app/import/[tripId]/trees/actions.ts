@@ -38,6 +38,7 @@ import {
   type TrunkFieldError,
   type TrunkInput,
 } from "@/lib/import-trees";
+import { deletePhotoBlobs } from "@/app/photos/_lib/store";
 
 async function requireEditableTrip(tripIdRaw: string): Promise<{ tripId: number; userId: number }> {
   const tripId = Number(tripIdRaw);
@@ -103,7 +104,7 @@ export async function removeTreeAction(formData: FormData): Promise<void> {
   const { tripId } = await requireEditableTrip(tripIdRaw);
 
   try {
-    await removeTree(tripId, treeId, new Date());
+    await deletePhotoBlobs(await removeTree(tripId, treeId, new Date()));
   } catch (err) {
     if (!(err instanceof TreeAccessError)) throw err;
   }

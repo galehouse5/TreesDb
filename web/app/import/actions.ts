@@ -18,6 +18,7 @@ import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { asAppSession } from "@/auth.config";
 import { TripAccessError, createTrip, removeTrip } from "@/db/queries/import-drafts.sql";
+import { deletePhotoBlobs } from "@/app/photos/_lib/store";
 
 export async function startTripAction(): Promise<void> {
   const session = asAppSession(await auth());
@@ -62,7 +63,7 @@ export async function removeTripAction(formData: FormData): Promise<void> {
 
   if (Number.isInteger(tripId) && tripId > 0) {
     try {
-      await removeTrip(tripId, session.userId, session.roles);
+      await deletePhotoBlobs(await removeTrip(tripId, session.userId, session.roles));
     } catch (err) {
       if (!(err instanceof TripAccessError)) throw err;
       // not-found or unauthorized -- nothing to remove from this user's

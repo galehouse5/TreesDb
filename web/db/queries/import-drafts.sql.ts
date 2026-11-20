@@ -37,6 +37,7 @@ import { CoordinatesFormat } from "../../lib/units/parse-coordinates";
 import { removeMeasurementsByTrip, removeVisitsByTrip } from "../../lib/merge/reimport";
 import { recomputeStaleMetrics } from "../recompute";
 import { syncSpecies } from "../species";
+import { deleteImportSitePhotoReferences, deleteOrphanedPhotos } from "./import-photos.sql";
 
 // ---------------------------------------------------------------------------
 // Authorization
@@ -642,15 +643,28 @@ export async function saveImportSite(
  * an explicit multi-statement delete in dependency order, in one
  * transaction, followed by the same `Repositories.Imports.Save(trip)`
  * `last_saved` stamp every other mutation gets (`ImportController.cs:
- * 165-178`). Photo references are out of this task's scope (P3-08, not
- * built yet) and have no rows to delete yet.
+ * 165-178`). The site's and its trees' import photo references go
+ * too (P3-08); photos left with no reference are deleted and their ids
+ * returned so the caller can delete the blobs after commit.
  */
-export async function removeImportSite(siteId: number, tripId: number, now: Date, sql: SqlTag = defaultSql()): Promise<void> {
-  await withTransaction(sql, async (trx) => {
+export async function removeImportSite(
+  siteId: number,
+  tripId: number,
+  now: Date,
+  sql: SqlTag = defaultSql(),
+): Promise<number[]> {
+  return withTransaction(sql, async (trx) => {
+    // The site must belong to this trip (the caller only checked the trip),
+    // or a crafted siteId could remove another trip's site.
+    const owned = await trx<{ id: number }>`select id from import_sites where id = ${siteId} and trip_id = ${tripId}`;
+    if (!owned[0]) return [];
+    const photoIds = await deleteImportSitePhotoReferences(siteId, trx);
     await trx`delete from import_trunks where tree_id in (select id from import_trees where site_id = ${siteId})`;
     await trx`delete from import_trees where site_id = ${siteId}`;
     await trx`delete from import_sites where id = ${siteId}`;
+    const orphaned = await deleteOrphanedPhotos(photoIds, trx);
     await stampTripLastSaved(tripId, now, trx);
+    return orphaned;
   });
 }
 
@@ -769,8 +783,8 @@ export async function removeTrip(
   userId: number,
   roles: string[],
   sql: SqlTag = defaultSql(),
-): Promise<void> {
-  await withTransaction(sql, async (trx) => {
+): Promise<number[]> {
+  return withTransaction(sql, async (trx) => {
     await assertTripEditable(tripId, userId, roles, trx);
 
     // Canonical-side cleanup -- no-op for a trip with no canonical rows yet
@@ -780,14 +794,16 @@ export async function removeTrip(
 
     // Draft-side cascade delete, dependency order (trunks -> trees -> sites
     // -> measurers -> trip), including this trip's own import-side photo
-    // references (types 2/3 -- P3-08 not built yet, so these are currently
-    // always empty, but deleting them is still correct once that task lands).
-    await trx`
+    // references (types 2/3, P3-08). Their photos are deleted at the end
+    // once nothing references them (the canonical copies of a finished
+    // trip's photos point at the same rows and were removed above).
+    const photoRefs = await trx<{ photo_id: number }>`
       delete from photo_references
       where import_site_id in (select id from import_sites where trip_id = ${tripId})
          or import_tree_id in (
            select t.id from import_trees t join import_sites s on s.id = t.site_id where s.trip_id = ${tripId}
          )
+      returning photo_id
     `;
     await trx`
       delete from import_trunks
@@ -799,8 +815,13 @@ export async function removeTrip(
     await trx`delete from import_sites where trip_id = ${tripId}`;
     await trx`delete from import_trip_measurers where trip_id = ${tripId}`;
     await trx`delete from import_trips where id = ${tripId}`;
+    const orphanedPhotoIds = await deleteOrphanedPhotos(
+      photoRefs.map((r) => r.photo_id),
+      trx,
+    );
 
     await recomputeStaleMetrics(trx);
     await syncSpecies(trx); // D-019
+    return orphanedPhotoIds;
   });
 }

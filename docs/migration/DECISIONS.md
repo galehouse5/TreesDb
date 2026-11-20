@@ -253,3 +253,37 @@ made in this plan; the executor appends from D-016 onward.
   host name and the photo id.
 - Parity impact: none (storage location only; W-002 still covers encoder
   differences).
+
+## D-023: Import photo upload details (P3-08)
+- Date / phase: 2026-11-20, Phase 3 (P3-08). Builds on D-022.
+- Upload cap 4 MB, not legacy's 5 MB (`Photo.MaxBytes`): a Vercel function
+  accepts at most a 4.5 MB request body, and the upload is a server action
+  (`next.config.ts` raises its body limit to 4.5 MB). Legacy's 5 MB check
+  still applies to the stored bytes. A direct-to-Blob client upload would
+  lift the cap if large phone photos turn out to matter.
+- Formats are sniffed from the bytes with sharp: JPEG, PNG and GIF only,
+  with legacy's "Photo must be in a proper format." message. JPEG and PNG
+  are re-encoded after applying the EXIF orientation, as legacy re-saved
+  every upload; this also drops camera metadata (GPS, serial numbers) from
+  the stored original. GIFs are stored unchanged.
+- Authorization is the trip-editor rule (role Import and trip creator) for
+  add, caption and remove. Legacy's `AddTo*` actions checked
+  `PhotoReferences.IsAuthorizedToAdd`, whose LINQ counts references rather
+  than true answers, so it passed for any signed-in user; the port applies
+  the per-reference rule it was written to express. Every action also
+  checks that the site, tree or reference belongs to the trip.
+  `removeImportSite` gained the same site-in-trip check (it previously
+  trusted the posted site id).
+- Viewing: the trip's editor can view the trip's draft photos (types 2/3),
+  as legacy's per-reference `IsAuthorizedToView` says; the route caches
+  those privately for five minutes. Anonymous viewing is unchanged (types
+  4-7 only).
+- Removal deletes the `photos` row and its blobs once no reference points
+  at it. Legacy deleted only the reference and left an orphan
+  (`PhotoRepository.ListOrphaned`). A photo a finished trip copied to its
+  canonical site or tree is kept. Removing a site, tree or whole trip now
+  deletes its draft photo references too (the ORM cascade legacy relied on).
+- Captions: `photo_references.caption` (new column, schema note 5) is
+  editable per photo on the gallery and carried to the canonical
+  references on Finish by the merge engine.
+- Parity impact: none on compared artifacts (production has no photos).

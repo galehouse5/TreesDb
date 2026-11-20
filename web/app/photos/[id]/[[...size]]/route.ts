@@ -33,7 +33,10 @@
  * response).
  *
  * CACHE-CONTROL -- doc 03 P1-12 calls for a long `Cache-Control` on
- * successful image responses. The 403 response is explicitly NOT cached.
+ * successful image responses. The 403 response is explicitly NOT cached,
+ * and an import-draft photo only its trip's editor may see (P3-08) is
+ * cached privately and briefly, since Finish or Remove changes who may see
+ * it.
  */
 import { NextResponse } from "next/server";
 import {
@@ -43,6 +46,8 @@ import {
 } from "@/lib/photos/photo-size";
 import { createPhotoStoreProvider, getFallbackIconBytes } from "../../_lib/store";
 import { findViewablePhoto } from "../../_lib/lookup";
+import { auth } from "@/auth";
+import { asAppSession } from "@/auth.config";
 
 // `PhotoFormat` (TMD.Model/Photos/IPhoto.cs:6-12) -> Content-Type
 // (`Photo.ContentType`, Photo.cs:27-39) -> sharp output format.
@@ -53,6 +58,7 @@ const PHOTO_FORMAT: Record<number, { contentType: string; sharpFormat: PhotoOutp
 };
 
 const LONG_CACHE_CONTROL = "public, max-age=31536000, immutable";
+const EDITOR_CACHE_CONTROL = "private, max-age=300";
 
 export async function GET(
   _request: Request,
@@ -73,7 +79,8 @@ export async function GET(
     return new NextResponse(null, { status: 404 });
   }
 
-  const photo = await findViewablePhoto(id);
+  const session = asAppSession(await auth());
+  const photo = await findViewablePhoto(id, session ? { userId: session.userId, roles: session.roles } : null);
   if (!photo) {
     // Faithful port of legacy's `UnauthorizedResult` -- see this file's
     // header. Not cached; not a 404 (the id may well exist, just isn't
@@ -114,7 +121,7 @@ export async function GET(
     headers: {
       "Content-Type": formatInfo.contentType,
       "Content-Length": String(outputBytes.length),
-      "Cache-Control": LONG_CACHE_CONTROL,
+      "Cache-Control": photo.isPublic ? LONG_CACHE_CONTROL : EDITOR_CACHE_CONTROL,
     },
   });
 }

@@ -43,6 +43,7 @@ import {
   type SiteStepFieldError,
   type SiteStepInput,
 } from "@/lib/import-sites";
+import { deletePhotoBlobs } from "@/app/photos/_lib/store";
 
 interface SiteRedisplayState {
   siteId: number;
@@ -202,7 +203,7 @@ export async function removeSiteAction(formData: FormData): Promise<void> {
   const siteId = Number(formData.get("siteId") ?? "");
   const tripId = await requireEditableTrip(tripIdRaw, `/import/${tripIdRaw}/sites`);
 
-  await removeImportSite(siteId, tripId, new Date());
+  await deletePhotoBlobs(await removeImportSite(siteId, tripId, new Date()));
 
   redirect(`/import/${tripId}/sites`);
 }

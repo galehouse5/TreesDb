@@ -35,6 +35,7 @@
  */
 import type { SqlTag } from "./sql-tag";
 import { defaultSql, withTransaction } from "./sql-tag";
+import { deleteImportTreePhotoReferences, deleteOrphanedPhotos } from "./import-photos.sql";
 import { CoordinatesFormat } from "../../lib/units/parse-coordinates";
 import { DistanceFormat, ElevationFormat } from "../../lib/units/parse";
 import { ImportTreeType, TreeAgeClass, TreeAgeType, TreeFormType, TreeHeightMeasurementMethod, TreeStatus, TreeTerrainType } from "../../lib/import-trees";
@@ -472,17 +473,27 @@ export async function updateTree(
 // cascade-delete mapping would).
 // ---------------------------------------------------------------------------
 
-export async function removeTree(tripId: number, treeId: number, now: Date, sql: SqlTag = defaultSql()): Promise<void> {
-  await withTransaction(sql, async (trx) => {
+export async function removeTree(
+  tripId: number,
+  treeId: number,
+  now: Date,
+  sql: SqlTag = defaultSql(),
+): Promise<number[]> {
+  return withTransaction(sql, async (trx) => {
     const owned = await trx<{ id: number }>`
       select t.id from import_trees t join import_sites s on s.id = t.site_id
       where t.id = ${treeId} and s.trip_id = ${tripId}
     `;
     if (!owned[0]) throw new TreeAccessError();
 
+    // The tree's import photo references go with it (P3-08); photos left
+    // unreferenced are deleted and returned for blob cleanup after commit.
+    const photoIds = await deleteImportTreePhotoReferences(treeId, trx);
     await trx`delete from import_trunks where tree_id = ${treeId}`;
     await trx`delete from import_trees where id = ${treeId}`;
+    const orphaned = await deleteOrphanedPhotos(photoIds, trx);
     await stampLastSaved(tripId, now, trx);
+    return orphaned;
   });
 }
 

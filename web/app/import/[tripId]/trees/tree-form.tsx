@@ -6,6 +6,7 @@
 // Coordinates, General comments, plus a tree-type toggle and (multi-trunk
 // only) Form type, Combined girth number of trunks, and a trunk sub-form
 // list with add/remove.
+import type { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -104,9 +105,11 @@ interface TreeFormProps {
    * starting viewport (legacy tier 2) so each tree doesn't start from a
    * continental-US view. */
   siteView?: { lat: number; lng: number } | null;
+  /** Rendered in the card below the form (the tree's photo gallery, P3-08). */
+  children?: ReactNode;
 }
 
-export function TreeForm({ tripId, tree, trunks, redisplay, siteView }: TreeFormProps) {
+export function TreeForm({ tripId, tree, trunks, redisplay, siteView, children }: TreeFormProps) {
   const isRedisplayForThisTree = redisplay !== null;
   const input = isRedisplayForThisTree ? redisplay!.input : defaultInputFor(tree);
   const requiredErrors = redisplay?.requiredErrors ?? [];
@@ -453,6 +456,7 @@ export function TreeForm({ tripId, tree, trunks, redisplay, siteView }: TreeForm
           </Button>
         </div>
       </form>
+      {children ? <div className="mt-4">{children}</div> : null}
     </div>
   );
 }

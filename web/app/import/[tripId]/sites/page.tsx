@@ -7,10 +7,9 @@
 // edit form for `ImportSiteModel`'s exact field set
 // (`TMD/Models/Import/ImportSiteModel.cs:9-36`): Name, Coordinates (+ the
 // MapLibre picker), State, County, OwnershipType, OwnershipContactInfo (+
-// "make public"), Comments. Trees/Photos are Site.cs fields too but are
-// OUT of this task's scope (P3-05/P3-08, not built yet) -- see
-// lib/import-sites.ts's header for why the Required-tag validation below
-// deliberately excludes them.
+// "make public"), Comments, and (P3-08) the site's photo gallery below the
+// form. Trees are edited on the Trees step -- see lib/import-sites.ts's
+// header for why the Required-tag validation below excludes them.
 //
 // Design departure from legacy worth flagging (see actions.ts's header for
 // the full reasoning): each site's own form saves ITSELF immediately on
@@ -29,7 +28,9 @@ import { CoordinatePicker } from "@/components/import/coordinate-picker";
 import { ConfirmSubmitButton } from "@/components/import/confirm-submit-button";
 import { SubmitButton } from "@/components/import/submit-button";
 import { NATIVE_SELECT_CLASS_NAME, SECTION_HEADER_CLASS, SECTION_TITLE_CLASS } from "@/components/import/wizard-ui";
+import { PhotoGallery } from "@/components/import/photo-gallery";
 import { cn } from "@/lib/utils";
+import { listImportPhotosForTrip, type ImportPhoto } from "@/db/queries/import-photos.sql";
 import {
   ensureSiteExists,
   getTrip,
@@ -86,7 +87,14 @@ export default async function SitesStepPage({ params, searchParams }: SitesStepP
   // stamping `last_saved` (see `ensureSiteExists`'s own header).
   await ensureSiteExists(tripId, { stateId: trip.defaultStateId, county: trip.defaultCounty }, new Date());
 
-  const [sites, states] = await Promise.all([listImportSites(tripId), listStates()]);
+  const [sites, states, photos] = await Promise.all([
+    listImportSites(tripId),
+    listStates(),
+    listImportPhotosForTrip(tripId),
+  ]);
+  const photosForSite = (siteId: number) => photos.filter((p) => p.importSiteId === siteId);
+  const photoError = firstParam(sp.photoError);
+  const photoOwner = firstParam(sp.photoOwner);
 
   const editParam = firstParam(sp.edit);
   const forcedEditId = editParam ? Number(editParam) : null;
@@ -111,6 +119,8 @@ export default async function SitesStepPage({ params, searchParams }: SitesStepP
     if (errors.length > 0) editingIds.add(site.id);
   }
   if (forcedEditId !== null) editingIds.add(forcedEditId);
+  // A photo error belongs to an open gallery, so keep its site's form open.
+  if (photoError && photoOwner?.startsWith("site-")) editingIds.add(Number(photoOwner.slice(5)));
   const anyEditing = editingIds.size > 0;
   // With exactly one site form open (the overwhelmingly common case), the
   // page-level Add site/Continue buttons submit THAT form with a compound
@@ -143,9 +153,11 @@ export default async function SitesStepPage({ params, searchParams }: SitesStepP
             states={states}
             isRemovable={sites.length > 1}
             redisplay={redisplay && redisplay.siteId === site.id ? redisplay : null}
+            photos={photosForSite(site.id)}
+            photoError={photoOwner === `site-${site.id}` ? photoError : undefined}
           />
         ) : (
-          <SiteSummaryCard key={site.id} tripId={tripId} site={site} states={states} />
+          <SiteSummaryCard key={site.id} tripId={tripId} site={site} states={states} photos={photosForSite(site.id)} />
         ),
       )}
 
@@ -226,10 +238,12 @@ function SiteSummaryCard({
   tripId,
   site,
   states,
+  photos,
 }: {
   tripId: number;
   site: ImportSite;
   states: ImportStateOption[];
+  photos: ImportPhoto[];
 }) {
   const state = states.find((s) => s.id === site.stateId);
   return (
@@ -240,6 +254,7 @@ function SiteSummaryCard({
           <p className="text-sm text-muted-foreground">
             {[site.county, state?.name].filter(Boolean).join(", ")}
             {site.ownershipType ? ` · ${site.ownershipType}` : ""}
+            {photos.length > 0 ? ` · ${photos.length} photo${photos.length === 1 ? "" : "s"}` : ""}
           </p>
         </div>
         <div className="flex shrink-0 gap-2">
@@ -266,12 +281,16 @@ function SiteEditCard({
   states,
   isRemovable,
   redisplay,
+  photos,
+  photoError,
 }: {
   tripId: number;
   site: ImportSite;
   states: ImportStateOption[];
   isRemovable: boolean;
   redisplay: RedisplayState | null;
+  photos: ImportPhoto[];
+  photoError: string | undefined;
 }) {
   const values: SiteStepInput = redisplay ? redisplay.input : siteToStepInput(site);
   const errors = redisplay ? redisplay.errors : [];
@@ -470,6 +489,16 @@ function SiteEditCard({
             ) : null}
           </div>
         </form>
+        <div className="mt-4">
+          <PhotoGallery
+            tripId={tripId}
+            ownerKind="site"
+            ownerId={site.id}
+            photos={photos}
+            returnTo={`/import/${tripId}/sites?edit=${site.id}`}
+            error={photoError}
+          />
+        </div>
       </CardContent>
     </Card>
   );

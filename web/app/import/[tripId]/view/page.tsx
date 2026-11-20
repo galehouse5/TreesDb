@@ -28,11 +28,9 @@
 //   Trip:  Name (heading), Date, MeasurerContactInfo, FirstMeasurer (always),
 //          Second/ThirdMeasurer (only if specified -- `IfSpecifiedSummaryDisplayFor`).
 //   Site:  Name (heading), State ("{Name} ({Country.Code})"), County,
-//          OwnershipType, then its Trees. Photos (`PhotoGalleryModel`) are
-//          skipped -- P3-08 (photo upload) is not built yet, so every
-//          import site/tree currently has zero photo_references rows
-//          regardless (same `Photos.Count > 0` gate legacy applies would
-//          never pass yet either).
+//          OwnershipType, its Photos (P3-08; only when it has any, legacy's
+//          `Photos.Count > 0` gate), then its Trees. Trees show their
+//          photos the same way.
 //   Tree:  ScientificName (heading, "(Unidentified)" fallback -- NOTE this
 //          fallback is Tree.cshtml's own display-time default, NOT the same
 //          "(Unidentified)" the merge engine writes into a MEASUREMENT's
@@ -45,6 +43,7 @@ import { cookies } from "next/headers";
 import { notFound } from "next/navigation";
 import { getTrip, listImportSites, listStates, type ImportSite } from "@/db/queries/import-drafts.sql";
 import { listAllSiteTreesForTrip, type TreeRecord } from "@/db/queries/import-trees.sql";
+import { listImportPhotosForTrip, type ImportPhoto } from "@/db/queries/import-photos.sql";
 import { toFormalName } from "@/lib/import-wizard";
 import { formatDateMMDDYYYY, formatDistanceField, isSpecifiedFormat } from "@/components/details/legacy-format";
 import { Portlet, ReportRow, ReportTable } from "@/components/details/report-table";
@@ -60,7 +59,29 @@ interface ViewPageProps {
   params: Promise<{ tripId: string }>;
 }
 
-function TreeCard({ tree, units }: { tree: TreeRecord; units: Units }) {
+/** Legacy `DisplayTemplates/PhotoGalleryModel.cshtml`: the thumbnails, shown only when there are any. */
+function PhotoStrip({ photos }: { photos: ImportPhoto[] }) {
+  if (photos.length === 0) return null;
+  return (
+    <ul className="flex flex-wrap gap-2 p-2" aria-label="Photos">
+      {photos.map((p) => (
+        <li key={p.referenceId}>
+          {/* eslint-disable-next-line @next/next/no-img-element -- served by /photos, which does its own resizing */}
+          <img
+            src={`/photos/${p.photoId}/SquareThumbnail`}
+            alt={p.caption ?? "Photo"}
+            title={p.caption ?? undefined}
+            width={100}
+            height={100}
+            className="size-[100px] rounded object-cover ring-1 ring-border"
+          />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function TreeCard({ tree, units, photos }: { tree: TreeRecord; units: Units; photos: ImportPhoto[] }) {
   const heightSpecified = isSpecifiedFormat(tree.heightInputFormat);
   const girthSpecified = isSpecifiedFormat(tree.girthInputFormat);
   const crownSpreadSpecified = isSpecifiedFormat(tree.crownSpreadInputFormat);
@@ -79,6 +100,7 @@ function TreeCard({ tree, units }: { tree: TreeRecord; units: Units }) {
           <ReportRow label="Crown spread">{formatDistanceField(tree.crownSpread, tree.crownSpreadInputFormat, units)}</ReportRow>
         ) : null}
       </ReportTable>
+      <PhotoStrip photos={photos} />
     </Portlet>
   );
 }
@@ -88,11 +110,13 @@ function SiteCard({
   trees,
   stateLabel,
   units,
+  photos,
 }: {
   site: ImportSite;
   trees: TreeRecord[];
   stateLabel: string;
   units: Units;
+  photos: ImportPhoto[];
 }) {
   return (
     <Portlet heading={site.name || "(unnamed site)"}>
@@ -102,9 +126,10 @@ function SiteCard({
           <ReportRow label="County">{site.county}</ReportRow>
           <ReportRow label="Ownership type">{site.ownershipType}</ReportRow>
         </ReportTable>
+        <PhotoStrip photos={photos.filter((p) => p.importSiteId === site.id)} />
         <div className="space-y-3">
           {trees.map((tree) => (
-            <TreeCard key={tree.id} tree={tree} units={units} />
+            <TreeCard key={tree.id} tree={tree} units={units} photos={photos.filter((p) => p.importTreeId === tree.id)} />
           ))}
         </div>
       </div>
@@ -121,11 +146,12 @@ export default async function ImportViewPage({ params }: ViewPageProps) {
   // assertTripEditable for this request -- these fetches are just the data
   // read, not a second authorization check (same convention as the Trip
   // step's page.tsx).
-  const [trip, sites, treesBySite, states] = await Promise.all([
+  const [trip, sites, treesBySite, states, photos] = await Promise.all([
     getTrip(tripId),
     listImportSites(tripId),
     listAllSiteTreesForTrip(tripId),
     listStates(),
+    listImportPhotosForTrip(tripId),
   ]);
   if (!trip) notFound();
 
@@ -158,7 +184,14 @@ export default async function ImportViewPage({ params }: ViewPageProps) {
         const state = site.stateId != null ? stateById.get(site.stateId) : undefined;
         const stateLabel = state ? `${state.name} (${state.code})` : "";
         return (
-          <SiteCard key={site.id} site={site} trees={treesBySite[site.id] ?? []} stateLabel={stateLabel} units={units} />
+          <SiteCard
+            key={site.id}
+            site={site}
+            trees={treesBySite[site.id] ?? []}
+            stateLabel={stateLabel}
+            units={units}
+            photos={photos}
+          />
         );
       })}
     </div>

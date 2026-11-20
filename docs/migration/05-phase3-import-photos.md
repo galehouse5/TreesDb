@@ -41,7 +41,12 @@ Checklist:
       ImportRepository.Remove — a true import undo; ported by reusing
       reimport.ts's cleanup exports); View renders from draft rows with no
       IsImported gate, like legacy.*
-- [ ] P3-08 photo upload (Vercel Blob + sharp, D-022; was R2) on import trees/sites
+- [x] P3-08 photo upload (Vercel Blob + sharp, D-022; was R2) on import trees/sites
+      *— galleries on the Sites and Trees steps (add, caption, remove) and
+      on View; JPEG/PNG/GIF sniffed with sharp, 4 MB upload cap; the
+      trip's editor can view its draft photos; removing a site, tree or
+      trip deletes its photos (D-023). Live upload not yet tested on a
+      deployment with the Blob token, see phase3-gate.md §3.*
 - [x] P3-09 import map endpoints — */api/import/[tripId]/markers?site=|tree=
       with legacy's exact payload (MapMarkerModel field set + top-level
       CalculatedCoordinates via graph.ts's cascade, computed fresh — draft

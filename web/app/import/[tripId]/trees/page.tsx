@@ -16,7 +16,9 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ConfirmSubmitButton } from "@/components/import/confirm-submit-button";
 import { SECTION_HEADER_CLASS, SECTION_TITLE_CLASS } from "@/components/import/wizard-ui";
+import { PhotoGallery } from "@/components/import/photo-gallery";
 import { cn } from "@/lib/utils";
+import { listImportPhotosForTrip } from "@/db/queries/import-photos.sql";
 import { listImportSites } from "@/db/queries/import-drafts.sql";
 import {
   initializeTreesForTrip,
@@ -75,6 +77,10 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
 
   const sites = await listImportSites(tripId);
   const treesBySite = await listAllSiteTreesForTrip(tripId);
+  const photos = await listImportPhotosForTrip(tripId);
+  const photosForTree = (treeId: number) => photos.filter((p) => p.importTreeId === treeId);
+  const photoError = firstParam(sp.photoError);
+  const photoOwner = firstParam(sp.photoOwner);
 
   const editIdRaw = firstParam(sp.edit);
   const editId = editIdRaw ? Number(editIdRaw) : null;
@@ -145,7 +151,16 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
                     trunks={editingTrunks}
                     redisplay={redisplay}
                     siteView={siteView}
-                  />
+                  >
+                    <PhotoGallery
+                      tripId={tripId}
+                      ownerKind="tree"
+                      ownerId={tree.id}
+                      photos={photosForTree(tree.id)}
+                      returnTo={`/import/${tripId}/trees?edit=${tree.id}`}
+                      error={photoOwner === `tree-${tree.id}` ? photoError : undefined}
+                    />
+                  </TreeForm>
                 ) : (
                   <div key={tree.id} className="rounded-lg border bg-card p-3 shadow-sm">
                     <div className="flex items-center justify-between gap-2">
@@ -165,6 +180,11 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
                       ) : null}
                       {tree.crownSpreadInputFormat !== 1 ? (
                         <li>Crown spread: {distanceToEditableText(tree.crownSpread, tree.crownSpreadInputFormat)}</li>
+                      ) : null}
+                      {photosForTree(tree.id).length > 0 ? (
+                        <li>
+                          {photosForTree(tree.id).length} photo{photosForTree(tree.id).length === 1 ? "" : "s"}
+                        </li>
                       ) : null}
                     </ul>
                     {trees.length > 1 ? (
