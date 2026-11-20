@@ -60,6 +60,10 @@ web/
 - **Neon**: create a project; put the pooled URL in Vercel env + local `.env.local`.
 - **Vercel**: import the repo, set the root directory to `web/`, add env vars from
   `.env.example`. Hobby plan (free, non-commercial).
+- **Sentry** (error alerts, replaces ELMAH mails): create a free Next.js
+  project, copy its DSN into Vercel as `SENTRY_DSN` (Production, and Preview
+  if wanted), redeploy, and turn on email alerts for new issues in Sentry.
+  Without a DSN the app runs with Sentry off. Details in `lib/sentry.ts`.
 
 Status of Phase 0 tasks lives at the top of
 [`../docs/migration/02-phase0-foundation.md`](../docs/migration/02-phase0-foundation.md).

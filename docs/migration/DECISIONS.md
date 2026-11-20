@@ -175,3 +175,17 @@ made in this plan; the executor appends from D-016 onward.
 - Legacy behavior: unchanged where legacy works. Pages legacy 500s on now
   render with the renamed species' maxima.
 - Parity impact: none on compared artifacts (same W-006 bucket as D-018).
+
+## D-020: Server-side Sentry, off until a DSN is set
+
+- Context: legacy mails every server error via ELMAH. The new app only
+  logged to the console, so an outage (e.g. the database unreachable, as
+  on 2026-11-15) would go unnoticed after cutover. Sentry was planned
+  (MODERNIZATION.md, P0-01's `SENTRY_DSN`) but not installed.
+- Decision: `@sentry/nextjs` wired through `instrumentation.ts`
+  (`register` + `onRequestError`), gated on `SENTRY_DSN` by
+  `lib/sentry.ts`. Errors only (no tracing), `sendDefaultPii: false`.
+  Server side only, like ELMAH; no `withSentryConfig` wrapper or source
+  map upload, so the build needs no Sentry token.
+- Owner action: create the Sentry project and set `SENTRY_DSN` in Vercel.
+- Parity impact: none.
