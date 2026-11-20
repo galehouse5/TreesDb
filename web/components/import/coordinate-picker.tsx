@@ -135,13 +135,14 @@ export function CoordinatePicker({ targetInputId, label = "Pick on map", initial
   // Keep the dialog's coordinate input in sync with the pin, whatever moved
   // it (click, drag, Enter-on-canvas, or a typed commit being normalized) --
   // legacy's two-way box behaved the same way.
-  useEffect(() => {
-    if (picked) {
-      setCoordText(format(picked));
-      setTypedError(null);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [picked, outputFormat]);
+  // Done during render rather than in an effect (react-hooks/set-state-in-effect):
+  // https://react.dev/learn/you-might-not-need-an-effect#adjusting-some-state-when-a-prop-changes
+  const [synced, setSynced] = useState({ picked, outputFormat });
+  if (picked && (synced.picked !== picked || synced.outputFormat !== outputFormat)) {
+    setSynced({ picked, outputFormat });
+    setCoordText(format(picked));
+    setTypedError(null);
+  }
 
   // Native <dialog> does not lock body scroll; wheel over the backdrop was
   // scrolling the page under the modal.
