@@ -54,10 +54,36 @@ parity category `redirects` (doc 07 §5.6).
 3. Re-run the dump (P0-03) → diff against Neon with the data-parity suite
    → apply the delta (ETL upsert mode `--delta`: insert missing Ids,
    update changed rows, report deletes for manual review).
+   Implemented 2026-11-20 in `web/scripts/etl/delta.ts`:
+   `tsx scripts/migrate-data.ts --delta [--preview] [--apply-deletes]`.
+   One transaction (any failure rolls the whole sync back); `--preview`
+   reports and rolls back; deletes happen only with `--apply-deletes`,
+   children first. Report: `web/parity/reports/etl-delta-<timestamp>.json`.
 4. Photo delta: copy blobs for new photo Ids.
 5. Data-parity aggregates re-run → zero diff. Re-capture the `exports` and
    `markers` snapshot categories and re-verify against the new app (data
    changed since Phase 1's gate).
+
+### Repeated syncs before cutover (ongoing comparison)
+
+The delta sync is idempotent, so it can run after every fresh dump to keep
+Neon matching live while the new app keeps changing. Each round:
+
+1. `dump-legacy.ps1` (Windows, read-only Azure SQL login) → `parity/dumps/`
+   plus fresh `parity/snapshots/derived/`.
+2. `migrate-data.ts --delta --apply-deletes` (needs only `DATABASE_URL`).
+   This makes Neon a mirror of the dump: rows written only in the new app
+   are removed, and rows it shares an id with are overwritten. Use plain
+   `--delta` (deletes reported, not applied) once the new app takes real
+   writes.
+3. `migrate-photos.ts --skip-existing` for photos added since the last
+   round.
+4. `parity/data/verify-data.ts` (should be zero diff by construction) and
+   `parity/data/verify-derived.ts` (legacy's computed metrics vs the new
+   app's recompute: the real accuracy check).
+5. For page-level parity, re-capture the live site
+   (`parity/capture.ts --refresh`, close in time to the dump so they agree)
+   and run `parity/verify.ts` against the deployed app.
 
 ## P4-03 DNS
 

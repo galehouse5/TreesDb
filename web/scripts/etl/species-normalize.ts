@@ -38,7 +38,21 @@ export async function normalizeSpeciesWhitespace(
   executor: SqlExecutor,
   table: SpeciesNormalizedTable,
 ): Promise<number> {
-  const t = quoteIdent(table);
+  return normalizeSpeciesWhitespaceInTable(executor, table);
+}
+
+/**
+ * Same normalization, applied to any table that has the `trees`/
+ * `tree_measurements` species columns. The delta sync (delta.ts) runs it on
+ * its typed incoming copy of the dump BEFORE diffing, so a raw dump row and
+ * the already-normalized row in Postgres compare equal and a repeated sync
+ * doesn't report every whitespace-run row as changed.
+ */
+export async function normalizeSpeciesWhitespaceInTable(
+  executor: SqlExecutor,
+  tableName: string,
+): Promise<number> {
+  const t = quoteIdent(tableName);
   const { rows } = await executor.query<{
     id: number;
     scientific_name: string;
