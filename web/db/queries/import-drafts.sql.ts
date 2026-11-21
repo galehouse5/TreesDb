@@ -701,15 +701,18 @@ interface RawStateOptionRow {
 }
 
 /** `Repositories.Locations.FindAllStates()` (backing
- * `EditorTemplates/State.cshtml`) -- ordered by name for a stable, readable
- * dropdown; joins `countries` for the label's `Country.Code`. */
+ * `EditorTemplates/State.cshtml`). Legacy's query had no ORDER BY, so the
+ * dropdown came out in id order, which puts the US states first; most
+ * imports are US trips. This keeps US first, then other countries by name,
+ * with states alphabetical within each. Joins `countries` for the label's
+ * `Country.Code`. */
 export async function listStates(sql: SqlTag = defaultSql()): Promise<ImportStateOption[]> {
   const rows = await sql<RawStateOptionRow>`
     select s.id, s.name, c.double_letter_code, c.triple_letter_code,
            s.ne_latitude, s.ne_longitude, s.sw_latitude, s.sw_longitude
     from states s
     join countries c on c.id = s.country_id
-    order by s.name asc
+    order by (trim(c.double_letter_code) = 'US') desc, c.name asc, s.name asc
   `;
   return rows.map((r) => ({
     id: r.id,
