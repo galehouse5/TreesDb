@@ -102,11 +102,10 @@ test.describe("import wizard walkthrough (oracle trip 906)", () => {
       await expectNoErrorAlerts(page);
 
       // -----------------------------------------------------------------
-      // 5. Trees step -- one auto-created blank tree to start; "Add tree"
-      // for the remaining two (redirects straight into edit mode).
+      // 5. Trees step -- one auto-created blank tree to start, whose form
+      // opens by itself as in legacy; "Add tree" for the remaining two
+      // (redirects straight into edit mode).
       // -----------------------------------------------------------------
-      await page.getByRole("link", { name: "Edit" }).click();
-      await page.waitForURL(/\/import\/\d+\/trees\?edit=\d+$/);
       await fillTreeForm(page, site.trees[0]!);
       await saveTreeForm(page);
       await expectNoErrorAlerts(page);

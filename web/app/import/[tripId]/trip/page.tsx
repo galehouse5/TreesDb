@@ -9,6 +9,7 @@
 // `DefaultLaserBrand`/`DefaultClinometerBrand`/`DefaultHeightMeasurementMethod`)
 // are set from the Sites step (P3-04, `Site.SetTripDefaults`), out of this
 // task's scope.
+import { openState } from "@/lib/redisplay-state";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CarIcon } from "lucide-react";
@@ -67,18 +68,12 @@ export default async function TripStepPage({ params, searchParams }: TripStepPag
   let values = draftValues(trip);
   let errors: TripStepFieldError[] = [];
 
-  const stateRaw = firstParam(sp.state);
-  if (stateRaw) {
-    try {
-      // Next.js has already URL-decoded query values by the time they reach
-      // `searchParams` -- decoding again here would double-decode.
-      const parsed = JSON.parse(stateRaw) as { input: TripStepInput; errors: TripStepFieldError[] };
-      values = parsed.input;
-      errors = parsed.errors;
-    } catch {
-      // Malformed/tampered state param -- fall back to the saved draft
-      // rather than erroring the whole page.
-    }
+  // Sealed by the step's action (lib/redisplay-state.ts); a stale or
+  // tampered value is ignored and the saved draft shows instead.
+  const parsed = openState<{ input: TripStepInput; errors: TripStepFieldError[] }>(firstParam(sp.state));
+  if (parsed) {
+    values = parsed.input;
+    errors = parsed.errors;
   }
 
   return (
@@ -220,7 +215,11 @@ export default async function TripStepPage({ params, searchParams }: TripStepPag
             <Input
               id="website"
               name="website"
-              type="url"
+              // Plain text, not type="url": legacy accepted any text here
+              // (only a 100-character limit), and old trips hold values like
+              // "www.example.com" that a browser URL check would block on revise.
+              type="text"
+              inputMode="url"
               defaultValue={values.website}
               aria-invalid={!!errorFor(errors, "website")}
             />

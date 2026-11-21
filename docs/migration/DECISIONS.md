@@ -317,3 +317,47 @@ made in this plan; the executor appends from D-016 onward.
   Previews also stay behind Vercel deployment protection.
 - Imports made as the test account are throwaway; delete them after each
   test (History > Remove).
+
+## D-025: Main map offers legacy's four map types, from key-free tile services (2026-11-21)
+
+- Why: legacy's map let people switch Terrain, Road, Satellite and Hybrid
+  (TMD/js/Map/Widgets.js:4-6); the new map had streets only.
+- What: a Map / Terrain / Satellite / Hybrid switch on /map
+  (`components/map/basemaps.ts`). Streets is OSM (unchanged), Terrain is
+  OpenTopoMap, Satellite is Esri World Imagery (already used by the import
+  coordinate picker), Hybrid is Esri imagery plus Esri's boundaries-and-places
+  labels. None needs an API key or account, in keeping with simple infra.
+- Default stays streets, not legacy's Terrain: the streets layer was tuned in
+  the map UX audit so markers stand out. Easy to flip in `DEFAULT_BASEMAP`.
+- Caveat for the owner: OpenTopoMap and Esri's public tiles are free for
+  light, attributed use but have no uptime promise. If traffic grows or terms
+  tighten, swap in a keyed provider (MapTiler, Stadia) in that one file.
+
+## D-026: Import wizard redisplay state is sealed, not plain JSON in the URL (2026-11-21)
+
+- Why: a failed save on the Trip, Sites or Trees step redirected with
+  everything typed, measurer contact info included, as readable JSON in
+  `?state=`, so it landed in browser history, Vercel request logs and
+  Referer headers. Legacy redisplayed in the same POST and never did this.
+- What: `lib/redisplay-state.ts` seals the same state with AES-256-GCM
+  (key derived from AUTH_SECRET) and the pages open it. Tampered, malformed
+  or over-an-hour-old values are ignored and the saved draft shows. The
+  round trip and error display are otherwise unchanged.
+- Considered: a flash cookie. Rejected because server components can't
+  clear a cookie on read, and tree state can exceed the 4 KB cookie limit.
+
+## D-027: "Remember me on this computer" and a 7-day session, like legacy (2026-11-21)
+
+- Why: legacy's sign-in had the box (Logon.cshtml:29-30) and issued a
+  persistent cookie only when ticked (AccountController.cs:85); its ticket
+  lasted 7 days, sliding (Web.config forms timeout=10080). The new app had
+  no box and always kept people signed in for Auth.js's default 30 days.
+- What: the box is back, unticked by default as in legacy. Unticked, the
+  login action re-sets Auth.js's session cookie without an expiry and sets a
+  `treesdb.session-only` marker; middleware.ts strips the expiry again
+  whenever Auth.js refreshes the cookie while the marker is present
+  (`lib/session-persistence.ts`). Session maxAge is now 7 days.
+- Effect on existing sessions: a token signed with the old 30-day maxAge is
+  re-issued at 7 days on its next refresh; nobody is signed out at deploy.
+- The preview tester button (D-024) doesn't use the box; it keeps the
+  persistent cookie.

@@ -19,6 +19,8 @@ export interface LoginFormState {
   code: string;
   /** The submitted email, echoed back so the field survives the failed attempt. */
   email: string;
+  /** The "Remember me" box, echoed back like the email. */
+  rememberMe?: boolean;
 }
 
 /** Maps a failure code to the page's user-facing message -- same strings the
@@ -77,6 +79,18 @@ export function LoginForm({
           autoComplete="current-password"
           required
         />
+      </div>
+      <div className="flex items-center gap-2">
+        <input
+          id="rememberMe"
+          name="rememberMe"
+          type="checkbox"
+          defaultChecked={state?.rememberMe ?? false}
+          className="size-4 rounded border-input accent-primary"
+        />
+        <label htmlFor="rememberMe" className="text-sm">
+          Remember me on this computer
+        </label>
       </div>
       {errorMessage && (
         <p role="alert" className="rounded-md bg-destructive/10 px-3 py-2 text-sm text-destructive">

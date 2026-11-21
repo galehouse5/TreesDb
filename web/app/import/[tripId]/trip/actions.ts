@@ -10,6 +10,7 @@
 // invalid) values, so the form redisplays what they typed rather than the
 // last-saved draft (legacy's `return View(model)` re-renders the posted
 // `model`, not a re-fetched entity, for exactly this reason).
+import { sealState } from "@/lib/redisplay-state";
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { asAppSession } from "@/auth.config";
@@ -22,7 +23,7 @@ interface TripStepRedisplayState {
 }
 
 function encodeState(state: TripStepRedisplayState): string {
-  return encodeURIComponent(JSON.stringify(state));
+  return sealState(state);
 }
 
 export async function saveTripAction(formData: FormData): Promise<void> {

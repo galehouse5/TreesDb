@@ -9,6 +9,7 @@
 // finding this page's design follows (it exposes the fuller domain-model
 // field set -- Status/AgeClass/AgeType/TerrainType/FormType/trunks -- per
 // this task's explicit brief, not the trimmed legacy HTML).
+import { openState } from "@/lib/redisplay-state";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { TreePineIcon } from "lucide-react";
@@ -27,7 +28,8 @@ import {
   type TreeRecord,
   type TrunkRecord,
 } from "@/db/queries/import-trees.sql";
-import { ImportTreeType, distanceToEditableText } from "@/lib/import-trees";
+import { ImportTreeType, buildTreeStep, distanceToEditableText } from "@/lib/import-trees";
+import { treeRecordToStepInput } from "@/lib/import-finish";
 import { CoordinatesFormat } from "@/lib/units/parse-coordinates";
 import type { TreeRedisplayState } from "./actions";
 import { TreeForm } from "./tree-form";
@@ -61,6 +63,19 @@ function siteViewFor(site: { latitude: number; latitudeInputFormat: number; long
   return { lat: site.latitude, lng: site.longitude };
 }
 
+function firstTreeNeedingRequiredFields(
+  sites: { id: number }[],
+  treesBySite: Record<number, TreeRecord[]>,
+): number | null {
+  for (const site of sites) {
+    for (const tree of treesBySite[site.id] ?? []) {
+      // trunksCount only feeds normalization, never Required checks.
+      if (buildTreeStep(treeRecordToStepInput(tree), 0).requiredErrors.length > 0) return tree.id;
+    }
+  }
+  return null;
+}
+
 export default async function TreesStepPage({ params, searchParams }: TreesStepPageProps) {
   const { tripId: tripIdParam } = await params;
   const tripId = Number(tripIdParam);
@@ -83,7 +98,12 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
   const photoOwner = firstParam(sp.photoOwner);
 
   const editIdRaw = firstParam(sp.edit);
-  const editId = editIdRaw ? Number(editIdRaw) : null;
+  // Legacy opened every tree failing Required validation, so a fresh trip's
+  // blank tree showed its form at once (ImportMapping.cs:85-86). This page
+  // edits one tree at a time, so with no explicit `?edit=` it opens the
+  // first such tree in site order instead of a collapsed "(Unidentified)"
+  // summary behind an Edit link.
+  const editId = editIdRaw ? Number(editIdRaw) : firstTreeNeedingRequiredFields(sites, treesBySite);
   // When a tree form is open, page-level Add tree/Continue submit THAT form
   // (via the `form` attribute) with a compound intent, so its typed fields
   // save instead of being discarded (UX audit 2026-07 P0). Only an editId
@@ -94,15 +114,8 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
       : null;
   const errorBanner = firstParam(sp.error);
 
-  let redisplay: TreeRedisplayState | null = null;
-  const stateRaw = firstParam(sp.state);
-  if (stateRaw) {
-    try {
-      redisplay = JSON.parse(stateRaw) as TreeRedisplayState;
-    } catch {
-      redisplay = null;
-    }
-  }
+  // Sealed by the step's action (lib/redisplay-state.ts).
+  const redisplay = openState<TreeRedisplayState>(firstParam(sp.state));
 
   let editingTrunks: TrunkRecord[] = [];
   if (editId) {

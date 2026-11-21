@@ -561,6 +561,19 @@ describe("import-drafts.sql", () => {
         expect(typeof alabama.neLatitude).toBe("number");
         expect(typeof alabama.swLongitude).toBe("number");
       });
+
+      it("lists US states before other countries' states, like legacy", async () => {
+        const mexico = await insertCountry(db, { name: "Mexico", doubleLetterCode: "MX", tripleLetterCode: "MEX" });
+        await insertState(db, mexico, { name: "Aguascalientes", doubleLetterCode: "AG", tripleLetterCode: "AGU" });
+        const us = await insertCountry(db, { name: "United States", doubleLetterCode: "US", tripleLetterCode: "USA" });
+        await insertState(db, us, { name: "Zeta Territory", doubleLetterCode: "ZT", tripleLetterCode: "ZTT" });
+
+        const states = await listStates(sql);
+        const names = states.map((s) => s.name);
+        expect(names.indexOf("Zeta Territory")).toBeLessThan(names.indexOf("Aguascalientes"));
+        const firstNonUs = states.findIndex((s) => s.code !== "US");
+        expect(states.slice(firstNonUs).some((s) => s.code === "US")).toBe(false);
+      });
     });
   });
 

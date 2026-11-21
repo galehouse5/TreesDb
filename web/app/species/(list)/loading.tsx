@@ -1,3 +1,6 @@
+// Lives in the (list) route group so its loading.tsx wraps only this list
+// page, not /species/[slug]: a loading boundary above that segment's layout
+// would turn its notFound() into a 200 (db/queries/exists.sql.ts).
 // Suspense fallback for `app/species/page.tsx` while `browseSpecies()`
 // (a DB round-trip) resolves. Purely cosmetic -- not part of parity
 // extraction (extractors read the settled page, doc 07 §5.4).

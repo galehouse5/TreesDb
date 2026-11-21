@@ -37,10 +37,10 @@
 // structure via `components/details/report-table.tsx`'s shared primitives
 // (legacy class-name/id conventions as pure structural hooks for
 // `parity/extractors/new/species-details.ts` -- no legacy CSS loaded).
+import { resolveSpeciesSlugCached } from "./resolve";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { cache } from "react";
 import { cookies } from "next/headers";
 import { notFound } from "next/navigation";
 import {
@@ -48,7 +48,6 @@ import {
   recordedSitesForSpeciesInState,
   recordedStatesForSpecies,
   recordedTreesForSpeciesInSite,
-  resolveSpeciesSlug,
   RECORDED_SITES_SORT_KEYS,
   RECORDED_STATES_SORT_KEYS,
   RECORDED_TREES_SORT_KEYS,
@@ -97,7 +96,6 @@ function numberOrUndefined(value: string | undefined): number | undefined {
 // ownership). `generateMetadata` and the page component both call it with the
 // same `slug` in the same request; wrapping in React's `cache()` dedupes that
 // to a single DB round trip per request instead of two.
-const resolveSpeciesSlugCached = cache(resolveSpeciesSlug);
 
 export async function generateMetadata({ params }: SpeciesDetailsPageProps): Promise<Metadata> {
   const { slug } = await params;

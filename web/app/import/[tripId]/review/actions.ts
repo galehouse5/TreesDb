@@ -23,6 +23,8 @@
 // `finishTrip`/`reimportTrip` are each already fully transactional
 // (`withTransaction` inside lib/merge/engine.ts / reimport.ts) -- this
 // action does NOT wrap them in a second transaction.
+import * as Sentry from "@sentry/nextjs";
+import { finishErrorMessage, isDatabaseError } from "@/lib/finish-error";
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { asAppSession } from "@/auth.config";
@@ -78,7 +80,13 @@ export async function finishAction(formData: FormData): Promise<void> {
       await finishTrip(tripId, defaultSql());
     }
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Finish failed.";
+    // A database error is ours, not the user's: report it and show a plain
+    // sentence rather than the raw Postgres message (lib/finish-error.ts).
+    if (isDatabaseError(err)) {
+      console.error(`[finish] trip ${tripId} failed`, err);
+      Sentry.captureException(err);
+    }
+    const message = finishErrorMessage(err);
     redirect(`/import/${tripId}/review?error=${encodeURIComponent(message)}`);
   }
 

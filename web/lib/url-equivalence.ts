@@ -64,6 +64,32 @@ export function splitSpeciesRouteSegment(segment: string): { scientificName: str
   };
 }
 
+/**
+ * Splits a `{bn} ({cn})` segment at the " (" whose "(" balances the final
+ * ")", so a common name holding its own parens stays whole: "Vitis labrusca
+ * (Northern Fox Grape (Vine))" gives "Vitis labrusca" + "Northern Fox Grape
+ * (Vine)", the species' real names and so its real slug. Falls back to
+ * `splitSpeciesRouteSegment`'s last-" (" split when the parens don't
+ * balance. Used for live redirects; the parity harness keeps the plain
+ * split, which mirrors legacy's own routing.
+ */
+export function splitSpeciesRouteSegmentBalanced(segment: string): { scientificName: string; commonName: string } | null {
+  if (!segment.endsWith(")")) return null;
+  let depth = 0;
+  for (let i = segment.length - 1; i > 0; i--) {
+    const ch = segment[i];
+    if (ch === ")") depth++;
+    else if (ch === "(") {
+      depth--;
+      if (depth === 0) {
+        if (segment[i - 1] !== " " || i - 1 === 0) break;
+        return { scientificName: segment.slice(0, i - 1), commonName: segment.slice(i + 1, -1) };
+      }
+    }
+  }
+  return splitSpeciesRouteSegment(segment);
+}
+
 const speciesSegment = "(?<species>.+ \\(.+\\))";
 
 /** Resolves a matched species route segment to the real D-011 slug (web/lib/slug.ts), falling back to a bare slugify when the segment doesn't parse as "{bn} ({cn})" (shouldn't happen for real corpus data - defensive only). */
