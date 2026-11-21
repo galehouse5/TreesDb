@@ -13,12 +13,14 @@
 import maplibregl, { type ExpressionSpecification, type FilterSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./map-overrides.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { createRoot, type Root } from "react-dom/client";
 import { isModernIconAsset, MODERN_ICON_SIZE, resolveMarkerIconAsset } from "./marker-icons";
 import { MarkerInfoPopup } from "./marker-info-popup";
 import type { MarkerFeatureCollection, MarkerFeatureProperties, MarkersResponse } from "./types";
 import { markerKindFromInfoLoaderUrl } from "./types";
+import { isWebGl2Supported, NO_WEBGL_MESSAGE } from "./webgl-support";
 
 const MARKERS_SOURCE_ID = "markers";
 const MARKERS_LAYER_ID = "markers";
@@ -107,9 +109,12 @@ async function loadMarkerIcon(map: maplibregl.Map, url: string): Promise<void> {
 export default function MapView({ initialView }: { initialView?: MapInitialView }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const popupRootRef = useRef<Root | null>(null);
+  // Client-only component (loaded with ssr: false), so this can read the
+  // DOM on first render.
+  const [noWebGl] = useState(() => !isWebGl2Supported());
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    if (noWebGl || !containerRef.current) return;
     let unmounted = false;
 
     const map = new maplibregl.Map({
@@ -527,13 +532,34 @@ export default function MapView({ initialView }: { initialView?: MapInitialView 
       popupRootRef.current = null;
       if (root) queueMicrotask(() => root.unmount());
     };
-  }, []);
+  }, [noWebGl]);
 
   // The ref div must NOT carry `absolute inset-0` itself: maplibre-gl.css
   // sets `.maplibregl-map { position: relative }` on the container it
   // initializes, which loads after Tailwind and overrides the utility --
   // collapsing the map to zero height. Positioning lives on the wrapper;
   // the container just fills it.
+  if (noWebGl) {
+    return (
+      <div className="absolute inset-0 flex items-center justify-center bg-muted/40 p-6">
+        <div className="max-w-md space-y-2 text-center text-sm text-muted-foreground">
+          <p>{NO_WEBGL_MESSAGE}</p>
+          <p>
+            You can still{" "}
+            <Link href="/locations" className="text-primary underline underline-offset-2">
+              browse locations
+            </Link>{" "}
+            and{" "}
+            <Link href="/species" className="text-primary underline underline-offset-2">
+              species
+            </Link>
+            .
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="absolute inset-0">
       <div ref={containerRef} className="h-full w-full" role="application" aria-label="Map of measured tree sites" />
