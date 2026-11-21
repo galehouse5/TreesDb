@@ -287,3 +287,8 @@ made in this plan; the executor appends from D-016 onward.
   editable per photo on the gallery and carried to the canonical
   references on Finish by the merge engine.
 - Parity impact: none on compared artifacts (production has no photos).
+- sharp is pinned to Next's own `^0.34.5`. With 0.35 alongside Next's 0.34,
+  Vercel's file tracing left out 0.35's `libvips-cpp.so`, so every page that
+  loads sharp (the import Sites and Trees steps, `/photos`) failed with
+  ERR_DLOPEN_FAILED on the first preview (2026-11-21). One copy traces
+  correctly.
