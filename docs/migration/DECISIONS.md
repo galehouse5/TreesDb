@@ -140,10 +140,12 @@ made in this plan; the executor appends from D-016 onward.
 - Legacy behavior: HTTP 500 on these tree pages (ELMAH alert per request),
   BrowseController.cs:39 → Measurement.cs:134.
 - Parity impact: none on compared artifacts. Only pages that legacy fails
-  on change, and those sit in the W-006 legacy-error bucket. Open for the
-  repo owner: whether old measurements should always use the tree's current
-  species (a visible change wherever the old name is still carried by other
-  trees), and whether renames should become a species/synonym table.
+  on change, and those sit in the W-006 legacy-error bucket.
+- Resolved (repo owner, 2026-11-21): keep legacy's rule until after
+  cutover. A measurement uses its own species while some tree still carries
+  that name; "always use the tree's current species" is not adopted, since
+  it would change TDI on pages legacy renders. Renames became the
+  species/synonym table (D-019).
 
 ## D-019: A species table with synonyms for renamed species
 - Date / phase: 2026-11-20, post-Phase 1. Follows D-018; the repo owner
