@@ -58,20 +58,6 @@ export default async function RegisterPage({ searchParams }: RegisterPageProps) 
                   {error}
                 </p>
               ) : null}
-              <div className="grid grid-cols-2 gap-3">
-                <div className="space-y-1.5">
-                  <label htmlFor="firstname" className="text-sm font-medium">
-                    First name
-                  </label>
-                  <Input id="firstname" name="firstname" autoComplete="given-name" required />
-                </div>
-                <div className="space-y-1.5">
-                  <label htmlFor="lastname" className="text-sm font-medium">
-                    Last name
-                  </label>
-                  <Input id="lastname" name="lastname" autoComplete="family-name" required />
-                </div>
-              </div>
               <div className="space-y-1.5">
                 <label htmlFor="email" className="text-sm font-medium">
                   Email

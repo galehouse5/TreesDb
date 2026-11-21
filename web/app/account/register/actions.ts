@@ -22,8 +22,6 @@ export async function registerAction(formData: FormData): Promise<void> {
   const confirmEmail = String(formData.get("confirmEmail") ?? "");
   const password = String(formData.get("password") ?? "");
   const confirmPassword = String(formData.get("confirmPassword") ?? "");
-  const firstname = String(formData.get("firstname") ?? "");
-  const lastname = String(formData.get("lastname") ?? "");
 
   if (!email.trim()) failWith("You must enter an email.");
   if (email.trim().length > 100) failWith("Email must not exceed 100 characters.");
@@ -33,7 +31,10 @@ export async function registerAction(formData: FormData): Promise<void> {
   if (!confirmPassword) failWith("You must confirm your password.");
   if (password !== confirmPassword) failWith("Your passwords do not match.");
 
-  const result = await registerUser(email, password, firstname, lastname, new Date());
+  // Legacy's registration asked only for email and password
+  // (AccountRegistrationModel, Register.cshtml); names start empty, as in
+  // User.Create, and are set later on the account page.
+  const result = await registerUser(email, password, "", "", new Date());
   if (!result.success) {
     failWith(result.message);
   }
