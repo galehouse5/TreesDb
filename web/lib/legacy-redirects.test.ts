@@ -12,13 +12,12 @@ import { speciesSlug } from "./slug";
 
 const BALSAM_FIR_SLUG = speciesSlug("Abies balsamea var. balsamea", "Balsam Fir");
 const SILVER_FIR_SLUG = speciesSlug("Abies alba", "Silver Fir");
-// Nested-parens case (doc 06: "parenthesis-in-name edge cases ... resolved
-// by LAST ' (' split") -- real corpus data (parity/corpus.json), the exact
-// case this rule exists for. Last " (" splits BEFORE "Vine))", so the
-// scientificName side keeps the first, unmatched "(" and the commonName
-// side keeps the trailing, unmatched ")" -- slugify() strips both away
-// regardless, since parens aren't in slugify's `[a-z0-9-]` allow-list.
-const GRAPE_SLUG = speciesSlug("Vitis labrusca (Northern Fox Grape", "Vine)");
+// Nested-parens case -- real corpus data (parity/corpus.json). The redirect
+// splits at the " (" that balances the final ")", so the slug is the one the
+// species page itself uses (its DB names are "Vitis labrusca" + "Northern
+// Fox Grape (Vine)"). A plain last-" (" split gave
+// "vitis-labrusca-northern-fox-grape--vine", which 404s.
+const GRAPE_SLUG = speciesSlug("Vitis labrusca", "Northern Fox Grape (Vine)");
 
 const TOKEN = "AbCd1234-_AbCd1234-_AbCd1234-_AbCd1234-_AbC"; // 43 chars, [A-Za-z0-9_-]
 if (TOKEN.length !== 43) throw new Error("test setup: TOKEN must be exactly 43 chars");
@@ -142,10 +141,21 @@ describe("legacyRedirect", () => {
       ).toEqual(expected);
     });
 
-    it("nested parens (Vitis labrusca / 'Northern Fox Grape (Vine)') resolves via last ' (' split", () => {
+    it("nested parens (Vitis labrusca / 'Northern Fox Grape (Vine)') resolves to the species' real slug", () => {
       expect(
         legacyRedirect("GET", "/Browse/Species/Vitis labrusca (Northern Fox Grape (Vine))/Details", ""),
       ).toEqual({ status: 301, location: `/species/${GRAPE_SLUG}` });
+    });
+
+    it("the grape slug is the species page's own", () => {
+      expect(GRAPE_SLUG).toBe("vitis-labrusca--northern-fox-grape-vine");
+    });
+
+    it("unbalanced parens fall back to the last ' (' split", () => {
+      expect(legacyRedirect("GET", "/Browse/Species/Quercus alba (White Oak))/Details", "")).toEqual({
+        status: 301,
+        location: `/species/${speciesSlug("Quercus alba", "White Oak)")}`,
+      });
     });
 
     it("unresolvable segment (no ' (' at all) -> null, falls through to the 404-with-search-box", () => {

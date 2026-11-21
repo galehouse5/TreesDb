@@ -102,7 +102,7 @@
  * redirect loop.
  *
  * UNRESOLVABLE SPECIES -> 404 WITH SEARCH BOX (doc 06 P4-01): "unresolvable"
- * is purely a PARSE check (`splitSpeciesRouteSegment`'s last `' ('` split,
+ * is purely a PARSE check (`splitSpeciesRouteSegmentBalanced`'s balanced `' ('` split,
  * see `lib/slug.ts`'s header on why this needs no DB lookup) -- when a
  * species segment doesn't parse, the matching shape's `build()` returns
  * `null`, `legacyRedirect` returns `null`, and `middleware.ts` falls through
@@ -115,7 +115,7 @@
  */
 import {
   URL_EQUIVALENCE_TABLE,
-  splitSpeciesRouteSegment,
+  splitSpeciesRouteSegmentBalanced,
   type UrlEquivalenceEntry,
 } from "./url-equivalence";
 import { speciesSlug } from "./slug";
@@ -195,7 +195,7 @@ function buildSpeciesTarget(
   fixedSite?: string,
   fixedState?: string,
 ): string | null {
-  const parts = splitSpeciesRouteSegment(speciesSegment);
+  const parts = splitSpeciesRouteSegmentBalanced(speciesSegment);
   if (!parts) return null;
   const slug = speciesSlug(parts.scientificName, parts.commonName);
   const q = new URLSearchParams(stripLeadingQuestionMark(search));
