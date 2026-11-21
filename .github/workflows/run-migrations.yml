@@ -1,0 +1,70 @@
+# Applies every pending Drizzle migration (web/db/migrations/) to the real
+# database, then re-syncs the species tables (scripts/maintenance/
+# run-migrations.ts). General purpose: use it for any future schema change.
+# Manual only: Actions tab > "Run database migrations" > Run workflow, and
+# pick the branch whose migrations should be applied in "Use workflow from".
+#
+# The database URL lives in the "production-db" GitHub environment as the
+# secret DATABASE_URL_UNPOOLED (Neon's unpooled connection string, the same
+# value as DATABASE_URL_UNPOOLED in the Vercel project). The script never
+# prints it and GitHub masks it in logs. Add a required-reviewer rule to
+# that environment to make every run wait for an approval tap.
+#
+# Safe to re-run: Drizzle skips migrations already applied and the species
+# sync is idempotent.
+#
+# GitHub only offers "Run workflow" for workflow_dispatch files that also
+# exist on the default branch.
+name: Run database migrations
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: run-migrations
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: web
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    environment: production-db
+    steps:
+      - name: Check the secret is set
+        working-directory: .
+        env:
+          DATABASE_URL_UNPOOLED: ${{ secrets.DATABASE_URL_UNPOOLED }}
+        run: |
+          if [ -z "$DATABASE_URL_UNPOOLED" ]; then
+            echo "::error::Add the secret DATABASE_URL_UNPOOLED to the production-db environment (Settings > Environments) and run again."
+            exit 1
+          fi
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Apply migrations and sync species
+        env:
+          DATABASE_URL_UNPOOLED: ${{ secrets.DATABASE_URL_UNPOOLED }}
+        run: pnpm exec tsx scripts/maintenance/run-migrations.ts
