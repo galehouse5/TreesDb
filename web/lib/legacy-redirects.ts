@@ -166,6 +166,20 @@ function passthroughQuery(path: string, search: string): string {
 }
 
 /**
+ * Legacy's sign-in page took `?ReturnUrl=` (ASP.NET forms auth); the new one
+ * takes `?callbackUrl=`, which the login page sanitizes itself
+ * (`sanitizeCallbackUrl`). Only a same-site path is carried over here; any
+ * other query is dropped.
+ */
+function loginTarget(search: string): string {
+  const returnUrl = new URLSearchParams(search).get("ReturnUrl") ?? new URLSearchParams(search.toLowerCase()).get("returnurl");
+  if (returnUrl && returnUrl.startsWith("/") && !returnUrl.startsWith("//") && !returnUrl.startsWith("/\\")) {
+    return `/account/login?callbackUrl=${encodeURIComponent(returnUrl)}`;
+  }
+  return "/account/login";
+}
+
+/**
  * Builds `/species/{slug}` (or scoped `?site=`/`?state=`) for a species
  * route, mirroring `parity/verify/url-resolve.ts`'s `resolveSpeciesDetailsPath`
  * (same design: nested-path scoping wins when given directly via
@@ -287,6 +301,21 @@ const SHAPES: Shape[] = [
     status: 301,
     build: (p) => `/account/password-assistance/${encodeURIComponent(p.token!)}`,
   },
+
+  // --- Account pages (bookmarks, old links) --------------------------------
+  // AccountController.LogOn/Register/PasswordAssistance/Edit GETs
+  // (TMD/Controllers/AccountController.cs:56,104,161,230). Logout is left
+  // out: legacy's was a GET that signed you out, and a redirect that signs
+  // people out from a link isn't worth carrying over.
+  { id: "account-logon", pattern: /^\/Account\/LogOn$/i, status: 301, build: (_p, s) => loginTarget(s) },
+  { id: "account-register", pattern: /^\/Account\/Register$/i, status: 301, build: () => "/account/register" },
+  {
+    id: "account-password-assistance",
+    pattern: /^\/Account\/PasswordAssistance$/i,
+    status: 301,
+    build: () => "/account/password-assistance",
+  },
+  { id: "account-edit", pattern: /^\/Account\/Edit$/i, status: 301, build: () => "/account" },
 
   // --- Main (legacy odds and ends, doc 07 §5.6) -----------------------------
   // Not in normalize.ts's table -- added here, see file header.

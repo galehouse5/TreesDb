@@ -277,6 +277,44 @@ describe("legacyRedirect", () => {
     });
   });
 
+  describe("account pages", () => {
+    it("LogOn -> /account/login, any case", () => {
+      expect(legacyRedirect("GET", "/Account/LogOn", "")).toEqual({ status: 301, location: "/account/login" });
+      expect(legacyRedirect("GET", "/account/logon", "")).toEqual({ status: 301, location: "/account/login" });
+    });
+
+    it("LogOn carries a same-site ReturnUrl as callbackUrl and drops anything else", () => {
+      expect(legacyRedirect("GET", "/Account/LogOn", "?ReturnUrl=%2fImport")).toEqual({
+        status: 301,
+        location: "/account/login?callbackUrl=%2FImport",
+      });
+      expect(legacyRedirect("GET", "/Account/LogOn", "?ReturnUrl=https%3a%2f%2fevil.example")).toEqual({
+        status: 301,
+        location: "/account/login",
+      });
+      expect(legacyRedirect("GET", "/Account/LogOn", "?ReturnUrl=%2f%2fevil.example")).toEqual({
+        status: 301,
+        location: "/account/login",
+      });
+    });
+
+    it("Register, PasswordAssistance and Edit", () => {
+      expect(legacyRedirect("GET", "/Account/Register", "")).toEqual({ status: 301, location: "/account/register" });
+      expect(legacyRedirect("GET", "/Account/PasswordAssistance", "")).toEqual({
+        status: 301,
+        location: "/account/password-assistance",
+      });
+      expect(legacyRedirect("GET", "/Account/Edit", "")).toEqual({ status: 301, location: "/account" });
+    });
+
+    it("leaves the new app's own account pages alone", () => {
+      expect(legacyRedirect("GET", "/account/register", "")).toBeNull();
+      expect(legacyRedirect("GET", "/account/password-assistance", "")).toBeNull();
+      expect(legacyRedirect("GET", "/account/login", "")).toBeNull();
+      expect(legacyRedirect("POST", "/Account/LogOn", "")).toBeNull();
+    });
+  });
+
   describe("account token routes (emailed links)", () => {
     it("CompleteRegistration -> /account/verify/{token}", () => {
       expect(legacyRedirect("GET", `/Account/${TOKEN}/CompleteRegistration`, "")).toEqual({
@@ -299,8 +337,8 @@ describe("legacyRedirect", () => {
       });
     });
 
-    it("an unrelated /Account/{action} path (not a token route) -> null, defers to the app", () => {
-      expect(legacyRedirect("GET", "/Account/Logon", "")).toBeNull();
+    it("an unmapped /Account/{action} path (not a token route) -> null, defers to the app", () => {
+      expect(legacyRedirect("GET", "/Account/Logout", "")).toBeNull();
     });
   });
 
