@@ -292,3 +292,26 @@ made in this plan; the executor appends from D-016 onward.
   loads sharp (the import Sites and Trees steps, `/photos`) failed with
   ERR_DLOPEN_FAILED on the first preview (2026-11-21). One copy traces
   correctly.
+
+## D-024: Password-free test sign-in on preview deployments (2026-11-21)
+
+- Why: the repo owner asked to cut sign-in friction for testing, since each
+  preview has its own address and needs a fresh sign-in with a real
+  account's password.
+- What: a second Auth.js credentials provider, `preview-test`, signs in as
+  one fixed account, `preview-test@treesdb.invalid` ("Preview Tester",
+  roles import + export), created on first use. The login page shows a
+  "Sign in as preview tester" button when it is enabled
+  (`lib/preview-login.ts`).
+- Locks: enabled only when `VERCEL_ENV === "preview"` (set by Vercel; it is
+  `production` on production and unset locally and in CI) AND
+  `PREVIEW_TEST_LOGIN === "1"`, set in Vercel for the Preview target only.
+  The provider isn't registered otherwise, and `authorize()` checks again.
+  Tests pin refusal in production, development, locally, and without the
+  flag.
+- Preview and production share one Neon database, so the account row
+  exists in production too. Its password is a random 32-byte value nobody
+  knows, so it can't sign in through the normal form anywhere (tested).
+  Previews also stay behind Vercel deployment protection.
+- Imports made as the test account are throwaway; delete them after each
+  test (History > Remove).

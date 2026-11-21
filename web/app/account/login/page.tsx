@@ -21,6 +21,7 @@ import { CredentialsSignin } from "next-auth";
 import { signIn } from "@/auth";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { LoginForm, type LoginFormState } from "./login-form";
+import { isPreviewTestLoginEnabled } from "@/lib/preview-login";
 
 export const metadata: Metadata = {
   title: "Log in - TreesDb",
@@ -82,6 +83,14 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
     return { code: "credentials", email };
   }
 
+  // D-024: preview deployments only (see lib/preview-login.ts).
+  const previewTestLogin = isPreviewTestLoginEnabled();
+  async function loginAsPreviewTester(): Promise<void> {
+    "use server";
+    if (!isPreviewTestLoginEnabled()) return;
+    await signIn("preview-test", { redirectTo: callbackUrl });
+  }
+
   return (
     <div className="mx-auto flex w-full max-w-md flex-1 flex-col justify-center p-4">
       <Card className="overflow-hidden py-0 gap-0">
@@ -90,6 +99,19 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
           <CardDescription>Enter your TreesDb account email and password.</CardDescription>
         </CardHeader>
         <CardContent className="p-6">
+          {previewTestLogin && (
+            <form action={loginAsPreviewTester} className="mb-6 rounded-md border border-dashed border-primary/40 bg-primary/5 p-4 text-sm">
+              <p className="mb-3 text-muted-foreground">
+                Preview deployment: sign in as the shared test account (import role) without a password.
+              </p>
+              <button
+                type="submit"
+                className="rounded-md bg-primary px-3 py-1.5 font-medium text-primary-foreground hover:bg-primary/90"
+              >
+                Sign in as preview tester
+              </button>
+            </form>
+          )}
           <LoginForm action={login} initialCode={code} />
           {/* Registration + reset were previously reachable only by typing
               the URL (code-audit finding: no inbound links anywhere) -- a

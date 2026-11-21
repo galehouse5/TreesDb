@@ -12,6 +12,7 @@ import NextAuth, { CredentialsSignin } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { authConfig } from "./auth.config";
 import { attemptLogin } from "./lib/auth-flow";
+import { ensurePreviewTestUser, isPreviewTestLoginEnabled } from "./lib/preview-login";
 
 /**
  * D-013 is a new rate-limit addition with no legacy error string to match
@@ -64,5 +65,26 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         return null;
       },
     }),
+    // D-024: preview-only, password-free test account. Registered only when
+    // both locks are on, and authorize() checks again at request time.
+    ...(isPreviewTestLoginEnabled()
+      ? [
+          Credentials({
+            id: "preview-test",
+            name: "Preview test account",
+            credentials: {},
+            async authorize() {
+              if (!isPreviewTestLoginEnabled()) return null;
+              const user = await ensurePreviewTestUser();
+              return {
+                id: String(user.id),
+                email: user.email,
+                name: `${user.firstname} ${user.lastname}`,
+                roles: user.roles,
+              };
+            },
+          }),
+        ]
+      : []),
   ],
 });
