@@ -7,6 +7,7 @@
 // validation failure, re-run `assertTripEditable` on every POST since a
 // hidden `tripId`/`treeId`/`trunkId` field is attacker-controlled input, not
 // just trusted from the page's own GET-time check).
+import { sealState } from "@/lib/redisplay-state";
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { asAppSession } from "@/auth.config";
@@ -69,7 +70,7 @@ export interface TreeRedisplayState {
 }
 
 function encodeState(state: TreeRedisplayState): string {
-  return encodeURIComponent(JSON.stringify(state));
+  return sealState(state);
 }
 
 function editUrl(tripId: number, treeId: number, state?: TreeRedisplayState): string {

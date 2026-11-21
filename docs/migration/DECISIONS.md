@@ -332,3 +332,16 @@ made in this plan; the executor appends from D-016 onward.
 - Caveat for the owner: OpenTopoMap and Esri's public tiles are free for
   light, attributed use but have no uptime promise. If traffic grows or terms
   tighten, swap in a keyed provider (MapTiler, Stadia) in that one file.
+
+## D-026: Import wizard redisplay state is sealed, not plain JSON in the URL (2026-11-21)
+
+- Why: a failed save on the Trip, Sites or Trees step redirected with
+  everything typed, measurer contact info included, as readable JSON in
+  `?state=`, so it landed in browser history, Vercel request logs and
+  Referer headers. Legacy redisplayed in the same POST and never did this.
+- What: `lib/redisplay-state.ts` seals the same state with AES-256-GCM
+  (key derived from AUTH_SECRET) and the pages open it. Tampered, malformed
+  or over-an-hour-old values are ignored and the saved draft shows. The
+  round trip and error display are otherwise unchanged.
+- Considered: a flash cookie. Rejected because server components can't
+  clear a cookie on read, and tree state can exceed the 4 KB cookie limit.

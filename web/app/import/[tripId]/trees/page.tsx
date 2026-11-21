@@ -9,6 +9,7 @@
 // finding this page's design follows (it exposes the fuller domain-model
 // field set -- Status/AgeClass/AgeType/TerrainType/FormType/trunks -- per
 // this task's explicit brief, not the trimmed legacy HTML).
+import { openState } from "@/lib/redisplay-state";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { TreePineIcon } from "lucide-react";
@@ -94,15 +95,8 @@ export default async function TreesStepPage({ params, searchParams }: TreesStepP
       : null;
   const errorBanner = firstParam(sp.error);
 
-  let redisplay: TreeRedisplayState | null = null;
-  const stateRaw = firstParam(sp.state);
-  if (stateRaw) {
-    try {
-      redisplay = JSON.parse(stateRaw) as TreeRedisplayState;
-    } catch {
-      redisplay = null;
-    }
-  }
+  // Sealed by the step's action (lib/redisplay-state.ts).
+  const redisplay = openState<TreeRedisplayState>(firstParam(sp.state));
 
   let editingTrunks: TrunkRecord[] = [];
   if (editId) {

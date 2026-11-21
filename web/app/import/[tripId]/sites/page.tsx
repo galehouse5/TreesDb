@@ -16,6 +16,7 @@
 // submit (closer to legacy's AJAX autosave path than to the non-JS
 // full-page-POST fallback `SaveSites` implements) -- there is no single
 // "submit the whole multi-site page" request in this port.
+import { openState } from "@/lib/redisplay-state";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -100,15 +101,8 @@ export default async function SitesStepPage({ params, searchParams }: SitesStepP
   const forcedEditId = editParam ? Number(editParam) : null;
   const showOptionalBanner = firstParam(sp.optional) === "1";
 
-  let redisplay: RedisplayState | null = null;
-  const stateRaw = firstParam(sp.state);
-  if (stateRaw) {
-    try {
-      redisplay = JSON.parse(stateRaw) as RedisplayState;
-    } catch {
-      // Malformed/tampered state param -- ignore, fall back to stored data.
-    }
-  }
+  // Sealed by the step's action (lib/redisplay-state.ts).
+  const redisplay = openState<RedisplayState>(firstParam(sp.state));
 
   // `ImportMapping.cs:62-63` -- `IsEditing` defaults to true for any site
   // currently failing Required-tag validation (e.g. every freshly-added

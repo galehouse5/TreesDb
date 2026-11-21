@@ -22,6 +22,7 @@
 // only needs to RE-VALIDATE the already-persisted sites (mirroring
 // `Site.Validate` on loaded entities), not map fresh form fields for all
 // of them at once.
+import { sealState } from "@/lib/redisplay-state";
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { asAppSession } from "@/auth.config";
@@ -52,7 +53,7 @@ interface SiteRedisplayState {
 }
 
 function encodeState(state: SiteRedisplayState): string {
-  return encodeURIComponent(JSON.stringify(state));
+  return sealState(state);
 }
 
 async function requireEditableTrip(tripIdRaw: string, callbackPath: string): Promise<number> {
