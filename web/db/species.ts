@@ -38,8 +38,9 @@ export interface SpeciesSynonymSeed {
 }
 
 /**
- * Taxonomic renames applied to the data (parity waiver W-107). No tree
- * carries the old pairs any more, but older measurements still do.
+ * Retired name pairs that older measurements still carry: the two
+ * taxonomic renames applied to the data (parity waiver W-107) and one
+ * misspelling. No tree carries these pairs any more.
  */
 export const SPECIES_SYNONYMS: readonly SpeciesSynonymSeed[] = [
   {
@@ -51,6 +52,13 @@ export const SPECIES_SYNONYMS: readonly SpeciesSynonymSeed[] = [
     from: { scientificName: "Quercus prinus", commonName: "Chestnut Oak" },
     to: { scientificName: "Quercus montana", commonName: "Chestnut Oak" },
     note: "Renamed to Quercus montana (W-107)",
+  },
+  {
+    // Legacy species id 555512959 (alerting since 2022): one measurement on
+    // tree 134862, found by the migration job's unresolved-species report.
+    from: { scientificName: "Quecus montana", commonName: "Chestnut Oak" },
+    to: { scientificName: "Quercus montana", commonName: "Chestnut Oak" },
+    note: "Misspelling of Quercus montana",
   },
 ];
 

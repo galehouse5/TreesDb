@@ -179,6 +179,11 @@ made in this plan; the executor appends from D-016 onward.
 - Legacy behavior: unchanged where legacy works. Pages legacy 500s on now
   render with the renamed species' maxima.
 - Parity impact: none on compared artifacts (same W-006 bucket as D-018).
+- Update 2026-11-21: the migration job's unresolved-species report named
+  legacy species 555512959 as "Quecus montana" / Chestnut Oak, a
+  misspelling on one measurement of tree 134862. It is the third
+  `SPECIES_SYNONYMS` entry, mapped to Quercus montana. All three legacy
+  alert ids now resolve.
 
 ## D-020: Server-side Sentry, off until a DSN is set
 

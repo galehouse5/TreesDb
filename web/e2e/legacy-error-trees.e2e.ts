@@ -4,8 +4,7 @@
 // recorded under a species name that no tree carries any more:
 //   - legacy species 1790989718 = Carya alba / Mockernut Hickory (W-107 rename)
 //   - legacy species 1344794096 = Quercus prinus / Chestnut Oak (W-107 rename)
-//   - legacy species 555512959 = not yet identified (the ETL names it as an
-//     unresolved measurement species, with this id, on the next load)
+//   - legacy species 555512959 = Quecus montana / Chestnut Oak (a misspelling)
 //
 // Visited the way the alerts were triggered, through the legacy URL, which
 // must redirect to the new page and render it: no error page, and a TDI3 row

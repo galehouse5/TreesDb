@@ -1,6 +1,7 @@
 import type { PGlite } from "@electric-sql/pglite";
 import { afterAll, beforeEach, describe, expect, it } from "vitest";
 import { speciesSlug } from "../lib/slug";
+import { speciesHash } from "../lib/species-hash";
 import { createTestDb, insertCountry, insertSite, insertState, insertTree, pgliteSqlTag } from "./queries/test-helpers";
 import type { SqlTag } from "./queries/sql-tag";
 import { findUnresolvedMeasurements, SPECIES_SYNONYMS, syncSpecies, type SpeciesSynonymSeed } from "./species";
@@ -138,7 +139,13 @@ describe("species (D-019)", () => {
     expect(n).toBe(1);
   });
 
-  it("seeds the two known W-107 renames", () => {
-    expect(SPECIES_SYNONYMS.map((s) => s.from.scientificName)).toEqual(["Carya alba", "Quercus prinus"]);
+  it("seeds the two W-107 renames and the Quecus montana misspelling", () => {
+    expect(SPECIES_SYNONYMS.map((s) => s.from.scientificName)).toEqual(["Carya alba", "Quercus prinus", "Quecus montana"]);
+  });
+
+  it("each seeded synonym maps the legacy species id from the alerts", () => {
+    expect(SPECIES_SYNONYMS.map((s) => speciesHash(s.from.scientificName, s.from.commonName))).toEqual([
+      1790989718, 1344794096, 555512959,
+    ]);
   });
 });
