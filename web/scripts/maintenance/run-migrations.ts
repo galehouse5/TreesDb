@@ -7,6 +7,10 @@
 // After migrating it runs syncSpecies (D-019), so a database that just got
 // the species tables (0002/0003) has them filled from `trees` straight away
 // rather than at the next trip removal or import. Also idempotent.
+// Then it lists, without failing, any measurement species name that matches
+// no species and no synonym, with its legacy species id (the id in legacy's
+// ObjectNotFoundException alerts), so a run names each rename still missing
+// from SPECIES_SYNONYMS.
 //
 //   npx tsx scripts/maintenance/run-migrations.ts [path/to/env-file]
 //
@@ -17,7 +21,7 @@ import { join } from "node:path";
 import postgres from "postgres";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate } from "drizzle-orm/postgres-js/migrator";
-import { syncSpecies } from "../../db/species";
+import { findUnresolvedMeasurements, syncSpecies } from "../../db/species";
 import { withTransaction, type SqlTag } from "../../db/queries/sql-tag";
 
 async function main(): Promise<void> {
@@ -56,6 +60,14 @@ async function main(): Promise<void> {
       `species synced: ${sync.inserted} added, ${sync.deleted} removed, ` +
         `${sync.synonymsApplied} synonym(s) applied; now ${counts!.species} species, ${counts!.synonyms} synonyms`,
     );
+    const unresolved = await findUnresolvedMeasurements(sql as unknown as SqlTag);
+    console.log(`unresolved measurement species: ${unresolved.length}`);
+    for (const u of unresolved) {
+      console.log(
+        `  (${u.scientificName}, ${u.commonName}), legacy species id ${u.legacySpeciesId}: ` +
+          `${u.measurements} measurement(s) on tree(s) ${u.treeIds}`,
+      );
+    }
   } finally {
     await sql.end();
   }
