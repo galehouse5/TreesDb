@@ -96,6 +96,7 @@ import NextAuth from "next-auth";
 import { NextResponse, type NextFetchEvent, type NextMiddleware, type NextRequest } from "next/server";
 import { authConfig, asAppSession } from "./auth.config";
 import { legacyRedirect } from "./lib/legacy-redirects";
+import { makeSessionCookiesSessionOnly, SESSION_ONLY_MARKER } from "./lib/session-persistence";
 
 const { auth } = NextAuth(authConfig);
 
@@ -128,6 +129,19 @@ const importAuthMiddleware = auth((req) => {
   return NextResponse.next();
 }) as unknown as NextMiddleware;
 
+/** A session refresh must not turn an unticked "Remember me" sign-in into a
+ * persistent cookie (lib/session-persistence.ts). */
+async function keepSessionOnly(
+  req: NextRequest,
+  pending: ReturnType<NextMiddleware>,
+): Promise<Awaited<ReturnType<NextMiddleware>>> {
+  const res = await pending;
+  if (res instanceof NextResponse && req.cookies.has(SESSION_ONLY_MARKER)) {
+    makeSessionCookiesSessionOnly(res.cookies);
+  }
+  return res;
+}
+
 export default function middleware(req: NextRequest, event: NextFetchEvent) {
   if (req.nextUrl.pathname.startsWith("/import")) {
     // `auth()`'s wrapper is itself a valid Next.js middleware function --
@@ -136,7 +150,7 @@ export default function middleware(req: NextRequest, event: NextFetchEvent) {
     // the callback above. Calling it directly here (rather than exporting
     // it as the top-level default, as before) is the only change to this
     // code path -- same wrapper, same callback, same behavior.
-    return importAuthMiddleware(req, event);
+    return keepSessionOnly(req, importAuthMiddleware(req, event));
   }
 
   const redirect = legacyRedirect(req.method, req.nextUrl.pathname, req.nextUrl.search);

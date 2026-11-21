@@ -32,6 +32,7 @@
  * augmentation, no collision with `AdapterSession`, still an actual type
  * (not `any`) at both call sites via `asAppSession`.
  */
+import { SESSION_MAX_AGE_SECONDS } from "./lib/session-persistence";
 import type { JWT } from "next-auth/jwt";
 import type { Session, NextAuthConfig } from "next-auth";
 
@@ -71,6 +72,9 @@ export const authConfig = {
   },
   session: {
     strategy: "jwt",
+    // Legacy's forms-auth ticket lasted 7 days, sliding (Web.config
+    // timeout=10080); Auth.js's default is 30. See D-027.
+    maxAge: SESSION_MAX_AGE_SECONDS,
   },
   callbacks: {
     jwt({ token, user }) {

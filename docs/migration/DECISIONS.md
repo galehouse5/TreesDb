@@ -345,3 +345,19 @@ made in this plan; the executor appends from D-016 onward.
   round trip and error display are otherwise unchanged.
 - Considered: a flash cookie. Rejected because server components can't
   clear a cookie on read, and tree state can exceed the 4 KB cookie limit.
+
+## D-027: "Remember me on this computer" and a 7-day session, like legacy (2026-11-21)
+
+- Why: legacy's sign-in had the box (Logon.cshtml:29-30) and issued a
+  persistent cookie only when ticked (AccountController.cs:85); its ticket
+  lasted 7 days, sliding (Web.config forms timeout=10080). The new app had
+  no box and always kept people signed in for Auth.js's default 30 days.
+- What: the box is back, unticked by default as in legacy. Unticked, the
+  login action re-sets Auth.js's session cookie without an expiry and sets a
+  `treesdb.session-only` marker; middleware.ts strips the expiry again
+  whenever Auth.js refreshes the cookie while the marker is present
+  (`lib/session-persistence.ts`). Session maxAge is now 7 days.
+- Effect on existing sessions: a token signed with the old 30-day maxAge is
+  re-issued at 7 days on its next refresh; nobody is signed out at deploy.
+- The preview tester button (D-024) doesn't use the box; it keeps the
+  persistent cookie.

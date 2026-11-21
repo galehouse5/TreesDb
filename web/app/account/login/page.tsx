@@ -18,7 +18,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CredentialsSignin } from "next-auth";
+import { cookies } from "next/headers";
+import { isRedirectError } from "next/dist/client/components/redirect-error";
 import { signIn } from "@/auth";
+import { makeSessionCookiesSessionOnly, SESSION_ONLY_MARKER } from "@/lib/session-persistence";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { LoginForm, type LoginFormState } from "./login-form";
 import { isPreviewTestLoginEnabled } from "@/lib/preview-login";
@@ -46,6 +49,26 @@ function sanitizeCallbackUrl(candidate: string | undefined): string {
   return candidate;
 }
 
+/** Legacy "Remember me on this computer": unticked means a browser-session
+ * cookie (lib/session-persistence.ts). Ticked keeps Auth.js's persistent
+ * cookie and clears any marker left from an earlier unticked sign-in. */
+async function applyRememberMe(rememberMe: boolean): Promise<void> {
+  const store = await cookies();
+  if (rememberMe) {
+    store.delete(SESSION_ONLY_MARKER);
+    return;
+  }
+  makeSessionCookiesSessionOnly(store);
+  store.set({
+    name: SESSION_ONLY_MARKER,
+    value: "1",
+    httpOnly: true,
+    sameSite: "lax",
+    path: "/",
+    secure: process.env.NODE_ENV === "production",
+  });
+}
+
 export default async function LoginPage({ searchParams }: LoginPageProps) {
   const sp = await searchParams;
   const callbackUrl = sanitizeCallbackUrl(firstString(sp.callbackUrl));
@@ -63,6 +86,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
   async function login(_prev: LoginFormState | null, formData: FormData): Promise<LoginFormState> {
     "use server";
     const email = String(formData.get("email") ?? "");
+    const rememberMe = formData.get("rememberMe") === "on";
     try {
       await signIn("credentials", {
         email,
@@ -71,8 +95,11 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
       });
     } catch (error) {
       if (error instanceof CredentialsSignin) {
-        return { code: error.code, email };
+        return { code: error.code, email, rememberMe };
       }
+      // Reached on success too (signIn's redirect is a thrown NEXT_REDIRECT,
+      // after it has set the session cookie): apply "Remember me".
+      if (isRedirectError(error)) await applyRememberMe(rememberMe);
       // Success path: signIn redirects to `redirectTo` by throwing
       // NEXT_REDIRECT, which must propagate. Non-credentials AuthErrors
       // (e.g. misconfiguration) are genuine 500s and propagate too.
@@ -80,7 +107,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
     }
     // Unreachable in practice -- a successful signIn always throws
     // NEXT_REDIRECT above -- but TypeScript needs a tail return.
-    return { code: "credentials", email };
+    return { code: "credentials", email, rememberMe };
   }
 
   // D-024: preview deployments only (see lib/preview-login.ts).
