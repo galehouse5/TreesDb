@@ -220,7 +220,11 @@ export default async function TripStepPage({ params, searchParams }: TripStepPag
             <Input
               id="website"
               name="website"
-              type="url"
+              // Plain text, not type="url": legacy accepted any text here
+              // (only a 100-character limit), and old trips hold values like
+              // "www.example.com" that a browser URL check would block on revise.
+              type="text"
+              inputMode="url"
               defaultValue={values.website}
               aria-invalid={!!errorFor(errors, "website")}
             />
