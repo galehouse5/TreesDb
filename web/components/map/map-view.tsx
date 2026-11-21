@@ -1,6 +1,6 @@
 "use client";
 
-// Interactive map (P1-10): MapLibre GL + OSM raster tiles, fed by
+// Interactive map (P1-10): MapLibre GL + raster basemaps (basemaps.ts), fed by
 // `GET /api/map/markers` (fetched once, doc 03 P1-10). Zoom-band visibility
 // (states 0-6/0-30, sites 7-13/7-30, trees 14-30 -- doc 01 §9) is applied
 // client-side via a MapLibre filter expression on each marker's
@@ -21,6 +21,7 @@ import { MarkerInfoPopup } from "./marker-info-popup";
 import type { MarkerFeatureCollection, MarkerFeatureProperties, MarkersResponse } from "./types";
 import { markerKindFromInfoLoaderUrl } from "./types";
 import { isWebGl2Supported, NO_WEBGL_MESSAGE } from "./webgl-support";
+import { BASEMAP_LAYER_IDS, BASEMAP_SOURCES, BASEMAPS, basemapLayers, type BasemapId, DEFAULT_BASEMAP, layerVisibility } from "./basemaps";
 
 const MARKERS_SOURCE_ID = "markers";
 const MARKERS_LAYER_ID = "markers";
@@ -112,6 +113,11 @@ export default function MapView({ initialView }: { initialView?: MapInitialView 
   // Client-only component (loaded with ssr: false), so this can read the
   // DOM on first render.
   const [noWebGl] = useState(() => !isWebGl2Supported());
+  const mapRef = useRef<maplibregl.Map | null>(null);
+  const [basemap, setBasemap] = useState<BasemapId>(DEFAULT_BASEMAP);
+  // The map is built once; it reads the basemap at construction from this
+  // ref, and later switches go through the effect below.
+  const basemapRef = useRef<BasemapId>(DEFAULT_BASEMAP);
 
   useEffect(() => {
     if (noWebGl || !containerRef.current) return;
@@ -121,34 +127,8 @@ export default function MapView({ initialView }: { initialView?: MapInitialView 
       container: containerRef.current,
       style: {
         version: 8,
-        sources: {
-          osm: {
-            type: "raster",
-            tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-            tileSize: 256,
-            maxzoom: 19,
-            attribution:
-              '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors',
-          },
-        },
-        // Map UX audit: OSM standard tiles are a warm, high-chroma sheet
-        // (beige land / pastel green parks / blue water) that competed with
-        // the marker chips for salience -- desaturating and slightly
-        // compressing the tile contrast pushes the basemap into the
-        // background so markers are the most colorful thing on screen.
-        layers: [
-          {
-            id: "osm",
-            type: "raster",
-            source: "osm",
-            paint: {
-              "raster-saturation": -0.55,
-              "raster-contrast": -0.12,
-              "raster-brightness-min": 0.08,
-              "raster-brightness-max": 0.94,
-            },
-          },
-        ],
+        sources: BASEMAP_SOURCES,
+        layers: basemapLayers(basemapRef.current),
       },
       center: initialView ? [initialView.lng, initialView.lat] : INITIAL_CENTER,
       zoom: initialView ? initialView.zoom : INITIAL_ZOOM,
@@ -156,6 +136,7 @@ export default function MapView({ initialView }: { initialView?: MapInitialView 
       maxZoom: 22,
     });
 
+    mapRef.current = map;
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
     // Task P1-16 (fullscreen control): legacy's map had a fullscreen toggle;
     // added next to the zoom controls in the same corner. No bespoke CSS
@@ -524,6 +505,7 @@ export default function MapView({ initialView }: { initialView?: MapInitialView 
 
     return () => {
       unmounted = true;
+      mapRef.current = null;
       // map.remove() destroys any open popup; its identity-guarded close
       // handler (above) unmounts that popup's React root.
       map.remove();
@@ -533,6 +515,21 @@ export default function MapView({ initialView }: { initialView?: MapInitialView 
       if (root) queueMicrotask(() => root.unmount());
     };
   }, [noWebGl]);
+
+  // Basemap switch: flip raster-layer visibility in place, so the marker
+  // layers added on load stay put.
+  useEffect(() => {
+    basemapRef.current = basemap;
+    const map = mapRef.current;
+    if (!map) return;
+    const apply = () => {
+      for (const id of BASEMAP_LAYER_IDS) {
+        if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", layerVisibility(basemap, id));
+      }
+    };
+    if (map.isStyleLoaded()) apply();
+    else map.once("styledata", apply);
+  }, [basemap]);
 
   // The ref div must NOT carry `absolute inset-0` itself: maplibre-gl.css
   // sets `.maplibregl-map { position: relative }` on the container it
@@ -563,6 +560,27 @@ export default function MapView({ initialView }: { initialView?: MapInitialView 
   return (
     <div className="absolute inset-0">
       <div ref={containerRef} className="h-full w-full" role="application" aria-label="Map of measured tree sites" />
+      <div
+        role="group"
+        aria-label="Map type"
+        className="absolute bottom-8 right-2 flex gap-0.5 rounded-full border border-border bg-card/95 p-0.5 shadow-sm"
+      >
+        {BASEMAPS.map((b) => (
+          <button
+            key={b.id}
+            type="button"
+            onClick={() => setBasemap(b.id)}
+            aria-pressed={basemap === b.id}
+            className={
+              basemap === b.id
+                ? "rounded-full bg-primary px-2.5 py-1 text-xs font-medium text-primary-foreground"
+                : "rounded-full px-2.5 py-1 text-xs font-medium text-foreground/80 hover:bg-muted"
+            }
+          >
+            {b.label}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

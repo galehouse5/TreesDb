@@ -317,3 +317,18 @@ made in this plan; the executor appends from D-016 onward.
   Previews also stay behind Vercel deployment protection.
 - Imports made as the test account are throwaway; delete them after each
   test (History > Remove).
+
+## D-025: Main map offers legacy's four map types, from key-free tile services (2026-11-21)
+
+- Why: legacy's map let people switch Terrain, Road, Satellite and Hybrid
+  (TMD/js/Map/Widgets.js:4-6); the new map had streets only.
+- What: a Map / Terrain / Satellite / Hybrid switch on /map
+  (`components/map/basemaps.ts`). Streets is OSM (unchanged), Terrain is
+  OpenTopoMap, Satellite is Esri World Imagery (already used by the import
+  coordinate picker), Hybrid is Esri imagery plus Esri's boundaries-and-places
+  labels. None needs an API key or account, in keeping with simple infra.
+- Default stays streets, not legacy's Terrain: the streets layer was tuned in
+  the map UX audit so markers stand out. Easy to flip in `DEFAULT_BASEMAP`.
+- Caveat for the owner: OpenTopoMap and Esri's public tiles are free for
+  light, attributed use but have no uptime promise. If traffic grows or terms
+  tighten, swap in a keyed provider (MapTiler, Stadia) in that one file.
