@@ -4,6 +4,10 @@
 // as run-d016.ts. Idempotent: Drizzle's migrator records applied entries
 // in drizzle.__drizzle_migrations and skips them on re-run.
 //
+// After migrating it runs syncSpecies (D-019), so a database that just got
+// the species tables (0002/0003) has them filled from `trees` straight away
+// rather than at the next trip removal or import. Also idempotent.
+//
 //   npx tsx scripts/maintenance/run-migrations.ts [path/to/env-file]
 //
 // Body lives in main() rather than top level: this package compiles as
@@ -13,6 +17,8 @@ import { join } from "node:path";
 import postgres from "postgres";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate } from "drizzle-orm/postgres-js/migrator";
+import { syncSpecies } from "../../db/species";
+import { withTransaction, type SqlTag } from "../../db/queries/sql-tag";
 
 async function main(): Promise<void> {
   const envFile = process.argv[2];
@@ -41,6 +47,14 @@ async function main(): Promise<void> {
       order by 1`;
     console.log(
       `migrations applied; users auth columns present: ${cols.map((c) => c.column_name).join(", ") || "NONE (unexpected)"}`,
+    );
+    const sync = await withTransaction(sql as unknown as SqlTag, (trx) => syncSpecies(trx));
+    const [counts] = await sql<{ species: number; synonyms: number }[]>`
+      select (select count(*)::int from species) as species,
+             (select count(*)::int from species_synonyms) as synonyms`;
+    console.log(
+      `species synced: ${sync.inserted} added, ${sync.deleted} removed, ` +
+        `${sync.synonymsApplied} synonym(s) applied; now ${counts!.species} species, ${counts!.synonyms} synonyms`,
     );
   } finally {
     await sql.end();
