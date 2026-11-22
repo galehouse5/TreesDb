@@ -85,6 +85,14 @@ Neon matching live while the new app keeps changing. Each round:
    (`parity/capture.ts --refresh`, close in time to the dump so they agree)
    and run `parity/verify.ts` against the deployed app.
 
+Steps 1 and 2 also run as one GitHub Actions job, "Sync live data into the
+new app" (`.github/workflows/sync-legacy-data.yml`): `preview` reports and
+rolls back, `apply` commits, and the delta report is attached to the run.
+It runs `dump-legacy.ps1` under pwsh 7 with go-sqlcmd on an Ubuntu runner
+(CI's `dump-script` job checks that path), so it needs the legacy login in
+the `production-db` environment and the Azure SQL firewall open to GitHub's
+runners. The table dumps stay on the runner and are deleted at the end.
+
 ## P4-03 DNS
 
 - Add `treesdb.org` (+ `www`) to the Vercel project; lower TTL a day

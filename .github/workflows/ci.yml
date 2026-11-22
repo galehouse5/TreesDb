@@ -81,3 +81,33 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+  # dump-legacy.ps1 was written for Windows PowerShell 5.1; the "Sync live
+  # data" workflow runs it on Linux under pwsh 7 with go-sqlcmd. This checks
+  # that path without a database (see scripts/ci/check-dump-script.sh).
+  dump-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install sqlcmd
+        run: scripts/ci/install-go-sqlcmd.sh
+
+      - name: Check the dump script on Linux
+        run: scripts/ci/check-dump-script.sh

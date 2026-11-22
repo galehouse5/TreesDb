@@ -1,0 +1,158 @@
+# Copies live treesdb.org data into the new app's database in one run:
+# dumps the legacy Azure SQL database (web/scripts/dump-legacy.ps1), then
+# applies it with the delta loader (migrate-data.ts --delta). Run it again
+# after any change to the new app to re-compare it with live.
+# Manual only: Actions tab > "Sync live data into the new app" > Run
+# workflow. Pick the migration branch in "Use workflow from", since the
+# dump script and the delta loader live there.
+#
+# Modes:
+#   preview (default)  dumps live, reports what would change, then rolls
+#                      back. Nothing is written to the new database.
+#   apply              same, then commits. Add "apply deletes" to also remove
+#                      rows that live no longer has (mirror mode).
+# Photos aren't copied: run migrate-photos.ts --skip-existing for those.
+# The report (counts per table, sample ids) is attached to the run as the
+# "delta-report" artifact. The table dumps hold personal data (emails,
+# password hashes), so they are never uploaded and are deleted at the end.
+#
+# Secrets, all in the "production-db" GitHub environment:
+#   DATABASE_URL_UNPOOLED  Neon's unpooled connection string (already set
+#                          for the "Run database migrations" workflow)
+#   LEGACY_SQL_SERVER      e.g. tcp:<server>.database.windows.net,1433
+#   LEGACY_SQL_DATABASE    the legacy database name
+#   LEGACY_SQL_USERNAME    a read-only SQL login
+#   LEGACY_SQL_PASSWORD    its password
+# The Azure SQL server's firewall must let GitHub's runners connect.
+#
+# GitHub only offers "Run workflow" for workflow_dispatch files that also
+# exist on the default branch.
+name: Sync live data into the new app
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview = report only, roll back; apply = write the changes"
+        type: choice
+        options:
+          - preview
+          - apply
+        default: preview
+      apply_deletes:
+        description: "Also delete rows that live no longer has (preview only counts them)"
+        type: boolean
+        default: false
+      allow_unresolved_species:
+        description: "Don't fail on measurements whose species can't be matched"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+# Shares a group with "Run database migrations" so the two never write to
+# the database at the same time.
+concurrency:
+  group: run-migrations
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: web
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    environment: production-db
+    timeout-minutes: 45
+    steps:
+      - name: Check the secrets are set
+        working-directory: .
+        env:
+          DATABASE_URL_UNPOOLED: ${{ secrets.DATABASE_URL_UNPOOLED }}
+          LEGACY_SQL_SERVER: ${{ secrets.LEGACY_SQL_SERVER }}
+          LEGACY_SQL_DATABASE: ${{ secrets.LEGACY_SQL_DATABASE }}
+          LEGACY_SQL_USERNAME: ${{ secrets.LEGACY_SQL_USERNAME }}
+          LEGACY_SQL_PASSWORD: ${{ secrets.LEGACY_SQL_PASSWORD }}
+        run: |
+          missing=""
+          for name in DATABASE_URL_UNPOOLED LEGACY_SQL_SERVER LEGACY_SQL_DATABASE LEGACY_SQL_USERNAME LEGACY_SQL_PASSWORD; do
+            if [ -z "${!name}" ]; then missing="$missing $name"; fi
+          done
+          if [ -n "$missing" ]; then
+            echo "::error::Add these secrets to the production-db environment (Settings > Environments) and run again:$missing"
+            exit 1
+          fi
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install sqlcmd
+        run: scripts/ci/install-go-sqlcmd.sh
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Dump live data
+        shell: pwsh
+        env:
+          LEGACY_SQL_SERVER: ${{ secrets.LEGACY_SQL_SERVER }}
+          LEGACY_SQL_DATABASE: ${{ secrets.LEGACY_SQL_DATABASE }}
+          LEGACY_SQL_USERNAME: ${{ secrets.LEGACY_SQL_USERNAME }}
+          LEGACY_SQL_PASSWORD: ${{ secrets.LEGACY_SQL_PASSWORD }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/dump-legacy.ps1 `
+            -Server $env:LEGACY_SQL_SERVER `
+            -Database $env:LEGACY_SQL_DATABASE `
+            -Username $env:LEGACY_SQL_USERNAME `
+            -Password $env:LEGACY_SQL_PASSWORD
+
+      - name: Apply with the delta loader
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL_UNPOOLED }}
+          MODE: ${{ inputs.mode }}
+          APPLY_DELETES: ${{ inputs.apply_deletes }}
+          ALLOW_UNRESOLVED: ${{ inputs.allow_unresolved_species }}
+        run: |
+          args=(--delta)
+          if [ "$MODE" = "preview" ]; then
+            args+=(--preview)
+          fi
+          # In preview this only counts the deletes; the rollback undoes them.
+          if [ "$APPLY_DELETES" = "true" ]; then
+            args+=(--apply-deletes)
+          fi
+          if [ "$ALLOW_UNRESOLVED" = "true" ]; then
+            args+=(--allow-unresolved-species)
+          fi
+          echo "Running: migrate-data.ts ${args[*]}"
+          pnpm exec tsx scripts/migrate-data.ts "${args[@]}"
+
+      - name: Attach the delta report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: delta-report
+          path: |
+            web/parity/reports/etl-delta-*.json
+            web/parity/snapshots/derived/
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Delete the table dumps
+        if: always()
+        run: rm -rf parity/dumps
