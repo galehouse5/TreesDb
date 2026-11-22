@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 # CI check that dump-legacy.ps1 works on a Linux runner under PowerShell 7,
-# the way the "Sync live data" workflow runs it. No database is involved:
+# the way the "Sync live data" workflow runs it, without the live database:
 #   1. the script parses under pwsh;
-#   2. the real go-sqlcmd accepts the flags the script passes (it fails to
-#      connect to a closed local port, which is expected; a flag error isn't);
+#   2. the real go-sqlcmd, run with the script's flags against the CI SQL
+#      Server container, writes the UTF-8, separator-delimited rows it parses;
 #   3. the whole dump runs against fake-sqlcmd.sh and writes the CSVs and
 #      manifest.json the loader expects;
 #   4. migrate-data.ts --dry-run reads those CSVs and matches the manifest.
-# Run from web/ after `pnpm install`, with pwsh and go-sqlcmd on PATH.
+# Run from web/ after `pnpm install`, with pwsh and go-sqlcmd on PATH and a
+# SQL Server on localhost:1433 whose sa password is in MSSQL_SA_PASSWORD.
 set -euo pipefail
 
 work="$(mktemp -d)"
@@ -21,27 +22,12 @@ pwsh -NoProfile -Command '
   if ($errors.Count -gt 0) { $errors | ForEach-Object { Write-Error $_.ToString() }; exit 1 }
   "parsed OK"'
 
-echo "== 2. go-sqlcmd accepts the dump's flags"
-printf 'SELECT 1;\n' > "$work/q.sql"
-set +e
-out="$(sqlcmd -S 'tcp:127.0.0.1,9' -d check -b -U check -P check -N -C -l 3 \
-  -i "$work/q.sql" -o "$work/o.txt" -s $'\x1f' -W -h -1 -f 65001 2>&1)"
-code=$?
-set -e
-echo "$out"
-if echo "$out" | grep -Eiq "unknown (shorthand )?flag|invalid argument|flag needs an argument|usage:"; then
-  echo "::error::go-sqlcmd rejected a flag that dump-legacy.ps1 passes"
-  exit 1
-fi
-if [ "$code" -eq 0 ]; then
-  echo "::error::expected go-sqlcmd to fail to connect to a closed port"
-  exit 1
-fi
-echo "flags accepted (connection failure is expected)"
+echo "== 2. go-sqlcmd output against a real SQL Server"
+pwsh -NoProfile -File scripts/ci/check-go-sqlcmd.ps1
 
 echo "== 3. full dump against fake-sqlcmd.sh"
 pwsh -NoProfile -File scripts/dump-legacy.ps1 \
-  -Server fake -Database fake -Username check -Password check \
+  -Server fake -Database fake -Username check -Password check -GoSqlcmd \
   -SqlcmdPath "$PWD/scripts/ci/fake-sqlcmd.sh" \
   -OutDir "$work/dumps" -DerivedOutDir "$work/derived"
 

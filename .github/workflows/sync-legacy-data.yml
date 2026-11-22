@@ -119,7 +119,8 @@ jobs:
             -Server $env:LEGACY_SQL_SERVER `
             -Database $env:LEGACY_SQL_DATABASE `
             -Username $env:LEGACY_SQL_USERNAME `
-            -Password $env:LEGACY_SQL_PASSWORD
+            -Password $env:LEGACY_SQL_PASSWORD `
+            -GoSqlcmd
 
       - name: Apply with the delta loader
         env:

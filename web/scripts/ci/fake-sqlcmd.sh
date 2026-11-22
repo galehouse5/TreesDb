@@ -2,7 +2,8 @@
 # Stand-in for sqlcmd, used only by CI's dump-script check to run
 # dump-legacy.ps1 end to end on Linux without a database.
 #
-# It checks that the script passes the flags the real dump depends on, then
+# It checks that the script passes the flags the real dump depends on (as
+# go-sqlcmd, which the workflow uses: -f is rejected like the real one), then
 # writes one result row per query to the -o file: "0" for the embedded-newline
 # pre-flight counts, otherwise one row with as many fields as the query has
 # ISNULL(..., N'NULL') columns, joined by the -s separator. The values cover
@@ -15,12 +16,13 @@ while [ $# -gt 0 ]; do
     -i) in="$2"; shift 2 ;;
     -o) out="$2"; shift 2 ;;
     -s) sep="$2"; shift 2 ;;
-    -S|-d|-U|-P|-f|-h) seen+="$1=$2 "; shift 2 ;;
+    -f) echo "fake-sqlcmd: 'f': Unknown Option (go-sqlcmd has no -f)" >&2; exit 2 ;;
+    -S|-d|-U|-P|-h) seen+="$1=$2 "; shift 2 ;;
     *) seen+="$1 "; shift ;;
   esac
 done
 
-for want in "-b " "-W " "-N " "-C " "-h=-1 " "-f=65001 " "-U=" "-P="; do
+for want in "-b " "-W " "-N " "-C " "-h=-1 " "-U=" "-P="; do
   case "$seen" in
     *" $want"*) ;;
     *) echo "fake-sqlcmd: expected flag '$want' not passed (got:$seen)" >&2; exit 2 ;;

@@ -114,6 +114,10 @@ PARAMETERS
                        registration) if unsure; pass it here once known so
                        it lands in manifest.json for P0-09.
   -SqlcmdPath         Override the sqlcmd executable path/name (default: 'sqlcmd' on PATH)
+  -GoSqlcmd           Switch: sqlcmd is the Go-based build. It writes UTF-8
+                       already and rejects the ODBC build's -f 65001, so -f
+                       is left out. Implied by -AccessToken. The GitHub
+                       "Sync live data" workflow runs it this way on Linux.
   -SkipEmbeddedNewlineCheck  Switch: skip the pre-flight safety check above (not recommended)
 ==============================================================================
 #>
@@ -147,6 +151,10 @@ param(
     [switch]$SkipEmbeddedNewlineCheck,
 
     [switch]$NoEncrypt,
+
+    # sqlcmd is the Go-based build (go-sqlcmd): no -f, it writes UTF-8 by
+    # default and rejects -f. Implied by -AccessToken, which only it supports.
+    [switch]$GoSqlcmd,
 
     # Execute queries in-process via System.Data.SqlClient instead of the
     # sqlcmd CLI. Rows never round-trip through a text file, so embedded
@@ -323,9 +331,14 @@ function Invoke-SqlcmdQuery {
             '-o', $tempOutFile,
             '-s', $Sep,
             '-W',           # trim trailing whitespace per column
-            '-h', '-1',     # no headers / no dashes row
-            '-f', '65001'   # UTF-8 output (requires a reasonably modern sqlcmd; see REQUIREMENTS)
+            '-h', '-1'      # no headers / no dashes row
         )
+        if (-not ($GoSqlcmd -or $AccessToken)) {
+            # UTF-8 output for the ODBC sqlcmd (requires a reasonably modern
+            # build; see REQUIREMENTS). go-sqlcmd writes UTF-8 already and
+            # rejects -f.
+            $args += @('-f', '65001')
+        }
 
         & $sqlcmdCmd.Source @args
         if ($LASTEXITCODE -ne 0) {
@@ -371,8 +384,8 @@ function Write-CsvFile {
     foreach ($line in $Rows) {
         $fields = $line.Split($Sep)
         if ($fields.Count -ne $Header.Count) {
-            Write-Warning ("Row field count ({0}) != header count ({1}) in {2} -- " +
-                "check for an embedded separator/newline in the source data. Row: {3}" -f `
+            Write-Warning (("Row field count ({0}) != header count ({1}) in {2} -- " +
+                "check for an embedded separator/newline in the source data. Row: {3}") -f `
                 $fields.Count, $Header.Count, (Split-Path -Leaf $Path), $line)
         }
         [void]$sb.Append(($fields | ForEach-Object { ConvertTo-CsvField $_ }) -join ',')
