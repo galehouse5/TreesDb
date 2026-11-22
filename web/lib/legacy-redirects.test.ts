@@ -190,6 +190,16 @@ describe("legacyRedirect", () => {
       ).toEqual({ status: 301, location: `/species/${SILVER_FIR_SLUG}?site=436` });
     });
 
+    it("drops a mangled, URL-encoded sort query (live crawler alert 2026-11-22) instead of carrying it over", () => {
+      expect(
+        legacyRedirect(
+          "GET",
+          "/Browse/Sites/436/Species/Abies alba (Silver Fir)/Details",
+          "?siteSpeciesSort=Site%26siteSpeciesSortAsc=True%26stateSpeciesSort=State%26stateSpeciesSortAsc=True%26treesSort=Girth%26treesSortAsc=False",
+        ),
+      ).toEqual({ status: 301, location: `/species/${SILVER_FIR_SLUG}?site=436` });
+    });
+
     it("/Browse/States/{id}/Species/{seg}/Details -> /species/{slug}?state={id}", () => {
       expect(
         legacyRedirect("GET", "/Browse/States/12/Species/Abies alba (Silver Fir)/Details", ""),

@@ -6,6 +6,7 @@ import {
   recordedSitesForSpeciesInState,
   recordedStatesForSpecies,
   recordedTreesForSpeciesInSite,
+  RECORDED_SITES_SORT_KEYS,
   resolveSpeciesSlug,
   siteSpeciesMaxima,
   sitesForState,
@@ -15,6 +16,7 @@ import {
   stateSpeciesMaxima,
   stateSummary,
 } from "./species-state-details.sql";
+import type { RecordedSiteRow } from "./species-state-details.sql";
 import type { SqlTag } from "./sql-tag";
 import { createTestDb, insertCountry, insertSite, insertState, insertTree, pgliteSqlTag } from "./test-helpers";
 
@@ -162,6 +164,19 @@ describe("species-state-details.sql", () => {
         const result = sortAndPage(rows, keyFns, { sort, sortAscending: false });
         expect(result.rows.map((r) => r.id)).toEqual([1, 2, 3]);
       }
+    });
+
+    // Live alert 2026-11-21/22: a crawler sent the whole sort query string
+    // URL-encoded into one value (`siteSpeciesSort=Site%26siteSpeciesSortAsc=True%26...`),
+    // which legacy's sort switch rejects with NotImplementedException.
+    it("a mangled sort value carrying the rest of the query string falls back to the natural order, not an error", () => {
+      const mangled = "Site&siteSpeciesSortAsc=True&stateSpeciesSort=State&stateSpeciesSortAsc=True&treesSort=Girth&treesSortAsc=False";
+      const sites = [
+        { siteId: 2, siteName: "Beta", maxHeight: 1 },
+        { siteId: 1, siteName: "Alpha", maxHeight: 2 },
+      ] as unknown as RecordedSiteRow[];
+      const result = sortAndPage(sites, RECORDED_SITES_SORT_KEYS, { sort: mangled, sortAscending: true }, RECORDED_SITES_SORT_KEYS.Site);
+      expect(result.rows.map((r) => r.siteName)).toEqual(["Alpha", "Beta"]);
     });
 
     it("without a naturalKeyFn, omits it entirely (no 4th arg) and stays query-natural even when sortAscending=false is (nonsensically) passed alongside a blank sort", () => {
